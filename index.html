@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE BRAIN BRAKE — Mission Control</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;1,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#0b0e13;
+  --panel:#12171f;
+  --panel-2:#181f29;
+  --rule:#232c38;
+  --paper:#efe4cd;
+  --paper-2:#e6d9be;
+  --graphite:#2e2b26;
+  --graphite-soft:#5e574c;
+  --signal:#4dd6e8;
+  --lever:#e8a33d;
+  --dim:#6b7a8d;
+  --live:#7ed957;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--void);
+  color:#c8d3e0;
+  font-family:'Spectral',Georgia,serif;
+  font-size:16px;
+  line-height:1.65;
+  min-height:100vh;
+}
+::selection{background:var(--signal);color:var(--void)}
+
+/* ---------- GATE ---------- */
+#gate{
+  position:fixed;inset:0;z-index:100;
+  background:var(--void);
+  display:flex;align-items:center;justify-content:center;
+  padding:24px;
+}
+.gate-card{
+  width:100%;max-width:380px;
+  background:var(--panel);
+  border:1px solid var(--rule);
+  padding:38px 32px 32px;
+}
+.gate-eyebrow{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:10px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:18px;
+}
+.gate-title{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:40px;font-weight:700;line-height:.95;
+  letter-spacing:.02em;text-transform:uppercase;color:#eef3f8;
+}
+.gate-sub{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;
+  color:var(--dim);margin-top:10px;letter-spacing:.08em;
+}
+.gate-form{margin-top:30px}
+label.fld{
+  display:block;font-family:'IBM Plex Mono',monospace;
+  font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:8px;
+}
+input[type=password]{
+  width:100%;background:var(--void);border:1px solid var(--rule);
+  color:var(--paper);padding:13px 14px;
+  font-family:'IBM Plex Mono',monospace;font-size:15px;letter-spacing:.12em;
+}
+input[type=password]:focus{outline:2px solid var(--signal);outline-offset:1px;border-color:var(--signal)}
+.remember{display:flex;align-items:center;gap:9px;margin-top:16px}
+.remember input{width:15px;height:15px;accent-color:var(--signal)}
+.remember label{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;
+  color:var(--dim);cursor:pointer;letter-spacing:.04em;
+}
+button.enter{
+  width:100%;margin-top:22px;padding:13px;
+  background:var(--signal);border:0;color:var(--void);cursor:pointer;
+  font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;
+}
+button.enter:hover{background:#6ee2f2}
+button.enter:focus-visible{outline:2px solid var(--paper);outline-offset:2px}
+#gate-err{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;
+  color:#ff8f6b;margin-top:14px;min-height:16px;letter-spacing:.04em;
+}
+
+/* ---------- SHELL ---------- */
+#app{display:none}
+.slate{
+  border-bottom:1px solid var(--rule);
+  background:var(--panel);
+  padding:14px 22px;
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  position:sticky;top:0;z-index:40;
+}
+.slate-mark{
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;
+  font-size:22px;letter-spacing:.06em;text-transform:uppercase;color:#eef3f8;
+  line-height:1;
+}
+.slate-mark span{color:var(--signal)}
+.slate-meta{
+  display:flex;gap:20px;flex-wrap:wrap;margin-left:auto;
+  font-family:'IBM Plex Mono',monospace;font-size:10px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+}
+.slate-meta b{display:block;color:var(--paper);font-weight:500;font-size:13px;letter-spacing:.06em;margin-top:3px}
+.slate-meta .hot b{color:var(--lever)}
+.ver{
+  position:fixed;top:11px;right:14px;z-index:60;
+  font-family:'IBM Plex Mono',monospace;font-size:10px;
+  color:var(--dim);letter-spacing:.1em;
+}
+
+.wrap{display:flex;align-items:flex-start;min-height:calc(100vh - 60px)}
+
+/* ---------- RAIL ---------- */
+.rail{
+  width:268px;flex:0 0 268px;
+  border-right:1px solid var(--rule);
+  background:var(--panel);
+  padding:22px 0 40px;
+  position:sticky;top:60px;
+  max-height:calc(100vh - 60px);overflow-y:auto;
+}
+.rail-head{
+  font-family:'IBM Plex Mono',monospace;font-size:9px;
+  letter-spacing:.26em;text-transform:uppercase;color:var(--dim);
+  padding:0 22px;margin:22px 0 10px;
+}
+.rail-head:first-child{margin-top:0}
+.tab{
+  display:flex;align-items:center;gap:11px;
+  width:100%;text-align:left;background:none;border:0;cursor:pointer;
+  padding:10px 22px;color:#9fb0c4;
+  font-family:'Barlow Condensed',sans-serif;font-size:17px;
+  letter-spacing:.05em;text-transform:uppercase;font-weight:500;
+  border-left:2px solid transparent;
+}
+.tab:hover{background:var(--panel-2);color:#dbe6f2}
+.tab:focus-visible{outline:2px solid var(--signal);outline-offset:-2px}
+.tab.on{background:var(--panel-2);color:var(--signal);border-left-color:var(--signal)}
+.tab .who{
+  font-family:'IBM Plex Mono',monospace;font-size:9px;
+  color:var(--dim);letter-spacing:.12em;margin-left:auto;text-transform:uppercase;
+}
+.tab.on .who{color:var(--signal)}
+.led{width:6px;height:6px;border-radius:50%;background:var(--rule);flex:0 0 6px}
+.led.go{background:var(--live)}
+.led.hold{background:var(--lever)}
+
+/* signature: power output lever */
+.lever-box{margin:30px 22px 0;padding-top:22px;border-top:1px solid var(--rule)}
+.lever-lbl{
+  font-family:'IBM Plex Mono',monospace;font-size:9px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--dim);
+  display:flex;justify-content:space-between;align-items:baseline;
+}
+.lever-lbl b{font-size:19px;color:var(--lever);font-weight:600;letter-spacing:0}
+.track{
+  margin-top:12px;height:9px;background:var(--void);
+  border:1px solid var(--rule);position:relative;
+}
+.fill{height:100%;background:var(--lever);width:18%}
+.notch{
+  position:absolute;top:-4px;bottom:-4px;width:1px;background:var(--rule);
+}
+.lever-note{
+  font-family:'Caveat',cursive;font-size:15px;color:var(--dim);
+  margin-top:10px;line-height:1.3;
+}
+
+/* ---------- STAGE ---------- */
+.stage{flex:1;min-width:0;padding:34px 40px 90px;max-width:1080px}
+.pane{display:none;animation:rise .32s ease both}
+.pane.on{display:block}
+@keyframes rise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.pane{animation:none}}
+
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:10px;
+  letter-spacing:.26em;text-transform:uppercase;color:var(--signal);
+}
+h1.pane-t{
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;
+  font-size:clamp(34px,5vw,52px);line-height:1;text-transform:uppercase;
+  letter-spacing:.01em;color:#eef3f8;margin:9px 0 12px;
+}
+.standfirst{
+  font-size:17px;color:#93a3b6;max-width:62ch;font-style:italic;
+  border-left:2px solid var(--rule);padding-left:16px;
+}
+
+/* paper sheet */
+.sheet{
+  background:var(--paper);color:var(--graphite);
+  padding:32px 34px;margin-top:26px;
+  box-shadow:0 1px 0 var(--paper-2), 0 14px 34px rgba(0,0,0,.5);
+}
+.sheet h2{
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;
+  font-size:24px;text-transform:uppercase;letter-spacing:.05em;
+  border-bottom:1.5px solid var(--graphite);padding-bottom:7px;margin-bottom:18px;
+}
+.sheet h3{
+  font-family:'Barlow Condensed',sans-serif;font-weight:600;
+  font-size:19px;text-transform:uppercase;letter-spacing:.07em;
+  margin:26px 0 9px;color:#443f38;
+}
+.sheet h3:first-child{margin-top:0}
+.sheet p{margin-bottom:13px;max-width:70ch}
+.sheet ul,.sheet ol{margin:0 0 15px 21px}
+.sheet li{margin-bottom:7px;max-width:68ch}
+.sheet strong{font-weight:600;color:#1c1a17}
+.hand{
+  font-family:'Caveat',cursive;font-size:19px;color:#6a5c3f;
+  line-height:1.4;margin:16px 0;padding-left:15px;
+  border-left:2px solid rgba(106,92,63,.35);
+}
+.sheet.dim{background:var(--paper-2)}
+
+/* spec block */
+.spec{
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.85;
+  background:rgba(46,43,38,.07);border:1px solid rgba(46,43,38,.16);
+  padding:16px 18px;margin:14px 0 18px;white-space:pre-wrap;
+  overflow-x:auto;color:#3a352d;
+}
+
+/* dark data card */
+.card{
+  background:var(--panel);border:1px solid var(--rule);
+  padding:20px 22px;margin-top:16px;
+}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(212px,1fr));gap:14px;margin-top:22px}
+.stat{background:var(--panel);border:1px solid var(--rule);padding:16px 17px}
+.stat .k{
+  font-family:'IBM Plex Mono',monospace;font-size:9px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--dim);
+}
+.stat .v{
+  font-family:'Barlow Condensed',sans-serif;font-size:27px;font-weight:600;
+  color:#eef3f8;line-height:1.15;margin-top:5px;text-transform:uppercase;
+}
+.stat .v.go{color:var(--live)}
+.stat .v.hold{color:var(--lever)}
+.stat .n{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--dim);margin-top:5px;line-height:1.5}
+
+table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:14.5px}
+th{
+  font-family:'IBM Plex Mono',monospace;font-size:9.5px;
+  letter-spacing:.16em;text-transform:uppercase;text-align:left;
+  padding:8px 11px 8px 0;border-bottom:1.5px solid var(--graphite);color:#5e574c;
+}
+td{padding:9px 11px 9px 0;border-bottom:1px solid rgba(46,43,38,.18);vertical-align:top}
+
+/* character gallery */
+.chars{display:grid;gap:22px;margin-top:26px}
+.charcard{background:var(--panel);border:1px solid var(--rule);padding:14px}
+.charcard img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.charcard .cap{
+  font-family:'IBM Plex Mono',monospace;font-size:10px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--dim);
+  margin-top:11px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.charcard .cap b{color:var(--signal);font-weight:500}
+
+/* empty state */
+.empty{
+  border:1px dashed var(--rule);padding:44px 26px;text-align:center;margin-top:26px;
+}
+.empty .big{
+  font-family:'Barlow Condensed',sans-serif;font-size:23px;text-transform:uppercase;
+  letter-spacing:.09em;color:#7e8ea1;
+}
+.empty .small{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--dim);margin-top:10px;line-height:1.7}
+
+.foot{
+  margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);
+  font-family:'IBM Plex Mono',monospace;font-size:10px;
+  color:var(--dim);letter-spacing:.11em;text-transform:uppercase;
+}
+
+@media(max-width:880px){
+  .wrap{display:block}
+  .rail{width:auto;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;padding:12px 8px}
+  .rail-head{display:none}
+  .tab{width:auto;padding:8px 13px;font-size:15px;border-left:0;border-bottom:2px solid transparent}
+  .tab.on{border-left-color:transparent;border-bottom-color:var(--signal)}
+  .tab .who{display:none}
+  .lever-box{width:100%;margin:14px 12px 4px}
+  .stage{padding:24px 18px 70px}
+  .sheet{padding:22px 19px}
+  .slate{padding:12px 16px}
+  .slate-meta{width:100%;margin-left:0;gap:14px}
+}
+</style>
+</head>
+<body>
+
+<div class="ver">1 (a)</div>
+
+<!-- ============ GATE ============ -->
+<div id="gate">
+  <div class="gate-card">
+    <div class="gate-eyebrow">Production access</div>
+    <div class="gate-title">The Brain<br>Brake</div>
+    <div class="gate-sub">Breakthrough Junior Challenge 2026</div>
+    <form class="gate-form" id="gate-form">
+      <label class="fld" for="pw">Passphrase</label>
+      <input type="password" id="pw" autocomplete="current-password" autofocus>
+      <div class="remember">
+        <input type="checkbox" id="rem">
+        <label for="rem">Remember me on this device</label>
+      </div>
+      <button type="submit" class="enter">Enter</button>
+      <div id="gate-err"></div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ APP ============ -->
+<div id="app">
+
+  <header class="slate">
+    <div class="slate-mark">THE BRAIN <span>BRAKE</span></div>
+    <div class="slate-meta">
+      <div>Runtime<b>2:00</b></div>
+      <div>Script<b id="m-script">v2 draft</b></div>
+      <div>Internal lock<b>1.9.</b></div>
+      <div class="hot">Days to lock<b id="m-days">—</b></div>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <!-- RAIL -->
+    <nav class="rail" aria-label="Departments">
+      <div class="rail-head">Production</div>
+      <button class="tab" data-p="overview"><span class="led go"></span>Overview<span class="who">All</span></button>
+      <button class="tab" data-p="script"><span class="led hold"></span>The Film<span class="who">Script</span></button>
+      <button class="tab" data-p="chars"><span class="led go"></span>Characters<span class="who">Design</span></button>
+
+      <div class="rail-head">Crew</div>
+      <button class="tab" data-p="neha"><span class="led go"></span>Neha<span class="who">Client</span></button>
+      <button class="tab" data-p="venkatesh"><span class="led hold"></span>Venkatesh<span class="who">Camera</span></button>
+      <button class="tab" data-p="kristijan"><span class="led hold"></span>Kristijan<span class="who">Animation</span></button>
+
+      <div class="rail-head">Post</div>
+      <button class="tab" data-p="director"><span class="led go"></span>Marko<span class="who">Director</span></button>
+      <button class="tab" data-p="editor"><span class="led"></span>Marko<span class="who">Edit</span></button>
+      <button class="tab" data-p="sound"><span class="led"></span>Marko<span class="who">Sound</span></button>
+      <button class="tab" data-p="music"><span class="led"></span>Marko<span class="who">Music</span></button>
+
+      <div class="rail-head">Archive</div>
+      <button class="tab" data-p="versions"><span class="led"></span>Versions<span class="who">WIP</span></button>
+
+      <div class="lever-box">
+        <div class="lever-lbl"><span>Power output</span><b>18%</b></div>
+        <div class="track"><div class="fill"></div>
+          <span class="notch" style="left:25%"></span>
+          <span class="notch" style="left:50%"></span>
+          <span class="notch" style="left:75%"></span>
+        </div>
+        <div class="lever-note">not maximum. never maximum. we save some for the finish.</div>
+      </div>
+    </nav>
+
+    <!-- STAGE -->
+    <main class="stage">
+
+      <!-- ===== OVERVIEW ===== -->
+      <section class="pane" id="p-overview">
+        <div class="eyebrow">Mission control</div>
+        <h1 class="pane-t">Where the film stands</h1>
+        <p class="standfirst">One boy, one camera, one brain in a tracksuit. A two minute film about why your body slows you down before it breaks you.</p>
+
+        <div class="grid">
+          <div class="stat"><div class="k">Script</div><div class="v hold">In revision</div><div class="n">Manan's draft received. Cut from five minutes to two. Awaiting sign off.</div></div>
+          <div class="stat"><div class="k">Shoot</div><div class="v">Not booked</div><div class="n">One day, Pondicherry. Date to be set with Venkatesh.</div></div>
+          <div class="stat"><div class="k">Animation</div><div class="v hold">Quoting</div><div class="n">Brojka, Zagreb. Scope depends on final scene breakdown.</div></div>
+          <div class="stat"><div class="k">Post</div><div class="v">Queued</div><div class="n">Edit, sound, original score. Starts the day rushes land.</div></div>
+        </div>
+
+        <div class="sheet">
+          <h2>What we are making</h2>
+          <p>A two minute film explaining the Central Governor Theory, the idea that fatigue is not your muscles running out of fuel but your brain applying a protective brake. Manan appears on camera as a detective investigating an impossible question. Everything around him is animated.</p>
+          <div class="hand">the whole film hangs on one moment: the phone in low power mode. protect that moment, cut anywhere else.</div>
+
+          <h3>Who does what</h3>
+          <table>
+            <tr><th>Person</th><th>Role</th><th>Where</th></tr>
+            <tr><td><strong>Neha Sonthalia Periwal</strong></td><td>Client and producer, sole approval point</td><td>Bangalore</td></tr>
+            <tr><td><strong>Manan Periwal</strong></td><td>Writer and performer, owns the concept</td><td>Bangalore</td></tr>
+            <tr><td><strong>Venkatesh Aurovenkatesh</strong></td><td>Cinematographer, camera, sound, lighting</td><td>Auroville</td></tr>
+            <tr><td><strong>Kristijan Kaurić</strong></td><td>Animation and motion, Brojka</td><td>Zagreb</td></tr>
+            <tr><td><strong>Marko Boško</strong></td><td>Director, editor, sound design, original score</td><td>Zagreb</td></tr>
+          </table>
+
+          <h3>The chain</h3>
+          <p>Nothing here runs in parallel. Each stage feeds the next, so a slip anywhere pushes everything behind it.</p>
+          <div class="spec">SCRIPT LOCKED          →  2.8.
+SHOT LIST TO VENKATESH →  around 6.8.
+SHOOT IN INDIA         →  mid 8. mjesec
+RUSHES TO ZAGREB       →  within 48h of the shoot
+EDIT + GRAPHICS BRIEF  →  20.8.
+ANIMATION BACK         →  27.8.
+SOUND, SCORE, GRADE    →  28.8. to 31.8.
+DELIVERY TO NEHA       →  1.9.
+COMPETITION DEADLINE   →  15.9.   (two weeks of reserve)</div>
+          <p>The shoot is the fragile link. Everything downstream is inside one country and one editing room. Once the rushes exist, the rest is controllable.</p>
+
+          <h3>Rules that do not bend</h3>
+          <ul>
+            <li>The concept, script and explanation are Manan's own work. The crew provides craft, not ideas.</li>
+            <li>No brand logos on screen. The phone is generic.</li>
+            <li>Hill and Noakes are drawn, never photographed.</li>
+            <li>The theory is presented as contested, not settled. The subtitle stays in.</li>
+          </ul>
+        </div>
+        <div class="foot">Overview · updated 3.8.2026</div>
+      </section>
+
+      <!-- ===== SCRIPT ===== -->
+      <section class="pane" id="p-script">
+        <div class="eyebrow">Shooting script</div>
+        <h1 class="pane-t">The film, 2:00</h1>
+        <p class="standfirst">Six scenes. Three live action setups. Everything else is drawn.</p>
+
+        <div class="sheet">
+          <h2>Scene 1 — The Mystery <span style="float:right;font-size:15px">0:00 – 0:18</span></h2>
+          <p><strong>EXT. MARATHON COURSE — DAY (ANIMATED)</strong></p>
+          <p>A lean runner is failing. Head rolling, legs heavy. The commentator writes him off. Then he explodes into a sprint. Freeze. Colour drains to blue.</p>
+          <p><strong>INT. FROZEN WORLD (LIVE ACTION)</strong> — Manan steps into the frozen frame with the magnifying glass, inspects the runner, turns to camera.</p>
+          <div class="spec">MANAN
+  Hold on.
+  He had nothing left.
+  So where did THAT come from?
+
+Question marks burst across frame.
+TITLE: THE BRAIN BRAKE</div>
+
+          <h2>Scene 2 — The Old Answer <span style="float:right;font-size:15px">0:18 – 0:42</span></h2>
+          <p><strong>INT. DUSTY CLASSROOM (ANIMATED)</strong> — A chalkboard, a drawn portrait of A.V. Hill, 1923. The runner becomes a cartoon factory. Oxygen trucks arrive, then stop. Alarm. Workers haul the BACKUP POWER lever. Purple smoke. Machines grind to half speed. A rubber stamp slams down, CASE CLOSED. The sprint replays. The stamp cracks.</p>
+          <div class="spec">MANAN (V.O.)
+  For a hundred years, we blamed the muscles.
+  Oxygen comes in. Fuel burns. Everything runs.
+  Until it doesn't.
+
+MANAN  (to camera)
+  Except it doesn't explain this.</div>
+
+          <h2>Scene 3 — The Suspect <span style="float:right;font-size:15px">0:42 – 1:12</span></h2>
+          <p><strong>INT. MISSION CONTROL (ANIMATED)</strong> — Glowing blue command centre. Monitors reading heart rate, temperature, hydration, oxygen. A chair turns. Coach Brain, tracksuit, whistle, headset, coffee mug.</p>
+          <div class="spec">MANAN        You've been watching the whole race?
+COACH BRAIN  Every second.
+COACH BRAIN  Every heartbeat. Every breath. Every drop of sweat.
+
+Screen fills the room:  CAN WE KEEP GOING SAFELY?
+
+MANAN        So you're controlling my muscles.
+
+He slides POWER OUTPUT.  100% → 82%
+The runner does not collapse. He settles.
+
+COACH BRAIN  I'm not stopping you.
+             I'm getting you to the finish line.</div>
+          <p>A two second subtitle carries the honesty: Central Governor Theory, proposed by Prof. Tim Noakes, 1997, still debated by scientists.</p>
+
+          <h2>Scene 4 — Low Power Mode <span style="float:right;font-size:15px">1:12 – 1:32</span></h2>
+          <p><strong>INT. MISSION CONTROL (ANIMATED)</strong> — Push into one monitor. It becomes a generic phone. Battery drains, 100, 82, 42, 20. LOW POWER MODE slides down. Screen dims. Apps close themselves. A shield forms around the battery.</p>
+          <div class="spec">MANAN (O.S.)  Wait. Is it broken?
+              (the phone shakes itself: no)
+
+MANAN  (to camera)
+  It's saving something for later.
+
+Phone morphs back into Coach Brain.
+Battery becomes the runner. Shield becomes a finish line.
+
+COACH BRAIN  Tired might not mean empty.
+             It might mean, ease off, we're not home yet.</div>
+          <div class="hand">this is the line the whole film is built around. shoot it eight or ten times. take six is usually the one.</div>
+
+          <h2>Scene 5 — The Finish <span style="float:right;font-size:15px">1:32 – 1:52</span></h2>
+          <p><strong>SPLIT SCREEN (ANIMATED, no live action)</strong> — Left, the runner trembling twenty metres out. Right, Coach Brain reading every screen. SAFETY SCAN. Every monitor flashes green. The lever eases up, 82 to 95 percent, never 100. Inside the runner's legs, muscle fibres glow, first a few, then many.</p>
+          <div class="spec">CAPTION       Notice. Not maximum.
+CAPTION       More muscle fibres recruited.
+
+MANAN (V.O.)
+  The brain didn't make new energy.
+  It just decided it was finally safe to spend it.
+
+He crosses the line. FREEZE.
+The detective board flips over:
+  YOUR BRAIN WAS SAVING SOME ALL ALONG.</div>
+
+          <h2>Scene 6 — The Twist <span style="float:right;font-size:15px">1:52 – 2:00</span></h2>
+          <p><strong>INT. WHITE VOID (LIVE ACTION)</strong> — Everything drains to white. Manan alone. The Muscle on his left, Coach Brain on his right, an emergency brake marked FATIGUE between them. They shake hands.</p>
+          <div class="spec">MANAN  So who was right?
+       Scientists are still arguing.
+       That's the best part.
+
+CUT TO BLACK.
+Coach Brain ticks a clipboard. Lights out.
+
+END CARD:
+THE STRONGEST FINISH MIGHT BEGIN WITH THE SMARTEST BRAKE.</div>
+        </div>
+        <div class="foot">Script · cut to 2:00 · awaiting sign off</div>
+      </section>
+
+      <!-- ===== CHARACTERS ===== -->
+      <section class="pane" id="p-chars">
+        <div class="eyebrow">Design</div>
+        <h1 class="pane-t">Characters</h1>
+        <p class="standfirst">These sheets are the single source of truth. Every storyboard frame and every animated shot references them directly, so the cast never drifts.</p>
+
+        <div class="chars">
+          <div class="charcard">
+            <img src="assets/char-manan.png" alt="Model sheet, Manan the boy detective, four views">
+            <div class="cap"><b>Manan, boy detective</b><span>Live action · tan coat, deerstalker, brass glass</span></div>
+          </div>
+          <div class="charcard">
+            <img src="assets/char-coach-brain.png" alt="Model sheet, Coach Brain, four views">
+            <div class="cap"><b>Coach Brain</b><span>Animated · tracksuit, whistle, headset, mug</span></div>
+          </div>
+          <div class="charcard">
+            <img src="assets/char-runner.png" alt="Model sheet, the marathon runner, four views">
+            <div class="cap"><b>The marathon runner</b><span>Animated · bib 27, never changes</span></div>
+          </div>
+          <div class="charcard">
+            <img src="assets/char-muscle.png" alt="Model sheet, the Muscle, four views">
+            <div class="cap"><b>The Muscle</b><span>Animated · scene 6 only</span></div>
+          </div>
+          <div class="charcard">
+            <img src="assets/char-workers.png" alt="Model sheet, the factory workers, multiple poses">
+            <div class="cap"><b>The factory workers</b><span>Animated · scene 2 only</span></div>
+          </div>
+        </div>
+
+        <div class="sheet" style="margin-top:26px">
+          <h2>House rules for the look</h2>
+          <ul>
+            <li>Graphite pencil on aged cream paper. Hand drawn line, visible strokes, no vector cleanliness.</li>
+            <li>The runner's bib is <strong>27</strong> in every single frame. Small fixed details are what make an audience read a character as the same person.</li>
+            <li>Manan's wardrobe never changes: tan coat, deerstalker, white collar, brass magnifying glass.</li>
+            <li>Coach Brain is never angry, never panicked. He is the calmest character on screen. That is the whole joke and the whole science.</li>
+          </ul>
+          <div class="hand">feed the sheets in as image references on every frame. text prompts alone drift by the third panel.</div>
+        </div>
+        <div class="foot">Characters · five sheets locked</div>
+      </section>
+
+      <!-- ===== NEHA ===== -->
+      <section class="pane" id="p-neha">
+        <div class="eyebrow">Client and producer</div>
+        <h1 class="pane-t">Neha</h1>
+        <p class="standfirst">You hold the money, the approvals and the boy. Three things only you can unblock.</p>
+
+        <div class="grid">
+          <div class="stat"><div class="k">Advance</div><div class="v hold">Pending</div><div class="n">600 EUR of 1200. Not yet landed.</div></div>
+          <div class="stat"><div class="k">Awaiting you</div><div class="v">Script sign off</div><div class="n">Approve the two minute cut so the shot list can be written.</div></div>
+          <div class="stat"><div class="k">Animation</div><div class="v">Quote coming</div><div class="n">Figure follows the scene breakdown.</div></div>
+        </div>
+
+        <div class="sheet">
+          <h2>What sits with you</h2>
+          <ol>
+            <li><strong>Approve the two minute cut.</strong> Manan's draft was around five minutes of material. It has been cut to the spine. Read it, tell us what he cannot bear to lose.</li>
+            <li><strong>Book the shoot with Venkatesh.</strong> You pay him directly, locally, in rupees. One day, in or around Pondicherry.</li>
+            <li><strong>Approve the animation budget</strong> once the scene breakdown shows how much animation there actually is.</li>
+            <li><strong>Get Manan to the room rested.</strong> Not after a school day. This matters more than any technical decision.</li>
+          </ol>
+
+          <h3>Money, in the open</h3>
+          <table>
+            <tr><th>Line</th><th>Who</th><th>Amount</th><th>Terms</th></tr>
+            <tr><td>Concept, direction, edit</td><td>Marko</td><td>700 EUR</td><td>50 / 50</td></tr>
+            <tr><td>Sound mix</td><td>Marko</td><td>200 EUR</td><td>50 / 50</td></tr>
+            <tr><td>Original score</td><td>Marko</td><td>300 EUR</td><td>50 / 50</td></tr>
+            <tr><td>Animation</td><td>Kristijan, Brojka</td><td>To be quoted</td><td>50 / 50</td></tr>
+            <tr><td>Shooting day</td><td>Venkatesh</td><td>Quoted locally</td><td>Direct, in rupees</td></tr>
+          </table>
+          <p>Every invoice arrives through one shared folder so nothing is hidden and nothing is duplicated. Kristijan bills below his normal rate because this is a student's film.</p>
+
+          <div class="hand">the shooting costs stay in india and in rupees. only the european fees cross a border.</div>
+
+          <h3>What you will see, and when</h3>
+          <ul>
+            <li><strong>Rushes</strong> within two days of the shoot, so you know we have what we need.</li>
+            <li><strong>Rough cut with placeholder graphics</strong> around 20.8., before animation begins.</li>
+            <li><strong>Animated cut</strong> around 27.8.</li>
+            <li><strong>Final film</strong> 1.9., a full fortnight before the deadline.</li>
+          </ul>
+          <p>Every version lands in the Versions tab of this page and stays there. Nothing gets overwritten, so you can always see how the film grew.</p>
+        </div>
+        <div class="foot">Neha · client and producer · Bangalore</div>
+      </section>
+
+      <!-- ===== VENKATESH ===== -->
+      <section class="pane" id="p-venkatesh">
+        <div class="eyebrow">Camera, sound, lighting</div>
+        <h1 class="pane-t">Venkatesh</h1>
+        <p class="standfirst">One day, three setups, one boy against grey. Everything else in this film gets drawn later in Zagreb.</p>
+
+        <div class="grid">
+          <div class="stat"><div class="k">Shooting days</div><div class="v">1</div><div class="n">Roughly five hours including resets</div></div>
+          <div class="stat"><div class="k">Setups</div><div class="v">3</div><div class="n">A, B and C. Never relight between them.</div></div>
+          <div class="stat"><div class="k">Cast</div><div class="v">1</div><div class="n">Manan only. No runner, no crowd.</div></div>
+        </div>
+
+        <div class="sheet">
+          <h2>The one thing to understand</h2>
+          <p>You are not filming a marathon. You are filming a boy in a detective coat standing in an empty grey room, reacting to things that do not exist yet. The marathon, the factory, the mission control room and Coach Brain are all animated in post and built around him.</p>
+          <p>So your job is to hand over a clean, consistent, well lit boy who can be cut out and placed anywhere. Consistency beats beauty on this one.</p>
+
+          <h3>Technical</h3>
+          <div class="spec">FORMAT     4K, 25fps, 16:9
+LENS       35mm to 50mm equivalent
+CAMERA     Locked off on sticks. Eye level, matched to Manan.
+           Do not move the camera within a setup.
+BACKGROUND Plain mid grey wall or grey seamless.
+           Flat, even, no texture, no shadow falling on it.
+           Subject minimum 2m from the background.
+LIGHT      Soft key camera left at 45°, gentle fill camera right,
+           subtle rim from behind to separate him from the grey.
+           Identical across the whole day.
+SOUND      Lavalier plus boom, recorded separately. Quiet room.
+           Minimum three clean takes of every single line.
+WARDROBE   Tan detective coat, deerstalker cap, white shirt,
+           brass magnifying glass. Photograph it on arrival
+           for continuity. It never changes.</div>
+
+          <h3>Working with Manan</h3>
+          <p>Manan has ADHD. The whole shooting method is built around that, and it also happens to produce a better film.</p>
+          <ul>
+            <li><strong>One sentence per take.</strong> Never ask him to run a paragraph. Reset fully between lines.</li>
+            <li><strong>Let the camera roll through the resets.</strong> The unguarded moment between takes is often the one that ends up in the film.</li>
+            <li><strong>No counting down, no pressure language.</strong> Just roll and let him go when he is ready.</li>
+            <li><strong>Break every twenty minutes.</strong> A tired take is a wasted card.</li>
+            <li><strong>Take six is usually the one.</strong> The first takes are performed, the middle ones are relaxed. Shoot past the point where it feels finished.</li>
+          </ul>
+          <div class="hand">patience is the actual deliverable here. the picture is the easy part.</div>
+
+          <h3>The three setups</h3>
+          <table>
+            <tr><th>Setup</th><th>Scenes</th><th>What we need</th></tr>
+            <tr><td><strong>A</strong></td><td>1 and 2</td><td>Wide of Manan entering frame right, stopping, raising the glass, inspecting an eyeline mark at camera left. Then a medium for the dialogue.</td></tr>
+            <tr><td><strong>B</strong></td><td>3 and 4</td><td>Manan reacting to Coach Brain. Place a tennis ball on a stand at seated height for his eyeline. Plus ten seconds of silent reactions: surprise, listening, half smile.</td></tr>
+            <tr><td><strong>C</strong></td><td>6</td><td>Manan against grey, arms at his sides, three short lines direct to lens. Also shoot him looking left, looking right, and pointing up.</td></tr>
+          </table>
+          <p>Scene 5 needs nothing from you. It is entirely animation.</p>
+
+          <h3>Delivery</h3>
+          <ul>
+            <li>Original camera files, untouched, no transcode, no grade.</li>
+            <li>Separate audio files with the slate intact.</li>
+            <li>A photograph of the wardrobe and of each lighting setup.</li>
+            <li>Upload within 48 hours of the shoot. The whole Zagreb schedule starts the moment they land.</li>
+          </ul>
+        </div>
+        <div class="foot">Venkatesh Aurovenkatesh · Auroville · +91 81488 97033</div>
+      </section>
+
+      <!-- ===== KRISTIJAN ===== -->
+      <section class="pane" id="p-kristijan">
+        <div class="eyebrow">Animacija i motion</div>
+        <h1 class="pane-t">Kristijan</h1>
+        <p class="standfirst">Dolaziš na gotov rez. Upute za grafiku stižu kadar po kadar. Tvoje je kako to izgleda i kako diše s ritmom filma.</p>
+
+        <div class="grid">
+          <div class="stat"><div class="k">Prozor</div><div class="v hold">20.8. – 27.8.</div><div class="n">Puni tjedan, s dva tjedna rezerve iza</div></div>
+          <div class="stat"><div class="k">Dnevnica</div><div class="v">250 EUR</div><div class="n">Procjena 3 do 5 dana</div></div>
+          <div class="stat"><div class="k">Udio animacije</div><div class="v">~65%</div><div class="n">Od ukupnog trajanja filma</div></div>
+        </div>
+
+        <div class="sheet">
+          <h2>Podjela posla</h2>
+          <p>Koncept, snimljeni materijal i gotov rez dolaze od mene. Ti dobivaš točne upute za grafiku, kadar po kadar, a kod nekih kadrova ću naznačiti da idu kao čista animacija, bez snimke ispod. Što ide u animaciju i koja je ideja iza toga, to postavljam ja. Na tebi je stil.</p>
+
+          <h3>Gdje je težina animacije</h3>
+          <table>
+            <tr><th>Scena</th><th>Trajanje</th><th>Što treba</th><th>Težina</th></tr>
+            <tr><td>1 Misterij</td><td>18s</td><td>Maraton, freeze, upitnici, špica</td><td>Srednja</td></tr>
+            <tr><td>2 Stara teorija</td><td>24s</td><td>Ploča, tvornica, radnici, dim, pečat</td><td><strong>Teška</strong></td></tr>
+            <tr><td>3 Osumnjičeni</td><td>30s</td><td>Mission control, Coach Brain, monitori, poluga</td><td><strong>Teška</strong></td></tr>
+            <tr><td>4 Low power</td><td>20s</td><td>Telefon, baterija, morph u Coach Braina</td><td>Srednja</td></tr>
+            <tr><td>5 Finiš</td><td>20s</td><td>Split screen, sprint, mišićna vlakna</td><td><strong>Teška, bez snimke</strong></td></tr>
+            <tr><td>6 Obrat</td><td>8s</td><td>Bijela praznina, dva lika uz Manana, kartica</td><td>Laka</td></tr>
+          </table>
+          <p>Scena 5 nema snimljenog materijala, sve je crtano. Scene 1, 3, 4 i 6 su kompozit, Manan snimljen na sivom i ubačen u nacrtane prostore.</p>
+
+          <h3>Stil</h3>
+          <ul>
+            <li>Likovi su definirani na model sheetovima u tabu Characters. To je jedini izvor istine, ništa ne smije odlutati.</li>
+            <li>Broj 27 na dresu trkača u svakom kadru.</li>
+            <li>Coach Brain nikad nije uspaničen. On je najsmireniji lik u filmu, i to je cijela poanta.</li>
+            <li>Telefon je generički. Bez logotipa, bez prepoznatljivog brenda.</li>
+            <li>Hill i Noakes se crtaju, ne koriste se fotografije.</li>
+          </ul>
+
+          <h3>Isporuka</h3>
+          <div class="spec">FORMAT     ProRes 4444 s alpha kanalom, 25fps
+           Zasebni layeri gdje grafika ide preko snimke
+REZOLUCIJA 4K, isto kao snimka
+NAZIVI     scena_broj_opis_v1.mov
+ROK        27.8. natrag kod mene</div>
+          <div class="hand">ako ti tjedan djeluje pretijesno, reci odmah. rok natjecanja je 15.9., pa imamo prostora.</div>
+
+          <h3>Plaćanje</h3>
+          <p>Račun šalješ meni, ja ga stavljam u zajedničku mapu odakle ga naručiteljica preuzima. Pola unaprijed, prije nego kreneš s animacijom, pola po predaji. Bez avansa ne kreće se s poslom.</p>
+        </div>
+        <div class="foot">Kristijan Kaurić · Brojka Kreativna Produkcija · Zagreb</div>
+      </section>
+
+      <!-- ===== DIRECTOR ===== -->
+      <section class="pane" id="p-director">
+        <div class="eyebrow">Direction</div>
+        <h1 class="pane-t">Marko, director</h1>
+        <p class="standfirst">The job is to protect one idea from six people's good intentions.</p>
+
+        <div class="sheet">
+          <h2>The spine</h2>
+          <p>A question is asked in the first eighteen seconds and answered at 1:52. Everything between those two points either sharpens the question or delays the answer. Anything that does neither comes out, however good it is.</p>
+          <div class="hand">manan's draft was five minutes of genuinely good writing. cutting it is the hardest and most useful thing i do on this film.</div>
+
+          <h3>What got cut, and why</h3>
+          <ul>
+            <li><strong>The chalkboard flowchart.</strong> It explained the same thing as the factory. Two explanations of one idea is one too many. The factory survived because it is funnier and easier to feel.</li>
+            <li><strong>The extended Coach Brain comedy.</strong> The whistle, the red panic button, the medal ceremony. Charming, but the film has 120 seconds and the comedy was pushing out the science.</li>
+            <li><strong>The three card comparison at the end.</strong> Replaced by a handshake and a question mark. Faster, and it says the same thing without reading like a slide.</li>
+          </ul>
+
+          <h3>Direction of the performance</h3>
+          <p>Manan should sound like a boy who has genuinely noticed something odd, not like a presenter. Curiosity over polish. The takes where he forgets he is performing are the ones to use.</p>
+          <p>Because he has ADHD we shoot in fragments, one sentence at a time, and assemble the performance in the edit. This is not a compromise. Fragmented shooting produces a livelier cut than any long take would have.</p>
+
+          <h3>The one shot that must land</h3>
+          <p>Scene 4, the line "it's saving something for later". Everything before it is setup and everything after it is confirmation. If that take is not right, the film is competent instead of memorable. Shoot it into the ground.</p>
+
+          <h3>Tone</h3>
+          <ul>
+            <li>Warm and curious, never lecturing.</li>
+            <li>The film admits the science is unresolved. That honesty is the point of the last scene, and competition judges read for it.</li>
+            <li>No shouting, no big music swell on the reveal. The reveal is a lever moving quietly.</li>
+          </ul>
+        </div>
+        <div class="foot">Direction · Marko Boško</div>
+      </section>
+
+      <!-- ===== EDITOR ===== -->
+      <section class="pane" id="p-editor">
+        <div class="eyebrow">Picture</div>
+        <h1 class="pane-t">Marko, editor</h1>
+        <p class="standfirst">The performance does not exist until it is assembled. That is literally true on this film.</p>
+
+        <div class="sheet">
+          <h2>Method</h2>
+          <p>Manan is shot one sentence at a time. The edit stitches those fragments into a single continuous delivery, so the audience sees a boy speaking fluently for two minutes when in fact no take ran longer than a few seconds.</p>
+          <ul>
+            <li>Cut on the breath, not on the word. The join disappears in the intake.</li>
+            <li>Where a join will not hide, cut away to animation for eight frames and come back. There is always something drawn to cut to.</li>
+            <li>Keep the room tone continuous underneath so the audio never reveals the joins.</li>
+          </ul>
+
+          <h3>Pacing targets</h3>
+          <div class="spec">SCENE 1  0:00 – 0:18   fast in, then one long held beat on the question
+SCENE 2  0:18 – 0:42   quickest section of the film, near montage
+SCENE 3  0:42 – 1:12   slows down. this is where the audience settles.
+SCENE 4  1:12 – 1:32   slowest. let the phone breathe.
+SCENE 5  1:32 – 1:52   accelerates hard to the line
+SCENE 6  1:52 – 2:00   stops dead. white. quiet.</div>
+          <p>Total 2:00 exactly. The competition is strict about it, so the film is built to that number rather than trimmed to it afterwards.</p>
+
+          <h3>Order of work</h3>
+          <ol>
+            <li>Assemble Manan's performance first, with black where animation will go.</li>
+            <li>Lock that cut. Timings must be final before Kristijan starts, or he animates to a moving target.</li>
+            <li>Export a reference cut with burnt in timecode and scene labels for the animation brief.</li>
+            <li>Conform the returned animation layers, then grade.</li>
+          </ol>
+          <div class="hand">the rough cut going out on 20.8. is the most important delivery of the whole project. everything downstream is built on it.</div>
+        </div>
+        <div class="foot">Edit · Avid Media Composer</div>
+      </section>
+
+      <!-- ===== SOUND ===== -->
+      <section class="pane" id="p-sound">
+        <div class="eyebrow">Sound design</div>
+        <h1 class="pane-t">Marko, sound</h1>
+        <p class="standfirst">In a film this dense, sound is what makes the cuts vanish and the science feel physical.</p>
+
+        <div class="sheet">
+          <h2>The sound of each world</h2>
+          <table>
+            <tr><th>World</th><th>Character</th></tr>
+            <tr><td>Marathon</td><td>Crowd wash, breath, footfall on tarmac, distant commentary. Everything slightly compressed, like a broadcast.</td></tr>
+            <tr><td>Freeze</td><td>Everything drops away to a single low tone. The absence is the effect.</td></tr>
+            <tr><td>Classroom and factory</td><td>Chalk, dry room, then industrial. Trucks, hydraulics, an alarm klaxon, machinery slowing to a grind.</td></tr>
+            <tr><td>Mission control</td><td>Soft electronic beeps, a low room hum, the mechanical clunk of the lever. Calm and clinical.</td></tr>
+            <tr><td>Phone</td><td>One clean notification chime, then the world dims audibly as apps close.</td></tr>
+            <tr><td>White void</td><td>Near silence. Only the voice and a faint high tone.</td></tr>
+          </table>
+
+          <h3>The transitions carry the film</h3>
+          <p>Six worlds in 120 seconds could feel like channel hopping. Sound is what stops that. Each transition is bridged, the sound of the next world arrives a few frames before the picture does, so the viewer is pulled forward rather than pushed between scenes.</p>
+
+          <h3>Voice</h3>
+          <ul>
+            <li>Manan's voice is the constant across every world. It stays dry, close and unprocessed throughout, so wherever the picture goes, he is the anchor.</li>
+            <li>Coach Brain sits slightly behind, with a hint of room, as if genuinely in a control centre.</li>
+            <li>Clean up handling noise and breaths on the joins, but keep breath in the performance. Breath is the subject of this film.</li>
+          </ul>
+          <div class="hand">the freeze at 0:12 is the single best sound moment available. everything stops. use it.</div>
+        </div>
+        <div class="foot">Sound design and mix</div>
+      </section>
+
+      <!-- ===== MUSIC ===== -->
+      <section class="pane" id="p-music">
+        <div class="eyebrow">Original score</div>
+        <h1 class="pane-t">Marko, composer</h1>
+        <p class="standfirst">One instrument stands for the body, one for the brain. The whole score is the conversation between them.</p>
+
+        <div class="sheet">
+          <h2>The idea</h2>
+          <p>The film is an argument between muscle and mind, so the score is written as two voices. A pulse, which is the body, and a sustained tone, which is the governor watching over it. They are never in conflict. The tone simply keeps easing the pulse back.</p>
+
+          <h3>Palette</h3>
+          <ul>
+            <li><strong>The body</strong> is percussion. Frame drum and hand percussion, played dry and close, tracking the runner's cadence.</li>
+            <li><strong>The brain</strong> is sustained. A low synth pad and a single held flute note, calm and unhurried, always slightly above the drums.</li>
+            <li><strong>The discovery</strong> is a small bright motif, three notes, first heard under the question at 0:15 and resolved at 1:52 when the board flips over.</li>
+          </ul>
+
+          <h3>Map</h3>
+          <div class="spec">0:00  crowd and pulse, no score yet
+0:12  FREEZE. everything drops. the three note motif enters alone.
+0:18  factory section, mechanical rhythm, percussion leads
+0:42  mission control. pad enters. percussion pulls back.
+1:12  low power mode. almost nothing. one held note.
+1:32  the finish. pulse returns and builds, but never resolves fully.
+1:52  the motif returns complete. this is the release.
+2:00  one note left ringing into black.</div>
+          <div class="hand">never let it resolve to maximum. the brain never pushes to 100 percent, so neither does the music.</div>
+
+          <h3>Practical</h3>
+          <ul>
+            <li>Written to the locked picture, not before. Composing to a moving cut wastes the work.</li>
+            <li>Delivered as stems so the mix can duck cleanly under Manan's voice.</li>
+            <li>Entirely original, so there is no licensing question in a competition submission.</li>
+          </ul>
+        </div>
+        <div class="foot">Original score · composed to picture</div>
+      </section>
+
+      <!-- ===== VERSIONS ===== -->
+      <section class="pane" id="p-versions">
+        <div class="eyebrow">Archive</div>
+        <h1 class="pane-t">Versions</h1>
+        <p class="standfirst">Every cut, every test, every abandoned idea. Nothing gets overwritten, so the film's whole history stays readable.</p>
+
+        <div class="empty">
+          <div class="big">No cuts uploaded yet</div>
+          <div class="small">The first delivery lands here around 20.8.<br>Rough cut with placeholder graphics, then the animated cut, then the final film.</div>
+        </div>
+
+        <div class="sheet dim" style="margin-top:26px">
+          <h2>What lands here, and when</h2>
+          <table>
+            <tr><th>Version</th><th>What it is</th><th>Expected</th></tr>
+            <tr><td>v1</td><td>Assembly. Manan's performance only, black where animation will go.</td><td>after the shoot</td></tr>
+            <tr><td>v2</td><td>Rough cut with timecode and scene labels. The animation brief.</td><td>20.8.</td></tr>
+            <tr><td>v3</td><td>Animated cut. Kristijan's layers conformed.</td><td>27.8.</td></tr>
+            <tr><td>v4</td><td>Sound, score and grade. Delivery candidate.</td><td>31.8.</td></tr>
+            <tr><td>Final</td><td>Competition master, 2:00 exactly.</td><td>1.9.</td></tr>
+          </table>
+          <p>Older versions stay online after they are superseded. Half the value of an archive is being able to see what a film almost became.</p>
+        </div>
+        <div class="foot">Archive · nothing is deleted</div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script>
+(function(){
+  var PW='manan',
+      C_AUTH='bb_auth', C_TAB='bb_tab', C_SCROLL='bb_scroll',
+      DEFAULT='overview';
+
+  function setCookie(k,v,days){
+    var d=new Date(); d.setTime(d.getTime()+days*864e5);
+    document.cookie=k+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';
+  }
+  function getCookie(k){
+    var m=document.cookie.match('(^|; )'+k+'=([^;]*)');
+    return m?decodeURIComponent(m[2]):null;
+  }
+
+  var gate=document.getElementById('gate'),
+      app=document.getElementById('app'),
+      form=document.getElementById('gate-form'),
+      pw=document.getElementById('pw'),
+      rem=document.getElementById('rem'),
+      err=document.getElementById('gate-err');
+
+  function daysLeft(){
+    var lock=new Date(2026,8,1), now=new Date();
+    return Math.max(0, Math.ceil((lock-now)/864e5));
+  }
+
+  function show(id,save){
+    var panes=document.querySelectorAll('.pane'), i;
+    for(i=0;i<panes.length;i++) panes[i].classList.remove('on');
+    var target=document.getElementById('p-'+id);
+    if(!target){ target=document.getElementById('p-'+DEFAULT); id=DEFAULT; }
+    target.classList.add('on');
+    var tabs=document.querySelectorAll('.tab');
+    for(i=0;i<tabs.length;i++) tabs[i].classList.toggle('on', tabs[i].dataset.p===id);
+    if(save!==false){ setCookie(C_TAB,id,180); setCookie(C_SCROLL,'0',180); window.scrollTo(0,0); }
+  }
+
+  function open(){
+    gate.style.display='none';
+    app.style.display='block';
+    document.getElementById('m-days').textContent=daysLeft();
+    var last=getCookie(C_TAB)||DEFAULT;
+    show(last,false);
+    var y=parseInt(getCookie(C_SCROLL)||'0',10);
+    if(y>0) setTimeout(function(){ window.scrollTo(0,y); },60);
+  }
+
+  var tabs=document.querySelectorAll('.tab');
+  for(var i=0;i<tabs.length;i++){
+    tabs[i].addEventListener('click',function(){ show(this.dataset.p,true); });
+  }
+
+  var t=null;
+  window.addEventListener('scroll',function(){
+    if(app.style.display!=='block') return;
+    clearTimeout(t);
+    t=setTimeout(function(){ setCookie(C_SCROLL,String(window.scrollY||0),180); },220);
+  });
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(pw.value.trim().toLowerCase()===PW){
+      if(rem.checked) setCookie(C_AUTH,'1',180);
+      open();
+    }else{
+      err.textContent='Not that one. Try again.';
+      pw.value=''; pw.focus();
+    }
+  });
+
+  if(getCookie(C_AUTH)==='1') open();
+})();
+</script>
+</body>
+</html>
