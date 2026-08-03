@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>THE BRAIN BRAKE — Mission Control</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0b0e13">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;1,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
@@ -120,66 +124,85 @@ button.enter:focus-visible{outline:2px solid var(--paper);outline-offset:2px}
   color:var(--dim);letter-spacing:.1em;
 }
 
-.wrap{display:flex;align-items:flex-start;min-height:calc(100vh - 60px)}
+.wrap{display:block}
+body{overflow-x:hidden}
 
-/* ---------- RAIL ---------- */
-.rail{
-  width:268px;flex:0 0 268px;
-  border-right:1px solid var(--rule);
+/* ---------- FOLDER TABS ---------- */
+.tabbar{
   background:var(--panel);
-  padding:22px 0 40px;
-  position:sticky;top:60px;
-  max-height:calc(100vh - 60px);overflow-y:auto;
+  border-bottom:3px solid var(--paper);
+  padding:14px 22px 0;
+  display:flex;flex-wrap:wrap;align-items:flex-end;gap:3px;
+  position:sticky;top:59px;z-index:35;
 }
-.rail-head{
-  font-family:'IBM Plex Mono',monospace;font-size:9px;
-  letter-spacing:.26em;text-transform:uppercase;color:var(--dim);
-  padding:0 22px;margin:22px 0 10px;
-}
-.rail-head:first-child{margin-top:0}
 .tab{
-  display:flex;align-items:center;gap:11px;
-  width:100%;text-align:left;background:none;border:0;cursor:pointer;
-  padding:10px 22px;color:#9fb0c4;
-  font-family:'Barlow Condensed',sans-serif;font-size:17px;
-  letter-spacing:.05em;text-transform:uppercase;font-weight:500;
-  border-left:2px solid transparent;
+  position:relative;
+  background:#3b3a35;
+  color:#b9b2a2;
+  border:0;border-bottom:0;
+  padding:7px 11px 9px;
+  cursor:pointer;
+  text-align:left;
+  border-radius:7px 7px 0 0;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07);
+  top:3px;
+  min-width:80px;
 }
-.tab:hover{background:var(--panel-2);color:#dbe6f2}
-.tab:focus-visible{outline:2px solid var(--signal);outline-offset:-2px}
-.tab.on{background:var(--panel-2);color:var(--signal);border-left-color:var(--signal)}
+.tab:hover{background:#4d4b43;color:#e2dbc9}
+.tab:focus-visible{outline:2px solid var(--signal);outline-offset:-3px}
+.tab.on{
+  background:var(--paper);
+  color:var(--graphite);
+  top:0;
+  padding-bottom:12px;
+  box-shadow:0 -1px 0 var(--paper-2);
+  z-index:2;
+}
+.tab .rl{
+  display:block;
+  font-family:'Barlow Condensed',sans-serif;font-weight:600;
+  font-size:15px;line-height:1;letter-spacing:.05em;text-transform:uppercase;
+  white-space:nowrap;
+}
 .tab .who{
-  font-family:'IBM Plex Mono',monospace;font-size:9px;
-  color:var(--dim);letter-spacing:.12em;margin-left:auto;text-transform:uppercase;
+  display:block;
+  font-family:'IBM Plex Mono',monospace;font-size:8.5px;
+  letter-spacing:.14em;text-transform:uppercase;
+  margin-top:4px;opacity:.72;white-space:nowrap;
 }
-.tab.on .who{color:var(--signal)}
-.led{width:6px;height:6px;border-radius:50%;background:var(--rule);flex:0 0 6px}
-.led.go{background:var(--live)}
-.led.hold{background:var(--lever)}
+.tab.on .who{opacity:.62}
+.tab .led{
+  position:absolute;top:6px;right:7px;
+  width:5px;height:5px;border-radius:50%;background:#6a675e;
+}
+.tab .led.go{background:var(--live)}
+.tab .led.hold{background:var(--lever)}
+.tab.on .led{box-shadow:0 0 0 1.5px rgba(0,0,0,.15)}
+.tabgap{width:9px;flex:0 0 9px}
 
-/* signature: power output lever */
-.lever-box{margin:30px 22px 0;padding-top:22px;border-top:1px solid var(--rule)}
+/* lever strip under the tabs */
+.lever-box{
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:11px 24px;border-bottom:1px solid var(--rule);background:var(--void);
+}
 .lever-lbl{
   font-family:'IBM Plex Mono',monospace;font-size:9px;
   letter-spacing:.2em;text-transform:uppercase;color:var(--dim);
-  display:flex;justify-content:space-between;align-items:baseline;
+  display:flex;align-items:baseline;gap:9px;
 }
-.lever-lbl b{font-size:19px;color:var(--lever);font-weight:600;letter-spacing:0}
+.lever-lbl b{font-size:17px;color:var(--lever);font-weight:600;letter-spacing:0}
 .track{
-  margin-top:12px;height:9px;background:var(--void);
-  border:1px solid var(--rule);position:relative;
+  flex:1;min-width:150px;max-width:340px;height:8px;
+  background:var(--panel);border:1px solid var(--rule);position:relative;
 }
 .fill{height:100%;background:var(--lever);width:31%}
-.notch{
-  position:absolute;top:-4px;bottom:-4px;width:1px;background:var(--rule);
-}
+.notch{position:absolute;top:-3px;bottom:-3px;width:1px;background:var(--rule)}
 .lever-note{
-  font-family:'Caveat',cursive;font-size:15px;color:var(--dim);
-  margin-top:10px;line-height:1.3;
+  font-family:'Caveat',cursive;font-size:15px;color:var(--dim);line-height:1.2;
 }
 
 /* ---------- STAGE ---------- */
-.stage{flex:1;min-width:0;padding:34px 40px 90px;max-width:1080px}
+.stage{padding:34px 40px 100px;max-width:1060px;margin:0 auto}
 .pane{display:none;animation:rise .32s ease both}
 .pane.on{display:block}
 @keyframes rise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
@@ -370,13 +393,16 @@ td{padding:9px 11px 9px 0;border-bottom:1px solid rgba(46,43,38,.18);vertical-al
 }
 
 @media(max-width:880px){
-  .wrap{display:block}
-  .rail{width:auto;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;padding:12px 8px}
-  .rail-head{display:none}
-  .tab{width:auto;padding:8px 13px;font-size:15px;border-left:0;border-bottom:2px solid transparent}
-  .tab.on{border-left-color:transparent;border-bottom-color:var(--signal)}
+  .tabbar{padding:10px 10px 0;top:0;position:static}
+  .tab{min-width:0;padding:6px 11px 8px}
+  .tab .rl{font-size:14px}
   .tab .who{display:none}
-  .lever-box{width:100%;margin:14px 12px 4px}
+  .tabgap{display:none}
+  .lever-box{padding:10px 14px}
+  .lever-note{display:none}
+  .fr{flex-direction:column;gap:8px}
+  .fr-id{flex:none}
+  .board{max-width:100%}
   .stage{padding:24px 18px 70px}
   .sheet{padding:22px 19px}
   .slate{padding:12px 16px}
@@ -386,7 +412,7 @@ td{padding:9px 11px 9px 0;border-bottom:1px solid rgba(46,43,38,.18);vertical-al
 </head>
 <body>
 
-<div class="ver">4 (a)</div>
+<div class="ver">5 (a)</div>
 
 <!-- ============ GATE ============ -->
 <div id="gate">
@@ -420,41 +446,34 @@ td{padding:9px 11px 9px 0;border-bottom:1px solid rgba(46,43,38,.18);vertical-al
     </div>
   </header>
 
+  <nav class="tabbar" aria-label="Sections">
+    <button class="tab" data-p="overview"><span class="led go"></span><span class="rl">Overview</span><span class="who">All</span></button>
+    <button class="tab" data-p="script"><span class="led hold"></span><span class="rl">The Film</span><span class="who">Script</span></button>
+    <button class="tab" data-p="board"><span class="led hold"></span><span class="rl">Storyboard</span><span class="who">35 shots</span></button>
+    <button class="tab" data-p="chars"><span class="led go"></span><span class="rl">Characters</span><span class="who">Design</span></button>
+    <span class="tabgap"></span>
+    <button class="tab" data-p="neha"><span class="led go"></span><span class="rl">Neha</span><span class="who">Client</span></button>
+    <button class="tab" data-p="venkatesh"><span class="led hold"></span><span class="rl">Venkatesh</span><span class="who">Camera</span></button>
+    <button class="tab" data-p="kristijan"><span class="led hold"></span><span class="rl">Kristijan</span><span class="who">Animation</span></button>
+    <span class="tabgap"></span>
+    <button class="tab" data-p="director"><span class="led go"></span><span class="rl">Director</span><span class="who">Marko</span></button>
+    <button class="tab" data-p="editor"><span class="led "></span><span class="rl">Editor</span><span class="who">Marko</span></button>
+    <button class="tab" data-p="sound"><span class="led "></span><span class="rl">Sound</span><span class="who">Marko</span></button>
+    <button class="tab" data-p="music"><span class="led "></span><span class="rl">Music</span><span class="who">Marko</span></button>
+    <span class="tabgap"></span>
+    <button class="tab" data-p="versions"><span class="led "></span><span class="rl">Versions</span><span class="who">Archive</span></button>
+  </nav>
+  <div class="lever-box">
+    <div class="lever-lbl"><span>Power output</span><b>31%</b></div>
+    <div class="track"><div class="fill"></div>
+      <span class="notch" style="left:25%"></span>
+      <span class="notch" style="left:50%"></span>
+      <span class="notch" style="left:75%"></span>
+    </div>
+    <div class="lever-note">not maximum. never maximum. we save some for the finish.</div>
+  </div>
+
   <div class="wrap">
-
-    <!-- RAIL -->
-    <nav class="rail" aria-label="Departments">
-      <div class="rail-head">Production</div>
-      <button class="tab" data-p="overview"><span class="led go"></span>Overview<span class="who">All</span></button>
-      <button class="tab" data-p="script"><span class="led hold"></span>The Film<span class="who">Script</span></button>
-      <button class="tab" data-p="board"><span class="led hold"></span>Storyboard<span class="who">35 shots</span></button>
-      <button class="tab" data-p="chars"><span class="led go"></span>Characters<span class="who">Design</span></button>
-
-      <div class="rail-head">Crew</div>
-      <button class="tab" data-p="neha"><span class="led go"></span>Neha<span class="who">Client</span></button>
-      <button class="tab" data-p="venkatesh"><span class="led hold"></span>Venkatesh<span class="who">Camera</span></button>
-      <button class="tab" data-p="kristijan"><span class="led hold"></span>Kristijan<span class="who">Animation</span></button>
-
-      <div class="rail-head">Marko Boško · all post roles</div>
-      <button class="tab" data-p="director"><span class="led go"></span>Director<span class="who">Marko</span></button>
-      <button class="tab" data-p="editor"><span class="led"></span>Editor<span class="who">Marko</span></button>
-      <button class="tab" data-p="sound"><span class="led"></span>Sound<span class="who">Marko</span></button>
-      <button class="tab" data-p="music"><span class="led"></span>Music<span class="who">Marko</span></button>
-
-      <div class="rail-head">Archive</div>
-      <button class="tab" data-p="versions"><span class="led"></span>Versions<span class="who">WIP</span></button>
-
-      <div class="lever-box">
-        <div class="lever-lbl"><span>Power output</span><b>31%</b></div>
-        <div class="track"><div class="fill"></div>
-          <span class="notch" style="left:25%"></span>
-          <span class="notch" style="left:50%"></span>
-          <span class="notch" style="left:75%"></span>
-        </div>
-        <div class="lever-note">not maximum. never maximum. we save some for the finish.</div>
-      </div>
-    </nav>
-
     <!-- STAGE -->
     <main class="stage">
 
