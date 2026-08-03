@@ -1,0 +1,862 @@
+#!/usr/bin/env python3
+"""8-rebuild-site-v8.py — regenerates index.html completely, from data."""
+import html as H
+
+# ------------------------------------------------------------------ data
+
+SHOT_SHEETS = [
+    ("1_1", "1.1", "0:00 – 0:05", "Animation only"),
+    ("1_2", "1.2", "0:05 – 0:08", "Animation only"),
+    ("1_3", "1.3", "0:08 – 0:13", "Setup A · live action"),
+    ("1_4", "1.4", "0:13 – 0:15", "Setup A · insert"),
+    ("1_5", "1.5", "0:15 – 0:18", "Setup A · to camera"),
+]
+
+SCENES = [
+ dict(n=1, title="The Mystery", tc="0:00 – 0:18", boarded=True,
+   log="A man who has nothing left does something impossible. A boy in a coat decides to find out why.",
+   frames=[]),
+ dict(n=2, title="The Old Answer", tc="0:18 – 0:42", boarded=False,
+   log="For a century the muscles took the blame. The case looked closed.",
+   frames=[
+     ("2A","0:18 – 0:24 · static · animation only",
+      "A dusty classroom. Light falls across an old chalkboard carrying a portrait of a moustached scientist and a chalked chain of reasoning. The room feels abandoned, which is the point.",
+      [("MANAN (V.O.)","For a hundred years, we blamed the muscles.")],
+      [("anim","Chalkboard text must read RUN FASTER, then OXYGEN, then FATIGUE, then STOP. Portrait labelled A.V. HILL, 1923. Drawn, never photographic."),
+       ("cam","Nothing required."),
+       ("snd","Dry dead room. Chalk on slate. A clock somewhere."),
+       ("mus","Score drops out entirely. Let the room be silent.")]),
+     ("2B","0:24 – 0:36 · wide · live action inside animation",
+      "Inside the leg, a factory. Gears turn in the shape of a calf muscle, conveyor belts run, a backup power lever waits at the far wall. Three workers labour, panic and haul. Manan walks through it all with his glass, unbothered, the only calm thing in the room.",
+      [("MANAN (V.O.)","Oxygen comes in. Fuel burns. Everything runs.\nUntil it doesn't.")],
+      [("cam","SETUP A. Manan stands still, holding the glass at chest height, looking slowly left to right at nothing. Shoot thirty seconds of him simply observing. No lines to camera here."),
+       ("anim","The heaviest frame in the film. Machinery, three workers, smoke, conveyor. Workers stay small so Manan reads as the subject."),
+       ("snd","Industrial. Hydraulics, trucks arriving, then not arriving. An alarm klaxon. Machines slowing to a grind."),
+       ("mus","Percussion leads. Mechanical, on the beat, almost a work song.")]),
+     ("2C","0:36 – 0:42 · macro · animation only",
+      "Close on a gear grinding to a halt as smoke pours across it, and a pressure gauge with the needle buried in the red. The old theory reaching its limit.",
+      [("MANAN (V.O.)","Except it doesn't explain this.")],
+      [("anim","The red needle is the only colour permitted in the whole film besides skin tones. Use it once, here."),
+       ("cam","Nothing required."),
+       ("snd","Metal stress, a deep groan, then the case closed stamp landing hard."),
+       ("mus","Percussion stops mid bar. Do not resolve it.")]),
+   ]),
+ dict(n=3, title="The Suspect", tc="0:42 – 1:12", boarded=False,
+   log="Behind the broken chalkboard, somebody has been watching the whole race.",
+   frames=[
+     ("3A","0:42 – 0:52 · wide · animation only",
+      "A curved wall of monitors reading heart rate, temperature, hydration. In the middle of it all, a cartoon brain in a tracksuit sits in a large chair with a coffee mug, entirely unhurried.",
+      [],
+      [("anim","The reveal. Push in slowly. Every monitor is live and moving. Coach Brain does not react to the camera arriving."),
+       ("cam","Nothing required."),
+       ("snd","Soft electronic beeps, a low room hum. Clinical and calm. The opposite of the factory."),
+       ("mus","Sustained pad enters for the first time. This is the brain's voice in the score.")]),
+     ("3B","0:52 – 1:02 · two shot · live action inside animation",
+      "Manan and Coach Brain face each other. Manan is genuinely startled. Coach Brain is delighted and completely relaxed, mug in hand.",
+      [("MANAN","You've been watching the whole race?"),
+       ("COACH BRAIN","Every second.\nEvery heartbeat. Every breath. Every drop of sweat.")],
+      [("cam","SETUP B. Tennis ball on a stand at seated height, camera left, for his eyeline. Shoot the line, then ten seconds of silent reaction: surprise, listening, half smile."),
+       ("anim","Glowing lines radiate from Coach Brain out to a drawn heart, lungs, thermometer and water droplet as he speaks."),
+       ("snd","A soft click on each item as the network connects. Four clicks, evenly spaced."),
+       ("mus","Pad holds. Percussion pulls right back. The film gets quieter as it gets more interesting.")]),
+     ("3C","1:02 – 1:12 · two shot with screen · live action inside animation",
+      "A monitor between them shows the runner. Coach Brain eases the power output lever from 100 down to 82 without putting down his coffee. On screen the runner does not collapse. He settles into a pace he can hold.",
+      [("MANAN","So you're controlling my muscles."),
+       ("COACH BRAIN","I'm not stopping you.\nI'm getting you to the finish line."),
+       ("SUBTITLE, 2 SEC","Central Governor Theory, proposed by Prof. Tim Noakes, 1997. Still debated by scientists.")],
+      [("cam","SETUP B continued. Same eyeline. He listens, then answers. Keep him small in frame so the screen has room."),
+       ("anim","The lever is the single most important object in the film. Numerals 100% and 82% must be legible as it moves."),
+       ("snd","A mechanical clunk as the lever seats. The runner's breathing eases audibly under it."),
+       ("mus","One note steps down as the lever moves. The score does what the picture does.")]),
+   ]),
+ dict(n=4, title="Low Power Mode", tc="1:12 – 1:32", boarded=False,
+   log="The idea everybody already understands, sitting in their pocket the whole time.",
+   frames=[
+     ("4A","1:12 – 1:18 · macro · animation only",
+      "A phone fills the frame. The battery reads twenty percent, a low power mode banner slides across, and the background apps quietly close themselves and drift away.",
+      [("MANAN (O.S.)","Wait. Is it broken?")],
+      [("anim","Phone must be fully generic. No notch, no recognisable silhouette, no brand."),
+       ("cam","Nothing required."),
+       ("snd","One clean notification chime, then the world audibly dims as each app closes."),
+       ("mus","Almost nothing. One held note. The quietest point in the film.")]),
+     ("4B","1:18 – 1:26 · wide · live action inside animation",
+      "Manan stands small at the foot of the screen, dwarfed by it, looking up as a shield forms around the battery.",
+      [("MANAN","It's saving something for later.")],
+      [("cam","SETUP B. Manan looking up and slightly off camera. This is the emotional centre of the whole film. Shoot it eight to ten times. Take six is usually the one."),
+       ("anim","The shield draws itself as he says the line, not before. Let the picture arrive on the word."),
+       ("snd","Nothing underneath the line. Let it sit completely bare."),
+       ("mus","Held note only. Do not add anything here, however tempting.")]),
+     ("4C","1:26 – 1:32 · close up · live action inside animation",
+      "Tight on Manan looking up, the shielded battery glowing beside his face. Then the phone morphs back into Coach Brain, the battery becomes the runner, the shield becomes a finish line.",
+      [("COACH BRAIN","Tired might not mean empty.\nIt might mean, ease off, we're not home yet.")],
+      [("cam","SETUP B. Low angle close up, chin slightly raised, eyes up. No dialogue on his face here, just listening."),
+       ("anim","The morph is one continuous move. Phone to brain, battery to runner, shield to finish line, all in the same breath."),
+       ("snd","A soft rising tone across the transformation. No hard cut."),
+       ("mus","Pad swells gently, then holds. Still no resolution.")]),
+   ]),
+ dict(n=5, title="The Finish", tc="1:32 – 1:52", boarded=False,
+   log="The question from the first eighteen seconds, finally answered.",
+   frames=[
+     ("5A","1:32 – 1:38 · split screen · animation only",
+      "Left, the runner twenty metres out, sweat pouring, the tape just ahead. Right, Coach Brain at his desk reading every screen, calm, mug still in hand. Both happening at the same instant.",
+      [],
+      [("anim","The hairline split is drawn, not a hard digital edge. Distance counter ticking 20, 19, 18 on his console."),
+       ("cam","Nothing required. Manan does not appear in this scene at all."),
+       ("snd","Left side loud, breath and crowd. Right side almost silent. The contrast is the whole idea."),
+       ("mus","Pulse returns underneath, quiet at first.")]),
+     ("5B","1:38 – 1:48 · wide · animation only",
+      "The sprint. Speed lines streaming, the legs drawn semi transparent, muscle fibres lighting up one after another as more are recruited. The lever has gone from 82 to 95 and never to 100.",
+      [("MANAN (V.O.)","The brain didn't make new energy.\nIt just decided it was finally safe to spend it."),
+       ("CAPTION","More muscle fibres recruited.\nNotice: not maximum.")],
+      [("anim","The glowing fibres are the money shot of the animation. Light them in sequence, not all at once, so recruitment reads as a process."),
+       ("cam","Nothing required."),
+       ("snd","Everything opens up. Crowd erupts, footfall sharpens, breath drives. Loudest point of the film."),
+       ("mus","Pulse builds hard but never fully resolves. The brain never goes to 100 percent, so neither does the music.")]),
+     ("5C","1:48 – 1:52 · static · animation only",
+      "The detective board swings over on its easel to reveal what was written on the back all along, while behind it the runner crosses the line and freezes.",
+      [("ON THE BOARD","YOUR BRAIN WAS SAVING SOME ALL ALONG.")],
+      [("anim","The handwriting on the reverse must be clean and legible."),
+       ("cam","Nothing required."),
+       ("snd","The board swinging on its hinge, then everything cuts to nothing on the freeze."),
+       ("mus","The three note motif from 0:12 returns complete. This is the release the film has withheld for ninety seconds.")]),
+   ]),
+ dict(n=6, title="The Twist", tc="1:52 – 2:00", boarded=False,
+   log="Nobody wins the argument, and that is the honest ending.",
+   frames=[
+     ("6A","1:52 – 1:55 · wide · live action inside animation",
+      "White void. Manan stands between the Muscle and Coach Brain. Between them, an emergency brake marked fatigue. Instead of arguing, the two of them reach across and shake hands.",
+      [("MANAN","So who was right?")],
+      [("cam","SETUP C. Manan against grey, arms at his sides, one line to lens. Also shoot him looking left and looking right so the two characters can be placed beside him."),
+       ("anim","Pure white. No floor detail, no horizon. The handshake happens over the brake, not beside it."),
+       ("snd","Near silence. A faint high tone. Everything else gone."),
+       ("mus","Motif thins out to a single sustained note.")]),
+     ("6B","1:55 – 1:58 · wide · live action inside animation",
+      "Pull back. All three are tiny against an enormous fatigue lever that dwarfs them completely. Nobody is in charge of it.",
+      [("MANAN","Scientists are still arguing.\nThat's the best part.")],
+      [("cam","SETUP C continued. Same position, two short lines. He should sound pleased, not resigned."),
+       ("anim","Scale is the joke. The lever should feel absurdly, comically larger than all three of them."),
+       ("snd","Room tone only."),
+       ("mus","One note, held, thinning.")]),
+     ("6C","1:58 – 2:00 · wide · live action inside animation",
+      "Manan considers it, hand to chin. The Muscle sags, Coach Brain slumps against the base of the lever. Two exhausted characters and one boy who has just understood something. Cut to black.",
+      [("END CARD","THE STRONGEST FINISH MIGHT BEGIN WITH THE SMARTEST BRAKE.")],
+      [("cam","SETUP C. Hand to chin, thinking, looking slightly up and off. No line. Shoot it long and use the quietest moment."),
+       ("anim","Both characters visibly spent. After two minutes of arguing about fatigue, the joke is that they are the ones who are tired."),
+       ("snd","One last breath, then nothing. Cut hard to black on silence."),
+       ("mus","Final note rings out into the black and is allowed to decay fully.")]),
+   ]),
+]
+
+TAGNAMES = {"cam":"cam","anim":"anim","snd":"snd","mus":"mus"}
+
+def esc(s): return H.escape(s, quote=False)
+
+def frames_html(scene, only=None):
+    if scene["boarded"]:
+        out = ['<div class="sheets">']
+        for key, code, tc, kind in SHOT_SHEETS:
+            out.append(
+              f'<figure class="shot">'
+              f'<img class="board" src="assets/shots/SH{key}_w.jpg" data-full="assets/shots/SH{key}.jpg" '
+              f'alt="Shot {code}" loading="lazy">'
+              f'<figcaption><b>Shot {code}</b><span>{tc} · {kind}</span></figcaption>'
+              f'</figure>')
+        out.append('</div>')
+        return "".join(out)
+    out = ['<p class="pend">Boards for this scene are being drawn shot by shot, the same way as Scene 1. '
+           'The notes below are final and can be worked from now.</p>']
+    for fid, meta, action, said, notes in scene["frames"]:
+        out.append('<div class="fr">')
+        out.append(f'<div class="fr-id">{fid}</div>')
+        out.append('<div class="fr-b">')
+        out.append(f'<p class="fr-t">{esc(meta)}</p>')
+        out.append(f'<p class="fr-a">{esc(action)}</p>')
+        if said:
+            out.append('<div class="said">')
+            for nm, ln in said:
+                out.append(f'<p class="nm">{esc(nm)}</p>')
+                out.append(f'<p class="ln">{esc(ln)}</p>')
+            out.append('</div>')
+        else:
+            out.append('<p class="silent">No words. Picture and sound only.</p>')
+        out.append('<div class="notes">')
+        for tag, txt in notes:
+            if only and tag != only and tag not in ("cam", "anim"):
+                pass
+            out.append(f'<p class="nt"><span class="tag {tag}">{TAGNAMES[tag]}</span>'
+                       f'<span class="ntx">{esc(txt)}</span></p>')
+        out.append('</div>')
+        out.append('</div>')
+        out.append('</div>')
+    return "".join(out)
+
+def scene_html(scene):
+    return ('<section class="sc">'
+            f'<h3 class="sc-h">Scene {scene["n"]} — {esc(scene["title"])}'
+            f'<span class="tc">{scene["tc"]}</span></h3>'
+            f'<p class="sc-log">{esc(scene["log"])}</p>'
+            + frames_html(scene) +
+            '</section>')
+
+def all_scenes(nums):
+    return "".join(scene_html(s) for s in SCENES if s["n"] in nums)
+
+GLASS = ('<svg class="glass" viewBox="0 0 40 40" aria-hidden="true">'
+         '<circle cx="17" cy="17" r="11.5" fill="none" stroke="currentColor" stroke-width="2.6"/>'
+         '<circle cx="17" cy="17" r="8.5" fill="currentColor" opacity=".10"/>'
+         '<line x1="25.4" y1="25.4" x2="35" y2="35" stroke="currentColor" '
+         'stroke-width="4.2" stroke-linecap="round"/></svg>')
+
+TABS = [
+ ("overview","Overview","All"),
+ ("script","The Film","Script"),
+ ("board","Storyboard","35 shots"),
+ ("chars","Characters","Design"),
+ ("neha","Neha","Client"),
+ ("venkatesh","Venkatesh","Camera"),
+ ("kristijan","Kristijan","Animation"),
+ ("director","Director","Marko"),
+ ("editor","Editor","Marko"),
+ ("sound","Sound","Marko"),
+ ("music","Music","Marko"),
+ ("versions","Versions","Archive"),
+]
+
+# ------------------------------------------------------------------ panes
+
+def pane(pid, eyebrow, title, standfirst, body):
+    return (f'<section class="pane" id="p-{pid}">'
+            f'<p class="eyebrow">{eyebrow}</p>'
+            f'<h2 class="pane-t">{title}</h2>'
+            f'<p class="standfirst">{standfirst}</p>'
+            f'{body}</section>')
+
+def stats(items):
+    out = ['<div class="grid">']
+    for k, v, cls, n in items:
+        out.append(f'<div class="stat"><p class="k">{k}</p>'
+                   f'<p class="v {cls}">{v}</p><p class="n">{n}</p></div>')
+    out.append('</div>')
+    return "".join(out)
+
+P = []
+
+P.append(pane("overview","Mission control","Where the film stands",
+  "One boy, one camera, one brain in a tracksuit. A two minute film about why your body slows you down before it breaks you.",
+  stats([("Script","Boarded","go","Cut to 2:00. Scene 1 drawn shot by shot."),
+         ("Shoot","Not booked","","One day, Pondicherry. Date to be set with Venkatesh."),
+         ("Animation","Quoting","hold","Brojka, Zagreb. Scope follows the shot list."),
+         ("Post","Queued","","Edit, sound, original score. Starts the day rushes land.")])
+  + '<div class="sheet">'
+    '<h3>What we are making</h3>'
+    '<p>A two minute film explaining the Central Governor Theory, the idea that fatigue is not your muscles running out '
+    'of fuel but your brain applying a protective brake. Manan appears on camera as a detective investigating an '
+    'impossible question. Everything around him is animated.</p>'
+    '<p class="hand">the whole film hangs on one moment: the phone in low power mode. protect that moment, cut anywhere else.</p>'
+    '<h4>Who does what</h4>'
+    '<table><tr><th>Person</th><th>Role</th><th>Where</th></tr>'
+    '<tr><td><b>Neha Sonthalia Periwal</b></td><td>Client and producer, sole approval point</td><td>Bangalore</td></tr>'
+    '<tr><td><b>Manan Periwal</b></td><td>Writer and performer, owns the concept</td><td>Bangalore</td></tr>'
+    '<tr><td><b>Venkatesh Aurovenkatesh</b></td><td>Cinematographer, camera, sound, lighting</td><td>Auroville</td></tr>'
+    '<tr><td><b>Kristijan Kaurić</b></td><td>Animation and motion, Brojka</td><td>Zagreb</td></tr>'
+    '<tr><td><b>Marko Boško</b></td><td>Director, editor, sound design, original score</td><td>Zagreb</td></tr></table>'
+    '<h4>The chain</h4>'
+    '<p>Nothing here runs in parallel. Each stage feeds the next, so a slip anywhere pushes everything behind it.</p>'
+    '<pre class="spec">SCRIPT LOCKED          →  done\n'
+    'SHOT LIST TO VENKATESH →  Scene 1 done, 2 to 6 in progress\n'
+    'SHOOT IN INDIA         →  mid 8. mjesec\n'
+    'RUSHES TO ZAGREB       →  within 48h of the shoot\n'
+    'EDIT + GRAPHICS BRIEF  →  20.8.\n'
+    'ANIMATION BACK         →  27.8.\n'
+    'SOUND, SCORE, GRADE    →  28.8. to 31.8.\n'
+    'DELIVERY TO NEHA       →  1.9.\n'
+    'COMPETITION DEADLINE   →  15.9.   (two weeks of reserve)</pre>'
+    '<p>The shoot is the fragile link. Everything downstream is inside one country and one editing room. '
+    'Once the rushes exist, the rest is controllable.</p>'
+    '<h4>Rules that do not bend</h4>'
+    '<ul><li>The concept, script and explanation are Manan\'s own work. The crew provides craft, not ideas.</li>'
+    '<li>No brand logos on screen. The phone is generic.</li>'
+    '<li>Hill and Noakes are drawn, never photographed.</li>'
+    '<li>The theory is presented as contested, not settled. The subtitle stays in.</li></ul>'
+    '</div>'))
+
+P.append(pane("script","Shooting script","The film, 2:00",
+  "Six scenes. Three live action setups. Everything else is drawn.",
+  '<div class="sheet">'
+  '<h3>Scene 1 — The Mystery <span class="tcs">0:00 – 0:18</span></h3>'
+  '<p>A lean runner is failing. The commentator writes him off. Then he explodes into a sprint. Freeze. Manan steps into '
+  'the frozen frame with the magnifying glass, finds the evidence, and turns to camera.</p>'
+  '<pre class="spec">MANAN\n  Hold on.\n  He had nothing left.\n  So where did THAT come from?\n\nTITLE: THE BRAIN BRAKE</pre>'
+  '<h3>Scene 2 — The Old Answer <span class="tcs">0:18 – 0:42</span></h3>'
+  '<p>A dusty chalkboard, A.V. Hill, 1923. The runner becomes a cartoon factory. Oxygen arrives, then stops. Alarm. '
+  'Workers haul the backup power lever. Smoke. A stamp slams down. The sprint replays and the stamp cracks.</p>'
+  '<pre class="spec">MANAN (V.O.)\n  For a hundred years, we blamed the muscles.\n  Oxygen comes in. Fuel burns. Everything runs.\n  Until it doesn\'t.\n\nMANAN  (to camera)\n  Except it doesn\'t explain this.</pre>'
+  '<h3>Scene 3 — The Suspect <span class="tcs">0:42 – 1:12</span></h3>'
+  '<p>A glowing command centre. A chair turns. Coach Brain, tracksuit, whistle, headset, coffee mug.</p>'
+  '<pre class="spec">MANAN        You\'ve been watching the whole race?\nCOACH BRAIN  Every second.\nCOACH BRAIN  Every heartbeat. Every breath. Every drop of sweat.\n\nScreen fills the room:  CAN WE KEEP GOING SAFELY?\n\nMANAN        So you\'re controlling my muscles.\n\nHe slides POWER OUTPUT.  100% → 82%\nThe runner does not collapse. He settles.\n\nCOACH BRAIN  I\'m not stopping you.\n             I\'m getting you to the finish line.</pre>'
+  '<h3>Scene 4 — Low Power Mode <span class="tcs">1:12 – 1:32</span></h3>'
+  '<p>Push into a monitor. It becomes a generic phone. The battery drains. Low power mode. Apps close themselves. '
+  'A shield forms around the battery.</p>'
+  '<pre class="spec">MANAN (O.S.)  Wait. Is it broken?\n\nMANAN  (to camera)\n  It\'s saving something for later.\n\nCOACH BRAIN  Tired might not mean empty.\n             It might mean, ease off, we\'re not home yet.</pre>'
+  '<h3>Scene 5 — The Finish <span class="tcs">1:32 – 1:52</span></h3>'
+  '<p>Split screen. Safety scan. Every monitor green. The lever eases 82 to 95, never 100. Inside the runner\'s legs, '
+  'muscle fibres glow, first a few, then many.</p>'
+  '<pre class="spec">CAPTION       Notice. Not maximum.\nCAPTION       More muscle fibres recruited.\n\nMANAN (V.O.)\n  The brain didn\'t make new energy.\n  It just decided it was finally safe to spend it.\n\nThe board flips over:\n  YOUR BRAIN WAS SAVING SOME ALL ALONG.</pre>'
+  '<h3>Scene 6 — The Twist <span class="tcs">1:52 – 2:00</span></h3>'
+  '<p>White void. The Muscle and Coach Brain shake hands over a brake marked fatigue.</p>'
+  '<pre class="spec">MANAN  So who was right?\n       Scientists are still arguing.\n       That\'s the best part.\n\nEND CARD:\nTHE STRONGEST FINISH MIGHT BEGIN WITH THE SMARTEST BRAKE.</pre>'
+  '</div>'))
+
+P.append(pane("board","Boards","Storyboard",
+  "Thirty five shots, two minutes exactly. Each shot is a sheet in its own right, carrying the frame, the words spoken "
+  "over it, and a separate instruction for every department. Scene 1 is drawn. The rest follow the same pattern.",
+  stats([("Shots","35","","Scene 1 boarded, 30 to draw"),
+         ("Live action","12","","Three camera setups, one day"),
+         ("Pure animation","23","","No camera required")])
+  + all_scenes([1,2,3,4,5,6])))
+
+P.append(pane("chars","Design","Characters",
+  "These sheets are the single source of truth. Every frame and every animated shot references them directly, so the cast never drifts.",
+  '<div class="chars">'
+  + "".join(
+    f'<figure class="charcard"><img class="board" src="assets/sb/{f}.jpg" data-full="assets/sb/{f}.jpg" '
+    f'alt="{n}" loading="lazy"><figcaption><b>{n}</b><span>{d}</span></figcaption></figure>'
+    for f, n, d in [
+      ("char-manan","Manan, boy detective","Live action · tan coat, deerstalker, brass glass"),
+      ("char-coach-brain","Coach Brain","Animated · tracksuit, whistle, headset, mug"),
+      ("char-runner","The marathon runner","Animated · bib 27, never changes"),
+      ("char-muscle","The Muscle","Animated · scene 6 only"),
+      ("char-workers","The factory workers","Animated · scene 2 only")])
+  + '</div>'
+  '<div class="sheet"><h3>House rules for the look</h3>'
+  '<ul><li>Graphite pencil on aged cream paper. Hand drawn line, visible strokes, no vector cleanliness.</li>'
+  '<li>The runner\'s bib is <b>27</b> in every single frame. Small fixed details are what make an audience read a character as the same person.</li>'
+  '<li>Manan\'s wardrobe never changes: tan coat, deerstalker, white collar, brass magnifying glass.</li>'
+  '<li>Coach Brain is never angry, never panicked. He is the calmest character on screen. That is the whole joke and the whole science.</li></ul>'
+  '</div>'))
+
+P.append(pane("neha","Client and producer","Neha",
+  "You hold the money, the approvals and the boy. Three things only you can unblock.",
+  stats([("Advance","Received","go","600 EUR of 1200. Landed 3.8."),
+         ("Awaiting you","Shoot date","hold","Call Venkatesh and set the day."),
+         ("Animation","Quote coming","hold","Figure follows the full shot list.")])
+  + '<div class="sheet">'
+    '<h3>What sits with you</h3>'
+    '<ol><li><b>Book the shoot with Venkatesh.</b> You pay him directly, locally, in rupees. One day, in or around Pondicherry.</li>'
+    '<li><b>Approve the animation budget</b> once the shot list shows how much animation there actually is.</li>'
+    '<li><b>Get Manan to the room rested.</b> Not after a school day. This matters more than any technical decision.</li></ol>'
+    '<h4>Money, in the open</h4>'
+    '<table><tr><th>Line</th><th>Who</th><th>Amount</th><th>Terms</th></tr>'
+    '<tr><td>Concept, direction, edit</td><td>Marko</td><td>700 EUR</td><td>50 / 50</td></tr>'
+    '<tr><td>Sound mix</td><td>Marko</td><td>200 EUR</td><td>50 / 50</td></tr>'
+    '<tr><td>Original score</td><td>Marko</td><td>300 EUR</td><td>50 / 50</td></tr>'
+    '<tr><td>Animation</td><td>Kristijan, Brojka</td><td>To be quoted</td><td>50 / 50</td></tr>'
+    '<tr><td>Shooting day</td><td>Venkatesh</td><td>Quoted locally</td><td>Direct, in rupees</td></tr></table>'
+    '<p>Every invoice arrives through one shared folder so nothing is hidden and nothing is duplicated. '
+    'Kristijan bills below his normal rate because this is a student\'s film.</p>'
+    '<p class="hand">the shooting costs stay in india and in rupees. only the european fees cross a border.</p>'
+    '<h4>What you will see, and when</h4>'
+    '<ul><li><b>Rushes</b> within two days of the shoot, so you know we have what we need.</li>'
+    '<li><b>Rough cut with placeholder graphics</b> around 20.8., before animation begins.</li>'
+    '<li><b>Animated cut</b> around 27.8.</li>'
+    '<li><b>Final film</b> 1.9., a full fortnight before the deadline.</li></ul>'
+    '<p>Every version lands in the Versions tab and stays there. Nothing gets overwritten, so you can always see how the film grew.</p>'
+    '</div>'))
+
+P.append(pane("venkatesh","Camera, sound, lighting","Venkatesh",
+  "One day, three setups, one boy against grey. Everything else in this film gets drawn later in Zagreb.",
+  stats([("Shooting days","1","","Roughly five hours including resets"),
+         ("Setups","3","","A, B and C. Never relight between them."),
+         ("Cast","1","","Manan only. No runner, no crowd.")])
+  + '<div class="sheet">'
+    '<h3>The one thing to understand</h3>'
+    '<p>You are not filming a marathon. You are filming a boy in a detective coat standing in an empty grey room, '
+    'reacting to things that do not exist yet. The marathon, the factory, the mission control room and Coach Brain are '
+    'all animated in post and built around him.</p>'
+    '<p>So your job is to hand over a clean, consistent, well lit boy who can be cut out and placed anywhere. '
+    'Consistency beats beauty on this one.</p>'
+    '<h4>Technical</h4>'
+    '<pre class="spec">FORMAT     4K, 25fps, 16:9\n'
+    'LENS       35mm to 50mm equivalent\n'
+    'CAMERA     Locked off on sticks. Eye level, matched to Manan.\n'
+    '           Do not move the camera within a setup.\n'
+    'BACKGROUND Plain mid grey wall or grey seamless.\n'
+    '           Flat, even, no texture, no shadow falling on it.\n'
+    '           Subject minimum 2m from the background.\n'
+    'LIGHT      Soft key camera left at 45°, gentle fill camera right,\n'
+    '           subtle rim from behind to separate him from the grey.\n'
+    '           Identical across the whole day.\n'
+    'SOUND      Lavalier plus boom, recorded separately. Quiet room.\n'
+    '           Minimum three clean takes of every single line.\n'
+    'WARDROBE   Tan detective coat, deerstalker cap, white shirt,\n'
+    '           brass magnifying glass. Photograph it on arrival\n'
+    '           for continuity. It never changes.</pre>'
+    '<h4>Working with Manan</h4>'
+    '<p>Manan has ADHD. The whole shooting method is built around that, and it also happens to produce a better film.</p>'
+    '<ul><li><b>One sentence per take.</b> Never ask him to run a paragraph. Reset fully between lines.</li>'
+    '<li><b>Let the camera roll through the resets.</b> The unguarded moment between takes is often the one that ends up in the film.</li>'
+    '<li><b>No counting down, no pressure language.</b> Just roll and let him go when he is ready.</li>'
+    '<li><b>Break every twenty minutes.</b> A tired take is a wasted card.</li>'
+    '<li><b>Take six is usually the one.</b> Shoot past the point where it feels finished.</li></ul>'
+    '<h4>The three setups</h4>'
+    '<table><tr><th>Setup</th><th>Scenes</th><th>What we need</th></tr>'
+    '<tr><td><b>A</b></td><td>1 and 2</td><td>Manan entering frame right, stopping, raising the glass at an eyeline mark. '
+    'A tight insert of his hand holding the glass. A medium for the dialogue.</td></tr>'
+    '<tr><td><b>B</b></td><td>3 and 4</td><td>Manan reacting to Coach Brain. Tennis ball on a stand at seated height for eyeline. '
+    'Plus a low angle close up looking up, and ten seconds of silent reactions.</td></tr>'
+    '<tr><td><b>C</b></td><td>6</td><td>Manan against grey, three short lines direct to lens. Also looking left, looking right, '
+    'and a hand to chin thinking pose.</td></tr></table>'
+    '<p>Scene 5 needs nothing from you. It is entirely animation.</p>'
+    '<h4>Delivery</h4>'
+    '<ul><li>Original camera files, untouched, no transcode, no grade.</li>'
+    '<li>Separate audio files with the slate intact.</li>'
+    '<li>A photograph of the wardrobe and of each lighting setup.</li>'
+    '<li>Upload within 48 hours of the shoot. The whole Zagreb schedule starts the moment they land.</li></ul>'
+    '</div>'
+  + '<h3 class="dept">Your shots</h3>'
+    '<p class="standfirst">These are the five scenes you shoot. Scene 5 needs nothing from you. '
+    'Read the <b>cam</b> line under each shot, that is your instruction. The other lines are there so you can see what '
+    'happens around your work.</p>'
+  + all_scenes([1,2,3,4,6])))
+
+P.append(pane("kristijan","Animacija i motion","Kristijan",
+  "Dolaziš na gotov rez. Upute za grafiku stižu kadar po kadar. Tvoje je kako to izgleda i kako diše s ritmom filma.",
+  stats([("Prozor","20.8. – 27.8.","hold","Puni tjedan, s dva tjedna rezerve iza"),
+         ("Dnevnica","250 EUR","","Procjena 3 do 5 dana"),
+         ("Udio animacije","~65%","","Od ukupnog trajanja filma")])
+  + '<div class="sheet">'
+    '<h3>Podjela posla</h3>'
+    '<p>Koncept, snimljeni materijal i gotov rez dolaze od mene. Ti dobivaš točne upute za grafiku, kadar po kadar, '
+    'a kod nekih kadrova ću naznačiti da idu kao čista animacija, bez snimke ispod. Što ide u animaciju i koja je ideja '
+    'iza toga, to postavljam ja. Na tebi je stil.</p>'
+    '<h4>Gdje je težina animacije</h4>'
+    '<table><tr><th>Scena</th><th>Trajanje</th><th>Što treba</th><th>Težina</th></tr>'
+    '<tr><td>1 Misterij</td><td>18s</td><td>Maraton, freeze, upitnici, špica</td><td>Srednja</td></tr>'
+    '<tr><td>2 Stara teorija</td><td>24s</td><td>Ploča, tvornica, radnici, dim, pečat</td><td><b>Teška</b></td></tr>'
+    '<tr><td>3 Osumnjičeni</td><td>30s</td><td>Mission control, Coach Brain, monitori, poluga</td><td><b>Teška</b></td></tr>'
+    '<tr><td>4 Low power</td><td>20s</td><td>Telefon, baterija, morph u Coach Braina</td><td>Srednja</td></tr>'
+    '<tr><td>5 Finiš</td><td>20s</td><td>Split screen, sprint, mišićna vlakna</td><td><b>Teška, bez snimke</b></td></tr>'
+    '<tr><td>6 Obrat</td><td>8s</td><td>Bijela praznina, dva lika uz Manana, kartica</td><td>Laka</td></tr></table>'
+    '<h4>Stil</h4>'
+    '<ul><li>Likovi su definirani na model sheetovima u tabu Characters. To je jedini izvor istine.</li>'
+    '<li>Broj 27 na dresu trkača u svakom kadru.</li>'
+    '<li>Coach Brain nikad nije uspaničen. On je najsmireniji lik u filmu, i to je cijela poanta.</li>'
+    '<li>Telefon je generički. Bez logotipa, bez prepoznatljivog brenda.</li>'
+    '<li>Hill i Noakes se crtaju, ne koriste se fotografije.</li></ul>'
+    '<h4>Isporuka</h4>'
+    '<pre class="spec">FORMAT     ProRes 4444 s alpha kanalom, 25fps\n'
+    '           Zasebni layeri gdje grafika ide preko snimke\n'
+    'REZOLUCIJA 4K, isto kao snimka\n'
+    'NAZIVI     scena_broj_opis_v1.mov\n'
+    'ROK        27.8. natrag kod mene</pre>'
+    '<p class="hand">ako ti tjedan djeluje pretijesno, reci odmah. rok natjecanja je 15.9., pa imamo prostora.</p>'
+    '<h4>Plaćanje</h4>'
+    '<p>Račun šalješ meni, ja ga stavljam u zajedničku mapu odakle ga naručiteljica preuzima. Pola unaprijed, prije nego '
+    'kreneš s animacijom, pola po predaji.</p>'
+    '</div>'
+  + '<h3 class="dept">Storyboard, sve scene</h3>'
+    '<p class="standfirst">Pod svakim kadrom <b>anim</b> linija je tvoja uputa. <b>cam</b> linija ti govori što dolazi '
+    'snimljeno, da znaš gdje ide kompozit, a gdje crtaš sve od nule.</p>'
+  + all_scenes([1,2,3,4,5,6])))
+
+P.append(pane("director","Marko Boško · direction","Director",
+  "The job is to protect one idea from six people's good intentions.",
+  '<div class="sheet">'
+  '<h3>The spine</h3>'
+  '<p>A question is asked in the first eighteen seconds and answered at 1:52. Everything between those two points either '
+  'sharpens the question or delays the answer. Anything that does neither comes out, however good it is.</p>'
+  '<p class="hand">manan\'s draft was five minutes of genuinely good writing. cutting it is the hardest and most useful thing i do on this film.</p>'
+  '<h4>What got cut, and why</h4>'
+  '<ul><li><b>The chalkboard flowchart.</b> It explained the same thing as the factory. Two explanations of one idea is one too many.</li>'
+  '<li><b>The extended Coach Brain comedy.</b> The whistle, the red panic button, the medal ceremony. Charming, but the film has 120 seconds.</li>'
+  '<li><b>The three card comparison at the end.</b> Replaced by a handshake and a question mark.</li></ul>'
+  '<h4>Direction of the performance</h4>'
+  '<p>Manan should sound like a boy who has genuinely noticed something odd, not like a presenter. Curiosity over polish. '
+  'The takes where he forgets he is performing are the ones to use.</p>'
+  '<p>Because he has ADHD we shoot in fragments, one sentence at a time, and assemble the performance in the edit. '
+  'This is not a compromise. Fragmented shooting produces a livelier cut than any long take would have.</p>'
+  '<h4>The one shot that must land</h4>'
+  '<p>Shot 4B, the line "it\'s saving something for later". Everything before it is setup and everything after it is '
+  'confirmation. If that take is not right, the film is competent instead of memorable.</p>'
+  '<h4>Tone</h4>'
+  '<ul><li>Warm and curious, never lecturing.</li>'
+  '<li>The film admits the science is unresolved. That honesty is the point of the last scene, and judges read for it.</li>'
+  '<li>No shouting, no big music swell on the reveal. The reveal is a lever moving quietly.</li></ul>'
+  '</div>'))
+
+P.append(pane("editor","Marko Boško · picture","Editor",
+  "The performance does not exist until it is assembled. That is literally true on this film.",
+  '<div class="sheet">'
+  '<h3>Method</h3>'
+  '<p>Manan is shot one sentence at a time. The edit stitches those fragments into a single continuous delivery, so the '
+  'audience sees a boy speaking fluently for two minutes when in fact no take ran longer than a few seconds.</p>'
+  '<ul><li>Cut on the breath, not on the word. The join disappears in the intake.</li>'
+  '<li>Where a join will not hide, cut away to animation for eight frames and come back.</li>'
+  '<li>Keep the room tone continuous underneath so the audio never reveals the joins.</li></ul>'
+  '<h4>Pacing targets</h4>'
+  '<pre class="spec">SCENE 1  0:00 – 0:18   fast in, then one long held beat on the question\n'
+  'SCENE 2  0:18 – 0:42   quickest section of the film, near montage\n'
+  'SCENE 3  0:42 – 1:12   slows down. this is where the audience settles.\n'
+  'SCENE 4  1:12 – 1:32   slowest. let the phone breathe.\n'
+  'SCENE 5  1:32 – 1:52   accelerates hard to the line\n'
+  'SCENE 6  1:52 – 2:00   stops dead. white. quiet.</pre>'
+  '<p>Total 2:00 exactly. The competition is strict about it, so the film is built to that number rather than trimmed to it afterwards.</p>'
+  '<h4>Order of work</h4>'
+  '<ol><li>Assemble Manan\'s performance first, with black where animation will go.</li>'
+  '<li>Lock that cut. Timings must be final before Kristijan starts, or he animates to a moving target.</li>'
+  '<li>Export a reference cut with burnt in timecode and shot labels for the animation brief.</li>'
+  '<li>Conform the returned animation layers, then grade.</li></ol>'
+  '<p class="hand">the rough cut going out on 20.8. is the most important delivery of the whole project.</p>'
+  '</div>'))
+
+P.append(pane("sound","Marko Boško · audio","Sound design",
+  "In a film this dense, sound is what makes the cuts vanish and the science feel physical.",
+  '<div class="sheet">'
+  '<h3>The sound of each world</h3>'
+  '<table><tr><th>World</th><th>Character</th></tr>'
+  '<tr><td>Marathon</td><td>Crowd wash, breath, footfall on tarmac, distant commentary. Everything slightly compressed, like a broadcast.</td></tr>'
+  '<tr><td>Freeze</td><td>Everything drops away to a single low tone. The absence is the effect.</td></tr>'
+  '<tr><td>Classroom and factory</td><td>Chalk, dry room, then industrial. Trucks, hydraulics, an alarm klaxon, machinery slowing to a grind.</td></tr>'
+  '<tr><td>Mission control</td><td>Soft electronic beeps, a low room hum, the mechanical clunk of the lever. Calm and clinical.</td></tr>'
+  '<tr><td>Phone</td><td>One clean notification chime, then the world dims audibly as apps close.</td></tr>'
+  '<tr><td>White void</td><td>Near silence. Only the voice and a faint high tone.</td></tr></table>'
+  '<h4>The transitions carry the film</h4>'
+  '<p>Six worlds in 120 seconds could feel like channel hopping. Sound is what stops that. Each transition is bridged, '
+  'the sound of the next world arrives a few frames before the picture does, so the viewer is pulled forward rather than '
+  'pushed between scenes.</p>'
+  '<h4>Voice</h4>'
+  '<ul><li>Manan\'s voice is the constant across every world. It stays dry, close and unprocessed throughout.</li>'
+  '<li>Coach Brain sits slightly behind, with a hint of room, as if genuinely in a control centre.</li>'
+  '<li>Clean up handling noise on the joins, but keep breath in the performance. Breath is the subject of this film.</li></ul>'
+  '<p class="hand">the freeze at 0:12 is the single best sound moment available. everything stops. use it.</p>'
+  '</div>'))
+
+P.append(pane("music","Marko Boško · score","Music",
+  "One instrument stands for the body, one for the brain. The whole score is the conversation between them.",
+  '<div class="sheet">'
+  '<h3>The idea</h3>'
+  '<p>The film is an argument between muscle and mind, so the score is written as two voices. A pulse, which is the body, '
+  'and a sustained tone, which is the governor watching over it. They are never in conflict. The tone simply keeps easing '
+  'the pulse back.</p>'
+  '<h4>Palette</h4>'
+  '<ul><li><b>The body</b> is percussion. Frame drum and hand percussion, played dry and close, tracking the runner\'s cadence.</li>'
+  '<li><b>The brain</b> is sustained. A low synth pad and a single held flute note, calm and unhurried, always slightly above the drums.</li>'
+  '<li><b>The discovery</b> is a small bright motif, three notes, first heard under the question at 0:15 and resolved at 1:48.</li></ul>'
+  '<h4>Map</h4>'
+  '<pre class="spec">0:00  crowd and pulse, no score yet\n'
+  '0:12  FREEZE. everything drops. the three note motif enters alone.\n'
+  '0:18  factory section, mechanical rhythm, percussion leads\n'
+  '0:42  mission control. pad enters. percussion pulls back.\n'
+  '1:12  low power mode. almost nothing. one held note.\n'
+  '1:32  the finish. pulse returns and builds, but never resolves fully.\n'
+  '1:48  the motif returns complete. this is the release.\n'
+  '2:00  one note left ringing into black.</pre>'
+  '<p class="hand">never let it resolve to maximum. the brain never pushes to 100 percent, so neither does the music.</p>'
+  '<h4>Practical</h4>'
+  '<ul><li>Written to the locked picture, not before. Composing to a moving cut wastes the work.</li>'
+  '<li>Delivered as stems so the mix can duck cleanly under Manan\'s voice.</li>'
+  '<li>Entirely original, so there is no licensing question in a competition submission.</li></ul>'
+  '</div>'))
+
+P.append(pane("versions","Archive","Versions",
+  "Every cut, every test, every abandoned idea. Nothing gets overwritten, so the film's whole history stays readable.",
+  '<div class="empty"><p class="big">No cuts uploaded yet</p>'
+  '<p class="small">The first delivery lands here around 20.8.<br>'
+  'Rough cut with placeholder graphics, then the animated cut, then the final film.</p></div>'
+  '<div class="sheet"><h3>What lands here, and when</h3>'
+  '<table><tr><th>Version</th><th>What it is</th><th>Expected</th></tr>'
+  '<tr><td>v1</td><td>Assembly. Manan\'s performance only, black where animation will go.</td><td>after the shoot</td></tr>'
+  '<tr><td>v2</td><td>Rough cut with timecode and shot labels. The animation brief.</td><td>20.8.</td></tr>'
+  '<tr><td>v3</td><td>Animated cut. Kristijan\'s layers conformed.</td><td>27.8.</td></tr>'
+  '<tr><td>v4</td><td>Sound, score and grade. Delivery candidate.</td><td>31.8.</td></tr>'
+  '<tr><td>Final</td><td>Competition master, 2:00 exactly.</td><td>1.9.</td></tr></table>'
+  '<p>Older versions stay online after they are superseded. Half the value of an archive is being able to see what a '
+  'film almost became.</p></div>'))
+
+# ------------------------------------------------------------------ shell
+
+CSS = """
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+ --void:#0d1117; --panel:#161b22; --rule:#26303c; --line:#1f2731;
+ --paper:#efe4cd; --paper2:#e5d9be; --ink:#2e2b26; --ink2:#5f5849;
+ --txt:#c9d4e1; --dim:#7c8b9d; --cy:#4dd6e8; --am:#e8a33d; --gr:#7ed957; --vi:#a99bd6;
+}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--void);color:var(--txt);font-family:Georgia,'Times New Roman',serif;
+ font-size:17px;line-height:1.7;overflow-x:hidden}
+.mono{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--cy)}
+
+/* ---- gate ---- */
+#gate{position:fixed;inset:0;z-index:99;background:var(--void);display:flex;
+ align-items:center;justify-content:center;padding:24px}
+.gcard{width:100%;max-width:380px;background:var(--panel);border:1px solid var(--rule);padding:36px 32px}
+.glass{width:34px;height:34px;color:var(--cy);display:block;margin-bottom:16px}
+.gt{font-family:Georgia,serif;font-size:34px;font-weight:700;line-height:1.05;color:#eef3f8;letter-spacing:-.01em}
+.gs{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);margin-top:8px;letter-spacing:.08em}
+label.fl{display:block;font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.2em;
+ text-transform:uppercase;color:var(--dim);margin:26px 0 8px}
+input[type=password]{width:100%;background:var(--void);border:1px solid var(--rule);color:var(--paper);
+ padding:13px 14px;font-family:ui-monospace,monospace;font-size:15px;letter-spacing:.12em}
+input[type=password]:focus{outline:2px solid var(--cy);outline-offset:1px}
+.rem{display:flex;align-items:center;gap:9px;margin-top:15px}
+.rem input{width:15px;height:15px;accent-color:var(--cy)}
+.rem label{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);cursor:pointer}
+button.enter{width:100%;margin-top:22px;padding:13px;background:var(--cy);border:0;color:var(--void);
+ cursor:pointer;font-family:ui-monospace,monospace;font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+button.enter:hover{background:#6ee2f2}
+#gerr{font-family:ui-monospace,monospace;font-size:11px;color:#ff8f6b;margin-top:13px;min-height:16px}
+
+/* ---- shell ---- */
+#app{display:none}
+.hdr{border-bottom:1px solid var(--rule);background:var(--panel)}
+.hdr-in{max-width:1180px;margin:0 auto;padding:16px 48px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hdr .glass{width:26px;height:26px;margin:0;color:var(--cy);flex:0 0 26px}
+.brand{font-family:Georgia,serif;font-size:22px;font-weight:700;color:#eef3f8;letter-spacing:-.01em}
+.brand span{color:var(--cy)}
+.meta{margin-left:auto;display:flex;gap:26px;flex-wrap:wrap;
+ font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.meta b{display:block;color:var(--paper);font-weight:400;font-size:13px;margin-top:3px;letter-spacing:.04em}
+.meta .hot b{color:var(--am)}
+
+nav.tabs{border-bottom:1px solid var(--rule);background:var(--void)}
+.tabs-in{max-width:1180px;margin:0 auto;padding:0 48px;display:flex;flex-wrap:wrap;gap:0}
+.tab{background:none;border:0;border-bottom:3px solid transparent;cursor:pointer;
+ padding:14px 16px;color:var(--dim);font-family:ui-monospace,monospace;font-size:12px;
+ letter-spacing:.1em;text-transform:uppercase;line-height:1.4;text-align:left}
+.tab:hover{color:var(--txt);background:var(--panel)}
+.tab:focus-visible{outline:2px solid var(--cy);outline-offset:-2px}
+.tab.on{color:var(--cy);border-bottom-color:var(--cy)}
+.tab small{display:block;font-size:9px;letter-spacing:.14em;opacity:.6;margin-top:2px}
+
+.bar{border-bottom:1px solid var(--rule)}
+.bar-in{max-width:1180px;margin:0 auto;padding:12px 48px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.blbl{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.blbl b{color:var(--am);font-size:16px;letter-spacing:0;margin-left:8px}
+.trk{flex:1;min-width:140px;max-width:300px;height:8px;background:var(--panel);border:1px solid var(--rule)}
+.fil{height:100%;background:var(--am);width:31%}
+.bnote{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim)}
+
+main{max-width:1180px;margin:0 auto;padding:46px 48px 110px}
+.pane{display:none}
+.pane.on{display:block}
+
+/* ---- typography ---- */
+.eyebrow{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.24em;
+ text-transform:uppercase;color:var(--cy)}
+.pane-t{font-family:Georgia,serif;font-size:clamp(30px,4.4vw,44px);font-weight:700;
+ line-height:1.1;color:#eef3f8;margin:10px 0 14px;letter-spacing:-.015em}
+.standfirst{font-size:18px;color:#93a3b6;font-style:italic;max-width:62ch;
+ border-left:2px solid var(--rule);padding-left:18px;margin-bottom:8px}
+h3.dept{font-family:Georgia,serif;font-size:28px;font-weight:700;color:#eef3f8;
+ margin:56px 0 12px;padding-top:26px;border-top:1px solid var(--rule)}
+
+/* ---- cards ---- */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:26px 0}
+.stat{background:var(--panel);border:1px solid var(--rule);padding:16px 18px}
+.stat .k{font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.stat .v{font-family:Georgia,serif;font-size:25px;font-weight:700;color:#eef3f8;line-height:1.2;margin-top:5px}
+.stat .v.go{color:var(--gr)} .stat .v.hold{color:var(--am)}
+.stat .n{font-family:ui-monospace,monospace;font-size:10.5px;color:var(--dim);margin-top:6px;line-height:1.6}
+
+.sheet{background:var(--paper);color:var(--ink);padding:34px 38px;margin:26px 0}
+.sheet h3{font-family:Georgia,serif;font-size:25px;font-weight:700;border-bottom:1.5px solid var(--ink);
+ padding-bottom:8px;margin-bottom:18px}
+.sheet h3 .tcs{float:right;font-family:ui-monospace,monospace;font-size:13px;color:var(--ink2);font-weight:400}
+.sheet h4{font-family:Georgia,serif;font-size:20px;font-weight:700;margin:28px 0 10px;color:#443f38}
+.sheet p{margin-bottom:14px;max-width:70ch}
+.sheet ul,.sheet ol{margin:0 0 16px 22px}
+.sheet li{margin-bottom:8px;max-width:68ch}
+.sheet b{font-weight:700;color:#1c1a17}
+.hand{font-style:italic;color:#6a5c3f;border-left:3px solid rgba(106,92,63,.3);padding-left:16px;margin:18px 0}
+.spec{font-family:ui-monospace,monospace;font-size:12.5px;line-height:1.85;background:rgba(46,43,38,.07);
+ border:1px solid rgba(46,43,38,.15);padding:16px 18px;margin:14px 0 18px;white-space:pre-wrap;
+ overflow-x:auto;color:#3a352d}
+.sheet table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:15px}
+.sheet th{font-family:ui-monospace,monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+ text-align:left;padding:8px 12px 8px 0;border-bottom:1.5px solid var(--ink);color:#5f5849}
+.sheet td{padding:10px 12px 10px 0;border-bottom:1px solid rgba(46,43,38,.16);vertical-align:top}
+
+/* ---- storyboard ---- */
+.sc{margin-top:40px;padding-top:32px;border-top:1px solid var(--rule)}
+.sc-h{font-family:Georgia,serif;font-size:27px;font-weight:700;color:#eef3f8;line-height:1.2;
+ display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.sc-h .tc{margin-left:auto;font-family:ui-monospace,monospace;font-size:12px;color:var(--am);font-weight:400;letter-spacing:.1em}
+.sc-log{color:#93a3b6;font-style:italic;margin:8px 0 20px;max-width:64ch}
+.pend{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--dim);line-height:1.8;
+ border:1px dashed var(--rule);padding:14px 16px;margin-bottom:18px}
+.sheets{display:grid;gap:22px;margin:20px 0}
+.shot{background:var(--panel);border:1px solid var(--rule);padding:12px}
+.shot img{cursor:zoom-in;border:1px solid var(--rule)}
+.shot figcaption{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--dim);margin-top:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.shot figcaption b{color:var(--cy);font-weight:400}
+.fr{background:var(--panel);border:1px solid var(--rule);padding:18px 20px;margin-bottom:14px;
+ display:flex;gap:18px;align-items:flex-start}
+.fr-id{font-family:Georgia,serif;font-size:24px;font-weight:700;color:var(--cy);flex:0 0 42px;line-height:1.1}
+.fr-b{flex:1;min-width:0}
+.fr-t{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--dim);margin-bottom:8px}
+.fr-a{font-size:16px;color:var(--txt);margin-bottom:14px;max-width:66ch}
+.said{background:var(--paper);color:var(--ink);padding:14px 16px;margin-bottom:14px}
+.said .nm{font-family:ui-monospace,monospace;font-size:10px;font-weight:700;letter-spacing:.16em;color:#8a6b2e}
+.said .ln{font-family:ui-monospace,monospace;font-size:13px;white-space:pre-wrap;margin:2px 0 12px 18px;color:var(--ink)}
+.said .ln:last-child{margin-bottom:0}
+.silent{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);letter-spacing:.1em;
+ text-transform:uppercase;margin-bottom:14px}
+.nt{display:flex;gap:12px;align-items:flex-start;margin-bottom:9px;font-size:15px;color:#9fb0c4;line-height:1.6}
+.tag{font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+ padding:3px 8px;border:1px solid var(--rule);color:var(--dim);flex:0 0 auto;margin-top:3px}
+.tag.cam{color:var(--cy);border-color:rgba(77,214,232,.4)}
+.tag.anim{color:var(--am);border-color:rgba(232,163,61,.4)}
+.tag.snd{color:var(--vi);border-color:rgba(169,155,214,.4)}
+.tag.mus{color:var(--gr);border-color:rgba(126,217,87,.35)}
+.ntx{flex:1;min-width:0}
+
+.chars{display:grid;gap:22px;margin:26px 0}
+.charcard{background:var(--panel);border:1px solid var(--rule);padding:12px}
+.charcard img{cursor:zoom-in;border:1px solid var(--rule)}
+.charcard figcaption{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;
+ text-transform:uppercase;color:var(--dim);margin-top:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.charcard figcaption b{color:var(--cy);font-weight:400}
+.empty{border:1px dashed var(--rule);padding:46px 26px;text-align:center;margin:26px 0}
+.empty .big{font-family:Georgia,serif;font-size:23px;color:#7e8ea1}
+.empty .small{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--dim);margin-top:10px;line-height:1.8}
+
+#lb{position:fixed;inset:0;background:rgba(4,6,9,.96);z-index:200;display:none;
+ align-items:flex-start;justify-content:center;padding:20px;cursor:zoom-out;overflow:auto}
+#lb.on{display:flex}
+#lb img{max-width:min(100%,1100px)}
+
+@media(max-width:900px){
+ body{font-size:16px}
+ .hdr-in,.tabs-in,.bar-in{padding-left:22px;padding-right:22px}
+ main{padding:30px 22px 80px}
+ .sheet{padding:24px 22px}
+ .tab{padding:11px 12px;font-size:11px}
+ .tab small{display:none}
+ .fr{flex-direction:column;gap:6px}
+ .fr-id{flex:none}
+ .meta{width:100%;margin-left:0;gap:16px}
+}
+"""
+
+JS = """
+(function(){
+ var PW='manan', CA='bb_auth', CT='bb_tab', CS='bb_scroll', DEF='overview';
+ function set(k,v){var d=new Date();d.setTime(d.getTime()+180*864e5);
+  document.cookie=k+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';}
+ function get(k){var m=document.cookie.match('(^|; )'+k+'=([^;]*)');return m?decodeURIComponent(m[2]):null;}
+ var gate=document.getElementById('gate'), app=document.getElementById('app');
+ function days(){var l=new Date(2026,8,1);return Math.max(0,Math.ceil((l-new Date())/864e5));}
+ function show(id,save){
+  var i,ps=document.querySelectorAll('.pane');
+  for(i=0;i<ps.length;i++) ps[i].classList.remove('on');
+  var t=document.getElementById('p-'+id);
+  if(!t){id=DEF;t=document.getElementById('p-'+DEF);}
+  t.classList.add('on');
+  var bs=document.querySelectorAll('.tab');
+  for(i=0;i<bs.length;i++) bs[i].classList.toggle('on', bs[i].getAttribute('data-p')===id);
+  if(save){set(CT,id);set(CS,'0');window.scrollTo(0,0);}
+ }
+ function open_(){
+  gate.style.display='none'; app.style.display='block';
+  document.getElementById('m-days').textContent=days();
+  show(get(CT)||DEF,false);
+  var y=parseInt(get(CS)||'0',10);
+  if(y>0) setTimeout(function(){window.scrollTo(0,y);},80);
+ }
+ var bs=document.querySelectorAll('.tab');
+ for(var i=0;i<bs.length;i++){
+  bs[i].addEventListener('click',function(){show(this.getAttribute('data-p'),true);});
+ }
+ var t=null;
+ window.addEventListener('scroll',function(){
+  if(app.style.display!=='block')return;
+  clearTimeout(t);t=setTimeout(function(){set(CS,String(window.scrollY||0));},250);
+ });
+ document.getElementById('gform').addEventListener('submit',function(e){
+  e.preventDefault();
+  var v=document.getElementById('pw');
+  if(v.value.trim().toLowerCase()===PW){
+   if(document.getElementById('rem').checked) set(CA,'1');
+   open_();
+  } else { document.getElementById('gerr').textContent='Not that one. Try again.'; v.value=''; v.focus(); }
+ });
+ var lb=document.getElementById('lb'), li=document.getElementById('lbi');
+ document.addEventListener('click',function(e){
+  var x=e.target;
+  if(x&&x.classList&&x.classList.contains('board')){li.src=x.getAttribute('data-full')||x.src;lb.classList.add('on');}
+  else if(x===lb||x===li){lb.classList.remove('on');li.src='';}
+ });
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('on');li.src='';}});
+ if(get(CA)==='1') open_();
+})();
+"""
+
+tabs_html = "".join(
+  f'<button class="tab" data-p="{pid}">{role}<small>{who}</small></button>'
+  for pid, role, who in TABS)
+
+DOC = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE BRAIN BRAKE — Production</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0d1117">
+<style>{CSS}</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="gcard">
+    {GLASS}
+    <p class="gt">The Brain Brake</p>
+    <p class="gs">Breakthrough Junior Challenge 2026</p>
+    <form id="gform">
+      <label class="fl" for="pw">Passphrase</label>
+      <input type="password" id="pw" autocomplete="current-password" autofocus>
+      <div class="rem"><input type="checkbox" id="rem"><label for="rem">Remember me on this device</label></div>
+      <button type="submit" class="enter">Enter</button>
+      <p id="gerr"></p>
+    </form>
+  </div>
+</div>
+
+<div id="app">
+  <header class="hdr"><div class="hdr-in">
+    {GLASS}
+    <p class="brand">The Brain <span>Brake</span></p>
+    <div class="meta">
+      <div>Runtime<b>2:00</b></div>
+      <div>Shots<b>35</b></div>
+      <div>Internal lock<b>1.9.</b></div>
+      <div class="hot">Days to lock<b id="m-days">—</b></div>
+    </div>
+  </div></header>
+
+  <nav class="tabs"><div class="tabs-in">{tabs_html}</div></nav>
+
+  <div class="bar"><div class="bar-in">
+    <p class="blbl">Power output<b>31%</b></p>
+    <div class="trk"><div class="fil"></div></div>
+    <p class="bnote">not maximum. never maximum. we save some for the finish.</p>
+  </div></div>
+
+  <main>{''.join(P)}</main>
+</div>
+
+<div id="lb"><img id="lbi" alt=""></div>
+<script>{JS}</script>
+</body>
+</html>
+"""
+
+open('index.html', 'w', encoding='utf-8').write(DOC)
+print('written', len(DOC), 'bytes')
