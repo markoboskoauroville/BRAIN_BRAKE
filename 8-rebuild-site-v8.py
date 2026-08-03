@@ -215,10 +215,7 @@ TABS = [
  ("neha","Neha","Client"),
  ("venkatesh","Venkatesh","Camera"),
  ("kristijan","Kristijan","Animation"),
- ("director","Director","Marko"),
- ("editor","Editor","Marko"),
- ("sound","Sound","Marko"),
- ("music","Music","Marko"),
+ ("marko","Marko","Post"),
  ("versions","Versions","Archive"),
 ]
 
@@ -230,6 +227,17 @@ def pane(pid, eyebrow, title, standfirst, body):
             f'<h2 class="pane-t">{title}</h2>'
             f'<p class="standfirst">{standfirst}</p>'
             f'{body}</section>')
+
+def subpane(sid, title, standfirst, body):
+    return (f'<section class="sub" id="s-{sid}">'
+            f'<h3 class="sub-t">{title}</h3>'
+            f'<p class="standfirst">{standfirst}</p>'
+            f'{body}</section>')
+
+SUBTABS = [("director","Director","Concept & cut"),
+           ("editor","Editor","Picture"),
+           ("sound","Sound","Design & mix"),
+           ("music","Music","Original score")]
 
 def stats(items):
     out = ['<div class="grid">']
@@ -459,7 +467,8 @@ P.append(pane("kristijan","Animacija i motion","Kristijan",
     'snimljeno, da znaš gdje ide kompozit, a gdje crtaš sve od nule.</p>'
   + all_scenes([1,2,3,4,5,6])))
 
-P.append(pane("director","Marko Boško · direction","Director",
+S = []
+S.append(subpane("director","Director",
   "The job is to protect one idea from six people's good intentions.",
   '<div class="sheet">'
   '<h3>The spine</h3>'
@@ -484,7 +493,7 @@ P.append(pane("director","Marko Boško · direction","Director",
   '<li>No shouting, no big music swell on the reveal. The reveal is a lever moving quietly.</li></ul>'
   '</div>'))
 
-P.append(pane("editor","Marko Boško · picture","Editor",
+S.append(subpane("editor","Editor",
   "The performance does not exist until it is assembled. That is literally true on this film.",
   '<div class="sheet">'
   '<h3>Method</h3>'
@@ -509,7 +518,7 @@ P.append(pane("editor","Marko Boško · picture","Editor",
   '<p class="hand">the rough cut going out on 20.8. is the most important delivery of the whole project.</p>'
   '</div>'))
 
-P.append(pane("sound","Marko Boško · audio","Sound design",
+S.append(subpane("sound","Sound design",
   "In a film this dense, sound is what makes the cuts vanish and the science feel physical.",
   '<div class="sheet">'
   '<h3>The sound of each world</h3>'
@@ -531,7 +540,7 @@ P.append(pane("sound","Marko Boško · audio","Sound design",
   '<p class="hand">the freeze at 0:12 is the single best sound moment available. everything stops. use it.</p>'
   '</div>'))
 
-P.append(pane("music","Marko Boško · score","Music",
+S.append(subpane("music","Music",
   "One instrument stands for the body, one for the brain. The whole score is the conversation between them.",
   '<div class="sheet">'
   '<h3>The idea</h3>'
@@ -557,6 +566,16 @@ P.append(pane("music","Marko Boško · score","Music",
   '<li>Delivered as stems so the mix can duck cleanly under Manan\'s voice.</li>'
   '<li>Entirely original, so there is no licensing question in a competition submission.</li></ul>'
   '</div>'))
+
+
+subtabs_html = "".join(
+  f'<button class="stab" data-s="{sid}">{lbl}<small>{sub}</small></button>'
+  for sid, lbl, sub in SUBTABS)
+
+P.append(pane("marko","Post production","Marko Boško",
+  "Four roles on this film, one person. Direction sets what the film is, the edit assembles it, "
+  "sound makes the joins vanish, and the score carries the argument between muscle and mind.",
+  '<div class="subtabs">' + subtabs_html + '</div>' + "".join(S)))
 
 P.append(pane("versions","Archive","Versions",
   "Every cut, every test, every abandoned idea. Nothing gets overwritten, so the film's whole history stays readable.",
@@ -679,6 +698,18 @@ h3.dept{font-family:Georgia,serif;font-size:28px;font-weight:700;color:#eef3f8;
  text-align:left;padding:8px 12px 8px 0;border-bottom:1.5px solid var(--ink);color:#5f5849}
 .sheet td{padding:10px 12px 10px 0;border-bottom:1px solid rgba(46,43,38,.16);vertical-align:top}
 
+.subtabs{display:flex;flex-wrap:wrap;gap:0;margin:30px 0 8px;border-bottom:1px solid var(--rule)}
+.stab{background:none;border:0;border-bottom:3px solid transparent;cursor:pointer;padding:12px 18px 12px 0;
+ margin-right:26px;color:var(--dim);font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.1em;
+ text-transform:uppercase;line-height:1.4;text-align:left}
+.stab:hover{color:var(--txt)}
+.stab:focus-visible{outline:2px solid var(--cy);outline-offset:-2px}
+.stab.on{color:var(--am);border-bottom-color:var(--am)}
+.stab small{display:block;font-size:9px;letter-spacing:.14em;opacity:.6;margin-top:2px;text-transform:none}
+.sub{display:none;padding-top:22px}
+.sub.on{display:block}
+.sub-t{font-family:Georgia,serif;font-size:30px;font-weight:700;color:#eef3f8;margin-bottom:12px;letter-spacing:-.01em}
+
 /* ---- storyboard ---- */
 .sc{margin-top:40px;padding-top:32px;border-top:1px solid var(--rule)}
 .sc-h{font-family:Georgia,serif;font-size:27px;font-weight:700;color:#eef3f8;line-height:1.2;
@@ -745,7 +776,7 @@ h3.dept{font-family:Georgia,serif;font-size:28px;font-weight:700;color:#eef3f8;
 
 JS = """
 (function(){
- var PW='manan', CA='bb_auth', CT='bb_tab', CS='bb_scroll', DEF='overview';
+ var PW='manan', CA='bb_auth', CT='bb_tab', CS='bb_scroll', CSUB='bb_sub', DEF='overview', DEFS='director';
  function set(k,v){var d=new Date();d.setTime(d.getTime()+180*864e5);
   document.cookie=k+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';}
  function get(k){var m=document.cookie.match('(^|; )'+k+'=([^;]*)');return m?decodeURIComponent(m[2]):null;}
@@ -761,16 +792,32 @@ JS = """
   for(i=0;i<bs.length;i++) bs[i].classList.toggle('on', bs[i].getAttribute('data-p')===id);
   if(save){set(CT,id);set(CS,'0');window.scrollTo(0,0);}
  }
+
+ function showSub(sid,save){
+  var i,ss=document.querySelectorAll('.sub');
+  for(i=0;i<ss.length;i++) ss[i].classList.remove('on');
+  var t=document.getElementById('s-'+sid);
+  if(!t){sid=DEFS;t=document.getElementById('s-'+DEFS);}
+  if(t) t.classList.add('on');
+  var bs=document.querySelectorAll('.stab');
+  for(i=0;i<bs.length;i++) bs[i].classList.toggle('on', bs[i].getAttribute('data-s')===sid);
+  if(save) set(CSUB,sid);
+ }
  function open_(){
   gate.style.display='none'; app.style.display='block';
   document.getElementById('m-days').textContent=days();
   show(get(CT)||DEF,false);
+  showSub(get(CSUB)||DEFS,false);
   var y=parseInt(get(CS)||'0',10);
   if(y>0) setTimeout(function(){window.scrollTo(0,y);},80);
  }
  var bs=document.querySelectorAll('.tab');
  for(var i=0;i<bs.length;i++){
   bs[i].addEventListener('click',function(){show(this.getAttribute('data-p'),true);});
+ }
+ var sb=document.querySelectorAll('.stab');
+ for(var j=0;j<sb.length;j++){
+  sb[j].addEventListener('click',function(){showSub(this.getAttribute('data-s'),true);window.scrollTo(0,0);});
  }
  var t=null;
  window.addEventListener('scroll',function(){
