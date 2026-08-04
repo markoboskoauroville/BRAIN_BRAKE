@@ -572,7 +572,18 @@ P.append(pane("neha","Client and producer","Neha",
     '<li><b>Animated cut</b> around 27.8.</li>'
     '<li><b>Final film</b> 1.9., a full fortnight before the deadline.</li></ul>'
     '<p>Every version lands in the Versions tab and stays there. Nothing gets overwritten, so you can always see how the film grew.</p>'
-    '</div>'))
+    '</div>'
+  + '<h3 class="dept">Your documents</h3>'
+    '<p class="standfirst">Everything written for you, in one place. Read the outline together with Manan first, '
+    'it takes about three minutes.</p>'
+    '<div class="docs">'
+    + doclink("The film, in outline", "Eight pages, one picture per scene, for you and Manan to read together",
+              "assets/pdf/3-THE-BRAIN-BRAKE-outline-for-Manan-and-Neha.pdf")
+    + doclink("Shooting script, version 2", "Manan Periwal & Marko Bo\u0161ko, the full script behind the outline",
+              "assets/pdf/2-THE-BRAIN-BRAKE-script-v2-Manan-and-Marko.pdf")
+    + doclink("Original script, first draft", "Manan's own screenplay, kept on file untouched",
+              "assets/pdf/1-THE-BRAIN-BRAKE-original-script-by-Manan-v1.pdf")
+    + '</div>'))
 
 P.append(pane("venkatesh","Camera, sound, lighting","Venkatesh",
   "One day, three setups, one boy against grey. Everything else in this film gets drawn later in Zagreb.",
