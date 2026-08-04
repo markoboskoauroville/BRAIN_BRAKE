@@ -305,6 +305,14 @@ TABS = [
 # ------------------------------------------------------------------ panes
 
 DOCS = [
+ dict(id="outline-pitch", state="ready",
+      file="assets/pdf/3-THE-BRAIN-BRAKE-outline-for-Manan-and-Neha.pdf",
+      title="The film, in outline",
+      by="Sent to Manan and Neha for approval",
+      meta="8 pages · PDF · one picture per scene",
+      desc="The whole film in about three minutes of reading. A cover, one page per scene carrying its hero image, "
+           "a few lines of story and the key line of dialogue, then a closing page on what follows. Written to be "
+           "read by a fourteen year old and his mother together, and to be answered with a yes or a no."),
  dict(id="script-v2", state="ready",
       file="assets/pdf/2-THE-BRAIN-BRAKE-script-v2-Manan-and-Marko.pdf",
       title="Shooting script, version 2",
