@@ -14,136 +14,218 @@ SHOT_SHEETS = [
 
 SCENES = [
  dict(n=1, title="The Mystery", tc="0:00 – 0:18", boarded=True,
-   log="A man who has nothing left does something impossible. A boy in a coat decides to find out why.",
+   log="A man with nothing left does something impossible. A boy in a coat goes looking for where it came from.",
    frames=[]),
- dict(n=2, title="The Old Answer", tc="0:18 – 0:42", boarded=False,
-   log="For a century the muscles took the blame. The case looked closed.",
+ dict(n=2, title="The Full Tank", tc="0:18 – 0:40", boarded=False,
+   log="He expects to find an empty tank. He finds a full one, and a door somebody closed on purpose.",
    frames=[
-     ("2A","0:18 – 0:24 · static · animation only",
-      "A dusty classroom. Light falls across an old chalkboard carrying a portrait of a moustached scientist and a chalked chain of reasoning. The room feels abandoned, which is the point.",
-      [("MANAN (V.O.)","For a hundred years, we blamed the muscles.")],
-      [("anim","Chalkboard text must read RUN FASTER, then OXYGEN, then FATIGUE, then STOP. Portrait labelled A.V. HILL, 1923. Drawn, never photographic."),
+     ("2.1","0:18 – 0:22 · wide · animation only",
+      "Inside the leg, a working factory. Enormous gears turning where the calf muscle would be, conveyor belts, pressure vessels, tiny workers hauling crates. Everything running smoothly. Order and rhythm.",
+      [("MANAN (V.O.)","For a hundred years we blamed the muscles.")],
+      [("anim","Establishing wide. Deep perspective so the machinery towers over the workers."),
        ("cam","Nothing required."),
-       ("snd","Dry dead room. Chalk on slate. A clock somewhere."),
-       ("mus","Score drops out entirely. Let the room be silent.")]),
-     ("2B","0:24 – 0:36 · wide · live action inside animation",
-      "Inside the leg, a factory. Gears turn in the shape of a calf muscle, conveyor belts run, a backup power lever waits at the far wall. Three workers labour, panic and haul. Manan walks through it all with his glass, unbothered, the only calm thing in the room.",
-      [("MANAN (V.O.)","Oxygen comes in. Fuel burns. Everything runs.\nUntil it doesn't.")],
-      [("cam","SETUP A. Manan stands still, holding the glass at chest height, looking slowly left to right at nothing. Shoot thirty seconds of him simply observing. No lines to camera here."),
-       ("anim","The heaviest frame in the film. Machinery, three workers, smoke, conveyor. Workers stay small so Manan reads as the subject."),
-       ("snd","Industrial. Hydraulics, trucks arriving, then not arriving. An alarm klaxon. Machines slowing to a grind."),
-       ("mus","Percussion leads. Mechanical, on the beat, almost a work song.")]),
-     ("2C","0:36 – 0:42 · macro · animation only",
-      "Close on a gear grinding to a halt as smoke pours across it, and a pressure gauge with the needle buried in the red. The old theory reaching its limit.",
-      [("MANAN (V.O.)","Except it doesn't explain this.")],
-      [("anim","The red needle is the only colour permitted in the whole film besides skin tones. Use it once, here."),
-       ("cam","Nothing required."),
-       ("snd","Metal stress, a deep groan, then the case closed stamp landing hard."),
-       ("mus","Percussion stops mid bar. Do not resolve it.")]),
-   ]),
- dict(n=3, title="The Suspect", tc="0:42 – 1:12", boarded=False,
-   log="Behind the broken chalkboard, somebody has been watching the whole race.",
-   frames=[
-     ("3A","0:42 – 0:52 · wide · animation only",
-      "A curved wall of monitors reading heart rate, temperature, hydration. In the middle of it all, a cartoon brain in a tracksuit sits in a large chair with a coffee mug, entirely unhurried.",
+       ("snd","Industrial, but healthy. Hydraulics, conveyor rhythm, a working hum."),
+       ("mus","Percussion enters, mechanical and on the beat, almost a work song.")]),
+     ("2.2","0:22 – 0:27 · medium wide · live action inside animation",
+      "Manan walks through the middle of the factory, unhurried, magnifying glass at chest height, turning his head to take it in. The only calm figure in a room full of labour.",
+      [("MANAN (V.O.)","Ran out of fuel. Ran out of air. Simple.")],
+      [("cam","SETUP A. Manan walks slowly through frame, looking left and right at nothing. Shoot thirty seconds of him simply observing. No lines to camera."),
+       ("anim","Workers stay small and busy around him so he reads as the subject. They do not notice him."),
+       ("snd","His footsteps sit clean on top of the machinery."),
+       ("mus","Percussion continues under.")]),
+     ("2.3","0:27 – 0:31 · medium · animation only",
+      "The machines slow. Steam vents. A worker straightens up, wipes his brow and shrugs at nobody in particular. That is it. We are done.",
       [],
-      [("anim","The reveal. Push in slowly. Every monitor is live and moving. Coach Brain does not react to the camera arriving."),
+      [("anim","No panic and no alarm. This is a shift ending, not a catastrophe. Tone matters, they are resigned, not frightened."),
        ("cam","Nothing required."),
-       ("snd","Soft electronic beeps, a low room hum. Clinical and calm. The opposite of the factory."),
-       ("mus","Sustained pad enters for the first time. This is the brain's voice in the score.")]),
-     ("3B","0:52 – 1:02 · two shot · live action inside animation",
-      "Manan and Coach Brain face each other. Manan is genuinely startled. Coach Brain is delighted and completely relaxed, mug in hand.",
-      [("MANAN","You've been watching the whole race?"),
-       ("COACH BRAIN","Every second.\nEvery heartbeat. Every breath. Every drop of sweat.")],
-      [("cam","SETUP B. Tennis ball on a stand at seated height, camera left, for his eyeline. Shoot the line, then ten seconds of silent reaction: surprise, listening, half smile."),
-       ("anim","Glowing lines radiate from Coach Brain out to a drawn heart, lungs, thermometer and water droplet as he speaks."),
-       ("snd","A soft click on each item as the network connects. Four clicks, evenly spaced."),
-       ("mus","Pad holds. Percussion pulls right back. The film gets quieter as it gets more interesting.")]),
-     ("3C","1:02 – 1:12 · two shot with screen · live action inside animation",
-      "A monitor between them shows the runner. Coach Brain eases the power output lever from 100 down to 82 without putting down his coffee. On screen the runner does not collapse. He settles into a pace he can hold.",
-      [("MANAN","So you're controlling my muscles."),
-       ("COACH BRAIN","I'm not stopping you.\nI'm getting you to the finish line."),
-       ("SUBTITLE, 2 SEC","Central Governor Theory, proposed by Prof. Tim Noakes, 1997. Still debated by scientists.")],
-      [("cam","SETUP B continued. Same eyeline. He listens, then answers. Keep him small in frame so the screen has room."),
-       ("anim","The lever is the single most important object in the film. Numerals 100% and 82% must be legible as it moves."),
-       ("snd","A mechanical clunk as the lever seats. The runner's breathing eases audibly under it."),
-       ("mus","One note steps down as the lever moves. The score does what the picture does.")]),
-   ]),
- dict(n=4, title="Low Power Mode", tc="1:12 – 1:32", boarded=False,
-   log="The idea everybody already understands, sitting in their pocket the whole time.",
-   frames=[
-     ("4A","1:12 – 1:18 · macro · animation only",
-      "A phone fills the frame. The battery reads twenty percent, a low power mode banner slides across, and the background apps quietly close themselves and drift away.",
-      [("MANAN (O.S.)","Wait. Is it broken?")],
-      [("anim","Phone must be fully generic. No notch, no recognisable silhouette, no brand."),
-       ("cam","Nothing required."),
-       ("snd","One clean notification chime, then the world audibly dims as each app closes."),
-       ("mus","Almost nothing. One held note. The quietest point in the film.")]),
-     ("4B","1:18 – 1:26 · wide · live action inside animation",
-      "Manan stands small at the foot of the screen, dwarfed by it, looking up as a shield forms around the battery.",
-      [("MANAN","It's saving something for later.")],
-      [("cam","SETUP B. Manan looking up and slightly off camera. This is the emotional centre of the whole film. Shoot it eight to ten times. Take six is usually the one."),
-       ("anim","The shield draws itself as he says the line, not before. Let the picture arrive on the word."),
-       ("snd","Nothing underneath the line. Let it sit completely bare."),
-       ("mus","Held note only. Do not add anything here, however tempting.")]),
-     ("4C","1:26 – 1:32 · close up · live action inside animation",
-      "Tight on Manan looking up, the shielded battery glowing beside his face. Then the phone morphs back into Coach Brain, the battery becomes the runner, the shield becomes a finish line.",
-      [("COACH BRAIN","Tired might not mean empty.\nIt might mean, ease off, we're not home yet.")],
-      [("cam","SETUP B. Low angle close up, chin slightly raised, eyes up. No dialogue on his face here, just listening."),
-       ("anim","The morph is one continuous move. Phone to brain, battery to runner, shield to finish line, all in the same breath."),
-       ("snd","A soft rising tone across the transformation. No hard cut."),
-       ("mus","Pad swells gently, then holds. Still no resolution.")]),
-   ]),
- dict(n=5, title="The Finish", tc="1:32 – 1:52", boarded=False,
-   log="The question from the first eighteen seconds, finally answered.",
-   frames=[
-     ("5A","1:32 – 1:38 · split screen · animation only",
-      "Left, the runner twenty metres out, sweat pouring, the tape just ahead. Right, Coach Brain at his desk reading every screen, calm, mug still in hand. Both happening at the same instant.",
+       ("snd","Machinery winding down, a long mechanical sigh, then quiet."),
+       ("mus","Percussion thins to a single pulse.")]),
+     ("2.4","0:31 – 0:34 · medium · live action inside animation",
+      "But Manan has stopped. At the back of the factory, behind the machinery, there is a door. It is shut. He puts his hand flat against it.",
+      [("MANAN (V.O.)","Except when scientists tested runners the moment they gave up, the muscles could still do far more.")],
+      [("cam","SETUP A. Manan reaching forward, palm flat at chest height, head slightly tilted, listening. Nothing is really there, give him a mark."),
+       ("anim","The door is old, industrial, riveted, clearly not opened in a long time. A thin line of light at its edge."),
+       ("snd","Everything else drops away. Only his hand on metal."),
+       ("mus","Pulse stops. Silence.")]),
+     ("2.5","0:34 – 0:38 · wide · live action inside animation",
+      "The door swings open onto an enormous hall of storage tanks stretching away into the distance, and every single one of them is full. Light floods out over him.",
       [],
-      [("anim","The hairline split is drawn, not a hard digital edge. Distance counter ticking 20, 19, 18 on his console."),
-       ("cam","Nothing required. Manan does not appear in this scene at all."),
-       ("snd","Left side loud, breath and crowd. Right side almost silent. The contrast is the whole idea."),
-       ("mus","Pulse returns underneath, quiet at first.")]),
-     ("5B","1:38 – 1:48 · wide · animation only",
-      "The sprint. Speed lines streaming, the legs drawn semi transparent, muscle fibres lighting up one after another as more are recruited. The lever has gone from 82 to 95 and never to 100.",
-      [("MANAN (V.O.)","The brain didn't make new energy.\nIt just decided it was finally safe to spend it."),
-       ("CAPTION","More muscle fibres recruited.\nNotice: not maximum.")],
-      [("anim","The glowing fibres are the money shot of the animation. Light them in sequence, not all at once, so recruitment reads as a process."),
-       ("cam","Nothing required."),
-       ("snd","Everything opens up. Crowd erupts, footfall sharpens, breath drives. Loudest point of the film."),
-       ("mus","Pulse builds hard but never fully resolves. The brain never goes to 100 percent, so neither does the music.")]),
-     ("5C","1:48 – 1:52 · static · animation only",
-      "The detective board swings over on its easel to reveal what was written on the back all along, while behind it the runner crosses the line and freezes.",
-      [("ON THE BOARD","YOUR BRAIN WAS SAVING SOME ALL ALONG.")],
-      [("anim","The handwriting on the reverse must be clean and legible."),
-       ("cam","Nothing required."),
-       ("snd","The board swinging on its hinge, then everything cuts to nothing on the freeze."),
-       ("mus","The three note motif from 0:12 returns complete. This is the release the film has withheld for ninety seconds.")]),
+      [("anim","The reveal, and the first big lift of the film. Scale enormous, light warm and rising. This must feel like a discovery, not a warning."),
+       ("cam","SETUP A. Manan in silhouette from behind, then turning into the light. Shoot his face lit from the front, eyes widening."),
+       ("snd","A deep warm swell as the door opens. Space and air."),
+       ("mus","The three note motif from 0:12 returns, opening upward for the first time.")]),
+     ("2.6","0:38 – 0:40 · close up · live action",
+      "Tight on Manan's face in that light. Not shock. Delight.",
+      [("MANAN","It was never empty.")],
+      [("cam","SETUP A. Close up, direct to lens. He should look like a boy who has just got away with something. Shoot it many times and use the most unguarded take."),
+       ("anim","Light spill and lens flare drawn over the live plate."),
+       ("snd","Nothing under the line. Let it sit bare."),
+       ("mus","Motif holds, unresolved but bright.")]),
    ]),
- dict(n=6, title="The Twist", tc="1:52 – 2:00", boarded=False,
-   log="Nobody wins the argument, and that is the honest ending.",
+ dict(n=3, title="The Gatekeeper", tc="0:40 – 1:05", boarded=False,
+   log="Somebody closed that door. He is not a villain, and he is holding a key.",
    frames=[
-     ("6A","1:52 – 1:55 · wide · live action inside animation",
-      "White void. Manan stands between the Muscle and Coach Brain. Between them, an emergency brake marked fatigue. Instead of arguing, the two of them reach across and shake hands.",
-      [("MANAN","So who was right?")],
-      [("cam","SETUP C. Manan against grey, arms at his sides, one line to lens. Also shoot him looking left and looking right so the two characters can be placed beside him."),
-       ("anim","Pure white. No floor detail, no horizon. The handshake happens over the brake, not beside it."),
-       ("snd","Near silence. A faint high tone. Everything else gone."),
-       ("mus","Motif thins out to a single sustained note.")]),
-     ("6B","1:55 – 1:58 · wide · live action inside animation",
-      "Pull back. All three are tiny against an enormous fatigue lever that dwarfs them completely. Nobody is in charge of it.",
-      [("MANAN","Scientists are still arguing.\nThat's the best part.")],
-      [("cam","SETUP C continued. Same position, two short lines. He should sound pleased, not resigned."),
-       ("anim","Scale is the joke. The lever should feel absurdly, comically larger than all three of them."),
-       ("snd","Room tone only."),
-       ("mus","One note, held, thinning.")]),
-     ("6C","1:58 – 2:00 · wide · live action inside animation",
-      "Manan considers it, hand to chin. The Muscle sags, Coach Brain slumps against the base of the lever. Two exhausted characters and one boy who has just understood something. Cut to black.",
-      [("END CARD","THE STRONGEST FINISH MIGHT BEGIN WITH THE SMARTEST BRAKE.")],
-      [("cam","SETUP C. Hand to chin, thinking, looking slightly up and off. No line. Shoot it long and use the quietest moment."),
-       ("anim","Both characters visibly spent. After two minutes of arguing about fatigue, the joke is that they are the ones who are tired."),
-       ("snd","One last breath, then nothing. Cut hard to black on silence."),
-       ("mus","Final note rings out into the black and is allowed to decay fully.")]),
+     ("3.1","0:40 – 0:45 · wide · animation only",
+      "A warm glowing room of monitors, brighter and friendlier than a control centre has any right to be. A large chair begins to turn.",
+      [],
+      [("anim","Warm light, not cold blue. This room is welcoming. The reveal should feel like meeting somebody, not catching them."),
+       ("cam","Nothing required."),
+       ("snd","Soft electronic beeps, a low comfortable hum."),
+       ("mus","Sustained pad enters. This is the brain's voice in the score.")]),
+     ("3.2","0:45 – 0:50 · medium · animation only",
+      "Coach Brain, tracksuit, whistle, coffee mug, and a small brass key on a chain around his neck. He is not caught out. He is delighted to have been found.",
+      [("COACH BRAIN","I keep the key.")],
+      [("anim","The key is the most important object in the film. Establish it clearly here, catching the light."),
+       ("cam","Nothing required."),
+       ("snd","A small bright chime as the key catches the light."),
+       ("mus","Pad warms.")]),
+     ("3.3","0:50 – 0:55 · two shot · live action inside animation",
+      "Manan and Coach Brain face each other. Manan is not accusing him. He is working it out.",
+      [("MANAN","You closed that door.")],
+      [("cam","SETUP B. Tennis ball on a stand at seated height, camera left, for eyeline. Shoot the line, then ten seconds of listening and half smiling."),
+       ("anim","Composite Manan into the room. Keep both figures the same height in frame so neither dominates."),
+       ("snd","Room tone, close and quiet."),
+       ("mus","Pad holds.")]),
+     ("3.4","0:55 – 1:00 · wide · animation only",
+      "Coach Brain gestures and the room lights up. Glowing lines run out to a heart, lungs, a thermometer, a water drop, a distance counter, all feeding back to one dial marked from EASY to DANGER.",
+      [("COACH BRAIN","Every heartbeat. Every breath. Every drop of sweat. I'm asking one question. Can we keep going safely?")],
+      [("anim","The dial replaces the old power lever. It is a judgement instrument, not a throttle. Needle sits in the middle."),
+       ("cam","Nothing required."),
+       ("snd","A soft click on each item as the network connects. Five clicks, evenly spaced."),
+       ("mus","One note added per click, building a chord.")]),
+     ("3.5","1:00 – 1:03 · two shot · live action inside animation",
+      "Manan gets there.",
+      [("MANAN","So the limit isn't my body. It's your guess."),
+       ("COACH BRAIN","It's my best guess. And I'd rather you finish than break.")],
+      [("cam","SETUP B continued. Same eyeline. He should sound like he is discovering it as he says it, not stating it."),
+       ("anim","Coach Brain grins, entirely unembarrassed. No defensiveness anywhere in the performance."),
+       ("snd","Nothing underneath."),
+       ("mus","Chord holds.")]),
+     ("3.6","1:03 – 1:05 · insert · animation only",
+      "Two second subtitle over the dial.",
+      [("SUBTITLE","One influential model, the Central Governor Theory, proposed by Prof. Tim Noakes, 1997. Scientists still debate exactly how brain and muscle share the work.")],
+      [("anim","Clean, small, low in frame. In and out in two seconds. This honesty is scored by the judges."),
+       ("cam","Nothing required."),
+       ("snd","Nothing."),
+       ("mus","Chord thins to one note.")]),
+   ]),
+ dict(n=4, title="The Trick", tc="1:05 – 1:25", boarded=False,
+   log="Scientists lied to a cyclist about his own best time. He beat it. Which means it was never his best.",
+   frames=[
+     ("4.1","1:05 – 1:09 · medium · animation only",
+      "A sports laboratory. A cyclist on a stationary bike, screen in front of him showing a translucent ghost rider. He has been told the ghost is a recording of his own best ever ride.",
+      [("MANAN (V.O.)","So scientists tried something cheeky. They let a cyclist race himself.")],
+      [("anim","Clean lab, not clinical. Cables, sensors, a big screen. Ghost rider drawn semi transparent."),
+       ("cam","Nothing required."),
+       ("snd","Chain and flywheel, breathing, the electronic tick of a timer."),
+       ("mus","Pulse enters, light and playful.")]),
+     ("4.2","1:09 – 1:12 · insert · animation only",
+      "Behind glass, a researcher quietly turns a small dial. On her monitor, one figure: plus two percent.",
+      [("MANAN (V.O.)","Except they made the ghost slightly faster. And they didn't tell him.")],
+      [("anim","Only two characters permitted on screen anywhere in this shot: the numerals 2%. Everything else is drawing."),
+       ("cam","Nothing required."),
+       ("snd","One small mechanical click. Conspiratorial."),
+       ("mus","A single mischievous note.")]),
+     ("4.3","1:12 – 1:18 · wide · animation only",
+      "The cyclist chases. Strains. Draws level with his own ghost. Passes it. The ghost falls behind and dissolves.",
+      [],
+      [("anim","This is a race, cut it like one. Ghost and rider overlapping as he comes through is the money frame."),
+       ("cam","Nothing required."),
+       ("snd","Everything opens up. Breathing hard, flywheel screaming."),
+       ("mus","Pulse builds fast.")]),
+     ("4.4","1:18 – 1:22 · close · animation only",
+      "The cyclist, spent and astonished, looking at the screen. He has beaten a time he already believed was everything he had.",
+      [("MANAN (V.O.)","He beat his own maximum. Which means it was never his maximum.")],
+      [("anim","His expression is the shot. Confusion turning into a laugh."),
+       ("cam","Nothing required."),
+       ("snd","Breathing, then a laugh. Keep the laugh."),
+       ("mus","Held, suspended.")]),
+     ("4.5","1:22 – 1:25 · close up · live action inside animation",
+      "Manan turns to camera, thoroughly delighted.",
+      [("MANAN","Change what the brain believes, and the door opens.")],
+      [("cam","SETUP B. Direct to lens, smiling. This is the most cheerful line in the film. Do not let him be earnest."),
+       ("anim","The door from Scene 2 flashes back for four frames behind him."),
+       ("snd","Clean and dry under the line."),
+       ("mus","Everything drops out for the line, then the pulse returns hard.")]),
+   ]),
+ dict(n=5, title="The Release", tc="1:25 – 1:50", boarded=False,
+   log="The peak. What it looks like when the limit moves.",
+   frames=[
+     ("5.1","1:25 – 1:28 · close · animation only",
+      "Coach Brain looks at his dial, then off toward Manan. He smiles. And he eases it open.",
+      [],
+      [("anim","The single most important gesture in the film. He is not overpowered and not persuaded. He chooses."),
+       ("cam","Nothing required."),
+       ("snd","A deep mechanical release, like a lock opening."),
+       ("mus","The chord opens upward.")]),
+     ("5.2","1:28 – 1:33 · wide · animation only",
+      "Inside the runner's legs, drawn semi transparent, muscle fibres light one after another. First a few. Then many. Then more than seemed possible.",
+      [("CAPTION","More muscle fibres recruited. Notice: still not maximum.")],
+      [("anim","Light them in sequence, never all at once. Recruitment must read as a process unfolding."),
+       ("cam","Nothing required."),
+       ("snd","A rising shimmer, each fibre its own small tone."),
+       ("mus","Building.")]),
+     ("5.3","1:33 – 1:38 · wide · animation only",
+      "The runner flies. Stride fully open, speed lines streaming, the crowd erupting. Everything he had was always there.",
+      [("MANAN (V.O.)","The brain didn't make new energy. It gave permission.")],
+      [("anim","Compare directly with shot 1.1. Same man, same road, transformed. The audience should feel the answer land."),
+       ("cam","Nothing required."),
+       ("snd","Loudest point of the film. Crowd, footfall, breath, all wide open."),
+       ("mus","Full.")]),
+     ("5.4","1:38 – 1:43 · wide · animation only",
+      "And the film breaks loose. A traceur launching rooftop to rooftop against open sky. A dancer turning in the air. A swimmer leaving the wall. Bodies doing what they could always do.",
+      [],
+      [("anim","Rapid, joyful, rising. Each cut higher in frame than the last so the sequence physically lifts."),
+       ("cam","Nothing required."),
+       ("snd","Wind, impact, water, breath. Rhythmic rather than realistic."),
+       ("mus","Peak. This is where the audience gets goosebumps.")]),
+     ("5.5","1:43 – 1:47 · wide · live action inside animation",
+      "Manan himself, mid air, coat flying, laughing. Not explaining anything. Just in it.",
+      [],
+      [("cam","SETUP D, new. Manan jumping on the spot against grey, arms out, laughing. Shoot many takes at high frame rate if the camera allows. Let him be silly."),
+       ("anim","Place him in open sky. He is the last body in the montage and the one the audience is rooting for."),
+       ("snd","His laugh, clean and unprocessed."),
+       ("mus","Held at the top.")]),
+     ("5.6","1:47 – 1:50 · wide · animation only",
+      "The runner crosses the line. Freeze. Everything stops, exactly as it did at 0:12, but bright this time instead of blue.",
+      [],
+      [("anim","Rhyme the freeze from Scene 1 precisely. Same composition, opposite feeling."),
+       ("cam","Nothing required."),
+       ("snd","Cut to almost nothing on the freeze."),
+       ("mus","The motif resolves completely. This is the release the film has withheld for ninety seconds.")]),
+   ]),
+ dict(n=6, title="The Invitation", tc="1:50 – 2:00", boarded=False,
+   log="Still, bright, and quietly handed over.",
+   frames=[
+     ("6.1","1:50 – 1:54 · medium · live action inside animation",
+      "The motion drains away to white. Manan stands alone, eyes closed, breathing. Completely calm.",
+      [],
+      [("cam","SETUP C. Manan against grey, arms at his sides, eyes closed, simply breathing. Shoot a full unbroken minute and use the stillest twenty frames. No performance at all."),
+       ("anim","Pure white, no floor, no horizon, no detail. Let him be the only thing in the frame."),
+       ("snd","One breath in, one breath out, close and clear. Everything else gone."),
+       ("mus","A single sustained note.")]),
+     ("6.2","1:54 – 1:57 · medium · live action inside animation",
+      "The dial hangs in the air beside him. This time his own hand is on it.",
+      [("MANAN","The wall is real. But somebody set it."),
+       ("MANAN","And what your brain believes is safe can be trained.")],
+      [("cam","SETUP C. Two short lines to lens, one sentence per take. He should sound certain and unhurried, not triumphant."),
+       ("anim","Same dial as Scene 3, unmistakably. His hand replaces Coach Brain's."),
+       ("snd","Nothing under the lines."),
+       ("mus","The note holds.")]),
+     ("6.3","1:57 – 1:59 · medium · live action inside animation",
+      "Coach Brain steps up beside him, lifts the key from around his own neck, and hands it over. A small, warm, unceremonious moment. Manan opens his eyes.",
+      [],
+      [("anim","No fanfare. Two characters and a small object changing hands. Play it almost throwaway and it will land hard."),
+       ("cam","SETUP C. Manan receiving something at chest height, then looking up. Give him a real object to take so the hand is right."),
+       ("snd","The small chime of the key, once."),
+       ("mus","Note thinning.")]),
+     ("6.4","1:59 – 2:00 · end card · animation only",
+      "Cut to black.",
+      [("END CARD","THE LIMIT IS A SETTING, NOT A WALL.")],
+      [("anim","Clean type on black. No decoration."),
+       ("cam","Nothing required."),
+       ("snd","Silence."),
+       ("mus","Final note decays fully into the black.")]),
    ]),
 ]
 
@@ -210,7 +292,7 @@ GLASS = ('<svg class="glass" viewBox="0 0 40 40" aria-hidden="true">'
 TABS = [
  ("overview","Overview","All"),
  ("script","The Film","Script"),
- ("board","Storyboard","35 shots"),
+ ("board","Storyboard","33 shots"),
  ("chars","Characters","Design"),
  ("neha","Neha","Client"),
  ("venkatesh","Venkatesh","Camera"),
@@ -223,11 +305,20 @@ TABS = [
 # ------------------------------------------------------------------ panes
 
 DOCS = [
+ dict(id="script-v2", state="ready",
+      file="assets/pdf/2-THE-BRAIN-BRAKE-script-v2-Manan-and-Marko.pdf",
+      title="Shooting script, version 2",
+      by="Manan Periwal & Marko Boško",
+      meta="7 pages · PDF · current working draft",
+      desc="The film as it will be shot. Same subject and same science as Manan's first draft, with the story turned "
+           "from an explanation into a discovery. Manan brought the concept, the theory and the detective; the second "
+           "draft develops the arc so the film rises rather than settles. Includes the spine, all six scenes with "
+           "dialogue, and a note on exactly what changed and why."),
  dict(id="script-original", state="ready",
       file="assets/pdf/1-THE-BRAIN-BRAKE-original-script-by-Manan-v1.pdf",
       title="Original script, first draft",
       by="Written by Manan Periwal",
-      meta="24 pages · PDF · 867 KB",
+      meta="24 pages · PDF · superseded by version 2",
       desc="Manan's own screenplay, exactly as he wrote it, before any cutting. Roughly four to five minutes of "
            "material. Everything in this production comes from here, so it stays on file untouched as the source "
            "document and as proof the concept is his."),
@@ -331,24 +422,24 @@ def stats(items):
 P = []
 
 P.append(pane("overview","Mission control","Where the film stands",
-  "One boy, one camera, one brain in a tracksuit. A two minute film about why your body slows you down before it breaks you.",
+  "A boy goes looking for an empty tank and finds a full one. Two minutes on why the limit you hit is almost never your body.",
   stats([("Script","Boarded","go","Cut to 2:00. Scene 1 drawn shot by shot."),
          ("Shoot","Not booked","","One day, Pondicherry. Date to be set with Venkatesh."),
          ("Animation","Quoting","hold","Brojka, Zagreb. Scope follows the shot list."),
          ("Post","Queued","","Edit, sound, original score. Starts the day rushes land.")])
   + '<div class="sheet">'
     '<h3>What we are making</h3>'
-    '<p>A two minute film explaining the Central Governor Theory, the idea that fatigue is not your muscles running out '
-    'of fuel but your brain applying a protective brake. Manan appears on camera as a detective investigating an '
-    'impossible question. Everything around him is animated.</p>'
-    '<p class="hand">the whole film hangs on one moment: the phone in low power mode. protect that moment, cut anywhere else.</p>'
+    '<p>A two minute film built on the Central Governor Theory and the research that followed it. The limit an athlete '
+    'hits is almost never the muscle running out. It is a decision made somewhere upstream, and decisions can change. '
+    'Manan appears on camera as a detective investigating an impossible sprint. Everything around him is animated.</p>'
+    '<p class="hand">the whole film hangs on one moment: the door at the back of the factory opening onto full tanks. protect that one, cut anywhere else.</p>'
     '<h4>Who does what</h4>'
     '<table><tr><th>Person</th><th>Role</th><th>Where</th></tr>'
     '<tr><td><b>Neha Sonthalia Periwal</b></td><td>Client and producer, sole approval point</td><td>Bangalore</td></tr>'
-    '<tr><td><b>Manan Periwal</b></td><td>Writer and performer, owns the concept</td><td>Bangalore</td></tr>'
+    '<tr><td><b>Manan Periwal</b></td><td>Writer and performer, owns the concept and the science</td><td>Bangalore</td></tr>'
     '<tr><td><b>Venkatesh Aurovenkatesh</b></td><td>Cinematographer, camera, sound, lighting</td><td>Auroville</td></tr>'
     '<tr><td><b>Kristijan Kaurić</b></td><td>Animation and motion, Brojka</td><td>Zagreb</td></tr>'
-    '<tr><td><b>Marko Boško</b></td><td>Director, editor, sound design, original score</td><td>Zagreb</td></tr></table>'
+    '<tr><td><b>Marko Boško</b></td><td>Story mentor, director, editor, sound design, original score</td><td>Zagreb</td></tr></table>'
     '<h4>The chain</h4>'
     '<p>Nothing here runs in parallel. Each stage feeds the next, so a slip anywhere pushes everything behind it.</p>'
     '<pre class="spec">SCRIPT LOCKED          →  done\n'
@@ -370,38 +461,61 @@ P.append(pane("overview","Mission control","Where the film stands",
     '</div>'))
 
 P.append(pane("script","Shooting script","The film, 2:00",
-  "Six scenes. Three live action setups. Everything else is drawn.",
+  "Six scenes. A boy expects to find an empty tank and finds a full one. Written by Manan Periwal, "
+  "developed with Marko Boško.",
   '<div class="sheet">'
+  '<h3>The spine</h3>'
+  '<p class="hand">a runner with nothing left produces an impossible sprint. a boy goes looking for where it came '
+  'from. he expects to find an empty tank. he finds a full one, and a door that somebody closed on purpose.</p>'
+  '<p>Three findings carry the film, and each one is real, published, and stranger than the explanation it replaces.</p>'
+  '<ul><li>Athletes taken to genuine exhaustion were tested immediately afterwards and could still produce far more '
+  'power than they had just produced. The muscle was not the thing that stopped them.</li>'
+  '<li>Cyclists raced a ghost of their own best ride. The ghost was secretly set two percent faster. They beat it. '
+  'A reserve is held back, and belief releases it.</li>'
+  '<li>Mindfulness training increased how long athletes could keep going, with no measurable change in the body. '
+  'What changed was how hard it felt.</li></ul>'
+  '<p><b>So the sentence at the centre of the film is this. The wall is real. But somebody set it, and settings can move.</b></p>'
   '<h3>Scene 1 — The Mystery <span class="tcs">0:00 – 0:18</span></h3>'
-  '<p>A lean runner is failing. The commentator writes him off. Then he explodes into a sprint. Freeze. Manan steps into '
-  'the frozen frame with the magnifying glass, finds the evidence, and turns to camera.</p>'
+  '<p>A lean runner is failing. The commentator writes him off. Then he explodes into a sprint. Freeze. Manan steps '
+  'into the frozen frame with the magnifying glass, finds the evidence, and turns to camera.</p>'
   '<pre class="spec">MANAN\n  Hold on.\n  He had nothing left.\n  So where did THAT come from?\n\nTITLE: THE BRAIN BRAKE</pre>'
-  '<h3>Scene 2 — The Old Answer <span class="tcs">0:18 – 0:42</span></h3>'
-  '<p>A dusty chalkboard, A.V. Hill, 1923. The runner becomes a cartoon factory. Oxygen arrives, then stops. Alarm. '
-  'Workers haul the backup power lever. Smoke. A stamp slams down. The sprint replays and the stamp cracks.</p>'
-  '<pre class="spec">MANAN (V.O.)\n  For a hundred years, we blamed the muscles.\n  Oxygen comes in. Fuel burns. Everything runs.\n  Until it doesn\'t.\n\nMANAN  (to camera)\n  Except it doesn\'t explain this.</pre>'
-  '<h3>Scene 3 — The Suspect <span class="tcs">0:42 – 1:12</span></h3>'
-  '<p>A glowing command centre. A chair turns. Coach Brain, tracksuit, whistle, headset, coffee mug.</p>'
-  '<pre class="spec">MANAN        You\'ve been watching the whole race?\nCOACH BRAIN  Every second.\nCOACH BRAIN  Every heartbeat. Every breath. Every drop of sweat.\n\nScreen fills the room:  CAN WE KEEP GOING SAFELY?\n\nMANAN        So you\'re controlling my muscles.\n\nHe slides POWER OUTPUT.  100% → 82%\nThe runner does not collapse. He settles.\n\nCOACH BRAIN  I\'m not stopping you.\n             I\'m getting you to the finish line.</pre>'
-  '<h3>Scene 4 — Low Power Mode <span class="tcs">1:12 – 1:32</span></h3>'
-  '<p>Push into a monitor. It becomes a generic phone. The battery drains. Low power mode. Apps close themselves. '
-  'A shield forms around the battery.</p>'
-  '<pre class="spec">MANAN (O.S.)  Wait. Is it broken?\n\nMANAN  (to camera)\n  It\'s saving something for later.\n\nCOACH BRAIN  Tired might not mean empty.\n             It might mean, ease off, we\'re not home yet.</pre>'
-  '<h3>Scene 5 — The Finish <span class="tcs">1:32 – 1:52</span></h3>'
-  '<p>Split screen. Safety scan. Every monitor green. The lever eases 82 to 95, never 100. Inside the runner\'s legs, '
-  'muscle fibres glow, first a few, then many.</p>'
-  '<pre class="spec">CAPTION       Notice. Not maximum.\nCAPTION       More muscle fibres recruited.\n\nMANAN (V.O.)\n  The brain didn\'t make new energy.\n  It just decided it was finally safe to spend it.\n\nThe board flips over:\n  YOUR BRAIN WAS SAVING SOME ALL ALONG.</pre>'
-  '<h3>Scene 6 — The Twist <span class="tcs">1:52 – 2:00</span></h3>'
-  '<p>White void. The Muscle and Coach Brain shake hands over a brake marked fatigue.</p>'
-  '<pre class="spec">MANAN  So who was right?\n       Scientists are still arguing.\n       That\'s the best part.\n\nEND CARD:\nTHE STRONGEST FINISH MIGHT BEGIN WITH THE SMARTEST BRAKE.</pre>'
+  '<h3>Scene 2 — The Full Tank <span class="tcs">0:18 – 0:40</span></h3>'
+  '<p>Inside the leg, a working factory. Manan walks through it. The machines slow and a worker shrugs, that is it, '
+  'we are done. But at the back there is a door, and it is shut. He pushes it open onto an enormous hall of storage '
+  'tanks, and every one of them is full.</p>'
+  '<pre class="spec">MANAN (V.O.)\n  For a hundred years we blamed the muscles.\n  Ran out of fuel. Ran out of air. Simple.\n  Except when scientists tested runners the moment\n  they gave up, the muscles could still do far more.\n\nMANAN\n  It was never empty.</pre>'
+  '<h3>Scene 3 — The Gatekeeper <span class="tcs">0:40 – 1:05</span></h3>'
+  '<p>Coach Brain, tracksuit, whistle, coffee, and a small brass key on a chain. He is not caught out. He is delighted '
+  'to be found.</p>'
+  '<pre class="spec">MANAN        You closed that door.\nCOACH BRAIN  I keep the key.\n\nCOACH BRAIN  Every heartbeat. Every breath. Every drop of sweat.\n             I\'m asking one question.\n             Can we keep going safely?\n\nMANAN        So the limit isn\'t my body. It\'s your guess.\nCOACH BRAIN  It\'s my best guess.\n             And I\'d rather you finish than break.</pre>'
+  '<h3>Scene 4 — The Trick <span class="tcs">1:05 – 1:25</span></h3>'
+  '<p>A cyclist races a ghost of his own best ride. Behind glass, a researcher quietly turns the ghost up by two '
+  'percent. He chases it, passes it, and beats a time he already believed was everything he had.</p>'
+  '<pre class="spec">MANAN (V.O.)\n  So scientists tried something cheeky.\n  They let a cyclist race himself.\n  Except they made the ghost slightly faster.\n  And they didn\'t tell him.\n  He beat his own maximum.\n  Which means it was never his maximum.\n\nMANAN\n  Change what the brain believes, and the door opens.</pre>'
+  '<h3>Scene 5 — The Release <span class="tcs">1:25 – 1:50</span></h3>'
+  '<p>Coach Brain eases the dial open. Muscle fibres light in sequence. The runner flies. And the film breaks loose, '
+  'a traceur rooftop to rooftop, a dancer turning in the air, Manan himself mid air and laughing.</p>'
+  '<pre class="spec">CAPTION       More muscle fibres recruited.\nCAPTION       Notice: still not maximum.\n\nMANAN (V.O.)\n  The brain didn\'t make new energy.\n  It gave permission.</pre>'
+  '<h3>Scene 6 — The Invitation <span class="tcs">1:50 – 2:00</span></h3>'
+  '<p>Everything settles to white. Manan alone, eyes closed, breathing. The dial hangs beside him and this time his '
+  'own hand is on it. Coach Brain lifts the key from his neck and hands it over.</p>'
+  '<pre class="spec">MANAN  The wall is real. But somebody set it.\n       And what your brain believes is safe can be trained.\n\nEND CARD:\nTHE LIMIT IS A SETTING, NOT A WALL.</pre>'
+  '</div>'
+  '<div class="sheet dimsheet"><h3>How this draft came about</h3>'
+  '<p>The subject, the science and the choice of theory are Manan\'s, from his first draft. What changed in version '
+  'two is the shape of the story, not its substance.</p>'
+  '<p>Draft one explained a mechanism, that the brain applies a brake to protect the body. Accurate, and it ended on '
+  'a closed case. This draft asks a different question. If the brake exists, where is the limit really, and can it '
+  'move? The evidence says it can, and that turns an explanation into a discovery.</p>'
+  '<p>Both drafts are kept in the PDF tab so the development of the film stays visible.</p>'
   '</div>'))
 
 P.append(pane("board","Boards","Storyboard",
   "Thirty five shots, two minutes exactly. Each shot is a sheet in its own right, carrying the frame, the words spoken "
   "over it, and a separate instruction for every department. Scene 1 is drawn. The rest follow the same pattern.",
-  stats([("Shots","35","","Scene 1 boarded, 30 to draw"),
-         ("Live action","12","","Three camera setups, one day"),
-         ("Pure animation","23","","No camera required")])
+  stats([("Shots","33","","Scene 1 boarded, 28 to draw"),
+         ("Live action","13","","Four camera setups, one day"),
+         ("Pure animation","20","","No camera required")])
   + all_scenes([1,2,3,4,5,6])))
 
 P.append(pane("chars","Design","Characters",
@@ -506,8 +620,8 @@ P.append(pane("venkatesh","Camera, sound, lighting","Venkatesh",
     '<p class="standfirst">Printable, so you can have them in your hand on the day rather than on a screen.</p>'
     '<div class="docs">'
     + doclink("Camera work order", "Lighting, setups, eyelines, take protocol")
-    + doclink("Original script, first draft", "Written by Manan Periwal, for background",
-              "assets/pdf/1-THE-BRAIN-BRAKE-original-script-by-Manan-v1.pdf")
+    + doclink("Shooting script, version 2", "Manan Periwal & Marko Boško, the film as it will be shot",
+              "assets/pdf/2-THE-BRAIN-BRAKE-script-v2-Manan-and-Marko.pdf")
     + '</div>'
   + '<h3 class="dept">Your shots</h3>'
     '<p class="standfirst">These are the five scenes you shoot. Scene 5 needs nothing from you. '
@@ -554,8 +668,8 @@ P.append(pane("kristijan","Animacija i motion","Kristijan",
     '<p class="standfirst">Da imaš sve na papiru, ne samo na ekranu.</p>'
     '<div class="docs">'
     + doclink("Animation brief", "Storyboard, modeli likova, upute po kadru")
-    + doclink("Original script, first draft", "Manan Periwal, za kontekst",
-              "assets/pdf/1-THE-BRAIN-BRAKE-original-script-by-Manan-v1.pdf")
+    + doclink("Scenarij, verzija 2", "Manan Periwal i Marko Boško, radna verzija",
+              "assets/pdf/2-THE-BRAIN-BRAKE-script-v2-Manan-and-Marko.pdf")
     + '</div>'
   + '<h3 class="dept">Storyboard, sve scene</h3>'
     '<p class="standfirst">Pod svakim kadrom <b>anim</b> linija je tvoja uputa. <b>cam</b> linija ti govori što dolazi '
@@ -567,8 +681,10 @@ S.append(subpane("director","Director",
   "The job is to protect one idea from six people's good intentions.",
   '<div class="sheet">'
   '<h3>The spine</h3>'
-  '<p>A question is asked in the first eighteen seconds and answered at 1:52. Everything between those two points either '
+  '<p>A question is asked in the first eighteen seconds and answered at 1:47. Everything between those two points either '
   'sharpens the question or delays the answer. Anything that does neither comes out, however good it is.</p>'
+  '<p>The emotional line climbs the whole way. Curiosity, then astonishment, then release, then calm. Nothing in this '
+  'film is allowed to go downward.</p>'
   '<p class="hand">manan\'s draft was five minutes of genuinely good writing. cutting it is the hardest and most useful thing i do on this film.</p>'
   '<h4>What got cut, and why</h4>'
   '<ul><li><b>The chalkboard flowchart.</b> It explained the same thing as the factory. Two explanations of one idea is one too many.</li>'
@@ -580,8 +696,9 @@ S.append(subpane("director","Director",
   '<p>Because he has ADHD we shoot in fragments, one sentence at a time, and assemble the performance in the edit. '
   'This is not a compromise. Fragmented shooting produces a livelier cut than any long take would have.</p>'
   '<h4>The one shot that must land</h4>'
-  '<p>Shot 4B, the line "it\'s saving something for later". Everything before it is setup and everything after it is '
-  'confirmation. If that take is not right, the film is competent instead of memorable.</p>'
+  '<p>Shot 2.6, the close up on his face as the door opens, and the line "it was never empty". Everything before it '
+  'builds the expectation of an empty tank, and everything after it is consequence. If that take is not right, the '
+  'film is competent instead of memorable.</p>'
   '<h4>Tone</h4>'
   '<ul><li>Warm and curious, never lecturing.</li>'
   '<li>The film admits the science is unresolved. That honesty is the point of the last scene, and judges read for it.</li>'
@@ -599,11 +716,11 @@ S.append(subpane("editor","Editor",
   '<li>Keep the room tone continuous underneath so the audio never reveals the joins.</li></ul>'
   '<h4>Pacing targets</h4>'
   '<pre class="spec">SCENE 1  0:00 – 0:18   fast in, then one long held beat on the question\n'
-  'SCENE 2  0:18 – 0:42   quickest section of the film, near montage\n'
-  'SCENE 3  0:42 – 1:12   slows down. this is where the audience settles.\n'
-  'SCENE 4  1:12 – 1:32   slowest. let the phone breathe.\n'
-  'SCENE 5  1:32 – 1:52   accelerates hard to the line\n'
-  'SCENE 6  1:52 – 2:00   stops dead. white. quiet.</pre>'
+  'SCENE 2  0:18 – 0:40   brisk, then slows right down for the door\n'
+  'SCENE 3  0:40 – 1:05   the calmest section. let the audience settle.\n'
+  'SCENE 4  1:05 – 1:25   playful and quick. cut it like a race.\n'
+  'SCENE 5  1:25 – 1:50   accelerates and keeps accelerating. the peak.\n'
+  'SCENE 6  1:50 – 2:00   stops dead. white. one breath.</pre>'
   '<p>Total 2:00 exactly. The competition is strict about it, so the film is built to that number rather than trimmed to it afterwards.</p>'
   '<h4>Order of work</h4>'
   '<ol><li>Assemble Manan\'s performance first, with black where animation will go.</li>'
@@ -622,7 +739,9 @@ S.append(subpane("sound","Sound design",
   '<tr><td>Freeze</td><td>Everything drops away to a single low tone. The absence is the effect.</td></tr>'
   '<tr><td>Classroom and factory</td><td>Chalk, dry room, then industrial. Trucks, hydraulics, an alarm klaxon, machinery slowing to a grind.</td></tr>'
   '<tr><td>Mission control</td><td>Soft electronic beeps, a low room hum, the mechanical clunk of the lever. Calm and clinical.</td></tr>'
-  '<tr><td>Phone</td><td>One clean notification chime, then the world dims audibly as apps close.</td></tr>'
+  '<tr><td>The door</td><td>Everything drops away to a hand on metal, then a deep warm swell as it opens. Space and air.</td></tr>'
+  '<tr><td>The laboratory</td><td>Chain and flywheel, breathing, an electronic timer. One small conspiratorial click.</td></tr>'
+  '<tr><td>The release</td><td>Wind, impact, water, breath. Rhythmic rather than realistic. Loudest point of the film.</td></tr>'
   '<tr><td>White void</td><td>Near silence. Only the voice and a faint high tone.</td></tr></table>'
   '<h4>The transitions carry the film</h4>'
   '<p>Six worlds in 120 seconds could feel like channel hopping. Sound is what stops that. Each transition is bridged, '
@@ -632,7 +751,7 @@ S.append(subpane("sound","Sound design",
   '<ul><li>Manan\'s voice is the constant across every world. It stays dry, close and unprocessed throughout.</li>'
   '<li>Coach Brain sits slightly behind, with a hint of room, as if genuinely in a control centre.</li>'
   '<li>Clean up handling noise on the joins, but keep breath in the performance. Breath is the subject of this film.</li></ul>'
-  '<p class="hand">the freeze at 0:12 is the single best sound moment available. everything stops. use it.</p>'
+  '<p class="hand">two moments carry the whole sound design. the freeze at 0:12, where everything stops. and the door at 0:34, where everything opens.</p>'
   '</div>'))
 
 S.append(subpane("music","Music",
@@ -645,17 +764,20 @@ S.append(subpane("music","Music",
   '<h4>Palette</h4>'
   '<ul><li><b>The body</b> is percussion. Frame drum and hand percussion, played dry and close, tracking the runner\'s cadence.</li>'
   '<li><b>The brain</b> is sustained. A low synth pad and a single held flute note, calm and unhurried, always slightly above the drums.</li>'
-  '<li><b>The discovery</b> is a small bright motif, three notes, first heard under the question at 0:15 and resolved at 1:48.</li></ul>'
+  '<li><b>The discovery</b> is a small bright motif, three notes. First heard alone under the question at 0:12, opened upward when the door opens at 0:34, and finally resolved at 1:47.</li></ul>'
   '<h4>Map</h4>'
   '<pre class="spec">0:00  crowd and pulse, no score yet\n'
   '0:12  FREEZE. everything drops. the three note motif enters alone.\n'
-  '0:18  factory section, mechanical rhythm, percussion leads\n'
-  '0:42  mission control. pad enters. percussion pulls back.\n'
-  '1:12  low power mode. almost nothing. one held note.\n'
-  '1:32  the finish. pulse returns and builds, but never resolves fully.\n'
-  '1:48  the motif returns complete. this is the release.\n'
-  '2:00  one note left ringing into black.</pre>'
-  '<p class="hand">never let it resolve to maximum. the brain never pushes to 100 percent, so neither does the music.</p>'
+  '0:18  factory. mechanical rhythm, percussion leads.\n'
+  '0:34  THE DOOR OPENS. the motif returns, opening upward for the first time.\n'
+  '0:40  mission control. pad enters. percussion pulls right back.\n'
+  '0:55  one note added per system as the network connects. a chord builds.\n'
+  '1:05  the lab. pulse, light and mischievous.\n'
+  '1:25  THE RELEASE. the chord opens. everything rises from here.\n'
+  '1:47  the motif resolves completely. ninety seconds of withholding, paid.\n'
+  '1:50  white. one sustained note. a breath.\n'
+  '2:00  the note decays fully into the black.</pre>'
+  '<p class="hand">the score withholds resolution for ninety seconds and then gives it all at once. that delay is the entire emotional design of the film.</p>'
   '<h4>Practical</h4>'
   '<ul><li>Written to the locked picture, not before. Composing to a moving cut wastes the work.</li>'
   '<li>Delivered as stems so the mix can duck cleanly under Manan\'s voice.</li>'
@@ -789,6 +911,7 @@ h3.dept{font-family:Georgia,serif;font-size:28px;font-weight:700;color:#eef3f8;
 .sheet ul,.sheet ol{margin:0 0 16px 22px}
 .sheet li{margin-bottom:8px;max-width:68ch}
 .sheet b{font-weight:700;color:#1c1a17}
+.sheet.dimsheet{background:var(--paper2)}
 .hand{font-style:italic;color:#6a5c3f;border-left:3px solid rgba(106,92,63,.3);padding-left:16px;margin:18px 0}
 .spec{font-family:ui-monospace,monospace;font-size:12.5px;line-height:1.85;background:rgba(46,43,38,.07);
  border:1px solid rgba(46,43,38,.15);padding:16px 18px;margin:14px 0 18px;white-space:pre-wrap;
@@ -1004,7 +1127,7 @@ DOC = f"""<!DOCTYPE html>
     <p class="brand">The Brain <span>Brake</span></p>
     <div class="meta">
       <div>Runtime<b>2:00</b></div>
-      <div>Shots<b>35</b></div>
+      <div>Shots<b>33</b></div>
       <div>Internal lock<b>1.9.</b></div>
       <div class="hot">Days to lock<b id="m-days">—</b></div>
     </div>
