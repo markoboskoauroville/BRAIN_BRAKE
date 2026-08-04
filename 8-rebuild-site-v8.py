@@ -305,14 +305,23 @@ TABS = [
 # ------------------------------------------------------------------ panes
 
 DOCS = [
- dict(id="outline-pitch", state="ready",
-      file="assets/pdf/3-THE-BRAIN-BRAKE-outline-for-Manan-and-Neha.pdf",
-      title="The film, in outline",
-      by="Sent to Manan and Neha for approval",
+ dict(id="outline-v1", state="ready",
+      file="assets/pdf/4-THE-BRAIN-BRAKE-outline-VERSION-ONE-original.pdf",
+      title="Outline, version one",
+      by="Written entirely by Manan Periwal",
       meta="8 pages · PDF · one picture per scene",
-      desc="The whole film in about three minutes of reading. A cover, one page per scene carrying its hero image, "
-           "a few lines of story and the key line of dialogue, then a closing page on what follows. Written to be "
-           "read by a fourteen year old and his mother together, and to be answered with a yes or a no."),
+      desc="Manan's original script laid out as a picture book. The brain applies a protective brake, fatigue is a "
+           "warning rather than a failure, and the film ends on the honest admission that scientists are still "
+           "arguing about it. Complete and shootable exactly as written."),
+ dict(id="outline-v2", state="ready",
+      file="assets/pdf/3-THE-BRAIN-BRAKE-outline-for-Manan-and-Neha.pdf",
+      title="Outline, version two",
+      by="Manan Periwal, developed with Marko Boško",
+      meta="8 pages · PDF · one picture per scene",
+      desc="The same subject, the same theory and the same characters, asking the next question. If the brake is "
+           "real, where is the limit actually, and can it move? The film builds from curiosity to astonishment to "
+           "release, and ends with a boy breathing calmly. Identical design to version one, so the two can be read "
+           "side by side and compared fairly."),
  dict(id="script-v2", state="ready",
       file="assets/pdf/2-THE-BRAIN-BRAKE-script-v2-Manan-and-Marko.pdf",
       title="Shooting script, version 2",
@@ -577,7 +586,9 @@ P.append(pane("neha","Client and producer","Neha",
     '<p class="standfirst">Everything written for you, in one place. Read the outline together with Manan first, '
     'it takes about three minutes.</p>'
     '<div class="docs">'
-    + doclink("The film, in outline", "Eight pages, one picture per scene, for you and Manan to read together",
+    + doclink("Outline, version one", "Manan's original script, eight pages, one picture per scene",
+              "assets/pdf/4-THE-BRAIN-BRAKE-outline-VERSION-ONE-original.pdf")
+    + doclink("Outline, version two", "The same story taken further, same design so the two compare fairly",
               "assets/pdf/3-THE-BRAIN-BRAKE-outline-for-Manan-and-Neha.pdf")
     + doclink("Shooting script, version 2", "Manan Periwal & Marko Bo\u0161ko, the full script behind the outline",
               "assets/pdf/2-THE-BRAIN-BRAKE-script-v2-Manan-and-Marko.pdf")
