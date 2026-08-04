@@ -216,10 +216,91 @@ TABS = [
  ("venkatesh","Venkatesh","Camera"),
  ("kristijan","Kristijan","Animation"),
  ("marko","Marko","Post"),
+ ("docs","PDF","Handouts"),
  ("versions","Versions","Archive"),
 ]
 
 # ------------------------------------------------------------------ panes
+
+DOCS = [
+ dict(id="script-original", state="ready",
+      file="assets/pdf/1-THE-BRAIN-BRAKE-original-script-by-Manan-v1.pdf",
+      title="Original script, first draft",
+      by="Written by Manan Periwal",
+      meta="24 pages · PDF · 867 KB",
+      desc="Manan's own screenplay, exactly as he wrote it, before any cutting. Roughly four to five minutes of "
+           "material. Everything in this production comes from here, so it stays on file untouched as the source "
+           "document and as proof the concept is his."),
+ dict(id="venkatesh-order", state="soon",
+      file=None,
+      title="Camera work order",
+      by="For Venkatesh Aurovenkatesh",
+      meta="Print and bring to set",
+      desc="The full shooting document. Every live action shot with its frame, the exact lighting diagram, the grey "
+           "backdrop spec, the wardrobe continuity, the eyeline marks, and each line Manan speaks with the take "
+           "protocol beside it. Built to be printed and carried on the day."),
+ dict(id="kristijan-brief", state="soon",
+      file=None,
+      title="Animation brief",
+      by="Za Kristijana Kaurića",
+      meta="Storyboard i upute",
+      desc="Cijeli storyboard kadar po kadar, s modelima likova, točnim uputama što se animira u svakom kadru, "
+           "koji kadrovi su čista grafika, a koji kompozit preko snimke, plus specifikacija isporuke."),
+ dict(id="storyboard-book", state="soon",
+      file=None,
+      title="Storyboard book",
+      by="All departments",
+      meta="35 shots, one sheet each",
+      desc="The complete board as a single printable document. One sheet per shot, carrying the frame, the timecode, "
+           "the dialogue and the instruction for every department."),
+ dict(id="sound-spec", state="soon",
+      file=None,
+      title="Sound and score specification",
+      by="Post production",
+      meta="Reference document",
+      desc="The sound world of each of the six sections, the transition logic, and the score map against picture."),
+]
+
+def docs_html():
+    ready = [d for d in DOCS if d["state"] == "ready"]
+    soon  = [d for d in DOCS if d["state"] == "soon"]
+    out = ['<h3 class="dept" style="margin-top:34px;padding-top:0;border-top:0">Available now</h3>',
+           '<div class="docs">']
+    for d in ready:
+        out.append(
+          f'<article class="doc"><div class="doc-ic">PDF</div><div class="doc-b">'
+          f'<h4>{d["title"]}</h4>'
+          f'<p class="doc-by">{d["by"]}</p>'
+          f'<p class="doc-d">{d["desc"]}</p>'
+          f'<p class="doc-m">{d["meta"]}</p>'
+          f'<p><a class="dl" href="{d["file"]}" target="_blank" rel="noopener">Open or download</a></p>'
+          f'</div></article>')
+    out.append('</div>')
+    out.append('<h3 class="dept">In preparation</h3>')
+    out.append('<p class="standfirst">These are being written now. Each one appears here the moment it is finished, '
+               'and is linked from the page of the person it belongs to.</p>')
+    out.append('<div class="docs">')
+    for d in soon:
+        out.append(
+          f'<article class="doc soon"><div class="doc-ic">PDF</div><div class="doc-b">'
+          f'<h4>{d["title"]}</h4>'
+          f'<p class="doc-by">{d["by"]}</p>'
+          f'<p class="doc-d">{d["desc"]}</p>'
+          f'<p class="doc-m">{d["meta"]}</p>'
+          f'<p class="pending-tag">In preparation</p>'
+          f'</div></article>')
+    out.append('</div>')
+    return "".join(out)
+
+def doclink(title, by, file=None):
+    if file:
+        return (f'<div class="doc mini"><div class="doc-ic">PDF</div><div class="doc-b">'
+                f'<h4>{title}</h4><p class="doc-by">{by}</p>'
+                f'<p><a class="dl" href="{file}" target="_blank" rel="noopener">Open or download</a></p>'
+                f'</div></div>')
+    return (f'<div class="doc mini soon"><div class="doc-ic">PDF</div><div class="doc-b">'
+            f'<h4>{title}</h4><p class="doc-by">{by}</p>'
+            f'<p class="pending-tag">In preparation, arrives here when ready</p></div></div>')
 
 def pane(pid, eyebrow, title, standfirst, body):
     return (f'<section class="pane" id="p-{pid}">'
@@ -421,6 +502,13 @@ P.append(pane("venkatesh","Camera, sound, lighting","Venkatesh",
     '<li>A photograph of the wardrobe and of each lighting setup.</li>'
     '<li>Upload within 48 hours of the shoot. The whole Zagreb schedule starts the moment they land.</li></ul>'
     '</div>'
+  + '<h3 class="dept">Your documents</h3>'
+    '<p class="standfirst">Printable, so you can have them in your hand on the day rather than on a screen.</p>'
+    '<div class="docs">'
+    + doclink("Camera work order", "Lighting, setups, eyelines, take protocol")
+    + doclink("Original script, first draft", "Written by Manan Periwal, for background",
+              "assets/pdf/1-THE-BRAIN-BRAKE-original-script-by-Manan-v1.pdf")
+    + '</div>'
   + '<h3 class="dept">Your shots</h3>'
     '<p class="standfirst">These are the five scenes you shoot. Scene 5 needs nothing from you. '
     'Read the <b>cam</b> line under each shot, that is your instruction. The other lines are there so you can see what '
@@ -462,6 +550,13 @@ P.append(pane("kristijan","Animacija i motion","Kristijan",
     '<p>Račun šalješ meni, ja ga stavljam u zajedničku mapu odakle ga naručiteljica preuzima. Pola unaprijed, prije nego '
     'kreneš s animacijom, pola po predaji.</p>'
     '</div>'
+  + '<h3 class="dept">Dokumenti za ispis</h3>'
+    '<p class="standfirst">Da imaš sve na papiru, ne samo na ekranu.</p>'
+    '<div class="docs">'
+    + doclink("Animation brief", "Storyboard, modeli likova, upute po kadru")
+    + doclink("Original script, first draft", "Manan Periwal, za kontekst",
+              "assets/pdf/1-THE-BRAIN-BRAKE-original-script-by-Manan-v1.pdf")
+    + '</div>'
   + '<h3 class="dept">Storyboard, sve scene</h3>'
     '<p class="standfirst">Pod svakim kadrom <b>anim</b> linija je tvoja uputa. <b>cam</b> linija ti govori što dolazi '
     'snimljeno, da znaš gdje ide kompozit, a gdje crtaš sve od nule.</p>'
@@ -576,6 +671,11 @@ P.append(pane("marko","Post production","Marko Boško",
   "Four roles on this film, one person. Direction sets what the film is, the edit assembles it, "
   "sound makes the joins vanish, and the score carries the argument between muscle and mind.",
   '<div class="subtabs">' + subtabs_html + '</div>' + "".join(S)))
+
+P.append(pane("docs","Printable handouts","PDF",
+  "Everything that needs to leave the screen and exist on paper. Work orders, briefs and the storyboard book, "
+  "each written for one person and printable as it stands. Every document here is also linked from that person's own page.",
+  docs_html()))
 
 P.append(pane("versions","Archive","Versions",
   "Every cut, every test, every abandoned idea. Nothing gets overwritten, so the film's whole history stays readable.",
@@ -709,6 +809,28 @@ h3.dept{font-family:Georgia,serif;font-size:28px;font-weight:700;color:#eef3f8;
 .sub{display:none;padding-top:22px}
 .sub.on{display:block}
 .sub-t{font-family:Georgia,serif;font-size:30px;font-weight:700;color:#eef3f8;margin-bottom:12px;letter-spacing:-.01em}
+
+.docs{display:grid;gap:16px;margin:20px 0 8px}
+.doc{background:var(--panel);border:1px solid var(--rule);padding:20px 22px;display:flex;gap:18px;align-items:flex-start}
+.doc.soon{opacity:.62}
+.doc-ic{font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.12em;color:var(--am);
+ border:1px solid rgba(232,163,61,.45);padding:9px 10px;flex:0 0 auto;margin-top:3px}
+.doc.soon .doc-ic{color:var(--dim);border-color:var(--rule)}
+.doc-b{flex:1;min-width:0}
+.doc-b h4{font-family:Georgia,serif;font-size:21px;font-weight:700;color:#eef3f8;line-height:1.25}
+.doc-by{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--cy);margin-top:5px}
+.doc-d{font-size:15.5px;color:#9fb0c4;margin-top:11px;max-width:66ch;line-height:1.65}
+.doc-m{font-family:ui-monospace,monospace;font-size:10.5px;color:var(--dim);margin-top:10px;letter-spacing:.06em}
+a.dl{display:inline-block;margin-top:13px;font-family:ui-monospace,monospace;font-size:11px;
+ letter-spacing:.14em;text-transform:uppercase;color:var(--void);background:var(--cy);
+ padding:9px 16px;text-decoration:none}
+a.dl:hover{background:#6ee2f2}
+.pending-tag{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--dim);margin-top:12px;border:1px dashed var(--rule);display:inline-block;padding:6px 11px}
+.doc.mini{padding:16px 18px}
+.doc.mini h4{font-size:18px}
+.doc.mini .doc-by{text-transform:none;letter-spacing:.04em;font-size:11px;color:var(--dim)}
 
 /* ---- storyboard ---- */
 .sc{margin-top:40px;padding-top:32px;border-top:1px solid var(--rule)}
