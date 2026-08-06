@@ -306,7 +306,7 @@ TABS = [
 
 DOCS = [
  dict(id="outline-v1", state="ready",
-      file="assets/pdf/4-THE-BRAIN-BRAKE-outline-VERSION-ONE-original.pdf",
+      file="assets/pdf/1-THE-BRAIN-BRAKE-v1-ORIGINAL-by-Manan.pdf",
       title="Outline, version one",
       by="Written entirely by Manan Periwal",
       meta="8 pages · PDF · one picture per scene",
@@ -314,7 +314,7 @@ DOCS = [
            "warning rather than a failure, and the film ends on the honest admission that scientists are still "
            "arguing about it. Complete and shootable exactly as written."),
  dict(id="outline-v2", state="ready",
-      file="assets/pdf/3-THE-BRAIN-BRAKE-outline-for-Manan-and-Neha.pdf",
+      file="assets/pdf/2-THE-BRAIN-BRAKE-v2-FIRST-JOINT-DRAFT.pdf",
       title="Outline, version two",
       by="Manan Periwal, developed with Marko Boško",
       meta="8 pages · PDF · one picture per scene",
@@ -587,9 +587,9 @@ P.append(pane("neha","Client and producer","Neha",
     'it takes about three minutes.</p>'
     '<div class="docs">'
     + doclink("Outline, version one", "Manan's original script, eight pages, one picture per scene",
-              "assets/pdf/4-THE-BRAIN-BRAKE-outline-VERSION-ONE-original.pdf")
+              "assets/pdf/1-THE-BRAIN-BRAKE-v1-ORIGINAL-by-Manan.pdf")
     + doclink("Outline, version two", "The same story taken further, same design so the two compare fairly",
-              "assets/pdf/3-THE-BRAIN-BRAKE-outline-for-Manan-and-Neha.pdf")
+              "assets/pdf/2-THE-BRAIN-BRAKE-v2-FIRST-JOINT-DRAFT.pdf")
     + doclink("Shooting script, version 2", "Manan Periwal & Marko Bo\u0161ko, the full script behind the outline",
               "assets/pdf/2-THE-BRAIN-BRAKE-script-v2-Manan-and-Marko.pdf")
     + doclink("Original script, first draft", "Manan's own screenplay, kept on file untouched",

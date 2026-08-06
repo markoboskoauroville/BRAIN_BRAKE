@@ -20,7 +20,7 @@ SOFT = HexColor("#6f6757")
 ACC = HexColor("#8a6b2e")
 RULE = HexColor("#c9bfa4")
 
-OUT = "assets/pdf/4-THE-BRAIN-BRAKE-outline-VERSION-ONE-original.pdf"
+OUT = "assets/pdf/1-THE-BRAIN-BRAKE-v1-ORIGINAL-by-Manan.pdf"
 os.makedirs("build", exist_ok=True)
 c = canvas.Canvas(OUT, pagesize=A4)
 page = [0]
@@ -44,7 +44,7 @@ def bg():
 def foot(txt=""):
     c.setFont('M', 7.5)
     c.setFillColor(SOFT)
-    c.drawString(ML, 30, "THE BRAIN BRAKE   ·   outline, version one   ·   written by Manan Periwal")
+    c.drawString(ML, 30, "THE BRAIN BRAKE   ·   version one   ·   written by Manan Periwal")
     if txt:
         c.drawCentredString(W / 2, 30, txt)
     c.drawRightString(W - MR, 30, str(page[0]))
