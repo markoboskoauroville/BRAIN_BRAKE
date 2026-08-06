@@ -33,7 +33,26 @@ figcaption p{margin:0 0 10px;font-size:15px;color:var(--paper)}
  margin-right:6px}
 footer{padding:30px 18px 70px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);margin-top:20px}
 @media(min-width:760px){body{font-size:17px}header,.grp,footer,nav.jump{max-width:760px;margin:0 auto}}
+
+#gate{position:fixed;inset:0;z-index:99;background:#0b0e13;display:flex;align-items:center;justify-content:center;padding:24px}
+#gate .gc{max-width:340px;width:100%;text-align:center}
+#gate .gt{font-size:24px;margin:0 0 4px}
+#gate .gs{color:var(--dim);font-size:13px;margin:0 0 22px;font-family:ui-monospace,Menlo,monospace;
+ letter-spacing:.14em;text-transform:uppercase}
+#gate input[type=password]{width:100%;background:#0b0e13;border:1px solid var(--line);color:var(--paper);
+ padding:12px;border-radius:3px;font-size:16px;font-family:inherit}
+#gate button{width:100%;margin-top:12px;padding:12px;border:0;border-radius:3px;background:var(--gold);
+ color:#0b0e13;font-size:15px;font-weight:600;font-family:inherit}
+#gate .rem{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:14px;color:var(--dim);font-size:13px}
+#gate .err{color:#d2453c;font-size:13px;min-height:18px;margin:10px 0 0}
+#doc{display:none}
 </style></head><body>
+<div id="gate"><div class="gc">
+<p class="gt">The Brain Brake</p><p class="gs">Frames</p>
+<form id="gf"><input type="password" id="pw" autocomplete="current-password" autofocus placeholder="Passphrase">
+<div class="rem"><input type="checkbox" id="rem" checked><label for="rem">Remember me on this device</label></div>
+<button type="submit">Enter</button><p class="err" id="ge"></p></form></div></div>
+<div id="doc">
 <header>
 <span class="mono">Mantra Productions</span>
 <h1>The Brain Brake</h1>
@@ -187,4 +206,24 @@ no plan, just the pictures and what each one is doing.</p>
 </section>
 <footer>37 images. Thumbnails only, full resolution masters are in the repository.
 Version v1 (a).</footer>
+</div>
+<script>
+(function(){
+ var PW='manan', CA='bb_auth';
+ function set(k,v){var d=new Date();d.setTime(d.getTime()+180*864e5);
+  document.cookie=k+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';}
+ function get(k){var m=document.cookie.match('(^|; )'+k+'=([^;]*)');return m?decodeURIComponent(m[2]):null;}
+ var g=document.getElementById('gate'), d=document.getElementById('doc');
+ function open_(){g.style.display='none'; d.style.display='block';}
+ if(get(CA)==='1' || sessionStorage.getItem(CA)==='1') open_();
+ document.getElementById('gf').addEventListener('submit',function(e){
+  e.preventDefault();
+  var v=document.getElementById('pw').value.trim().toLowerCase();
+  if(v===PW){ if(document.getElementById('rem').checked) set(CA,'1');
+   sessionStorage.setItem(CA,'1'); open_(); }
+  else { document.getElementById('ge').textContent='Not that one.';
+   document.getElementById('pw').value=''; }
+ });
+})();
+</script>
 </body></html>
