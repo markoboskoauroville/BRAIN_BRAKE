@@ -58,8 +58,9 @@ instantly, which a symbol cannot, and it survives a circular crop.
 | `C_THRONE_SWIVEL_CHAIR` | Reclining in the swivel chair | Rejected |
 | `D_HANDOVER_KEY_OFFERED` | Key held out toward the viewer | Rejected, though it carried the film's idea best |
 | `E_GRILL_GRIPPING_CHAIN` | Gripping the chain, hip hop pose | Rejected |
+| `COACH_BRAIN_ON_SET` | On set, being filmed, proud and delighted | **CHOSEN.** The production mark. |
 
-**Current direction.** Vanity rather than power. He is on set, being filmed, standing too straight, beaming,
+**Chosen, 7.8.2026.** `COACH_BRAIN_ON_SET`. Vanity rather than power. He is on set, being filmed, standing too straight, beaming,
 smoothing his tracksuit for the camera, delighted to be in a real film. Camera, softbox and boom sketched
 faintly at the very edges of the frame so the circular crop cannot damage anything that matters.
 
@@ -76,6 +77,8 @@ faintly at the very edges of the frame so the circular crop cannot damage anythi
 - **One accent colour only.** Gold on graphite. Every attempt that added a second and third tint got worse.
 - **Iterating on a broken structure is wasted work.** When the geometry is wrong rather than the detail,
   start again from a described build order instead of correcting the render.
+- **Vanity is funnier than power.** Every attempt at dominance read as posing. The moment he was simply
+  delighted to be in a film, standing too straight for the camera, the character arrived.
 - **The tool has no opinion about meaning.** It pushed the needle into the red without hesitating, which
   would have turned a careful guardian into a reckless one.
 
@@ -84,6 +87,7 @@ faintly at the very edges of the frame so the circular crop cannot damage anythi
 ## FILES
 
     COACH_BRAIN_PROFILE.png / _1024 / _512     selfie version, archived
+    COACH_BRAIN_ON_SET.png / _1024 / _512      THE PRODUCTION MARK, in use
     COACH_BRAIN_BOSS.png / _1024 / _512        arms folded version, candidate
     tries/                                     every attempt at full size and at 512
 
