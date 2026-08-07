@@ -6,7 +6,7 @@ Two workers, one project. **Claude in the chat** on the phone and the laptop, wh
 repository directly. **Claude Code** inside Brain Freedom on the Mac, which works in the local checkout.
 Neither can see the other. This file is how they stay one mind.
 
-    last written   7.8.2026
+    last written   7.8.2026, evening
     written by     chat
     branch         main
     masters        full resolution art lives on the `masters` branch, never published
@@ -52,7 +52,11 @@ hall. Published as light JPGs at `assets/REFERENCES/` for the image tool, PNG ma
 development. Camera and animation orders not yet sent.
 
 **Sites.** Production hub with the frames contact sheet behind the passphrase. The book, public, at version
-three.
+five, with the composition and colour chapters added. The studio app, Brain Freedom, published with its own
+repository and changelog.
+
+**Production mark.** The abstract mark was abandoned after nine attempts and Coach Brain became the mark
+instead. Candidates and the reasoning are archived at `assets/BRAND/`, see `assets/BRAND/NOTES.md`.
 
 **Shoot.** Requested for Saturday 15.8. and Sunday 16.8., waiting on the camera department to confirm.
 
@@ -72,6 +76,8 @@ three.
 5. **Two wrong sheets.** The workers sheet is still cartoon and contradicts the locked style law. The tank
    sheet is still the uncleaned version with hatches and pipework.
 6. **Shot boards.** Thirty two frames after the heroes, drawn against the corrected sheets.
+7. **Number ladder.** The single repeating 27 becomes a climb, one crate, three tools down, nine tanks,
+   twenty seven ticks on the dial, each step three times the last, resolving on the runner's own vest number.
 
 ---
 
