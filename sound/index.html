@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brain Brake, sound</title>
+<link rel="icon" href="../favicon.svg">
+<style>
+:root{--ink:#0b0e13;--panel:#12161d;--line:#242c37;--paper:#e7e2d6;--dim:#a9a396;--gold:#e0a340;--red:#d2453c}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--paper);
+ font-family:'Iowan Old Style',Palatino,Georgia,serif;font-size:16px;line-height:1.7}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px 90px}
+header{padding:34px 0 22px;border-bottom:1px solid var(--line)}
+h1{margin:10px 0 0;font-size:30px;font-weight:400;line-height:1.1}
+.k{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;letter-spacing:.2em;
+ text-transform:uppercase;color:var(--dim)}
+header p{margin:14px 0 0;color:var(--dim);font-size:15px;max-width:640px}
+nav.jump{display:flex;flex-wrap:wrap;gap:7px;padding:16px 0 0}
+nav.jump a{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--paper);text-decoration:none;
+ border:1px solid var(--line);border-radius:2px;padding:6px 10px;background:var(--panel)}
+nav.jump a:hover{border-color:var(--gold);color:var(--gold)}
+.warn{border:1px solid #4a2a26;background:#170f0e;border-radius:3px;padding:18px 20px;margin:26px 0}
+.warn .k{color:var(--red)}
+.warn p{margin:8px 0 0;font-size:15px}
+section.sc{padding:40px 0 0;border-top:1px solid var(--line);margin-top:34px}
+.hd{display:flex;justify-content:space-between;margin-bottom:6px}
+h2{margin:0 0 6px;font-size:24px;font-weight:400;letter-spacing:-.01em}
+.line{color:var(--dim);font-style:italic;margin:0 0 16px;font-size:16px}
+section.sc img{width:100%;border:1px solid var(--line);border-radius:2px;display:block;margin-bottom:18px}
+.lbl{margin:22px 0 10px}
+.gen{border:1px solid var(--line);border-radius:3px;background:var(--panel);padding:12px 14px;margin-bottom:8px}
+.gen a{text-decoration:none;color:var(--paper);display:block}
+.gen a:hover b{color:var(--gold)}
+.gen b{font-weight:400;font-size:17px}
+.gen .url{display:block;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:var(--dim);
+ margin-top:3px;word-break:break-all}
+.gen p{margin:8px 0 0;font-size:14.5px;color:var(--paper)}
+ul{margin:0;padding:0;list-style:none}
+li{position:relative;padding-left:18px;margin-bottom:8px;font-size:15px;color:var(--paper)}
+li::before{content:'';position:absolute;left:2px;top:.8em;width:6px;height:1px;background:var(--gold)}
+.note{border-left:2px solid var(--gold);padding:2px 0 2px 16px;margin:22px 0 0}
+.note p{margin:6px 0 0;font-style:italic;font-size:16px;color:#f2eee4}
+.rules{counter-reset:r;margin-top:14px}
+.rules li{padding-left:34px;margin-bottom:14px}
+.rules li::before{counter-increment:r;content:counter(r,decimal-leading-zero);
+ font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--gold);background:none;width:auto;height:auto;top:.2em}
+footer{margin-top:50px;padding-top:22px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
+a.plain{color:var(--gold)}
+@media(min-width:760px){body{font-size:17px}}
+#gate{position:fixed;inset:0;z-index:99;background:#0b0e13;display:flex;align-items:center;justify-content:center;padding:24px}
+#gate .gc{max-width:340px;width:100%;text-align:center}
+#gate .gt{font-size:24px;margin:0 0 4px}
+#gate .gs{color:var(--dim);font-size:13px;margin:0 0 22px;font-family:ui-monospace,Menlo,monospace;
+ letter-spacing:.14em;text-transform:uppercase}
+#gate input[type=password]{width:100%;background:#0b0e13;border:1px solid var(--line);color:var(--paper);
+ padding:12px;border-radius:3px;font-size:16px;font-family:inherit}
+#gate button{width:100%;margin-top:12px;padding:12px;border:0;border-radius:3px;background:var(--gold);
+ color:#0b0e13;font-size:15px;font-weight:600;font-family:inherit}
+#gate .rem{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:14px;color:var(--dim);font-size:13px}
+#gate .err{color:#d2453c;font-size:13px;min-height:18px;margin:10px 0 0}
+#doc{display:none}
+</style></head><body>
+<div id="gate"><div class="gc">
+<p class="gt">The Brain Brake</p><p class="gs">Frames</p>
+<form id="gf"><input type="password" id="pw" autocomplete="current-password" autofocus placeholder="Passphrase">
+<div class="rem"><input type="checkbox" id="rem" checked><label for="rem">Remember me on this device</label></div>
+<button type="submit">Enter</button><p class="err" id="ge"></p></form></div></div>
+<div id="doc">
+<div class="wrap">
+<header>
+<span class="k">Mantra Productions</span>
+<h1>The Brain Brake, sound</h1>
+<p>A reference palette for the sound department. Each scene lists the textures we are aiming at, with links to
+open and hear them, and the one decision that matters most in that scene.</p>
+<nav class="jump">
+<a href="#lic">Licensing</a><a href="#s1">1</a><a href="#s2">2</a><a href="#s3">3</a><a href="#s4">4</a>
+<a href="#s5">5</a><a href="#s6">6</a><a href="#s7">7</a><a href="#s8">8</a><a href="#src">Sources</a><a href="#rules">Rules</a>
+</nav>
+</header>
+
+<div class="warn" id="lic">
+<span class="k">Read this before using anything below</span>
+<p>myNoise is free for personal listening only. Recording a generator's output, downloading its stems or
+resampling it is explicitly forbidden, and putting those sounds into a film requires their embedded licence,
+negotiated individually. The owner states plainly that credits and non commercial status do not qualify and
+that an offer is expected.</p>
+<p>So these links are a <b>reference palette, not a source</b>. Open a generator, hear exactly the texture we
+are aiming at, then build or license that texture from one of the sources at the bottom of this page. If a
+particular myNoise sound turns out to be irreplaceable, we make him an offer at
+<a class="plain" href="https://mynoise.net/licensing.php" target="_blank" rel="noopener">mynoise.net/licensing.php</a>.</p>
+</div>
+
+<p class="k lbl">The catalogue, for anything listed here by name</p>
+<div class="gen"><a href="https://mynoise.net/preface.php" target="_blank" rel="noopener">
+<b>myNoise, full catalogue</b><span class="url">mynoise.net/preface.php</span></a>
+<p>Every generator lives at mynoise.net/NoiseMachines/&lt;name&gt;.php. Search this page for any name below.</p></div>
+
+<section class="sc" id="s1">
+<div class="hd"><span class="k">Scene 1</span><span class="k">0:00 – 0:14</span></div>
+<h2>THE MYSTERY</h2>
+<p class="line">Open road under flat overcast, a thin crowd, then absolute suspension. The freeze is the sound event, not the sprint.</p>
+<img loading="lazy" src="../assets/HERO_V3/HERO_V3_1_web.jpg" alt="Scene 1">
+<p class="k lbl">Verified references, open and listen</p>
+<div class="gen"><a href="https://mynoise.net/NoiseMachines/thunderNoiseGenerator.php" target="_blank" rel="noopener"><b>Thunder</b><span class="url">mynoise.net/NoiseMachines/thunderNoiseGenerator.php</span></a><p>Low pressure under the overcast opening, felt rather than heard.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/windNoiseGenerator.php" target="_blank" rel="noopener"><b>Wind</b><span class="url">mynoise.net/NoiseMachines/windNoiseGenerator.php</span></a><p>Air across an exposed road. Keep it thin, this is not a storm.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/oceanNoiseGenerator.php" target="_blank" rel="noopener"><b>Ocean</b><span class="url">mynoise.net/NoiseMachines/oceanNoiseGenerator.php</span></a><p>Not for water. For distance and the sense of nothing enclosing you.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/whiteNoiseGenerator.php" target="_blank" rel="noopener"><b>White Noise</b><span class="url">mynoise.net/NoiseMachines/whiteNoiseGenerator.php</span></a><p>Calibrate the crowd bed against this, then bury it.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/trafficNoiseGenerator.php" target="_blank" rel="noopener"><b>Traffic</b><span class="url">mynoise.net/NoiseMachines/trafficNoiseGenerator.php</span></a><p>Very low, one lane of distant road behind the barriers.</p></div>
+<p class="k lbl">Also worth hearing, find these by name in the catalogue</p><ul>
+<li>Irish Coast — open air with no reflection</li>
+<li>Stormy Weather — pressure without rain</li>
+<li>Brownish White — the bed under everything</li>
+</ul>
+<div class="note"><span class="k">The decision</span><p>At 0:07 everything stops. This is the most important sound decision in the film. Cut every layer at once, leave one held tone and one breath, and let the audience notice the silence before they notice the boy.</p></div>
+</section>
+<section class="sc" id="s2">
+<div class="hd"><span class="k">Scene 2</span><span class="k">0:14 – 0:30</span></div>
+<h2>THE OLD THEORY</h2>
+<p class="line">The body as a factory winding down. Sympathetic and orderly, never alarming. Nobody here is panicking.</p>
+<img loading="lazy" src="../assets/HERO_V3/HERO_V3_2_web.jpg" alt="Scene 2">
+<p class="k lbl">Verified references, open and listen</p>
+<div class="gen"><a href="https://mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php" target="_blank" rel="noopener"><b>Data Center</b><span class="url">mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php</span></a><p>The core of this scene. Machine room, steady, no threat in it.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/railroadNoiseGenerator.php" target="_blank" rel="noopener"><b>Railroad</b><span class="url">mynoise.net/NoiseMachines/railroadNoiseGenerator.php</span></a><p>Heavy metal and slow rhythm, the weight of the gears.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/thunderNoiseGenerator.php" target="_blank" rel="noopener"><b>Thunder</b><span class="url">mynoise.net/NoiseMachines/thunderNoiseGenerator.php</span></a><p>The stamp descending. One event, low and enormous.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/spaceshipNoiseGenerator.php" target="_blank" rel="noopener"><b>Spaceship</b><span class="url">mynoise.net/NoiseMachines/spaceshipNoiseGenerator.php</span></a><p>Engine room hum for the deep layers of the hall.</p></div>
+<p class="k lbl">Also worth hearing, find these by name in the catalogue</p><ul>
+<li>Fireplace — combustion under the furnace</li>
+<li>Industrial and steam entries in the catalogue</li>
+</ul>
+<div class="note"><span class="k">The decision</span><p>The rhythm you establish here returns in scene 6 as a heartbeat. Build it now so the ear can recognise it later without being told.</p></div>
+</section>
+<section class="sc" id="s3">
+<div class="hd"><span class="k">Scene 3</span><span class="k">0:30 – 0:48</span></div>
+<h2>THE FULL TANK</h2>
+<p class="line">An enclosed space opening onto an enormous one. The reveal is spatial, so reverb is the instrument.</p>
+<img loading="lazy" src="../assets/HERO_V3/HERO_V3_3_web.jpg" alt="Scene 3">
+<p class="k lbl">Verified references, open and listen</p>
+<div class="gen"><a href="https://mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php" target="_blank" rel="noopener"><b>Data Center</b><span class="url">mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php</span></a><p>Tank hum, almost subsonic, the sound of stored volume.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/spaceshipNoiseGenerator.php" target="_blank" rel="noopener"><b>Spaceship</b><span class="url">mynoise.net/NoiseMachines/spaceshipNoiseGenerator.php</span></a><p>Depth and scale behind the door.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/greyNoiseGenerator.php" target="_blank" rel="noopener"><b>Grey Noise</b><span class="url">mynoise.net/NoiseMachines/greyNoiseGenerator.php</span></a><p>Shape the room tone with this rather than white, it sits better under speech.</p></div>
+<p class="k lbl">Also worth hearing, find these by name in the catalogue</p><ul>
+<li>Medieval Library — enclosed stone with a long tail</li>
+<li>Cave and cavern entries — the hall behind the door</li>
+<li>Singing Bowls — one struck tone as the door opens</li>
+</ul>
+<div class="note"><span class="k">The decision</span><p>Push the door open and let the reverb tail grow by a factor of four in one cut. The scale change is the emotion of the scene.</p></div>
+</section>
+<section class="sc" id="s4">
+<div class="hd"><span class="k">Scene 4</span><span class="k">0:48 – 1:14</span></div>
+<h2>THE GATEKEEPER</h2>
+<p class="line">Warm, domestic, absolutely not an alarm. This room means you no harm, and the sound has to say so before he speaks.</p>
+<img loading="lazy" src="../assets/HERO_V3/HERO_V3_4_web.jpg" alt="Scene 4">
+<p class="k lbl">Verified references, open and listen</p>
+<div class="gen"><a href="https://mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php" target="_blank" rel="noopener"><b>Data Center</b><span class="url">mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php</span></a><p>Soft server hum, well down, the room is working not warning.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/rainNoiseGenerator.php" target="_blank" rel="noopener"><b>Rain</b><span class="url">mynoise.net/NoiseMachines/rainNoiseGenerator.php</span></a><p>Distant, outside the walls, for warmth and enclosure.</p></div>
+<p class="k lbl">Also worth hearing, find these by name in the catalogue</p><ul>
+<li>Fireplace — warmth in the low mids</li>
+<li>Japanese Garden — calm and ordered</li>
+<li>Temple Bells — one small chime when the key is first seen</li>
+</ul>
+<div class="note"><span class="k">The decision</span><p>The film's most credible two seconds sit here, the subtitle admitting what is unresolved. Drop everything under it. Honesty should sound like nothing.</p></div>
+</section>
+<section class="sc" id="s5">
+<div class="hd"><span class="k">Scene 5</span><span class="k">1:14 – 1:30</span></div>
+<h2>THE TRICK</h2>
+<p class="line">Clinical, close and quiet, so that one small dishonest click can land.</p>
+<img loading="lazy" src="../assets/HERO_V3/HERO_V3_5_web.jpg" alt="Scene 5">
+<p class="k lbl">Verified references, open and listen</p>
+<div class="gen"><a href="https://mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php" target="_blank" rel="noopener"><b>Data Center</b><span class="url">mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php</span></a><p>Lab equipment, thin, high passed, no warmth.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/greyNoiseGenerator.php" target="_blank" rel="noopener"><b>Grey Noise</b><span class="url">mynoise.net/NoiseMachines/greyNoiseGenerator.php</span></a><p>Room tone only, shaped and almost inaudible.</p></div>
+<div class="note"><span class="k">The decision</span><p>The knurled dial is the point. One dry, close, conspiratorial click with nothing underneath it. The audience should feel like an accomplice.</p></div>
+</section>
+<section class="sc" id="s6">
+<div class="hd"><span class="k">Scene 6</span><span class="k">1:30 – 1:46</span></div>
+<h2>THE RELEASE</h2>
+<p class="line">The largest sound in the film, and it must arrive out of stillness or it is merely loud.</p>
+<img loading="lazy" src="../assets/HERO_V3/HERO_V3_6_web.jpg" alt="Scene 6">
+<p class="k lbl">Verified references, open and listen</p>
+<div class="gen"><a href="https://mynoise.net/NoiseMachines/binauralBrainwaveGenerator.php" target="_blank" rel="noopener"><b>Binaural Beats</b><span class="url">mynoise.net/NoiseMachines/binauralBrainwaveGenerator.php</span></a><p>A pulse under the body, felt rather than heard. Use as reference for the sub layer.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/windNoiseGenerator.php" target="_blank" rel="noopener"><b>Wind</b><span class="url">mynoise.net/NoiseMachines/windNoiseGenerator.php</span></a><p>Air moving upward under the flight montage.</p></div><div class="gen"><a href="https://mynoise.net/NoiseMachines/oceanNoiseGenerator.php" target="_blank" rel="noopener"><b>Ocean</b><span class="url">mynoise.net/NoiseMachines/oceanNoiseGenerator.php</span></a><p>Swell and lift, not water.</p></div>
+<p class="k lbl">Also worth hearing, find these by name in the catalogue</p><ul>
+<li>Aeolian Universe — rising and opening</li>
+<li>Singing Bowls — the moment the key turns</li>
+<li>Chapel Voices — wordless human presence under the flight</li>
+<li>Three Friends of Winter — sparse and high for the dancer</li>
+</ul>
+<div class="note"><span class="k">The decision</span><p>Half the fibres stay dark on screen. Do the same in the mix, hold something back, so the film never sounds like everything at once.</p></div>
+</section>
+<section class="sc" id="s7">
+<div class="hd"><span class="k">Scene 7</span><span class="k">1:46 – 1:54</span></div>
+<h2>THE VERDICT</h2>
+<p class="line">Everything drains to white. Near silence, and the most credible moment in the film.</p>
+<img loading="lazy" src="../assets/HERO_V3/HERO_V3_7_web.jpg" alt="Scene 7">
+<p class="k lbl">Verified references, open and listen</p>
+<div class="gen"><a href="https://mynoise.net/NoiseMachines/greyNoiseGenerator.php" target="_blank" rel="noopener"><b>Grey Noise</b><span class="url">mynoise.net/NoiseMachines/greyNoiseGenerator.php</span></a><p>Room tone alone, nothing else.</p></div>
+<p class="k lbl">Also worth hearing, find these by name in the catalogue</p><ul>
+<li>Singing Bowls — one soft decay under the handshake</li>
+</ul>
+<div class="note"><span class="k">The decision</span><p>Two theories agree. No swell, no resolution chord, no triumph. Let the honesty be quiet.</p></div>
+</section>
+<section class="sc" id="s8">
+<div class="hd"><span class="k">Scene 8</span><span class="k">1:54 – 2:00</span></div>
+<h2>THE INVITATION</h2>
+<p class="line">The quietest thirty seconds in the film. One breath, one small metal sound, then out.</p>
+<img loading="lazy" src="../assets/HERO_V3/HERO_V3_8_web.jpg" alt="Scene 8">
+<p class="k lbl">Also worth hearing, find these by name in the catalogue</p><ul>
+<li>Temple Bells — one chime as the key changes hands, then let it decay</li>
+<li>The Pilgrim — if a human presence is wanted under the end card</li>
+</ul>
+<div class="note"><span class="k">The decision</span><p>Cut sooner than feels comfortable after the transfer. Every second held past it is a second the audience starts thinking instead of feeling.</p></div>
+</section>
+
+<section class="sc" id="src">
+<h2>Where the audio actually comes from</h2>
+<p class="line">Sources we may legally use in the finished film.</p>
+<div class="gen"><a href="https://freesound.org" target="_blank" rel="noopener"><b>Freesound</b>
+<span class="url">freesound.org</span></a><p>Filter to Creative Commons 0. No attribution required, safe for a
+competition entry. The largest practical source for this film.</p></div>
+<div class="gen"><a href="https://sound-effects.bbcrewind.co.uk" target="_blank" rel="noopener"><b>BBC Sound Effects</b>
+<span class="url">sound-effects.bbcrewind.co.uk</span></a><p>Thousands of archive recordings, free for personal,
+educational and research use. Check the terms against our use before locking anything in.</p></div>
+<div class="gen"><a href="https://www.zapsplat.com" target="_blank" rel="noopener"><b>Zapsplat</b>
+<span class="url">zapsplat.com</span></a><p>Free with attribution, paid tier removes the requirement. Strong on
+mechanical and industrial material, which is most of scene two.</p></div>
+<div class="gen"><a href="https://getsoundly.com" target="_blank" rel="noopener"><b>Soundly</b>
+<span class="url">getsoundly.com</span></a><p>Subscription, broadcast standard, with a good free tier and a fast
+search that behaves like a proper effects library.</p></div>
+<div class="gen"><a href="https://www.epidemicsound.com" target="_blank" rel="noopener"><b>Epidemic Sound</b>
+<span class="url">epidemicsound.com</span></a><p>Cleared for film and online publication, includes effects as well
+as music. The safest option if the film travels.</p></div>
+</section>
+
+<section class="sc" id="rules">
+<h2>Seven rules for this mix</h2>
+<p class="line">These matter more than the sources.</p>
+<ul class="rules">
+<li><b>One sound per moment.</b> Decide which single sound the audience is meant to hear and let it be alone or
+nearly alone. A full track feels professional and is exhausting, and nothing can rise if everything is present.</li>
+<li><b>Build in layers, then remove.</b> Everything not carrying meaning comes out. Loud films are made by
+adding, intense films by cutting.</li>
+<li><b>Silence is a department.</b> Ninety seconds of disciplined sound is what makes one second of true silence
+the loudest moment in the film. It goes under the most important line and is defended in the mix.</li>
+<li><b>Bridge every transition.</b> Six worlds in two minutes. Let the next world arrive a few frames before its
+picture does, or the cutting reads as channel hopping.</li>
+<li><b>The voice stays constant.</b> Dry, close and unprocessed in every world, so the audience has one thread to
+hold across all of them.</li>
+<li><b>Room tone under everything.</b> It does more for believability than any effect, and it is recorded on the
+shoot day or never.</li>
+<li><b>Machinery becomes heartbeat.</b> The rhythm established as machinery in scene two returns as a pulse in
+scene six. The ear connects them instantly and never announces that it has.</li>
+</ul>
+</section>
+
+<footer>Reference palette, version one. Links open on myNoise, which is a listening reference and not a source.
+The film's own audio is licensed or built from the sources above.</footer>
+</div>
+<script>
+(function(){
+ var PW='manan', CA='bb_auth';
+ function set(k,v){var d=new Date();d.setTime(d.getTime()+180*864e5);
+  document.cookie=k+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';}
+ function get(k){var m=document.cookie.match('(^|; )'+k+'=([^;]*)');return m?decodeURIComponent(m[2]):null;}
+ var g=document.getElementById('gate'), d=document.getElementById('doc');
+ function open_(){g.style.display='none'; d.style.display='block';}
+ if(get(CA)==='1' || sessionStorage.getItem(CA)==='1') open_();
+ document.getElementById('gf').addEventListener('submit',function(e){
+  e.preventDefault();
+  var v=document.getElementById('pw').value.trim().toLowerCase();
+  if(v===PW){ if(document.getElementById('rem').checked) set(CA,'1');
+   sessionStorage.setItem(CA,'1'); open_(); }
+  else { document.getElementById('ge').textContent='Not that one.';
+   document.getElementById('pw').value=''; }
+ });
+})();
+</script>
+</body></html>
