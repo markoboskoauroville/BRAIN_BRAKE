@@ -192,3 +192,23 @@ foreground, and keep the drawn population under four figures.
 **9.8.2026 — a named symbol without a support floats.** In the same frame the gold key is hanging in
 mid air against a wall, attached to nothing. It was named in the prompt as a thread but never
 physically placed. Lesson: a symbol always needs a noun to sit on.
+
+**9.8.2026 — a busy style anchor does NOT bleed its content.** Frame 1A was generated with the
+runner model sheet plus `HERO_V3_1` as a style anchor, and that anchor is full of things not wanted
+in the new frame: a crowd, crash barriers, a kerb, a road, Manan and the gold key. **None of it
+appeared.** The paper came back completely empty. This answers a question we had never tested and it
+changes the economics: a finished frame can be used as a style reference without dragging its scene
+along, so from now on always anchor to the best-drawn existing frame rather than fearing the bleed.
+What transferred was exactly what was wanted, the line weight, the paper, the border and the hand.
+
+**9.8.2026 — the style anchor beats the prompt on paper tone.** The prompt asked three times for
+paper "close to pure white, with only the faintest warmth left in it". It came back at the standard
+warm cream of the anchor. Lesson: tone, palette and line weight are decided by the reference, and
+writing against the reference does not win. If a frame needs a different paper tone, either use an
+anchor that already has that tone, or accept the anchor's tone and do the shift in the grade.
+
+**9.8.2026 — camera angle instructions are weak.** The prompt said "seen from very low down, looking
+up at him so he towers and fills the frame from below", stated twice. The result is close to eye
+level with the figure occupying the middle third. Composition and camera height are the least
+reliable things to ask for in words. If a specific angle matters, it has to come from a reference
+that already has it, or be accepted as whatever the model gives and chosen from several outputs.
