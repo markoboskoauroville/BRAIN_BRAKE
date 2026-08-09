@@ -72,6 +72,24 @@ paper. `V4_1B` the close on the face as the eyes fix, and he reads about ten yea
 frame is never used as an anchor. `V4_1C` the released sprint in profile, and this is the frame that
 was right.
 
+**THE FILM IS NOW NINE SCENES.** A new scene 3, THE ARRIVAL, was added so that Manan enters at human
+scale in a space of his own rather than on the end of the reversal. Everything after it shifts by one.
+The new running order and timings:
+
+    S1  0:00-0:14   THE MAN WHO SHOULD HAVE STOPPED
+    S2  0:14-0:26   THE REVERSAL
+    S3  0:26-0:33   THE ARRIVAL                       new
+    S4  0:33-0:49   INSIDE THE LEG, 1923
+    S5  0:49-0:58   THE CRACK
+    S6  0:58-1:09   UP THE BODY, INTO THE HEAD
+    S7  1:09-1:30   THE COACH
+    S8  1:30-1:51   THE RELEASE
+    S9  1:51-2:00   WHITE
+
+The seven seconds were taken from the laboratory and the two travelling scenes. Scene 1 was not
+touched, because it is where the empathy is bought, and the coach and the release were barely touched,
+because they are what the film is for. Twenty seven frames now, not twenty four.
+
 **Scene 2 is no longer THE FREEZE. It is THE REVERSAL, and it is the load bearing scene of the film.**
 Nothing stops. Time runs backwards at about a fifth of speed while the view orbits the runner's head,
 and the reversal is carried by sweat climbing back into the skin rather than by a body running
@@ -86,9 +104,22 @@ the factory was retired.
 gravity along its own drying track. The first attempt, a medium close-up of the whole face with the
 sweat hanging, is stored at `assets/V4/V4_2B_v1_rejected.png`. It is a good drawing and the wrong
 framing: a medium close-up answers who a man is, and that question was already answered in scene 1.
-`V4_2C` is the eye filling the paper with Manan reflected in the wet curve of it, caped coat,
-deerstalker, glass raised. His first appearance in the film is a reflection inside the man he has come
-to examine, and the wide shot stays implied and unshot.
+`V4_2C` is a field of sweat drops standing on the skin with Manan inside them, small and upside down,
+in every drop at once. The eye was tried and rejected as too spooky. A drop is a lens, so the
+inversion is optically true and the film's first sight of Manan comes through a lens before he raises
+his own. The multiplication carries the idea underneath the scene, that seeing something truly takes
+more than one angle, which is also the reason Hill's theory was incomplete. Ladder: 2A carries the
+**3**, 2C carries the **9**, the dial still carries the 27.
+
+**Scene 3, THE ARRIVAL.** Snap pull back to the runner alone and small on open paper, Manan walks in
+at the same height as him and looks at the calf, the glass goes to the leg and we pass through the
+lens. His full figure entrance. Direction at `scenes/S3.md`. The rejected `V4_2B_v1` is reinstated as
+an in-between of the pull back rather than discarded.
+
+**The glass thread needs a decision.** The old rule was a monotonic descent in opposition to the
+rising key. The key has moved to the Coach's chain and the film now goes down into the leg and up into
+the head, so the proposal is that the glass falls to the leg and rises to the skull and is put down in
+the last scene. Waiting on Marko.
 
 **Paper tone, decided.** Cream at the start, white at the end, and the shift happens in the grade, not
 in the prompt. The reference decides tone and writing against it does not win.
