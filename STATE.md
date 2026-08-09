@@ -100,12 +100,13 @@ scene. Full direction at `scenes/S2.md`.
 is finished and staggering, firm dark graphite at the right where he is at full sprint. Played right to
 left it is the run taken back. It carries the **3** of the number ladder, which lost its old rungs when
 the factory was retired.
-`V4_2B` is now the insert, skin filling the paper and one drop of sweat climbing upward against
-gravity along its own drying track. The first attempt, a medium close-up of the whole face with the
-sweat hanging, is stored at `assets/V4/V4_2B_v1_rejected.png`. It is a good drawing and the wrong
-framing: a medium close-up answers who a man is, and that question was already answered in scene 1.
-`V4_2C` is a field of sweat drops standing on the skin with Manan inside them, small and upside down,
-in every drop at once. The eye was tried and rejected as too spooky. A drop is a lens, so the
+`V4_2B` is the insert, the jaw close with a fine spray of small droplets hanging off the skin and
+returning into it. Two attempts rejected and filed at `assets/V4/attempts/`, with the reasons in
+nanobanana.md: a whole face answers a question scene 1 already answered, and a single large drop cannot
+say which way it is travelling.
+`V4_2C` pushes into that same spray, three near droplets large enough to hold a legible Manan upside
+down and a hundred smaller beads receding behind them. The first attempt, nine equal drops, is filed at
+`assets/V4/attempts/`: it became wallpaper and he came back a grey render. The eye was tried and rejected as too spooky. A drop is a lens, so the
 inversion is optically true and the film's first sight of Manan comes through a lens before he raises
 his own. The multiplication carries the idea underneath the scene, that seeing something truly takes
 more than one angle, which is also the reason Hill's theory was incomplete. Ladder: 2A carries the

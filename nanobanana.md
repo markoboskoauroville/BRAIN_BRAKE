@@ -229,3 +229,25 @@ transfer the **hand**, not the furniture. Stop hesitating over what else is in a
 a single frame, with `V4_1C` as the anchor. Confirms the rule that the anchor should be the last frame
 that was RIGHT rather than the most recent, and that it holds even when the model must draw the face
 four times in one run.
+
+**9.8.2026 — a hanging drop and a climbing drop are drawn the same way unless the skin tells you.**
+`2B` attempt two came back beautiful and physically ambiguous: one large drop on the jaw with a wet
+trail above it. Nothing in the picture says which way it is travelling, so the eye defaults to falling,
+because that is what water does. Lesson: direction of motion cannot live in the shape of the moving
+object. It has to live in **what the object has done to the surface behind it**. Dry skin on one side,
+wet on the other, or a thread of water still connecting it to where it came from.
+
+**9.8.2026 — the photoreal figure fails on SIZE and COUNT, not only on co-references.** `2C` attempt
+one was run with `MANAN.jpg` as the only reference, exactly as the sheet discipline demands, and he
+still came back as a soft grey render rather than a photograph, nine times over. So the rule needs
+widening. A drawn co-reference is one way to lose him. The other two are asking for him **small** and
+asking for him **many times**, because each repetition is another chance for the model to fall back on
+drawing. Fix: at most three legible copies, each large in the frame, and let any further multiplication
+be suggested by shapes too small to read.
+
+**9.8.2026 — a repeated object at one scale becomes wallpaper.** Nine drops of nearly equal size laid
+across the frame read as a decorative pattern rather than as a surface with things on it, and the
+graphite ground stopped reading as skin entirely. Lesson: when something repeats, it must repeat at
+**different distances**, with a few near and large and the rest receding, or the frame flattens into
+ornament. Keep one piece of anatomy in shot, a jaw edge or a stubble line, so the eye knows what the
+things are sitting on.

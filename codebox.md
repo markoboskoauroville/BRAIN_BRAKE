@@ -74,32 +74,21 @@ Reference images always come **before** the prompt. See `nanobanana.md` section 
 
 ---
 
-## 4b. THE MANIFEST, BEFORE EVERY SET OF IMAGE BOXES
+## 4b. THE COUNT, BEFORE EVERY SET OF IMAGE BOXES
 
-Before the first box of any image delivery, a short table saying exactly what is coming and what is
-done with each piece. It is read once, held in the head, and then the boxes are copied top to bottom
-without scrolling back to check whether a reference was missed.
+One line before the first box, stating how many reference images are coming and the three settings a
+prompt is incomplete without. No table. The count is read once and held in the head, and the boxes are
+then copied top to bottom without scrolling back.
 
-The table has one row per box, in the order the boxes appear, plus the three settings that a prompt is
-incomplete without.
+    2 reference images, 1 prompt. Image To Image AI, 16:9.
 
-    | # | Box | What it is | Where it goes |
-    |---|---|---|---|
-    | 1 | Reference 1 | V4_1C, the sprint in profile | Image URL |
-    | 2 | Reference 2 | V4_2A, the run taken back | Image URL |
-    | 3 | Prompt | 2B, the drop that climbs | Prompt |
+**Why the count and not a description.** A reference silently skipped is the most expensive mistake on
+this production, because the frame comes back plausible and wrong and the wrongness gets blamed on the
+prompt. The number is the only thing needed to catch that, and it costs one line. Each box already
+carries its own title saying what it is.
 
-    Mode  Image To Image AI      Aspect  16:9      Boxes  3
-
-**Why.** A reference silently skipped is the most expensive mistake on this production, because the
-frame comes back plausible and wrong, and the wrongness is blamed on the prompt. The manifest makes a
-missing reference visible before a credit is spent rather than after.
-
-**The count is the point.** The last line always states the number of boxes. If four boxes were
-promised and three were pasted, that is caught while it still costs nothing.
-
-**One manifest per delivery, never per box.** If two frames are delivered in one message, that is two
-manifests, each immediately above its own set of boxes.
+**One count per delivery.** Two frames in one message is two counts, each immediately above its own
+set of boxes.
 
 ---
 
