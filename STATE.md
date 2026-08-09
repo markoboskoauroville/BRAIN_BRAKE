@@ -168,3 +168,10 @@ should feel the film rather than read it: short, emotional, one page per scene, 
 recaps and no next-steps lists. One exception, and it is a real one: the principles behind
 composition, colour, numbers, light, metaphor and structure may run long, provided they stay
 interesting and never repeat, and they live in their own document rather than in the scene pages.
+
+## CHAT FORMAT
+
+**Read `codebox.md`.** Every code box gets a bold caps title and a one or two sentence summary
+above it, outside the box, naming what is actually in it. For a reference image the title says who
+and what is in the picture, not merely that it is a reference. References always come before the
+prompt, each in its own box.
