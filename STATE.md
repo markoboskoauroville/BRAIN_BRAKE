@@ -104,12 +104,17 @@ the factory was retired.
 returning into it. Two attempts rejected and filed at `assets/V4/attempts/`, with the reasons in
 nanobanana.md: a whole face answers a question scene 1 already answered, and a single large drop cannot
 say which way it is travelling.
-`V4_2C` done and approved: the spray with a dark silhouette of the caped coat, the deerstalker and the
-glass standing inside the near droplets and receding to specks behind them. Upright, not inverted, and
-better for it. Two corrections carried into the animation, a child's proportions for the silhouette and
-irregular droplets rather than perfect spheres. Earlier attempts filed at `assets/V4/attempts/`.
+`V4_2C` reopened and rebuilt. The silhouette version was approved and then withdrawn: sweat carrying a
+face is faintly unpleasant and it was the wrong element. Now the runner tips a water bottle over his
+head at the water station and Manan's face fills the nearest flying drop, pressed to the curve, looking
+out at the audience from the far side of a lens. Earlier attempts filed at `assets/V4/attempts/`.
 
-**Scene 2 is complete. 2A, 2B and 2C all approved. Scene 3, THE ARRIVAL, is next.** The eye was tried and rejected as too spooky. A drop is a lens, so the
+**THE FIVE ELEMENTS ARE NOW A STANDING FRAME.** `elements.md` in the repo root. Earth, water, fire,
+wind and ether as a checklist for wholeness, borrowed as a design grammar and not as a cosmology. The
+honest diagnosis: this film is strong in earth, fire and wind, adequate in ether and was almost empty
+of water, which is why Manan now arrives in poured water. Water is compassion and the story turns on
+somebody stopping for a man nobody stopped for. Scene 5, THE CRACK, is flagged as the thinnest scene by
+this reading, pure wind with nothing under it. Unresolved. The eye was tried and rejected as too spooky. A drop is a lens, so the
 inversion is optically true and the film's first sight of Manan comes through a lens before he raises
 his own. The multiplication carries the idea underneath the scene, that seeing something truly takes
 more than one angle, which is also the reason Hill's theory was incomplete. Ladder: 2A carries the
