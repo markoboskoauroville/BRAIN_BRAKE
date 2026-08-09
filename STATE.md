@@ -104,10 +104,13 @@ the factory was retired.
 returning into it. Two attempts rejected and filed at `assets/V4/attempts/`, with the reasons in
 nanobanana.md: a whole face answers a question scene 1 already answered, and a single large drop cannot
 say which way it is travelling.
-`V4_2C` reopened and rebuilt. The silhouette version was approved and then withdrawn: sweat carrying a
-face is faintly unpleasant and it was the wrong element. Now the runner tips a water bottle over his
-head at the water station and Manan's face fills the nearest flying drop, pressed to the curve, looking
-out at the audience from the far side of a lens. Earlier attempts filed at `assets/V4/attempts/`.
+`V4_2C` done and approved: the boy's real photographic face inside a large teardrop of clear water with
+drawn faces in the drops around it. **The refraction is not in the frame and never will be.** Nano
+Banana composites and does not transform, so it cannot bend or crop content across a curved surface.
+Two runs proved it, a third was not spent, and the missing physics is written into `scenes/S2.md` for
+Kristijan instead. The still is a hint, the shot is the thing. Attempts filed at `assets/V4/attempts/`.
+
+**Scene 2 is complete. 2A, 2B, 2C approved. Scene 3, THE ARRIVAL, is next, starting with 3A.**
 
 **THE FIVE ELEMENTS ARE NOW A STANDING FRAME.** `elements.md` in the repo root. Earth, water, fire,
 wind and ether as a checklist for wholeness, borrowed as a design grammar and not as a cosmology. The

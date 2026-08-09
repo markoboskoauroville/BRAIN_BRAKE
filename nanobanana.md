@@ -293,3 +293,26 @@ the small drops, one legible face in the large one.
 **9.8.2026 — Manan renders photographic reliably now.** Two consecutive frames have produced a genuine
 photograph of the boy with `MANAN.jpg` alone plus one drawn frame alongside it. The condition is size,
 not isolation. Large, single, foreground.
+
+**9.8.2026 — Nano Banana cannot do refraction. Stop asking. This is a capability limit, not a wording
+problem.** Two runs, the second written with four separate optical cues described as content, and it
+produced none of them. The ruled line crossed behind the drop and came out **thin, straight and
+unbroken**. The face sat centred with clean headroom instead of overflowing the rim. There was no edge
+compression and no bright ring.
+
+**The reason, and it generalises.** The model composites, it does not transform. It can put a thing
+behind, inside or in front of another thing, because that is arrangement. It cannot take content and
+**bend, displace or crop it according to a surface**, because that is a transformation of something it
+has already decided to draw. So refraction, reflections that distort, mirrors that show a different
+angle, anything seen through moving water or curved glass, all of it is outside the tool. Ask for the
+arrangement, get the distortion in post or in the animation.
+
+**9.8.2026 — a perfect circle over a whole human face reads as a helmet.** Attempt five came back
+funny rather than powerful and the shape is why. A circular transparent sphere containing a centred
+complete face is one of the strongest visual priors there is: fishbowl, spacesuit, bubble. The earlier
+teardrop shape escaped it purely by not being a circle. If a face has to sit inside water, keep the
+water a **teardrop or an irregular blob**, never a perfect round.
+
+**The rule this settles.** Where a frame needs an optical effect the model cannot produce, do not spend
+a third run. Approve the strongest composition available, then write the missing physics into the scene
+document for the animator. The still is a hint. The shot is the thing.
