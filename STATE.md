@@ -113,9 +113,12 @@ Kristijan instead. The still is a hint, the shot is the thing. Attempts filed at
 **Scene 2 is complete. 2A, 2B, 2C approved.**
 
 **Scene 3.** `V4_3A` done, and built in the container from `V4_1C` rather than generated, because the
-model inherits subject scale from its references and cannot be argued out of it. `3B` is next, Manan
-and the runner at the same height, his full figure entrance and the first photograph standing in the
-world. `assets/REFERENCES/RUN_CYCLE.jpg` was saved from the failed 3A run: four full size profile
+model inherits subject scale from its references and cannot be argued out of it. `V4_3B` done, Manan's full figure entrance, near
+to us at the right and the runner small and facing him at the left. The ruled line was drawn back in
+afterwards in the container. Two things carried forward: the glass came up unasked and is aimed at
+open paper, so `3C` must land it on the calf, and the brass is the first gold in the film, which is
+reserved, so scenes 3 to 6 should hold the glass close to graphite in the grade and let it go properly
+gold only in scene 7. `3C` is next, the glass on the calf and the push through the lens. `assets/REFERENCES/RUN_CYCLE.jpg` was saved from the failed 3A run: four full size profile
 figures of the runner mid stride, which is a genuine run cycle sheet for Kristijan.
 
 **THE FIVE ELEMENTS ARE NOW A STANDING FRAME.** `elements.md` in the repo root. Earth, water, fire,

@@ -342,3 +342,19 @@ for the same reason. Read a new prompt against this table before spending a cred
 **What to do instead.** A pull back is a scale change of a drawing that already exists, so build it in
 the container from the approved frame, which also makes continuity free because the figure is pixel
 identical. `V4_3A` was made this way from `V4_1C`.
+
+**9.8.2026 — Manan is solved, and the solution is depth.** `3B` produced the strongest photoreal boy of
+the whole production: reads fourteen, real wool, real brass, real skin against pure graphite. The
+conditions were large, single, foreground and **nearer to us than the drawn figure**. Putting him in
+the near ground rather than beside the drawn character is what finally did it, because it gives him
+frame area without asking the model to scale anybody.
+
+**But he arrives holding the frame's one broken rule.** The glass came up on its own and it is aimed at
+open paper. A named symbol without a physical support floats, and this is that failure in its purest
+form: the most meaningful object in the film pointing at nothing. Where an object is an instrument, say
+what it is trained on in the same sentence, or it will be raised for the camera rather than used.
+
+**9.8.2026 — the ruled line is dropped whenever a photoreal figure is in the frame.** Three frames now.
+It is not worth a rerun. It is two pixels of graphite and it can be drawn back in the container in a
+minute, masked by colour saturation so it passes behind the boy and never across him. `V4_3B` was
+finished this way.
