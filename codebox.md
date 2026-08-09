@@ -90,15 +90,17 @@ carries its own title saying what it is.
 **One count per delivery.** Two frames in one message is two counts, each immediately above its own
 set of boxes.
 
-**Every box carries a short tag on its own line, directly above it.** References are `R1`, `R2`, `R3`
-in the order they are pasted. Prompts are `P1`, `P2`. The tag is the **last line before the box** and
-nothing else shares that line. It does not go in the title and it does not go above the summary.
+**Every box carries a short tag on its own line, directly above it, inside square brackets.**
+References are `[R1]`, `[R2]`, `[R3]` in the order they are pasted. Prompts are `[P1]`, `[P2]`. The
+brackets are not decoration, they are what makes it a tag rather than a word. The tag is the **last
+line before the box** and nothing else shares that line. It does not go in the title and it does not go
+above the summary.
 
     THE FULL SPRINT, V4_1C, THE WHOLE FIGURE IN PROFILE
     The runner alone on open paper, side on, the finish line crossing behind him.
     <blank line>
     <blank line>
-    R1
+    [R1]
     [box]
 
 Two blank lines above the tag, one below it. The double gap is what lifts the tag off the summary and
