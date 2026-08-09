@@ -175,3 +175,11 @@ interesting and never repeat, and they live in their own document rather than in
 above it, outside the box, naming what is actually in it. For a reference image the title says who
 and what is in the picture, not merely that it is a reference. References always come before the
 prompt, each in its own box.
+
+## WHY A SCENE WORKS
+
+**Read `storytelling.md` before writing any scene, prompt, shot list or brief.** The first law is
+empathy before curiosity: a scene earns feeling before it asks a question, and reversing that order
+is how a science film becomes inert. It also holds the unspoken thesis, the three part shape of
+every scene, the six story medicine principles, and the list of approaches already tried and
+abandoned so they are not tried again.
