@@ -271,3 +271,25 @@ thing.
 **9.8.2026 — where a frame is impossible, draw the hint and write the shot.** The finished shot is an
 animation, and the still only has to point at it. Reflections and shadows can be silhouettes, which
 graphite does beautifully and which the model produces without argument.
+
+**9.8.2026 — a lens does not read as a lens without something to compare it against.** `2C` attempt
+four put a perfect photoreal Manan inside a clean drop and it read as a boy in a glass ball, not as a
+boy seen through water, because nothing in the frame was magnified. Magnification is a **relationship**,
+not a texture. The eye needs the same thing visible at two sizes: something crossing behind the drop
+that is thin outside it and thick and bent inside it. In this film that something already exists and is
+free, the ruled finish line.
+
+**The four things that actually make water read as a lens.** One, the image inside **overflows the rim**,
+so a face is cropped by the edge rather than sitting inside with headroom. Two, something continuous
+crosses behind and is **displaced and thickened** where it passes through. Three, the centre is clear
+and the image **squeezes and bends toward the rim**. Four, a bright ring just inside the edge and a
+darker band outside it. Ask for the four as content. Never ask for magnification as a word.
+
+**9.8.2026 — a complete portrait inside a small shape reads as a sticker, a fragment reads as a
+reflection.** The secondary drops each came back holding a whole tidy face, which flattened them into
+pasted images. In water you would see part of an eye, a piece of mouth, an edge of a cap. Fragments in
+the small drops, one legible face in the large one.
+
+**9.8.2026 — Manan renders photographic reliably now.** Two consecutive frames have produced a genuine
+photograph of the boy with `MANAN.jpg` alone plus one drawn frame alongside it. The condition is size,
+not isolation. Large, single, foreground.
