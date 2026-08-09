@@ -29,6 +29,7 @@ production and they exist so that knowledge is not lost between chats.
 | `codebox.md` | How to format code boxes and image deliveries in chat. |
 | `elements.md` | The five elements as a wholeness check on the film. |
 | `STATE.md` | The shared brain. Current state of everything. |
+| `correspondence.md` | Every message to and from the crew, plus the drafts that are still outstanding. |
 
 Then read `scenes/S2.md` and `scenes/S3.md`, which are the finished scene documents.
 
@@ -257,9 +258,10 @@ book carries a lot of claims that would damage a filmmaking book's credibility.
 
 ## 11. STILL OUTSTANDING
 
-1. **3C.** The prompt is in section 12 below, ready to run.
-2. **Scene 4 onward**, three frames each.
-3. **Scene 5 is thin.** Pure wind by the elements diagnosis. Fix before boarding it.
+1. **The Croatian message to Kristijan.** Written and waiting in `correspondence.md` section 5.1, never sent.
+2. **3C.** The prompt is in section 12 below, ready to run.
+3. **Scene 4 onward**, three frames each.
+4. **Scene 5 is thin.** Pure wind by the elements diagnosis. Fix before boarding it.
 4. **The glass thread decision** from Marko.
 5. **Rewrite the animation brief** from 25 pages to about 10, under `documents.md` rules.
 6. **Rewrite both shot lists** for the nine scene structure.

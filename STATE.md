@@ -123,6 +123,9 @@ gold only in scene 7. `3C` is next, the glass on the calf and the push through t
 small leg on open paper, which reads as somebody demonstrating a prop. The calf is not in the frame, the
 calf **is** the frame, seen over the back of Manan's head.
 
+**`correspondence.md` holds every message to and from the crew**, with the outstanding Croatian message
+to Kristijan ready to send in section 5.1. Nothing goes to a crew member without being logged there.
+
 **`HANDOVER.md` was rewritten from scratch on 9.8.2026 and is now the entry point for a new chat.** The
 old one described the retired six scene version and would have started the next session in the wrong
 film. `assets/REFERENCES/RUN_CYCLE.jpg` was saved from the failed 3A run: four full size profile
