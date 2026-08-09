@@ -251,3 +251,23 @@ graphite ground stopped reading as skin entirely. Lesson: when something repeats
 **different distances**, with a few near and large and the rest receding, or the frame flattens into
 ornament. Keep one piece of anatomy in shot, a jaw edge or a stubble line, so the eye knows what the
 things are sitting on.
+
+**9.8.2026 — the photoreal boy cannot live INSIDE a drawn object, and trying makes the whole frame a
+photograph.** `2C` attempt two asked for Manan photoreal inside droplets sitting on drawn skin. The
+model resolved the contradiction the only way it could: it photographed everything. Full colour skin,
+brown flesh tones, glossy three dimensional spheres, the style law gone. This is the exact inverse of
+the earlier failure where he was dropped from a crowded frame, and together they define the boundary.
+
+**The rule, now settled.** Manan renders photographic when he is **a separate body standing in the
+drawn world**, at a size where he reads as a person. He cannot be embedded inside a drawn object, and
+he cannot be small, and he cannot be repeated. Two runs confirmed it from opposite directions. Stop
+attempting it.
+
+**9.8.2026 — the model cannot vary a small repeated element.** The hundred receding droplets came back
+as one identical stamp tiled across the paper, same size, same content, same spacing. A field of many
+small things has to be described as a field with its own texture, not as many copies of one described
+thing.
+
+**9.8.2026 — where a frame is impossible, draw the hint and write the shot.** The finished shot is an
+animation, and the still only has to point at it. Reflections and shadows can be silhouettes, which
+graphite does beautifully and which the model produces without argument.

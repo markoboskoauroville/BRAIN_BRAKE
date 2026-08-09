@@ -162,7 +162,12 @@ blackboard. The head is where the metaphor lives. One space, one job.
 **Style law.** Graphite pencil on warm cream paper, sixteen by nine, thin dark ruled border on every frame.
 Humans are drawn realistically. Cartoon is reserved for Coach Brain and the Muscle, the two characters who are
 ideas rather than people, so a cartoon appearing always means something. Manan alone is a real photograph
-composited into the drawing, always, without exception.
+composited into the drawing, always, without exception, **wherever he is present as a person**.
+
+**Amendment, 9.8.2026.** Where Manan appears only as a reflection, a shadow or a silhouette, he is a shape and
+not a portrait, and that shape is drawn. This is not a softening of the law, it is a boundary the law needed.
+A photograph embedded inside a drawn object cannot be produced, and attempting it turns the entire frame
+photographic. It is also better storytelling: his face is kept back until he walks into scene 3.
 
 **Colour.** Graphite, cream, gold, red. Gold only on the key and the light of understanding. Red only on
 gauges. Nothing else carries colour. Cyan was dropped.
