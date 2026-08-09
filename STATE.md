@@ -6,7 +6,7 @@ Two workers, one project. **Claude in the chat** on the phone and the laptop, wh
 repository directly. **Claude Code** inside Brain Freedom on the Mac, which works in the local checkout.
 Neither can see the other. This file is how they stay one mind.
 
-    last written   7.8.2026, evening
+    last written   9.8.2026, afternoon
     written by     chat
     branch         main
     masters        full resolution art lives on the `masters` branch, never published
@@ -59,6 +59,32 @@ repository and changelog.
 instead. Candidates and the reasoning are archived at `assets/BRAND/`, see `assets/BRAND/NOTES.md`.
 
 **Shoot.** Requested for Saturday 15.8. and Sunday 16.8., waiting on the camera department to confirm.
+
+---
+
+## VERSION FOUR, WHERE THE FRAMES STAND
+
+Eight scenes, three frames each, twenty four frames, stored at `assets/V4/`. The term hero image is
+retired: one frame cannot show an arc.
+
+**Scene 1, the man who should have stopped.** Complete. `V4_1A` the finished man, hands open, empty
+paper. `V4_1B` the close on the face as the eyes fix, and he reads about ten years older here, so this
+frame is never used as an anchor. `V4_1C` the released sprint in profile, and this is the frame that
+was right.
+
+**Scene 2, the freeze.** `V4_2A` done and approved: the runner drawn four times along one path, ghost
+grey at the left where he is finished and staggering, firm dark graphite at the right where he is at
+full sprint. Played right to left it is the run being taken back. It also carries the **3** of the
+number ladder, which lost its old rungs when the factory was retired.
+`V4_2B` next, the freeze landing on the same instant as `V4_1B` and rhyming with it, the sweat
+detached and hanging clear of his jaw. `V4_2C` Manan inside the stopped world, glass at eye height,
+his first entrance and the first photograph in the film.
+
+**Paper tone, decided.** Cream at the start, white at the end, and the shift happens in the grade, not
+in the prompt. The reference decides tone and writing against it does not win.
+
+**The leg changed.** No factory and no workers inside the leg. It is a laboratory, one scientist, one
+blackboard. The head is where the metaphor lives. One space, one job.
 
 ---
 

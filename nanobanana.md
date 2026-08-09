@@ -212,3 +212,20 @@ up at him so he towers and fills the frame from below", stated twice. The result
 level with the figure occupying the middle third. Composition and camera height are the least
 reliable things to ask for in words. If a specific angle matters, it has to come from a reference
 that already has it, or be accepted as whatever the model gives and chosen from several outputs.
+
+**9.8.2026 — a repeated figure reads as one man through line weight, not through overlap.** `V4_2A`
+asked for four versions of the runner overlapping along one path. They came back cleanly separated
+with almost no overlap, and it works anyway: the model carried the reading entirely in **progressive
+line weight**, ghost grey at the left to firm dark graphite at the right. Lesson: when a figure has to
+repeat across one frame, ask for the fade and let the spacing go. Overlap is a composition request and
+composition is the weakest thing to ask for; density of line is a content request and lands every time.
+
+**9.8.2026 — the labelled model sheet did not bleed its labels.** `RUNNER.jpg` carries hand lettered
+view captions and a title, and was uploaded alongside two finished frames for `V4_2A`. None of that
+lettering appeared. Together with the busy style anchor finding, this closes the question: references
+transfer the **hand**, not the furniture. Stop hesitating over what else is in a reference.
+
+**9.8.2026 — four figures of the same man held one face.** No ageing drift across four repetitions in
+a single frame, with `V4_1C` as the anchor. Confirms the rule that the anchor should be the last frame
+that was RIGHT rather than the most recent, and that it holds even when the model must draw the face
+four times in one run.
