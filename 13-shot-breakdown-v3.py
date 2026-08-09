@@ -10,27 +10,27 @@ SHOTS = [
 ("1.2","0:04-0:07","AN",None,"wide","The same man explodes into a sprint. Speed lines, grit lifting, crowd rising.","","Diagonal, violent, energy left to right. Horizon low so he sits high."),
 ("1.3","0:07-0:11","CO","A","wide","Everything freezes. Manan walks into the stopped world from the right, magnifying glass raised to his eye.","","SETUP A. He walks slowly through frame looking left and right at nothing. Shoot thirty seconds of pure observing, no lines."),
 ("1.4","0:11-0:12","AN",None,"insert","Through the lens, a pressed footprint and a stopped watch on the tarmac.","","Crisp inside the circle, loose outside it."),
-("1.5","0:12-0:14","CO","A","close up","Manan lowers the glass and turns to us. Question marks bloom. Title.","MANAN: Hold on. He had nothing left. So where did THAT come from?","SETUP A. To lens. Curious and amused, never presenting. Six takes minimum."),
+("1.5","0:12-0:14","CO","A","close up","Manan lowers the glass and turns to us. Question marks bloom. Title.","MANAN: Hold on. He had nothing left. So who was holding the rest?","SETUP A. To lens. Curious and amused, never presenting. Six takes minimum."),
 
 # scene 2, THE OLD THEORY 0:14 - 0:30
 ("2.1","0:14-0:18","AN",None,"wide","Inside the leg as a working factory, gears, belts, crates, workers. Everything running.","MANAN VO: A. V. Hill, Nobel prize, 1923. Run hard, run out of oxygen, and the muscle stops.","Order and rhythm. Industrial but healthy."),
-("2.2","0:18-0:21","AN",None,"medium","Crates stop arriving on the belt. One crate stencilled 27 sits alone.","","The supply failing, not the machine breaking."),
-("2.3","0:21-0:24","AN",None,"medium","A worker straightens, wipes his brow, shrugs. Iron key hanging dusty on a nail behind him.","WORKER: That's it. We're done.","Resigned, not frightened. This is a shift ending."),
+("2.2","0:18-0:21","AN",None,"medium","Crates stop arriving on the belt. ONE crate sits alone on the still belt.","","The supply failing, not the machine breaking."),
+("2.3","0:21-0:24","AN",None,"medium","A worker straightens, wipes his brow, shrugs. THREE tools set down beside him. Iron key hanging dusty on a nail behind him.","WORKER: That's it. We're done.","Resigned, not frightened. This is a shift ending."),
 ("2.4","0:24-0:27","AN",None,"wide","A colossal stamp descends over the whole factory. Case closed.","MANAN VO: Case closed. For a hundred years.","Weight and finality."),
 ("2.5","0:27-0:30","AN",None,"insert","The stamp face, and a fine crack running across it as the sprint replays inside the crack.","MANAN VO: Except it doesn't explain this.","The crack is the scene. Everything before it exists to make it land."),
 
 # scene 3, THE FULL TANK 0:30 - 0:48
-("3.1","0:30-0:33","CO","A","medium","Manan at the back of the factory, palm flat on a riveted door, head tilted, listening. Keyhole beside his hand with light behind it.","MANAN VO: When scientists tested athletes the moment they gave up...","SETUP A. Palm flat at chest height on a mark. Nothing is really there."),
+("3.1","0:30-0:33","CO","A","medium","Manan at the back of the factory, palm flat on a riveted door, head tilted, listening. Keyhole beside his hand with light behind it.","MANAN VO: At the back of the factory there is a door nobody opens.","SETUP A. Palm flat at chest height on a mark. Nothing is really there."),
 ("3.2","0:33-0:37","CO","A","wide","The door swings, warm light floods out over him.","","SETUP A. Silhouette from behind, then turning into the light."),
-("3.3","0:37-0:43","AN",None,"wide","The hall of tanks receding, every gauge in the red, nearest tank stencilled 27.","MANAN VO: ...the muscles could still produce far more power than the athlete had just produced.","The reveal, and the first big lift. Discovery, not warning."),
+("3.3","0:37-0:43","AN",None,"wide","The hall of tanks receding, every gauge in the red. NINE tanks visible, the nearest stencilled 9.","MANAN VO: ...the muscles could still produce far more power than the athlete had just produced.","The reveal, and the first big lift. Discovery, not warning."),
 ("3.4","0:43-0:45","AN",None,"insert","One gauge, needle deep in the red.","","Establishes the instrument that governs the rest of the film."),
-("3.5","0:45-0:48","CO","A","close up","Manan lit by the light, delighted rather than shocked.","MANAN: It was never empty. Something else closed that door.","SETUP A. To lens. The most important take of the day, shoot it many times and use the most unguarded."),
+("3.5","0:45-0:48","CO","A","close up","Manan lit by the light, delighted rather than shocked.","MANAN: It was never empty. Somebody closed that door.","SETUP A. To lens. The most important take of the day, shoot it many times and use the most unguarded."),
 
 # scene 4, THE GATEKEEPER 0:48 - 1:14
 ("4.1","0:48-0:51","AN",None,"wide","Warm control room, monitors, a large chair beginning to turn.","","Welcoming, not clinical. Meeting somebody, not catching them."),
 ("4.2","0:51-0:54","AN",None,"medium","Coach Brain revealed, mug, headset, gold key glowing on the chain at his chest.","COACH BRAIN: You found me. Took you long enough.","Establish the key clearly. It is the object the whole film turns on."),
 ("4.3","0:54-0:58","CO","B","two shot","Manan and Coach Brain face each other, evenly matched in frame.","MANAN: You closed that door.","SETUP B. Tennis ball on a stand at seated height camera left. Shoot the line, then ten seconds of listening."),
-("4.4","0:58-1:04","AN",None,"wide","The network lights, five readouts converging on one dial with a red arc and the number 27.","COACH BRAIN: Heart rate. Breath. Temperature. Water. Distance. I'm asking one question. Can we keep going safely?","One click per item as it connects, five evenly spaced."),
+("4.4","0:58-1:04","AN",None,"wide","The network lights, five readouts converging on one dial with a red arc and TWENTY SEVEN tick marks.","COACH BRAIN: Heart rate. Breath. Temperature. Water. Distance. I'm asking one question. Can we keep going safely?","One click per item as it connects, five evenly spaced."),
 ("4.5","1:04-1:08","AN",None,"insert","Two seconds of a phone dimming into low power mode, then back to the room.","MANAN VO: Like a phone at twenty percent. Not broken. Protecting itself.","Generic phone, no brand anywhere."),
 ("4.6","1:08-1:11","CO","B","two shot","Manan arrives at the idea. Coach Brain entirely unembarrassed.","MANAN: So the limit isn't my body. It's your judgement. / COACH BRAIN: My best judgement. I'm not trying to stop you. I'm trying to get you to the finish line.","SETUP B. He should sound like he is discovering it, not stating it."),
 ("4.7","1:11-1:14","AN",None,"insert","The dial alone, needle upright, lower third of frame clear for the subtitle.","SUBTITLE: Central Governor Theory, proposed by Prof. Tim Noakes, 1997. Scientists still debate how brain and muscle share the work.","Small, low, in and out in two seconds. This honesty is scored."),
@@ -81,6 +81,15 @@ SETUPS = {
        ["6.6"],
        "Same as C, wider, room above his head for the jump. Shoot last, when he is loose."),
 }
+
+# ---------------------------------------------------------------- third layer
+# THE CIRCLE AT EVERY SCALE. One shape repeated at five magnifications, never remarked on.
+#   1.4 the lens        · 3.1 the keyhole   · 3.4 the tank gauge
+#   4.7 the wall dial   · 8.1 his pupil, in the closest shot of the film
+# THE NUMBER LADDER. A count climbing in threes, resolving on the vest he wore from the first frame.
+#   1 crate (2.2) · 3 tools (2.3) · 9 tanks (3.3) · 27 ticks (4.4) · 27 on the vest (1.1)
+# THE SEEDED WORD. "open" planted in 3.1, echoed in 5.5, paid in 6.1.
+# AGENCY. "somebody" in 3.5 and 8.2, "who" in 1.5. The limit has an author from the first question.
 
 RUNNING_ORDER = ["A","B","D","C"]
 # reasoning: A and B share one lighting state, so they run back to back. D is loud and loosening.
