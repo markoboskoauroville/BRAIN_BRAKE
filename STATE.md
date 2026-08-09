@@ -6,7 +6,7 @@ Two workers, one project. **Claude in the chat** on the phone and the laptop, wh
 repository directly. **Claude Code** inside Brain Freedom on the Mac, which works in the local checkout.
 Neither can see the other. This file is how they stay one mind.
 
-    last written   9.8.2026, night
+    last written   9.8.2026, end of session
     written by     chat
     branch         main
     masters        full resolution art lives on the `masters` branch, never published
@@ -118,7 +118,14 @@ to us at the right and the runner small and facing him at the left. The ruled li
 afterwards in the container. Two things carried forward: the glass came up unasked and is aimed at
 open paper, so `3C` must land it on the calf, and the brass is the first gold in the film, which is
 reserved, so scenes 3 to 6 should hold the glass close to graphite in the grade and let it go properly
-gold only in scene 7. `3C` is next, the glass on the calf and the push through the lens. `assets/REFERENCES/RUN_CYCLE.jpg` was saved from the failed 3A run: four full size profile
+gold only in scene 7. `3C` is next, the glass on the calf and the push through the lens, and the ready to run prompt is in
+`HANDOVER.md` section 12. Two attempts were discarded for the same reason, a large glass floating over a
+small leg on open paper, which reads as somebody demonstrating a prop. The calf is not in the frame, the
+calf **is** the frame, seen over the back of Manan's head.
+
+**`HANDOVER.md` was rewritten from scratch on 9.8.2026 and is now the entry point for a new chat.** The
+old one described the retired six scene version and would have started the next session in the wrong
+film. `assets/REFERENCES/RUN_CYCLE.jpg` was saved from the failed 3A run: four full size profile
 figures of the runner mid stride, which is a genuine run cycle sheet for Kristijan.
 
 **THE FIVE ELEMENTS ARE NOW A STANDING FRAME.** `elements.md` in the repo root. Earth, water, fire,
