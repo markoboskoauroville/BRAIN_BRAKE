@@ -200,6 +200,9 @@ summary, **two blank lines**, then the tag in square brackets on its own line, t
 are `[R1]`, `[R2]`. Prompts are `[P1]`. Numbering restarts at every count line. The tag is the last line
 before the box and nothing else shares that line.
 
+**Beside the tag goes the file name and nothing else**, so `[R1] MANAN.jpg`, never the path or the URL.
+Marko already holds a picture of each reference in his head and the file name is what retrieves it.
+
 References always come first, each in its own box holding only its raw GitHub URL. The prompt comes
 last. Never economise on references. If a returned frame breaks continuity, changes a character or
 drifts in style, say so immediately.
@@ -277,11 +280,19 @@ are behind Manan's shoulder looking where he is looking.
 
 2 reference images, 1 prompt. Image To Image AI, 16:9.
 
-`R1` https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/REFERENCES/MANAN.jpg
+**[R1] MANAN.jpg**
 
-`R2` https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/V4/V4_3B_web.jpg
+```
+https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/REFERENCES/MANAN.jpg
+```
 
-`P1`
+**[R2] V4_3B_web.jpg**
+
+```
+https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/V4/V4_3B_web.jpg
+```
+
+**[P1] 3C**
 
 ```
 The back of the head of a real fourteen year old Indian boy, close to us in the lower right corner of the sheet of paper, turned completely away from us so that no part of his face is visible, the back of a tan tweed deerstalker cap with its rear brim and its folded ear flaps, short black hair below the cap, the collar and the shoulder cape of a tan wool overcoat. He alone is a genuine photograph composited into this pencil drawing, real woven wool, real hair, natural light across the back of his neck. His arm reaches up and away from us and his hand holds a brass magnifying glass out at arm's length. Filling nearly the whole rest of the sheet of paper, the bare calf of a running man drawn in graphite pencil and seen so close that there is no knee, no ankle, no foot and no shoe anywhere in the picture, only one great diagonal mass of muscle running from the lower left corner of the paper up to the upper right corner, the long lines of the muscle and the tendon and fine hairs on the skin drawn in detail. Bare cream paper shows only in the upper left corner and the lower right corner. The round glass lies against the middle of that muscle and graphite muscle surrounds the circle on every side of it. Inside the circle of the glass there is no skin and no muscle at all. Inside the circle is a small untidy room seen from a distance, a wooden desk buried under loose sheets of paper, more paper fallen on the floor around it, one lamp, and an old man in shirtsleeves and a waistcoat sitting at the desk with wild white hair standing out in all directions, his chin resting in one hand, staring at nothing, stuck on something. All of that is drawn small and pale in pencil and the papers carry only faint grey scribble. A boy is looking into a man and finding somebody thinking. Graphite pencil on warm cream paper, loose hand drawn lines, soft shading, sixteen by nine, thin dark ruled border.
