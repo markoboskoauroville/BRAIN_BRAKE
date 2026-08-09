@@ -19,6 +19,23 @@ Not informed about it. Feeling it.
 
 ---
 
+## 1b. THREE FRAMES PER SCENE, NOT ONE
+
+**Every scene is drawn three times: introduction, peak, resolution.** Eight scenes, twenty four
+frames. The word "hero image" is retired, because a single frame cannot show an arc and a scene
+without an arc is not a scene.
+
+Each scene carries the same energy curve as the film itself. Something is established, it rises to a
+peak somewhere around a third or two thirds through, and it resolves. The peak is not always the
+loudest moment; it is the moment the scene turns.
+
+This is why the documents can be short. Three frames laid down the page tell the movement of a scene
+without a paragraph explaining it. Show it, do not talk about it.
+
+Frames are named by scene and position: 1A introduction, 1B peak, 1C resolution.
+
+---
+
 ## 2. LENGTH
 
 **Short. Then shorter.**
