@@ -316,3 +316,29 @@ water a **teardrop or an irregular blob**, never a perfect round.
 **The rule this settles.** Where a frame needs an optical effect the model cannot produce, do not spend
 a third run. Approve the strongest composition available, then write the missing physics into the scene
 document for the animator. The still is a hint. The shot is the thing.
+
+**9.8.2026 — SCALE IS INHERITED FROM THE REFERENCE AND CANNOT BE ASKED FOR.** `3A` asked for the
+runner small in the middle of a large sheet with wide empty margins, anchored to `V4_1C` and `V4_2A`.
+It came back as four runners at full frame height, which is `V4_2A` again. Every reference we own shows
+a figure filling most of the frame, so that is the only size the model knows. There is no wording that
+beats it. If a frame needs a different subject-to-paper ratio than any existing reference, the model
+will not give it.
+
+**And the radiating streaks did not appear either, which explains itself the same way.**
+
+**THE UNIFYING RULE, AND IT COVERS EVERY FAILURE ON THIS PRODUCTION.** The model **varies objects but
+cannot organise a field.**
+
+    WORKS      properties of one thing            fade, line weight, pose, texture, material,
+                                                  what is behind what, how many of a thing
+    FAILS      geometry of the whole frame        refraction, radial streaks converging on a point,
+                                                  subject scale against the sheet, anything bent or
+                                                  cropped by a surface, mirrors at another angle
+
+The fade across four figures in `2A` worked because fade is a property each figure carries. Streaks
+radiating from a point fail because that is one geometry imposed on the entire sheet. Refraction fails
+for the same reason. Read a new prompt against this table before spending a credit.
+
+**What to do instead.** A pull back is a scale change of a drawing that already exists, so build it in
+the container from the approved frame, which also makes continuity free because the figure is pixel
+identical. `V4_3A` was made this way from `V4_1C`.

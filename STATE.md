@@ -110,7 +110,13 @@ Banana composites and does not transform, so it cannot bend or crop content acro
 Two runs proved it, a third was not spent, and the missing physics is written into `scenes/S2.md` for
 Kristijan instead. The still is a hint, the shot is the thing. Attempts filed at `assets/V4/attempts/`.
 
-**Scene 2 is complete. 2A, 2B, 2C approved. Scene 3, THE ARRIVAL, is next, starting with 3A.**
+**Scene 2 is complete. 2A, 2B, 2C approved.**
+
+**Scene 3.** `V4_3A` done, and built in the container from `V4_1C` rather than generated, because the
+model inherits subject scale from its references and cannot be argued out of it. `3B` is next, Manan
+and the runner at the same height, his full figure entrance and the first photograph standing in the
+world. `assets/REFERENCES/RUN_CYCLE.jpg` was saved from the failed 3A run: four full size profile
+figures of the runner mid stride, which is a genuine run cycle sheet for Kristijan.
 
 **THE FIVE ELEMENTS ARE NOW A STANDING FRAME.** `elements.md` in the repo root. Earth, water, fire,
 wind and ether as a checklist for wholeness, borrowed as a design grammar and not as a cosmology. The
