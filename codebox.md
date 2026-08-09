@@ -74,6 +74,35 @@ Reference images always come **before** the prompt. See `nanobanana.md` section 
 
 ---
 
+## 4b. THE MANIFEST, BEFORE EVERY SET OF IMAGE BOXES
+
+Before the first box of any image delivery, a short table saying exactly what is coming and what is
+done with each piece. It is read once, held in the head, and then the boxes are copied top to bottom
+without scrolling back to check whether a reference was missed.
+
+The table has one row per box, in the order the boxes appear, plus the three settings that a prompt is
+incomplete without.
+
+    | # | Box | What it is | Where it goes |
+    |---|---|---|---|
+    | 1 | Reference 1 | V4_1C, the sprint in profile | Image URL |
+    | 2 | Reference 2 | V4_2A, the run taken back | Image URL |
+    | 3 | Prompt | 2B, the drop that climbs | Prompt |
+
+    Mode  Image To Image AI      Aspect  16:9      Boxes  3
+
+**Why.** A reference silently skipped is the most expensive mistake on this production, because the
+frame comes back plausible and wrong, and the wrongness is blamed on the prompt. The manifest makes a
+missing reference visible before a credit is spent rather than after.
+
+**The count is the point.** The last line always states the number of boxes. If four boxes were
+promised and three were pasted, that is caught while it still costs nothing.
+
+**One manifest per delivery, never per box.** If two frames are delivered in one message, that is two
+manifests, each immediately above its own set of boxes.
+
+---
+
 ## 5. WHAT GOES INSIDE A BOX
 
 Only the thing to be pasted. A raw URL, a prompt, a message, a command. No labels, no headings, no

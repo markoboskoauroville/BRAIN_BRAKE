@@ -6,7 +6,7 @@ Two workers, one project. **Claude in the chat** on the phone and the laptop, wh
 repository directly. **Claude Code** inside Brain Freedom on the Mac, which works in the local checkout.
 Neither can see the other. This file is how they stay one mind.
 
-    last written   9.8.2026, afternoon
+    last written   9.8.2026, evening
     written by     chat
     branch         main
     masters        full resolution art lives on the `masters` branch, never published
@@ -72,13 +72,23 @@ paper. `V4_1B` the close on the face as the eyes fix, and he reads about ten yea
 frame is never used as an anchor. `V4_1C` the released sprint in profile, and this is the frame that
 was right.
 
-**Scene 2, the freeze.** `V4_2A` done and approved: the runner drawn four times along one path, ghost
-grey at the left where he is finished and staggering, firm dark graphite at the right where he is at
-full sprint. Played right to left it is the run being taken back. It also carries the **3** of the
-number ladder, which lost its old rungs when the factory was retired.
-`V4_2B` next, the freeze landing on the same instant as `V4_1B` and rhyming with it, the sweat
-detached and hanging clear of his jaw. `V4_2C` Manan inside the stopped world, glass at eye height,
-his first entrance and the first photograph in the film.
+**Scene 2 is no longer THE FREEZE. It is THE REVERSAL, and it is the load bearing scene of the film.**
+Nothing stops. Time runs backwards at about a fifth of speed while the view orbits the runner's head,
+and the reversal is carried by sweat climbing back into the skin rather than by a body running
+backwards, which is a silent comedy trick and was rejected. There is no wide shot anywhere in the
+scene. Full direction at `scenes/S2.md`.
+
+`V4_2A` done and approved: the runner drawn four times along one path, ghost grey at the left where he
+is finished and staggering, firm dark graphite at the right where he is at full sprint. Played right to
+left it is the run taken back. It carries the **3** of the number ladder, which lost its old rungs when
+the factory was retired.
+`V4_2B` is now the insert, skin filling the paper and one drop of sweat climbing upward against
+gravity along its own drying track. The first attempt, a medium close-up of the whole face with the
+sweat hanging, is stored at `assets/V4/V4_2B_v1_rejected.png`. It is a good drawing and the wrong
+framing: a medium close-up answers who a man is, and that question was already answered in scene 1.
+`V4_2C` is the eye filling the paper with Manan reflected in the wet curve of it, caped coat,
+deerstalker, glass raised. His first appearance in the film is a reflection inside the man he has come
+to examine, and the wide shot stays implied and unshot.
 
 **Paper tone, decided.** Cream at the start, white at the end, and the shift happens in the grade, not
 in the prompt. The reference decides tone and writing against it does not win.
