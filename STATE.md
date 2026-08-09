@@ -160,3 +160,11 @@ reference sheet discipline, the failure-mode table, the prompt skeleton and the 
 that stops credits being burned on re-rolls. It was written after that knowledge was lost once
 and had to be dug back out of old sessions. Keep it current: every new failure gets a dated
 line under NEW FINDINGS, and anything that holds twice moves up into the rules.
+
+## WRITING DOCUMENTS
+
+**Read `documents.md` in the repo root before writing any document.** The rule is that a reader
+should feel the film rather than read it: short, emotional, one page per scene, no conversation
+recaps and no next-steps lists. One exception, and it is a real one: the principles behind
+composition, colour, numbers, light, metaphor and structure may run long, provided they stay
+interesting and never repeat, and they live in their own document rather than in the scene pages.
