@@ -151,3 +151,12 @@ wants only the science gets only the science. A viewer who feels the rest takes 
 and because they brought it themselves, they trust it.
 
 Say the science. Show the rest.
+
+## IMAGE GENERATION
+
+**Read `nanobanana.md` in the repo root before writing any image prompt.** It is the
+accumulated knowledge of how Nano Banana Pro actually behaves: the four prompt rules, the
+reference sheet discipline, the failure-mode table, the prompt skeleton and the order of work
+that stops credits being burned on re-rolls. It was written after that knowledge was lost once
+and had to be dug back out of old sessions. Keep it current: every new failure gets a dated
+line under NEW FINDINGS, and anything that holds twice moves up into the rules.
