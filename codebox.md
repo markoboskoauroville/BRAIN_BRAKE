@@ -96,8 +96,13 @@ nothing else shares that line. It does not go in the title and it does not go ab
 
     THE FULL SPRINT, V4_1C, THE WHOLE FIGURE IN PROFILE
     The runner alone on open paper, side on, the finish line crossing behind him.
+    <blank line>
+    <blank line>
     R1
     [box]
+
+Two blank lines above the tag, one below it. The double gap is what lifts the tag off the summary and
+parks it on the box.
 
 **Why the last line and not the title.** A title sits above a paragraph of summary, so by the time the
 eye reaches the box the tag has scrolled out of view. Sitting immediately above the box, the tag and
