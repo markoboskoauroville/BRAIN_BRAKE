@@ -90,6 +90,22 @@ carries its own title saying what it is.
 **One count per delivery.** Two frames in one message is two counts, each immediately above its own
 set of boxes.
 
+**Every box carries a short tag at the front of its title.** References are `R1`, `R2`, `R3` in the
+order they are pasted. Prompts are `P1`, `P2`. The tag comes first, before the words, so the eye lands
+on it without reading anything:
+
+    R1, MANAN, PHOTOREAL, FOUR VIEWS
+    R2, THE DROP WITH NO MAGNIFICATION
+    P1, THE LENS
+
+**Why the tag and not just the title.** In a long message the titles all look alike at a glance,
+because they are all bold capitals describing pictures. A two character code does not look like a
+title, so it is found instantly when scrolling back to check which box was already pasted. It also
+matches the count line: three boxes means R1, R2, P1 and nothing else.
+
+**Numbering restarts at every count.** Two deliveries in one message is R1, R2, P1 and then R1, R2, P1
+again, not R3, R4, P2. The count line resets the sequence.
+
 ---
 
 ## 5. WHAT GOES INSIDE A BOX
