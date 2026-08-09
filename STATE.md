@@ -6,7 +6,7 @@ Two workers, one project. **Claude in the chat** on the phone and the laptop, wh
 repository directly. **Claude Code** inside Brain Freedom on the Mac, which works in the local checkout.
 Neither can see the other. This file is how they stay one mind.
 
-    last written   9.8.2026, evening
+    last written   9.8.2026, night
     written by     chat
     branch         main
     masters        full resolution art lives on the `masters` branch, never published
@@ -104,9 +104,12 @@ the factory was retired.
 returning into it. Two attempts rejected and filed at `assets/V4/attempts/`, with the reasons in
 nanobanana.md: a whole face answers a question scene 1 already answered, and a single large drop cannot
 say which way it is travelling.
-`V4_2C` pushes into that same spray, three near droplets large enough to hold a legible Manan upside
-down and a hundred smaller beads receding behind them. The first attempt, nine equal drops, is filed at
-`assets/V4/attempts/`: it became wallpaper and he came back a grey render. The eye was tried and rejected as too spooky. A drop is a lens, so the
+`V4_2C` done and approved: the spray with a dark silhouette of the caped coat, the deerstalker and the
+glass standing inside the near droplets and receding to specks behind them. Upright, not inverted, and
+better for it. Two corrections carried into the animation, a child's proportions for the silhouette and
+irregular droplets rather than perfect spheres. Earlier attempts filed at `assets/V4/attempts/`.
+
+**Scene 2 is complete. 2A, 2B and 2C all approved. Scene 3, THE ARRIVAL, is next.** The eye was tried and rejected as too spooky. A drop is a lens, so the
 inversion is optically true and the film's first sight of Manan comes through a lens before he raises
 his own. The multiplication carries the idea underneath the scene, that seeing something truly takes
 more than one angle, which is also the reason Hill's theory was incomplete. Ladder: 2A carries the
