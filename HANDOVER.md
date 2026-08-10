@@ -30,6 +30,7 @@ production and they exist so that knowledge is not lost between chats.
 | `elements.md` | The five elements as a wholeness check on the film. |
 | `STATE.md` | The shared brain. Current state of everything. |
 | `worlds.md` | The law of the two worlds and how they become one. Shadows, transparency, object sheets. |
+| `editor.md` | The second tool, the AI Image Editor. What it can and cannot do, and editing language. |
 | `correspondence.md` | Every message to and from the crew, plus the drafts that are still outstanding. |
 
 Then read `scenes/S2.md` and `scenes/S3.md`, which are the finished scene documents.
