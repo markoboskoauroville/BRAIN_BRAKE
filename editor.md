@@ -228,3 +228,22 @@ convincing gibberish. `Bicepo mudde`, `Femur Cemur`, `Tibla`, `Sherrum`. The edi
 exactly as freely as Nano Banana does. If a surface would carry writing, either whitelist a few real
 words or **ask for the lettering to be removed and the leader lines kept**, which reads as a technical
 plate without asking either tool to spell.
+
+---
+
+## 9. TWO PRACTICAL NOTES, 11.8.2026
+
+**Serve full resolution masters, not compressed copies.** Marko's call and the frames agree with him. The
+editor reads detail out of the reference and gives back more of it when there is more to read. `_web`
+copies remain useful for phones and for speed, and they are not the thing to hand the tool.
+
+**On the hard failures, the honest position.** Clearing the stored images on the platform has fixed it
+twice. Whether the true variable is the storage or simply the time spent clearing it is **not
+established**, and it does not need to be. When a job fails, clear and wait a few minutes, then rerun
+unchanged. Do not rewrite the prompt, do not shrink the reference, and do not draw a conclusion. Three
+theories have been built today on evidence that looked airtight and two of them were wrong.
+
+**And a drift to watch in the grade rather than in a rerun.** `4B` came back warmer and more heavily
+worked than `4A`, more sepia in the paper and more crosshatch in the line. Every editor pass moves the
+tone a little. It is not worth a credit to chase, it is worth matching in the grade, and it is worth
+knowing that a scene built as a chain of edits will drift from its first frame to its last.

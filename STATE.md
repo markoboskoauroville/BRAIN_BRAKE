@@ -394,6 +394,18 @@ which the editor has already proved it can do without disturbing anything else.
 contents in the editor, add the figure in the editor, correct the light in the editor. Four steps, all
 cheap after the first, and the geometry never touched again.
 
+**11.8.2026. `4B` IS LOCKED. `assets/V4/V4_4B.png`.** He has sat back, chin on his knuckles, the pen set
+down, his eyes past everything in the room. The room is untouched. That is the turn of the scene.
+
+**Full resolution references are better than compressed ones** and are what the tools get from now on.
+And on the hard failures the honest position is that clearing the platform storage has fixed it twice and
+**we do not know whether the variable is the storage or the few minutes it takes**. It does not matter.
+When a job fails: clear, wait, rerun unchanged. Do not rewrite, do not shrink, do not theorise.
+
+**Watch the tone in the grade.** `4B` is warmer and more heavily worked than `4A`. Every editor pass
+moves it a little, so a scene built as a chain of edits drifts from its first frame to its last. Cheaper
+to match in the grade than to chase with credits.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
