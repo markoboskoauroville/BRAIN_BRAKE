@@ -165,3 +165,40 @@ it a mess and expecting precision. In practice:
 already right, the man is already right, and only his pose and the light change. It is also how the
 whole film gets its continuity, because every frame in a scene is then literally the same drawing.
 
+---
+
+## 7. FINDING FOUR, AND IT IS THE MOST EXPENSIVE ONE TO IGNORE. A DEFECT IN A STITCHED INPUT IS
+## INHERITED BY EVERY FRAME DERIVED FROM IT
+
+11.8.2026. `4B` came back with a perfect pose. Chin on the knuckles, spine straight, eyes past
+everything, lamp burned low, exactly the beat. And it carries **the same broken wall on the left that
+`4A` carries**, because `4A` was built from a two panel collage and the editor, in making that collage
+cohere, left a ghost of the seam in the architecture. There is also a stray diagonal across the ceiling
+in all three frames.
+
+The rebuild in section 4 was not a rebuild into correctness. It was a rebuild into **plausibility**. The
+tool made something that reads as a room at a glance and does not survive a second look, and then every
+derived frame inherited it, because deriving is how we get continuity. **Continuity carries faults with
+exactly the same fidelity as it carries virtues.**
+
+### THE DIVISION THAT ACTUALLY MATTERS, AND IT IS NOT WHAT SECTION 5 SAID
+
+Section 5 split the tools by **making versus arranging**. That was half right. The real line is:
+
+    CONTINUOUS GEOMETRY          A room, its corner, its walls, its floor, its
+                                 perspective, the way the ceiling line meets the
+                                 wall. This is a single connected structure and it
+                                 must be GENERATED WHOLE, by Nano Banana, in one
+                                 frame. It can never be assembled, because a
+                                 corner made of two pictures is not a corner.
+
+    DISCRETE CONTENTS            A lamp, a cup, a man, a pose, a shadow, a stack of
+                                 paper, where somebody is looking. These are things
+                                 sitting inside a geometry that already works, and
+                                 the editor moves and changes them beautifully.
+
+**So the order is: architecture first and whole, contents second and freely.** Build the empty room as a
+single generated frame until it is right, lock it, and then everything after that is furniture.
+
+This is also why `LAB.jpg` was fine and `4A` was not. `LAB.jpg` view one is a room drawn in one go.
+`4A` is two of them pushed together.

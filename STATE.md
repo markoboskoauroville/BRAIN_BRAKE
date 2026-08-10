@@ -319,6 +319,21 @@ a new frame derived from it under a new name.** That is how `4B` and `4C` are bu
 continuity of the whole film now comes from, because every frame in a scene is literally the same
 drawing.
 
+**11.8.2026. `4A` IS UNLOCKED AGAIN AND THE ROOM IS BEING REBUILT WHOLE.** Marko caught it: the left wall
+is visibly two pictures pushed together, there is a seam and a wrong wall junction, and a stray diagonal
+crosses the ceiling. `4B` came back with a perfect pose and **inherited every one of those faults**,
+because deriving a frame is how we get continuity and continuity carries faults exactly as faithfully as
+it carries virtues.
+
+**The corrected division of labour, replacing the one in `editor.md` section 5.** The line is not making
+versus arranging. It is **continuous geometry versus discrete contents**. A room, its corner, its walls,
+its floor and its perspective are one connected structure and must be **generated whole in a single Nano
+Banana frame**, because a corner made of two pictures is not a corner. A lamp, a cup, a man, a pose, a
+shadow are contents, and the editor moves those beautifully inside a geometry that already works.
+
+**So: build the empty room as one generated frame until it is right, lock it, then everything after is
+furniture.** `4A`, `4B` and `4C` all get rebuilt on top of it. Full reasoning in `editor.md` section 7.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
