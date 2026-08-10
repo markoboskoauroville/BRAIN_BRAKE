@@ -244,13 +244,17 @@ push. **The site still describes the old version of the film and needs rebuildin
 ## 10. THE BOOK
 
 `How to Create a Winning Film` lives at `markoboskoauroville.github.io/WINNING_FILM/`, repo
-`markoboskoauroville/WINNING_FILM`, currently **version eight**. It is a single generated `index.html`.
+`markoboskoauroville/WINNING_FILM`, currently **version nine**. It is a single generated `index.html`.
 **Web only, never a PDF.** It is updated automatically as discoveries are made, without being asked.
 
-Chapters added in this session. Part twenty four, wide, medium, close, including the fourth framing and
+Chapters added. Part twenty four, wide, medium, close, including the fourth framing and
 why the impossible has to arrive in a small frame. Part twenty five, the last surge, on building a film
 on what an audience already half knows. Part twenty six, the five elements as a diagnostic for
-wholeness.
+wholeness. Part twenty seven, **on model**, added 10.8.2026: the professional vocabulary of continuity,
+model sheet and turnaround and off model and prop model sheet and hero prop and the bible, the part
+almost nobody does which is treating objects as characters, and the new finding that with a generative
+tool an object without a sheet does not drift between frames but disappears from them. The old checklist
+chapter renumbered to part twenty eight.
 
 When you add to it, take the craft frame and leave the dubious history behind. The five elements source
 book carries a lot of claims that would damage a filmmaking book's credibility.

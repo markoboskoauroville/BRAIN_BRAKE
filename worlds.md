@@ -108,6 +108,14 @@ meaning does not survive a change of shape.
 credit and saves five, and without one the object is also the first thing the model drops from a busy
 frame, because it has no identity to hold on to.
 
+**The proper word for it is a model sheet**, from the Disney and Warner studios of the nineteen thirties,
+and for an object specifically a **prop model sheet**. The rotation through several angles is a
+**turnaround**. A drawing that departs from the sheet is **off model**, which is the verdict word. All the
+sheets bound together with the style law and the palette are the **bible**. In live action the same
+instinct produces the **hero prop**, the version built to survive a close-up, plus continuity stills shot
+on the day. Use these words with Kristijan and with Venkatesh, because the loose word gets the loose
+thing. The reasoning is in the book, part twenty seven.
+
 **Which world an object belongs to.** Everything Manan carries is photographed, because it arrived with
 him: the deerstalker, the coat, and the brass magnifying glass. Everything belonging to the runner, the
 scientist and the Coach is drawn. So the glass is a real object lying on a drawing and it throws a
