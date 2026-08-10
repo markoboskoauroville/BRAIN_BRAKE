@@ -126,6 +126,34 @@ them, without ever having been told so.
 
 ---
 
+## 5b. THE ROOM ANSWERS THE MAN
+
+Added 11.8.2026, from Marko, out of a mistake that turned out to be right.
+
+The flame in `4C` came back twice the height of its own chimney because an intensity was named without a
+limit. As a still it is an error, because a lamp does not do that. **As animation it is a beat**, because
+the inanimate things in a frame are allowed to follow the energy of the person in it. The flame leaps
+when he sees it. That is not physics, it is the oldest trick in hand drawn animation, and it is invisible
+to an audience while doing all of the work.
+
+So both frames are kept. `V4_4C` is the settled state and `V4_4C_peak` is the top of the leap, and the
+direction to the animator is that the flame flares on the instant of realisation and comes back down
+over the following second.
+
+**The general law, and it is worth applying across the film.** Where a character turns, let one thing
+near them turn with them. The flame here. The paper on the desk lifting when he comes forward. Whatever
+is nearest and lightest.
+
+**And the reason it belongs in this film in particular.** Fire is will, and the film has already decided
+that the limit lives above the muscle and not inside it. A room that responds to a man is the same
+argument told in furniture: the state of the person changes the state of the world around them. It says
+the thesis without saying anything.
+
+**One caution.** Used more than three or four times in two minutes it becomes a tic and the audience
+starts watching the technique. Save it for the turns.
+
+---
+
 ## 6. THE THINGS THAT BREAK IT
 
 Each of these has been tried on this project and abandoned. They are listed so they are not tried

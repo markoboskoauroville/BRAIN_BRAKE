@@ -415,6 +415,17 @@ direction with no ceiling. **Every instruction about intensity now carries a bou
 a comparison to something already in the frame**, no taller than the glass chimney, lighter than his
 waistcoat. `editor.md` section 10, three instances, it is a rule now.
 
+**11.8.2026. `4C` IS LOCKED AND SCENE 4 IS COMPLETE.** `V4_4A`, `V4_4B`, `V4_4C`. Absorbed, stuck,
+epiphany, the three heads from the model sheet, in one room that was never rebuilt after the first
+generation.
+
+**And the flame mistake was kept, because Marko was right about it.** The oversized flame is wrong as a
+still and correct as animation: inanimate things follow the energy of the person in the frame, and the
+flame leaps when he sees it. Both frames are held. `V4_4C` is the settled state, `V4_4C_peak_full.jpg` is
+the top of the leap, and the direction to Kristijan is that the flame flares on the instant of
+realisation and settles over the next second. Written up as a story law in `storytelling.md` 5b, with the
+caution that it becomes a tic past three or four uses in two minutes.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
