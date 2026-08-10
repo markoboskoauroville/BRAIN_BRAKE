@@ -622,3 +622,29 @@ told apart by the same method either way.
 figures, printed sheets and studies all describe the same wall without naming a body or a bone. The
 picture is identical and the words are not, which is the whole trick.
 
+---
+
+## 4e. 11.8.2026, AND THE WEIGHT THEORY IS ONLY HALF RIGHT
+
+The room prompt failed on `LAB_web.jpg`, which is **0.26 MB**, well inside the limit that had just been
+established. So weight explained the **editor** failure and does not explain Nano Banana's.
+
+**The pattern as it now stands.** Nano Banana has failed three times today, on three different prompts,
+with references from 0.26 MB to 1.21 MB. The editor has succeeded three times in the same window on the
+same platform with the same kind of files. **One model is working and the other is not**, which points
+at the model or the quota behind it rather than at anything we are writing.
+
+**The test that settles it, and it costs one credit.** Run the smallest possible Nano Banana job, a
+proven small reference and a prompt of a few words. If that fails, the model is unavailable and the
+correct response is to stop rewriting and work in the editor until it returns. If it succeeds, then
+something in the long prompts is the trigger and the bisect protocol in 4d applies.
+
+**And the standing lesson underneath both of these.** When two tools share a platform, a failure in one
+and success in the other is evidence about the tool, not about the prompt. Check what else is working
+before rewriting anything.
+
+**The fallback that needs no generator at all.** A coherent single room already exists inside
+`LAB.jpg` view one, drawn in one go. Cropping it to sixteen by nine in the container gives correct
+geometry from a single source, no stitching, no seam, at the cost of a tighter frame and the corner
+falling outside the picture. Filed as `assets/V4/attempts/4_ROOM_single_source_web.jpg`. Architecture
+does not always have to be generated. It has to be **single source**, which is the real rule.
