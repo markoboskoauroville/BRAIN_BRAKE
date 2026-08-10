@@ -227,6 +227,23 @@ little wider than the sketch. **The glass is what makes the closeness work**, be
 that texture turns an abstract drawing into a man being examined, and the abstraction stops being a
 problem and becomes the point.
 
+**10.8.2026. PASS TWO, AND IT IS NINETY PERCENT THERE.**
+`assets/V4/attempts/3C_p2_a1_glass_on_calf_room_correct.png`. The glass landed on the drawing at full
+size with the brass and the wood right, the cast shadow across the graphite, and **the scientist's room
+inside the circle came out complete and better than described**, desk buried in paper, sheets on the
+floor, anatomy plates pinned up, oil lamp, the old man in his waistcoat working and not looking up.
+
+**Two notes from Marko.** One, the glass sat over the calf and it belongs in the **middle of the leg**,
+because the film is going inside the whole man and not inside one muscle. Corrected by hand rather than
+by prompt: the glass was cut out of the pass two render and composited onto the centre of the locked
+plate, saved as `assets/V4/attempts/3C_p3_guide_glass_recentred.png` and sent back as the anchor.
+
+**Two, and it is a law for the whole film, now in `worlds.md` section 6b. Three layers in every shot,
+and Manan is always one of them.** Foreground, middle ground, background, and his presence felt in every
+frame, usually as a fragment at the edge rather than a figure. The test: if a viewer could believe
+somebody set this down and walked away, the shot has failed. An instrument lying on a drawing is an
+exhibit. An inch of tweed at the border makes it a man looking.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the

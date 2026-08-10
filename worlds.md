@@ -98,6 +98,34 @@ See `nanobanana.md`.
 
 ---
 
+## 6b. THREE LAYERS IN EVERY SHOT, AND THE MAN IS ALWAYS ONE OF THEM
+
+Marko's law, 10.8.2026, and it applies to the whole film.
+
+**Every frame is built in three layers: foreground, middle ground, background.** In `3C` those are the
+magnifying glass, the scientist inside it, and the leg behind. A frame with only two layers is a picture.
+A frame with three is a place, because the eye has to travel to read it, and travelling is what makes an
+audience feel they are somewhere rather than looking at something.
+
+**And Manan's presence has to be felt in every shot.** Not his whole body and usually not his face. A
+piece of the cap at the frame edge, a hand, the handle of his glass running out of frame towards where he
+must be standing. The test is blunt: **if a viewer could believe somebody set this down and walked away,
+the shot has failed.** A drawing of a leg with an instrument lying on it is an exhibit. The same drawing
+with an inch of tweed breaking the bottom border is a man looking, and everything the film is about
+depends on which of those two the audience is watching.
+
+This is also cheap. A fragment costs a few words in a prompt and no screen time, and it protects the
+frame from the thing that has gone wrong repeatedly here, which is the picture reading as a prop
+demonstration.
+
+**One qualification, so the rule survives contact with scenes 4 and 5.** Inside the theory, in 1923,
+there is no cap and no hand, because the film has gone through the lens and the boy is on the other side
+of it. His presence there is carried by **the circle itself**, the vignette of the glass we entered
+through, held at the edges of the frame. The law is that he is never absent. It is not that a piece of
+him is always drawn.
+
+---
+
 ## 7. OBJECTS ARE CHARACTERS
 
 An object that appears more than once and is drawn differently each time is not a thread, it is a
