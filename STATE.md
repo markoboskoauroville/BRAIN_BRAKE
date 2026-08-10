@@ -306,6 +306,19 @@ ignored. So: **never point the editor at an approved frame.** It builds, it does
 **And once a frame is locked it becomes the reference for the rest of its scene.** `4B` and `4C` come
 from approved `4A`, not from `LAB.jpg`, because the room in the approved frame is now the room.
 
+**11.8.2026. `4A` IS LOCKED. `assets/V4/V4_4A.png`.** The lamp is lit and it is the strongest light in
+the room, the cup is back, the corners fall away as though still seen through his lens, and the second
+editor run **changed nothing else**. Two runs total for the frame.
+
+**Which corrected the fidelity finding.** The editor rebuilds when it is given a collage, because a mess
+can only be made coherent by redrawing it, and edits surgically when it is given a finished drawing. So
+first pass expect a rebuild, later passes are safe and cheap. Full note in `editor.md` section 6.
+
+**And the useful distinction: never send an approved frame to be fixed in place, always send it to have
+a new frame derived from it under a new name.** That is how `4B` and `4C` are built, and it is where the
+continuity of the whole film now comes from, because every frame in a scene is literally the same
+drawing.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the

@@ -131,3 +131,37 @@ tool is worth anything at all. Once it is, the tests go one at a time.
 
 E-Pro at 1.5 credits rather than E-Turbo at 1, because the first reading of a tool should be of its best
 version. If E-Pro cannot do a thing, E-Turbo will not.
+
+---
+
+## 6. FINDING THREE, AND IT CORRECTS FINDING TWO. FIDELITY DEPENDS ON THE INPUT, NOT THE TOOL
+
+11.8.2026. The second editor run on `4A` added a lit oil lamp, a cup and saucer, the warm light around
+the flame and a soft vignette into the corners, and **changed nothing else**. The wall plates are in the
+same places, the bookshelf, the door, the window, the chairs, the papers on the floor, all identical.
+That is a surgical edit, and it is the opposite of what the first run did.
+
+**The difference is not the prompt. It is what the tool was given.**
+
+    incoherent input     a collage with a seam and a pasted figure
+                         it rebuilds the whole picture from scratch
+
+    coherent input       a finished single drawing
+                         it changes what it was asked to change and leaves the rest
+
+Which makes sense. Given something that does not hold together, the only way to make it hold together is
+to redraw it. Given something that already does, there is nothing to reconcile.
+
+**So the rule from section 4 is narrowed, not withdrawn.** The danger was never the tool, it was sending
+it a mess and expecting precision. In practice:
+
+    first pass on a collage      expect a full rebuild. Do not include anything
+                                 precious that is not also in a reference.
+    later passes on the result   safe, surgical, cheap. Use freely.
+
+**And there is a distinction that matters more than it sounds.** Do not send an approved frame to be
+**fixed in place**, because the approved file must never change. Do send an approved frame to have a
+**new frame derived from it**, saved under a new name. That is how `4B` and `4C` are made: the room is
+already right, the man is already right, and only his pose and the light change. It is also how the
+whole film gets its continuity, because every frame in a scene is then literally the same drawing.
+
