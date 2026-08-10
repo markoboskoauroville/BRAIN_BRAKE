@@ -406,6 +406,15 @@ When a job fails: clear, wait, rerun unchanged. Do not rewrite, do not shrink, d
 moves it a little, so a scene built as a chain of edits drifts from its first frame to its last. Cheaper
 to match in the grade than to chase with credits.
 
+**11.8.2026. Clearing the platform storage has now fixed it three times out of three.** Treat it as
+routine maintenance before every job and stop thinking about it.
+
+**`4C` came back with the pose right and the flame wrong**, a tongue of fire twice the height of its own
+chimney, brighter than his face and physically impossible. Same mistake as the shadow: I named a
+direction with no ceiling. **Every instruction about intensity now carries a bound, and the best bound is
+a comparison to something already in the frame**, no taller than the glass chimney, lighter than his
+waistcoat. `editor.md` section 10, three instances, it is a rule now.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the

@@ -247,3 +247,26 @@ theories have been built today on evidence that looked airtight and two of them 
 worked than `4A`, more sepia in the paper and more crosshatch in the line. Every editor pass moves the
 tone a little. It is not worth a credit to chase, it is worth matching in the grade, and it is worth
 knowing that a scene built as a chain of edits will drift from its first frame to its last.
+
+---
+
+## 10. NAME THE CEILING, NOT THE DIRECTION. THIRD TIME THIS HAS COST A CREDIT
+
+11.8.2026, and this is now a pattern with three instances, so it is a rule.
+
+    asked for   a cast shadow, stronger        got   a wall sized silhouette that read as a second person
+    asked for   a flame, tall and bright       got   a bonfire twice the height of its own chimney
+    asked for   the light falling into the
+                corners, gently and evenly     got   a correct, quiet vignette
+
+The third one worked because it carried its own limit inside it. The other two named a **direction** with
+no ceiling, and both tools take a direction to its maximum, because the most dramatic version of
+anything is the most represented version of it in the training data.
+
+**So every instruction about intensity gets a bound, and the best bound is a physical comparison to
+something already in the frame.** Not brighter, but *no taller than the glass chimney it sits in*. Not
+a stronger shadow, but *lighter than his waistcoat*. The comparison is better than an adjective because
+the tool can measure it against something it is already drawing.
+
+**And this is cheap to get right and expensive to fix**, because correcting an intensity means another
+pass, and every pass drifts the tone warmer. `4C` came back noticeably more sepia than `4A` again.
