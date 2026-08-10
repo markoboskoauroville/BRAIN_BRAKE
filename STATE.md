@@ -140,6 +140,35 @@ costs and not only what it concluded.
 **The two run limit is suspended for `3C` by Marko.** It is the hinge between the boy and the science.
 Loop until it is right, one variable per run.
 
+**10.8.2026, attempt four, and it changed the order of work.** The glass **vanished from the frame
+entirely**. Attempt three had a hand and the glass went to the wrong place, attempt four had no hand and
+the glass was dropped, and the thing missing from both is a **sheet**. So `3C` is blocked behind
+`GLASS.jpg` and the object sheets come first. `assets/REFERENCES/GLASS_SOURCE.jpg` is a crop of the brass
+glass out of attempt three and is the reference the sheet is generated from.
+
+**OBJECTS ARE CHARACTERS. THIS IS NOW A RULE.** Any object that carries meaning across scenes gets a
+multiple angle sheet at 3:2 before it is asked for in any frame, because an object without a sheet does
+not merely drift between frames, it disappears from them. Queue in `worlds.md` section 7: `GLASS.jpg`
+urgent and blocking, then `DIAL.jpg`, `KEY.jpg`, `LAB.jpg`, `DOOR.jpg`.
+
+**`worlds.md` IS A NEW STANDING DOCUMENT AND IT IS LOAD BEARING.** The law of the two worlds. Everything
+drawn is the inside of the problem, everything photographed is the person who came to look at it, and the
+film is the moment they stop being separate. The mechanism is the **cast shadow**: Manan darkens the paper
+under him and the pencil lines stay readable inside the shadow, which is what makes a photograph stand on
+a drawing instead of sitting on top of one. Softness and depth of field were tried and are the wrong
+idea, everything photographic is sharp from now on. Further cues: the shadow itself becomes pencil
+hatching as the film goes on, a drawn line crosses onto a photographic edge once or twice, and the cream
+of the paper sits in his skin in the grade. **The two worlds converge across the two minutes rather than
+in one shot.**
+
+**THIS CHANGES THE SHOOT AND VENKATESH HAS TO BE TOLD BEFORE 18.8.** Manan needs a single dominant key
+from a consistent side, hard enough that his shadow has a shape and can be reconstructed on the paper. If
+the day is lit flat, every frame in the film loses the one thing that joins the two worlds and it cannot
+be added back honestly.
+
+**Anatomy is anatomy.** No skin and no body hair on the drawn leg, muscle and tendon and fascia only,
+with the intact leg laid over it as a faint translucent contour like an X-ray plate over a diagram.
+
 **`correspondence.md` holds every message to and from the crew**, with the outstanding Croatian message
 to Kristijan ready to send in section 5.1. Nothing goes to a crew member without being logged there.
 

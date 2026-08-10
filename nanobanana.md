@@ -389,3 +389,30 @@ room gets as many words as the leg does.
 **One more, and it follows.** Scale of an object against the frame is inherited like subject scale is:
 the glass came back at the size a held magnifying glass is normally drawn. Asking for it large only
 works when it is lying on something whose size the frame already establishes.
+
+**10.8.2026 — TAKING THE HAND OUT FIXED THE AIM AND COST THE OBJECT. THE GLASS VANISHED COMPLETELY.**
+`3C` attempt four is filed at `assets/V4/attempts/3C_a4_no_glass_hairy_leg.png`. The anatomy came back
+superb and the tweed came back real, and **there is no magnifying glass anywhere in the picture**, in a
+prompt that gave it its own sentence, its size, its rim, its handle and its contents.
+
+**Why, and it completes the pair.** Attempt three had a hand, so the glass survived and went to the wrong
+place. Attempt four had no hand, so the glass had nothing holding it in the frame and was simply dropped.
+An object with no support is either misplaced or deleted, and wording cannot decide which. **The thing
+that was actually missing in both is a sheet.** Every character in this film that renders reliably has
+one. The glass has never had one, so the model has no identity to hold on to and treats it as optional
+furniture. This is the failure table row about objects drifting between frames, seen at its extreme: an
+object with no sheet does not merely drift, it disappears.
+
+**The rule. An object that carries meaning across scenes is a character and gets a sheet, multiple
+angles, 3:2, before it is asked for in a frame.** Sheets before frames was already the protocol and it
+was applied to people only. See `worlds.md` section 7 for the queue.
+
+**10.8.2026 — body hair on an anatomical drawing destroys the register.** "Fine hairs on the skin" was
+in the prompt and the model drew them faithfully across a flayed muscle study, which is a contradiction
+the eye catches immediately without being able to name it. If a drawing is anatomical, it has no skin and
+no hair. Ask for muscle, tendon and fascia and nothing that belongs to a living surface.
+
+**10.8.2026 — softness was asked for and delivered, and it was the wrong idea, not a wrong render.** The
+cap came back correctly soft. Depth of field is not what marries a photograph to a drawing. **A cast
+shadow is.** From now on every photographic element on the paper is sharp and throws a directional shadow
+across the pencil lines. Written up as a law in `worlds.md`.

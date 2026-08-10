@@ -18,7 +18,7 @@ sketch and back in the loop.**
 cd /home/claude && TOKEN=[paste] && git clone -q "https://x-access-token:${TOKEN}@github.com/markoboskoauroville/BRAIN_BRAKE.git" && cd BRAIN_BRAKE && git config user.email "marko.bosko@auroville.community" && git config user.name "Marko Bosko" && ls
 ```
 
-**Two, read these six files before doing anything else.** They are the accumulated rules of this
+**Two, read these seven files before doing anything else.** They are the accumulated rules of this
 production and they exist so that knowledge is not lost between chats.
 
 | File | What it is |
@@ -29,6 +29,7 @@ production and they exist so that knowledge is not lost between chats.
 | `codebox.md` | How to format code boxes and image deliveries in chat. |
 | `elements.md` | The five elements as a wholeness check on the film. |
 | `STATE.md` | The shared brain. Current state of everything. |
+| `worlds.md` | The law of the two worlds and how they become one. Shadows, transparency, object sheets. |
 | `correspondence.md` | Every message to and from the crew, plus the drafts that are still outstanding. |
 
 Then read `scenes/S2.md` and `scenes/S3.md`, which are the finished scene documents.
@@ -276,44 +277,22 @@ book carries a lot of claims that would damage a filmmaking book's credibility.
 
 ## 12. THE EXACT NEXT ACTION, READY TO PASTE
 
-3C, into the lens. **Recomposed 10.8.2026 from Marko's sketch after three rejected attempts, and the old
-prompt that used to sit here is deleted because it is the prompt that failed.** Full composition in
-`scenes/S3.md`, cause of the failure in `nanobanana.md`.
+**`3C` is blocked and the block is the right one.** Four attempts. Three put the glass in the wrong place
+because a hand was holding it, four dropped the glass out of the picture entirely because nothing was.
+The missing thing in both is a **sheet**. Objects that carry meaning across scenes are characters and get
+sheets, and without one the model has no identity to hold and treats the object as optional furniture.
 
-The frame is three layers and there is no arm and no hand in it. A piece of the deerstalker cap cut off
-by the bottom border, a large glass lying on the muscle with its handle running down behind the cap, and
-the calf filling the paper behind both. Inside the circle, faint and pale, the scientist alone in a room
-buried in paper.
+**So the next action is `GLASS.jpg`, the magnifying glass object sheet, and then `3C` reruns with it
+attached.** The reference to generate it from is `assets/REFERENCES/GLASS_SOURCE.jpg`, a crop of the
+brass glass out of attempt three. Sheet is 3:2. Overwrite at that filename forever.
 
-2 reference images, 1 prompt. Image To Image AI, 16:9.
+After the glass, the queue in `worlds.md` section 7: `DIAL.jpg`, `KEY.jpg`, `LAB.jpg`, `DOOR.jpg`.
 
-**[R1] MANAN.jpg**
-
-```
-https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/REFERENCES/MANAN.jpg
-```
-
-**[R2] 3C_a3_glass_off_the_muscle_web.jpg**
-
-```
-https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/V4/attempts/3C_a3_glass_off_the_muscle_web.jpg
-```
-
-**[P1] 3C**
-
-```
-Close to us at the bottom edge of the picture, the crown and one folded ear flap of a tan herringbone tweed deerstalker cap, cut off by the bottom border so that only the top part of the cap is in the picture, and no face, no shoulder, no arm and no hand anywhere in the picture. The cap alone is a genuine photograph composited into this pencil drawing, real woven herringbone wool with visible nap and stitching and a soft brown sheen, slightly soft because it is nearer to us than everything else. Filling the whole picture behind it, the bare calf of a running man drawn in graphite pencil and seen so close that there is no knee, no ankle, no foot and no shoe anywhere, one great mass of muscle rising from the bottom of the paper to the top, its back edge running up the left side and its front edge running up the right side, the long lines of the muscle and the tendon and fine hairs on the skin drawn in detail. Bare cream paper shows only in two narrow slivers at the far left edge and the far right edge. Lying against the middle of that muscle, a large round magnifying glass wide enough to cross a third of the picture, a plain thin brass rim and a short straight handle running down to the right and disappearing behind the cap. Graphite muscle surrounds the circle on every side of it. Inside the circle there is no skin and no muscle at all. Inside the circle, drawn faint and pale in fine pencil as though it were under the skin, a small untidy room seen from a distance, a wooden desk buried under loose sheets of paper, more sheets fallen across the floor around it, sheets pinned on the wall behind carrying faint diagrams of muscles and bones, one lamp, and an old man in shirtsleeves and a waistcoat sitting at the desk with wild white hair standing out in all directions, his chin resting in one hand, staring at nothing, stuck on something he has not solved. A boy is looking into a man and finding somebody thinking. Graphite pencil on warm cream paper, loose hand drawn lines, soft shading, sixteen by nine, thin dark ruled border.
-```
-
-**The loop is open on this frame.** Marko has set the two run limit aside for 3C, because it is the hinge
-between the boy and the science. Change one thing per run. In order, if it misses: the cap comes back too
-large, cut more of it away. The room comes back empty, give the room more words and the leg fewer. The
-glass comes back small, say what fraction of the picture it crosses in the same sentence as the muscle.
-
-**The scientist, once settled, defines scene 4.** He is alone in a private room and not teaching at a
-blackboard, because a man who is lecturing cannot be surprised and a man who is thinking can, and scene
-5 depends entirely on him being able to be surprised. The subject of scene 4 is what a discovery costs:
-paper everywhere, trial and error, a brain worked to the edge of burning. He finds it at the end.
+**When `3C` reruns**, the composition is in `scenes/S3.md` and the three things that changed at attempt
+four are: the leg is an anatomical study with no skin and no hair, with the intact calf over it as a
+faint translucent contour, the cap is only the peak breaking the bottom border and not the whole crown,
+and nothing is soft. Everything photographic is sharp and throws a directional shadow across the pencil
+lines. `worlds.md` explains why that shadow is the most important detail in the film.
 
 ---
 
