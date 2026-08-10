@@ -123,6 +123,14 @@ gold only in scene 7. `3C` is next, the glass on the calf and the push through t
 small leg on open paper, which reads as somebody demonstrating a prop. The calf is not in the frame, the
 calf **is** the frame, seen over the back of Manan's head.
 
+**10.8.2026. A third `3C` was run from the section 12 prompt and rejected by Marko.** That is three, past
+the two run limit, so by the protocol this is no longer a wording problem and the next version is a new
+frame rather than a re-roll. Marko has drawn a sketch of the corrected composition and the sketch is the
+authority. **The sketch and the rejected frame did not reach the chat**, so nothing has been diagnosed and
+nothing has been rewritten yet. Do not reconstruct the composition from this file or from an old chat, and
+do not guess at what the sketch shows. Wait for the two images, then file them in `assets/V4/attempts/`,
+write the failure mode into `nanobanana.md` if it is new, and recompose `scenes/S3.md` from the sketch.
+
 **`correspondence.md` holds every message to and from the crew**, with the outstanding Croatian message
 to Kristijan ready to send in section 5.1. Nothing goes to a crew member without being logged there.
 
