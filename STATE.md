@@ -148,8 +148,15 @@ glass out of attempt three and is the reference the sheet is generated from.
 
 **OBJECTS ARE CHARACTERS. THIS IS NOW A RULE.** Any object that carries meaning across scenes gets a
 multiple angle sheet at 3:2 before it is asked for in any frame, because an object without a sheet does
-not merely drift between frames, it disappears from them. Queue in `worlds.md` section 7: `GLASS.jpg`
-urgent and blocking, then `DIAL.jpg`, `KEY.jpg`, `LAB.jpg`, `DOOR.jpg`.
+not merely drift between frames, it disappears from them. Queue in `worlds.md` section 7. **`GLASS.jpg` is
+done and approved, 10.8.2026**, six views on grey seamless, plain brass rim, turned collar, dark
+hardwood handle, and it includes the view `3C` actually needs, the glass lying flat seen from above.
+Next `DIAL.jpg`, then `KEY.jpg`, `LAB.jpg`, `DOOR.jpg`.
+
+**Which world an object belongs to, settled.** Everything Manan carries is photographed, the cap, the
+coat and the glass, because it arrived with him. Everything belonging to the runner, the scientist and
+the Coach is drawn. The glass therefore lies on the drawing as a real object and throws its own shadow,
+and what is seen through it is pencil.
 
 **`worlds.md` IS A NEW STANDING DOCUMENT AND IT IS LOAD BEARING.** The law of the two worlds. Everything
 drawn is the inside of the problem, everything photographed is the person who came to look at it, and the

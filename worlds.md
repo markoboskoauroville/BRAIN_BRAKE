@@ -108,9 +108,15 @@ meaning does not survive a change of shape.
 credit and saves five, and without one the object is also the first thing the model drops from a busy
 frame, because it has no identity to hold on to.
 
+**Which world an object belongs to.** Everything Manan carries is photographed, because it arrived with
+him: the deerstalker, the coat, and the brass magnifying glass. Everything belonging to the runner, the
+scientist and the Coach is drawn. So the glass is a real object lying on a drawing and it throws a
+shadow, and what you see through it is pencil. A real instrument showing a drawn interior is the film's
+argument in one object.
+
 Sheets required, in order of how much damage their absence does:
 
-    GLASS.jpg     the brass magnifying glass, in every scene from 3 to 8    urgent, blocking 3C
+    GLASS.jpg     the brass magnifying glass, in every scene from 3 to 8    DONE 10.8.2026
     DIAL.jpg      eight shots across five scenes, drawn differently in each
     KEY.jpg       the gold key on the Coach's chain in scene 7
     LAB.jpg       the scientist's room, empty, so scenes 4 and 5 match
