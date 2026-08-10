@@ -193,6 +193,25 @@ photograph vanished, which is what that rule exists to prevent.
 **The sketch is followed literally from now on.** Marko's note, and he is right: the frames that have
 failed are the ones where his composition was paraphrased rather than transcribed.
 
+**10.8.2026, attempt six, and it changed the method rather than the frame.** Filed at
+`assets/V4/attempts/3C_a6_arm_appeared_glass_gone.png`. The prompt forbade an arm and the model drew a
+whole anatomical arm across the top left. It forbade a knee and the model drew a knee. **Negation adds
+the thing. Every negation is deleted from every prompt from now on**, and crops are described positively
+instead.
+
+**And the frame has a budget of about two subjects.** Attempt five kept the glass and dropped the cap,
+attempt six kept the cap and dropped the glass and the ghost skin. Different elements failed from the
+same description, which means it is capacity and not phrasing, and no rewrite will fix it. `GLASS.jpg`
+was attached and did not save the glass, so a sheet buys an object its identity and not its place in the
+queue.
+
+**So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
+the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
+only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
+whole frame, and the anatomy is locked once it is right rather than being lost again in a later run,
+which is exactly what happened to the ghost skin between five and six. Full reasoning in `nanobanana.md`
+section 4b.
+
 **`correspondence.md` holds every message to and from the crew**, with the outstanding Croatian message
 to Kristijan ready to send in section 5.1. Nothing goes to a crew member without being logged there.
 

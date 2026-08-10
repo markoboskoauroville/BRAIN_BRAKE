@@ -99,7 +99,9 @@ Read this table before blaming the prompt.
 | An object different in every frame | It has no sheet. The dial appeared in eight shots with a different face each time | One sheet per recurring object, with its states drawn on it |
 | Text on a board unreadable or invented | Long chalked sentences | Keep board text to **four short words maximum**, in a whitelist |
 | An instrument aimed at nothing, raised for the camera | A hand was holding it. Arm pose is a property of the figure, aim is a relationship between two objects, and the property wins | **Remove the hand.** Let the instrument lie on the thing it is examining and let a fragment of the character enter at the frame edge |
-| A lens, glass or window comes back empty | Its contents were named after the object instead of as the subject | Say there is no skin and no wall inside it, and give the interior as many words as the surface around it |
+| A lens, glass or window comes back empty | Its contents were named after the object instead of as the subject | Give the interior as many words as the surface around it |
+| The exact thing you forbade appears in the picture | You named it. The model renders nouns and ignores the word in front of them | **Never write a negation.** Describe the crop positively until there is no room for the unwanted thing |
+| One of four described elements silently missing, a different one each run | The frame is over its budget of about two subjects | Build the frame in passes, drawn world first, photographic objects second, image to image |
 
 ---
 
@@ -450,3 +452,64 @@ photograph. Every time. No exceptions for framing, camera position or anything e
 symmetrical posterior view, both heads of the gastrocnemius, straight on, which is what an anatomy plate
 looks like by default. If a limb is meant to be seen in profile, say profile, say which edge is the calf
 and which is the shin, and say it is not symmetrical.
+
+---
+
+## 4b. THE TWO FINDINGS THAT MATTER MOST, FROM ATTEMPT SIX
+
+`assets/V4/attempts/3C_a6_arm_appeared_glass_gone.png`. Read this section before writing any prompt.
+
+### NEGATION ADDS THE THING. IT NEVER REMOVES IT.
+
+The prompt said **no arm** anywhere in the picture. The model drew a complete anatomical study of an arm,
+bent at the elbow, occupying the top left half of the frame. The prompt said **no knee and no ankle**.
+The model drew a knee. Every single noun that appeared inside a negation in that prompt appeared in the
+picture.
+
+**The model renders nouns. It does not process the word in front of them.** Naming a thing in order to
+forbid it is the most reliable way to summon it. This was already the rule for lettering in section 2 and
+it is now proved for anatomy, and there is no reason to think it is different for anything else. The
+earlier frames where "no knee, no ankle, no foot" appeared to work were not the negation working, they
+were the closeness of the crop leaving no room for a knee.
+
+**What to do instead. Describe the crop, positively.** Not "no knee and no ankle", but *the muscle runs
+off the top border and off the bottom border*. Not "no arm anywhere", but *the picture is filled from
+edge to edge by one calf*. A frame with no space in it cannot contain an arm, and nothing has to be
+forbidden. **Delete every negation from every prompt from now on.**
+
+### THE FRAME HAS A BUDGET OF ABOUT TWO SUBJECTS, AND OVER THAT IT DROPS ONE AT RANDOM
+
+Six attempts at one frame, and the prompt grew from about a hundred and eighty words to about three
+hundred and eighty, because each attempt added a clause to repair the last failure. The failures got
+worse, not better, and here is the proof that it is not a wording problem:
+
+    attempt five   kept the glass, kept the ghost skin, DROPPED THE CAP
+    attempt six    kept the cap, DROPPED THE GLASS, dropped the ghost skin
+
+**It is not the same element that fails.** The same four subjects were described with the same care both
+times and the model discarded different ones. That is a capacity limit, not a phrasing error, and no
+amount of rewriting will fix it. Above roughly two subjects the model spends its attention on whichever
+two it happens to start with and quietly abandons the rest.
+
+**And a model sheet does not save an object from this.** `GLASS.jpg` was attached to attempt six and the
+glass still vanished. A sheet fixes an object's **identity**, so that it is the same object every time it
+appears. It does not buy the object a **place in the queue**. The two problems are separate and both have
+to be solved.
+
+### THEREFORE, BUILD A FRAME IN PASSES
+
+This is the composition version of sheets before frames, and it should have been obvious earlier.
+
+    pass one    the drawn world alone. The leg, the room, the background.
+                Nothing photographic, no objects. One subject, all the
+                attention on anatomy, view and scale.
+
+    pass two    image to image on the approved result of pass one, adding
+                only the photographic objects. Two subjects at most.
+
+Each pass stays inside the budget, and each pass is cheap to rerun because a failure only costs the pass
+rather than the whole frame. It also means the anatomy, once right, is **locked**, and cannot be lost
+again in a later run, which is what happened to the ghost skin between five and six.
+
+**The cast shadow is the one thing that has now worked twice out of two**, in five and again in six, and
+it is beautiful in six. It does not need protecting. Everything else does.
