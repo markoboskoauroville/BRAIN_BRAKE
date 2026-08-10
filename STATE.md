@@ -294,6 +294,18 @@ as the naming of the arc, not just as sheet furniture.
 
 **Scene 4 has both its sheets and 4A can go.** `LAB.jpg` and `SCIENTIST.jpg`.
 
+**11.8.2026. THE PIPELINE IS SOLVED AND IT IS THREE STEPS.** Sheets from Nano Banana, arrangement built
+by hand in the container, unification in the editor, lock. `3C` took eleven runs by argument. `4A` took
+one editor run from a hand built collage. Full capability results and the toolbox split in `editor.md`.
+
+**The editor is a re-compositor and not an editor.** It merged two room views into one continuous space,
+seated a standing figure, and unified the pencil, all first time. It also **redrew the entire picture**
+and lost the oil lamp and the cup. `Leave everything else exactly as it is` was in the prompt and was
+ignored. So: **never point the editor at an approved frame.** It builds, it does not touch.
+
+**And once a frame is locked it becomes the reference for the rest of its scene.** `4B` and `4C` come
+from approved `4A`, not from `LAB.jpg`, because the room in the approved frame is now the room.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the

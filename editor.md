@@ -72,7 +72,57 @@ everything, longest edge 1600, JPEG quality 85, under 400 KB.** PNG is the worst
 pencil drawing full of grain does not compress, and a 16 by 9 PNG at 2752 wide runs to six megabytes.
 The collage was rebuilt as `4A_editor_input_collage_web.jpg` at 0.34 MB.
 
-**So the first real capability test has still not been run.** First run is `4A`, testing A, B, C, D and G at once, on the collage at
+**Finding two, 11.8.2026. The editor passed four of five and failed the one that matters, and that
+failure defines exactly what it is for.**
+
+    A  MERGE      PASS, and better than expected. Two views of one room became one continuous
+                  space with a real corner, the ceiling line and floorboards running through,
+                  no seam anywhere.
+    B  POSE       PASS. A standing figure was seated on a chair, turned to the desk, head down,
+                  pen in hand, legs behind the desk. A full pose change, done cleanly.
+    D  STYLE      PASS. The pasted figure is now made of the same pencil as the room. No seam
+                  of hand, no difference in line weight.
+    C  LIGHT      PARTIAL. Soft shading appeared under the desk, but no clear directional cast
+                  shadow of the man. Ask for shadows more specifically, or add them here.
+    G  FIDELITY   FAIL. It redrew the entire picture. The oil lamp vanished. The cup vanished.
+                  The desk became a different desk, the papers rearranged, the wall plates moved
+                  and multiplied, the chairs changed.
+
+**So it is not an editor. It is a re-compositor.** It takes an arrangement and rebuilds it as one
+coherent drawing, which is exactly the job Nano Banana cannot do, and it does it beautifully. What it
+will not do is leave a thing alone. "Leave everything else exactly as it is" was in the prompt and was
+ignored completely.
+
+### THE OPERATIONAL RULE THAT FOLLOWS, AND IT IS ABSOLUTE
+
+**Never point the editor at an approved frame.** Anything already locked, anything already in
+`assets/V4/`, anything that took six runs to get right, is not to be sent to this tool for a small fix,
+because there are no small fixes. It rebuilds. Small objects are the first casualties, and a lamp is a
+light source and a continuity item, not decoration.
+
+**And once a frame is locked, it becomes the reference for the rest of its scene.** `4B` and `4C` are
+built from the approved `4A`, not from `LAB.jpg`, because the room in the approved frame is now the room.
+
+---
+
+## 5. THE TOOLBOX, DECIDED
+
+    NANO BANANA     Makes what does not exist yet. Model sheets, characters, rooms,
+                    objects, anatomy, texture, the first version of any world.
+                    Slow, expensive, the master draughtsman. Cannot arrange.
+
+    THE EDITOR      Merges, poses, stages and unifies. Turns a rough hand built
+                    collage into one drawing. Cheap, fast, obedient about change
+                    and careless about everything it was not asked about.
+                    Use it to build. Never to touch.
+
+    THE CONTAINER   Decides. Position, scale, rotation, crop, which part of which
+                    sheet goes where. Costs nothing, is exact, and is the only one
+                    of the three that does what it is told.
+
+**The working order for a frame from now on.** Sheets from Nano Banana, arrangement in the container,
+unification in the editor, lock. That is three cheap steps instead of six expensive guesses, and it is
+how `4A` was made after `3C` took eleven. First run is `4A`, testing A, B, C, D and G at once, on the collage at
 `assets/V4/attempts/4A_editor_input_collage.png`, built from `LAB.jpg` view one and view three with the
 figure from `SCIENTIST.jpg` pasted in at rough scale.
 
