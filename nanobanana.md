@@ -98,6 +98,8 @@ Read this table before blaming the prompt.
 | Location drifts between shots of the same room | No empty location sheet exists, only heroes with characters in them | Make an **empty location sheet** before breaking a scene into shots |
 | An object different in every frame | It has no sheet. The dial appeared in eight shots with a different face each time | One sheet per recurring object, with its states drawn on it |
 | Text on a board unreadable or invented | Long chalked sentences | Keep board text to **four short words maximum**, in a whitelist |
+| An instrument aimed at nothing, raised for the camera | A hand was holding it. Arm pose is a property of the figure, aim is a relationship between two objects, and the property wins | **Remove the hand.** Let the instrument lie on the thing it is examining and let a fragment of the character enter at the frame edge |
+| A lens, glass or window comes back empty | Its contents were named after the object instead of as the subject | Say there is no skin and no wall inside it, and give the interior as many words as the surface around it |
 
 ---
 
@@ -358,3 +360,32 @@ what it is trained on in the same sentence, or it will be raised for the camera 
 It is not worth a rerun. It is two pixels of graphite and it can be drawn back in the container in a
 minute, masked by colour saturation so it passes behind the boy and never across him. `V4_3B` was
 finished this way.
+
+**10.8.2026 — A HAND HOLDING AN INSTRUMENT DEFEATS EVERY WORD ABOUT WHERE THE INSTRUMENT IS POINTING.
+Take the hand out.** `3C` attempt three is filed at `assets/V4/attempts/3C_a3_glass_off_the_muscle.png`.
+The prompt placed the glass against the middle of the muscle with graphite surrounding the circle on
+every side, and named the laboratory inside it. What came back is a beautiful giant calf, a correct back
+of the head, real tweed, real wool, and the glass **small, empty and held out over bare paper in the top
+right corner**, with nothing inside it at all.
+
+**Why, and it is the unifying rule again.** The arm is a property of the figure and the model draws arms
+the way arms are drawn, raised and out to the side. Where the glass is pointing is a **relationship
+between two objects**, which is the thing the model cannot do. So the arm wins every time, and it takes
+the glass out of the frame with it. This is the same failure as the floating gold key, but worse,
+because a hand is a support, so the object is not floating and the earlier rule does not catch it. A
+symbol needs a support. **An instrument needs a target, and a hand is not a target.**
+
+**The fix, and it is Marko's sketch.** No arm, no hand, no figure. The glass **lies on the muscle** as an
+object resting on a surface, which is arrangement and lands every time, and the only human thing in the
+picture is a **piece** of the cap cut off by the bottom border, with the handle running down behind it.
+The boy is therefore present, holding it, and never drawn. A fragment of a character at the frame edge
+is safer than a whole one, because a whole one arrives with limbs that have to be posed.
+
+**And an empty circle stays empty unless what is inside it is described as the subject.** The laboratory
+was named after the glass and came back as clean glass. Content inside a circle only survives if the
+circle is large, if the sentence says outright that there is no skin and no muscle in there, and if the
+room gets as many words as the leg does.
+
+**One more, and it follows.** Scale of an object against the frame is inherited like subject scale is:
+the glass came back at the size a held magnifying glass is normally drawn. Asking for it large only
+works when it is lying on something whose size the frame already establishes.

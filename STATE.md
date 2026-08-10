@@ -123,13 +123,22 @@ gold only in scene 7. `3C` is next, the glass on the calf and the push through t
 small leg on open paper, which reads as somebody demonstrating a prop. The calf is not in the frame, the
 calf **is** the frame, seen over the back of Manan's head.
 
-**10.8.2026. A third `3C` was run from the section 12 prompt and rejected by Marko.** That is three, past
-the two run limit, so by the protocol this is no longer a wording problem and the next version is a new
-frame rather than a re-roll. Marko has drawn a sketch of the corrected composition and the sketch is the
-authority. **The sketch and the rejected frame did not reach the chat**, so nothing has been diagnosed and
-nothing has been rewritten yet. Do not reconstruct the composition from this file or from an old chat, and
-do not guess at what the sketch shows. Wait for the two images, then file them in `assets/V4/attempts/`,
-write the failure mode into `nanobanana.md` if it is new, and recompose `scenes/S3.md` from the sketch.
+**10.8.2026. `3C` recomposed from Marko's own sketch, which is now the authority on the frame.** Attempt
+three is filed at `assets/V4/attempts/3C_a3_glass_off_the_muscle.png` and the sketch beside it as
+`3C_sketch_marko_three_layers.png`. All three attempts failed the same way and the cause is finally
+named: **a hand holding an instrument beats every word about where the instrument is pointing**, because
+arm pose is a property of a figure and aim is a relationship between objects. Written up in
+`nanobanana.md`. The frame is now three layers, a piece of the deerstalker cut off by the bottom border,
+a large glass lying on the muscle with its handle running behind the cap, and the calf filling the paper
+behind both. No arm, no hand, no face. Composition in `scenes/S3.md`.
+
+**The scientist inside the lens is the establishing shot of scene 4, and the subject is the cost of the
+work.** Paper everywhere, anatomy sheets on the wall, trial and error, a man worked to the edge of
+burning who has not found it yet. He finds it by the end of scene 4. The film shows what a discovery
+costs and not only what it concluded.
+
+**The two run limit is suspended for `3C` by Marko.** It is the hinge between the boy and the science.
+Loop until it is right, one variable per run.
 
 **`correspondence.md` holds every message to and from the crew**, with the outstanding Croatian message
 to Kristijan ready to send in section 5.1. Nothing goes to a crew member without being logged there.

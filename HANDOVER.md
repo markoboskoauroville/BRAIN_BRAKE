@@ -5,8 +5,8 @@ You are continuing a live film production already in progress. Everything you ne
 Marko to re-explain any of it and do not ask permission for routine operations. He works by voice, often
 while moving. Move fast, execute without check-ins, and write what you learn back into the repo.
 
-**Last updated 9.8.2026, at the end of the session that completed scenes 1 and 2 and got two thirds of
-the way through scene 3.**
+**Last updated 10.8.2026. Scenes 1 and 2 complete, 3A and 3B approved, 3C recomposed from Marko's
+sketch and back in the loop.**
 
 ---
 
@@ -276,9 +276,14 @@ book carries a lot of claims that would damage a filmmaking book's credibility.
 
 ## 12. THE EXACT NEXT ACTION, READY TO PASTE
 
-3C, into the lens. Two attempts failed by putting a large glass over a small leg on open paper, which
-reads as somebody demonstrating a prop. The calf is not in the frame, **the calf is the frame**, and we
-are behind Manan's shoulder looking where he is looking.
+3C, into the lens. **Recomposed 10.8.2026 from Marko's sketch after three rejected attempts, and the old
+prompt that used to sit here is deleted because it is the prompt that failed.** Full composition in
+`scenes/S3.md`, cause of the failure in `nanobanana.md`.
+
+The frame is three layers and there is no arm and no hand in it. A piece of the deerstalker cap cut off
+by the bottom border, a large glass lying on the muscle with its handle running down behind the cap, and
+the calf filling the paper behind both. Inside the circle, faint and pale, the scientist alone in a room
+buried in paper.
 
 2 reference images, 1 prompt. Image To Image AI, 16:9.
 
@@ -288,24 +293,27 @@ are behind Manan's shoulder looking where he is looking.
 https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/REFERENCES/MANAN.jpg
 ```
 
-**[R2] V4_3B_web.jpg**
+**[R2] 3C_a3_glass_off_the_muscle_web.jpg**
 
 ```
-https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/V4/V4_3B_web.jpg
+https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/V4/attempts/3C_a3_glass_off_the_muscle_web.jpg
 ```
 
 **[P1] 3C**
 
 ```
-The back of the head of a real fourteen year old Indian boy, close to us in the lower right corner of the sheet of paper, turned completely away from us so that no part of his face is visible, the back of a tan tweed deerstalker cap with its rear brim and its folded ear flaps, short black hair below the cap, the collar and the shoulder cape of a tan wool overcoat. He alone is a genuine photograph composited into this pencil drawing, real woven wool, real hair, natural light across the back of his neck. His arm reaches up and away from us and his hand holds a brass magnifying glass out at arm's length. Filling nearly the whole rest of the sheet of paper, the bare calf of a running man drawn in graphite pencil and seen so close that there is no knee, no ankle, no foot and no shoe anywhere in the picture, only one great diagonal mass of muscle running from the lower left corner of the paper up to the upper right corner, the long lines of the muscle and the tendon and fine hairs on the skin drawn in detail. Bare cream paper shows only in the upper left corner and the lower right corner. The round glass lies against the middle of that muscle and graphite muscle surrounds the circle on every side of it. Inside the circle of the glass there is no skin and no muscle at all. Inside the circle is a small untidy room seen from a distance, a wooden desk buried under loose sheets of paper, more paper fallen on the floor around it, one lamp, and an old man in shirtsleeves and a waistcoat sitting at the desk with wild white hair standing out in all directions, his chin resting in one hand, staring at nothing, stuck on something. All of that is drawn small and pale in pencil and the papers carry only faint grey scribble. A boy is looking into a man and finding somebody thinking. Graphite pencil on warm cream paper, loose hand drawn lines, soft shading, sixteen by nine, thin dark ruled border.
+Close to us at the bottom edge of the picture, the crown and one folded ear flap of a tan herringbone tweed deerstalker cap, cut off by the bottom border so that only the top part of the cap is in the picture, and no face, no shoulder, no arm and no hand anywhere in the picture. The cap alone is a genuine photograph composited into this pencil drawing, real woven herringbone wool with visible nap and stitching and a soft brown sheen, slightly soft because it is nearer to us than everything else. Filling the whole picture behind it, the bare calf of a running man drawn in graphite pencil and seen so close that there is no knee, no ankle, no foot and no shoe anywhere, one great mass of muscle rising from the bottom of the paper to the top, its back edge running up the left side and its front edge running up the right side, the long lines of the muscle and the tendon and fine hairs on the skin drawn in detail. Bare cream paper shows only in two narrow slivers at the far left edge and the far right edge. Lying against the middle of that muscle, a large round magnifying glass wide enough to cross a third of the picture, a plain thin brass rim and a short straight handle running down to the right and disappearing behind the cap. Graphite muscle surrounds the circle on every side of it. Inside the circle there is no skin and no muscle at all. Inside the circle, drawn faint and pale in fine pencil as though it were under the skin, a small untidy room seen from a distance, a wooden desk buried under loose sheets of paper, more sheets fallen across the floor around it, sheets pinned on the wall behind carrying faint diagrams of muscles and bones, one lamp, and an old man in shirtsleeves and a waistcoat sitting at the desk with wild white hair standing out in all directions, his chin resting in one hand, staring at nothing, stuck on something he has not solved. A boy is looking into a man and finding somebody thinking. Graphite pencil on warm cream paper, loose hand drawn lines, soft shading, sixteen by nine, thin dark ruled border.
 ```
 
-**If it misses again**, the problem is that the room needs its own frame. Drop the laboratory out of 3C,
-let 3C be the glass on the muscle and nothing else, and hand straight into scene 4.
+**The loop is open on this frame.** Marko has set the two run limit aside for 3C, because it is the hinge
+between the boy and the science. Change one thing per run. In order, if it misses: the cap comes back too
+large, cut more of it away. The room comes back empty, give the room more words and the leg fewer. The
+glass comes back small, say what fraction of the picture it crosses in the same sentence as the muscle.
 
 **The scientist, once settled, defines scene 4.** He is alone in a private room and not teaching at a
 blackboard, because a man who is lecturing cannot be surprised and a man who is thinking can, and scene
-5 depends entirely on him being able to be surprised.
+5 depends entirely on him being able to be surprised. The subject of scene 4 is what a discovery costs:
+paper everywhere, trial and error, a brain worked to the edge of burning. He finds it at the end.
 
 ---
 
