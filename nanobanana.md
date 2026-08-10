@@ -700,3 +700,15 @@ is in this repo anyway.
 is a window where everything works, then a window where nothing does, and whatever you happened to change
 at the boundary looks like the cause. It was the anatomy words the first time and the file size the
 second. It was the bin both times.
+
+**11.8.2026 — a whitelist does not guarantee lettering, it only bounds it.** The scene 5 storyboard named
+eight exact short phrases as the only words allowed on the sheet and the model drew **none of them**. So
+the tool has two failure modes with text and no reliable success: it either invents words or omits them
+entirely. **Never let a frame depend on lettering.** If a word must be readable, it goes on in the
+container afterwards, where it costs nothing and cannot be misspelled.
+
+**And the storyboard sheet itself is a method worth keeping.** Six rough thumbnails, no reference images,
+one prompt, one credit, and Marko chose a scene direction off it in a few seconds that had taken several
+paragraphs of prose to describe badly. **When a decision is about story rather than craft, board it
+instead of writing it.** Rough is the point: a thumbnail that looks finished invites notes on the drawing
+rather than a decision about the film.

@@ -426,6 +426,20 @@ the top of the leap, and the direction to Kristijan is that the flame flares on 
 realisation and settles over the next second. Written up as a story law in `storytelling.md` 5b, with the
 caution that it becomes a tic past three or four uses in two minutes.
 
+**11.8.2026. SCENE 5 IS DECIDED: OPTION TWO, THE RUNNER ARRIVES.** Chosen off a storyboard sheet.
+`scenes/S5.md` carries the three frames. The runner is **our** runner from `RUNNER.jpg`, vest, shorts,
+modern shoes, number 27, appearing outside a window in 1923, which is the crack itself rather than an
+anachronism to be fixed.
+
+**And boarding a decision is now a standing method.** Six rough thumbnails, no references, one prompt,
+one credit, and a story question that had taken paragraphs of prose was answered in seconds. **When a
+decision is about story rather than craft, board it instead of writing it**, and keep the thumbnails
+rough so they invite a decision about the film rather than notes on the drawing.
+
+**Also learned: a whitelist does not guarantee lettering.** Eight exact phrases were named as the only
+words allowed and the model drew none of them. It either invents words or omits them, so no frame may
+depend on text. Anything that must be readable goes on in the container.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
