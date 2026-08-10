@@ -253,6 +253,22 @@ glass running out of the lower right corner, which is a cut fragment of his prop
 
 **Scene 3 is complete. 3A, 3B, 3C approved.**
 
+**10.8.2026. THE ORDER OF WORK, SET BY MARKO AND NOT TO BE JUMPED.** Finish all three frames of every
+scene, 4A 4B 4C, then 5, and so on to scene 9. **Only when all twenty seven frames exist** does Kristijan
+get his documents, and he gets **three** of them: a visual guide, a framework guide, and a prompt guide,
+the last so he can propose the prompts for the shots that fall between the three frames of each scene.
+A brief was started early in this session and deleted. Do not write it again until the frames are done.
+
+**And before every scene, its model sheets are generated first.** Marko's standard: continuity so exact
+that nobody believes it was made with a machine. Sheets are generated from **crops of already approved
+frames** wherever a character or object has already been seen, so the sheet matches what is on screen
+rather than competing with it.
+
+**Scene 4 needs two, and their sources are published.** `assets/REFERENCES/SCIENTIST_SOURCE.jpg`, a six
+times upscale of the old man inside the lens of `V4_3C`, and `assets/REFERENCES/LAB_SOURCE.jpg`, the room
+around him. From these come `SCIENTIST.jpg` and `LAB.jpg`. The lab sheet is drawn **empty**, so that
+scenes 4 and 5 are the same room.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
