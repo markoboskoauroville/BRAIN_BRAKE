@@ -287,6 +287,13 @@ by compositing, taking him from `4A` rather than generating a separate frame, so
 `[R2/3]`, `[R3/3]`, because Marko pastes them one at a time on a phone and the count is a checksum
 against dropping one. The prompt tag is now `[prompt]` in lower case.
 
+**10.8.2026. `SCIENTIST.jpg` APPROVED.** Four standing views and three heads labelled **ABSORBED**,
+**STUCK** and **EPIPHANY**, which are the three beats of scene 4 in that order and can be used as the
+scene's own storyboard. Upright, lean, immaculate, alert. The three expression labels should be treated
+as the naming of the arc, not just as sheet furniture.
+
+**Scene 4 has both its sheets and 4A can go.** `LAB.jpg` and `SCIENTIST.jpg`.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
