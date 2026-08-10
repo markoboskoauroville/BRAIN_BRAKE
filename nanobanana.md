@@ -416,3 +416,37 @@ no hair. Ask for muscle, tendon and fascia and nothing that belongs to a living 
 cap came back correctly soft. Depth of field is not what marries a photograph to a drawing. **A cast
 shadow is.** From now on every photographic element on the paper is sharp and throws a directional shadow
 across the pencil lines. Written up as a law in `worlds.md`.
+
+**10.8.2026 — TWO THINGS LANDED FIRST TIME AND BOTH ARE NOW PROVEN.** `3C` attempt five, filed at
+`assets/V4/attempts/3C_a5_front_view_leg_small_no_cap.png`. **The cast shadow works**, the real brass and
+wood throw a soft directional shadow onto the paper and the pencil stays readable under it, exactly as
+`worlds.md` requires. **The translucent skin over the anatomy works too**, a faint continuous contour of
+the intact leg laid over the muscle study, the x-ray reading, first attempt, no argument. Neither of
+these needs to be fought for again. Transparency and shadow are both properties of one thing, which is
+the half of the tool that works.
+
+**10.8.2026 — NEVER DESCRIBE THE PAPER AS AN OBJECT IN SPACE. THE PAPER IS THE FRAME, NOT A THING IN
+THE FRAME.** The same prompt opened with "seen from directly above, looking straight down onto a large
+sheet of warm cream paper lying flat", and the model did precisely that: it **photographed a sheet of
+paper on a table**, with the physical edge of the sheet visible down the left side, a grey surface
+beyond it, and the drawing sitting small in the middle with wide margins all round. A still life of a
+drawing instead of a drawing.
+
+**And that one phrase also destroyed the subject scale**, which had been the only reason for uploading an
+anchor with a big diagonal leg. Given a sheet of paper as an object, the model gives the sheet its
+margins, because that is what paper has. The leg came back a third of the width and centred, with the
+drawing politely inset. So the earlier rule that scale is inherited from the reference has a companion:
+**scale can also be destroyed by a spatial description that gives the paper edges.** Say nothing about
+the paper except in the medium sentence at the end, where "graphite pencil on warm cream paper" has been
+safe in every approved frame.
+
+**10.8.2026 — the photoreal fragment was dropped again, and this time it was my own fault, not the
+model's.** The cap was written in the middle of the prompt, after the leg and the glass. The skeleton in
+section 5 says the photoreal subject goes in block [1] because it is the thing most likely to be lost,
+and the one time that rule was broken on this production the photograph vanished. Open with the
+photograph. Every time. No exceptions for framing, camera position or anything else.
+
+**10.8.2026 — anatomical view has to be named as a view.** "An anatomical study of the calf" produced a
+symmetrical posterior view, both heads of the gastrocnemius, straight on, which is what an anatomy plate
+looks like by default. If a limb is meant to be seen in profile, say profile, say which edge is the calf
+and which is the shin, and say it is not symmetrical.

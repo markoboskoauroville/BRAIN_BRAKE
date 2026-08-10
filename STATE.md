@@ -176,6 +176,23 @@ be added back honestly.
 **Anatomy is anatomy.** No skin and no body hair on the drawn leg, muscle and tendon and fascia only,
 with the intact leg laid over it as a faint translucent contour like an X-ray plate over a diagram.
 
+**10.8.2026, attempt five, and two of the hard things are now solved.** Filed at
+`assets/V4/attempts/3C_a5_front_view_leg_small_no_cap.png`. **The cast shadow works and the translucent
+skin over the anatomy works**, both first time, both exactly as `worlds.md` describes. Neither has to be
+fought for again. What is still wrong is the view and the framing: the leg came back as a symmetrical
+textbook posterior study rather than seen from the side, small and centred with wide margins, and the
+cap was dropped.
+
+**Two rules came out of it.** One, **never describe the paper as an object in space.** The prompt opened
+by looking down onto a sheet of paper lying flat and the model photographed a sheet of paper on a table,
+edge visible, grey surface beyond, drawing inset with margins. The paper is the frame, not a thing in the
+frame, and the only safe mention of it is the medium sentence at the end. Two, **the photograph goes in
+block one, always**, which is already the rule in `nanobanana.md` section 5 and was broken here, and the
+photograph vanished, which is what that rule exists to prevent.
+
+**The sketch is followed literally from now on.** Marko's note, and he is right: the frames that have
+failed are the ones where his composition was paraphrased rather than transcribed.
+
 **`correspondence.md` holds every message to and from the crew**, with the outstanding Croatian message
 to Kristijan ready to send in section 5.1. Nothing goes to a crew member without being logged there.
 
