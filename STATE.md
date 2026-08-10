@@ -381,6 +381,19 @@ because left alone the tool picks the most dramatic option, which is the biggest
 light on an arrangement that already exists, which is contents and not geometry. Regenerating would cost
 us the room we just built.
 
+**11.8.2026. `4A` IS LOCKED, PROPERLY THIS TIME. `assets/V4/V4_4A.png`.** The room is generated whole so
+the corner is a real corner, the ceiling line and the floorboards run unbroken, the plates are anatomical
+and carry no invented lettering, the lamp is the strongest light, and the shadow is quiet. The earlier
+version built from a stitched collage is replaced and its seam is gone with it.
+
+**This frame is now the master room for the whole of scene 4 and scene 5.** `4B` and `4C` are derived
+from it and nothing about the room changes again. Scene 5 dresses the same wall with different work,
+which the editor has already proved it can do without disturbing anything else.
+
+**The route that produced it, for reuse.** Generate the empty room whole in Nano Banana, swap the wall
+contents in the editor, add the figure in the editor, correct the light in the editor. Four steps, all
+cheap after the first, and the geometry never touched again.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
