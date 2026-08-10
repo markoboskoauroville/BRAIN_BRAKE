@@ -686,3 +686,17 @@ and they are exactly the ones a background cause will frame.
 
 **And check the boring thing first.** Storage full, credits out, logged out, disk full. It costs nothing
 to look and it would have saved four credits and about an hour today.
+
+**11.8.2026, LATER. IT CAME BACK, AND THAT CONFIRMS IT RATHER THAN CONTRADICTING IT.** Fourteen minutes
+and **four successful jobs** after the library was cleared, the failures started again. So the storage
+does not just have to be emptied once, it **fills up as you work**, and roughly four or five generations
+is enough to do it.
+
+**So this is maintenance, not a bug to diagnose.** Clear the stored images on the platform every few
+jobs, the way you would empty a bin. Download anything worth keeping first, since everything that matters
+is in this repo anyway.
+
+**And it is a good example of why the earlier theories were so convincing.** Between two clearings there
+is a window where everything works, then a window where nothing does, and whatever you happened to change
+at the boundary looks like the cause. It was the anatomy words the first time and the file size the
+second. It was the bin both times.
