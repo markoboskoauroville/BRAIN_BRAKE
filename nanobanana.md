@@ -532,3 +532,20 @@ perfectly and from a sentence hardly at all.
 rewrite the prompt. Take the render, crop and rotate it by hand into the composition you want, feed it
 back, and ask only for quality. It costs no credits, it takes two minutes, and it converts an
 unanswerable request into the one the model is good at, which is redrawing something it can already see.
+
+**It worked.** Pass one version two held the framing, the angle and the lean, and came back crisp. Filed
+as `3C_p1_a2_framing_held_leg_drifted_right.png`, trimmed and locked as `3C_p1_PLATE_leg_locked.png`.
+
+### AND ONE LIMIT THAT IS NOT THE MODEL'S FAULT, IT IS THE DRAWING'S
+
+Trying to push the plate all the way to the zoom in Marko's sketch, where the leg crosses about seventy
+percent of the frame width, was attempted four times in the container and abandoned. **Past a certain
+magnification an anatomical study stops reading as a leg and becomes vertical striation.** Muscle fibre
+is directional texture, and texture without a silhouette around it is wallpaper. The calf is legible only
+while enough of its taper is in frame for the eye to close the shape.
+
+So the plate sits slightly wider than the sketch, with both edges of the ghost skin contour visible and
+the calf narrowing at the bottom. **The glass is what will make the extreme closeness work**, because
+once a circle lies on that texture the frame stops being an abstract drawing and becomes a man being
+examined. The instrument tells the eye where to look, and the abstraction turns from a problem into the
+point. Do not solve legibility by pulling back further once the glass is on.

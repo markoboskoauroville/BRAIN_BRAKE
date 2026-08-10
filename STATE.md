@@ -215,6 +215,18 @@ nine, saved as `assets/V4/attempts/3C_composition_guide_rotated_zoomed.png` and 
 rather than rewriting the prompt.** It costs nothing and it turns a request the model cannot answer into
 one it can.
 
+**10.8.2026. PASS ONE IS LOCKED.** `assets/V4/attempts/3C_p1_PLATE_leg_locked.png`. Correct profile,
+correct lean, ghost skin on both contours, crisp graphite. The hand built anchor worked and the model
+held the framing it was shown.
+
+**One honest limit, and it is the drawing's rather than the model's.** The sketch's zoom, leg crossing
+about seventy percent of the frame, was tried four times in the container and abandoned: past a certain
+magnification an anatomical study stops reading as a leg and becomes vertical striation, because muscle
+fibre is directional texture and texture without a silhouette is wallpaper. The plate therefore sits a
+little wider than the sketch. **The glass is what makes the closeness work**, because a circle lying on
+that texture turns an abstract drawing into a man being examined, and the abstraction stops being a
+problem and becomes the point.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
