@@ -45,6 +45,26 @@ the day is flat, every frame in the film loses this and it cannot be added back 
 
 ---
 
+## 2b. AND THE SHADOW LAW ONLY APPLIES WHERE THE TWO WORLDS TOUCH
+
+Corrected 11.8.2026, after a drawn man in a drawn room came back throwing an enormous dark silhouette
+across the wall that read as a second person standing behind him.
+
+**The shadow is a bridge. Where there is nothing to bridge, it is only lighting.** Its whole job is to
+prove that a photograph and a drawing occupy one space, so it matters enormously wherever Manan is in
+frame and **not at all** in scenes 4 and 5, where everything is pencil and nobody needs convincing that
+a drawn man is standing on a drawn floor.
+
+Inside the drawn world, shadows should be modest, short, and doing ordinary work: telling you where the
+lamp is and giving the figure some weight. Anything stronger competes with the subject, and a large
+shadow of a person on a wall is never neutral, it always reads as presence or as threat.
+
+**Two things to say whenever a shadow is asked for.** Which surface it falls on, and how strong it is.
+Left to itself the tool picks the most dramatic option available, which is usually the biggest empty
+wall.
+
+---
+
 ## 3. THE SECOND CUE: THE SHADOW IS DRAWN
 
 Once the shadow exists it can do something better than being correct.

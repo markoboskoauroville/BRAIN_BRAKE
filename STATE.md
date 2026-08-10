@@ -367,6 +367,20 @@ anywhere in two minutes**, which is one of the five elements it is built on. Gib
 worse than nothing, so the lettering comes off and the leader lines stay, which still reads as a
 technical plate without asking either tool to spell.
 
+**11.8.2026. The man is in the room and the lettering is off the plates.** What went wrong is the
+shadow, and it was my instruction rather than the tool: an enormous dark silhouette across the wall that
+reads as a second person standing behind him.
+
+**The correction is a real one and it is now in `worlds.md` 2b. The shadow law only applies where the two
+worlds touch.** A shadow's job in this film is to prove that a photograph and a drawing occupy one space.
+In scenes 4 and 5 everything is pencil and there is nothing to bridge, so a shadow there is only
+lighting and should be modest. **Always name the surface a shadow falls on and how strong it is**,
+because left alone the tool picks the most dramatic option, which is the biggest empty wall.
+
+**And this stays with the editor rather than going back to the generator.** A shadow is a property of
+light on an arrangement that already exists, which is contents and not geometry. Regenerating would cost
+us the room we just built.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
