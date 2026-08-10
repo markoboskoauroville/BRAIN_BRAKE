@@ -244,6 +244,15 @@ frame, usually as a fragment at the edge rather than a figure. The test: if a vi
 somebody set this down and walked away, the shot has failed. An instrument lying on a drawing is an
 exhibit. An inch of tweed at the border makes it a man looking.
 
+**10.8.2026. `3C` IS LOCKED. `assets/V4/V4_3C.png`.** The version approved is the hand composited one,
+glass centred on the leg, room inside the circle, and **no cap**. Two attempts to add the cap were spent
+and both came back with a whole hat lying complete in the frame, which says the owner has gone and is a
+stronger statement of absence than empty paper. Written up in `nanobanana.md` section 4c: **a fragment
+only reads as presence if the frame cuts it.** Manan's presence in `3C` is carried by the handle of his
+glass running out of the lower right corner, which is a cut fragment of his property and costs nothing.
+
+**Scene 3 is complete. 3A, 3B, 3C approved.**
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the

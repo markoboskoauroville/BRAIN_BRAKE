@@ -549,3 +549,23 @@ the calf narrowing at the bottom. **The glass is what will make the extreme clos
 once a circle lies on that texture the frame stops being an abstract drawing and becomes a man being
 examined. The instrument tells the eye where to look, and the abstraction turns from a problem into the
 point. Do not solve legibility by pulling back further once the glass is on.
+
+---
+
+## 4c. A FRAGMENT OF A CHARACTER MUST BE CUT BY THE FRAME EDGE, OR IT READS AS ABANDONMENT
+
+`assets/V4/attempts/3C_p3_a1_cap_reads_as_abandoned.png`. The prompt asked for the peak of the cap
+breaking in over the bottom right corner. What came back is **a whole cap lying complete inside the
+frame**, entire, resting on the paper next to the glass, with its own shadow. It is beautifully made
+and it is the exact opposite of what it was for. A hat lying by itself says the person has gone.
+
+**The rule, and it refines the presence law in `worlds.md` 6b.** A fragment only reads as presence if
+**the frame cuts it**. Anything complete inside the borders is an object, and an object belonging to a
+person who is not there is a stronger statement of absence than empty paper. So the words that matter
+are not "a piece of the cap" but **"cut by the bottom border", "continuing out of the picture",
+"only part of it is in the picture"**. The model will otherwise centre and complete anything it is
+given, because completing objects is what it does.
+
+Two runs were spent on this and `3C` was locked without the cap instead. The presence of Manan in this
+frame is carried by the handle of his glass running out of the lower right corner, which is a cut
+fragment of his property and does the job at no cost.
