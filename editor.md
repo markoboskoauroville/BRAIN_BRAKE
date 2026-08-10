@@ -61,8 +61,11 @@ guides. If G passes, it becomes the main tool for the rest of the film.
 
 ## 4. WHAT WE KNOW
 
-**Finding one, 11.8.2026, and it is about the platform rather than the model. Reference files must be
-light.** The first editor run returned **Generation failed, credits returned**, on a 5.9 MB PNG input.
+**Finding one, 11.8.2026. WITHDRAWN. The cause was a full image library on the platform account, not
+file size. See `nanobanana.md` section 4f. The original text is kept below as a record of a wrong
+diagnosis that looked airtight.**
+
+**Finding one, as originally written and now known to be false. Reference files must be light.** The first editor run returned **Generation failed, credits returned**, on a 5.9 MB PNG input.
 Nano Banana had failed the same way twice in the half hour before, on a 1.21 MB reference. A previous
 E-Pro job on 4.8. had succeeded. Two different engines, same failure, same window: the input, not the
 words and not the model.

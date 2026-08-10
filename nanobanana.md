@@ -579,6 +579,10 @@ fragment of his property and does the job at no cost.
 back at all. That is a refusal or a service error, not a composition problem, and rewriting for craft is
 wasted effort until it is cleared.
 
+**WRONG. THIS WHOLE PARAGRAPH IS WRONG AND IS KEPT ONLY AS A WARNING. THE CAUSE WAS A FULL IMAGE LIBRARY
+ON THE PLATFORM ACCOUNT, NOTHING ELSE. SEE SECTION 4f. What follows was a confident theory built on a
+real correlation and it was still false.**
+
 **11.8.2026 UPDATE, AND IT WAS NOT THE WORDS AT ALL. IT IS THE WEIGHT OF THE REFERENCE FILES.** The
 same hard failure then happened on the **AI Image Editor**, a completely different model on the same
 platform, and a tool that had run successfully on 4.8. Two different engines failing within half an hour
@@ -648,3 +652,37 @@ before rewriting anything.
 geometry from a single source, no stitching, no seam, at the cost of a tighter frame and the corner
 falling outside the picture. Filed as `assets/V4/attempts/4_ROOM_single_source_web.jpg`. Architecture
 does not always have to be generated. It has to be **single source**, which is the real rule.
+
+---
+
+## 4f. THE ACTUAL CAUSE, AND THE LESSON IS ABOUT ME AND NOT ABOUT THE TOOL
+
+11.8.2026. Marko **deleted the stored images from his account on the platform** and everything worked
+immediately, on the first try, with the same prompt and the same reference that had just failed. The
+storage was full. That was the entire cause of every hard failure today.
+
+**So both diagnoses in 4d and 4e were wrong, and they were wrong in an instructive way.**
+
+    4d said     the anatomy words are triggering a content filter
+    4e said     the reference files are too heavy
+    truth       the account's image library was full
+
+Every piece of evidence used was real. The anatomy words genuinely did appear in the failing prompts.
+Every file that had ever worked genuinely was under half a megabyte, and the failing ones genuinely were
+heavier. Both correlations were perfect and both were **accidental**, because the true cause was
+accumulating in the background the whole time and made everything later fail regardless of its content.
+
+**The rules that are now cancelled.** There is no file weight limit. There is no anatomy trigger. Full
+resolution masters can be served as references. Nothing has to be shrunk. `_web` copies are still worth
+making for phones and for speed, but they are not a safety measure and never were.
+
+### THE RULE THAT REPLACES THEM
+
+**When failures start suddenly and affect everything, look for something that accumulates.** Storage,
+quota, credits, sessions, a cache. A cause that builds up over time produces a perfect correlation with
+whatever you happened to change most recently, which is why the evidence looked so convincing twice in a
+row. Content and size and wording are all things we vary deliberately, so they are the first suspects
+and they are exactly the ones a background cause will frame.
+
+**And check the boring thing first.** Storage full, credits out, logged out, disk full. It costs nothing
+to look and it would have saved four credits and about an hour today.

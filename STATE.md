@@ -334,6 +334,26 @@ shadow are contents, and the editor moves those beautifully inside a geometry th
 **So: build the empty room as one generated frame until it is right, lock it, then everything after is
 furniture.** `4A`, `4B` and `4C` all get rebuilt on top of it. Full reasoning in `editor.md` section 7.
 
+**11.8.2026. THE HARD FAILURES WERE A FULL IMAGE LIBRARY ON THE PLATFORM ACCOUNT.** Marko deleted the
+stored images and everything worked immediately with the same prompt and the same reference that had
+just failed. **There is no file weight limit and there is no anatomy trigger.** Both diagnoses written
+today were wrong, both were built on perfect correlations, and both correlations were accidental because
+the real cause was accumulating in the background. Kept in `nanobanana.md` 4d, 4e and 4f as a record.
+**When failures start suddenly and affect everything, look for something that accumulates, and check the
+boring thing first.**
+
+**THE ROOM IS GENERATED AND THE GEOMETRY IS RIGHT.** `assets/V4/attempts/4_ROOM_generated.png`. One
+continuous space, one true corner, the ceiling line and the floorboards unbroken across the whole width,
+window and door left, wall of pinned charts right, desk with the lamp lit and the cup, bookshelf with
+paper stacks, sheets across the floor. Generated whole, from a single prompt, exactly as the corrected
+division of labour requires.
+
+**One thing to fix before it is locked: the charts are engineering diagrams, not anatomy.** That came
+from the stripped vocabulary written while the anatomy trigger was still believed in. It matters, because
+`3C` looks into this room through the lens and sees anatomical plates, and because the film's argument is
+that the leg is science. The charts are **discrete contents**, so the editor changes them on the locked
+geometry.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
