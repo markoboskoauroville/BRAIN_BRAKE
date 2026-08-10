@@ -269,6 +269,24 @@ times upscale of the old man inside the lens of `V4_3C`, and `assets/REFERENCES/
 around him. From these come `SCIENTIST.jpg` and `LAB.jpg`. The lab sheet is drawn **empty**, so that
 scenes 4 and 5 are the same room.
 
+**10.8.2026. `LAB.jpg` APPROVED**, three views, wide from the doorway, desk detail, anatomy corner, drawn
+empty so scenes 4 and 5 are provably the same room. The first environment sheet on the film.
+
+**`SCIENTIST.jpg` attempt one rejected.** Filed at
+`assets/V4/attempts/SCIENTIST_sheet_a1_stooped_rejected.png`. It came back stooped and unwell, and a man
+who looks ill reads as a man who is losing, which is the wrong story. **Marko's correction: the Tesla
+type.** Tall, very thin, spine straight, dark hair swept back off a high forehead, deep set eyes, quick
+and bright and immaculate. Not a portrait of Tesla and never named as him, because the science in this
+scene is Hill's and a recognisable Tesla in a physiology laboratory would misattribute real published
+work in a film that a science jury will watch. The physical type, not the man.
+
+**And the man inside the lens of `V4_3C` has to match once the sheet is approved.** He will be replaced
+by compositing, taking him from `4A` rather than generating a separate frame, so 4A does double duty.
+
+**Label format changed in `codebox.md` 10.8.2026.** References now carry position and total, `[R1/3]`,
+`[R2/3]`, `[R3/3]`, because Marko pastes them one at a time on a phone and the count is a checksum
+against dropping one. The prompt tag is now `[prompt]` in lower case.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the

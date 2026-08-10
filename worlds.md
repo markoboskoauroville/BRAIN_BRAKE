@@ -155,7 +155,8 @@ Sheets required, in order of how much damage their absence does:
     GLASS.jpg     the brass magnifying glass, in every scene from 3 to 8    DONE 10.8.2026
     DIAL.jpg      eight shots across five scenes, drawn differently in each
     KEY.jpg       the gold key on the Coach's chain in scene 7
-    LAB.jpg       the scientist's room, empty, so scenes 4 and 5 match
+    LAB.jpg       the scientist's room, empty, so scenes 4 and 5 match      DONE 10.8.2026
+    SCIENTIST.jpg the man himself, turnaround and three expressions          in progress
     DOOR.jpg      scene 8
 
 Sheets are 3:2. Frames are 16:9. Overwrite a sheet at its own filename forever, so that every prompt

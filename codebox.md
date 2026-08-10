@@ -91,21 +91,30 @@ carries its own title saying what it is.
 set of boxes.
 
 **Every box carries a short tag on its own line, directly above it, inside square brackets.**
-References are `[R1]`, `[R2]`, `[R3]` in the order they are pasted. Prompts are `[P1]`, `[P2]`. The
-brackets are not decoration, they are what makes it a tag rather than a word. The tag is the **last
+
+**References carry their position and the total, `[R1/3]`, `[R2/3]`, `[R3/3]`.** Changed 10.8.2026 at
+Marko's request and it is not cosmetic. He pastes these one at a time on a phone while moving, and the
+count in the tag is what tells him he has not dropped one. A tag that says `[R2/3]` is a checksum. A tag
+that says `[R2]` is a name.
+
+**The prompt tag is `[prompt]`, in lower case, inside the brackets.** Not `[P1]`. There is one prompt
+per delivery and it does not need a number, and the lower case word is instantly distinguishable from
+the reference tags above it at a glance, which is the whole point of a tag.
+
+The brackets are not decoration, they are what makes it a tag rather than a word. The tag is the **last
 line before the box** and nothing else shares that line. It does not go in the title and it does not go
 above the summary.
 
-**Beside the tag, the file name and nothing else.** A reference tag reads `[R1] MANAN.jpg`, not the
-path and not the URL. A prompt tag reads `[P1] 3C` or just `[P1]`. The file name is what Marko already
-holds a picture of in his head, so one word tells him which reference this is without reading the title
-or opening the link.
+**Beside the tag, the file name and nothing else.** A reference tag reads `[R1/3] MANAN.jpg`, not the
+path and not the URL. A prompt tag reads `[prompt] 3C` or just `[prompt]`. The file name is what Marko
+already holds a picture of in his head, so one word tells him which reference this is without reading
+the title or opening the link.
 
     THE FULL SPRINT, V4_1C, THE WHOLE FIGURE IN PROFILE
     The runner alone on open paper, side on, the finish line crossing behind him.
     <blank line>
     <blank line>
-    [R1] V4_1C_web.jpg
+    [R1/1] V4_1C_web.jpg
     [box]
 
 Two blank lines above the tag, one below it. The double gap is what lifts the tag off the summary and
@@ -116,8 +125,9 @@ eye reaches the box the tag has scrolled out of view. Sitting immediately above 
 the thing it names are one object. Glance at the box, glance up one line, done, without reading a word
 of the description.
 
-**Numbering restarts at every count.** Two deliveries in one message is R1, R2, P1 and then R1, R2, P1
-again, not R3, R4, P2. The count line resets the sequence.
+**Numbering restarts at every count.** Two deliveries in one message is `[R1/2]`, `[R2/2]`, `[prompt]`
+and then `[R1/2]`, `[R2/2]`, `[prompt]` again. The count line resets the sequence, and the denominator
+is the total for **that delivery**, never for the message.
 
 ---
 
