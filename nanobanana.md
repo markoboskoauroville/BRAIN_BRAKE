@@ -513,3 +513,22 @@ again in a later run, which is what happened to the ghost skin between five and 
 
 **The cast shadow is the one thing that has now worked twice out of two**, in five and again in six, and
 it is beautiful in six. It does not need protecting. Everything else does.
+
+### AND THE TECHNIQUE THAT FOLLOWS FROM ALL OF IT: SHOW THE COMPOSITION, DO NOT DESCRIBE IT
+
+Composition is a relationship between things, which is the half of the tool that does not work, and six
+attempts were spent proving it again. **So stop writing it and build it.**
+
+Pass one gave a correct profile calf that was too small, upright and sharing the paper with an arm. That
+result was then **rotated eighteen degrees clockwise, zoomed to about four times, recentred on the calf
+belly and cropped to sixteen by nine in the container**, until it matched Marko's sketch. The output is
+soft, because it is an upscale, and softness does not matter at all: it is going back in as the anchor,
+and the anchor is where the model reads framing, scale and angle. It reads those from a picture
+perfectly and from a sentence hardly at all.
+
+    assets/V4/attempts/3C_composition_guide_rotated_zoomed.png
+
+**This is now the standard move whenever a frame is right in content and wrong in framing.** Do not
+rewrite the prompt. Take the render, crop and rotate it by hand into the composition you want, feed it
+back, and ask only for quality. It costs no credits, it takes two minutes, and it converts an
+unanswerable request into the one the model is good at, which is redrawing something it can already see.

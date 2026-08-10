@@ -205,6 +205,16 @@ same description, which means it is capacity and not phrasing, and no rewrite wi
 was attached and did not save the glass, so a sheet buys an object its identity and not its place in the
 queue.
 
+**10.8.2026, pass one ran and the leg is right.** Correct profile, calf swell on the left, shin on the
+right, ghost skin contour present, superb line. Filed at
+`assets/V4/attempts/3C_p1_a1_leg_and_arm_correct_profile.png`. It arrived too small, too upright and
+sharing the paper with an arm, so the composition was **built by hand instead of described**: rotated
+eighteen degrees clockwise, zoomed about four times, recentred on the calf belly, cropped to sixteen by
+nine, saved as `assets/V4/attempts/3C_composition_guide_rotated_zoomed.png` and sent back as the anchor.
+**Whenever a frame is right in content and wrong in framing, crop and rotate it by hand and feed it back
+rather than rewriting the prompt.** It costs nothing and it turns a request the model cannot answer into
+one it can.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
