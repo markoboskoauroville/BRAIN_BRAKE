@@ -354,6 +354,19 @@ from the stripped vocabulary written while the anatomy trigger was still believe
 that the leg is science. The charts are **discrete contents**, so the editor changes them on the locked
 geometry.
 
+**11.8.2026. The anatomy plates landed and the full resolution retest passed.** A 2.14 MB master was
+served as the reference and ran without complaint, so the weight question is closed for good. The editor
+swapped the drawing on every pinned sheet while keeping each sheet in its place, at its angle, with its
+pins and lifted corners, and left the rest of the room untouched. **Content swap inside a fixed layout is
+a real strength**, and it is how scene 4 and scene 5 can carry different work on the same wall and still
+be provably the same room.
+
+**But the plates came back covered in invented lettering.** `Bicepo mudde`, `Femur Cemur`, `Tibla`. The
+editor makes up words as freely as the generator does, and more importantly **this film has no words
+anywhere in two minutes**, which is one of the five elements it is built on. Gibberish on the wall is
+worse than nothing, so the lettering comes off and the leader lines stay, which still reads as a
+technical plate without asking either tool to spell.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the

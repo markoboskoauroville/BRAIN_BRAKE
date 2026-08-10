@@ -205,3 +205,26 @@ single generated frame until it is right, lock it, and then everything after tha
 
 This is also why `LAB.jpg` was fine and `4A` was not. `LAB.jpg` view one is a room drawn in one go.
 `4A` is two of them pushed together.
+
+---
+
+## 8. FINDING FIVE. FULL RESOLUTION IS FINE, AND THE EDITOR IS EXCELLENT AT SWAPPING CONTENT IN PLACE
+
+11.8.2026. A **2.14 MB full resolution master** was served as the reference and the job ran without
+complaint, which closes the file weight question for good.
+
+The task was to replace the drawings on every pinned sheet on a wall while keeping each sheet in the same
+place, at the same size, at the same angle, with the same pins and the same lifted corners. **It did
+exactly that.** New anatomical plates, a muscle figure, two skeletons, a ribcage, a knee joint, a femur
+and a tibia, all correctly drawn in the same pencil, and the window, door, desk, lamp, cup, chair,
+bookshelf, paper stacks and floor sheets are untouched.
+
+**So content swap inside a fixed layout is a strength, and a big one.** It means a room can be dressed
+and redressed without ever regenerating it, which is how the same laboratory can appear in scene 4 and
+scene 5 with different work on the wall and still be provably the same room.
+
+**One weakness confirmed, and it is inherited from the generator.** Every annotation came back as
+convincing gibberish. `Bicepo mudde`, `Femur Cemur`, `Tibla`, `Sherrum`. The editor invents lettering
+exactly as freely as Nano Banana does. If a surface would carry writing, either whitelist a few real
+words or **ask for the lettering to be removed and the leader lines kept**, which reads as a technical
+plate without asking either tool to spell.
