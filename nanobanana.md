@@ -102,6 +102,7 @@ Read this table before blaming the prompt.
 | A lens, glass or window comes back empty | Its contents were named after the object instead of as the subject | Give the interior as many words as the surface around it |
 | The exact thing you forbade appears in the picture | You named it. The model renders nouns and ignores the word in front of them | **Never write a negation.** Describe the crop positively until there is no room for the unwanted thing |
 | One of four described elements silently missing, a different one each run | The frame is over its budget of about two subjects | Build the frame in passes, drawn world first, photographic objects second, image to image |
+| Generation failed, credits returned, nothing comes back | A refusal or a service error, not a craft problem | Bisect. Strip to the safest version, then add one suspect group per run. See section 4d |
 
 ---
 
@@ -569,3 +570,34 @@ given, because completing objects is what it does.
 Two runs were spent on this and `3C` was locked without the cap instead. The presence of Manan in this
 frame is carried by the handle of his glass running out of the lower right corner, which is a cut
 fragment of his property and does the job at no cost.
+
+---
+
+## 4d. A HARD FAILURE IS NOT A BAD IMAGE, AND IT IS DIAGNOSED DIFFERENTLY
+
+10.8.2026. `4A` returned **Generation failed, credits returned**, twice in three minutes. Nothing came
+back at all. That is a refusal or a service error, not a composition problem, and rewriting for craft is
+wasted effort until it is cleared.
+
+**The suspect list, in order.** In this prompt the anatomical plates on the wall are named as **a
+skeleton, a ribcage, a femur and a full figure**. A full anatomical figure is an unclothed body, and
+skeleton and ribcage sit near medical and gore filters. The same words passed once, in the `LAB.jpg`
+sheet prompt, when the room was **empty**. Adding a person into a room described that way is the one
+thing that changed, and a filter that is looking at the combination rather than the words would fire
+exactly there.
+
+**But do not be certain.** A hard failure twice in a row can also be the service. The two causes are
+told apart by the same method either way.
+
+**The bisect protocol, use it for any hard failure.**
+
+    1. Strip the prompt to its safest possible version, plain nouns only,
+       and run it. If that also fails, the problem is the service and not
+       the words, so wait and rerun rather than rewrite.
+    2. If the safe version renders, add back one suspect group per run.
+    3. The group that kills it is the trigger. Write it here.
+
+**And when a word is the trigger, replace the register rather than the noun.** Charts, diagrams,
+figures, printed sheets and studies all describe the same wall without naming a body or a bone. The
+picture is identical and the words are not, which is the whole trick.
+
