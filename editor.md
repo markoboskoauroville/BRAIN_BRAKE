@@ -61,7 +61,18 @@ guides. If G passes, it becomes the main tool for the rest of the film.
 
 ## 4. WHAT WE KNOW
 
-Nothing yet. First run is `4A`, testing A, B, C, D and G at once, on the collage at
+**Finding one, 11.8.2026, and it is about the platform rather than the model. Reference files must be
+light.** The first editor run returned **Generation failed, credits returned**, on a 5.9 MB PNG input.
+Nano Banana had failed the same way twice in the half hour before, on a 1.21 MB reference. A previous
+E-Pro job on 4.8. had succeeded. Two different engines, same failure, same window: the input, not the
+words and not the model.
+
+Every reference that has ever worked here is under about half a megabyte. **Serve a `_web` copy of
+everything, longest edge 1600, JPEG quality 85, under 400 KB.** PNG is the worst offender because a
+pencil drawing full of grain does not compress, and a 16 by 9 PNG at 2752 wide runs to six megabytes.
+The collage was rebuilt as `4A_editor_input_collage_web.jpg` at 0.34 MB.
+
+**So the first real capability test has still not been run.** First run is `4A`, testing A, B, C, D and G at once, on the collage at
 `assets/V4/attempts/4A_editor_input_collage.png`, built from `LAB.jpg` view one and view three with the
 figure from `SCIENTIST.jpg` pasted in at rough scale.
 

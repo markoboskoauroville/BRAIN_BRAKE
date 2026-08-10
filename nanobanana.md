@@ -579,7 +579,28 @@ fragment of his property and does the job at no cost.
 back at all. That is a refusal or a service error, not a composition problem, and rewriting for craft is
 wasted effort until it is cleared.
 
-**The suspect list, in order.** In this prompt the anatomical plates on the wall are named as **a
+**11.8.2026 UPDATE, AND IT WAS NOT THE WORDS AT ALL. IT IS THE WEIGHT OF THE REFERENCE FILES.** The
+same hard failure then happened on the **AI Image Editor**, a completely different model on the same
+platform, and a tool that had run successfully on 4.8. Two different engines failing within half an hour
+is not a content filter, it is the input.
+
+Every reference file ever used successfully on this production is **under about half a megabyte**. The
+two `4A` runs are the first that ever pointed at `LAB.jpg`, which is **1.21 MB**, and the editor run
+pointed at a **5.9 MB PNG** collage. All four failed. Nothing else has ever been that heavy.
+
+    worked, every time     0.11 to 0.47 MB
+    failed, every time     1.21 MB, and 5.90 MB
+
+**THE RULE. NEVER POINT EITHER TOOL AT A MASTER FILE. ALWAYS SERVE A `_web` COPY, LONGEST EDGE 1600,
+JPEG QUALITY 85, UNDER 400 KB.** Masters stay in the repo for the edit and the grade. The tools get the
+light copy. `LAB_web.jpg`, `SCIENTIST_web.jpg`, `GLASS_web.jpg` and `MANAN_web.jpg` were made on
+11.8.2026 for exactly this reason, and a `_web` copy is made of every reference from now on at the moment
+the master is saved.
+
+This also explains why the earlier sheets all worked. They were saved as attempt crops and web jpgs,
+which are small by accident. The moment the pipeline started serving full sheets, it stopped.
+
+**The old suspect list, kept because it may still be a second cause.** In this prompt the anatomical plates on the wall are named as **a
 skeleton, a ribcage, a femur and a full figure**. A full anatomical figure is an unclothed body, and
 skeleton and ribcage sit near medical and gore filters. The same words passed once, in the `LAB.jpg`
 sheet prompt, when the room was **empty**. Adding a person into a room described that way is the one
