@@ -762,3 +762,24 @@ the standing practice. `MANAN_AT_DESK.jpg` and `ROOM_WIDE.jpg` were cut out of `
 **The general form of the rule, worth holding on to.** Whatever is structural in a reference will
 transfer whether it was asked for or not. Aspect, panel grid, borders, labels, the number of subjects.
 If the output should not have it, the reference must not have it either.
+
+**11.8.2026, SECOND ATTEMPT, AND THE SINGLE PANEL CROPS DID NOT FIX IT.** Fed two single images, asked
+for one continuous photograph, and it returned **a seven panel grid in portrait**, having also ignored
+the requested sixteen by nine. So the cause is not the panel structure of the reference. Something else
+is holding it in sheet mode.
+
+**The remaining suspects, and there are only three.**
+
+    the references     any reference of this boy in this room may now read as
+                       documentation to the model, whatever its crop
+    the tool state     an aspect or mode control left set from the last job,
+                       which would also explain the portrait output
+    the prompt         a word in it reading as a layout instruction
+
+**The test that separates them costs one credit: run the prompt with no reference images at all.** If a
+single frame comes back, the references are the cause and final frames get made from text plus the
+editor. If a grid comes back again, it is the tool and not us, and no rewriting will help.
+
+**This is the bisect protocol from section 4d and it applies to any stubborn failure.** Strip to the
+simplest possible version first, then add one thing back at a time. Two credits have now gone on
+guessing instead of testing, which is the mistake that section exists to prevent.
