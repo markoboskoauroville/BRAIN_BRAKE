@@ -164,3 +164,29 @@ rather than on the day.
 
 **Manan.** Everything commercial goes through Neha. Anything to him directly should be short and about
 the work. One sentence per take on the day, full reset between lines, break every twenty minutes.
+
+---
+
+## 6. VERSION FIVE, THE CREW MESSAGES. WRITTEN 11.8.2026, **NOT SENT**
+
+**Both of these are held until Neha approves version five.** She is the producer and she is paying, and
+telling the crew the film has changed before she has agreed to it puts her in the position of having to
+either rubber stamp it or overrule her own team. Send the producer plan first, wait for her yes, then
+these two go out on the same day.
+
+**The documents that go with them, all in `assets/pdf/`:**
+
+    5-...-v5-shooting-guide.pdf              Manan and Neha. Every frame, the line, how it is shot.
+    6-...-camera-guide-Venkatesh.pdf         Format, lenses, light, the six fixed technical points.
+    7-...-animatorski-brief-Kristijan.pdf    Croatian. Eighteen animated shots, three that must be exact.
+
+Boards live at `markoboskoauroville.github.io/BRAIN_BRAKE/boards/v5.html`.
+
+### 6.1 TO KRISTIJAN, CROATIAN, DRAFT, NOT SENT
+
+### 6.2 TO VENKATESH, ENGLISH, DRAFT, NOT SENT
+
+Both message texts are held in the chat and reproduced below when sent. The substance: the film has been
+rebuilt around Manan, the animation load falls by more than half, Kristijan requotes against a smaller
+job and Venkatesh gains a second day. Neither is asked to start.
+
