@@ -327,6 +327,32 @@ the inside and it does not need commenting on twice.
 
 ---
 
+## 12c. THE SANITY CHECK. ASK FOR A SCREENSHOT BEFORE REWRITING ANYTHING
+
+Marko's instruction, 11.8.2026, after a bug in the keyboard he is building meant that pasting into the
+generator **appended** instead of replacing, so every prompt for three runs carried the tail of the one
+before it. Three credits and about an hour went on rewriting prompts that were never the problem.
+
+**When output does not match the prompt in a way that makes no sense, ask him for a screenshot of the
+generation screen before changing a single word.** The prompt box, the attached images, the aspect
+control, the model, all in one picture. It costs one message and it has already saved more than it will
+ever cost.
+
+**What to look for in it.** Text in the prompt box that he did not write, or the same idea appearing
+twice. Reference images still attached from the last job. Aspect on auto. A different model selected
+than the one intended.
+
+**And the rule underneath it, which is the real one.** Every unexplained failure on this production has
+turned out to be **stale state** and not one has been the wording. A full image library, a leftover
+prompt, carried over attachments, an auto aspect. When a tool behaves impossibly, ask what it is still
+holding from last time before assuming it misunderstood.
+
+**He is running about ten projects and is often dictating while moving.** He has asked to be checked
+rather than trusted on this, and asking is not a criticism of him, it is part of the method. He will
+sometimes be mid way through building the very tool that is producing the fault, as he was here.
+
+---
+
 ## 13. THINGS THAT WILL BITE YOU
 
 - The sandbox proxy blocks `github.io`. Verify locally, never by fetching the live URL.
