@@ -32,8 +32,10 @@
     DESK.jpg            DONE 11.8.2026. Three angles, from directly above, from desk height,
                         and three quarter from a seated eye level. Middle of the surface kept
                         clear, because that is where everything drawn will stand.
-    LEVER.jpg           The lever in its slot with the scale. Object sheet, multiple angles.
-                        It is the most important object in the film and it has never had one.
+    LEVER.jpg           DONE 11.8.2026. Six views. Scale engraved on the plate, 100 at the top
+                        of the slot and 95 one mark below. In the raised view the ball stops at
+                        95 with visible empty slot above it. That gap IS the film's argument and
+                        it must never be closed in any frame.
     BOOK.jpg            The old book, open and shut. It is a portal twice and must be the same
                         book both times.
 
