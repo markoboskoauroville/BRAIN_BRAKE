@@ -97,6 +97,14 @@ Marko's request and it is not cosmetic. He pastes these one at a time on a phone
 count in the tag is what tells him he has not dropped one. A tag that says `[R2/3]` is a checksum. A tag
 that says `[R2]` is a name.
 
+**The prompt tag carries the aspect ratio.** Set 11.8.2026. `[prompt 16:9]`, `[prompt 3:2]`. The tool has
+an aspect control that is easy to leave on **auto** from the last job, and on auto the model picks for
+itself, which has already cost a full resolution frame that had to be cropped down to 1600 by 900. The
+aspect belongs on the line Marko is looking at when he sets the form, not buried in a sentence above it.
+
+    [prompt 16:9]      every film frame
+    [prompt 3:2]       every model sheet and every storyboard
+
 **The prompt tag is `[prompt]`, in lower case, inside the brackets.** Not `[P1]`. There is one prompt
 per delivery and it does not need a number, and the lower case word is instantly distinguishable from
 the reference tags above it at a glance, which is the whole point of a tag.
