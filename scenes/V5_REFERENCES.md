@@ -29,8 +29,9 @@
     ROOM.jpg            DONE 11.8.2026. Three views, empty. Warm painted wall, window with a
                         grille, ceiling fan, wooden desk under the window, bed, bookshelf with a
                         cricket bat and trophies, pinboard. Hard afternoon sun across the floor.
-    DESK.jpg            His desk top, empty, from the three angles the film uses. This is the
-                        stage every drawn thing stands on.
+    DESK.jpg            DONE 11.8.2026. Three angles, from directly above, from desk height,
+                        and three quarter from a seated eye level. Middle of the surface kept
+                        clear, because that is where everything drawn will stand.
     LEVER.jpg           The lever in its slot with the scale. Object sheet, multiple angles.
                         It is the most important object in the film and it has never had one.
     BOOK.jpg            The old book, open and shut. It is a portal twice and must be the same
