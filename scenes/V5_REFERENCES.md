@@ -36,8 +36,13 @@
                         of the slot and 95 one mark below. In the raised view the ball stops at
                         95 with visible empty slot above it. That gap IS the film's argument and
                         it must never be closed in any frame.
-    BOOK.jpg            The old book, open and shut. It is a portal twice and must be the same
+    BOOK.jpg            DONE 11.8.2026. Six views, dark green cloth worn at the corners, no
+                        lettering anywhere, blank cream pages. A portal twice, so it is the same
                         book both times.
+
+    STILL MISSING
+    MANAN.jpg           The boy as he actually is. His own clothes, his own room, no costume.
+                        Needed before any final frame, because he is in every one of them.
 
 ---
 
