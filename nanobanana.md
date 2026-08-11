@@ -729,3 +729,18 @@ one prompt, one credit, and Marko chose a scene direction off it in a few second
 paragraphs of prose to describe badly. **When a decision is about story rather than craft, board it
 instead of writing it.** Rough is the point: a thumbnail that looks finished invites notes on the drawing
 rather than a decision about the film.
+
+**11.8.2026 — CLEANING A REFERENCE DOES NOT IMMUNISE THE NEXT GENERATION.** `ROOM.jpg` was cleaned of a
+recognisable public figure and of every invented word, and the very next sheet generated **from that
+cleaned reference** put the same poster back on the wall, with the same garbled name across it.
+
+**Because the fault was never in the reference. It is in the model's own idea of what a boy's room in
+India contains.** A reference biases; it does not forbid. Anything the model reaches for by default will
+keep coming back for as long as the prompt leaves a gap where it fits.
+
+**So there are two ways to keep a fault out and both are needed.** Specify the thing **positively** in
+every prompt that could summon it, a flat silhouette poster rather than silence about posters. And run a
+clean up pass on every output regardless, because the prompt will not catch everything.
+
+**This is the same shape as the negation finding in section 4b.** Leaving something unsaid is not the
+same as excluding it. The model fills gaps, and it fills them with the most common thing.
