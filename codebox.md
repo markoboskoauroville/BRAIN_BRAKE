@@ -101,13 +101,17 @@ that says `[R2]` is a name.
 Image To Image AI, 16:9.` is now a two column table, because Marko scans it on a phone before he starts
 setting the form and a table is read at a glance where a sentence has to be parsed.
 
+**Value in the left column, label in the right.** Corrected 11.8.2026. The value is the thing he needs
+and on a phone the right hand column is the one that gets truncated, so the label is what should be
+allowed to run off the edge, never the setting.
+
 | | |
 |---|---|
-| **Tool** | Image To Image AI |
-| **Model** | Nano Banana Pro |
-| **Aspect** | 16:9 |
-| **References** | 1 |
-| **Prompts** | 1 |
+| Image To Image AI | **Tool** |
+| Nano Banana Pro | **Model** |
+| 16:9 | **Aspect** |
+| 1 | **References** |
+| 1 | **Prompts** |
 
 Fill only the rows that apply. For an editor job the tool row reads AI Image Editor and the model row
 reads E-Pro. **Pre flight** goes in the table too when it needs saying, which is every time.
