@@ -473,6 +473,15 @@ because the rules require the explanation to be his and the timings will move wh
 **If she says no or wants changes**, version four is intact. Twenty seven frames, nine scenes, every
 sheet and all the tool knowledge, and nothing about it was deleted to make room for version five.
 
+**11.8.2026. SCENE ONE OF VERSION FIVE IS COMPLETE. `assets/V5/V5_1_1` to `V5_1_6`.** Wide to camera,
+the screen twice, the reaction, the question, and his hand on the book. Six frames, all photographic,
+no drawn element anywhere in the scene, which is correct: the drawn world does not arrive until he opens
+the book in scene 2.
+
+**The pipeline that produced them, and it is fast now.** One reference, one prompt, full pre flight,
+sixteen by nine set explicitly. Each frame uses the previous locked frame as its reference, so the room,
+the light and the boy carry themselves forward and nothing has to be described twice.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
