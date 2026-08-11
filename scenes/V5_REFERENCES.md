@@ -26,8 +26,9 @@
     WORKERS, BRAIN_ROOM Belong to earlier versions. Kept, not used.
 
     MAKE NEW
-    ROOM.jpg            Manan's bedroom. The single most important new asset, because the whole
-                        film happens in it and Venkatesh has to dress a real room to match.
+    ROOM.jpg            DONE 11.8.2026. Three views, empty. Warm painted wall, window with a
+                        grille, ceiling fan, wooden desk under the window, bed, bookshelf with a
+                        cricket bat and trophies, pinboard. Hard afternoon sun across the floor.
     DESK.jpg            His desk top, empty, from the three angles the film uses. This is the
                         stage every drawn thing stands on.
     LEVER.jpg           The lever in its slot with the scale. Object sheet, multiple angles.
