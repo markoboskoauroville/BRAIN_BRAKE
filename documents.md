@@ -148,3 +148,26 @@ everywhere else.
 - The shot lists, both languages. Keywords and emotion per shot, nothing else.
 - The pitch. Already close, check it against section 5.
 - The symbolic framework document is covered by section 6 and may stay long.
+
+---
+
+## FILE NAMING FOR ANYTHING THAT GOES TO A PERSON
+
+Set 11.8.2026 by Marko. **Every deliverable file starts with its language in square brackets.**
+
+    [EN] 6 - v5 camera guide - Venkatesh.pdf
+    [HR] 7 - v5 animatorski brief - Kristijan.pdf
+
+**Why it is at the front and not at the end.** Marko reads these on a phone, in a list, at a glance,
+and often in a hurry before forwarding one to somebody. The language decides who the file is for, so it
+is the first thing that has to be readable. A suffix is invisible when the middle of a long name is
+truncated, which is what phones do.
+
+**The rest of the name, in order:** the number, the version, what it is, who it is for. Human readable
+with spaces, because these are files people receive rather than files code reads.
+
+**Where a document exists in two languages it keeps the same number**, so `[EN] 7` and `[HR] 7` are the
+same brief for the same person. Kristijan gets Croatian and works in it, and the English exists so that
+Neha, Manan or anybody else on the film can read what the animator has been told.
+
+Internal repo documents are not renamed. This applies to `assets/pdf/` and to anything sent out.
