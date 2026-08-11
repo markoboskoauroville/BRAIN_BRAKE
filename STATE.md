@@ -440,6 +440,24 @@ rough so they invite a decision about the film rather than notes on the drawing.
 words allowed and the model drew none of them. It either invents words or omits them, so no frame may
 depend on text. Anything that must be readable goes on in the container.
 
+**11.8.2026. VERSION FIVE IS OPENED AND IT CHANGES THE BET. `scenes/V5.md`.** Manan on camera in all
+six scenes, speaking, the drawn world supporting rather than carrying. The reason is research and not
+taste: **the rubric has four equally weighted criteria and illumination is one of them**, which a silent
+film cannot compete on, and the rules require English scripts and voiceovers. Past winners and every
+guide say the same thing, that judges are reading the student rather than the film, and a previous winner
+recommends the student be on screen for at least forty percent of the running time. Version four has him
+on for about eight seconds of a hundred and twenty.
+
+**The structure is Star Wars and it is not hidden.** Coach Brain is Yoda: small, comic, unimpressive,
+completely right. Manan is the disciple. A student being taught on camera is a student demonstrating
+understanding on camera, so the story shape and the scoring rubric want the same thing.
+
+**And the crossing goes both ways now.** Manan reaches into the drawing, and the drawing reaches out into
+his room. The moment his real hand lands on the drawn lever is the thesis and the climax at once.
+
+**Version four is not deleted.** Twenty seven frames, nine scenes, all the sheets and all the tool
+knowledge stand, and much of it transfers directly.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
