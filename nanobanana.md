@@ -744,3 +744,21 @@ clean up pass on every output regardless, because the prompt will not catch ever
 
 **This is the same shape as the negation finding in section 4b.** Leaving something unsaid is not the
 same as excluding it. The model fills gaps, and it fills them with the most common thing.
+
+**11.8.2026 — A MULTI PANEL REFERENCE IMPOSES ITS LAYOUT ON THE OUTPUT. SHEETS BEGET SHEETS.** The first
+final frame was asked for as a single film frame and came back as **another six panel character sheet**,
+because both references handed to it were six panel sheets. The prompt said film frame, said single, and
+described one continuous scene. The layout of the reference beat every word of it.
+
+**This is the same law as everywhere else on this tool: the reference decides form, the prompt decides
+content.** It was already known that an anchor dictates line weight, paper and hand. Panel structure is
+part of that same inheritance and it is the strongest part.
+
+**So sheets are for making sheets, and single frames need single frame references.** Crop one panel out
+of the sheet and feed that instead. It costs nothing, it takes a minute in the container, and it is now
+the standing practice. `MANAN_AT_DESK.jpg` and `ROOM_WIDE.jpg` were cut out of `MANAN.jpg` and
+`ROOM.jpg` for exactly this.
+
+**The general form of the rule, worth holding on to.** Whatever is structural in a reference will
+transfer whether it was asked for or not. Aspect, panel grid, borders, labels, the number of subjects.
+If the output should not have it, the reference must not have it either.
