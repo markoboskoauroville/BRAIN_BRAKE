@@ -153,21 +153,25 @@ everywhere else.
 
 ## FILE NAMING FOR ANYTHING THAT GOES TO A PERSON
 
-Set 11.8.2026 by Marko. **Every deliverable file starts with its language in square brackets.**
+Set 11.8.2026 by Marko, corrected the same day.
 
-    [EN] 6 - v5 camera guide - Venkatesh.pdf
+**The name is the number, the version, what it is, and who it is for.** Human readable, with spaces,
+because these are files people receive rather than files code reads.
+
+    6 - v5 camera guide - Venkatesh.pdf
+
+**The language tag in square brackets goes at the front, and ONLY where the same document exists in two
+languages.** Which on this film means Kristijan and nobody else, because he is the only person we speak
+to in two languages.
+
     [HR] 7 - v5 animatorski brief - Kristijan.pdf
+    [EN] 7 - v5 animation brief - Kristijan.pdf
 
-**Why it is at the front and not at the end.** Marko reads these on a phone, in a list, at a glance,
-and often in a hurry before forwarding one to somebody. The language decides who the file is for, so it
-is the first thing that has to be readable. A suffix is invisible when the middle of a long name is
-truncated, which is what phones do.
+Everything else is in English and tagging it says nothing. A tag on every file is noise, and noise on
+every line is the same as no information at all. **Only mark the thing that varies.**
 
-**The rest of the name, in order:** the number, the version, what it is, who it is for. Human readable
-with spaces, because these are files people receive rather than files code reads.
-
-**Where a document exists in two languages it keeps the same number**, so `[EN] 7` and `[HR] 7` are the
-same brief for the same person. Kristijan gets Croatian and works in it, and the English exists so that
-Neha, Manan or anybody else on the film can read what the animator has been told.
+**Where a document exists in two languages it keeps the same number.** Kristijan works from the Croatian.
+The English exists so Neha, Manan and Venkatesh can read what the animator has been told, which matters
+here because the camera guide and the animation brief were written as one document split in two.
 
 Internal repo documents are not renamed. This applies to `assets/pdf/` and to anything sent out.

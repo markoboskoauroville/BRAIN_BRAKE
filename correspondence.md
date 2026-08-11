@@ -176,8 +176,8 @@ these two go out on the same day.
 
 **The documents that go with them, all in `assets/pdf/`:**
 
-    [EN] 5 - v5 shooting guide - Manan and Neha.pdf     Every frame, the line, how it is shot.
-    [EN] 6 - v5 camera guide - Venkatesh.pdf            Format, lenses, light, six fixed points.
+    5 - v5 shooting guide - Manan and Neha.pdf          Every frame, the line, how it is shot.
+    6 - v5 camera guide - Venkatesh.pdf                 Format, lenses, light, six fixed points.
     [HR] 7 - v5 animatorski brief - Kristijan.pdf       What the animator actually works from.
     [EN] 7 - v5 animation brief - Kristijan.pdf         Same brief, so the rest of the crew can read it.
 
