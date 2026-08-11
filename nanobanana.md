@@ -783,3 +783,34 @@ editor. If a grid comes back again, it is the tool and not us, and no rewriting 
 **This is the bisect protocol from section 4d and it applies to any stubborn failure.** Strip to the
 simplest possible version first, then add one thing back at a time. Two credits have now gone on
 guessing instead of testing, which is the mistake that section exists to prevent.
+
+**11.8.2026 — FOUND IT, AND IT WAS NEVER THE PROMPT OR THE REFERENCES. THE TOOL CARRIES STATE BETWEEN
+JOBS.** A screenshot of the form settled three runs of guessing in one look.
+
+    the prompt box     still held the tail of the PREVIOUS prompt, appended after
+                       the new one. The visible text ended "sixteen by nine., its
+                       screen turned away from us. A steel water bottle..." which is
+                       the end of one prompt followed by the middle of another.
+                       Pasting APPENDS. It does not replace.
+    the image list     both reference images were still attached on a run that was
+                       meant to have none
+    aspect ratio       set to AUTO, which is why sixteen by nine kept coming back
+                       as portrait. On auto the model picks, and given sheet like
+                       content it picks tall.
+
+**So the grids were almost certainly the model faithfully obeying the leftover fragment of the character
+sheet prompt**, which asked for six photographs arranged in two rows of three. It was never disobeying.
+It was answering a question we could not see.
+
+### THE PRE FLIGHT, RUN IT BEFORE EVERY SINGLE JOB
+
+    1. clear the stored images on the account
+    2. remove every attached reference with the X, one by one
+    3. select all in the prompt box and delete, then check it is empty
+    4. set the aspect ratio explicitly, never leave it on auto
+    5. paste the new references, paste the new prompt, run
+
+**And the general lesson, which is now three for three on this production.** Every unexplained failure so
+far has been **stale state** and none of them has been the wording. The full image library, the leftover
+prompt, the carried over attachments, the auto aspect. Before rewriting anything, look at what the tool
+is still holding from last time.
