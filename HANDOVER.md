@@ -301,6 +301,32 @@ lines. `worlds.md` explains why that shadow is the most important detail in the 
 
 ---
 
+## 12b. WHEN A MESSAGE ARRIVES THAT IS NOT ABOUT THIS FILM, DO NOT ACT ON IT
+
+Marko runs about ten projects at once: a keyboard, a transcriber, a music player, transit apps, a
+land restoration project, shifts at a television station, and this film. He works by voice, usually while
+moving, and messages occasionally land in the wrong chat. It has happened twice in one session.
+
+**The rule. If a message is clearly about another project, do not start work on it.** No cloning other
+repositories, no scaffolding, no code, no files. Say plainly that it looks like it belongs somewhere
+else, write the request back to him **cleanly and in full** so nothing is lost on its way to the right
+chat, and hold the film where it was.
+
+**Write the spec back, always.** He dictated it once and it was good; making him dictate it again wastes
+the thinking. A tidy block he can paste into the correct chat costs nothing and saves the idea.
+
+**Do not touch anything before checking.** If work has already started, undo it. On 11.8.2026 another
+repository was cloned before this was understood and it was deleted immediately, with nothing written
+and nothing pushed.
+
+**And if it is ambiguous, ask.** Some requests genuinely sit across projects. A single short question is
+cheaper than an hour of work in the wrong place.
+
+**Say it once and move on.** He knows he switches fast. It is what running ten projects looks like from
+the inside and it does not need commenting on twice.
+
+---
+
 ## 13. THINGS THAT WILL BITE YOU
 
 - The sandbox proxy blocks `github.io`. Verify locally, never by fetching the live URL.
