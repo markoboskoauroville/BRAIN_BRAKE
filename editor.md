@@ -270,3 +270,24 @@ the tool can measure it against something it is already drawing.
 
 **And this is cheap to get right and expensive to fix**, because correcting an intensity means another
 pass, and every pass drifts the tone warmer. `4C` came back noticeably more sepia than `4A` again.
+
+---
+
+## 11. THE CLEAN UP PASS, AND IT HAPPENS BEFORE A SHEET IS APPROVED, NOT AFTER
+
+11.8.2026, Marko's rule. **Anything wrong in a reference sheet is fixed the moment it appears**, because
+a sheet is the thing every later frame is generated from, so a fault in it is not one fault, it is one
+fault multiplied by every frame in the scene. This is the same lesson as the stitched room in scene 4,
+learned cheaply this time.
+
+**Two faults recur and both come from the generator, not from us.**
+
+**Invented lettering.** Any writing the model puts on a poster, a note, a label or a screen comes back as
+plausible gibberish. It is fixed by replacing the surface with a blank or graphic one rather than by
+asking for correct words.
+
+**Real people.** A poster of a recognisable public figure is a rights question in a competition entry
+and it is trivially avoidable. Ask for a silhouette, a shape, a flat graphic.
+
+**The editor is the right tool for both.** Given a finished coherent image it changes what it is asked
+about and leaves the rest alone, which is exactly what a clean up pass is.
