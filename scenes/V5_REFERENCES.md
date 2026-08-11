@@ -40,9 +40,15 @@
                         lettering anywhere, blank cream pages. A portal twice, so it is the same
                         book both times.
 
-    STILL MISSING
-    MANAN.jpg           The boy as he actually is. His own clothes, his own room, no costume.
-                        Needed before any final frame, because he is in every one of them.
+    MANAN.jpg           DONE 11.8.2026, and it REPLACES the Sherlock sheet at the same filename.
+                        Grey hoodie, dark jeans, no logos. Six views: standing front, three
+                        quarter and profile, seated wide, seated working, and from behind over
+                        the shoulder. The old costume sheet is gone.
+    MANAN_CLOSE.jpg     A close portrait cropped out of it, because the sheet came back with a
+                        rear view instead of the close portrait that was asked for, and the
+                        close up is the shot size this film uses most.
+
+**All nine sheets exist. Nothing is missing and the final frames can start.**
 
 ---
 
