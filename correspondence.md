@@ -169,6 +169,9 @@ the work. One sentence per take on the day, full reset between lines, break ever
 
 ## 6. VERSION FIVE, THE CREW MESSAGES. WRITTEN 11.8.2026, **NOT SENT**
 
+**STATUS 11.8.2026: the version five message and plan HAVE BEEN SENT TO NEHA. Waiting on her reply.
+Nothing else goes out.**
+
 **Both of these are held until Neha approves version five.** She is the producer and she is paying, and
 telling the crew the film has changed before she has agreed to it puts her in the position of having to
 either rubber stamp it or overrule her own team. Send the producer plan first, wait for her yes, then

@@ -458,6 +458,21 @@ his room. The moment his real hand lands on the drawn lever is the thesis and th
 **Version four is not deleted.** Twenty seven frames, nine scenes, all the sheets and all the tool
 knowledge stand, and much of it transfers directly.
 
+**11.8.2026, END OF SESSION. WHERE IT ACTUALLY STANDS.**
+
+    version 5 documents   written, filed in assets/pdf/, boards live on the site
+    Neha                  SENT. Waiting on her reply. This is the only open thread.
+    Venkatesh             message drafted, NOT SENT
+    Kristijan             message drafted, NOT SENT, brief exists in HR and EN
+    Manan                 shooting guide ready, not yet given to him
+
+**The next action is not ours.** When Neha replies, the two crew messages go out on the same day, and
+the first thing to ask Manan is that he rewrites every line in his own words before anything is booked,
+because the rules require the explanation to be his and the timings will move when he does.
+
+**If she says no or wants changes**, version four is intact. Twenty seven frames, nine scenes, every
+sheet and all the tool knowledge, and nothing about it was deleted to make room for version five.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
