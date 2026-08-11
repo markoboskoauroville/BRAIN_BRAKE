@@ -97,6 +97,21 @@ Marko's request and it is not cosmetic. He pastes these one at a time on a phone
 count in the tag is what tells him he has not dropped one. A tag that says `[R2/3]` is a checksum. A tag
 that says `[R2]` is a name.
 
+**THE COUNT LINE IS A TABLE.** Set 11.8.2026. The line that used to read `2 reference images, 1 prompt.
+Image To Image AI, 16:9.` is now a two column table, because Marko scans it on a phone before he starts
+setting the form and a table is read at a glance where a sentence has to be parsed.
+
+| | |
+|---|---|
+| **Tool** | Image To Image AI |
+| **Model** | Nano Banana Pro |
+| **Aspect** | 16:9 |
+| **References** | 1 |
+| **Prompts** | 1 |
+
+Fill only the rows that apply. For an editor job the tool row reads AI Image Editor and the model row
+reads E-Pro. **Pre flight** goes in the table too when it needs saying, which is every time.
+
 **The prompt tag carries the aspect ratio.** Set 11.8.2026. `[prompt 16:9]`, `[prompt 3:2]`. The tool has
 an aspect control that is easy to leave on **auto** from the last job, and on auto the model picks for
 itself, which has already cost a full resolution frame that had to be cropped down to 1600 by 900. The
