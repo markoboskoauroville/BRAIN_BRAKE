@@ -702,10 +702,27 @@ at the boundary looks like the cause. It was the anatomy words the first time an
 second. It was the bin both times.
 
 **11.8.2026 — a whitelist does not guarantee lettering, it only bounds it.** The scene 5 storyboard named
-eight exact short phrases as the only words allowed on the sheet and the model drew **none of them**. So
-the tool has two failure modes with text and no reliable success: it either invents words or omits them
-entirely. **Never let a frame depend on lettering.** If a word must be readable, it goes on in the
-container afterwards, where it costs nothing and cannot be misspelled.
+eight exact short phrases as the only words allowed on the sheet and the model drew **none of them**.
+
+**CORRECTED THE SAME DAY, AND THIS IS THE USEFUL VERSION.** The six script zero boards came back with
+lettering that is clean, correctly spelled and well placed, including full sentence captions under every
+panel. So the tool **can** letter, and letters well. What decides it is the job:
+
+    short label in a fixed place        reliable. FRONT VIEW, ABSORBED, EPIPHANY,
+                                        SCENE 4 OF 9, a caption under a panel.
+
+    long annotations scattered over
+    small objects in a drawing          invented gibberish. The anatomy plate labels.
+
+    a list of exact phrases with no
+    place named for each of them        dropped entirely. The scene 5 board.
+
+**So lettering is a layout problem, not a spelling problem.** Give each piece of text a **position** and
+keep it short, and it lands. Ask for words without saying where they go, and they vanish. Ask for many
+small words over a busy surface, and they are invented.
+
+Anything that must be exactly right in a final frame still goes on in the container, where it costs
+nothing. Boards and sheets can carry their own titles.
 
 **And the storyboard sheet itself is a method worth keeping.** Six rough thumbnails, no reference images,
 one prompt, one credit, and Marko chose a scene direction off it in a few seconds that had taken several

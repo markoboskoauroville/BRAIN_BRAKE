@@ -105,6 +105,11 @@ The brackets are not decoration, they are what makes it a tag rather than a word
 line before the box** and nothing else shares that line. It does not go in the title and it does not go
 above the summary.
 
+**Scene deliveries are named `SCENE n/total [VERSION]`.** Set 11.8.2026. `SCENE 5/9 [V4]`, not
+`V4 SCENE 5`. The count comes before the version for the same reason the reference tags carry a
+denominator: Marko is reading these on a phone while moving, and the first thing he needs to know is
+where he is in the film, not which draft it belongs to. Script zero boards are `SCENE 5/6 [S0]`.
+
 **Beside the tag, the file name and nothing else.** A reference tag reads `[R1/3] MANAN.jpg`, not the
 path and not the URL. A prompt tag reads `[prompt] 3C` or just `[prompt]`. The file name is what Marko
 already holds a picture of in his head, so one word tells him which reference this is without reading
