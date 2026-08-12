@@ -275,3 +275,27 @@ three rewrites.
 **And two things from the abandoned versions should be carried in rather than lost.** The pop up book,
 which solves the register and costs the animator less than a fully drawn world. And the lever stopping at
 ninety five, which V1's factory already contains in embryo as the lever marked backup power.
+
+---
+
+## 9. SETTLED, 11.8.2026, 18:52. AND A NOTE ABOUT MANAN
+
+**Neha's decision, final.** She takes Marko's view: **B with an A opening**, on the **V3 script**, with
+the two V1 sequences added. She notes that Manan gets confused by too many options because of some of his
+challenges, that she is taking the call herself, and that he liked the V3 script from the start.
+
+**So the answer lands where the boy started.** V3 is his own recommended draft. He has not been overruled
+by the process, he has been arrived at.
+
+**The thing to fix is not the film, it is what Manan believes has been happening.** Five versions in six
+weeks reads, from inside, like his film being repeatedly rejected. It was never that. It was a crew
+disagreeing productively, which is what a crew is for, and it is worth telling him so in language that
+does not sound like an apology.
+
+**A passage for Neha to pass on was written and sent**, saying three things: that versions are normal and
+professional, that his script won, and that what he is inside is the actual process of making a film
+rather than a series of setbacks.
+
+**On who directs, recorded because it will come up again.** Marko directs, Neha produces and holds the
+final call as the person paying and as Manan's parent, and it is Manan's film and his name on the entry.
+Those three are not in conflict as long as they are said out loud, and they have now been said out loud.
