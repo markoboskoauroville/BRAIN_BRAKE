@@ -240,3 +240,38 @@ midday tomorrow.
 **Reply sent to Neha:** thanking her, agreeing about the hook, stating plainly that a corner or voice
 over is the thing the criteria punish, promising boards by midday tomorrow by WhatsApp, and asking for
 feedback as soon as she opens them.
+
+---
+
+## 8. NEHA DECIDES, 11.8.2026, 18:49
+
+**Her message, with two scanned pages from V1 attached.** She wants **the two V1 visuals added to the V3
+script, and V3 used as the final.**
+
+    the muscle factory       scene 2, THE OLD THEORY. Chalkboard, Hill's portrait, a
+                             flowchart building itself, the runner becoming a cartoon
+                             factory, oxygen delivery trucks, an alarm, tiny workers
+                             hauling a lever marked backup power, smoke, a giant stamp
+                             coming down, and the stamp cracking.
+
+    the phone                scene 4, YOUR PHONE ALREADY KNOWS THIS. A monitor becomes
+                             a phone, the battery drops, low power mode, the screen
+                             dims, apps close themselves, a shield forms round the
+                             battery, and the phone morphs back into Coach Brain.
+
+**This is a decision, not another option, so the question about A or B is closed and the ghost in the
+frame is not being made.** V6 is now V3 plus those two sequences.
+
+**And the two she chose are the right two, which is worth saying.** They are the only places in the whole
+production where an abstract mechanism is made concrete enough to feel: a factory that runs out of
+deliveries, and a phone everybody has watched dim in their hand. That is illumination, which is a quarter
+of the score and the criterion V4 could never have won on.
+
+**What still has to be solved and is not in her message.** V3 is eight scenes and has Manan present but
+not on camera much. The forty percent guidance still applies, so the next job is to place him inside V3
+without touching its hook or its structure. That is the work, and it is smaller than any of the last
+three rewrites.
+
+**And two things from the abandoned versions should be carried in rather than lost.** The pop up book,
+which solves the register and costs the animator less than a fully drawn world. And the lever stopping at
+ninety five, which V1's factory already contains in embryo as the lever marked backup power.

@@ -97,3 +97,17 @@ rather than pretending there is one:
 a director can say at this point in a production. The jury wants the student present. Manan wants to be
 the detective. Those are the same request. The visual invention is what makes the explanation land, so
 it serves illumination rather than competing with it.
+
+---
+
+## DECIDED, 11.8.2026
+
+**V6 is V3 plus two sequences from V1.** Neha's call: the muscle factory from scene 2 and the phone from
+scene 4, dropped into the V3 script, and V3 used as the final.
+
+**The A or B question is closed.** The ghost in the frame is not being made. What remains is placing
+Manan inside V3 so the forty percent guidance is met, which is a smaller job than any of the rewrites
+that preceded it.
+
+**Carry in from the abandoned versions:** the pop up book from V5, and the lever stopping at ninety five,
+which V1's factory already contains as the lever marked backup power.
