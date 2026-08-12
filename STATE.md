@@ -492,6 +492,22 @@ drawn element now obeys paper, and the two registers can never blur, because pap
 **Next is scene three, and it contains the first crossing:** the drawn runner leaves the pop up spread
 and walks out onto the real wooden desk. That is the shot the whole visual law exists to make possible.
 
+**11.8.2026. VERSION SIX IS BOARDED IN FULL. EIGHT SCENES, FORTY EIGHT PANELS.**
+`assets/V6/boards/V6_S1` to `V6_S8`. The whole film visible on eight sheets, made in one evening.
+
+**The method that did it, and it is the fastest thing on this production.** One sheet per scene on Nano
+Banana Pro, two references, a cast strip built in the container plus the previous approved sheet. Then
+single panel repair in the editor wherever a beat missed, which happened on four of eight and cost one
+panel each rather than a whole sheet.
+
+**Everything Neha asked for is in it.** The factory, the phone in low power mode, the seven step chain
+with the real terms, Hill and Noakes both credited by date, and the closing invitation.
+
+**And the film now closes properly.** The runner crosses his line in scene 8, so the man the film opens
+on is finished rather than abandoned, which the earlier structure did not do.
+
+**Next: the boards go to Neha by midday on WhatsApp.**
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
