@@ -163,6 +163,34 @@ is the total for **that delivery**, never for the message.
 
 ---
 
+## 4c. A REFERENCE IS DELIVERED AS A RAW URL IN ITS OWN BOX, NOT AS A FILE NAME
+
+Set 12.8.2026 after a delivery went out carrying only the tag `[R1/1] V6_S8_web.jpg` and no box.
+Marko had to go and find the file himself, which is the one thing this format exists to prevent.
+
+**Every reference image gets a code box, and inside that box is the raw GitHub URL and nothing else.**
+
+    https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/V6/boards/V6_S8.jpg
+
+The file name lives in the tag line above the box, the URL lives in the box. The tag is what he reads,
+the box is what he copies. A tag without a box is a reference he cannot attach.
+
+**Why a URL and not an attached image.** He is on a phone, in the image tool, not in this chat. He
+pastes the URL straight into the tool's reference field. An image sitting in the chat has to be saved,
+found in the gallery and uploaded, which is four steps where the URL is one, and every one of those
+steps is a place a reference gets silently dropped.
+
+**Use the full size file, not the `_web` one, for anything the tool has to draw from.** The web copies
+exist for the site. A board sheet being repaired panel by panel needs the resolution.
+
+The full delivery order, unchanged otherwise:
+
+1. Scene name, `SCENE 8/8 [V6]`, and the two column table.
+2. Reference title, summary, tag line `[R1/1] V6_S8.jpg`, box containing the raw URL.
+3. Prompt title, summary, tag line `[prompt] S8 PANEL THREE`, box containing the prompt.
+
+---
+
 ## 5. WHAT GOES INSIDE A BOX
 
 Only the thing to be pasted. A raw URL, a prompt, a message, a command. No labels, no headings, no
