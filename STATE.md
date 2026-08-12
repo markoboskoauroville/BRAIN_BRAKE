@@ -482,6 +482,16 @@ the book in scene 2.
 sixteen by nine set explicitly. Each frame uses the previous locked frame as its reference, so the room,
 the light and the boy carry themselves forward and nothing has to be described twice.
 
+**11.8.2026. SCENE TWO OF VERSION FIVE IS COMPLETE. Twelve frames locked, `V5_1_1` to `V5_2_6`.** The
+book opens, the pop up rises, we go inside the model, the curve is drawn, he accepts it and then he
+doubts it.
+
+**The pop up book is the biggest thing this session found and it was not designed, it appeared.** Every
+drawn element now obeys paper, and the two registers can never blur, because paper is obviously paper.
+
+**Next is scene three, and it contains the first crossing:** the drawn runner leaves the pop up spread
+and walks out onto the real wooden desk. That is the shot the whole visual law exists to make possible.
+
 **So frames are built in passes now.** Pass one is the drawn world alone, no photographic objects, all
 the attention on anatomy and view and scale. Pass two is image to image on the approved pass one, adding
 only the glass and the cap. Each pass stays inside the budget, a failure costs one pass instead of the
