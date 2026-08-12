@@ -76,3 +76,24 @@ Two ways to make V6 and they are genuinely different films. Marko will board whi
 **Marko's own reading, recorded here because it will matter later.** B is closer to what wins, A is
 closer to what he most wants to make, and the real answer is probably B with an A opening: begin in the
 mystery with no explanation at all, then find the boy already inside it.
+
+---
+
+## THE SUMMARY SENT TO NEHA, 11.8.2026
+
+Sent so that producer, director and student are provably reading the same map before a sixth version is
+boarded. The structure of it is worth reusing on any project where a version count has got away from
+everyone: **one line per version, the single strongest thing in each, what the competition actually
+rewards, and only then the proposal.**
+
+The three way frame it uses, and the reason it works, is that it names all three interests out loud
+rather than pretending there is one:
+
+    what the jury rewards        the student explaining, understanding, one idea, honesty
+    what Marko brings            visual invention, structure, the thesis, the pop up book
+    what Manan wants             his hook, his comedy, his detective, his voice
+
+**And it makes the case that these three are not actually in conflict**, which is the only useful thing
+a director can say at this point in a production. The jury wants the student present. Manan wants to be
+the detective. Those are the same request. The visual invention is what makes the explanation land, so
+it serves illumination rather than competing with it.
