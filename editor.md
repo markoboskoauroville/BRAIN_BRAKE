@@ -291,3 +291,19 @@ and it is trivially avoidable. Ask for a silhouette, a shape, a flat graphic.
 
 **The editor is the right tool for both.** Given a finished coherent image it changes what it is asked
 about and leaves the rest alone, which is exactly what a clean up pass is.
+
+---
+
+## 12. SINGLE PANEL REPAIR ON A BOARD SHEET WORKS, 11.8.2026
+
+`V6_S2` came back with five correct panels and a wrong sixth. The editor was asked to replace the drawing
+inside the bottom right panel only, keeping its border, and it did exactly that: CASE CLOSED stamped and
+cracked, in the same pencil, with the other five panels untouched.
+
+**So a six panel board is repairable panel by panel.** A wrong beat no longer costs a whole sheet, which
+changes the economics of boarding: generate a scene in one pass, then fix the one or two panels that
+missed. This is the same law as everywhere else on this tool. Given a coherent finished image it edits
+surgically, and a board sheet is a coherent finished image.
+
+**And the lettering held again.** CASE CLOSED came back clean, which is now three for three on the rule:
+short words, in a named place, land correctly.
