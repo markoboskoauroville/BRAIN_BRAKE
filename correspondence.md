@@ -299,3 +299,50 @@ rather than a series of setbacks.
 **On who directs, recorded because it will come up again.** Marko directs, Neha produces and holds the
 final call as the person paying and as Manan's parent, and it is Manan's film and his name on the entry.
 Those three are not in conflict as long as they are said out loud, and they have now been said out loud.
+
+---
+
+## 10. NEHA SENDS THE FLOWCHART, 11.8.2026, 19:01
+
+**Two more scanned pages from Manan's script, with the note that these explanations should be included.**
+A portrait of A. V. Hill, and the full seven step chain in his own words:
+
+    RUN FASTER
+    MORE OXYGEN NEEDED BY MUSCLES
+    NOT ENOUGH OXYGEN
+    EMERGENCY ENERGY MODE (Anaerobic Glycolysis)
+    LACTATE + H+ BUILD UP IN MUSCLES
+    MUSCLES PRODUCE LESS FORCE
+    FATIGUE
+    STOP RUNNING
+
+**What she is actually asking for is the science, not the picture.** Named terms, a real mechanism, a
+named scientist. This is a request about **difficulty**, which is one of the four criteria and the one
+V4 and V5 were both weakest on. She is right to want it and it should go in whole.
+
+**And it costs nothing in time, because each step already has a factory beat.** Manan built the mapping
+himself without writing it down:
+
+    run faster                  the machines speed up
+    more oxygen needed          more delivery trucks called for
+    not enough oxygen           the trucks stop arriving
+    emergency energy mode       the lever marked backup power is hauled
+    lactate and H+ build up     smoke fills the factory
+    less force                  the machines slow, the workers cough
+    fatigue, stop running       the giant stamp comes down
+
+One flowchart line and one factory action per beat, so the chart and the cartoon are the same clock.
+
+**THE ONE DANGER, AND IT IS ALSO THE FILM'S BEST ASSET.** The lactate step is the part of Hill's picture
+that modern physiology has substantially revised. Lactate is now understood as a fuel rather than a
+poison, and acidosis as a cause of fatigue is contested. **So the flowchart must be presented as what
+scientists believed, not as what is true**, which is exactly what Manan's own script already does: it
+opens Case File One, closes it with a stamp, and then cracks the stamp.
+
+Handled that way it becomes the strongest thing in the film. A film that teaches the old chain, names it
+correctly and then shows precisely where it breaks is doing science rather than reciting it, and that is
+what an expert jury rewards.
+
+**On the portrait.** Hill should be **drawn** rather than a photograph. The register requires it, a real
+photograph of a real person raises a rights question in a competition entry, and Manan's own board
+already shows a framed drawn portrait on the chalkboard wall.
