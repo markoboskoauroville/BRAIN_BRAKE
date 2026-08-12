@@ -8,7 +8,13 @@ Boards go to Neha by midday tomorrow on WhatsApp. Before they go, work the defec
 
 ## THE ONLY OPEN JOB
 `assets/V6/DEFECTS.md`. Seven defects, three of them priority one. Fix one panel at a time in the
-editor. The S8 lever prompt was issued and not yet run.
+editor.
+
+**Corrected 12.8.2026.** This file previously said the S8 lever prompt was issued and not yet run. It
+was run. Marko produced the repaired sheet and the repo was simply a build behind it. The new
+`V6_S8.jpg` is committed. Two of the three S8 p3 faults are gone, the lever is upright with its scale
+and the ball reads 95 with the gap open above it. One fault remains, the hand is still an adult's and
+must be the boy's.
 
 ## THE FILM
 V3 script, eight scenes, plus four things from Manan's V1: the muscle factory, the phone in low power

@@ -12,11 +12,17 @@ comes last, and some of those are left alone.
 
 ## PRIORITY ONE, WRONG MEANING
 
-    S8 p3   THE LEVER IS UPSIDE DOWN. Ball at the bottom of the slot with the shaft
-            rising out of it, gripped in the middle. On LEVER.jpg the ball is the
-            grip and sits on top of the shaft. Marko caught this.
-            Also: no scale and no numbers on it, and the hand is an adult's in a
-            cuffed sleeve when it should be the boy's. This is his moment.
+    S8 p3   PARTLY FIXED 12.8.2026. The prompt was run after all, and it landed two
+            of the three faults. New sheet committed over the old one.
+            FIXED, the lever is the right way up. Ball on top of the shaft as the
+            grip, matching LEVER.jpg.
+            FIXED, the scale is on it. 100 and 95 with tick marks, ball sitting at
+            95 with the gap above it open, which is the story law drawn correctly.
+            STILL WRONG, the hand is an adult's in a cuffed sleeve when it should
+            be the boy's. This is his moment. One editor pass, hand only,
+            everything else in the panel untouched.
+            NOTE the handover said this prompt was issued and not run. It was run.
+            The repo was a build behind the artwork. Check the sheet, not the note.
 
     S6 p2   The ball already sits high, close to 100, BEFORE he eases it. Panel 3
             then shows it at 95. So the lever appears to travel DOWNWARD across the
