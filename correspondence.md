@@ -194,3 +194,38 @@ Both message texts are held in the chat and reproduced below when sent. The subs
 rebuilt around Manan, the animation load falls by more than half, Kristijan requotes against a smaller
 job and Venkatesh gains a second day. Neither is asked to start.
 
+---
+
+## 7. NEHA PUSHES BACK ON VERSION FIVE, 11.8.2026
+
+**Her note, received.** She has read the scripts and is not happy with version five. She understands
+Manan's presence is required, but finds **scripts one and three stronger and more engaging** and version
+five, as it stands, not exciting enough. Her proposal: keep the hook and the energy of one and three, and
+bring Manan in **in a corner of the frame, or as voice over**, so his presence is felt while the
+animation carries the explanation.
+
+**She is right about the hook and wrong about the mechanism, and both halves matter.**
+
+Right, because version four and script one open with a genuine mystery and version five opens with a boy
+talking. The first eight seconds of one and three are better television and there is no arguing with
+that.
+
+Wrong about corner and voice over, because that is precisely the shape the rubric penalises. Illumination
+is scored on whether the viewer understood, and judges are reading the student. A face in a corner over
+animation is a narrator, and every previous winner is a student **in** the film rather than beside it.
+
+**So the answer is neither version but a sixth**, taking the hook and the visual invention of one and
+three and the on camera student of five. Marko's call, made the same day: he will board it and send by
+midday tomorrow.
+
+**Working title, version six. What it has to do.**
+
+    open on the mystery, not on the boy. The runner, the impossible sprint, no explanation.
+    Manan arrives INSIDE that world rather than beside it, as investigator.
+    the pop up book survives, because it is the best thing either version has.
+    he explains on camera at the turns, and the drawn world carries the middle.
+    the lever, the reserve and the respect for Hill all carry over unchanged.
+
+**Reply sent to Neha:** thanking her, agreeing about the hook, stating plainly that a corner or voice
+over is the thing the criteria punish, promising boards by midday tomorrow by WhatsApp, and asking for
+feedback as soon as she opens them.
