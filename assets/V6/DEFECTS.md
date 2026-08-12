@@ -12,17 +12,23 @@ comes last, and some of those are left alone.
 
 ## PRIORITY ONE, WRONG MEANING
 
-    S8 p3   PARTLY FIXED 12.8.2026. The prompt was run after all, and it landed two
-            of the three faults. New sheet committed over the old one.
-            FIXED, the lever is the right way up. Ball on top of the shaft as the
-            grip, matching LEVER.jpg.
-            FIXED, the scale is on it. 100 and 95 with tick marks, ball sitting at
-            95 with the gap above it open, which is the story law drawn correctly.
-            STILL WRONG, the hand is an adult's in a cuffed sleeve when it should
-            be the boy's. This is his moment. One editor pass, hand only,
-            everything else in the panel untouched.
-            NOTE the handover said this prompt was issued and not run. It was run.
-            The repo was a build behind the artwork. Check the sheet, not the note.
+    S8 p3   HAND FIXED 12.8.2026, SECOND PASS. The cuff is now a ribbed hoodie
+            knit and the hand reads as the boy's. The lever is upright with the
+            ball on top of the shaft and the scale is on the plate.
+            REMAINING, AND IT IS A NEW ENTRY, SEE S8 p3b BELOW.
+
+    S8 p3b  THE BALL DOES NOT REACH 95. Measured against the drawn ticks, the top
+            of the ball sits about five units below the 95 mark, so the panel reads
+            roughly 89 and the 95 tick points at empty slot. The dark gap above the
+            ball is therefore about double the length it should be.
+            This was already wrong on the first pass and was missed when that sheet
+            was accepted. Marko did not miss it, it was called correct in error.
+            The law is that the lever stops at 95 and never at 100, and the visible
+            gap above the ball is the sentence nobody speaks. A gap that runs from
+            89 to 100 says a different sentence.
+            FIX: move the ball, the shaft and the hand up together as one group
+            until the top of the ball meets the 95 tick, leaving the short 95 to
+            100 run of dark slot open above it.
 
     S6 p2   The ball already sits high, close to 100, BEFORE he eases it. Panel 3
             then shows it at 95. So the lever appears to travel DOWNWARD across the
