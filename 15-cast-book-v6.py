@@ -355,6 +355,120 @@ def build(lang, out):
         para(ML, y, body, 'D', 9.2, 12.8, CW)
         newpage()
 
+    # ------------------------------------------------------- complete archive
+    y = H - 74
+    c.setFont('DB', 20)
+    c.setFillColor(INK)
+    c.drawString(ML, y, "CIJELI ARHIV" if lang == 'hr' else "THE COMPLETE ARCHIVE")
+    c.setStrokeColor(RULE)
+    c.line(ML, y - 13, W - MR, y - 13)
+    y -= 34
+    y = para(ML, y,
+             ("Sve što je proizvedeno od početka produkcije, bez obzira na kojoj je verziji scenarija "
+              "nastalo. Uključujući verziju četiri, nijemu Sherlock Holmes verziju, koja se više ne snima, "
+              "i sve pokušaje koji nisu prošli. Ništa nije izbrisano.\n"
+              "Odbačeni pokušaji su ovdje namjerno. Nazivi datoteka govore što je bilo krivo, i to je "
+              "najbrži način da se ista greška ne ponovi.")
+             if lang == 'hr' else
+             ("Everything produced since the production started, regardless of which version of the script "
+              "it belonged to. Including version four, the silent Sherlock Holmes version, which is no "
+              "longer being made, and every attempt that failed. Nothing has been deleted.\n"
+              "The rejected attempts are here on purpose. The filenames say what went wrong, and that is "
+              "the fastest way of not making the same mistake twice."),
+             'D', 9.2, 12.8, CW, SOFT)
+
+    order = [
+     ("assets/sb", "PRVE SKICE LIKOVA", "FIRST CHARACTER SKETCHES"),
+     ("assets/shots", "SCENA 1, RANI KADROVI", "SCENE 1, EARLY SHOTS"),
+     ("assets/HERO_V3", "VERZIJA TRI, HERO KADROVI", "VERSION THREE, HERO FRAMES"),
+     ("assets/REFERENCES", "MODEL SHEETOVI I REFERENCE", "MODEL SHEETS AND REFERENCES"),
+     ("assets/V4", "VERZIJA ČETIRI, NIJEMA VERZIJA, GOTOVI KADROVI",
+      "VERSION FOUR, THE SILENT VERSION, FINISHED FRAMES"),
+     ("assets/V4/attempts", "VERZIJA ČETIRI, POKUŠAJI KOJI NISU PROŠLI",
+      "VERSION FOUR, THE ATTEMPTS THAT FAILED"),
+     ("assets/V5", "VERZIJA PET, MENTOR", "VERSION FIVE, THE MENTOR"),
+     ("assets/V5/attempts", "VERZIJA PET, POKUŠAJI", "VERSION FIVE, ATTEMPTS"),
+     ("assets/V6/cast", "VERZIJA ŠEST, LISTOVI POSTAVE", "VERSION SIX, CAST SHEETS"),
+     ("assets/V6/boards", "VERZIJA ŠEST, STORYBOARD, OSAM LISTOVA",
+      "VERSION SIX, STORYBOARD, EIGHT SHEETS"),
+     ("assets/V6/panels", "VERZIJA ŠEST, SVIH 48 KADROVA POJEDINAČNO",
+      "VERSION SIX, ALL 48 FRAMES INDIVIDUALLY"),
+     ("assets/BRAND", "COACH BRAIN, BRAND", "COACH BRAIN, BRAND"),
+     ("assets/BRAND/tries", "COACH BRAIN, BRAND, POKUŠAJI", "COACH BRAIN, BRAND, TRIES"),
+    ]
+
+    COLS, CELLW, CELLH, CAP = 3, (CW - 16) / 3.0, 108.0, 20.0
+    total = 0
+    for folder, hhr, hen in order:
+        imgs = ARCHIVE.get(folder, [])
+        if not imgs:
+            continue
+        if y < 150:
+            newpage()
+            y = H - 74
+        y -= 10
+        c.setFont('MB', 8)
+        c.setFillColor(ACC)
+        c.drawString(ML, y, (hhr if lang == 'hr' else hen) + "   ·   %d" % len(imgs))
+        c.setStrokeColor(RULE)
+        c.setLineWidth(0.5)
+        c.line(ML, y - 6, W - MR, y - 6)
+        y -= 22
+
+        for i, (p, label) in enumerate(imgs):
+            col = i % COLS
+            if col == 0 and i > 0:
+                y -= CELLH + CAP
+            if col == 0 and y - CELLH - CAP < 56:
+                newpage()
+                y = H - 74
+            x = ML + col * (CELLW + 8)
+            try:
+                im = Image.open(p)
+                ar = im.size[0] / im.size[1]
+            except Exception:
+                continue
+            bw, bh = CELLW, CELLH
+            iw, ih = (bw, bw / ar) if bw / ar <= bh else (bh * ar, bh)
+            c.drawImage(ImageReader(p), x + (bw - iw) / 2, y - ih, iw, ih, mask=None)
+            c.setFont('M', 5.4)
+            c.setFillColor(SOFT)
+            name = label
+            while pdfmetrics.stringWidth(name, 'M', 5.4) > CELLW and len(name) > 8:
+                name = name[:-5] + "…"
+            c.drawString(x, y - CELLH - 9, name)
+            total += 1
+        y -= CELLH + CAP
+    newpage()
+
+    y = H - 74
+    c.setFont('DB', 20)
+    c.setFillColor(INK)
+    c.drawString(ML, y, "UKUPNO" if lang == 'hr' else "IN TOTAL")
+    c.setStrokeColor(RULE)
+    c.line(ML, y - 13, W - MR, y - 13)
+    y -= 40
+    c.setFont('DB', 46)
+    c.setFillColor(INK)
+    c.drawString(ML, y - 30, str(total))
+    c.setFont('D', 10)
+    c.setFillColor(SOFT)
+    c.drawString(ML + 100, y - 12,
+                 "slika proizvedenih na ovoj produkciji" if lang == 'hr'
+                 else "images produced on this production")
+    c.drawString(ML + 100, y - 26,
+                 "kroz četiri verzije scenarija" if lang == 'hr'
+                 else "across four versions of the script")
+    y -= 90
+    para(ML, y,
+         ("Verzije tri, četiri i pet nisu izgubljene. Verzija šest je verzija tri plus četiri stvari iz "
+          "Mananovog originala, a sve nacrtano prije toga i dalje drži stil, mjerila i likove.")
+         if lang == 'hr' else
+         ("Versions three, four and five are not lost. Version six is version three plus four things from "
+          "Manan's original, and everything drawn before it still holds the style, the scale and the "
+          "characters."), 'D', 9.2, 12.8, CW, SOFT)
+    newpage()
+
     # missing
     y = H - 74
     c.setFont('DB', 20)
@@ -384,6 +498,37 @@ def build(lang, out):
     print("written", out, os.path.getsize(out))
 
 
+import re as _re
+import collections as _c
+
+
+def build_archive():
+    found = []
+    for root, _, fs in os.walk(R):
+        for f in fs:
+            if f.lower().endswith(('.jpg', '.png')):
+                found.append(os.path.join(root, f))
+    groups = _c.OrderedDict()
+    for p in sorted(found):
+        n = os.path.splitext(os.path.basename(p))[0]
+        n = _re.sub(r'_(web|full|512|1024|w)$', '', n)
+        groups.setdefault((os.path.dirname(p), n), []).append(p)
+    out = _c.defaultdict(list)
+    for (d, _n), v in groups.items():
+        plain = [p for p in v if not _re.search(r'_(web|512|1024|w)\.', p)]
+        best = max(plain or v, key=lambda p: os.path.getsize(p))
+        import hashlib
+        th = '/home/claude/thumbs/%s.jpg' % hashlib.md5(best.encode()).hexdigest()[:12]
+        rel = "assets" + d[len(R):]
+        out[rel].append((th if os.path.exists(th) else best, os.path.basename(best)))
+    def nat(t):
+        return [int(x) if x.isdigit() else x.lower() for x in _re.split(r'(\d+)', t[1])]
+    for k in out:
+        out[k].sort(key=nat)
+    return out
+
+
+ARCHIVE = build_archive()
 os.makedirs("/home/claude/out", exist_ok=True)
 build('hr', "/home/claude/out/[HR] 9 - v6 knjiga likova - Kristijan.pdf")
 build('en', "/home/claude/out/[EN] 9 - v6 character sheets - Kristijan.pdf")
