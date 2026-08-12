@@ -196,6 +196,17 @@ job and Venkatesh gains a second day. Neither is asked to start.
 
 ---
 
+## 6b. FORMAT FOR MESSAGES TO NEHA
+
+Set 11.8.2026. **No greeting at the top and no sign off at the bottom.** They message back and forth on
+WhatsApp all day, so a name at each end is padding on a phone screen and makes a working note read like a
+letter. Start on the first real sentence and stop on the last one.
+
+Applies to Neha. Kristijan and Venkatesh keep their greetings for now, because those are less frequent
+and more formal.
+
+---
+
 ## 7. NEHA PUSHES BACK ON VERSION FIVE, 11.8.2026
 
 **Her note, received.** She has read the scripts and is not happy with version five. She understands
