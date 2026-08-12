@@ -558,7 +558,7 @@ for sc in range(1, 9):
         c.setFont('D', 7.8)
         c.setFillColor(SOFT)
         c.drawString(ML + 26, ytop - IMGH - 13,
-                     "LIVE ACTION + DRAWN" if cam else "DRAWN, nobody needed on the day")
+                     "DRAWN + LIVE ACTION" if cam else "DRAWN")
 
         ty = ytop
         c.setFont('DB', 10.5)
