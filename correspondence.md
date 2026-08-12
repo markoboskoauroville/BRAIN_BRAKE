@@ -346,3 +346,40 @@ what an expert jury rewards.
 **On the portrait.** Hill should be **drawn** rather than a photograph. The register requires it, a real
 photograph of a real person raises a rights question in a competition entry, and Manan's own board
 already shows a framed drawn portrait on the chalkboard wall.
+
+---
+
+## 11. THE BRIEF IS CLOSED, 11.8.2026, 19:06
+
+**Her last message ends "that's all thank you", so no further additions are coming.** She sent one more
+page, V1 scene 6, THE SCIENTIFIC TWIST, saying she sees the scientific verdict in V3 but that some of
+Manan's dialogue in this scene is crucial to explaining the theory, and to keep it in mind for the final
+tomorrow.
+
+**THE PATTERN NOBODY HAS SAID OUT LOUD: every single thing she has asked for comes from V1.** The
+factory, the phone, the flowchart, and now the ending. Four requests, four from Manan's original.
+
+**So the honest description of the film we are making is not "V3 with additions".** It is **Manan's V1,
+told with V3's discipline and Marko's visuals.** That is worth naming, because it is also the kindest
+and truest thing to tell the boy, and because it tells the director what to protect when something has
+to be cut.
+
+**And scene 6 hands us the solution to the lactate problem, in Manan's own words.** His stated objective
+for the ending is *end on a memorable, thought provoking note while maintaining scientific accuracy*, and
+his closing line is *science isn't about having all the answers, it's about asking better questions.*
+
+That line **requires** the crack. A film that ends on better questions has to have shown a good answer
+turning out to be incomplete. So presenting the lactate chain as what was believed, and then breaking it,
+is not the director overruling the writer. It is the only way to earn the ending the writer wrote.
+
+**THE FILM, AS COMMISSIONED, FINAL.**
+
+    spine            V3 script, eight scenes, its structure and its verdict
+    opening          the mystery first, no explanation, Manan found inside it
+    from V1          the muscle factory, the phone and low power mode,
+                     the seven step flowchart with named terms,
+                     the closing line about better questions
+    from V5          the pop up book, and Manan present on camera
+    throughout       the lever that stops at ninety five, Hill respected,
+                     no villain, the number twenty seven
+    delivery         boards to Neha by midday tomorrow, WhatsApp
