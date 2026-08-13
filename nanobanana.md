@@ -814,3 +814,23 @@ It was answering a question we could not see.
 far has been **stale state** and none of them has been the wording. The full image library, the leftover
 prompt, the carried over attachments, the auto aspect. Before rewriting anything, look at what the tool
 is still holding from last time.
+
+## TONE NEEDS A CEILING TOO, 13.8.2026
+
+Frame 2.6, the over the shoulder on the stamp. The prompt said the boy's head and shoulder should be
+"dark and solid against the paper". No bound, so it went to maximum: 19% of pixels below luminance 80,
+against 6.5% on the panel it replaced and 10.9% on the darkest existing Manan panel. He came back as a
+black silhouette instead of pencil.
+
+**This is the same law as intensity everywhere else. Name the ceiling, not the direction.** Tone is an
+intensity instruction and needs a bound compared to something already in the frame.
+
+Write: *no darker than the wooden stamp handle already in this frame.* Not: dark and solid.
+
+**And it was repairable in the container for free.** A lift of `L + (160-L)*0.34` where `L<160`, applied
+as a scale on all three channels so the cream stays cream, brought it to 7.6% and it reads as pencil
+again. Tone is a container job. Do not spend a credit regenerating for tone.
+
+**The tool overruled the prompt on light direction and it was right.** The prompt asked for a key from
+upper right. The tool put it camera left, which is the film's own law from `worlds.md`. Every Manan
+frame is keyed from camera left at forty five degrees. Do not write anything else.
