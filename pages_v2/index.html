@@ -4,51 +4,87 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>THE BRAIN BRAKE V2</title>
 <style>
-  :root{ --paper:#f2ebda; --acc:#8a6b2e; }
+  :root{ --paper:#f2ebda; --acc:#8a6b2e; --gold:#e0a340; }
   *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
   body{margin:0;background:#171512;
        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
   header{position:sticky;top:0;z-index:9;background:#171512;
          border-bottom:1px solid #2e2a24;padding:10px 14px}
+  .row{display:flex;align-items:baseline;gap:10px}
   h1{margin:0;font-size:15px;letter-spacing:.06em;color:var(--paper)}
-  .sub{font-size:11px;color:#8b8377;margin-top:2px}
+  .at{margin-left:auto;font:12px/1 ui-monospace,Menlo,monospace;color:var(--gold);
+      border:1px solid #4a4034;border-radius:4px;padding:4px 8px;white-space:nowrap}
+  .sub{font-size:11px;color:#8b8377;margin-top:3px}
   nav{margin-top:8px;display:flex;flex-wrap:wrap;gap:5px}
-  nav a{display:inline-block;min-width:26px;text-align:center;padding:4px 0;
-        font-size:11px;text-decoration:none;color:#c9bfa4;
+  nav a{display:inline-block;min-width:28px;text-align:center;padding:5px 0;
+        font:11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#c9bfa4;
         border:1px solid #3a352d;border-radius:4px}
-  nav a:active{background:var(--acc);color:#171512}
+  nav a.on{background:var(--gold);color:#171512;border-color:var(--gold);font-weight:700}
   main{padding:14px}
-  figure{margin:0 0 22px}
-  img{width:100%;display:block;border-radius:3px;background:var(--paper)}
+  figure{margin:0 0 22px;scroll-margin-top:104px}
+  img{width:100%;display:block;border-radius:3px;background:var(--paper);
+      outline:2px solid transparent;transition:outline-color .25s}
+  figure.on img{outline-color:var(--gold)}
   figcaption{font:11px/1.6 ui-monospace,Menlo,monospace;color:#6f6757;
              text-align:right;padding-top:6px}
+  figure.on figcaption{color:var(--gold)}
   footer{padding:20px 14px 46px;color:#5d564c;font-size:11px;text-align:center}
   a.dl{color:var(--acc)}
 </style></head><body>
 <header>
-  <h1>THE BRAIN BRAKE &middot; V2</h1>
-  <div class="sub">storyboard and shooting document &middot; 20 pages</div>
-  <nav><a href="#p1">1</a> <a href="#p2">2</a> <a href="#p3">3</a> <a href="#p4">4</a> <a href="#p5">5</a> <a href="#p6">6</a> <a href="#p7">7</a> <a href="#p8">8</a> <a href="#p9">9</a> <a href="#p10">10</a> <a href="#p11">11</a> <a href="#p12">12</a> <a href="#p13">13</a> <a href="#p14">14</a> <a href="#p15">15</a> <a href="#p16">16</a> <a href="#p17">17</a> <a href="#p18">18</a> <a href="#p19">19</a> <a href="#p20">20</a></nav>
+  <div class="row"><h1>THE BRAIN BRAKE &middot; V2</h1><span class="at" id="at">page 1 / 20</span></div>
+  <div class="sub">storyboard and shooting document</div>
+  <nav><a href="#p1" data-n="1">1</a><a href="#p2" data-n="2">2</a><a href="#p3" data-n="3">3</a><a href="#p4" data-n="4">4</a><a href="#p5" data-n="5">5</a><a href="#p6" data-n="6">6</a><a href="#p7" data-n="7">7</a><a href="#p8" data-n="8">8</a><a href="#p9" data-n="9">9</a><a href="#p10" data-n="10">10</a><a href="#p11" data-n="11">11</a><a href="#p12" data-n="12">12</a><a href="#p13" data-n="13">13</a><a href="#p14" data-n="14">14</a><a href="#p15" data-n="15">15</a><a href="#p16" data-n="16">16</a><a href="#p17" data-n="17">17</a><a href="#p18" data-n="18">18</a><a href="#p19" data-n="19">19</a><a href="#p20" data-n="20">20</a></nav>
 </header>
-<main><figure id="p1"><img loading="lazy" src="page-01.png" alt="page 1"><figcaption>1 / 20</figcaption></figure>
-<figure id="p2"><img loading="lazy" src="page-02.png" alt="page 2"><figcaption>2 / 20</figcaption></figure>
-<figure id="p3"><img loading="lazy" src="page-03.png" alt="page 3"><figcaption>3 / 20</figcaption></figure>
-<figure id="p4"><img loading="lazy" src="page-04.png" alt="page 4"><figcaption>4 / 20</figcaption></figure>
-<figure id="p5"><img loading="lazy" src="page-05.png" alt="page 5"><figcaption>5 / 20</figcaption></figure>
-<figure id="p6"><img loading="lazy" src="page-06.png" alt="page 6"><figcaption>6 / 20</figcaption></figure>
-<figure id="p7"><img loading="lazy" src="page-07.png" alt="page 7"><figcaption>7 / 20</figcaption></figure>
-<figure id="p8"><img loading="lazy" src="page-08.png" alt="page 8"><figcaption>8 / 20</figcaption></figure>
-<figure id="p9"><img loading="lazy" src="page-09.png" alt="page 9"><figcaption>9 / 20</figcaption></figure>
-<figure id="p10"><img loading="lazy" src="page-10.png" alt="page 10"><figcaption>10 / 20</figcaption></figure>
-<figure id="p11"><img loading="lazy" src="page-11.png" alt="page 11"><figcaption>11 / 20</figcaption></figure>
-<figure id="p12"><img loading="lazy" src="page-12.png" alt="page 12"><figcaption>12 / 20</figcaption></figure>
-<figure id="p13"><img loading="lazy" src="page-13.png" alt="page 13"><figcaption>13 / 20</figcaption></figure>
-<figure id="p14"><img loading="lazy" src="page-14.png" alt="page 14"><figcaption>14 / 20</figcaption></figure>
-<figure id="p15"><img loading="lazy" src="page-15.png" alt="page 15"><figcaption>15 / 20</figcaption></figure>
-<figure id="p16"><img loading="lazy" src="page-16.png" alt="page 16"><figcaption>16 / 20</figcaption></figure>
-<figure id="p17"><img loading="lazy" src="page-17.png" alt="page 17"><figcaption>17 / 20</figcaption></figure>
-<figure id="p18"><img loading="lazy" src="page-18.png" alt="page 18"><figcaption>18 / 20</figcaption></figure>
-<figure id="p19"><img loading="lazy" src="page-19.png" alt="page 19"><figcaption>19 / 20</figcaption></figure>
-<figure id="p20"><img loading="lazy" src="page-20.png" alt="page 20"><figcaption>20 / 20</figcaption></figure></main>
+<main><figure id="p1" data-n="1"><img loading="lazy" src="page-01.png" alt="page 1"><figcaption>1 / 20</figcaption></figure>
+<figure id="p2" data-n="2"><img loading="lazy" src="page-02.png" alt="page 2"><figcaption>2 / 20</figcaption></figure>
+<figure id="p3" data-n="3"><img loading="lazy" src="page-03.png" alt="page 3"><figcaption>3 / 20</figcaption></figure>
+<figure id="p4" data-n="4"><img loading="lazy" src="page-04.png" alt="page 4"><figcaption>4 / 20</figcaption></figure>
+<figure id="p5" data-n="5"><img loading="lazy" src="page-05.png" alt="page 5"><figcaption>5 / 20</figcaption></figure>
+<figure id="p6" data-n="6"><img loading="lazy" src="page-06.png" alt="page 6"><figcaption>6 / 20</figcaption></figure>
+<figure id="p7" data-n="7"><img loading="lazy" src="page-07.png" alt="page 7"><figcaption>7 / 20</figcaption></figure>
+<figure id="p8" data-n="8"><img loading="lazy" src="page-08.png" alt="page 8"><figcaption>8 / 20</figcaption></figure>
+<figure id="p9" data-n="9"><img loading="lazy" src="page-09.png" alt="page 9"><figcaption>9 / 20</figcaption></figure>
+<figure id="p10" data-n="10"><img loading="lazy" src="page-10.png" alt="page 10"><figcaption>10 / 20</figcaption></figure>
+<figure id="p11" data-n="11"><img loading="lazy" src="page-11.png" alt="page 11"><figcaption>11 / 20</figcaption></figure>
+<figure id="p12" data-n="12"><img loading="lazy" src="page-12.png" alt="page 12"><figcaption>12 / 20</figcaption></figure>
+<figure id="p13" data-n="13"><img loading="lazy" src="page-13.png" alt="page 13"><figcaption>13 / 20</figcaption></figure>
+<figure id="p14" data-n="14"><img loading="lazy" src="page-14.png" alt="page 14"><figcaption>14 / 20</figcaption></figure>
+<figure id="p15" data-n="15"><img loading="lazy" src="page-15.png" alt="page 15"><figcaption>15 / 20</figcaption></figure>
+<figure id="p16" data-n="16"><img loading="lazy" src="page-16.png" alt="page 16"><figcaption>16 / 20</figcaption></figure>
+<figure id="p17" data-n="17"><img loading="lazy" src="page-17.png" alt="page 17"><figcaption>17 / 20</figcaption></figure>
+<figure id="p18" data-n="18"><img loading="lazy" src="page-18.png" alt="page 18"><figcaption>18 / 20</figcaption></figure>
+<figure id="p19" data-n="19"><img loading="lazy" src="page-19.png" alt="page 19"><figcaption>19 / 20</figcaption></figure>
+<figure id="p20" data-n="20"><img loading="lazy" src="page-20.png" alt="page 20"><figcaption>20 / 20</figcaption></figure></main>
 <footer><a class="dl" href="https://github.com/markoboskoauroville/BRAIN_BRAKE/raw/main/assets/pdf/THE%20BRAIN%20BRAKE%20V2.pdf">download the PDF</a></footer>
+<script>
+(function(){
+  var figs = Array.prototype.slice.call(document.querySelectorAll('figure'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav a'));
+  var at = document.getElementById('at');
+  var total = figs.length;
+  var cur = 0;
+  function mark(n){
+    if(n === cur) return;
+    cur = n;
+    figs.forEach(function(f){ f.classList.toggle('on', +f.dataset.n === n); });
+    links.forEach(function(a){ a.classList.toggle('on', +a.dataset.n === n); });
+    at.textContent = 'page ' + n + ' / ' + total;
+    document.title = 'p' + n + '/' + total + ' \u00b7 THE BRAIN BRAKE V2';
+    var active = links.filter(function(a){ return +a.dataset.n === n; })[0];
+    if(active && active.scrollIntoView) active.scrollIntoView({block:'nearest', inline:'center'});
+    if(history.replaceState) history.replaceState(null, '', '#p' + n);
+  }
+  var io = new IntersectionObserver(function(entries){
+    var best = null;
+    entries.forEach(function(e){
+      if(e.isIntersecting && (!best || e.intersectionRatio > best.intersectionRatio)) best = e;
+    });
+    if(best) mark(+best.target.dataset.n);
+  }, {rootMargin:'-45% 0px -45% 0px', threshold:[0, .25, .5, 1]});
+  figs.forEach(function(f){ io.observe(f); });
+  mark(1);
+})();
+</script>
 </body></html>
