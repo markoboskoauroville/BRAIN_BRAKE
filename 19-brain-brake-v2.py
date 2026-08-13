@@ -68,8 +68,8 @@ S[1] = ("THE MYSTERY","0:00 – 0:14",[
   "Full drawn wide. He is finished: head rolling, legs gone, the crowd thin and quiet behind the "
   "barriers, the road running away to the horizon. Frame 6.4 rhymes this one exactly, same "
   "composition and opposite feeling, so the camera position chosen here is locked for the film.",
-  "Voice over. \"For a hundred years we thought the answer was in the muscles.\"\n"
-  "NEW: shoot this line as video of him too, in his room. The edit decides later."),
+  "Voice over. \"For a hundred years we thought the answer was in the muscles.\"\nAlso shot as "
+  "video of him speaking, in his room."),
  (P+"/S1_P2.jpg","D","His face","",
   "Drawn close up, sweat and breath. He is lean and about thirty five. He is at the end of a race, "
   "not at the end of a life, and the whole first scene fails if he reads as an old man.",
@@ -103,9 +103,7 @@ S[2] = ("THE OLD THEORY","0:14 – 0:30",[
   "The chain and the year are composited onto the real board afterwards, in perspective, so the "
   "chalk lands only where the board actually is. His hand and arm pass in front of the writing "
   "and occlude it. The 1923 is his own hand writing it, not a caption.",
-  "Your note, and it is the best change in this version. He is not narrating the old theory, he is "
-  "writing it out. Writing 1923 himself is what makes the date his statement rather than a "
-  "subtitle."),
+  "He writes the chain and the year himself. No line under this."),
  (P+"/S2_P2.jpg","D","The chain that held for a century","",
   "The chain writes itself one box at a time: RUN FASTER, OXYGEN, LACTATE, FATIGUE, STOP. This is "
   "now the close up of the board he is writing on in 2.1, so the two frames are one action.",
@@ -115,27 +113,21 @@ S[2] = ("THE OLD THEORY","0:14 – 0:30",[
   "facing camera. The glass is empty on the day.",
   "The factory is composited inside the circle of the lens afterwards, with the lens distortion "
   "and the real glass reflection kept over it.",
-  "The whole argument of the film in one image, and it answers your question about how to make "
-  "him more visible without a box in the corner.\nEverything outside the circle is his real room. "
-  "Everything inside it is drawn. The glass is not magnifying, it is a hole punched through "
-  "ordinary reality into the layer underneath."),
+  "He holds the glass up and looks into it. No line.\nEverything outside the circle is his real "
+  "room. Everything inside it is drawn."),
  (P+"/S2_P4.jpg","D","The supply stops","",
   "The alarm turns, a worker straightens up and shrugs, palms open. The supply is failing, the "
   "machine is not breaking. Resigned, not frightened. A shift ending, not a disaster.",
-  "Worker's line, one voice, dry. \"That's it. We're done.\"\n"
-  "NOT Manan, and no worker's costume. He is the one investigating the factory, not somebody "
-  "working in it."),
+  "Worker's line, one voice, dry. \"That's it. We're done.\" Not Manan."),
  (P+"/S2_P5.jpg","D","The lactate pump","",
   "Two workers at the pump, hands on their heads, steam going up. The old theory's villain drawn "
   "exactly as the theory imagined it.",
-  "Voice over. Drawn, not shot at a real pump, for the same reason as 2.4."),
+  "Voice over."),
  (V+"/V7_2_6_over_shoulder.jpg","N","Case closed, over his shoulder",
   "SETUP A. He is the near layer, the back of his head and shoulder in the lower left of frame, "
   "watching the stamp come down.",
   "The stamp, the crack and the paper are drawn around him. His shoulder throws a shadow across "
   "the drawing so he stands inside it.",
-  "Your note from page six, and it is the shape I want everywhere instead of a corner box. Same "
-  "information, opposite feeling: he is at real scale, in the same light, inside the picture.\n"
   "Voice over. \"Case closed. For a hundred years.\" Then over the crack: \"Except it doesn't "
   "explain this.\""),
 ])
@@ -194,9 +186,7 @@ S[4] = ("THE GATEKEEPER","0:48 – 1:12",[
   "SETUP E. His room, at his desk, holding his own phone up, screen switched off on the day.",
   "The low power warning is composited onto the real screen afterwards, and his thumb covers part "
   "of it exactly as a thumb does.",
-  "Your note, and it works. The analogy is Manan's own from his first draft, and it lands harder "
-  "on a real phone in a real hand than on a drawn one.\nVoice over. \"Like a phone at twenty "
-  "percent. Not broken. Protecting itself.\""),
+  "Voice over. \"Like a phone at twenty percent. Not broken. Protecting itself.\""),
  (P+"/S4_P5.jpg","D","He is not sorry","",
   "Coach Brain in close up, wide open and entirely unembarrassed. A teacher with a better model of "
   "the situation than his student has.",
@@ -226,9 +216,8 @@ S[5] = ("THE EXPERIMENT","1:12 – 1:34",[
   "SETUP E. His room, at his desk, the study finishing on his laptop. He sits back, a beat, then "
   "he is already getting up, out of frame before the shot is ready to end.",
   "Nothing drawn. This frame is entirely his.",
-  "The turn of the whole scene, and it is played as appetite, not understanding. He does not nod "
-  "because he grasped something. He gets up because he cannot sit still.\nNo line. It is on his "
-  "face and then on the empty chair."),
+  "No line. Played as appetite, not understanding. He does not nod because he grasped something, "
+  "he gets up because he cannot sit still. It is on his face and then on the empty chair."),
  (V+"/V7_5_5_road.jpg","N","Out on the road",
   "EXTERIOR, NEW LOCATION. An ordinary quiet road near the house, early morning. Manan riding hard, "
   "shot side on from a following vehicle or a fixed wide as he passes. Helmet on. Thirty minutes, "
@@ -239,15 +228,12 @@ S[5] = ("THE EXPERIMENT","1:12 – 1:34",[
   "SETUP G. His room, stationary bike, the road footage playing on the laptop in front of him. "
   "Wide. Three layers: him near, the screen middle, the window behind.",
   "The screen content is composited afterwards so the edit can change what is on it.",
-  "Voice over. \"Same legs. Same road. Same everything.\"\n"
-  "NOTE: this frame was made before the wardrobe was settled and shows the hoodie. On the day he "
-  "is in a t shirt, as in 5.7 and 5.8."),
+  "Voice over. \"Same legs. Same road. Same everything.\"\nT shirt, as in 5.7 and 5.8."),
  (V+"/V7_5_7_the_wall.jpg","N","The wall",
   "SETUP G, closer. He is level with the recording and cannot get past it. Teeth, sweat, the "
   "effort completely real.",
   "Nothing drawn.",
-  "Nothing spoken. Let it run. The sound carries this: breath, chain, the room.\nThis is the place "
-  "where the film began, where the runner's head went back."),
+  "Nothing spoken. Let it run. The sound carries this: breath, chain, the room."),
  (V+"/V7_5_8_eyes_closed.jpg","N","Eyes closed",
   "SETUP G, close. He closes his eyes. Two seconds of nothing at all, just breath. Then his legs "
   "pick up, his eyes open, he is ahead of the recording, and he laughs.",
@@ -299,9 +285,7 @@ S[7] = ("THE VERDICT","1:48 – 1:54",[
   "state. He stands at the left, back to camera, watching.",
   "The Muscle and Coach Brain are cut off their paper and placed in the same white field, standing "
   "on the same floor with the same contact shadows.",
-  "The hardest composite in the film and it holds: a photographed boy and two drawn characters "
-  "sharing one space, one light, one floor.\nVoice over. \"Hill was right about the muscle. Noakes "
-  "was right about the brain.\""),
+  "Voice over. \"Hill was right about the muscle. Noakes was right about the brain.\""),
  (P+"/S7_P4.jpg","D","The handshake","",
   "They shake hands. The answer to the question the film opened with, given as a gesture rather "
   "than as a statement.","Voice over continues."),
@@ -322,20 +306,16 @@ S[8] = ("THE INVITATION","1:54 – 2:00",[
   "The brightest and calmest setup of the day. Roll a full unbroken minute and use the stillest "
   "twenty frames.",
   "White all round him. Nothing drawn in this frame at all.",
-  "Arms at his sides, eyes closed, simply breathing. No performance of any kind. The hardest thing "
-  "on the call sheet, and the reason it is shot last.\nIt is also the same gesture as 5.8, and by "
-  "now the audience knows what it means without being told."),
+  "Arms at his sides, eyes closed, simply breathing. No performance of any kind. Shot last, when "
+  "he has stopped trying. The same gesture as 5.8."),
  (P+"/S8_P2.jpg","D","The finish line","",
   "The runner crossing, seen down the road from scene one. The film returns to where it started "
   "and the question has been answered.","Nothing."),
  (V+"/V7_8_3_lever_drawn.jpg","L","His own hand on the lever",
   "SETUP C, insert. His hand alone, resting on a real ball at chest height, so the fingers and the "
   "weight are right. A few seconds, held.",
-  "The lever drawn around his real hand. The ball must sit at 95 with the short gap open above it. "
-  "The drawn version shown here still reads slightly under 95 and the composite will correct it "
-  "exactly.",
-  "Just the hand. Steady, unhurried, no grip and no drama.\nA real hand from the world of evidence "
-  "reaching into the world of explanation is the thesis and the climax at the same time."),
+  "The lever drawn around his real hand. The ball sits at 95 with the short gap open above it.",
+  "Just the hand. Steady, unhurried, no grip and no drama."),
  (P+"/S8_P4.jpg","D","Coach Brain takes off the key","",
   "He lifts the small gold key from his own neck. No fanfare, no ceremony. He is handing over a "
   "job.","Nothing."),
@@ -359,77 +339,67 @@ S[8] = ("THE INVITATION","1:54 – 2:00",[
 frames = sum(len(S[k][2]) for k in S)
 live = sum(1 for k in S for f in S[k][2] if f[1] in ('L','N'))
 newf = sum(1 for k in S for f in S[k][2] if f[1] == 'N')
+_all = [f for k in S for f in S[k][2]]
+vo_lines  = sum(1 for f in _all if 'oice over' in f[5])
+cb_lines  = sum(1 for f in _all if 'COACH BRAIN' in f[5])
+cam_lines = sum(1 for f in _all if f[1] in ('L','N') and '"' in f[5] and 'oice over' not in f[5].split('"')[0][-40:])
 
 bg()
 # ---------------------------------------------------------------- cover
-y = H-92
-c.setFont('DB',30); c.setFillColor(INK); c.drawString(ML,y,"THE BRAIN BRAKE")
+y = H-100
+c.setFont('DB',32); c.setFillColor(INK); c.drawString(ML,y,"THE BRAIN BRAKE")
 y-=26; c.setFont('DO',12); c.setFillColor(SOFT)
-c.drawString(ML,y,"Version two. Your notes, built.")
+c.drawString(ML,y,"Version two. Storyboard and shooting document.")
 y-=40
 c.setStrokeColor(RULE); c.setLineWidth(0.8); c.line(ML,y,W-MR,y); y-=26
-y = para(ML,y,"Neha, this is version one with everything you marked on it folded in. Where a frame "
-              "changed, the change is described on the frame itself so you can see the reasoning "
-              "next to the picture rather than in a covering note.",'D',10,14)
-y-=12
-y = para(ML,y,"You were right that Manan should be more visible. He is now in twenty two frames "
-              "instead of twelve, and in almost all of the new ones he is doing something rather "
-              "than saying something.",'D',10,14)
-y-=24
-c.setFont('MB',9); c.setFillColor(ACC); c.drawString(ML,y,"THE SPLIT"); y-=18
-for a,b in [(str(frames),"frames"),(str(live),"need Manan in front of a camera"),
-            (str(frames-live),"are drawn and need nobody"),(str(newf),"are new since version one"),
-            ("2","shooting locations, his room and one road"),
-            ("7","setups, and three of them share one lighting state")]:
+
+for k,v in [("Running time","2:00"),
+            ("Format","16:9, live action composited into hand drawn animation"),
+            ("Entry","Breakthrough Junior Challenge 2026"),
+            ("Presenter","Manan Periwal"),
+            ("Camera","Venkatesh, Pondicherry"),
+            ("Animation","Kristijan Kaurić, Brojka, Zagreb"),
+            ("Producer","Neha Sonthalia Periwal")]:
+    c.setFont('MB',7.6); c.setFillColor(SOFT); c.drawString(ML,y,k.upper())
+    c.setFont('D',9.6); c.setFillColor(INK); c.drawString(ML+110,y,v)
+    y-=16
+y-=22
+
+c.setFont('MB',9); c.setFillColor(ACC); c.drawString(ML,y,"THE FILM IN NUMBERS"); y-=20
+for a,b in [(str(frames),"frames in total"),
+            (str(frames-live),"drawn frames, animation only"),
+            (str(live),"frames with live action composited into them"),
+            (str(cam_lines),"lines Manan speaks on camera"),
+            (str(vo_lines),"voice over cues"),
+            (str(cb_lines),"Coach Brain lines"),
+            ("8","setups, one of them optional"),
+            ("2","locations, his room and one road")]:
     c.setFont('MB',13); c.setFillColor(INK); c.drawRightString(ML+30,y,a)
     c.setFont('D',9.5); c.setFillColor(SOFT); c.drawString(ML+42,y+1,b); y-=20
-y-=14
-y = para(ML,y,"The day is longer than version one because he is in more of it. Most of it is his "
-              "own bedroom in his own clothes, which is the cheapest kind of extra day there is.",
-         'D',10,14)
-newpage()
 
-# ---------------------------------------------------------------- your notes
-y = H-80
-c.setFont('DB',20); c.setFillColor(INK); c.drawString(ML,y,"Your notes, one by one")
-y-=12; c.setStrokeColor(RULE); c.line(ML,y,W-MR,y); y-=26
-
-notes = [
- ("YES","Shoot the voice over lines as video of him talking, study room or grey wall.",
-  "Agreed completely. It costs a few hours on a day we are shooting anyway and it gives the edit "
-  "every option. We shoot all of it and decide later what is picture and what is voice."),
- ("YES","Can Manan write 1923 and the chain on a board. Can he hold the phone. Can he ride a bike. "
-  "Can we shoot over his shoulder for the stamp.",
-  "These were the best notes in the document and they are all in. Frames 2.1, 2.6, 4.4 and the "
-  "whole of scene five. This is not Manan added to the film, it is Manan inside it."),
- ("NO","The small box in the corner with his talking video while the animation plays in the centre.",
-  "This is the one I pushed back on. A rectangle in the corner with a talking head in it reads as "
-  "a webcam, and audiences have been trained to ignore that corner. It also breaks the rule the "
-  "whole look depends on: every frame is three layers and the boy is one of them. A box is not a "
-  "layer, it sits on top like a sticker, and the moment he is a sticker he stops being the "
-  "protagonist and becomes a caption.\nInstead there are two devices doing the same job better, "
-  "the over the shoulder foreground and the magnifying glass as a window. Both are in this "
-  "document, on frames 2.6 and 2.3."),
- ("NO","Does Manan need the factory worker costume. Can we shoot at a real pump with a LACTATE "
-  "PUMP board.",
-  "No costume, and no real pump. The factory is the old theory, the thing the film is disproving. "
-  "The second he puts on overalls he stops being the person investigating it and becomes a "
-  "character inside it. The workers are also cartoons two and a half heads tall, so the scale "
-  "would fall apart beside a real boy.\nThe line is: he can do real things a real boy does, and he "
-  "does not dress up as a drawn character or stand inside a metaphor."),
- ("ASK","Usain Bolt, written at the top of page four.",
-  "I was not sure what this meant. Our runner is a marathon runner rather than a sprinter, and "
-  "naming a real athlete in a competition entry brings complications. Tell me what you had in mind."),
-]
-for tag, note, ans in notes:
-    if y < 150:
-        newpage(); y = H-80
-    col = NEW if tag=="YES" else (LIVE if tag=="NO" else ACC)
-    c.setFont('MB',9); c.setFillColor(col); c.drawString(ML,y,tag)
-    y = para(ML+40,y,note,'DB',9.4,12.8,CW-40)
-    y -= 4
-    y = para(ML+40,y,ans,'D',9.2,12.6,CW-40,SOFT)
-    y -= 18
+y-=16
+c.setFont('MB',9); c.setFillColor(ACC); c.drawString(ML,y,"BY SCENE"); y-=6
+c.setStrokeColor(RULE); c.setLineWidth(0.5); c.line(ML,y,W-MR,y); y-=14
+c.setFont('MB',7); c.setFillColor(SOFT)
+for lbl,xo in [("SCENE",0),("FRAMES",250),("DRAWN",320),("LIVE",390),("TIME",450)]:
+    c.drawString(ML+xo,y,lbl)
+y-=12
+for sc in range(1,9):
+    t,tm,fr = S[sc]
+    d_ = sum(1 for f in fr if f[1]=='D'); l_ = len(fr)-d_
+    c.setFont('D',8.6); c.setFillColor(INK)
+    c.drawString(ML,y,"%d  %s" % (sc,t.title()))
+    c.setFont('M',8.6)
+    c.drawString(ML+250,y,str(len(fr)))
+    c.setFillColor(SOFT); c.drawString(ML+320,y,str(d_))
+    c.setFillColor(LIVE if l_ else SOFT); c.drawString(ML+390,y,str(l_) if l_ else "-")
+    c.setFillColor(SOFT); c.drawString(ML+450,y,tm)
+    y-=13
+c.setStrokeColor(RULE); c.line(ML,y+4,W-MR,y+4); y-=12
+c.setFont('MB',8.6); c.setFillColor(INK)
+c.drawString(ML,y,"TOTAL"); c.drawString(ML+250,y,str(frames))
+c.drawString(ML+320,y,str(frames-live)); c.drawString(ML+390,y,str(live))
+c.drawString(ML+450,y,"2:00")
 newpage()
 
 # ---------------------------------------------------------------- the day
@@ -471,7 +441,7 @@ y -= 6
 if y < 260:
     newpage(); y = H-80
 c.setStrokeColor(RULE); c.line(ML,y,W-MR,y); y-=22
-c.setFont('MB',9); c.setFillColor(ACC); c.drawString(ML,y,"YOUR PROP LIST, CONFIRMED"); y-=16
+c.setFont('MB',9); c.setFillColor(ACC); c.drawString(ML,y,"PROPS"); y-=16
 y = para(ML,y,"Plain grey background. Tennis ball on a stand. Brass magnifying glass. A real "
               "blackboard and white chalk. A stationary exercise bike. A bicycle and a plain dark "
               "helmet. A small gold key. A ball at chest height for the lever insert. His own "
@@ -548,22 +518,10 @@ for sc in range(1,9):
     newpage()
 
 # ---------------------------------------------------------------- last page
-y = H-90
-c.setFont('DB',20); c.setFillColor(INK); c.drawString(ML,y,"Still open")
-y-=30
-y = para(ML,y,"Coach Brain has four spoken lines and still needs a voice. He can be Manan pitched "
-              "differently or somebody else entirely. Whoever it is, he is never sly and never a "
-              "villain. He is a teacher who is pleased to have been found.",'D',9.6,13.4)
-y-=14
-y = para(ML,y,"Usain Bolt, from your page four. Tell me what you meant and I will build it if it "
-              "fits.",'D',9.6,13.4)
-y-=14
-y = para(ML,y,"Frame 5.6 was made before the wardrobe was settled and shows the hoodie on the "
-              "stationary bike. On the day it is a t shirt. The picture will be remade, it changes "
-              "nothing about the shoot.",'D',9.6,13.4)
-y-=34
-c.setStrokeColor(RULE); c.line(ML,y,W-MR,y); y-=30
-c.setFont('DO',13); c.setFillColor(SOFT)
-c.drawString(ML,y,"The wall is real. But somebody set it.")
+y = H/2 + 30
+c.setFont('MB',8); c.setFillColor(ACC)
+c.drawCentredString(W/2, y+34, "END CARD")
+c.setFont('DB',18); c.setFillColor(INK)
+c.drawCentredString(W/2, y, "THE LIMIT IS A SETTING, NOT A WALL.")
 foot(); c.showPage(); c.save()
-print("written", OUT, os.path.getsize(OUT), "frames", frames, "live", live, "new", newf)
+print("written", OUT, os.path.getsize(OUT), "frames", frames, "live", live)
