@@ -834,3 +834,33 @@ again. Tone is a container job. Do not spend a credit regenerating for tone.
 **The tool overruled the prompt on light direction and it was right.** The prompt asked for a key from
 upper right. The tool put it camera left, which is the film's own law from `worlds.md`. Every Manan
 frame is keyed from camera left at forty five degrees. Do not write anything else.
+
+## THE LENS COMPOSITE IS A CONTAINER JOB, 13.8.2026
+
+Frame 2.3. Asking the generator for a photographic room with a drawn world inside the glass produced a
+faint pencil factory smeared across the whole frame with a sharper one in the lens. Wrong, and expensive
+to keep retrying.
+
+**Split it. Generate the plate, composite the lens.**
+
+Pass one, the generator: the real boy in the real room holding the real glass, lens clear and empty.
+That is continuous geometry and must be made whole in one frame. References must be single object crops,
+`MANAN_DESK.jpg` and `GLASS_FRONT.jpg`, never the model sheets, because a grid reference imposes its grid.
+
+Pass two, the container, free and exact:
+
+1. Measure the lens by gridding the region and reading it off. On this plate: centre 1436, 622, inner
+   radius 148.
+2. Crop the drawn panel at about 55% of its width so the magnification is modest. A whole room seen a
+   little larger, never one giant gear.
+3. Barrel warp at k=0.16 so the edge bends like an optic.
+4. Warm the pencil to the room, red times 1.03 and blue times 0.93.
+5. Circular mask, 1.6px feather.
+6. **Put the plate's own specular back on top.** Take luminance above 232 from the original lens, blur 9,
+   screen at 0.85. Without this it reads as a sticker. With it, it reads as glass.
+
+**Removing a brand mark: inpaint row by row, never clone.** The laptop lid carried a DELL logo. Cloning
+from above broke the bezel edge line, cloning from the left picked up a different part of the gradient
+and left a bright rectangle. What works is interpolating each row linearly between the ten pixels either
+side of the patch, then a 1.2px blur on the seam only. The vertical structure and the local brightness
+both survive.
