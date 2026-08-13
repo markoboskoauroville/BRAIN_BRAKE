@@ -864,3 +864,31 @@ from above broke the bezel edge line, cloning from the left picked up a differen
 and left a bright rectangle. What works is interpolating each row linearly between the ten pixels either
 side of the patch, then a 1.2px blur on the seam only. The vertical structure and the local brightness
 both survive.
+
+## LETTERING: STOP ASKING THE TOOL, MAP THE FILM'S OWN, 13.8.2026
+
+Frame 2.1. Instead of asking the generator for a blackboard with words on it, the plate was generated
+with the board **completely clean** and the words were composited afterwards.
+
+**This retires the whole lettering problem.** Many small words on a busy surface is the tool's weakest
+area and it comes back invented. A clean dark board is trivially easy for it and gives a perfect
+surface.
+
+The words that went on were not typed. They were **lifted out of the film's own artwork**: the chalk
+chain off panel `S2_P2`, isolated as `clip((L-135)/95)` because it is bright marks on a dark board, and
+the year off the 1923 card in panel `S7_P5`, isolated as `clip((205-L)/120)` because that one is dark
+ink on light paper and has to be inverted to become chalk. Lettering that already landed once never has
+to be gambled on again.
+
+**The perspective is a four point solve.** Read the slate's corners off a coordinate grid overlay, build
+the writing on a flat unrolled canvas, then `Image.PERSPECTIVE` with coefficients solved from the flat
+quad to the measured quad. Mask to the quad afterwards with a 3px blur so nothing spills onto the frame.
+
+**Chalk is a screen toward warm white, never pure white.** Composite at 0.80 toward 236,234,226. Pure
+white reads as a sticker.
+
+**Placing the year under his own chalk tip is the whole point.** The year is not a caption sitting in a
+corner, it is the thing the boy is writing, and that is what turns a defect fix into a piece of acting.
+
+**Typeface next to hand lettering is instantly visible.** The first pass set 1923 in DejaVu Bold and it
+read as a font on a board of hand drawn boxes. Always prefer the film's own strokes.
