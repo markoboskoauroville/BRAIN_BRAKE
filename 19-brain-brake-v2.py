@@ -123,7 +123,7 @@ S[2] = ("THE OLD THEORY","0:14 – 0:30",[
   "Two workers at the pump, hands on their heads, steam going up. The old theory's villain drawn "
   "exactly as the theory imagined it.",
   "Voice over."),
- (V+"/V7_2_6_over_shoulder.jpg","N","Case closed, over his shoulder",
+ (V+"/V7_2_6_case_closed.jpg","N","Case closed, over his shoulder",
   "SETUP A. He is the near layer, the back of his head and shoulder in the lower left of frame, "
   "watching the stamp come down.",
   "The stamp, the crack and the paper are drawn around him. His shoulder throws a shadow across "
@@ -224,11 +224,11 @@ S[5] = ("THE EXPERIMENT","1:12 – 1:34",[
   "and it is the only time the shoot leaves the house.",
   "Nothing drawn. This footage is what plays on the laptop for the rest of the scene.",
   "Voice over, dry and a little amused at himself. \"So I tried it.\""),
- (V+"/V7_5_1_bike.jpg","N","Racing himself",
+ (V+"/V7_5_6_racing.jpg","N","Racing himself",
   "SETUP G. His room, stationary bike, the road footage playing on the laptop in front of him. "
   "Wide. Three layers: him near, the screen middle, the window behind.",
   "The screen content is composited afterwards so the edit can change what is on it.",
-  "Voice over. \"Same legs. Same road. Same everything.\"\nT shirt, as in 5.7 and 5.8."),
+  "Voice over. \"Same legs. Same road. Same everything.\"\nThe screen shows his own recording from 5.5, not a drawing."),
  (V+"/V7_5_7_the_wall.jpg","N","The wall",
   "SETUP G, closer. He is level with the recording and cannot get past it. Teeth, sweat, the "
   "effort completely real.",
