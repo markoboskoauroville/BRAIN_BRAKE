@@ -920,3 +920,25 @@ reads as a sticker rather than a lit panel.
 screen nearly edge on. For 5.1 that is fine, because the board already carries 5.2 and 5.5 as full frame
 screen shots where YOU and BEST actually have to be read. Check what the neighbouring frames are doing
 before spending a credit on a reshoot.
+
+## THE LAPTOP CARRIES A BRAND MARK EVERY SINGLE TIME, 13.8.2026
+
+Four plates generated in Manan's room, four DELL logos on the laptop, in four different places.
+
+**The prompt cannot prevent it.** Naming the brand adds the brand, and negation adds the thing, so there
+is no wording that removes it. Do not try.
+
+**Treat it as a fixed post step.** Every plate containing the laptop gets a row wise inpaint before it is
+committed. The logo is small, sits on a smooth gradient, and takes under a minute:
+
+    for y in range(ly0, ly1):
+        L = a[y, lx0-pad:lx0].mean(axis=0)
+        R = a[y, lx1:lx1+pad].mean(axis=0)
+        t = np.linspace(0,1,lx1-lx0)[:,None]
+        a[y, lx0:lx1] = L*(1-t) + R*t
+
+then a 0.8px blur on the seam only. Never clone from above, it breaks the bezel edge line, and never
+clone sideways, it picks up a different part of the lid gradient and leaves a bright rectangle.
+
+**Find the box by cropping and scaling, not by guessing.** Crop a known rectangle, resize by a known
+factor, read the logo position in the enlarged view, divide back. Guessing costs three attempts.
