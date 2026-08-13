@@ -892,3 +892,31 @@ corner, it is the thing the boy is writing, and that is what turns a defect fix 
 
 **Typeface next to hand lettering is instantly visible.** The first pass set 1923 in DejaVu Bold and it
 read as a font on a board of hand drawn boxes. Always prefer the film's own strokes.
+
+## MEASURE A QUAD BY DRAWING IT BACK, NOT BY READING A GRID, 13.8.2026
+
+Frame 5.1, the laptop screen. Three attempts were wasted reading corner coordinates off a grid overlay
+by eye, and each one landed the composite up and to the left of the actual glass.
+
+**Threshold detection also failed.** The screen glass and the sunlit curtain occupy the same brightness
+band, so a luminance mask picked up the whole search box and returned its corners.
+
+**What works: guess, draw the quad back onto the plate in red, look, correct.** One or two iterations
+and it is exact. Drawing the answer back over the source is the cheapest verification there is and it
+should be the first move on any perspective job, not the last.
+
+**Two edge lessons.**
+
+The transform boundary aliases into a visible dotted line. Warp to a quad about 1% larger than the
+target and mask with a quad about 2% smaller, both scaled about the centroid, then blur the mask at
+3.5px. If the artefact survives, blur a 7px band drawn along the outline afterwards.
+
+**A screen is a second kind of hole in reality, and a legitimate one.** The drawn world appears inside a
+real laptop in the real room. That is diegetic, unlike a corner box pasted over the film. Composite at
+0.80 and put the plate's own window reflection back over it at 0.38, exactly as with the lens, or it
+reads as a sticker rather than a lit panel.
+
+**Extreme foreshortening is not always a defect.** The tool ignored "square to the camera" and gave a
+screen nearly edge on. For 5.1 that is fine, because the board already carries 5.2 and 5.5 as full frame
+screen shots where YOU and BEST actually have to be read. Check what the neighbouring frames are doing
+before spending a credit on a reshoot.
