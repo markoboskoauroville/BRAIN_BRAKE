@@ -183,9 +183,10 @@ S[4] = ("THE GATEKEEPER","0:48 – 1:12",[
   "COACH BRAIN: \"Heart rate. Breath. Temperature. Water. Distance. I'm asking one question. Can "
   "we keep going safely?\""),
  (V+"/V7_4_4_phone.jpg","N","Low power, on his own phone",
-  "SETUP E. His room, at his desk, holding his own phone up, screen switched off on the day.",
-  "The low power warning is composited onto the real screen afterwards, and his thumb covers part "
-  "of it exactly as a thumb does.",
+  "SETUP E. His room, at his desk, holding his own phone up, the real low battery warning on the "
+  "screen. No brand marking visible on the phone.",
+  "Nothing drawn. The phone is real and the screen is real, shot on the day. A phone at twenty "
+  "percent is an everyday fact, not a metaphor, so it belongs in the photographed world.",
   "Voice over. \"Like a phone at twenty percent. Not broken. Protecting itself.\""),
  (P+"/S4_P5.jpg","D","He is not sorry","",
   "Coach Brain in close up, wide open and entirely unembarrassed. A teacher with a better model of "
