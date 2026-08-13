@@ -136,18 +136,18 @@ S[3] = ("THE FULL TANK","0:30 – 0:48",[
  (P+"/S3_P1.jpg","D","The back of the factory","",
   "Wide of the plant from outside, and one door in it that nobody has opened. Quiet after the "
   "noise of scene two.","Voice over."),
- (P+"/S3_P2.jpg","L","His hand on the door",
+ (V+"/V7_3_2_door.jpg","L","His hand on the door",
   "SETUP A. Back to camera, palm flat on a mark at chest height, head tilted, listening. Nothing "
   "is really there. Hold it, then let him lean into it.",
   "The riveted door drawn around his hand, keyhole beside it, light behind the keyhole. His shadow "
   "falls on the door.",
   "Curious rather than cautious.\nVoice over. \"At the back of the factory there is a door nobody "
   "opens.\""),
- (P+"/S3_P3.jpg","L","The door swings",
+ (V+"/V7_3_3_swings.jpg","L","The door swings",
   "SETUP A. Silhouette from behind, then turning into the light. Shoot it both ways.",
   "The door opens and warm light floods over him. The first warm light in the film, and it arrives "
   "as a discovery.","He pushes and steps into the light. No line."),
- (P+"/S3_P4.jpg","L","The hall of tanks",
+ (V+"/V7_3_4_tanks.jpg","L","The hall of tanks",
   "SETUP A. Back of his head and shoulder in the near foreground, held still.",
   "Row upon row of tanks receding. Nine visible, the nearest stencilled 9. The reveal, and the "
   "first big lift in the film.",
@@ -156,7 +156,7 @@ S[3] = ("THE FULL TANK","0:30 – 0:48",[
  (P+"/S3_P5.jpg","D","Every gauge full","",
   "One gauge in close up, needle hard over on FULL. This instrument governs the rest of the film.",
   "Nothing."),
- (P+"/S3_P6.jpg","L","He turns to us",
+ (V+"/V7_3_6_turns.jpg","L","He turns to us",
   "SETUP A. Close up, to lens, lit by the warm light from the tanks. The most important take of "
   "the day. Shoot it many times and use the most unguarded one.",
   "The hall behind him. He must be turned to the lens here: as boarded, scene three never showed "
@@ -171,7 +171,7 @@ S[4] = ("THE GATEKEEPER","0:48 – 1:12",[
   "is not caught out, he is delighted to be found. Establish the key clearly, it is the object the "
   "film turns on.",
   "COACH BRAIN: \"You found me. Took you long enough.\""),
- (P+"/S4_P2.jpg","L","The two of them, level",
+ (V+"/V7_4_2_level.jpg","L","The two of them, level",
   "SETUP B. Seated eyeline, tennis ball on a stand at seated height, camera left. Do not relight "
   "between A and B, only move the mark. Shoot the line, then ten seconds of him listening.",
   "The console wall behind them. Evenly matched in the frame, same size, same weight. Nobody is "
@@ -192,7 +192,7 @@ S[4] = ("THE GATEKEEPER","0:48 – 1:12",[
   "the situation than his student has.",
   "COACH BRAIN: \"My best judgement. I'm not trying to stop you. I'm trying to get you to the "
   "finish line.\""),
- (P+"/S4_P6.jpg","L","Manan arrives at it",
+ (V+"/V7_4_6_arrives.jpg","L","Manan arrives at it",
   "SETUP B. Same light, same mark. He should sound like he is discovering the idea, not stating "
   "it. Shoot the thinking as well as the line.",
   "Coach Brain works the console beside him. Small subtitle, two seconds: Central Governor Theory, "
@@ -301,7 +301,7 @@ S[7] = ("THE VERDICT","1:48 – 1:54",[
 ])
 
 S[8] = ("THE INVITATION","1:54 – 2:00",[
- (P+"/S8_P1.jpg","L","Alone, breathing",
+ (V+"/V7_8_1_breathing.jpg","L","Alone, breathing",
   "SETUP C. White void, flat even light from both sides, no modelling, no shadow on the backdrop. "
   "The brightest and calmest setup of the day. Roll a full unbroken minute and use the stillest "
   "twenty frames.",
@@ -311,7 +311,7 @@ S[8] = ("THE INVITATION","1:54 – 2:00",[
  (P+"/S8_P2.jpg","D","The finish line","",
   "The runner crossing, seen down the road from scene one. The film returns to where it started "
   "and the question has been answered.","Nothing."),
- (V+"/V7_8_3_lever_drawn.jpg","L","His own hand on the lever",
+ (V+"/V7_8_3_hand_lever.jpg","L","His own hand on the lever",
   "SETUP C, insert. His hand alone, resting on a real ball at chest height, so the fingers and the "
   "weight are right. A few seconds, held.",
   "The lever drawn around his real hand. The ball sits at 95 with the short gap open above it.",
@@ -319,14 +319,14 @@ S[8] = ("THE INVITATION","1:54 – 2:00",[
  (P+"/S8_P4.jpg","D","Coach Brain takes off the key","",
   "He lifts the small gold key from his own neck. No fanfare, no ceremony. He is handing over a "
   "job.","Nothing."),
- (P+"/S8_P5.jpg","L","The key handed across",
+ (V+"/V7_8_5_key.jpg","L","The key handed across",
   "SETUP C. Receiving at chest height, then looking up. Give him a real key so the hand knows what "
   "to do.",
   "Coach Brain's drawn hand and Manan's photographed palm in one frame. The gold of the key is the "
   "only colour anywhere in the film.",
   "He takes it.\n\"The wall is real. But somebody set it.\"\nCertain and unhurried, never "
   "triumphant. One sentence per take."),
- (P+"/S8_P6.jpg","L","Eyes open",
+ (V+"/V7_8_6_eyes_open.jpg","L","Eyes open",
   "SETUP C. Wider, to lens, key in one hand and the other resting on the lever. Shoot the last "
   "line several times and let the last take be the tired one.",
   "The lever beside him, the key in his hand. Then black, and the end card.",
