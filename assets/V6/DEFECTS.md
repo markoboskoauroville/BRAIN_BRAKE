@@ -55,3 +55,26 @@ comes last, and some of those are left alone.
             cartoon muscle of MUSCLE.jpg. Consistent within the sheet, so it reads.
 
     S4 p6   The boy stands with hands in pockets, a little passive for the beat.
+
+
+---
+
+## S8 p3b, 13.8.2026. IMPROVED, NOT CLOSED.
+
+Regenerated as a single panel against Google's endpoint directly. The ball now sits **3.9 units
+below 95, reading about 91**, against roughly 10 units and 89 before. The gap above the ball is now
+short enough to read as the intended gap rather than as an error.
+
+**It is still not touching 95 and I could not get it there.**
+
+Two attempts failed and are recorded so nobody repeats them:
+
+1. **Asking the generator again.** Ball height is a spatial relationship between two objects, and
+   relationships lose to properties on this tool. More wording will not fix it.
+2. **Shifting the scale down in the container to meet the ball.** The paste dragged the plate's edge
+   and a screw across the boy's hand. Reverted.
+
+**Why it is being left.** In version seven this frame is a live action insert: Manan's real hand on a
+real ball, with the lever drawn around it. The drawn panel is a board frame that a composite will
+replace, so exactness here buys nothing. Get it right in the V7 composite instead, where the
+container controls the geometry exactly.
