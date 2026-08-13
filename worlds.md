@@ -200,3 +200,39 @@ weights, the inside darker than the outside.
 making that gradual rather than sudden. By the last scene the boy and the drawing are lit by one light.
 
 Style stays his. What is described here is what happens and why, not how to draw it.
+
+## THE LENS IS A HOLE IN ORDINARY REALITY, 13.8.2026
+
+Marko's correction, and it settles what the magnifying glass is for.
+
+**Outside the circle is photographic reality. Inside the circle is pencil. Nothing in between.**
+
+The first attempt at frame 2.3 drew the factory faintly across the whole frame with a sharper version
+inside the lens. That is wrong, and wrong in a way that costs the film its argument. If the drawn world
+is already everywhere, the lens is only a zoom. It magnifies what was there anyway and it means nothing.
+
+When the surround is an ordinary room, ordinary light, an ordinary boy, all photographed, and the only
+drawn thing in the entire frame is what sits inside the glass, then the lens is not magnifying. **It is
+opening a hole into the layer underneath.** The boy is not looking closer at the world, he is looking
+through it.
+
+This is the two worlds law stated in one object, and it is the only image in the film that says the
+whole thesis without a word. Photograph what is true. Draw what is thought. The lens is the border
+between them and the boy is holding it in his hand.
+
+**Practical consequences.**
+
+- The glass is a real object at real size in a real hand. Not a portal filling half the frame.
+- The magnification inside the lens is modest. A room seen a little larger, not one giant gear.
+- No pencil anywhere outside the circle. Not faint, not suggested, not ghosted.
+- The lens has real glass behaviour at its edge: a bright rim highlight and a thin band of distortion
+  just inside the brass, so the eye reads it as an optic rather than a pasted circle.
+
+**How it is made.** Two passes, and the second is free. Generate the photographic frame whole, boy and
+room and glass, with the lens empty. That is continuous geometry and it must be made in one frame. Then
+composite the drawn contents into the lens in the container, where position and scale and crop cost
+nothing and can be adjusted until they are right.
+
+**Reference hygiene learned here.** `MANAN.jpg` and `GLASS.jpg` are both multi panel model sheets, and a
+multi panel reference imposes its grid. For single frames use the single object crops,
+`assets/REFERENCES/MANAN_DESK.jpg` and `assets/REFERENCES/GLASS_FRONT.jpg`.
