@@ -26,3 +26,17 @@ and Marko's visuals.
 One sheet per scene, Nano Banana Pro, 3:2, two references: a cast strip built in the container plus the
 previous approved sheet. Then single panel repair in the editor for any beat that missed. Four of eight
 needed one.
+
+
+## READ STALE_CACHE.md BEFORE BUILDING ANY DOCUMENT
+
+`STALE_CACHE.md` in the repo root. A path keyed image cache served old pictures into every rebuilt PDF
+for hours on 13.8.2026 while Marko was repeatedly told to refresh his download. He was right, the tool
+was wrong.
+
+Two rules from it, and they are not optional:
+
+1. **Every cache keys on content, size and mtime, never on a filename.** Frames are replaced in place on
+   this film, so a name keyed cache will lie.
+2. **When somebody says the output did not change, verify the artefact, not their setup.** Download the
+   published file back and diff a page against the local build before offering any other explanation.
