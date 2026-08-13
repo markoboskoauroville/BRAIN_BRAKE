@@ -971,3 +971,21 @@ component that overlaps that solid region. The face lives inside the body, so it
 ground line outside it does not.
 
 Place on a soft elliptical contact shadow at 0.28, blurred 10, or the figure floats.
+
+## A QUAD SAYS WHERE THE SURFACE IS, NOT WHAT IS IN FRONT OF IT, 13.8.2026
+
+Frame 2.1, first pass. The chalk was masked to the slate quad and painted straight across the boy's
+forearm, because his arm is in front of the board and the quad does not know that.
+
+**The fix is a surface test, not a better quad.** Build a mask from the plate itself:
+
+    slate = clip((132 - L) / 26, 0, 1)      # 1 on dark board, 0 on skin, sleeve, wood
+
+and multiply it into the composite mask. Chalk can then only land where the underlying pixel is
+actually board. An arm, a hand, a sleeve or the wooden frame protects itself, at any pose, with no
+rotoscoping.
+
+**It also produces the right accident.** The last digit of 1923 disappears behind his finger, which
+is what happens when somebody has just written it. Occlusion for free.
+
+Apply the same test on any composite onto a real surface: a screen, a page, a wall.
