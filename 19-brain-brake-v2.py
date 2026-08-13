@@ -81,7 +81,7 @@ S[1] = ("THE MYSTERY","0:00 – 0:14",[
  (P+"/S1_P4.jpg","D","The sprint carries","",
   "Held on the sprint, a bottle thrown, the crowd on its feet. Two or three seconds of pure "
   "disbelief before the film stops dead.","Nothing."),
- (P+"/S1_P5.jpg","L","Everything freezes and Manan walks in",
+ (V+"/V7_1_5_walks_in.jpg","L","Everything freezes and Manan walks in",
   "SETUP A. Grey backdrop, mid shot, eye level, locked off. He walks slowly across frame looking "
   "left and right at nothing. Thirty seconds of pure observing, no lines. One dominant key from "
   "camera left, hard enough that his shadow has a shape.",
@@ -89,7 +89,7 @@ S[1] = ("THE MYSTERY","0:00 – 0:14",[
   "onto the tarmac, crossing the pencil lines so they stay visible through it.",
   "Walking through a stopped world with the magnifying glass raised. Curious, taking his time. No "
   "line. He is not performing for anyone, he is just looking."),
- (P+"/S1_P6.jpg","L","He turns to us and asks the question",
+ (V+"/V7_1_6_turns_to_us.jpg","L","He turns to us and asks the question",
   "SETUP A. Close up, same light, to lens. Six takes minimum, use the most unguarded.",
   "The frozen crowd stays behind him. Title over.",
   "He lowers the glass and turns to camera.\n\"Hold on. He had nothing left. So where did THAT "
