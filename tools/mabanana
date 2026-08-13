@@ -1,0 +1,204 @@
+#!/usr/bin/env python3
+"""
+mabanana v1 - Nano Banana Pro straight from Termux.
+
+Google's gemini-3-pro-image is the same model imgtoimg.ai serves. Going direct
+means: no daily quota, ~$0.134 an image, and above all a REAL ERROR when a
+generation fails instead of a silent stall at 95%.
+
+    mabanana "a photograph of ..." -r ref1.jpg -r https://.../ref2.jpg
+    mabanana -f prompt.txt -r MANAN_DESK.jpg -a 16:9 -o 5_9_wall
+
+Key lives in ~/.mabanana_key, or $GEMINI_API_KEY. Get one free at
+https://aistudio.google.com/apikey
+"""
+
+import argparse
+import base64
+import json
+import mimetypes
+import os
+import sys
+import time
+import urllib.request
+
+MODEL = "gemini-3-pro-image"
+ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
+KEYFILE = os.path.expanduser("~/.mabanana_key")
+OUTDIR = os.path.expanduser("~/mabanana")
+
+C = dict(dim="\033[2m", b="\033[1m", r="\033[31m", g="\033[32m",
+         y="\033[33m", c="\033[36m", x="\033[0m")
+
+
+def say(msg, col="x"):
+    print(f"{C[col]}{msg}{C['x']}", file=sys.stderr)
+
+
+def get_key():
+    k = os.environ.get("GEMINI_API_KEY")
+    if k:
+        return k.strip()
+    if os.path.exists(KEYFILE):
+        k = open(KEYFILE).read().strip()
+        if k:
+            return k
+    say("no key found.", "r")
+    say("get one free at https://aistudio.google.com/apikey then:", "y")
+    say(f"  echo YOUR_KEY > {KEYFILE} && chmod 600 {KEYFILE}", "y")
+    sys.exit(2)
+
+
+def load_ref(src):
+    """A reference is a local path or an http url. Returns an inline_data part."""
+    if src.startswith("http://") or src.startswith("https://"):
+        say(f"  fetching {src.rsplit('/', 1)[-1]}", "dim")
+        with urllib.request.urlopen(src, timeout=60) as r:
+            data = r.read()
+            mime = r.headers.get_content_type() or "image/jpeg"
+    else:
+        p = os.path.expanduser(src)
+        if not os.path.exists(p):
+            say(f"reference not found: {p}", "r")
+            sys.exit(2)
+        data = open(p, "rb").read()
+        mime = mimetypes.guess_type(p)[0] or "image/jpeg"
+    say(f"  {src.rsplit('/', 1)[-1]}  {len(data)/1024:.0f} KB", "dim")
+    return {"inline_data": {"mime_type": mime, "data": base64.b64encode(data).decode()}}
+
+
+def explain_failure(body):
+    """The whole reason for this tool. Say exactly what went wrong."""
+    pf = body.get("promptFeedback") or {}
+    if pf.get("blockReason"):
+        say(f"BLOCKED BEFORE GENERATING: {pf['blockReason']}", "r")
+        for r in pf.get("safetyRatings", []):
+            if r.get("probability") not in (None, "NEGLIGIBLE"):
+                say(f"  {r.get('category')}  {r.get('probability')}", "r")
+        say("the wording tripped a filter. change the wording, not the settings.", "y")
+        return
+
+    cands = body.get("candidates") or []
+    if not cands:
+        say("no candidates returned and no block reason given.", "r")
+        say(json.dumps(body)[:900], "dim")
+        return
+
+    fr = cands[0].get("finishReason")
+    if fr and fr not in ("STOP", "MAX_TOKENS"):
+        say(f"STOPPED: {fr}", "r")
+        for r in cands[0].get("safetyRatings", []):
+            if r.get("probability") not in (None, "NEGLIGIBLE"):
+                say(f"  {r.get('category')}  {r.get('probability')}", "r")
+        if fr in ("SAFETY", "PROHIBITED_CONTENT", "IMAGE_SAFETY"):
+            say("this is the 95% stall, named. rewrite the prompt.", "y")
+        return
+
+    say("finished but returned no image part.", "r")
+    for p in cands[0].get("content", {}).get("parts", []):
+        if p.get("text"):
+            say(p["text"][:600], "dim")
+
+
+def generate(prompt, refs, aspect, size, out, tries):
+    key = get_key()
+    parts = [load_ref(r) for r in refs] + [{"text": prompt}]
+    payload = {
+        "contents": [{"role": "user", "parts": parts}],
+        "generationConfig": {
+            "responseModalities": ["TEXT", "IMAGE"],
+            "imageConfig": {"aspectRatio": aspect, "imageSize": size},
+        },
+    }
+    body = json.dumps(payload).encode()
+    url = ENDPOINT.format(m=MODEL)
+
+    for attempt in range(1, tries + 1):
+        say(f"[{attempt}/{tries}] {MODEL}  {aspect}  {size}  {len(refs)} ref(s)", "c")
+        req = urllib.request.Request(
+            url, data=body,
+            headers={"Content-Type": "application/json", "x-goog-api-key": key})
+        t0 = time.time()
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                res = json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf8", "replace")
+            say(f"HTTP {e.code}", "r")
+            try:
+                say(json.loads(detail)["error"]["message"], "r")
+            except Exception:
+                say(detail[:600], "dim")
+            if e.code in (429, 500, 503) and attempt < tries:
+                wait = 8 * attempt
+                say(f"retrying in {wait}s", "y")
+                time.sleep(wait)
+                continue
+            sys.exit(1)
+        except Exception as e:
+            say(f"network: {e}", "r")
+            if attempt < tries:
+                time.sleep(6)
+                continue
+            sys.exit(1)
+
+        img = None
+        for p in (res.get("candidates") or [{}])[0].get("content", {}).get("parts", []):
+            if p.get("inline_data") or p.get("inlineData"):
+                d = p.get("inline_data") or p.get("inlineData")
+                img = base64.b64decode(d["data"])
+                break
+
+        if img:
+            os.makedirs(OUTDIR, exist_ok=True)
+            stem = out or time.strftime("%Y%m%d_%H%M%S")
+            path = os.path.join(OUTDIR, f"{stem}.png")
+            n = 2
+            while os.path.exists(path):
+                path = os.path.join(OUTDIR, f"{stem}_{n}.png")
+                n += 1
+            open(path, "wb").write(img)
+            um = res.get("usageMetadata", {})
+            toks = um.get("candidatesTokenCount", 0)
+            cost = toks / 1e6 * 12.0
+            say(f"{time.time()-t0:.0f}s   {len(img)/1024:.0f} KB   ~${cost:.3f}", "dim")
+            say(f"saved {path}", "g")
+            print(path)
+            return
+
+        explain_failure(res)
+        if attempt < tries:
+            say("same prompt will fail the same way. stopping.", "y")
+        sys.exit(1)
+
+
+def main():
+    ap = argparse.ArgumentParser(prog="mabanana", add_help=True)
+    ap.add_argument("prompt", nargs="?", help="the prompt, or use -f")
+    ap.add_argument("-f", "--file", help="read the prompt from a file")
+    ap.add_argument("-r", "--ref", action="append", default=[],
+                    help="reference image, local path or url, repeatable")
+    ap.add_argument("-a", "--aspect", default="16:9",
+                    help="16:9 3:2 4:3 1:1 9:16, default 16:9")
+    ap.add_argument("-s", "--size", default="2K", choices=["1K", "2K", "4K"])
+    ap.add_argument("-o", "--out", help="output name without extension")
+    ap.add_argument("-n", "--tries", type=int, default=2)
+    a = ap.parse_args()
+
+    if a.file:
+        prompt = open(os.path.expanduser(a.file)).read().strip()
+    elif a.prompt:
+        prompt = a.prompt
+    elif not sys.stdin.isatty():
+        prompt = sys.stdin.read().strip()
+    else:
+        ap.error("give a prompt, or -f a file, or pipe it in")
+
+    if not prompt:
+        ap.error("the prompt is empty")
+
+    generate(prompt, a.ref, a.aspect, a.size, a.out, a.tries)
+
+
+if __name__ == "__main__":
+    main()
