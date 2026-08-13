@@ -942,3 +942,32 @@ clone sideways, it picks up a different part of the lid gradient and leaves a br
 
 **Find the box by cropping and scaling, not by guessing.** Crop a known rectangle, resize by a known
 factor, read the logo position in the enlarged view, divide back. Guessing costs three attempts.
+
+## THE 95% STALL WAS NEVER GOOGLE, 13.8.2026
+
+The white void prompt stalled twice at 95% on imgtoimg.ai and was assumed to be a safety
+filter. It was not.
+
+Run against Google's own `gemini-3-pro-image` endpoint, the identical prompt and the identical
+reference returned `finishReason: STOP`, no `promptFeedback`, no safety rating above negligible,
+and a clean image in 113 seconds.
+
+**So the block was imgtoimg.ai's own layer**, their quota or their own moderation sitting in
+front of the model. Not Google's.
+
+**Two consequences.** Do not rewrite a prompt to escape a stall on a reseller before checking it
+direct. And the real cost is far below the published rate: a 2K image billed 1202 output tokens,
+about **$0.014**, not $0.134. The whole remaining film is under a dollar.
+
+## CUTTING A DRAWN CHARACTER OFF ITS PAPER
+
+Alpha from ink depth, `clip((236-L)/95)`, then everything under 0.18 zeroed to kill the panel's
+faint ground lines.
+
+**The trap: a connected component filter eats the faces.** Eyes and mouths are separate blobs from
+the body outline, so keeping only the largest component returns a figure with a blank head. What
+works is to take the largest component, `binary_fill_holes` it, dilate 3, and then keep every
+component that overlaps that solid region. The face lives inside the body, so it survives; a stray
+ground line outside it does not.
+
+Place on a soft elliptical contact shadow at 0.28, blurred 10, or the figure floats.
