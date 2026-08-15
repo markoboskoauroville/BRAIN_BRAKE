@@ -1,0 +1,42 @@
+THE BRAIN BRAKE, V3A COMIC STRIP FORMAT
+Example delivery, one scene, three panels.
+
+STRUCTURE
+
+  BRAIN_BRAKE_V3A/
+    S04_THE_GATEKEEPER/
+      S04_THE_GATEKEEPER_P01/
+        01_BACKGROUND/     the drawn room, no characters
+        02_CHARACTERS/     each character as its own transparent PNG
+        03_LIVE_PLATE/     placeholder marking where Manan goes
+        04_BUBBLE/         empty bubble PNG plus the line as a text file
+        05_VOICE/          the spoken line as WAV
+        06_PREVIEW/        assembled reference, not for use in the film
+        ..._INFO.txt       speaker, voice, direction, duration, panel hold
+      S04_THE_GATEKEEPER_P02/
+      S04_THE_GATEKEEPER_P03/
+
+NAMING
+
+  SCENE     S04_THE_GATEKEEPER      two digit scene number, then the scene name
+  PANEL     S04_THE_GATEKEEPER_P01  panels numbered inside the scene
+  FILE      SCENE_PANEL_WHAT.ext    every file repeats its scene and panel,
+                                    so a file is identifiable on its own even
+                                    if it is moved or renamed by accident
+
+EVERY FRAME IS 2731 x 1536, TRUE 16:9.
+Nano Banana returns 2752 x 1536 which is 1.7917, slightly wider than 16:9.
+Every delivered file is cropped to 1.7778 before it leaves here.
+
+WHAT IS NEEDED FROM ANIMATION
+
+  Composite Manan into 03_LIVE_PLATE
+  Set the bubble text in 04_BUBBLE, your font, your choice
+  Separate background from characters and add light parallax
+  Transitions between panels
+  Small living details, a few dials turning, a light blinking
+
+  No character animation. No lip sync. No walk cycles.
+
+TIMING
+  Cut each panel to its voice file. Hold roughly one second past the line.
