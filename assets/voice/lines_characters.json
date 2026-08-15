@@ -1,36 +1,55 @@
 [
   {
     "id": "4.1",
+    "panel": "S4_a",
     "character": "COACH BRAIN",
     "voice": "Male English Actor",
-    "desc": "A warm, generous teacher. Amused, entirely unembarrassed, never sly and never a villain. He is pleased to have been found. Delighted, a little teasing, as if he has been waiting a long time.",
+    "wav": "BUB_4_1.wav",
+    "seconds": 2.8,
+    "desc": "A warm, generous teacher. Amused, entirely unembarrassed, never sly and never a villain. Delighted, a little teasing, as if he has been waiting a long time. Ends with a small chuckle.",
     "text": "You found me. Took you long enough."
   },
   {
-    "id": "4.3",
+    "id": "4.3a",
+    "panel": "S4_b",
     "character": "COACH BRAIN",
     "voice": "Male English Actor",
-    "desc": "A warm, generous teacher. Brisk and practical listing the five things, then slowing right down for the question at the end.",
-    "text": "Heart rate. Breath. Temperature. Water. Distance. I'm asking one question. Can we keep going safely?"
+    "wav": "BUB_4_3a.wav",
+    "seconds": 4.7,
+    "desc": "Brisk and practical, ticking five things off on his fingers. Even rhythm, no drama, slight lift on the last one.",
+    "text": "Heart rate. Breath. Temperature. Water. Distance."
+  },
+  {
+    "id": "4.3b",
+    "panel": "S4_c",
+    "character": "COACH BRAIN",
+    "voice": "Male English Actor",
+    "wav": "BUB_4_3b.wav",
+    "seconds": 4.9,
+    "desc": "Slowing right down. Direct and quiet, looking straight at the boy. The question is genuine, not rhetorical.",
+    "text": "I'm asking one question. Can we keep going safely?"
   },
   {
     "id": "4.5",
     "character": "COACH BRAIN",
     "voice": "Male English Actor",
-    "desc": "A warm, generous teacher. Kind and completely without apology. He knows he is right and he is not smug about it.",
+    "wav": "COACH_4_5.wav",
+    "desc": "Kind and completely without apology. He knows he is right and he is not smug about it.",
     "text": "My best judgement. I'm not trying to stop you. I'm trying to get you to the finish line."
   },
   {
     "id": "6.1",
     "character": "COACH BRAIN",
     "voice": "Male English Actor",
-    "desc": "A warm, generous teacher. Quiet, deciding out loud. A small generous choice. Slight smile, unhurried.",
+    "wav": "COACH_6_1.wav",
+    "desc": "Quiet, deciding out loud. A small generous choice. Slight smile, unhurried.",
     "text": "All right. Everything's holding. Let's give him a little more."
   },
   {
     "id": "2.4",
     "character": "WORKER",
-    "voice": "TBC",
+    "voice": "Classical Film Actor",
+    "wav": "WORKER_2_4.wav",
     "desc": "A tired factory worker at the end of a long shift. Flat, resigned, matter of fact. Not frightened and not dramatic, just finished. American accent.",
     "text": "That's it. We're done."
   }
