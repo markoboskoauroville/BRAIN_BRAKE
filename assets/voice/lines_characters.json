@@ -1,32 +1,37 @@
 [
   {
     "id": "4.1",
-    "voice": null,
-    "desc": "Warm, amused, entirely unembarrassed. A teacher pleased to have been found.",
+    "character": "COACH BRAIN",
+    "voice": "Male English Actor",
+    "desc": "A warm, generous teacher. Amused, entirely unembarrassed, never sly and never a villain. He is pleased to have been found. Delighted, a little teasing, as if he has been waiting a long time.",
     "text": "You found me. Took you long enough."
   },
   {
     "id": "4.3",
-    "voice": null,
-    "desc": "Brisk and practical, listing things off, then one quiet direct question at the end.",
+    "character": "COACH BRAIN",
+    "voice": "Male English Actor",
+    "desc": "A warm, generous teacher. Brisk and practical listing the five things, then slowing right down for the question at the end.",
     "text": "Heart rate. Breath. Temperature. Water. Distance. I'm asking one question. Can we keep going safely?"
   },
   {
     "id": "4.5",
-    "voice": null,
-    "desc": "Kind, completely without apology. He knows he is right and he is not smug about it.",
+    "character": "COACH BRAIN",
+    "voice": "Male English Actor",
+    "desc": "A warm, generous teacher. Kind and completely without apology. He knows he is right and he is not smug about it.",
     "text": "My best judgement. I'm not trying to stop you. I'm trying to get you to the finish line."
   },
   {
     "id": "6.1",
-    "voice": null,
-    "desc": "Quiet, deciding. A small generous choice made out loud.",
+    "character": "COACH BRAIN",
+    "voice": "Male English Actor",
+    "desc": "A warm, generous teacher. Quiet, deciding out loud. A small generous choice. Slight smile, unhurried.",
     "text": "All right. Everything's holding. Let's give him a little more."
   },
   {
     "id": "2.4",
-    "voice": null,
-    "desc": "Flat, resigned, end of a shift. Not frightened, just done.",
+    "character": "WORKER",
+    "voice": "TBC",
+    "desc": "A tired factory worker at the end of a long shift. Flat, resigned, matter of fact. Not frightened and not dramatic, just finished. American accent.",
     "text": "That's it. We're done."
   }
 ]
