@@ -1,6 +1,18 @@
 THE BRAIN BRAKE, V3A COMIC STRIP FORMAT
 Example delivery. One scene, one frame, three movements.
 
+TIMEBASE
+
+  25 fps, non drop. All timecode is HH:MM:SS:FF with two digit padding.
+  Every timecode in a frame folder is relative to the start of that frame,
+  which is 00:00:00:00. Nothing here is absolute to the whole film.
+
+  Every INFO file carries IN, OUT and DURATION for each movement, and a
+  TIMECODE.csv sits beside it with the same numbers for import.
+
+  Durations are computed from the audio sample count, not from rounded
+  seconds, so nothing drifts.
+
 STRUCTURE
 
   BRAIN_BRAKE_V3A/
@@ -9,26 +21,27 @@ STRUCTURE
         S04_F01_M1_PREVIEW.jpg      assembled reference, one per movement
         S04_F01_M2_PREVIEW.jpg
         S04_F01_M3_PREVIEW.jpg
-        S04_F01_INFO.txt            lines, direction, timings
+        S04_F01_INFO.txt            lines, direction, timecode
+        S04_F01_TIMECODE.csv        the same timings, for import
         BREAKDOWN/                  everything needed to build them
 
 NAMING
 
-  SCENE_04_THE_GATEKEEPER    scene number and name
-  FRAME_01_COACH_BRAIN_FOUND frame number and what happens in it
-  S04_F01                    every file starts with scene and frame
-  _M1 _M2 _M3                the movements inside that frame
-  _BG _CHAR_ _PLATE_ _BUBBLE_ _VOICE_    what the file is
+  SCENE_04_THE_GATEKEEPER     scene number and name
+  FRAME_01_COACH_BRAIN_FOUND  frame number and what happens in it
+  S04_F01                     every file starts with scene and frame
+  _M1 _M2 _M3                 the movements inside that frame
+  _BG _CHAR_ _PLATE_ _BUBBLE_ _VOICE_     what the file is
 
   A frame with dialogue has one movement per speech bubble.
   A static frame has only M1, and no bubble or voice files.
 
-  Every filename carries its scene, frame and movement, so any file is
-  identifiable on its own even if it gets moved or renamed.
+  Every filename carries its scene, frame and movement, so any file stays
+  identifiable on its own even if it is moved or renamed.
 
 EVERY FRAME IS 2731 x 1536, TRUE 16:9.
 Nano Banana returns 2752 x 1536, which is 1.7917 and slightly wider.
-Everything delivered here is cropped to 1.7778 first.
+Everything delivered here is cropped to 1.7778 before it ships.
 
 WHAT IS NEEDED FROM ANIMATION
 
@@ -41,5 +54,8 @@ WHAT IS NEEDED FROM ANIMATION
   No character animation. No lip sync. No walk cycles.
 
 TIMING
-  Cut each movement to its voice file. Hold about one second past the line.
-  The INFO file gives the length and the hold for every movement.
+
+  Cut each movement to its voice file. The hold is already included in the
+  OUT timecode: speech plus 25 frames.
+  A static frame with no line holds 00:00:01:12, 37 frames, unless its INFO
+  says otherwise.
