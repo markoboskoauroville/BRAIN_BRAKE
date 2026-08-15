@@ -177,7 +177,7 @@ his worst, because the size of the feeling inside him is not the size of the thi
 will finish a take that felt flat and like nothing happened, and that is often the true one.
 
 So: **the take that felt wrong is worth watching before you dismiss it.** Judge by the picture,
-never by the feeling. This is why the phone rehearsal in section 12 matters, and Alexander explains
+never by the feeling. This is why the phone rehearsal in section 13 matters, and Alexander explains
 why it works: it replaces an unreliable instrument with a reliable one.
 
 **It also changes what we say to him.** Never "how did that feel". Always "let us look at it".
@@ -437,6 +437,12 @@ The largest section and the reason the book exists. **Every line Manan speaks ge
     TIMING               timecode       length, and where the pause sits
     WATCH OUT FOR        one line       the specific failure this line invites
 
+    REMINDER             one sentence   ONE new principle, boxed, at the foot of the page.
+                                        never two. sequenced across the book, easy first.
+
+    [ BACK OF PAGE ]                    the four questions, and space to write by hand.
+                                        printed double sided, short edge.
+
 **The typography rule, stated once and enforced everywhere.** The spoken words are large. Everything
 else is small. When he glances at the page between takes he must see only what he has to say. The
 direction is for reading beforehand, not during.
@@ -455,7 +461,134 @@ confirmed, not assumed.
 
 ---
 
-## 10. THE ILLUSTRATIONS. FULL SPECIFICATION
+## 10. HOW THE BOOK TEACHES. THE PEDAGOGY, AND IT IS THE DESIGN
+
+Added 15.8.2026 from Marko. This section governs the shape of every page and overrides any
+temptation to be thorough on a single page.
+
+### 10.1 ONE THING PER PAGE. NEVER TWENTY FIVE
+
+**A boy given twenty five principles at once is broken into twenty five pieces.** He does not become
+skilled, he becomes fragmented, and under pressure a fragmented performer has nothing to hold.
+
+So the book behaves like good software. Every time you open it you get **one tip**. Small enough to
+absorb without effort, then gone. By the last page he has received all of them, one at a time, and
+each arrived while he had attention free to take it.
+
+**The rule, absolute:** each line page carries **exactly one** reminder. Not two. If a page has two
+things worth saying, one of them belongs on a different page.
+
+**The reminders are sequenced, not scattered.** They are ordered so that each is useful on the
+particular line it sits under, and so that difficulty rises across the book. The first pages carry
+mechanical, easily obeyed reminders. The last pages carry the subtle ones about not performing at
+all, which he could not have used on page one.
+
+**Nothing from the Alexander chapters is repeated as theory.** The reminder is the practice of it,
+in one sentence, with no name attached.
+
+### 10.2 THE LOOP. THE BOOK IS WALKED MORE THAN ONCE
+
+The reminders accumulate. On the first pass he learns them one at a time, so line one has one tool
+and line thirty has thirty. **That is an unfinished performance and it is intentional.**
+
+Then he goes back to the beginning.
+
+On the second pass he brings the last page's principle to the first line. Nothing new is taught. The
+same pages read differently because he is different, and the film levels out. On the third pass it
+stops being technique and becomes how he does it.
+
+**The book states this on its first page**, so he never thinks a weak early rehearsal is failure:
+
+> You will finish this book with more than you started it with, so the first lines will be the
+> weakest. That is the design. When you reach the end, go back to the beginning and do it again.
+> The second time is where the film is.
+
+**This is also the film's own shape.** Plant before it is needed, from `storytelling.md`. Everything
+that matters at the end is already present at the beginning, unnoticed. The training does the same
+thing to the trainee.
+
+### 10.3 THE BACK OF EVERY PAGE. HE ANSWERS, WE DO NOT TELL
+
+Printed double sided. Front is the line and the direction. **Back is questions he answers after the
+take, by hand.**
+
+**Why questions and not notes, and this is the whole method.** A boy told he was stiff defends
+himself. A boy who watches the take and answers "what did your hands do" arrives at stiff by
+himself, and then he wants to solve it. Told, he resists. Concluded, he improves. Criticism from
+outside closes a person, a conclusion from inside opens them.
+
+**It is also the only honest answer to Alexander's faulty sensory appreciation.** His feeling about
+a take is unreliable evidence, so every question points him at what he can see and hear on the
+phone, never at how it felt.
+
+**The four questions, on the back of every line page:**
+
+    1  WATCH IT BACK.  What did you actually do that you did not know you were doing?
+    2  What were you thinking about, in the second before you spoke?
+    3  Which take felt worst to you? Watch that one again. What is in it?
+    4  One thing to try differently next time. Only one.
+
+Plus space to write, and one line at the bottom:
+
+    TAKE NUMBER I KEPT: ____     WHY: ______________________
+
+**Question 3 is the important one** and it is doing quiet work. It teaches him, without argument,
+that his feeling and the picture disagree. After four or five pages he will have discovered this for
+himself, and from then on he trusts the evidence.
+
+**Question 4 is capped at one on purpose.** A boy who writes five things to fix will fix none.
+
+**Practical, for Neha.** Print double sided, short edge, so the questions sit behind their own line.
+Give him a pen. The answers are his, not homework, and nobody marks them.
+
+### 10.4 THE PROFESSIONAL CURVE. TAUGHT EXPLICITLY, EARLY
+
+The difference between an amateur and a professional, stated plainly on its own page near the front,
+because it changes his behaviour more than any technique in the book:
+
+**An amateur gives everything on take one.** It is the best thing he will do all day. Take two is
+worse. By take ten he is tired, bored and defending his first take. After two hours he wants to stop.
+
+**A professional is worst on take one.** He is finding it. Take four is better. Take ten is better
+again. He is still improving after two hours, because he was never trying to be good, he was trying
+to find it.
+
+**So the instruction to Manan is the opposite of what he will assume:**
+
+> Do not try to be good on the first take. Be wrong on purpose. Find it slowly. The take we use
+> will not be one of the first three, so spend them looking rather than performing.
+
+**This single page will do more for the film than any other.** It removes the pressure that causes
+almost every failure in section 1, and it gives him permission to be bad, which is the only
+condition under which a beginner gets good.
+
+It also protects the shoot day. Venkatesh will roll many takes and Manan needs to know in advance
+that this is normal and not a sign that he is failing.
+
+### 10.5 THE LAYER UNDERNEATH
+
+The book works on two levels and only one is stated.
+
+**Stated:** how to be believable on camera.
+
+**Unstated, absorbed:** you already contain what you need, nothing has to be imported, your own
+judgement of yourself is unreliable and gentler than you think, and being wrong is the route rather
+than the failure.
+
+**A person absorbs a symbol without resistance and rejects a statement.** So the second layer is
+never written down. It is carried by the structure: the loop that assumes he will improve, the
+questions that assume he can see for himself, the permission to be bad, the reminders that arrive
+one at a time as though he were already capable of holding them.
+
+**And it is the film's own thesis, aimed at the boy instead of the audience.** The brain did not make
+new energy. It gave permission. The book never says this about him. It simply behaves as though it
+were true, and by the end he has concluded it himself.
+
+That is the difference between a training manual and something he keeps.
+
+---
+
+## 11. THE ILLUSTRATIONS. FULL SPECIFICATION
 
 All generated with Nano Banana, referencing the film's own artwork so the book and the film are
 visibly the same object. Every image is cropped to true 16:9 or to a stated portrait ratio before
@@ -485,10 +618,12 @@ before he arrives on set.**
 | 13 | The fear reflex pattern | 16:9 | wrong and right, neck, head, shoulders, breath |
 | 14 | End-gaining, worked example | 16:9 | going at the emotion, versus doing the thing |
 | 15 | Let, not do | 3:2 | pushing shoulders down, versus letting them be wide |
+| 16 | The professional curve | 16:9 | two lines on a graph, amateur falling, professional rising |
+| 17 | The loop | 1:1 | the book walked three times, drawn as a spiral not a line |
 
 Plus **one illustration per line page**, 28 to 34, showing posture, eyeline and hands for that line.
 
-**Total estimate: 43 to 49 images.** At the measured rate of roughly $0.016 each and two attempts
+**Total estimate: 45 to 51 images.** At the measured rate of roughly $0.016 each and two attempts
 average, about **$1.50 for the whole book**. Cost is not a constraint here. Time is: at 25 seconds a
 generation plus review, budget three to four hours.
 
@@ -503,7 +638,7 @@ generation plus review, budget three to four hours.
 
 ---
 
-## 11. ON THE DAY. THE SHORT SECTION HE ACTUALLY REREADS
+## 12. ON THE DAY. THE SHORT SECTION HE ACTUALLY REREADS
 
 Deliberately brief. Two pages, designed to be read on the morning of the shoot.
 
@@ -523,7 +658,7 @@ Deliberately brief. Two pages, designed to be read on the morning of the shoot.
 
 ---
 
-## 12. THE REHEARSAL METHOD, FOR NEHA
+## 13. THE REHEARSAL METHOD, FOR NEHA
 
 One page, for the person directing him at home.
 
@@ -546,7 +681,7 @@ thinking about just then. What do you want from him in this moment. What happene
 
 ---
 
-## 13. THE CASE STUDY FRAME, FOR THE BOOK VERSION
+## 14. THE CASE STUDY FRAME, FOR THE BOOK VERSION
 
 The published book carries the principles, then Manan's actual preparation as the worked example:
 the script pages, the rehearsal notes, what failed, what was changed, and the finished frames beside
@@ -564,7 +699,7 @@ and on a phone with no signal, at 25fps timecode, matching the film's own type a
 
 ---
 
-## 14. WHAT MUST NOT HAPPEN
+## 15. WHAT MUST NOT HAPPEN
 
 - **No acting theory.** No Stanislavski, no method, no vocabulary he has to learn. Alexander's
   ideas are used, his terminology is not. The word technique never appears. Every instruction
@@ -582,10 +717,14 @@ and on a phone with no signal, at 25fps timecode, matching the film's own type a
 
 ---
 
-## 15. BUILD ORDER, FOR TOMORROW MORNING
+## 16. BUILD ORDER, FOR TOMORROW MORNING
 
 1. **Inventory every line** in the current comic strip script. Exact count, exact words, to camera
    or voice over. Write the count back into this file. Nothing is generated before this exists.
+1b. **Write the reminder sequence.** One per line page, ordered easy to subtle, mapped to the line
+   each sits under. This is a single list written in one sitting so the progression is deliberate
+   rather than accidental. It cannot be written page by page.
+
 2. **Write the line pages as text first.** All of them, complete, before any illustration. The
    words are the book. If the text is right the pictures are quick, and if the text is wrong the
    pictures are wasted.
