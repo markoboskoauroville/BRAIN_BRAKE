@@ -1,0 +1,32 @@
+[
+  {
+    "id": "4.1",
+    "voice": null,
+    "desc": "Warm, amused, entirely unembarrassed. A teacher pleased to have been found.",
+    "text": "You found me. Took you long enough."
+  },
+  {
+    "id": "4.3",
+    "voice": null,
+    "desc": "Brisk and practical, listing things off, then one quiet direct question at the end.",
+    "text": "Heart rate. Breath. Temperature. Water. Distance. I'm asking one question. Can we keep going safely?"
+  },
+  {
+    "id": "4.5",
+    "voice": null,
+    "desc": "Kind, completely without apology. He knows he is right and he is not smug about it.",
+    "text": "My best judgement. I'm not trying to stop you. I'm trying to get you to the finish line."
+  },
+  {
+    "id": "6.1",
+    "voice": null,
+    "desc": "Quiet, deciding. A small generous choice made out loud.",
+    "text": "All right. Everything's holding. Let's give him a little more."
+  },
+  {
+    "id": "2.4",
+    "voice": null,
+    "desc": "Flat, resigned, end of a shift. Not frightened, just done.",
+    "text": "That's it. We're done."
+  }
+]

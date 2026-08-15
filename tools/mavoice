@@ -1,0 +1,176 @@
+#!/usr/bin/env python3
+"""
+mavoice v1 - Hume Octave voices for THE BRAIN BRAKE, straight to WAV.
+
+Why Hume and not anything else: Octave takes an acting instruction per line, so
+Coach Brain can be told "warm, amused, entirely unembarrassed" and the reading
+changes. Nothing else in this price range directs a performance.
+
+    mavoice --list                       show the voices available on the account
+    mavoice --test                       one line in three candidate voices
+    mavoice --script lines.json          render the whole film to WAV
+
+Key: ~/.mavoice_key, or $HUME_API_KEY. Get one free at https://app.hume.ai/keys
+
+NOTE ON MODEL VERSION
+Octave 2 is newer and faster but acting instructions are listed as coming soon.
+Acting instructions are the whole point here, so this tool uses Octave 1.
+"""
+
+import argparse
+import base64
+import json
+import os
+import sys
+import time
+import urllib.request
+import urllib.error
+
+BASE = "https://api.hume.ai/v0"
+KEYFILE = os.path.expanduser("~/.mavoice_key")
+OUTDIR = os.path.expanduser("~/mavoice")
+
+C = dict(dim="\033[2m", b="\033[1m", r="\033[31m", g="\033[32m",
+         y="\033[33m", c="\033[36m", x="\033[0m")
+
+
+def say(m, col="x"):
+    print(f"{C[col]}{m}{C['x']}", file=sys.stderr)
+
+
+def key():
+    k = os.environ.get("HUME_API_KEY")
+    if k:
+        return k.strip()
+    if os.path.exists(KEYFILE):
+        k = open(KEYFILE).read().strip()
+        if k:
+            return k
+    say("no key found.", "r")
+    say("get one free at https://app.hume.ai/keys then:", "y")
+    say(f"  echo YOUR_KEY > {KEYFILE} && chmod 600 {KEYFILE}", "y")
+    sys.exit(2)
+
+
+def call(path, payload=None, method="POST", raw=False):
+    url = BASE + path
+    data = json.dumps(payload).encode() if payload is not None else None
+    req = urllib.request.Request(url, data=data, method=method, headers={
+        "Content-Type": "application/json",
+        "X-Hume-Api-Key": key(),
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=300) as r:
+            return r.read() if raw else json.load(r)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf8", "replace")
+        say(f"HTTP {e.code}", "r")
+        try:
+            say(json.loads(body).get("message") or body[:500], "r")
+        except Exception:
+            say(body[:500], "dim")
+        if e.code == 401:
+            say("the key was rejected. check it at https://app.hume.ai/keys", "y")
+        if e.code == 429:
+            say("out of characters for this month, or too many requests.", "y")
+        sys.exit(1)
+
+
+def list_voices():
+    for provider in ("HUME_AI", "CUSTOM_VOICE"):
+        try:
+            d = call(f"/tts/voices?provider={provider}&page_size=100", method="GET")
+        except SystemExit:
+            continue
+        items = d.get("voices_page") or d.get("data") or []
+        say(f"\n{provider}  ({len(items)})", "c")
+        for v in items:
+            print(f"  {v.get('name')}")
+
+
+def synth(text, voice, description, out, speed=None, trailing=None):
+    """One line to one WAV. description is the acting instruction."""
+    utt = {"text": text}
+    if voice:
+        utt["voice"] = {"name": voice, "provider": "HUME_AI"}
+    if description:
+        utt["description"] = description
+    if speed is not None:
+        utt["speed"] = speed
+    if trailing is not None:
+        utt["trailing_silence"] = trailing
+
+    payload = {
+        "utterances": [utt],
+        "format": {"type": "wav"},
+        "num_generations": 1,
+        "version": "1",          # Octave 1: acting instructions supported
+    }
+    t0 = time.time()
+    audio = call("/tts/file", payload, raw=True)
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
+    open(out, "wb").write(audio)
+    say(f"  {time.time()-t0:4.0f}s  {len(audio)/1024:6.0f} KB  {out}", "dim")
+    return out
+
+
+def test():
+    line = "You found me. Took you long enough."
+    desc = "Warm, amused, entirely unembarrassed. A teacher who is pleased to have been found."
+    os.makedirs(OUTDIR, exist_ok=True)
+    say("three candidates for Coach Brain, same line, same direction:", "c")
+    for v in ["Ava Song", "Male English Actor", "Colton Rivers"]:
+        try:
+            synth(line, v, desc, os.path.join(OUTDIR, "test_%s.wav" % v.replace(" ", "_")))
+        except SystemExit:
+            say(f"  {v}: not available on this account", "y")
+    say("listen to all three and tell me which one is Coach Brain.", "g")
+
+
+def run_script(path):
+    """
+    lines.json:
+    [
+      {"id":"4.1","voice":"...","desc":"warm, amused","text":"You found me."},
+      ...
+    ]
+    """
+    lines = json.load(open(os.path.expanduser(path)))
+    os.makedirs(OUTDIR, exist_ok=True)
+    total = sum(len(l["text"]) for l in lines)
+    say(f"{len(lines)} lines, {total} characters, about {total/1000:.1f} minutes", "c")
+    for l in lines:
+        out = os.path.join(OUTDIR, "%s.wav" % l["id"].replace(".", "_"))
+        say(l["id"] + "  " + l["text"][:60], "b")
+        synth(l["text"], l.get("voice"), l.get("desc"), out,
+              l.get("speed"), l.get("trailing_silence"))
+    say("done. all WAVs in " + OUTDIR, "g")
+
+
+def main():
+    ap = argparse.ArgumentParser(prog="mavoice")
+    ap.add_argument("--list", action="store_true", help="list available voices")
+    ap.add_argument("--test", action="store_true", help="one line, three voices")
+    ap.add_argument("--script", help="render a whole lines.json to WAV")
+    ap.add_argument("--say", help="render one line")
+    ap.add_argument("--voice", default=None)
+    ap.add_argument("--desc", default=None, help="acting instruction")
+    ap.add_argument("--out", default=None)
+    a = ap.parse_args()
+
+    if a.list:
+        list_voices()
+    elif a.test:
+        test()
+    elif a.script:
+        run_script(a.script)
+    elif a.say:
+        os.makedirs(OUTDIR, exist_ok=True)
+        synth(a.say, a.voice, a.desc,
+              a.out or os.path.join(OUTDIR, "line.wav"))
+    else:
+        ap.print_help()
+
+
+if __name__ == "__main__":
+    main()
