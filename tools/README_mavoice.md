@@ -47,3 +47,21 @@ film and it is what the competition is judging.
 
 The synthetic voices are Coach Brain, four lines, and the factory worker, one line.
 Roughly 300 characters in total for the whole film, against 10,000 free a month.
+
+
+## TWO THINGS FOUND ON THE FIRST REAL RUN, 15.8.2026
+
+**Cloudflare blocks the default Python user agent.** Every endpoint returned
+`403  error code: 1010` with a bare body and no JSON, including the auth endpoint. That is a
+Cloudflare signature, not a Hume error, and it looks exactly like a dead API key. Adding a normal
+browser `User-Agent` header fixed it instantly. Without a key the same request returns a proper
+`401` with a JSON message, which is how you tell the two apart.
+
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 ..."
+
+**Hume will not synthesise a child voice.** Asking for a fourteen year old boy returns
+`400  Sorry, we detected a request for a child voice, which violates our acceptable use policy.`
+
+This is the right outcome for this film. **Manan speaks every one of his own lines and all the
+narration himself, recorded on the day.** Only Coach Brain and the factory worker are synthesised,
+about 300 characters in total.
