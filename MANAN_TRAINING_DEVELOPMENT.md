@@ -1,7 +1,11 @@
 # MANAN_TRAINING_DEVELOPMENT.md
 
-The blueprint for **TRAINING FOR YOUNG ACTORS**, the illustrated guide, with Manan and
+The blueprint for **HOW TO ACT NATURALLY**, the illustrated guide, with Manan and
 THE BRAIN BRAKE as its case study.
+
+**The title is an argument, not a description.** What feels natural is only what is habitual, and
+habit is exactly what makes a boy look stiff on camera. Acting naturally is a trained thing. The
+book teaches the training and the title states the paradox on the cover.
 
 Nothing is built here. This is the plan every later document is made from. Read it whole before
 generating a single page or a single sketch.
@@ -19,7 +23,7 @@ Two things at once, and they must not fight each other.
 usable by a fourteen year old with two days of preparation and no training. If a page cannot be
 acted on within five minutes of reading it, that page is decoration and it comes out.
 
-**The lasting thing.** This becomes a book, *Training for Young Actors*, with Manan's preparation
+**The lasting thing.** This becomes a book, *How to Act Naturally*, with Manan's preparation
 as the worked case study. Other young people entering competitions will use it. That is why the
 principles are written as principles and then demonstrated on this film, rather than written only
 as instructions for this film.
@@ -105,7 +109,124 @@ film.
 
 ---
 
-## 4. THE FIVE DOORS. SENSORY PREPARATION
+## 4. F.M. ALEXANDER. THE FOUNDATION UNDER ALL OF IT
+
+Added 15.8.2026 after reading *Constructive Conscious Control*.
+
+**Alexander was an actor.** He built the whole technique because he was losing his voice during his
+one man Shakespeare recitals and no doctor could help him. He spent nine years working on himself
+with mirrors and found that his voice trouble was caused by what he was doing with his entire body,
+a network of tension running head to toe, every time he prepared to speak.
+
+So this is not a wellness method borrowed for acting. **It was invented by a performer to solve a
+performance problem.** That fact belongs on the first page of the book, because it tells a fourteen
+year old that the man who wrote this had the same problem he is about to have.
+
+Four of his ideas go straight in. Two of them repair real gaps in the plan as it stood.
+
+### 4.1 END-GAINING, AND WHY IT NAMES OUR CENTRAL PROBLEM
+
+Alexander's word for going straight at the result and ignoring how you get there. The pupil wants to
+sit down, so he throws himself at sitting down using the same tense habit that caused his trouble.
+He gets the end and reinforces the fault.
+
+**This is exactly what a young actor does with an emotion.** Told to be curious he goes straight at
+curiosity, makes a curious face, gains the end and produces nothing.
+
+The alternative Alexander calls attending to the means: do the things that produce the state and let
+the state arrive as a consequence. That is what "play an object, never an emotion" already says, but
+Alexander gives it a name, a mechanism and a reason, and the guide is stronger for saying why rather
+than only what.
+
+**It also turns a rule into a diagnosis.** When a take is dead the question is no longer "was that
+good", it is "was he end-gaining". A boy can be taught to catch that in himself. He cannot be taught
+to catch "not good enough".
+
+### 4.2 INHIBITION. THIS BECOMES THE FIFTH TOOL
+
+Alexander's most important discovery, and it is not suppression. It is the trained ability to
+receive a stimulus and **not respond immediately**. To stop, at the source, before the habit fires.
+
+**It repairs the largest hole in the plan.** Section 1 lists rushing, presenting, and playing the end
+of the line at the beginning. All three are one failure: the boy answers the stimulus of "action"
+with a stored pattern. The other tools give him better things to think and nothing that creates the
+gap in which to think them.
+
+Inhibition is that gap. It is added as the fifth tool and it comes first.
+
+For Manan: **when you hear action, do nothing.** Not a pause for effect, nothing, until the urge to
+perform arrives and passes without being obeyed. Then have the thought, then let the line come.
+Venkatesh rolls early and holds late so it costs nothing, and the editor gets clean handles.
+
+This also makes the film's own climax teachable. Frame 8.1 is a boy standing still doing nothing at
+all, the hardest thing on the call sheet. **It is not a performance to be found. It is inhibition,
+held.**
+
+### 4.3 FAULTY SENSORY APPRECIATION. THE MOST USEFUL THING IN THE BOOK
+
+Alexander's observation, and it is not obvious: **what feels right to you is only what is habitual.**
+The pupil bends his knees badly and it feels right because it is what he always does. Corrected, he
+does it well and it feels wrong because it is unfamiliar. His feeling is not a reliable report of
+what he is actually doing.
+
+**For a young actor this is the single most valuable thing he can be told,** and nothing else in the
+plan covers it.
+
+He will finish a take that felt big and expressive and believe it was his best. It will usually be
+his worst, because the size of the feeling inside him is not the size of the thing on screen. He
+will finish a take that felt flat and like nothing happened, and that is often the true one.
+
+So: **the take that felt wrong is worth watching before you dismiss it.** Judge by the picture,
+never by the feeling. This is why the phone rehearsal in section 12 matters, and Alexander explains
+why it works: it replaces an unreliable instrument with a reliable one.
+
+**It also changes what we say to him.** Never "how did that feel". Always "let us look at it".
+
+### 4.4 DIRECTIONS. THINK IT, DO NOT DO IT
+
+Alexander gave his pupils directions to think rather than movements to perform. Let the neck be
+free. Not a muscular act, an intention held while doing something else.
+
+So every physical note in the book is written as a permission, never an instruction. Never "drop
+your shoulders", which produces a boy pushing his shoulders down, adding tension to fix tension.
+Instead: let the shoulders be wide, let the neck be free, let the weight fall through the feet.
+
+**Which is, and not by accident, the film's own thesis in another form.** The brain did not make new
+energy. It gave permission.
+
+### 4.5 THE FEAR REFLEX PATTERN
+
+Alexander noticed that fear and stress produce a consistent bodily pattern rather than a vague
+feeling: the neck tightens, the head pulls back and down, the shoulders rise, the breath shortens
+and moves high in the chest.
+
+Worth its own illustrated page, because it is **findable**. A boy cannot be told not to be nervous.
+He can be shown a drawing of what nerves do to a body, recognise it in himself in three seconds, and
+undo it by letting the neck be free and breathing out longer than in.
+
+Naming a thing gives a handle on it, which is `storytelling.md`'s first principle, externalise the
+difficulty, applied to the performer instead of the audience.
+
+---
+
+## 5. WHAT ALEXANDER CHANGES IN THE PLAN
+
+| Was | Now |
+|---|---|
+| Four tools | **Five.** Inhibition is added and comes first. |
+| Play an object, not an emotion | Same rule, now with end-gaining as its explanation and its diagnosis. |
+| Nothing about self assessment | A chapter: your feeling about a take is unreliable evidence. |
+| Physical notes as instructions | Physical notes as permissions. Let, never do. |
+| "Be less nervous", unactable | The fear reflex pattern, drawn, findable, undoable. |
+| Phone rehearsal as good practice | Phone rehearsal as the correction for an unreliable instrument. |
+
+**One caution.** Alexander is a whole discipline and the temptation is to teach it. Do not. The boy
+has two days. Take the five ideas above, translate each into a physical action or a real memory, and
+never use the word technique anywhere in the book.
+
+---
+
+## 6. THE FIVE DOORS. SENSORY PREPARATION
 
 From `elements.md`. Each element names a register in which a person experiences anything, and if one
 is missing the audience feels an absence they cannot name. The same is true inside a performer.
@@ -130,12 +251,48 @@ and must be replaced.
 
 ---
 
-## 5. THE FOUR TOOLS. THE WORKING CORE OF THE BOOK
+## 7. THE FIVE TOOLS. THE WORKING CORE OF THE BOOK
 
 These are the tools he will actually use on the day. Everything else supports them. Each gets its
 own illustrated chapter with a diagram and worked examples.
 
-### 5.1 THE JUST BEFORE
+**They run in this order, and the order is the method.**
+
+    0  INHIBIT           hear action, do nothing, let the urge to perform pass
+    1  THE JUST BEFORE   what happened one second ago
+    2  THE SECRET        the thought you hold and never say
+    3  THE OBJECT        what you look at, and want something from
+    4  THE BREATH        the pattern that carries the state
+
+### 7.0 INHIBITION. THE PAUSE BEFORE
+
+Full principle in section 4.2. In the book it is one page and eleven words:
+
+**When you hear action, do nothing. Then think. Then let it come.**
+
+Not a dramatic pause. Genuinely nothing, for as long as it takes for the urge to perform to arrive
+and go. Venkatesh rolls early and holds late so it costs nothing, and it is the gap in which every
+other tool becomes possible.
+
+**They run in this order and the order is the method.**
+
+    0  INHIBIT              hear action, do nothing, let the impulse to perform pass
+    1  THE JUST BEFORE      what happened one second ago
+    2  THE SECRET           the thought you hold and never say
+    3  THE OBJECT           what you look at and want something from
+    4  THE BREATH           the pattern that carries the state
+
+### 7.0 INHIBITION. THE PAUSE BEFORE
+
+Full principle in section 4.2. In the book it is one page and eleven words:
+
+**When you hear action, do nothing. Then think. Then let it come.**
+
+Not a dramatic pause. Genuinely nothing, for as long as it takes for the urge to perform to arrive
+and go. Venkatesh rolls early and holds late, so it costs nothing, and it is the gap in which every
+other tool becomes possible.
+
+### 7.1 THE JUST BEFORE
 
 **The single most useful tool for a non actor.** Before any line, answer one question: what happened
 one second before this shot started?
@@ -149,7 +306,7 @@ because the words are no longer the beginning of anything.
 
 For each line the guide gives the just before in one sentence and never more.
 
-### 5.2 THE SECRET
+### 7.2 THE SECRET
 
 One private thought he holds and never says. The audience cannot hear it and can always see it.
 
@@ -160,7 +317,7 @@ changes his face.
 The secret is what stops a line being only its content. It gives the audience the sense of a person
 rather than a narrator, and it is invisible.
 
-### 5.3 THE OBJECT OF ATTENTION
+### 7.3 THE OBJECT OF ATTENTION
 
 He is never asked to feel. He is always asked to look at something and want something from it.
 
@@ -172,7 +329,7 @@ eyeline. A mark on the wall for the runner. A real key in his hand. Where the dr
 added later he still needs something real, and the guide specifies exactly what, per shot, so
 Venkatesh can place it.
 
-### 5.4 THE BREATH
+### 7.4 THE BREATH
 
 The entry to every state, and the one thing he can control directly when nothing else is working.
 
@@ -189,11 +346,11 @@ made of. Frame 8.1 is not acting. It is the thing itself.
 
 ---
 
-## 6. THE INSTRUMENT. FACE, BODY, EYES, VOICE
+## 8. THE INSTRUMENT. FACE, BODY, EYES, VOICE
 
 Reference chapters, heavily illustrated, that he can look at between takes.
 
-### 6.1 THE FACE
+### 8.1 THE FACE
 
 **The principle first, so the sheets are not misused.** These sheets are for recognising, never for
 copying. An expression arrived at from outside is a mask. The sheets exist so that when the right
@@ -216,7 +373,7 @@ thought produces the right face, he knows what it felt like and can find it agai
 - **Not performing at all.** Frame 8.1. The hardest thing on the call sheet and it is not a face at
   all, it is the absence of one.
 
-### 6.2 THE BODY
+### 8.2 THE BODY
 
 **Posture sheet, full figure, same pencil style:**
 
@@ -231,7 +388,7 @@ Rule: give the hands a job or a rest, never a hover. In this film the jobs are t
 the chalk, the phone, the handlebars, the ball, the key. Every shot has one, and that is not an
 accident, it is a decision made for him in advance.
 
-### 6.3 THE EYES
+### 8.3 THE EYES
 
 **Eyeline diagram, one page, plan view from above** showing camera, lens, eyeline mark, and where
 he looks, for each of the film's setups. He should be able to see at a glance where his eyes go in
@@ -247,7 +404,7 @@ every shot.
 for the whole film. Not the camera. A friend, standing behind it. Choose them before Tuesday, write
 the name down, tell nobody.
 
-### 6.4 THE VOICE
+### 8.4 THE VOICE
 
 - Speak at the volume of the room, never a presenting volume.
 - The pause is part of the line, not a gap in it. Illustrated on the timeline as held frames.
@@ -258,7 +415,7 @@ the name down, tell nobody.
 
 ---
 
-## 7. LINE BY LINE. THE HEART OF THE BOOK
+## 9. LINE BY LINE. THE HEART OF THE BOOK
 
 The largest section and the reason the book exists. **Every line Manan speaks gets one page.**
 
@@ -298,7 +455,7 @@ confirmed, not assumed.
 
 ---
 
-## 8. THE ILLUSTRATIONS. FULL SPECIFICATION
+## 10. THE ILLUSTRATIONS. FULL SPECIFICATION
 
 All generated with Nano Banana, referencing the film's own artwork so the book and the film are
 visibly the same object. Every image is cropped to true 16:9 or to a stated portrait ratio before
@@ -325,10 +482,13 @@ before he arrives on set.**
 | 10 | The five doors | 1:1 | five elements as a single figure |
 | 11 | Setup map | 16:9 | overhead of the room on the day |
 | 12 | The pause, on a timeline | 16:9 | held frames drawn as picture |
+| 13 | The fear reflex pattern | 16:9 | wrong and right, neck, head, shoulders, breath |
+| 14 | End-gaining, worked example | 16:9 | going at the emotion, versus doing the thing |
+| 15 | Let, not do | 3:2 | pushing shoulders down, versus letting them be wide |
 
 Plus **one illustration per line page**, 28 to 34, showing posture, eyeline and hands for that line.
 
-**Total estimate: 40 to 46 images.** At the measured rate of roughly $0.016 each and two attempts
+**Total estimate: 43 to 49 images.** At the measured rate of roughly $0.016 each and two attempts
 average, about **$1.50 for the whole book**. Cost is not a constraint here. Time is: at 25 seconds a
 generation plus review, budget three to four hours.
 
@@ -343,7 +503,7 @@ generation plus review, budget three to four hours.
 
 ---
 
-## 9. ON THE DAY. THE SHORT SECTION HE ACTUALLY REREADS
+## 11. ON THE DAY. THE SHORT SECTION HE ACTUALLY REREADS
 
 Deliberately brief. Two pages, designed to be read on the morning of the shoot.
 
@@ -363,7 +523,7 @@ Deliberately brief. Two pages, designed to be read on the morning of the shoot.
 
 ---
 
-## 10. THE REHEARSAL METHOD, FOR NEHA
+## 12. THE REHEARSAL METHOD, FOR NEHA
 
 One page, for the person directing him at home.
 
@@ -386,7 +546,7 @@ thinking about just then. What do you want from him in this moment. What happene
 
 ---
 
-## 11. THE CASE STUDY FRAME, FOR THE BOOK VERSION
+## 13. THE CASE STUDY FRAME, FOR THE BOOK VERSION
 
 The published book carries the principles, then Manan's actual preparation as the worked example:
 the script pages, the rehearsal notes, what failed, what was changed, and the finished frames beside
@@ -404,9 +564,10 @@ and on a phone with no signal, at 25fps timecode, matching the film's own type a
 
 ---
 
-## 12. WHAT MUST NOT HAPPEN
+## 14. WHAT MUST NOT HAPPEN
 
-- **No acting theory.** No Stanislavski, no method, no vocabulary he has to learn. Every instruction
+- **No acting theory.** No Stanislavski, no method, no vocabulary he has to learn. Alexander's
+  ideas are used, his terminology is not. The word technique never appears. Every instruction
   is a physical action or a real memory.
 - **No mood words as direction.** Be curious, be excited, be natural are all forbidden in the pages
   themselves. They are the failure this book exists to prevent.
@@ -421,7 +582,7 @@ and on a phone with no signal, at 25fps timecode, matching the film's own type a
 
 ---
 
-## 13. BUILD ORDER, FOR TOMORROW MORNING
+## 15. BUILD ORDER, FOR TOMORROW MORNING
 
 1. **Inventory every line** in the current comic strip script. Exact count, exact words, to camera
    or voice over. Write the count back into this file. Nothing is generated before this exists.

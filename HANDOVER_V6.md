@@ -45,10 +45,10 @@ Two rules from it, and they are not optional:
 ## THE TRAINING BOOK FOR MANAN
 
 `MANAN_TRAINING_DEVELOPMENT.md` in the repo root is the blueprint for the illustrated guide, and
-for the book it becomes, *Training for Young Actors*, with Manan as the case study.
+for the book it becomes, *How to Act Naturally*, with Manan as the case study.
 
 Read it whole before generating a page or a sketch. It contains the diagnosis of what a fourteen
-year old non actor actually does wrong, the four working tools, the full illustration
+year old non actor actually does wrong, the five working tools, F.M. Alexander's contribution, the full illustration
 specification, and the build order.
 
 **The first thing to do is inventory every line in the current comic strip script and write the
