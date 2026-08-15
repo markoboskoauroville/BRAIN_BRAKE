@@ -40,3 +40,16 @@ Two rules from it, and they are not optional:
    this film, so a name keyed cache will lie.
 2. **When somebody says the output did not change, verify the artefact, not their setup.** Download the
    published file back and diff a page against the local build before offering any other explanation.
+
+
+## THE TRAINING BOOK FOR MANAN
+
+`MANAN_TRAINING_DEVELOPMENT.md` in the repo root is the blueprint for the illustrated guide, and
+for the book it becomes, *Training for Young Actors*, with Manan as the case study.
+
+Read it whole before generating a page or a sketch. It contains the diagnosis of what a fourteen
+year old non actor actually does wrong, the four working tools, the full illustration
+specification, and the build order.
+
+**The first thing to do is inventory every line in the current comic strip script and write the
+count back into that file.** Everything else depends on that number and it is presently an estimate.
