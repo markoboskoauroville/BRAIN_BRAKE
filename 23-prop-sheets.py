@@ -78,8 +78,8 @@ def sheet(src,out,label,dims,note=""):
 
 G='/home/claude/gen'
 sheet(f'{G}/p_glass.png', f'{OUT}/01_magnifying_glass.jpg', "MAGNIFYING GLASS",
- [('h',0,1,1.1,"total 28 cm"),('v',0,0.52,1.1,"lens 15 cm")],
- "Brass rim, clear glass, wooden handle. The lens must be big, about the width of Manan's head.\nThis is the film's transition object, so a small one will not work.")
+ [('h',0,1,1.1,"total 25 cm"),('v',0,0.52,1.1,"lens 13 cm")],
+ "A 130 mm lens is the largest ordinary handheld magnifier sold in shops, about 250 x 130 mm overall.\nThat is what we want. Brass or gold coloured rim, clear glass, dark handle. Buy the biggest normal\nreading magnifier, not a novelty one. Roughly the size of his open palm.")
 sheet(f'{G}/p_mic.png', f'{OUT}/02_microphone.jpg', "MICROPHONE AND STAND",
  [('v',0,1,1.1,"to 150 cm"),('h',0,1,1.1,"boom reach 70 cm")],
  "It only has to look like a studio microphone on camera. A pop shield in front of it reads instantly.\nNot used for the real recording, that is done separately.")

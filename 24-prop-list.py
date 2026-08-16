@@ -66,8 +66,8 @@ y-=116
 c.setFont('MB',9); c.setFillColor(ACC); c.drawString(ML,y,"THE THREE THAT MATTER"); y-=18
 for t,d in [("The grey background","It must be about one stop darker than his grey hoodie or he "
              "cannot be cut out cleanly. Neutral, matte, no blue and no green."),
-            ("The magnifying glass","The lens must be big, about the width of his head. It is the "
-             "film's transition object, so a small one will not work."),
+            ("The magnifying glass","A 130 mm lens, the largest ordinary handheld magnifier sold in "
+             "shops. It is the film's transition object so it should be a big one, but a normal one."),
             ("The ball on a stand","Hard and smooth, roughly a cricket ball. Not a tennis ball. His "
              "fingers must sit on a firm curve the way they would on a real lever.")]:
     c.setFont('DB',10); c.setFillColor(INK); c.drawString(ML,y,t); y-=13
@@ -137,7 +137,7 @@ y-=30
 c.setFont('DB',20); c.setFillColor(INK); c.drawString(ML,y,"The whole list")
 c.setStrokeColor(RULE); c.line(ML,y-13,W-MR,y-13); y-=32
 items=[("Grey background, about 3 by 3 m","#3A3B3D, matte, neutral"),
- ("Magnifying glass","brass, lens about 15 cm, head sized"),
+ ("Magnifying glass","brass, 130 mm lens, 250 mm long"),
  ("Ball on a stand","8 cm hard ball, top at chest height 130 cm"),
  ("Tennis ball on a stand","eyeline marker, seated head height 115 cm"),
  ("Blackboard and white chalk","about 90 by 70 cm, matte slate, leaning"),
