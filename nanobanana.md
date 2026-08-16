@@ -10,23 +10,34 @@ rules once it has held twice.
 
 ## 1. THE TOOL
 
-Marko uses **ImgToImg.ai**, engine **Nano Banana Pro**.
+**Direct to Google. No wrapper. No image to image platform.**
 
-| Mode | When |
-|---|---|
-| **Image To Image AI** | The main one. Upload a reference plus prompt. Anything with a recurring character or location. |
-| **AI Image Generator** | Only when nothing recurring is in the frame and no reference exists. |
-| **AI Image Editor** | Local fixes to a frame that is otherwise right. |
-| AI Video Generator | Not used for the film. |
+    model     gemini-3-pro-image
+    endpoint  https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent
+    header    x-goog-api-key
+    cost      about $0.016 per 2K image, measured
+    time      20 to 30 seconds
 
-Per generation the site exposes: Model, Image Upload or Image URL, Prompt, Aspect Ratio, Outputs,
-Watermark. Recent tasks are re-editable and regenerable — **always re-edit an existing task rather
-than starting a fresh one**, because the reference stays attached and one variable changes.
+Helpers in this repo:
+
+    tools/nanobanana_helper.py    gen(prompt, refs=(), aspect="16:9", size="2K", name=None)
+    tools/mabanana                the same thing as a CLI
+
+**Do not use ImgToImg.ai or any other wrapper.** This file used to open by describing that platform
+and its three modes. That is dead. A wrapper stalled at 95% on a prompt and it looked exactly like a
+Google safety block; the same prompt sent direct to Google returned `finishReason: STOP` and a clean
+image in 113 seconds. It was the wrapper's own quota and moderation layer, not the model. Everything
+downstream in this file from section 4d onward was written after that discovery and is the version
+that holds.
+
+**Everything is a reference call.** There are no modes to choose between. Pass whatever references
+the frame needs in `refs` and describe the picture. The old advice about picking Image To Image
+versus Generator versus Editor no longer applies to anything.
 
 **Film frames are always 16:9.** Character sheets are 3:2.
 
-Always state in the instruction to Marko: **which mode**, **which reference to upload**, **aspect
-ratio**. A prompt without those three is an incomplete instruction and costs a wasted run.
+**The tool returns 2752x1536 when asked for 16:9**, which is 1.7917 and slightly wide. Everything
+delivered is cropped to **2731x1536** before it ships. This is not optional and it is easy to forget.
 
 ---
 

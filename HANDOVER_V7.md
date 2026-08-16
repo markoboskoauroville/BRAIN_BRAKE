@@ -107,7 +107,7 @@ not just the one that changed.
 
 Hume Octave, key at `~/.hume_key`. **Cloudflare blocks the default Python user agent** and returns
 `403 error code: 1010` on every endpoint including auth, which looks exactly like a dead key. Send a
-normal browser User-Agent. Helper at `gen/hv.py`.
+normal browser User-Agent. Helper at `tools/hume_helper.py` (copied to `gen/hv.py` in the working container).
 
 **Hume refuses to synthesise child voices**, so Manan records all his own lines and narration himself.
 Only Coach Brain and the factory worker are synthetic, about 300 characters total.
@@ -123,8 +123,13 @@ Recorded WAVs live in `assets/voice/tests/` and are copied into the scene packag
 
 ## IMAGE GENERATION
 
-Direct to Google, model `gemini-3-pro-image`, key at `~/.gemini_key`, helper `gen/nb.py`, about
-$0.016 per 2K image. Full lessons in `nanobanana.md`. The ones that matter most:
+Direct to Google, model `gemini-3-pro-image`, about $0.016 per 2K image.
+
+**Helpers live in `tools/`, not in `gen/`.** `tools/nanobanana_helper.py` is the python helper and
+reads `~/.gemini_key`. `tools/mabanana` is the CLI and reads `~/.mabanana_key` or `$GEMINI_API_KEY`.
+Same key, two paths, because they grew separately. Symlink one to the other on a new machine.
+
+**No wrapper. No ImgToImg.ai.** That platform is gone from the workflow entirely. Full lessons in `nanobanana.md`. The ones that matter most:
 
 - Name a **ceiling** for tone, bound to something already in the frame. Never use negation, describe
   the crop positively.

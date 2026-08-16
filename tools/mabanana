@@ -3,13 +3,16 @@
 mabanana v1 - Nano Banana Pro straight from Termux.
 
 Google's gemini-3-pro-image is the same model imgtoimg.ai serves. Going direct
-means: no daily quota, ~$0.134 an image, and above all a REAL ERROR when a
+means: no daily quota, about $0.016 an image measured, and above all a REAL ERROR when a
 generation fails instead of a silent stall at 95%.
 
     mabanana "a photograph of ..." -r ref1.jpg -r https://.../ref2.jpg
     mabanana -f prompt.txt -r MANAN_DESK.jpg -a 16:9 -o 5_9_wall
 
-Key lives in ~/.mabanana_key, or $GEMINI_API_KEY. Get one free at
+Key lives in ~/.mabanana_key, or $GEMINI_API_KEY.
+NOTE: tools/nanobanana_helper.py reads ~/.gemini_key instead. Same key, two paths,
+because the CLI and the python helper grew separately. Symlink one to the other.
+Get a key free at
 https://aistudio.google.com/apikey
 """
 
