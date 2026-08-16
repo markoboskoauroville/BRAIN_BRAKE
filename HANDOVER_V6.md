@@ -53,3 +53,12 @@ specification, and the build order.
 
 **The first thing to do is inventory every line in the current comic strip script and write the
 count back into that file.** Everything else depends on that number and it is presently an estimate.
+
+
+---
+
+## SUPERSEDED. READ HANDOVER_V7.md INSTEAD.
+
+`HANDOVER_V7.md` in the repo root is the current handover, written 16.8.2026. It covers version four
+of the film, the comic strip format, the 2:00 hard limit, the three layers, the magnifying glass
+transition, the voices, the cast, and everything still open before the shoot on 18.8.2026.
