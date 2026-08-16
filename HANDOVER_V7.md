@@ -1,8 +1,17 @@
 # HANDOVER_V7.md
 
+> **READ `TAKEOVER.md` FIRST.** It is the front door: the reading order, the one source of truth,
+> the rebuild chain, the rules that cost us something, and the current state. This file is step 2
+> of that order. If anything here disagrees with `TAKEOVER.md`, the takeover is newer and wins.
+
 Written 16.8.2026, at the end of a very long session. This is the state of THE BRAIN BRAKE and
-everything the next session needs. Read this first, then `STALE_CACHE.md`, then
-`MANAN_TRAINING_DEVELOPMENT.md` if the training book comes up.
+everything the next session needs.
+
+**Superseded in places.** Since this was written the film went from 49 frames at 1:57 to **50
+frames, 2945 frames, 1:57.80, margin 2.20 s**. Neha's three lines were restored at 4.4b, 4.8 and
+the 8.6 to 8.8 triplet, and 7.6, 8.5 and 6.3 came out to pay for them. Old 8.8 and 8.9 are now 8.9
+and 8.10. Scene 7 is wordless. See `TAKEOVER.md` section 6 for the current state and
+`ANIMATION.md` for the animator's side.
 
 ---
 
