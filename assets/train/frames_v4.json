@@ -397,10 +397,10 @@
     "mode": "BUB",
     "who": "COACH BRAIN",
     "text": "All right. Everything's holding. Let's give him a little more.",
+    "trans": "",
     "fr": 116,
     "in": 1928,
-    "out": 2044,
-    "trans": ""
+    "out": 2044
   },
   {
     "scene": 6,
@@ -410,10 +410,10 @@
     "mode": "",
     "who": "",
     "text": "",
+    "trans": "",
     "fr": 15,
     "in": 2044,
-    "out": 2059,
-    "trans": ""
+    "out": 2059
   },
   {
     "scene": 6,
@@ -423,113 +423,100 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "Still not all of them.",
+    "trans": "",
     "fr": 62,
     "in": 2059,
-    "out": 2121,
-    "trans": ""
+    "out": 2121
   },
   {
     "scene": 6,
     "id": "6.4",
     "layer": "DRAWN",
-    "img": "S6_P4.jpg",
+    "img": "V7_6_4_one_fibre.jpg",
     "mode": "",
     "who": "",
     "text": "",
+    "trans": "THE PULL BACK BEGINS HERE. 6.4 to 6.9 are one continuous move backwards through the same body. Never cut. Each frame is a further step out from the one before, and the light spreads as we go.",
     "fr": 15,
     "in": 2121,
-    "out": 2136,
-    "trans": ""
+    "out": 2136
   },
   {
     "scene": 6,
     "id": "6.5",
     "layer": "DRAWN",
-    "img": "S6_P5.jpg",
+    "img": "V7_6_5_cluster.jpg",
     "mode": "",
     "who": "",
     "text": "",
+    "trans": "",
     "fr": 15,
     "in": 2136,
-    "out": 2151,
-    "trans": ""
+    "out": 2151
   },
   {
     "scene": 6,
     "id": "6.6",
     "layer": "DRAWN",
-    "img": "V7_6_6_leg_alight.jpg",
+    "img": "V7_6_6_whole_leg.jpg",
     "mode": "",
     "who": "",
     "text": "",
+    "trans": "",
     "fr": 15,
     "in": 2151,
-    "out": 2166,
-    "trans": ""
+    "out": 2166
   },
   {
     "scene": 6,
     "id": "6.7",
     "layer": "DRAWN",
-    "img": "V7_6_7_he_flies.jpg",
+    "img": "V7_6_7_whole_body.jpg",
     "mode": "",
     "who": "",
     "text": "",
+    "trans": "",
     "fr": 15,
     "in": 2166,
-    "out": 2181,
-    "trans": ""
+    "out": 2181
   },
   {
     "scene": 6,
     "id": "6.8",
     "layer": "DRAWN",
-    "img": "V7_6_8_traceur.jpg",
+    "img": "V7_6_8_pushing_off.jpg",
     "mode": "",
     "who": "",
     "text": "",
+    "trans": "",
     "fr": 15,
     "in": 2181,
-    "out": 2196,
-    "trans": ""
+    "out": 2196
   },
   {
     "scene": 6,
     "id": "6.9",
     "layer": "DRAWN",
-    "img": "V7_6_9_dancer.jpg",
-    "mode": "",
-    "who": "",
-    "text": "",
-    "fr": 15,
-    "in": 2196,
-    "out": 2211,
-    "trans": ""
-  },
-  {
-    "scene": 6,
-    "id": "6.10",
-    "layer": "DRAWN",
-    "img": "V7_6_10_swimmer.jpg",
+    "img": "V7_6_9_the_leap.jpg",
     "mode": "VO",
     "who": "MANAN",
     "text": "It didn't make new energy. It gave permission.",
+    "trans": "THE PULL BACK ENDS. The glowing muscular structure becomes a young man in clothes, mid leap between rooftops, the light fading out of him as he goes. One body, one move, from a single fibre to a man flying. Accelerate through the whole run.",
     "fr": 94,
-    "in": 2211,
-    "out": 2305,
-    "trans": ""
+    "in": 2196,
+    "out": 2290
   },
   {
     "scene": 7,
     "id": "7.1",
     "layer": "DRAWN",
-    "img": "S7_P1.jpg",
+    "img": "V7_7_1_apart.jpg",
     "mode": "",
     "who": "",
     "text": "",
     "fr": 15,
-    "in": 2305,
-    "out": 2320,
+    "in": 2290,
+    "out": 2305,
     "trans": ""
   },
   {
@@ -541,8 +528,8 @@
     "who": "",
     "text": "",
     "fr": 15,
-    "in": 2320,
-    "out": 2335,
+    "in": 2305,
+    "out": 2320,
     "trans": ""
   },
   {
@@ -554,8 +541,8 @@
     "who": "",
     "text": "",
     "fr": 15,
-    "in": 2335,
-    "out": 2350,
+    "in": 2320,
+    "out": 2335,
     "trans": ""
   },
   {
@@ -567,8 +554,8 @@
     "who": "MANAN",
     "text": "Great ideas aren't accepted because they sound convincing. They're accepted because people keep testing them.",
     "fr": 170,
-    "in": 2350,
-    "out": 2520,
+    "in": 2335,
+    "out": 2505,
     "trans": ""
   },
   {
@@ -580,8 +567,8 @@
     "who": "",
     "text": "",
     "fr": 15,
-    "in": 2520,
-    "out": 2535,
+    "in": 2505,
+    "out": 2520,
     "trans": ""
   },
   {
@@ -593,8 +580,8 @@
     "who": "",
     "text": "",
     "fr": 15,
-    "in": 2535,
-    "out": 2550,
+    "in": 2520,
+    "out": 2535,
     "trans": ""
   },
   {
@@ -606,8 +593,8 @@
     "who": "MANAN",
     "text": "The wall is real. But somebody set it.",
     "fr": 94,
-    "in": 2550,
-    "out": 2644,
+    "in": 2535,
+    "out": 2629,
     "trans": ""
   },
   {
@@ -619,8 +606,8 @@
     "who": "MANAN",
     "text": "So next time somebody finds one last burst of speed, ask what their brain believed was safe.",
     "fr": 191,
-    "in": 2644,
-    "out": 2835,
+    "in": 2629,
+    "out": 2820,
     "trans": ""
   },
   {
@@ -632,8 +619,8 @@
     "who": "MANAN",
     "text": "The limit is a setting, not a wall.",
     "fr": 94,
-    "in": 2835,
-    "out": 2929,
+    "in": 2820,
+    "out": 2914,
     "trans": "THE WORDS ARRIVE AS HE SPEAKS THEM. Nothing is on the paper when the frame opens. Each word is written on, in his own hand, in time with his voice, as though somebody is writing while he reads. Finish the last word, hold, then the sheet goes blank."
   },
   {
@@ -645,8 +632,8 @@
     "who": "",
     "text": "",
     "fr": 15,
-    "in": 2929,
-    "out": 2944,
+    "in": 2914,
+    "out": 2929,
     "trans": ""
   }
 ]
