@@ -117,7 +117,10 @@ Only Coach Brain and the factory worker are synthetic, about 300 characters tota
 - Use `version: "1"` — Octave 2 does not support acting instructions yet, and the acting instruction
   is the entire reason for using Hume.
 
-Recorded WAVs live in `assets/voice/tests/` and are copied into the scene packages.
+**Recorded WAVs live in `assets/voice/final/` — six files, the ones in the film.**
+`assets/voice/auditions/` holds eighteen candidates and superseded takes. Never time a frame
+against anything in auditions. `COACH_4_5.wav` in particular is the old wording of 4.6 and sounds
+right while being wrong. See `VOICES.md`.
 
 ---
 

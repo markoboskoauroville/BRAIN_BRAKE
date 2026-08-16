@@ -94,17 +94,52 @@ Then check the total is still under 2:00. It is a hard competition limit.
 
 ## THE RECORDED FILES
 
-All in `assets/voice/tests/`, copied into the scene packages by the build.
+**Two folders, and the distinction matters.**
 
-| file | frame | who |
-|---|---|---|
-| `BUB_4_1.wav` | 4.1 | Coach Brain |
-| `BUB_4_3a.wav` | 4.3 | Coach Brain |
-| `BUB_4_3b.wav` | 4.4 | Coach Brain |
-| `COACH_4_6.wav` | 4.6 | Coach Brain |
-| `COACH_6_1.wav` | 6.1 | Coach Brain |
-| `WORKER_2_4.wav` | 2.4 | Factory worker |
+    assets/voice/final/       the six takes that ARE in the film. six files, nothing else.
+    assets/voice/auditions/   eighteen files. candidates, rejected takes, demos. NOT in the film.
+
+**Only ever time a frame against a file in `final/`.** The auditions folder contains earlier takes of
+the same lines under different names, and timing against one of those would silently break the film.
+
+### What is in the film
+
+| frame | file | who | voice | length | frames at 25fps |
+|---|---|---|---|---|---|
+| **2.4** | `WORKER_2_4.wav` | FACTORY WORKER | Classical Film Actor | 1.67 s | 42 |
+| **4.1** | `BUB_4_1.wav` | COACH BRAIN | Male English Actor | 2.83 s | 71 |
+| **4.3** | `BUB_4_3a.wav` | COACH BRAIN | Male English Actor | 4.71 s | 118 |
+| **4.4** | `BUB_4_3b.wav` | COACH BRAIN | Male English Actor | 4.87 s | 122 |
+| **4.6** | `COACH_4_6.wav` | COACH BRAIN | Male English Actor | 5.75 s | 144 |
+| **6.1** | `COACH_6_1.wav` | COACH BRAIN | Male English Actor | 4.27 s | 107 |
 
 48 kHz mono WAV, one file per line, never one long render. A single long file cannot be retimed.
+
+### What is in auditions, and why it is kept
+
+`COACH_4_1.wav`, `COACH_4_3.wav`, `COACH_4_5.wav` are **superseded**. They were full-line takes
+recorded before the Coach Brain dialogue was split one take per speech bubble. `COACH_4_5` in
+particular is the old wording of 4.6, before the line was rewritten to name what fatigue is. It
+sounds right and it is wrong. This is the single most dangerous file in the project.
+
+`WORKER_Classical_Film_Actor.wav`, `WORKER_Grizzled_New_Yorker.wav`, `WORKER_Sitcom_Guy.wav`,
+`WORKER_Vince_Douglas.wav` are the four candidates auditioned for the factory worker. Classical Film
+Actor won and was re-recorded as `WORKER_2_4.wav`.
+
+`coach_*.wav` are the five candidates auditioned for Coach Brain before Male English Actor was chosen.
+
+`demo_1_undirected.wav` and `demo_2_directed.wav` are the same sentence with and without an acting
+instruction. Keep these. They are the clearest demonstration of why Hume is worth using, and useful
+if anyone ever questions the choice.
+
+### The authority
+
+`assets/train/frames_v4.json` is the truth. A frame carrying `"measured": true` is timed against the
+file mapped to its id in the `AUD` dictionary inside the build scripts:
+
+    AUD = {"2.4":"WORKER_2_4.wav", "4.1":"BUB_4_1.wav",  "4.3":"BUB_4_3a.wav",
+           "4.4":"BUB_4_3b.wav",   "4.6":"COACH_4_6.wav","6.1":"COACH_6_1.wav"}
+
+If that map and `final/` ever disagree, the map is right and something has been moved.
 
 `assets/voice/lines_characters.json` holds every line with its voice, direction and filename.

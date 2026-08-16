@@ -1,7 +1,17 @@
 import base64, json, os, time, urllib.request, urllib.error
-KEY = open('/home/claude/.gemini_key').read().strip()
+import os as _os
+_CAND = [_os.path.expanduser('~/.gemini_key'), _os.path.expanduser('~/.mabanana_key'),
+         '/home/claude/.gemini_key']
+_K = _os.environ.get('GEMINI_API_KEY')
+if not _K:
+    for _p in _CAND:
+        if _os.path.exists(_p):
+            _K = open(_p).read().strip(); break
+if not _K:
+    raise SystemExit('no key: set $GEMINI_API_KEY or write one to ~/.gemini_key')
+KEY = _K
 URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent"
-OUT = "/home/claude/gen"
+OUT = _os.environ.get("NB_OUT") or _os.path.expanduser("~/gen")
 
 def ref(src):
     if src.startswith("http"):
