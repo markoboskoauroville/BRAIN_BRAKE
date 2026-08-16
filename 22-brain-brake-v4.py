@@ -153,8 +153,16 @@ if p:
     im=Image.open(p); ar=im.size[0]/im.size[1]; iw=CW; ih=iw/ar
     if ih>250: ih=250; iw=ih*ar
     c.drawImage(ImageReader(small(p,1500)), ML+(CW-iw)/2, y-ih, iw, ih, mask=None); y-=ih+14
-para(ML,y,"The booth shots are cutaways, three or four across the film, dropped in when it wants you "
-          "to remember somebody is telling you this.",'DO',9.4,13,CW,SOFT)
+y=para(ML,y,"The booth shots are cutaways, three or four across the film, dropped in when it wants you "
+            "to remember somebody is telling you this.",'DO',9.4,13,CW,SOFT)
+y-=20
+c.setFont('MB',9); c.setFillColor(LIVE); c.drawString(ML,y,"THE MAGNIFYING GLASS IS HOW WE CHANGE SCENE"); y-=16
+para(ML,y,"Wherever Manan holds the glass up at the end of a shot, that lens is the door to the next "
+          "one. Push in until the circle fills the frame, let the new scene appear inside it bending "
+          "at the edges as if seen through the glass, then straighten as we come out the other side. "
+          "It happens at 1.6 into the lecture room, and at 2.3 into the factory. The glass is not a "
+          "prop, it is the grammar of the film: he looks at something and we go inside it.",
+          'D',9.4,13,CW)
 newpage()
 
 # ============================================================ 3 WHAT CHANGED
@@ -238,6 +246,8 @@ def row_height(f, ih):
            "STRIP":"Background, character and bubble are delivered as separate layers.",
            "BOOTH":"The booth setup. Silhouette, backlit, page lit."}
     h += 9.6 + len(wrap(notes[f['layer']],'D',7.8,TXTW))*10.4
+    if f.get('trans'):
+        h += 7 + 9.6 + len(wrap(f['trans'],'D',7.8,TXTW))*10.4
     return max(h, ih+30) + 16
 
 for i,f in enumerate(F):
@@ -293,7 +303,11 @@ for i,f in enumerate(F):
            "STRIP":"Background, character and bubble are delivered as separate layers.",
            "BOOTH":"The booth setup. Silhouette, backlit, page lit."}
     c.setFont('MB',6.6); c.setFillColor(ACC); c.drawString(TXTX,ty,"BUILD"); ty-=9.6
-    para(TXTX,ty,notes[f['layer']],'D',7.8,10.4,TXTW)
+    ty=para(TXTX,ty,notes[f['layer']],'D',7.8,10.4,TXTW)
+    if f.get('trans'):
+        ty-=7
+        c.setFont('MB',6.6); c.setFillColor(LIVE); c.drawString(TXTX,ty,"TRANSITION"); ty-=9.6
+        para(TXTX,ty,f['trans'],'D',7.8,10.4,TXTW,LIVE)
     top=ytop-need
 
 newpage()

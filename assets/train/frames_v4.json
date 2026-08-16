@@ -9,7 +9,8 @@
     "text": "For a hundred years we blamed the muscles.",
     "fr": 94,
     "in": 0,
-    "out": 94
+    "out": 94,
+    "trans": ""
   },
   {
     "scene": 1,
@@ -21,7 +22,8 @@
     "text": "",
     "fr": 15,
     "in": 94,
-    "out": 109
+    "out": 109,
+    "trans": ""
   },
   {
     "scene": 1,
@@ -33,7 +35,8 @@
     "text": "",
     "fr": 15,
     "in": 109,
-    "out": 124
+    "out": 124,
+    "trans": ""
   },
   {
     "scene": 1,
@@ -45,7 +48,8 @@
     "text": "",
     "fr": 15,
     "in": 124,
-    "out": 139
+    "out": 139,
+    "trans": ""
   },
   {
     "scene": 1,
@@ -57,7 +61,8 @@
     "text": "Hold on. He had nothing left. So where did THAT come from?",
     "fr": 137,
     "in": 139,
-    "out": 276
+    "out": 276,
+    "trans": "THROUGH THE GLASS. Push in on the lens until the circle fills the frame. The next scene, the lecture room of 1923, appears inside the glass, bending at the edges as if seen through it, then straightens as we come out the other side into 2.1."
   },
   {
     "scene": 2,
@@ -69,7 +74,8 @@
     "text": "A. V. Hill. Nineteen twenty three.",
     "fr": 73,
     "in": 276,
-    "out": 349
+    "out": 349,
+    "trans": ""
   },
   {
     "scene": 2,
@@ -81,7 +87,8 @@
     "text": "",
     "fr": 15,
     "in": 349,
-    "out": 364
+    "out": 364,
+    "trans": ""
   },
   {
     "scene": 2,
@@ -93,7 +100,8 @@
     "text": "",
     "fr": 15,
     "in": 364,
-    "out": 379
+    "out": 379,
+    "trans": "THROUGH THE GLASS. Same move. The factory inside the lens grows until the circle fills the frame and we are inside the factory for 2.4."
   },
   {
     "scene": 2,
@@ -105,7 +113,8 @@
     "text": "That's it. We're done.",
     "fr": 51,
     "in": 379,
-    "out": 430
+    "out": 430,
+    "trans": ""
   },
   {
     "scene": 2,
@@ -117,7 +126,8 @@
     "text": "Except it doesn't explain this.",
     "fr": 62,
     "in": 430,
-    "out": 492
+    "out": 492,
+    "trans": ""
   },
   {
     "scene": 3,
@@ -129,7 +139,8 @@
     "text": "",
     "fr": 15,
     "in": 492,
-    "out": 507
+    "out": 507,
+    "trans": ""
   },
   {
     "scene": 3,
@@ -141,7 +152,8 @@
     "text": "At the back, a door nobody opens.",
     "fr": 84,
     "in": 507,
-    "out": 591
+    "out": 591,
+    "trans": ""
   },
   {
     "scene": 3,
@@ -153,7 +165,8 @@
     "text": "",
     "fr": 15,
     "in": 591,
-    "out": 606
+    "out": 606,
+    "trans": ""
   },
   {
     "scene": 3,
@@ -165,7 +178,8 @@
     "text": "Tested the moment they gave up, the muscles could still do far more.",
     "fr": 148,
     "in": 606,
-    "out": 754
+    "out": 754,
+    "trans": ""
   },
   {
     "scene": 3,
@@ -177,7 +191,8 @@
     "text": "It was never empty. Somebody closed that door.",
     "fr": 94,
     "in": 754,
-    "out": 848
+    "out": 848,
+    "trans": ""
   },
   {
     "scene": 4,
@@ -189,7 +204,8 @@
     "text": "You found me. Took you long enough.",
     "fr": 84,
     "in": 848,
-    "out": 932
+    "out": 932,
+    "trans": ""
   },
   {
     "scene": 4,
@@ -201,7 +217,8 @@
     "text": "You closed that door.",
     "fr": 51,
     "in": 932,
-    "out": 983
+    "out": 983,
+    "trans": ""
   },
   {
     "scene": 4,
@@ -213,7 +230,8 @@
     "text": "Heart rate. Breath. Temperature. Water. Distance.",
     "fr": 73,
     "in": 983,
-    "out": 1056
+    "out": 1056,
+    "trans": ""
   },
   {
     "scene": 4,
@@ -225,7 +243,8 @@
     "text": "I'm asking one question. Can we keep going safely?",
     "fr": 105,
     "in": 1056,
-    "out": 1161
+    "out": 1161,
+    "trans": ""
   },
   {
     "scene": 4,
@@ -237,7 +256,8 @@
     "text": "Like a phone at twenty percent. Not broken. Protecting itself.",
     "fr": 116,
     "in": 1161,
-    "out": 1277
+    "out": 1277,
+    "trans": ""
   },
   {
     "scene": 4,
@@ -249,7 +269,8 @@
     "text": "My best judgement. I'd rather you finish than break.",
     "fr": 105,
     "in": 1277,
-    "out": 1382
+    "out": 1382,
+    "trans": ""
   },
   {
     "scene": 4,
@@ -261,7 +282,8 @@
     "text": "So the limit isn't my body. It's your judgement.",
     "fr": 105,
     "in": 1382,
-    "out": 1487
+    "out": 1487,
+    "trans": ""
   },
   {
     "scene": 5,
@@ -273,7 +295,8 @@
     "text": "They let him race his own best ride.",
     "fr": 94,
     "in": 1487,
-    "out": 1581
+    "out": 1581,
+    "trans": ""
   },
   {
     "scene": 5,
@@ -285,7 +308,8 @@
     "text": "He beat it. So it was never his maximum.",
     "fr": 105,
     "in": 1581,
-    "out": 1686
+    "out": 1686,
+    "trans": ""
   },
   {
     "scene": 5,
@@ -297,7 +321,8 @@
     "text": "",
     "fr": 15,
     "in": 1686,
-    "out": 1701
+    "out": 1701,
+    "trans": ""
   },
   {
     "scene": 5,
@@ -309,7 +334,8 @@
     "text": "So I tried it.",
     "fr": 51,
     "in": 1701,
-    "out": 1752
+    "out": 1752,
+    "trans": ""
   },
   {
     "scene": 5,
@@ -321,7 +347,8 @@
     "text": "",
     "fr": 15,
     "in": 1752,
-    "out": 1767
+    "out": 1767,
+    "trans": ""
   },
   {
     "scene": 5,
@@ -333,7 +360,8 @@
     "text": "",
     "fr": 15,
     "in": 1767,
-    "out": 1782
+    "out": 1782,
+    "trans": ""
   },
   {
     "scene": 5,
@@ -345,7 +373,8 @@
     "text": "Nothing about my legs changed.",
     "fr": 62,
     "in": 1782,
-    "out": 1844
+    "out": 1844,
+    "trans": ""
   },
   {
     "scene": 5,
@@ -357,7 +386,8 @@
     "text": "Only what I believed they had left.",
     "fr": 84,
     "in": 1844,
-    "out": 1928
+    "out": 1928,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -369,7 +399,8 @@
     "text": "All right. Everything's holding. Let's give him a little more.",
     "fr": 116,
     "in": 1928,
-    "out": 2044
+    "out": 2044,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -381,7 +412,8 @@
     "text": "",
     "fr": 15,
     "in": 2044,
-    "out": 2059
+    "out": 2059,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -393,7 +425,8 @@
     "text": "Still not all of them.",
     "fr": 62,
     "in": 2059,
-    "out": 2121
+    "out": 2121,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -405,7 +438,8 @@
     "text": "",
     "fr": 15,
     "in": 2121,
-    "out": 2136
+    "out": 2136,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -417,7 +451,8 @@
     "text": "",
     "fr": 15,
     "in": 2136,
-    "out": 2151
+    "out": 2151,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -429,7 +464,8 @@
     "text": "",
     "fr": 15,
     "in": 2151,
-    "out": 2166
+    "out": 2166,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -441,7 +477,8 @@
     "text": "",
     "fr": 15,
     "in": 2166,
-    "out": 2181
+    "out": 2181,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -453,7 +490,8 @@
     "text": "",
     "fr": 15,
     "in": 2181,
-    "out": 2196
+    "out": 2196,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -465,7 +503,8 @@
     "text": "",
     "fr": 15,
     "in": 2196,
-    "out": 2211
+    "out": 2211,
+    "trans": ""
   },
   {
     "scene": 6,
@@ -477,7 +516,8 @@
     "text": "It didn't make new energy. It gave permission.",
     "fr": 94,
     "in": 2211,
-    "out": 2305
+    "out": 2305,
+    "trans": ""
   },
   {
     "scene": 7,
@@ -489,7 +529,8 @@
     "text": "",
     "fr": 15,
     "in": 2305,
-    "out": 2320
+    "out": 2320,
+    "trans": ""
   },
   {
     "scene": 7,
@@ -501,7 +542,8 @@
     "text": "",
     "fr": 15,
     "in": 2320,
-    "out": 2335
+    "out": 2335,
+    "trans": ""
   },
   {
     "scene": 7,
@@ -513,7 +555,8 @@
     "text": "",
     "fr": 15,
     "in": 2335,
-    "out": 2350
+    "out": 2350,
+    "trans": ""
   },
   {
     "scene": 7,
@@ -525,7 +568,8 @@
     "text": "Great ideas aren't accepted because they sound convincing. They're accepted because people keep testing them.",
     "fr": 170,
     "in": 2350,
-    "out": 2520
+    "out": 2520,
+    "trans": ""
   },
   {
     "scene": 8,
@@ -537,7 +581,8 @@
     "text": "",
     "fr": 15,
     "in": 2520,
-    "out": 2535
+    "out": 2535,
+    "trans": ""
   },
   {
     "scene": 8,
@@ -549,7 +594,8 @@
     "text": "",
     "fr": 15,
     "in": 2535,
-    "out": 2550
+    "out": 2550,
+    "trans": ""
   },
   {
     "scene": 8,
@@ -561,7 +607,8 @@
     "text": "The wall is real. But somebody set it.",
     "fr": 94,
     "in": 2550,
-    "out": 2644
+    "out": 2644,
+    "trans": ""
   },
   {
     "scene": 8,
@@ -573,7 +620,8 @@
     "text": "So next time somebody finds one last burst of speed, ask what their brain believed was safe.",
     "fr": 191,
     "in": 2644,
-    "out": 2835
+    "out": 2835,
+    "trans": ""
   },
   {
     "scene": 8,
@@ -585,7 +633,8 @@
     "text": "The limit is a setting, not a wall.",
     "fr": 94,
     "in": 2835,
-    "out": 2929
+    "out": 2929,
+    "trans": "THE WORDS ARRIVE AS HE SPEAKS THEM. Nothing is on the paper when the frame opens. Each word is written on, in his own hand, in time with his voice, as though somebody is writing while he reads. Finish the last word, hold, then the sheet goes blank."
   },
   {
     "scene": 8,
@@ -597,6 +646,7 @@
     "text": "",
     "fr": 15,
     "in": 2929,
-    "out": 2944
+    "out": 2944,
+    "trans": ""
   }
 ]
