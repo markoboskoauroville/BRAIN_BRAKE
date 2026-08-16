@@ -7,9 +7,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "For a hundred years we blamed the muscles.",
-    "fr": 94,
+    "fr": 92,
     "in": 0,
-    "out": 94,
+    "out": 92,
     "trans": ""
   },
   {
@@ -20,9 +20,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 94,
-    "out": 109,
+    "fr": 11,
+    "in": 92,
+    "out": 103,
     "trans": ""
   },
   {
@@ -33,9 +33,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 109,
-    "out": 124,
+    "fr": 11,
+    "in": 103,
+    "out": 114,
     "trans": ""
   },
   {
@@ -46,9 +46,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 124,
-    "out": 139,
+    "fr": 11,
+    "in": 114,
+    "out": 125,
     "trans": ""
   },
   {
@@ -59,9 +59,9 @@
     "mode": "CAM",
     "who": "MANAN",
     "text": "Hold on. He had nothing left. So where did THAT come from?",
-    "fr": 137,
-    "in": 139,
-    "out": 276,
+    "fr": 135,
+    "in": 125,
+    "out": 260,
     "trans": "THROUGH THE GLASS. Push in on the lens until the circle fills the frame. The next scene, the lecture room of 1923, appears inside the glass, bending at the edges as if seen through it, then straightens as we come out the other side into 2.1."
   },
   {
@@ -72,9 +72,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "A. V. Hill. Nineteen twenty three.",
-    "fr": 73,
-    "in": 276,
-    "out": 349,
+    "fr": 71,
+    "in": 260,
+    "out": 331,
     "trans": ""
   },
   {
@@ -85,9 +85,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 349,
-    "out": 364,
+    "fr": 11,
+    "in": 331,
+    "out": 342,
     "trans": ""
   },
   {
@@ -98,9 +98,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 364,
-    "out": 379,
+    "fr": 11,
+    "in": 342,
+    "out": 353,
     "trans": "THROUGH THE GLASS. Same move. The factory inside the lens grows until the circle fills the frame and we are inside the factory for 2.4."
   },
   {
@@ -111,9 +111,9 @@
     "mode": "BUB",
     "who": "WORKER",
     "text": "That's it. We're done.",
-    "fr": 51,
-    "in": 379,
-    "out": 430,
+    "fr": 49,
+    "in": 353,
+    "out": 402,
     "trans": ""
   },
   {
@@ -124,9 +124,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "Except it doesn't explain this.",
-    "fr": 62,
-    "in": 430,
-    "out": 492,
+    "fr": 60,
+    "in": 402,
+    "out": 462,
     "trans": ""
   },
   {
@@ -137,9 +137,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 492,
-    "out": 507,
+    "fr": 11,
+    "in": 462,
+    "out": 473,
     "trans": ""
   },
   {
@@ -150,9 +150,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "At the back, a door nobody opens.",
-    "fr": 84,
-    "in": 507,
-    "out": 591,
+    "fr": 82,
+    "in": 473,
+    "out": 555,
     "trans": ""
   },
   {
@@ -163,9 +163,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 591,
-    "out": 606,
+    "fr": 11,
+    "in": 555,
+    "out": 566,
     "trans": ""
   },
   {
@@ -176,9 +176,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "Tested the moment they gave up, the muscles could still do far more.",
-    "fr": 148,
-    "in": 606,
-    "out": 754,
+    "fr": 146,
+    "in": 566,
+    "out": 712,
     "trans": ""
   },
   {
@@ -189,9 +189,9 @@
     "mode": "CAM",
     "who": "MANAN",
     "text": "It was never empty. Somebody closed that door.",
-    "fr": 94,
-    "in": 754,
-    "out": 848,
+    "fr": 92,
+    "in": 712,
+    "out": 804,
     "trans": ""
   },
   {
@@ -202,9 +202,9 @@
     "mode": "BUB",
     "who": "COACH BRAIN",
     "text": "You found me. Took you long enough.",
-    "fr": 84,
-    "in": 848,
-    "out": 932,
+    "fr": 82,
+    "in": 804,
+    "out": 886,
     "trans": ""
   },
   {
@@ -215,9 +215,9 @@
     "mode": "CAM",
     "who": "MANAN",
     "text": "You closed that door.",
-    "fr": 51,
-    "in": 932,
-    "out": 983,
+    "fr": 49,
+    "in": 886,
+    "out": 935,
     "trans": ""
   },
   {
@@ -228,9 +228,9 @@
     "mode": "BUB",
     "who": "COACH BRAIN",
     "text": "Heart rate. Breath. Temperature. Water. Distance.",
-    "fr": 73,
-    "in": 983,
-    "out": 1056,
+    "fr": 71,
+    "in": 935,
+    "out": 1006,
     "trans": ""
   },
   {
@@ -241,9 +241,9 @@
     "mode": "BUB",
     "who": "COACH BRAIN",
     "text": "I'm asking one question. Can we keep going safely?",
-    "fr": 105,
-    "in": 1056,
-    "out": 1161,
+    "fr": 103,
+    "in": 1006,
+    "out": 1109,
     "trans": ""
   },
   {
@@ -254,9 +254,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "Like a phone at twenty percent. Not broken. Protecting itself.",
-    "fr": 116,
-    "in": 1161,
-    "out": 1277,
+    "fr": 114,
+    "in": 1109,
+    "out": 1223,
     "trans": ""
   },
   {
@@ -266,10 +266,10 @@
     "img": "V7_4_6b_not_sorry.jpg",
     "mode": "BUB",
     "who": "COACH BRAIN",
-    "text": "My best judgement. I'd rather you finish than break.",
-    "fr": 105,
-    "in": 1277,
-    "out": 1382,
+    "text": "My best judgement. Fatigue isn't your body failing. It's me slowing you down before real danger.",
+    "fr": 179,
+    "in": 1223,
+    "out": 1402,
     "trans": ""
   },
   {
@@ -279,11 +279,11 @@
     "img": "V7_4_6_arrives.jpg",
     "mode": "CAM",
     "who": "MANAN",
-    "text": "So the limit isn't my body. It's your judgement.",
-    "fr": 105,
-    "in": 1382,
-    "out": 1487,
-    "trans": ""
+    "text": "So the limit isn't my body. It's your judgement. They call it the Central Governor Theory.",
+    "fr": 179,
+    "in": 1402,
+    "out": 1581,
+    "trans": "ON SCREEN SUBTITLE, small, low in frame, held two seconds, nobody speaks it:\n\"Central Governor Theory, proposed by Prof. Tim Noakes, 1997. An influential model. Scientists are still investigating how the brain and muscles produce fatigue.\"\nIt costs no running time because it is not spoken, and it is what protects the film on scientific accuracy."
   },
   {
     "scene": 5,
@@ -293,9 +293,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "They let him race his own best ride.",
-    "fr": 94,
-    "in": 1487,
-    "out": 1581,
+    "fr": 92,
+    "in": 1581,
+    "out": 1673,
     "trans": ""
   },
   {
@@ -306,9 +306,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "He beat it. So it was never his maximum.",
-    "fr": 105,
-    "in": 1581,
-    "out": 1686,
+    "fr": 103,
+    "in": 1673,
+    "out": 1776,
     "trans": ""
   },
   {
@@ -319,9 +319,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 1686,
-    "out": 1701,
+    "fr": 11,
+    "in": 1776,
+    "out": 1787,
     "trans": ""
   },
   {
@@ -332,9 +332,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "So I tried it.",
-    "fr": 51,
-    "in": 1701,
-    "out": 1752,
+    "fr": 49,
+    "in": 1787,
+    "out": 1836,
     "trans": ""
   },
   {
@@ -345,9 +345,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 1752,
-    "out": 1767,
+    "fr": 11,
+    "in": 1836,
+    "out": 1847,
     "trans": ""
   },
   {
@@ -358,9 +358,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 1767,
-    "out": 1782,
+    "fr": 11,
+    "in": 1847,
+    "out": 1858,
     "trans": ""
   },
   {
@@ -371,9 +371,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "Nothing about my legs changed.",
-    "fr": 62,
-    "in": 1782,
-    "out": 1844,
+    "fr": 60,
+    "in": 1858,
+    "out": 1918,
     "trans": ""
   },
   {
@@ -384,9 +384,9 @@
     "mode": "CAM",
     "who": "MANAN",
     "text": "Only what I believed they had left.",
-    "fr": 84,
-    "in": 1844,
-    "out": 1928,
+    "fr": 82,
+    "in": 1918,
+    "out": 2000,
     "trans": ""
   },
   {
@@ -398,9 +398,9 @@
     "who": "COACH BRAIN",
     "text": "All right. Everything's holding. Let's give him a little more.",
     "trans": "",
-    "fr": 116,
-    "in": 1928,
-    "out": 2044
+    "fr": 114,
+    "in": 2000,
+    "out": 2114
   },
   {
     "scene": 6,
@@ -411,9 +411,9 @@
     "who": "",
     "text": "",
     "trans": "",
-    "fr": 15,
-    "in": 2044,
-    "out": 2059
+    "fr": 11,
+    "in": 2114,
+    "out": 2125
   },
   {
     "scene": 6,
@@ -424,9 +424,9 @@
     "who": "MANAN",
     "text": "Still not all of them.",
     "trans": "",
-    "fr": 62,
-    "in": 2059,
-    "out": 2121
+    "fr": 60,
+    "in": 2125,
+    "out": 2185
   },
   {
     "scene": 6,
@@ -437,9 +437,9 @@
     "who": "",
     "text": "",
     "trans": "THE PULL BACK BEGINS HERE. 6.4 to 6.9 are one continuous move backwards through the same body. Never cut. Each frame is a further step out from the one before, and the light spreads as we go.",
-    "fr": 15,
-    "in": 2121,
-    "out": 2136
+    "fr": 11,
+    "in": 2185,
+    "out": 2196
   },
   {
     "scene": 6,
@@ -450,9 +450,9 @@
     "who": "",
     "text": "",
     "trans": "",
-    "fr": 15,
-    "in": 2136,
-    "out": 2151
+    "fr": 11,
+    "in": 2196,
+    "out": 2207
   },
   {
     "scene": 6,
@@ -463,9 +463,9 @@
     "who": "",
     "text": "",
     "trans": "",
-    "fr": 15,
-    "in": 2151,
-    "out": 2166
+    "fr": 11,
+    "in": 2207,
+    "out": 2218
   },
   {
     "scene": 6,
@@ -476,9 +476,9 @@
     "who": "",
     "text": "",
     "trans": "",
-    "fr": 15,
-    "in": 2166,
-    "out": 2181
+    "fr": 11,
+    "in": 2218,
+    "out": 2229
   },
   {
     "scene": 6,
@@ -489,9 +489,9 @@
     "who": "",
     "text": "",
     "trans": "",
-    "fr": 15,
-    "in": 2181,
-    "out": 2196
+    "fr": 11,
+    "in": 2229,
+    "out": 2240
   },
   {
     "scene": 6,
@@ -502,9 +502,9 @@
     "who": "MANAN",
     "text": "It didn't make new energy. It gave permission.",
     "trans": "THE PULL BACK ENDS. The glowing muscular structure becomes a young man in clothes, mid leap between rooftops, the light fading out of him as he goes. One body, one move, from a single fibre to a man flying. Accelerate through the whole run.",
-    "fr": 94,
-    "in": 2196,
-    "out": 2290
+    "fr": 92,
+    "in": 2240,
+    "out": 2332
   },
   {
     "scene": 7,
@@ -514,9 +514,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 2290,
-    "out": 2305,
+    "fr": 11,
+    "in": 2332,
+    "out": 2343,
     "trans": ""
   },
   {
@@ -527,9 +527,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 2305,
-    "out": 2320,
+    "fr": 11,
+    "in": 2343,
+    "out": 2354,
     "trans": ""
   },
   {
@@ -540,9 +540,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 2320,
-    "out": 2335,
+    "fr": 11,
+    "in": 2354,
+    "out": 2365,
     "trans": ""
   },
   {
@@ -553,9 +553,9 @@
     "mode": "CAM",
     "who": "MANAN",
     "text": "Great ideas aren't accepted because they sound convincing. They're accepted because people keep testing them.",
-    "fr": 170,
-    "in": 2335,
-    "out": 2505,
+    "fr": 168,
+    "in": 2365,
+    "out": 2533,
     "trans": ""
   },
   {
@@ -566,9 +566,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 2505,
-    "out": 2520,
+    "fr": 11,
+    "in": 2533,
+    "out": 2544,
     "trans": ""
   },
   {
@@ -579,9 +579,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 2520,
-    "out": 2535,
+    "fr": 11,
+    "in": 2544,
+    "out": 2555,
     "trans": ""
   },
   {
@@ -592,9 +592,9 @@
     "mode": "CAM",
     "who": "MANAN",
     "text": "The wall is real. But somebody set it.",
-    "fr": 94,
-    "in": 2535,
-    "out": 2629,
+    "fr": 92,
+    "in": 2555,
+    "out": 2647,
     "trans": ""
   },
   {
@@ -605,9 +605,9 @@
     "mode": "CAM",
     "who": "MANAN",
     "text": "So next time somebody finds one last burst of speed, ask what their brain believed was safe.",
-    "fr": 191,
-    "in": 2629,
-    "out": 2820,
+    "fr": 189,
+    "in": 2647,
+    "out": 2836,
     "trans": ""
   },
   {
@@ -618,9 +618,9 @@
     "mode": "VO",
     "who": "MANAN",
     "text": "The limit is a setting, not a wall.",
-    "fr": 94,
-    "in": 2820,
-    "out": 2914,
+    "fr": 92,
+    "in": 2836,
+    "out": 2928,
     "trans": "THE WORDS ARRIVE AS HE SPEAKS THEM. Nothing is on the paper when the frame opens. Each word is written on, in his own hand, in time with his voice, as though somebody is writing while he reads. Finish the last word, hold, then the sheet goes blank."
   },
   {
@@ -631,9 +631,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 15,
-    "in": 2914,
-    "out": 2929,
+    "fr": 11,
+    "in": 2928,
+    "out": 2939,
     "trans": ""
   }
 ]
