@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THE BRAIN BRAKE &middot; animation guide</title>
+<style>
+:root{--paper:#f2ebda;--ink:#2b2822;--soft:#6f6757;--acc:#8a6b2e;--live:#8a3b2e;--rule:#c9bfa4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.62}
+header{background:#171512;color:var(--paper);padding:34px 20px 26px}
+header h1{margin:0;font-size:23px;letter-spacing:.05em}
+header .s{color:#9b9080;font-size:13px;margin-top:6px}
+nav{background:#201d19;padding:10px 20px;position:sticky;top:0;z-index:9;
+    display:flex;gap:6px;flex-wrap:wrap}
+nav a{font:11px/1 ui-monospace,Menlo,monospace;color:#c9bfa4;text-decoration:none;
+      border:1px solid #3a352d;border-radius:4px;padding:6px 9px}
+main{max-width:820px;margin:0 auto;padding:26px 20px 80px}
+h2{font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.11em;color:var(--acc);
+   margin:44px 0 14px;text-transform:uppercase}
+h3{margin:0;font-size:16px}
+p{margin:0 0 14px}
+.lead{font-size:17px}
+img{width:100%;display:block;border-radius:4px;margin:18px 0}
+.card{background:#e8dfc8;border-left:3px solid var(--acc);padding:16px 18px;margin:18px 0;border-radius:0 4px 4px 0}
+.card b{color:var(--live)}
+ol,ul{padding-left:20px;margin:0 0 14px}
+li{margin-bottom:9px}
+code{font:13px ui-monospace,Menlo,monospace;background:#e8dfc8;padding:2px 6px;border-radius:3px}
+pre{background:#201d19;color:#d8cfba;padding:16px;border-radius:5px;overflow:auto;
+    font:12.5px/1.6 ui-monospace,Menlo,monospace}
+article{border-top:1px solid var(--rule)}
+article:last-of-type{border-bottom:1px solid var(--rule)}
+.sc{display:flex;align-items:center;gap:14px;padding:14px 2px}
+.num{font:600 15px ui-monospace,Menlo,monospace;color:var(--acc);min-width:26px}
+.meta{font:11.5px ui-monospace,Menlo,monospace;color:var(--soft);margin-top:3px}
+.sc>div{flex:1}
+a.dl{background:var(--ink);color:var(--paper);text-decoration:none;padding:9px 15px;
+     border-radius:4px;font:12px ui-monospace,Menlo,monospace;white-space:nowrap}
+a.dl:active{background:var(--acc)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0}
+td,th{text-align:left;padding:7px 4px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.08em;color:var(--soft)}
+footer{padding:30px 20px 70px;text-align:center;color:var(--soft);font-size:12px}
+</style></head><body>
+
+<header>
+  <h1>THE BRAIN BRAKE</h1>
+  <div class="s">Animation guide &middot; version four &middot; 1:57 at 25 fps</div>
+</header>
+<nav>
+  <a href="#start">start here</a>
+  <a href="#layers">three layers</a>
+  <a href="#glass">the glass transition</a>
+  <a href="#endcard">the end card</a>
+  <a href="#rules">rules</a>
+  <a href="#downloads">downloads</a>
+</nav>
+
+<main>
+
+<h2 id="start">Start here</h2>
+<p class="lead">This page holds everything for the animation. Each scene is one zip with its frames,
+its audio and its timecode. Download what you are working on, come back when you need the next one.</p>
+<p>The film is 1 minute 57 seconds at 25 fps, non drop. The competition limit is a hard 2 minutes
+measured on the YouTube clock, so the running time cannot grow. Every frame carries an in and an out
+timecode and those numbers are calculated from the audio, not estimated.</p>
+<p>Every image is 2731 &times; 1536, true 16:9.</p>
+
+<div class="card">
+  <p><b>What you are not being asked to do.</b> No character animation, no lip sync, no walk cycles.
+  The artwork arrives finished. Your work is compositing, transitions, parallax and small living
+  details.</p>
+</div>
+
+<h2 id="layers">The three layers</h2>
+<p>Nobody in the audience is told any of this. They absorb it in the first twenty seconds.</p>
+<table>
+<tr><th>layer</th><th>what it is</th><th>how it looks</th></tr>
+<tr><td><b>Drawn</b></td><td>Everything imagined. The factory inside the muscle, the tanks, Coach
+Brain, the lever.</td><td>Graphite pencil on warm cream paper.</td></tr>
+<tr><td><b>Live action</b></td><td>Manan. The evidence, and the person who came to look.</td>
+<td>Photographed against grey, cut out, placed in the drawing, casting a real shadow onto the
+paper.</td></tr>
+<tr><td><b>The booth</b></td><td>The film being made. He records the narration.</td>
+<td>Dark room, one warm backlight, he reads as a silhouette and the page is the only lit thing.</td></tr>
+</table>
+<img src="img/booth.jpg" alt="the booth">
+<p>The rule underneath all three: <b>photograph what is true, draw what is thought.</b> When you are
+unsure which layer something belongs to, ask whether it happened or whether somebody imagined it.</p>
+
+<h2 id="glass">The magnifying glass transition</h2>
+<p class="lead">This is the most important thing on the page. The glass is not a prop, it is how the
+film changes scene.</p>
+<p>Wherever Manan holds the glass up at the end of a shot, that lens is the door into the next one.
+It happens twice: <code>1.6</code> into the lecture room, and <code>2.3</code> into the factory.</p>
+<img src="img/transition_steps.jpg" alt="the four steps of the glass transition">
+<p><b>The optical part matters more than the move.</b> We are not cutting through a circle. We are
+going through a lens, so the new scene arrives already bent, and straightens only as we come out the
+other side. If the distortion is missing it reads as a cheap wipe. If it lingers it reads as a
+gimmick. It should resolve just as the circle reaches the frame edge.</p>
+
+<h3>The move, in numbers</h3>
+<pre>total          20 frames   00:00:00:20 at 25 fps
+
+frames  1 to 4     the next scene fades up inside the lens
+                   barrel distortion  k = 0.55
+                   scale 100%, circle stays the size of the lens
+
+frames  5 to 14    push in. the circle grows from the lens to the frame edge
+                   ease out, not linear. slow at the start, quick at the end
+                   barrel eases  0.55 -> 0.12
+                   a little chromatic aberration on the circle edge, 2 to 3 px
+
+frames 15 to 20    the circle passes the frame edge and is gone
+                   barrel eases  0.12 -> 0
+                   aberration to 0, edge softness to 0
+                   we are simply in the next scene</pre>
+
+<h3>Details that make it read as glass</h3>
+<ul>
+<li><b>Bright rim.</b> Keep a thin highlight on the inside of the brass while the circle is still
+small. Glass catches light at its edge and that single line does most of the work.</li>
+<li><b>Edge softness.</b> The circle edge is not hard. 4 to 6 px of softness while small, easing to
+0 as it fills the frame.</li>
+<li><b>The paper stays.</b> The cream paper grain sits over both scenes for the whole transition.
+It never blinks off. The paper is the one continuous thing in the film.</li>
+<li><b>Sound.</b> A short low swell, no whoosh. It is a boy looking closer, not a portal opening.</li>
+</ul>
+
+<div class="card">
+  <p><b>The reason this exists.</b> The film is about looking at something ordinary and finding
+  something bigger inside it. The glass does exactly that, literally, every time we change scene. It
+  is the film's argument built into its grammar, which is why it is worth spending the time on.</p>
+</div>
+<img src="img/lens.jpg" alt="the factory inside the lens">
+<p>Frame <code>2.3</code> is the same idea held still: his real room outside the circle, the drawn
+factory inside it. Everything outside the lens is photographed, everything inside is drawn. The
+transition is that image set moving.</p>
+
+<h2 id="endcard">The end card</h2>
+<img src="img/endcard.jpg" alt="the end card">
+<p>The last frame but one. His real footage runs edge to edge, the cream paper lies over the whole
+frame, and the sentence is hand drawn on top.</p>
+<p><b>The words arrive as he speaks them.</b> Nothing is on the paper when the frame opens. Each word
+is written on, in his own hand, in time with his voice, as though somebody is writing while he reads.
+Finish the last word, hold about a second, then cut to the blank sheet.</p>
+<p>The blank sheet is 14 frames of empty cream paper with the hand drawn border. Nothing on it. It is
+the last thing in the film.</p>
+
+<h2 id="rules">Rules that hold everywhere</h2>
+<ul>
+<li><b>His shadow is drawn onto the paper.</b> Wherever Manan sits in a drawn panel, his shadow
+crosses the pencil lines and they stay visible through it. That shadow is what puts him inside the
+drawing instead of on top of it.</li>
+<li><b>Parallax, gently.</b> Background and characters are separate. A slow push or drift gives the
+panels depth. Do not overdo it, this is a comic strip and it should feel held rather than floaty.</li>
+<li><b>Small living details.</b> A few dials turning in Coach Brain's room, a light blinking, the
+fibres pulsing. Enough that the frame breathes, not enough to look animated.</li>
+<li><b>Bubbles arrive, they do not pop.</b> Draw on quickly, hold, cut away with the frame. The
+character voices are already recorded and cut to length, so time the bubble to the audio.</li>
+<li><b>Scene 6 is the peak.</b> Ten frames, one fibre to a whole world flying. It should accelerate.
+Everything before it is patient so that this can rise.</li>
+<li><b>Never let the running time grow.</b> 1:57 with 2.6 seconds of margin. There is nowhere to
+put more.</li>
+</ul>
+
+<h2 id="downloads">Downloads</h2>
+<p>One zip per scene. Each contains every frame at full size, the character audio for that scene, a
+timecode CSV and an INFO file with the lines and any transition notes.</p>
+<article>
+  <div class="sc">
+    <span class="num">01</span>
+    <div>
+      <h3>THE MYSTERY</h3>
+      <div class="meta">5 frames &middot; 00:11:01 &middot; 6.6 MB</div>
+    </div>
+    <a class="dl" href="downloads/SCENE_01_THE_MYSTERY.zip" download>download</a>
+  </div>
+</article><article>
+  <div class="sc">
+    <span class="num">02</span>
+    <div>
+      <h3>THE OLD THEORY</h3>
+      <div class="meta">5 frames &middot; 00:08:16 &middot; 4.8 MB</div>
+    </div>
+    <a class="dl" href="downloads/SCENE_02_THE_OLD_THEORY.zip" download>download</a>
+  </div>
+</article><article>
+  <div class="sc">
+    <span class="num">03</span>
+    <div>
+      <h3>THE FULL TANK</h3>
+      <div class="meta">5 frames &middot; 00:14:06 &middot; 4.5 MB</div>
+    </div>
+    <a class="dl" href="downloads/SCENE_03_THE_FULL_TANK.zip" download>download</a>
+  </div>
+</article><article>
+  <div class="sc">
+    <span class="num">04</span>
+    <div>
+      <h3>THE GATEKEEPER</h3>
+      <div class="meta">7 frames &middot; 00:25:14 &middot; 19.1 MB</div>
+    </div>
+    <a class="dl" href="downloads/SCENE_04_THE_GATEKEEPER.zip" download>download</a>
+  </div>
+</article><article>
+  <div class="sc">
+    <span class="num">05</span>
+    <div>
+      <h3>THE EXPERIMENT</h3>
+      <div class="meta">8 frames &middot; 00:17:16 &middot; 7.2 MB</div>
+    </div>
+    <a class="dl" href="downloads/SCENE_05_THE_EXPERIMENT.zip" download>download</a>
+  </div>
+</article><article>
+  <div class="sc">
+    <span class="num">06</span>
+    <div>
+      <h3>THE RELEASE</h3>
+      <div class="meta">10 frames &middot; 00:15:02 &middot; 7.7 MB</div>
+    </div>
+    <a class="dl" href="downloads/SCENE_06_THE_RELEASE.zip" download>download</a>
+  </div>
+</article><article>
+  <div class="sc">
+    <span class="num">07</span>
+    <div>
+      <h3>THE VERDICT</h3>
+      <div class="meta">4 frames &middot; 00:08:15 &middot; 1.6 MB</div>
+    </div>
+    <a class="dl" href="downloads/SCENE_07_THE_VERDICT.zip" download>download</a>
+  </div>
+</article><article>
+  <div class="sc">
+    <span class="num">08</span>
+    <div>
+      <h3>THE INVITATION</h3>
+      <div class="meta">6 frames &middot; 00:16:24 &middot; 6.8 MB</div>
+    </div>
+    <a class="dl" href="downloads/SCENE_08_THE_INVITATION.zip" download>download</a>
+  </div>
+</article>
+<p style="margin-top:22px"><b>Manan's narration is not in these files.</b> He records his own lines
+separately and they will come as one folder when they are done. Only the character voices, Coach
+Brain and the factory worker, are included, and those are final.</p>
+
+<h2>Layer example</h2>
+<img src="img/layers.jpg" alt="one frame broken into layers">
+<p>One frame broken into separate layers, so you can see how the finished delivery is structured:
+background alone, each character as a transparent PNG with a real alpha channel, the speech bubble
+empty so you set the type in your own font, and a placeholder marking where Manan's keyed footage
+goes.</p>
+<article><div class="sc"><span class="num">&mdash;</span>
+<div><h3>Layer example, one frame</h3>
+<div class="meta">background, characters, bubble, voice, preview</div></div>
+<a class="dl" href="downloads/LAYER_EXAMPLE_ONE_FRAME.zip" download>download</a></div></article>
+
+</main>
+<footer>markoboskoauroville/BRAIN_BRAKE &middot; questions to Marko</footer>
+</body></html>
