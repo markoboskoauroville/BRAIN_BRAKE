@@ -19,9 +19,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
+    "fr": 15,
     "in": 94,
-    "out": 108
+    "out": 109
   },
   {
     "scene": 1,
@@ -31,21 +31,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 108,
-    "out": 122
-  },
-  {
-    "scene": 1,
-    "id": "1.4",
-    "layer": "DRAWN",
-    "img": "S1_P4.jpg",
-    "mode": "",
-    "who": "",
-    "text": "",
-    "fr": 14,
-    "in": 122,
-    "out": 136
+    "fr": 15,
+    "in": 109,
+    "out": 124
   },
   {
     "scene": 1,
@@ -55,9 +43,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 136,
-    "out": 150
+    "fr": 15,
+    "in": 124,
+    "out": 139
   },
   {
     "scene": 1,
@@ -68,8 +56,8 @@
     "who": "MANAN",
     "text": "Hold on. He had nothing left. So where did THAT come from?",
     "fr": 137,
-    "in": 150,
-    "out": 287
+    "in": 139,
+    "out": 276
   },
   {
     "scene": 2,
@@ -80,8 +68,8 @@
     "who": "MANAN",
     "text": "A. V. Hill. Nineteen twenty three.",
     "fr": 73,
-    "in": 287,
-    "out": 360
+    "in": 276,
+    "out": 349
   },
   {
     "scene": 2,
@@ -91,9 +79,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 360,
-    "out": 374
+    "fr": 15,
+    "in": 349,
+    "out": 364
   },
   {
     "scene": 2,
@@ -103,9 +91,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 374,
-    "out": 388
+    "fr": 15,
+    "in": 364,
+    "out": 379
   },
   {
     "scene": 2,
@@ -116,8 +104,8 @@
     "who": "WORKER",
     "text": "That's it. We're done.",
     "fr": 51,
-    "in": 388,
-    "out": 439
+    "in": 379,
+    "out": 430
   },
   {
     "scene": 2,
@@ -128,8 +116,8 @@
     "who": "MANAN",
     "text": "Except it doesn't explain this.",
     "fr": 62,
-    "in": 439,
-    "out": 501
+    "in": 430,
+    "out": 492
   },
   {
     "scene": 3,
@@ -139,9 +127,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 501,
-    "out": 515
+    "fr": 15,
+    "in": 492,
+    "out": 507
   },
   {
     "scene": 3,
@@ -152,8 +140,8 @@
     "who": "MANAN",
     "text": "At the back, a door nobody opens.",
     "fr": 84,
-    "in": 515,
-    "out": 599
+    "in": 507,
+    "out": 591
   },
   {
     "scene": 3,
@@ -163,9 +151,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 599,
-    "out": 613
+    "fr": 15,
+    "in": 591,
+    "out": 606
   },
   {
     "scene": 3,
@@ -176,8 +164,8 @@
     "who": "MANAN",
     "text": "Tested the moment they gave up, the muscles could still do far more.",
     "fr": 148,
-    "in": 613,
-    "out": 761
+    "in": 606,
+    "out": 754
   },
   {
     "scene": 3,
@@ -188,8 +176,8 @@
     "who": "MANAN",
     "text": "It was never empty. Somebody closed that door.",
     "fr": 94,
-    "in": 761,
-    "out": 855
+    "in": 754,
+    "out": 848
   },
   {
     "scene": 4,
@@ -200,8 +188,8 @@
     "who": "COACH BRAIN",
     "text": "You found me. Took you long enough.",
     "fr": 84,
-    "in": 855,
-    "out": 939
+    "in": 848,
+    "out": 932
   },
   {
     "scene": 4,
@@ -212,8 +200,8 @@
     "who": "MANAN",
     "text": "You closed that door.",
     "fr": 51,
-    "in": 939,
-    "out": 990
+    "in": 932,
+    "out": 983
   },
   {
     "scene": 4,
@@ -224,8 +212,8 @@
     "who": "COACH BRAIN",
     "text": "Heart rate. Breath. Temperature. Water. Distance.",
     "fr": 73,
-    "in": 990,
-    "out": 1063
+    "in": 983,
+    "out": 1056
   },
   {
     "scene": 4,
@@ -236,8 +224,8 @@
     "who": "COACH BRAIN",
     "text": "I'm asking one question. Can we keep going safely?",
     "fr": 105,
-    "in": 1063,
-    "out": 1168
+    "in": 1056,
+    "out": 1161
   },
   {
     "scene": 4,
@@ -248,8 +236,8 @@
     "who": "MANAN",
     "text": "Like a phone at twenty percent. Not broken. Protecting itself.",
     "fr": 116,
-    "in": 1168,
-    "out": 1284
+    "in": 1161,
+    "out": 1277
   },
   {
     "scene": 4,
@@ -260,8 +248,8 @@
     "who": "COACH BRAIN",
     "text": "My best judgement. I'd rather you finish than break.",
     "fr": 105,
-    "in": 1284,
-    "out": 1389
+    "in": 1277,
+    "out": 1382
   },
   {
     "scene": 4,
@@ -272,8 +260,8 @@
     "who": "MANAN",
     "text": "So the limit isn't my body. It's your judgement.",
     "fr": 105,
-    "in": 1389,
-    "out": 1494
+    "in": 1382,
+    "out": 1487
   },
   {
     "scene": 5,
@@ -284,8 +272,8 @@
     "who": "MANAN",
     "text": "They let him race his own best ride.",
     "fr": 94,
-    "in": 1494,
-    "out": 1588
+    "in": 1487,
+    "out": 1581
   },
   {
     "scene": 5,
@@ -296,8 +284,8 @@
     "who": "MANAN",
     "text": "He beat it. So it was never his maximum.",
     "fr": 105,
-    "in": 1588,
-    "out": 1693
+    "in": 1581,
+    "out": 1686
   },
   {
     "scene": 5,
@@ -307,9 +295,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 1693,
-    "out": 1707
+    "fr": 15,
+    "in": 1686,
+    "out": 1701
   },
   {
     "scene": 5,
@@ -320,8 +308,8 @@
     "who": "MANAN",
     "text": "So I tried it.",
     "fr": 51,
-    "in": 1707,
-    "out": 1758
+    "in": 1701,
+    "out": 1752
   },
   {
     "scene": 5,
@@ -331,9 +319,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 1758,
-    "out": 1772
+    "fr": 15,
+    "in": 1752,
+    "out": 1767
   },
   {
     "scene": 5,
@@ -343,9 +331,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 1772,
-    "out": 1786
+    "fr": 15,
+    "in": 1767,
+    "out": 1782
   },
   {
     "scene": 5,
@@ -356,8 +344,8 @@
     "who": "MANAN",
     "text": "Nothing about my legs changed.",
     "fr": 62,
-    "in": 1786,
-    "out": 1848
+    "in": 1782,
+    "out": 1844
   },
   {
     "scene": 5,
@@ -368,8 +356,8 @@
     "who": "MANAN",
     "text": "Only what I believed they had left.",
     "fr": 84,
-    "in": 1848,
-    "out": 1932
+    "in": 1844,
+    "out": 1928
   },
   {
     "scene": 6,
@@ -380,8 +368,8 @@
     "who": "COACH BRAIN",
     "text": "All right. Everything's holding. Let's give him a little more.",
     "fr": 116,
-    "in": 1932,
-    "out": 2048
+    "in": 1928,
+    "out": 2044
   },
   {
     "scene": 6,
@@ -391,9 +379,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2048,
-    "out": 2062
+    "fr": 15,
+    "in": 2044,
+    "out": 2059
   },
   {
     "scene": 6,
@@ -404,8 +392,8 @@
     "who": "MANAN",
     "text": "Still not all of them.",
     "fr": 62,
-    "in": 2062,
-    "out": 2124
+    "in": 2059,
+    "out": 2121
   },
   {
     "scene": 6,
@@ -415,9 +403,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2124,
-    "out": 2138
+    "fr": 15,
+    "in": 2121,
+    "out": 2136
   },
   {
     "scene": 6,
@@ -427,9 +415,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2138,
-    "out": 2152
+    "fr": 15,
+    "in": 2136,
+    "out": 2151
   },
   {
     "scene": 6,
@@ -439,8 +427,8 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2152,
+    "fr": 15,
+    "in": 2151,
     "out": 2166
   },
   {
@@ -451,9 +439,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
+    "fr": 15,
     "in": 2166,
-    "out": 2180
+    "out": 2181
   },
   {
     "scene": 6,
@@ -463,9 +451,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2180,
-    "out": 2194
+    "fr": 15,
+    "in": 2181,
+    "out": 2196
   },
   {
     "scene": 6,
@@ -475,9 +463,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2194,
-    "out": 2208
+    "fr": 15,
+    "in": 2196,
+    "out": 2211
   },
   {
     "scene": 6,
@@ -488,8 +476,8 @@
     "who": "MANAN",
     "text": "It didn't make new energy. It gave permission.",
     "fr": 94,
-    "in": 2208,
-    "out": 2302
+    "in": 2211,
+    "out": 2305
   },
   {
     "scene": 7,
@@ -499,9 +487,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2302,
-    "out": 2316
+    "fr": 15,
+    "in": 2305,
+    "out": 2320
   },
   {
     "scene": 7,
@@ -511,9 +499,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2316,
-    "out": 2330
+    "fr": 15,
+    "in": 2320,
+    "out": 2335
   },
   {
     "scene": 7,
@@ -523,9 +511,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2330,
-    "out": 2344
+    "fr": 15,
+    "in": 2335,
+    "out": 2350
   },
   {
     "scene": 7,
@@ -536,8 +524,8 @@
     "who": "MANAN",
     "text": "Great ideas aren't accepted because they sound convincing. They're accepted because people keep testing them.",
     "fr": 170,
-    "in": 2344,
-    "out": 2514
+    "in": 2350,
+    "out": 2520
   },
   {
     "scene": 8,
@@ -547,9 +535,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2514,
-    "out": 2528
+    "fr": 15,
+    "in": 2520,
+    "out": 2535
   },
   {
     "scene": 8,
@@ -559,9 +547,9 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2528,
-    "out": 2542
+    "fr": 15,
+    "in": 2535,
+    "out": 2550
   },
   {
     "scene": 8,
@@ -572,8 +560,8 @@
     "who": "MANAN",
     "text": "The wall is real. But somebody set it.",
     "fr": 94,
-    "in": 2542,
-    "out": 2636
+    "in": 2550,
+    "out": 2644
   },
   {
     "scene": 8,
@@ -584,8 +572,8 @@
     "who": "MANAN",
     "text": "So next time somebody finds one last burst of speed, ask what their brain believed was safe.",
     "fr": 191,
-    "in": 2636,
-    "out": 2827
+    "in": 2644,
+    "out": 2835
   },
   {
     "scene": 8,
@@ -596,8 +584,8 @@
     "who": "MANAN",
     "text": "The limit is a setting, not a wall.",
     "fr": 94,
-    "in": 2827,
-    "out": 2921
+    "in": 2835,
+    "out": 2929
   },
   {
     "scene": 8,
@@ -607,8 +595,8 @@
     "mode": "",
     "who": "",
     "text": "",
-    "fr": 14,
-    "in": 2921,
-    "out": 2935
+    "fr": 15,
+    "in": 2929,
+    "out": 2944
   }
 ]
