@@ -480,10 +480,23 @@ for t in ["Eat something before you come. Nerves and an empty stomach feel exact
           "When you do not know what to do: breathe out longer than in, and look at the thing."]:
     c.setFillColor(ACC); c.circle(ML+3,y+3.5,2.6,fill=1,stroke=0)
     y = para(ML+16,y,t,'D',10.5,14.6,CW-16); y-=10
-y-=20
-c.setStrokeColor(RULE); c.line(ML,y,W-MR,y); y-=40
-c.setFont('DB',15); c.setFillColor(INK)
-for ln in wrap("Nothing about you needs to change. Only what you believe you already have.",'DB',15,CW):
-    c.drawCentredString(W/2,y,ln); y-=22
-foot(); c.showPage(); c.save()
-print("written", OUT, os.path.getsize(OUT), "pages", pg[0])
+newpage()
+
+# ============================================================ END CARD
+c.setFillColor(HexColor("#141110")); c.rect(0,0,W,H,fill=1,stroke=0)
+ep=os.path.join(IMG,"endcard.jpg")
+if os.path.exists(ep):
+    im=Image.open(ep); ar=im.size[0]/im.size[1]
+    iw=W-56; ih=iw/ar
+    c.drawImage(ImageReader(ep), 28, H/2-ih/2+34, iw, ih, mask=None)
+c.setFont('DO',12); c.setFillColor(HexColor("#a08a68"))
+c.drawCentredString(W/2, H/2-ih/2+6, "This is the last thing anyone sees.")
+c.setFont('DB',13); c.setFillColor(HexColor("#c9b48c"))
+for i,ln in enumerate(["Nothing about you needs to change.",
+                       "Only what you believe you already have."]):
+    c.drawCentredString(W/2, H/2-ih/2-26-i*20, ln)
+c.setFont('M',7); c.setFillColor(HexColor("#5d5346"))
+c.drawString(ML,28,"HOW TO ACT NATURALLY  ·  Manan Periwal  ·  THE BRAIN BRAKE")
+c.drawRightString(W-MR,28,str(pg[0]+1))
+c.showPage(); c.save()
+print("written", OUT, os.path.getsize(OUT), "pages", pg[0]+1)
