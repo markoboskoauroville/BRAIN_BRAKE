@@ -989,3 +989,131 @@ rotoscoping.
 is what happens when somebody has just written it. Occlusion for free.
 
 Apply the same test on any composite onto a real surface: a screen, a page, a wall.
+
+---
+
+## THE REVIEW LOOP, 16.8.2026. THIS IS THE PART THAT WAS NEVER WRITTEN DOWN.
+
+Generating is the easy half. Every serious error in this production came from **shipping an image
+without looking at it properly**, or from looking at it and not knowing what to look for.
+
+### NEVER SHIP AN IMAGE YOU HAVE NOT VIEWED
+
+`gen()` returning `OK` means the API answered. It says nothing about whether the picture is right.
+After every generation, `view` the image. On a batch, build a contact sheet and view that. This is
+not optional and it is not slow.
+
+```python
+from PIL import Image, ImageDraw
+names=[...]
+tw,th=470,300; cols=3
+rows=(len(names)+cols-1)//cols
+s=Image.new('RGB',(cols*tw,rows*th),'white'); d=ImageDraw.Draw(s)
+for i,n in enumerate(names):
+    im=Image.open(f'/home/claude/gen/{n}.png').convert('RGB'); im.thumbnail((tw-10,th-26))
+    x=(i%cols)*tw+5; y=(i//cols)*th+22
+    s.paste(im,(x,y)); d.text((x,y-16),n,fill=(0,0,0))
+s.save('/home/claude/check.jpg',quality=90)
+```
+
+### THE CHECKLIST, RUN AGAINST EVERY FRAME
+
+Not a vague "does it look good". These are the things that actually went wrong:
+
+1. **Is the person photographic where they must be photographic?** The commonest and worst failure.
+   If a pencil reference leads, the model returns a drawn person. Zoom into the face. Real skin has
+   pores and asymmetry; a drawing has line weight. Frame 1.6 shipped drawn once and it broke the
+   film's central law in the one frame whose job is to establish it.
+2. **Is anyone duplicated?** Ask for one boy and sometimes two arrive.
+3. **Is anything cut off that should not be?** Check the actual pixels, not the impression. A
+   character sheet was generated with the head touching the frame edge on all four sides, so every
+   crop of it was headless.
+4. **Is there text in the image that should not be there?** Burned in labels, filenames, stray
+   lettering. Twice an annotated reference put a review label into the artwork.
+5. **Is the wardrobe right and consistent with its neighbours?** Hoodie versus t shirt broke
+   continuity across three bike frames.
+6. **Is the character the current character?** Old Muscle, old runner, old Coach Brain all survived
+   in frames long after the sheets were replaced.
+7. **Is the aspect exactly 16:9?** Nano Banana returns 2752x1536, which is 1.7917. Crop to
+   2731x1536 before shipping. Always.
+8. **Does the light match the neighbouring frames?** Key from camera left, always.
+
+### MEASURE, DO NOT SQUINT
+
+When something is in the wrong place, get the number rather than guessing. This is what the container
+is for.
+
+```python
+# where is the figure actually?
+import numpy as np
+from PIL import Image, ImageFilter
+from scipy import ndimage
+im=Image.open(p).convert('L')
+L=np.array(im).astype(float)
+lo=np.array(im.filter(ImageFilter.GaussianBlur(90))).astype(float)
+fig=(lo-L)>14                       # dark AGAINST its surroundings, not just dark
+lab,n=ndimage.label(fig)
+keep=lab==int(np.argmax(ndimage.sum(fig,lab,range(1,n+1))))+1
+ys,xs=np.nonzero(keep)
+print("x %.3f-%.3f  y %.3f-%.3f" % (xs.min()/W,xs.max()/W,ys.min()/H,ys.max()/H))
+```
+
+**Local contrast, not absolute darkness.** A dark room makes everything dark; the figure is what is
+dark *relative to its surroundings*. Using a plain luminance threshold once selected the entire frame.
+
+Then test placements against the measurement instead of the eye:
+
+```python
+hit = mask[y0:y1, x0:x1].mean()     # overlap of text box with the figure
+if hit == 0: place_it()
+```
+
+Text was placed clear of a silhouette this way, verified at exactly zero overlap, rather than looking
+at it and hoping.
+
+### WHEN A COMPOSITE VANISHES, SUSPECT THE PLATE
+
+The surface test only lets chalk land on dark slate, ink land on paper, and so on. That is correct
+behaviour. If a composite disappears, the mask is usually right and **the plate is wrong** — a
+sunlit patch, an uneven wash. Regenerate the plate evenly lit rather than loosening the test, or the
+composite will float on top of the surface instead of sitting on it.
+
+### FEEDBACK IS A NEW PROMPT, NOT A CONVERSATION
+
+The tool has no memory of the last attempt. Do not write "make the head bigger". Rewrite the whole
+prompt with the correction expressed positively and specifically:
+
+- wrong: "not cut off at the top"
+- right: "the whole head is inside the frame with clear empty space above the hair"
+- wrong: "less shaded"
+- right: "about twenty five confident open chalk strokes, no tone, no cross hatching, large areas
+  left as bare blackboard"
+
+**Negation adds the thing.** Saying "no crowd" produces a crowd. Describe what IS there.
+
+### THE THREE FIXES, IN ORDER OF PREFERENCE
+
+1. **Fix it in the container.** Position, scale, text, tone, colour, crop. Free, exact, repeatable,
+   and it cannot drift. Most notes are container jobs.
+2. **Regenerate the plate, composite in the container.** When the underlying photograph or drawing is
+   wrong: bad lighting, wrong composition, wrong pose.
+3. **Regenerate the whole frame.** Only when the content itself is wrong.
+
+The instinct to regenerate everything is usually wrong and always slower.
+
+### CONTINUITY IS CHECKED ACROSS FRAMES, NOT WITHIN ONE
+
+A frame can be perfect alone and broken beside its neighbour. Before shipping a scene, put its frames
+side by side in one sheet and look for: the same person, the same clothes, the same direction of
+gaze, the same light, the same room. Three bike frames each looked fine and together showed three
+different boys in three different outfits facing different ways.
+
+**Where two frames must share an element, share the FILE, not the description.** Frame 2.2 uses the
+identical chalk sketch and the identical typeface as 2.1, so the handwriting cannot drift. Anything
+described twice will eventually be drawn twice differently.
+
+### AFTER THE IMAGE IS RIGHT
+
+Wire it into `assets/train/frames_v4.json`, rebuild the documents, rebuild all eight scene packages,
+then **download the published file back and diff it** before handing over a link. See
+`STALE_CACHE.md`. An image can be correct on disk and still be stale everywhere the crew can reach.
