@@ -297,19 +297,21 @@ for i,f in enumerate(F):
 
 newpage()
 # ============================================================ END CARD
-c.setFillColor(HexColor("#141110")); c.rect(0,0,W,H,fill=1,stroke=0)
+c.setFillColor(HexColor("#f2ebda")); c.rect(0,0,W,H,fill=1,stroke=0)
 ep=find("V7_ENDCARD.jpg")
 if ep:
     im=Image.open(ep); ar=im.size[0]/im.size[1]
     iw=W-56; ih=iw/ar
     c.drawImage(ImageReader(small(ep,1600)), 28, H/2-ih/2+30, iw, ih, mask=None)
-c.setFont('MB',7.4); c.setFillColor(HexColor("#7a6a52"))
-c.drawCentredString(W/2, H/2-ih/2+8, "END CARD   ·   00:01:56:11  to  00:01:58:11   ·   50 FRAMES")
-c.setFont('DO',9.6); c.setFillColor(HexColor("#8a7a62"))
-for i,ln in enumerate(["The last thing anyone sees is the boy who made it, reading, in the dark.",
-                       "The sentence crosses him. It is not a caption on the film, it is written on him."]):
+c.setFont('MB',7.4); c.setFillColor(ACC)
+c.drawCentredString(W/2, H/2-ih/2+8, "THE LAST FRAME BUT ONE   ·   then the sheet goes blank")
+c.setFont('DO',9.6); c.setFillColor(SOFT)
+for i,ln in enumerate(["Everything collapses into one plane. The drawn boy breathing, the two theories",
+                       "ghosted at the edges, and the real boy's shadow reading it into being.",
+                       "The sentence is hand drawn, because everything explained in this film is drawn.",
+                       "Then the sheet goes blank, and we are back at the beginning."]):
     c.drawCentredString(W/2, H/2-ih/2-16-i*14, ln)
-c.setFont('M',7); c.setFillColor(HexColor("#5d5346"))
+c.setFont('M',7); c.setFillColor(SOFT)
 c.drawString(ML,28,"THE BRAIN BRAKE  ·  version three  ·  comic strip")
 c.drawRightString(W-MR,28,str(pg[0]+1))
 c.showPage(); c.save()
