@@ -19,7 +19,7 @@
   },
   {
     "scene": 2,
-    "id": "2.6b",
+    "id": "2.6",
     "mode": "VO",
     "text": "Except it doesn't explain this."
   },
@@ -49,27 +49,21 @@
   },
   {
     "scene": 4,
-    "id": "4.4",
+    "id": "4.5",
     "mode": "VO",
     "text": "Like a phone at twenty percent. Not broken. Protecting itself."
   },
   {
     "scene": 4,
-    "id": "4.6",
+    "id": "4.7",
     "mode": "CAM",
-    "text": "So the limit isn't my body. It's your judgement."
+    "text": "So the limit isn't my body. It's your judgement. They call it the Central Governor Theory."
   },
   {
     "scene": 5,
     "id": "5.1",
     "mode": "VO",
-    "text": "They let a cyclist race his own best ride."
-  },
-  {
-    "scene": 5,
-    "id": "5.2",
-    "mode": "VO",
-    "text": "And they didn't tell him."
+    "text": "They let him race his own best ride."
   },
   {
     "scene": 5,
@@ -91,7 +85,7 @@
   },
   {
     "scene": 5,
-    "id": "5.8b",
+    "id": "5.9",
     "mode": "CAM",
     "text": "Only what I believed they had left."
   },
@@ -103,7 +97,7 @@
   },
   {
     "scene": 6,
-    "id": "6.6",
+    "id": "6.9",
     "mode": "VO",
     "text": "It didn't make new energy. It gave permission."
   },
@@ -111,7 +105,7 @@
     "scene": 7,
     "id": "7.6",
     "mode": "CAM",
-    "text": "Great ideas aren't accepted because they sound convincing. They're accepted because scientists keep testing them."
+    "text": "Great ideas aren't accepted because they sound convincing. They're accepted because people keep testing them."
   },
   {
     "scene": 8,
@@ -121,14 +115,14 @@
   },
   {
     "scene": 8,
-    "id": "8.6",
+    "id": "8.7",
     "mode": "CAM",
-    "text": "And what your brain believes is safe can be trained."
+    "text": "So next time somebody finds one last burst of speed, ask what their brain believed was safe."
   },
   {
     "scene": 8,
-    "id": "8.6b",
-    "mode": "CAM",
-    "text": "So next time you see someone find one last burst of speed, don't ask how strong they are. Ask what their brain believed was safe."
+    "id": "8.8",
+    "mode": "VO",
+    "text": "The limit is a setting, not a wall."
   }
 ]

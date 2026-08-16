@@ -121,7 +121,7 @@ DIR = {
          "still, settled","a teacher you respect",
          "you want it to sound like a fact, not a verdict","a photograph on a wall, a long time ago",
          "let the year land on its own"),
- "2.6b":("The whole hundred years just closed with a stamp.",
+ "2.6":("The whole hundred years just closed with a stamp.",
          "And you are about to break it open.",
          "the page","held",
          "very slight lean in","the person listening",
@@ -151,18 +151,18 @@ DIR = {
          "level, standing easy","the small character in front of you",
          "you want him to admit it","so it was you",
          "not an accusation, a discovery"),
- "4.4": ("Something ordinary just explained something enormous.",
+ "4.5": ("Something ordinary just explained something enormous.",
          "You have seen this on your own phone a hundred times.",
          "the page","low and slow",
          "relaxed","the person listening",
          "you want them to recognise it","my phone does this at twenty percent",
          "ordinary, like mentioning the weather"),
- "4.6": ("He has just told you he is only ever asking one question.",
-         "So it can be changed.",
+ "4.7": ("He has just told you fatigue is him slowing you down before real danger.",
+         "So it can be changed, and now I know what it is called.",
          "the tennis ball","held",
-         "in profile, hand at your chin","the small character",
+         "in profile, hand at your chin, then you look up","the small character",
          "you want to check you have understood","then it is not my body at all",
-         "sound like you are working it out, not stating it"),
+         "the name arrives last, like remembering a street name"),
  "5.1": ("You are telling somebody about an experiment you read.",
          "You are enjoying how sneaky it was.",
          "the page","low and slow",
@@ -193,7 +193,7 @@ DIR = {
          "still out of breath","the person listening",
          "you want to be honest about what happened","my legs were exactly the same legs",
          "quiet, slightly amazed, not triumphant"),
- "5.8b":("You have just said nothing about your legs changed.",
+ "5.9":("You have just said nothing about your legs changed.",
          "So it was in my head, and my head is mine.",
          "the lens","low and slow",
          "settled, still warm from the effort","the person behind the lens",
@@ -205,7 +205,7 @@ DIR = {
          "still","the person listening",
          "you want them to notice what was withheld","even now, not all of it",
          "small, almost thrown away"),
- "6.6": ("Bodies are flying across the screen doing impossible things.",
+ "6.9": ("Bodies are flying across the screen doing impossible things.",
          "It was all already there.",
          "the page","low and slow",
          "still","the person listening",
@@ -229,7 +229,13 @@ DIR = {
          "still, calm, both feet","the person behind the lens",
          "you want them to try it","it can be trained, it is not fixed",
          "quiet, sure, no push"),
- "8.6b":("The film is ending. This is the last thing anybody hears.",
+ "8.8": ("The film is over. This is the very last thing anybody hears.",
+         "I want you to leave believing this.",
+         "the page in your hands, in the booth","low and slow",
+         "standing still at the microphone","the person listening",
+         "you want them to take it with them","a setting can be changed, a wall cannot",
+         "the biggest pause in the film sits between setting and not. do not rush the second half"),
+ "8.7":("The film is ending. This is the last thing anybody hears.",
          "I want you to look at people differently now.",
          "the lens","low and slow",
          "completely still","the person behind the lens",
@@ -425,7 +431,8 @@ for i, L in enumerate(LINES):
         c.setFont('MB',6.8); c.setFillColor(ACC); c.drawString(ML,y,"THE FIVE"); y-=11
         for k,v in [("body",earth),("who",water),("want",fire),("thought",wind),("silence",ether)]:
             c.setFont('M',7.6); c.setFillColor(SOFT); c.drawString(ML,y,k)
-            c.setFont('D',9); c.setFillColor(INK); c.drawString(ML+52,y,v); y-=12.4
+            yy=para(ML+52,y,v,'D',9,12.4,CW-52)
+            y=yy
 
     # reminder box, always at the foot
     rt = REMINDERS[i % len(REMINDERS)]
