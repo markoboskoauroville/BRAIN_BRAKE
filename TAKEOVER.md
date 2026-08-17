@@ -91,6 +91,12 @@ Version letters go up every rebuild. The film is on `V4f`. Never overwrite a pub
   in the sandbox and are re-uploaded each session.
 - **Never use an annotated frame as a generation reference.** Review labels burn into the output.
   This has happened twice.
+- **Key light is CAMERA RIGHT, always.** Corrected 17.8.2026. `nanobanana.md` said camera left and
+  claimed it as the law from `worlds.md`. `worlds.md` names no side, only that the side never
+  changes, and every existing frame is keyed camera right. Venkatesh found it from the reference
+  frames the day before the shoot.
+- **When a written rule and the artefact disagree, measure the artefact.** That is how all three of
+  the above were found. A rule nobody checks against a picture will outlive the picture.
 - **Every image ships cropped to 2731x1536.** Nano Banana returns 2752x1536, which is slightly wide.
 
 ---
@@ -129,10 +135,14 @@ Still open, in the order it will bite:
    check the total against 2:00 before anything is sent to anyone.
 2. **4.4b and 4.8 have no plates.** They are live camera frames and only exist after the shoot.
    They are in the packages and the camera guide, marked as shot on the day.
-3. **Music and sound design have not started.** Marko is composing. This is half the film.
-4. **Kristijan has not quoted** for the reduced comic strip scope. Neha is handling it and Marko
+3. **Manan's eyeline on some frames is unresolved.** 4.2 is marked `CAM`, meaning he speaks to
+   camera, but its reference shows him in profile looking at Coach Brain. The mode field and the
+   picture disagree and only Marko can say which is right. Check the rest of the `CAM` frames
+   against their references before the shoot.
+4. **Music and sound design have not started.** Marko is composing. This is half the film.
+5. **Kristijan has not quoted** for the reduced comic strip scope. Neha is handling it and Marko
    deliberately stays out of that conversation so it does not read as pressure on price.
-5. **The prop sheets cannot be rebuilt.** `23-prop-sheets.py` reads plate images from a working
+6. **The prop sheets cannot be rebuilt.** `23-prop-sheets.py` reads plate images from a working
    directory that was never committed. The finished sheets in `assets/props/` are fine, but the
    generator cannot be re-run. Same class of problem as the ones this file exists to prevent.
 

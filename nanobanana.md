@@ -843,8 +843,25 @@ as a scale on all three channels so the cream stays cream, brought it to 7.6% an
 again. Tone is a container job. Do not spend a credit regenerating for tone.
 
 **The tool overruled the prompt on light direction and it was right.** The prompt asked for a key from
-upper right. The tool put it camera left, which is the film's own law from `worlds.md`. Every Manan
-frame is keyed from camera left at forty five degrees. Do not write anything else.
+upper right. The tool put it on one consistent side and held it there, which is what `worlds.md`
+actually requires: a single dominant key from a consistent side, hard enough that the shadow has a
+shape.
+
+**CORRECTED 17.8.2026, and the correction matters.** This passage used to say the key is camera
+LEFT and claimed that as the film's law from `worlds.md`. Both halves were wrong. `worlds.md` names
+no side at all, it only requires that the side never changes. And the frames themselves are keyed
+from **camera RIGHT**, consistently: in 1.5 the boy's face and the front of his hoodie are bright on
+the screen right side with his back in shadow and his ground shadow falling to screen left, in 4.2
+the same, and in the key handover insert the shadow falls down and to the left. Venkatesh caught it
+while prepping the shoot, from the reference frames in his own camera guide, one day before the
+camera rolled. Nobody had checked the written rule against the pictures.
+
+**So: every Manan frame is keyed from CAMERA RIGHT at roughly forty five degrees.** Do not write
+anything else, and if a future frame comes back keyed left, that frame is wrong, not this line.
+
+The wider lesson is the one this whole file exists for. A rule that is written down and never
+measured against the artefact will survive for months and be handed to everyone who reads it. The
+pictures are what exist. When doctrine and artefact disagree, measure the artefact first.
 
 ## THE LENS COMPOSITE IS A CONTAINER JOB, 13.8.2026
 
@@ -1047,7 +1064,7 @@ Not a vague "does it look good". These are the things that actually went wrong:
    in frames long after the sheets were replaced.
 7. **Is the aspect exactly 16:9?** Nano Banana returns 2752x1536, which is 1.7917. Crop to
    2731x1536 before shipping. Always.
-8. **Does the light match the neighbouring frames?** Key from camera left, always.
+8. **Does the light match the neighbouring frames?** Key from camera RIGHT, always. Corrected 17.8.2026, see the light direction entry above.
 
 ### MEASURE, DO NOT SQUINT
 

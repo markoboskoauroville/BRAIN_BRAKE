@@ -37,7 +37,7 @@ REPO = os.path.dirname(os.path.abspath(__file__))
 OUT = "/home/claude/out/THE BRAIN BRAKE - CAMERA GUIDE - Venkatesh.pdf"
 os.makedirs("/home/claude/out", exist_ok=True)
 
-VERSION = "version one"
+VERSION = "version two"
 
 c = canvas.Canvas(OUT, pagesize=A4)
 pg = [0]
@@ -98,7 +98,7 @@ SETUPS = {
        "This is the setup the film lives in. He speaks straight down the lens. Nothing else is "
        "in shot and nothing moves behind him.",
        ["Mid grey seamless, lit evenly, no gradient and no hot spot.",
-        "Key camera left, soft, slightly above eye line. Never relight between frames in this setup.",
+        "Key from CAMERA RIGHT, soft, slightly above eye line, roughly forty five degrees. This is the one lighting decision the whole method depends on. Manan gets a real shadow cast onto drawn paper later, so the side must never change between frames and the light must be hard enough that the shadow has a shape. If the light on the day is flat, every frame in the film loses this and it cannot be added back honestly.",
         "Frame him with clear space above the hair. He gets cut out and placed inside drawings, "
         "so anything touching the edge cannot be used.",
         "One sentence per take. Reset fully between lines.",
@@ -128,8 +128,9 @@ SETUPS = {
 
 # frame id -> (setup, what the camera does)
 CAM = {
- "1.5": ("A", "He walks into frame from camera right, stops, and looks off. Half a second on screen. "
-              "Shoot the walk in six or seven times and let him arrive differently each time."),
+ "1.5": ("A", "He enters at camera LEFT and moves to the right, as the reference shows, stops, and "
+              "looks off. Half a second on screen. Shoot the walk in six or seven times and let him "
+              "arrive differently each time."),
  "1.6": ("A", "The first time he speaks to us. Straight to lens, glass at chest height. He has just "
               "seen something impossible and he is asking us about it, not telling us. Shoot past the "
               "point where it feels finished. Take six is usually the one."),
@@ -287,6 +288,15 @@ newpage()
 y = H - 70
 c.setFont('MB', 8); c.setFillColor(ACC); c.drawString(ML, y, "THE SHOTS, IN ORDER"); y -= 8
 c.setStrokeColor(RULE); c.line(ML, y, W - MR, y); y -= 22
+c.setFillColor(BOX); c.rect(ML, y-58, CW, 58, fill=1, stroke=0)
+c.setStrokeColor(LIVE); c.setLineWidth(2.4); c.line(ML, y-58, ML, y)
+c.setFont('MB',7); c.setFillColor(LIVE); c.drawString(ML+16, y-17, "IF THE PICTURE AND THE WORDS DISAGREE")
+para(ML+16, y-32, "Follow the picture for anything you can see: light, direction, framing, wardrobe, "
+                  "where he stands. Follow the words for anything you cannot: what happens, what he "
+                  "says, how long it is on screen. Then tell us, so we can fix the words.",
+     'D', 9.6, 12.6, CW-32)
+y -= 76
+
 y = para(ML, y,
     "In film order, which is not shooting order. Group them by setup on the day and shoot whatever "
     "is lit. Each page carries the timecode it lands on in the finished film, how long it is on "
