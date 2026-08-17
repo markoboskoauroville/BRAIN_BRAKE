@@ -187,24 +187,10 @@ newpage()
 
 # ============================================================ 4 THE DAY
 y=head("The shooting day","ONE DAY, PLUS ONE SHORT EXTERIOR")
-setups=[("A","Grey backdrop, walking and reacting",
-  "Eye level on sticks, locked off. Soft key from camera left at forty five degrees. Fill from the "
-  "right at half strength. Frames 1.5, 1.6, 2.6, 3.2, 3.3, 3.4, 3.6."),
- ("B","Seated eyeline, reacting to Coach Brain",
-  "Same lighting as A, unchanged. Tennis ball on a stand at seated height, camera left. Do not "
-  "relight, only move the mark. Frames 4.2, 4.7."),
- ("C","White void, still, to lens",
-  "Flat even light both sides, no modelling, no shadow on the backdrop. Frames 7.3, 7.6, 8.1, 8.3, "
-  "8.5, 8.6, 8.7."),
- ("D","Jump, high frame rate. Optional, five minutes.","Same as C, wider, room above his head."),
- ("E","His room, at his desk","Warm window light, no lamps fighting it. Frames 2.3, 4.5, 5.4."),
- ("F","His room, at the blackboard","Same light, standing. A real blackboard, shot completely clean. Frame 2.1."),
- ("G","His room, on the stationary bike","Same light. Wide, closer, close. Frames 5.6, 5.7, 5.8, 5.9."),
- ("H","THE BOOTH. New.",
-  "A small room made dark. Music stand with the script pages, microphone on a stand, headphones. "
-  "One warm light low and behind him, everything else falling away. He reads as a silhouette and "
-  "the page in his hands is the only lit thing. His face does not need to read. Three or four shots."),
- ("EXT","One quiet road, early morning","Riding hard, side on. Thirty minutes. Frame 5.5.")]
+setups=[]
+for _d in json.load(open('/home/claude/BRAIN_BRAKE/assets/train/setups.json'))['setups']:
+    _f=(' Frames '+', '.join(_d['frames'])+'.') if _d['frames'] else ' Optional.'
+    setups.append((_d['key'], _d['name'], _d['light']+' '+_d['note']+_f))
 for k,t,d in setups:
     if y<106: newpage(); y=H-76
     c.setFont('MB',10); c.setFillColor(ACC if k!="H" else BOOTH); c.drawString(ML,y,k)

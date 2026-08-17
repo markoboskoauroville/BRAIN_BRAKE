@@ -37,7 +37,7 @@ REPO = os.path.dirname(os.path.abspath(__file__))
 OUT = "/home/claude/out/THE BRAIN BRAKE - CAMERA GUIDE - Venkatesh.pdf"
 os.makedirs("/home/claude/out", exist_ok=True)
 
-VERSION = "version two"
+VERSION = "version three"
 
 c = canvas.Canvas(OUT, pagesize=A4)
 pg = [0]
@@ -92,96 +92,50 @@ def img(fn, y, maxh, w=None):
     return y - hh - 10
 
 # ---------------------------------------------------------------- the setups
-SETUPS = {
- "A": ("TO CAMERA",
-       "Manan against plain mid grey, medium, lens at his eye height, key from camera left. "
-       "This is the setup the film lives in. He speaks straight down the lens. Nothing else is "
-       "in shot and nothing moves behind him.",
-       ["Mid grey seamless, lit evenly, no gradient and no hot spot.",
-        "Key from CAMERA RIGHT, soft, slightly above eye line, roughly forty five degrees. This is the one lighting decision the whole method depends on. Manan gets a real shadow cast onto drawn paper later, so the side must never change between frames and the light must be hard enough that the shadow has a shape. If the light on the day is flat, every frame in the film loses this and it cannot be added back honestly.",
-        "Frame him with clear space above the hair. He gets cut out and placed inside drawings, "
-        "so anything touching the edge cannot be used.",
-        "One sentence per take. Reset fully between lines.",
-        "Keep rolling through the resets. The unguarded moment between takes is often the one we cut."]),
- "B": ("THE BLACKBOARD",
-       "A real blackboard, real chalk, and Manan actually writing. Everything that appears written "
-       "is added later in Zagreb, but his hand and arm must genuinely move, so the chalk sound and "
-       "the arm passing in front of the writing are real.",
-       ["THE BOARD IS SHOT COMPLETELY EMPTY except for one vertical chalk line down the middle.",
-        "He writes with real chalk on the empty board. It does not matter what he writes.",
-        "Give us a clean pass of the empty board first, locked off, no Manan, five seconds.",
-        "Same lighting as setup A if the room allows it."]),
- "C": ("SILENT PLATES",
-       "No lines. These are the pictures between the words, and the film breathes on them. Each one "
-       "is on screen for well under half a second, so what matters is that they are clean and still, "
-       "not that they are performed.",
-       ["Shoot each one much longer than we need. We take the stillest part.",
-        "No performance at all. He is not acting in these, he is simply there.",
-        "Same grey, same key, same distance unless the note says otherwise."]),
- "D": ("THE MAGNIFYING GLASS",
-       "The brass glass is the film's transition. Twice the picture goes through it into the next "
-       "scene, so the glass has to be real, in his hand, and in focus.",
-       ["Insert of the glass held up, the circle of the lens filling as much of frame as it can.",
-        "Hold it steady for a slow count of five. We push in on it later.",
-        "One pass with his eye visible through the glass, one pass with the lens empty."]),
+# Read from assets/train/setups.json, the same file the film document reads.
+# Do not hardcode a setup list here. That is exactly how this guide came to
+# disagree with the film about where half the film was shot.
+_S = json.load(open(os.path.join(REPO,'assets/train/setups.json')))['setups']
+SETUPS = {d['key']: d for d in _S}
+OF = {i: d['key'] for d in _S for i in d['frames']}
+
+WHERE = {
+ "grey":     ("ON GREY", "Cut out later and placed inside a drawn world."),
+ "white":    ("ON WHITE", "Cut out later. The world has fallen away behind him."),
+ "room":     ("IN HIS ROOM", "A real room, shot as it is. Not cut out."),
+ "exterior": ("EXTERIOR", "A real road, early morning."),
+ "booth":    ("THE BOOTH", "Voice only. Nothing is seen."),
 }
 
 # frame id -> (setup, what the camera does)
 CAM = {
- "1.5": ("A", "He enters at camera LEFT and moves to the right, as the reference shows, stops, and "
-              "looks off. Half a second on screen. Shoot the walk in six or seven times and let him "
-              "arrive differently each time."),
- "1.6": ("A", "The first time he speaks to us. Straight to lens, glass at chest height. He has just "
-              "seen something impossible and he is asking us about it, not telling us. Shoot past the "
-              "point where it feels finished. Take six is usually the one."),
- "2.1": ("B", "He writes on the empty board and says the name and the year over it. His arm must pass "
-              "in front of where the writing will be. Do not worry about what he writes."),
- "2.3": ("D", "Insert. The glass raised, lens filling frame. We travel through it into the next scene, "
-              "so hold it long and hold it steady."),
- "2.6": ("A", "Over his shoulder, looking back at the board. Voice only, he is not to camera here, so "
-              "his face can be three quarters. Shoot it also as a clean profile."),
- "3.2": ("C", "He looks at something low and to camera left that is not there. Give him a mark. "
-              "Curious, not worried."),
- "3.3": ("C", "His hand reaching forward, palm open, at chest height. The door is drawn in later. "
-              "Shoot the hand alone as an insert too."),
- "3.4": ("C", "Wide, him small in frame, looking up and around at nothing. He is standing in an "
-              "enormous room that does not exist yet. Give him time to actually look."),
- "3.6": ("A", "To camera. This is the end of the mystery and the start of the argument. Certain, "
-              "quiet, no push."),
- "4.2": ("A", "To camera, level, an accusation that is not angry. He has just worked out who is "
-              "responsible and he is almost pleased about it."),
- "4.4b": ("A", "NEW. Same setup and same eye line as 4.2, one step closer. He is not accusing any "
-               "more, he is working it out, and he is impressed without wanting to show it. "
-               "A small pause before the word secretly."),
- "4.5": ("C", "Voice only over a picture of him. Him looking down at his own hand as though holding "
-              "a phone, but with nothing in it. Shoot the empty hand clean."),
- "4.7": ("A", "To camera. He names the theory. A subtitle goes under this later, so leave the lower "
-              "quarter of frame uncluttered."),
- "4.8": ("A", "NEW, AND IMPORTANT. Shoot this as one continuous take with 4.7, on the same breath. "
-              "We cut it into two panels afterwards. This is the only sentence in the film that "
-              "states the science plainly, so it is slow, still, and straight down the lens. "
-              "A clear beat before and keeps something in reserve."),
- "5.4": ("C", "Close, his face as an idea lands. No line. Shoot a long unbroken take of him simply "
-              "thinking and we will find the moment."),
- "5.5": ("C", "Voice only. Him from behind or three quarters, about to start something."),
- "5.6": ("C", "Movement. Him running on the spot or leaning into a stride against the grey. "
-              "Shoot high frame rate if the camera allows it."),
- "5.7": ("C", "The hardest moment. Effort, not pain. He is working, not suffering."),
- "5.8": ("C", "Eyes closed, completely still, breathing. Shoot a full unbroken minute and we will "
-              "use the stillest twenty frames. No performance at all."),
- "5.9": ("A", "Eyes open, to camera. The quietest line in the film and the one the whole experiment "
-              "is for. Do not let him push it."),
- "7.3": ("C", "Him against white, small, still. A breath between two scenes."),
- "8.1": ("C", "Breathing, eyes closed, calm. Same as 5.8 but at the end of the film rather than the "
-              "middle. Shoot it separately so the two do not match too exactly."),
- "8.3": ("C", "His hand, raised, closing around something that is not there. The lever is drawn in "
-              "later. Insert, and shoot it twice at two heights."),
- "8.6": ("A", "The first line of the ending. He is already looking at us before he speaks. He is "
-              "setting something up and he knows it, so the line does not finish. Leave it open."),
- "8.7": ("A", "The turn. Gentle, not a telling off. Everyone gets this wrong including him at the "
-              "start of the film."),
- "8.8": ("A", "The last thing he says on camera in the whole film. Completely still, dead to lens, "
-              "no movement at all. Let the last take be the tired one. It will be the best."),
+ "1.5": "He enters at camera LEFT and moves to the right, as the reference shows, stops, and looks off. Half a second on screen. Shoot the walk in six or seven times and let him arrive differently each time.",
+ "1.6": "The first time he speaks to us. Straight to lens, glass at chest height. He has just seen something impossible and he is asking us about it, not telling us. Shoot past the point where it feels finished. Take six is usually the one.",
+ "2.1": "He writes on the empty board and says the name and the year over it. His arm must pass in front of where the writing will be.",
+ "2.3": "At his desk. The glass raised toward the lens, the circle filling as much of frame as it can. This is a transition, we travel through it, so hold it long and hold it steady. Push the camera in on a chair rather than zooming.",
+ "2.6": "Over his shoulder, looking back at the board. Voice only, so his face can be three quarters. Shoot a clean profile as well.",
+ "3.2": "He looks at something low and to camera left that is not there. Give him a mark. Curious, not worried.",
+ "3.3": "His hand reaching forward, palm open, at chest height. The door is drawn in later. Shoot the hand alone as an insert too.",
+ "3.4": "Wide, him small in frame, looking up and around at nothing. He is standing in an enormous room that does not exist yet. Give him time to actually look.",
+ "3.6": "To camera. The end of the mystery and the start of the argument. Certain, quiet, no push.",
+ "4.2": "To camera, level, an accusation that is not angry. He has just worked out who is responsible and he is almost pleased about it.",
+ "4.4b": "NEW. Same setup and same eye line as 4.2, one step closer. Not accusing any more, working it out, impressed without wanting to show it. A small pause before the word secretly.",
+ "4.5": "At his desk, in his room. Voice only over a picture of him. He looks down at his own hand as though holding a phone, with nothing in it. Shoot the empty hand clean as well.",
+ "4.7": "To camera. He names the theory. A subtitle goes under this later, so leave the lower quarter of frame uncluttered.",
+ "4.8": "NEW, AND IMPORTANT. Shoot as one continuous take with 4.7, on the same breath. We cut it into two panels afterwards. This is the only sentence in the film that states the science plainly, so it is slow, still, and straight down the lens. A clear beat before and keeps something in reserve.",
+ "5.4": "At his desk. Close, his face as an idea lands. No line. Shoot a long unbroken take of him thinking and we will find the moment.",
+ "5.5": "EXTERIOR, early morning, real road. Riding hard, side on. Voice only over it. Thirty minutes is enough. This is the one place in the film where he is genuinely moving through the world.",
+ "5.6": "In his room, on the stationary bike. Wide. Riding, working, not yet suffering.",
+ "5.7": "Closer. The hardest moment. Effort, not pain. He is working, not collapsing.",
+ "5.8": "Close. Eyes closed, still, breathing, the bike stopped or nearly stopped. Shoot a full unbroken minute and we will use the stillest twenty frames. No performance at all.",
+ "5.9": "Eyes open, to camera, still on the bike. The quietest line in the film and the one the whole experiment is for. Do not let him push it.",
+ "7.3": "Him against white, small, still. A breath between two scenes. No line.",
+ "8.1": "Breathing, eyes closed, calm. Like 5.8 but at the end of the film rather than the middle, and on white rather than in his room. Shoot it separately so the two do not match too exactly.",
+ "8.3": "His hand, raised, closing around something that is not there. The lever is drawn in later. Insert, twice, at two heights.",
+ "8.6": "The first line of the ending. He is already looking at us before he speaks. He is setting something up and he knows it, so the line does not finish. Leave it open.",
+ "8.7": "The turn. Gentle, not a telling off. Everyone gets this wrong including him at the start of the film.",
+ "8.8": "The last thing he says on camera in the whole film. Completely still, dead to lens, no movement at all. Let the last take be the tired one. It will be the best.",
+ "8.9": "Voice only, in the booth. Nothing is filmed. The end card is written on paper afterwards.",
 }
 
 BOOTH_NOTE = ("8.9 is the end card. It is voice only, recorded separately in a quiet room, and needs "
@@ -190,7 +144,7 @@ BOOTH_NOTE = ("8.9 is the end card. It is voice only, recorded separately in a q
 
 # ---------------------------------------------------------------- build
 frames = json.load(open(os.path.join(REPO, 'assets/train/frames_v4.json')))
-live = [f for f in frames if f['layer'] == 'LIVE']
+live = [f for f in frames if f['layer'] in ('LIVE','BOOTH')]
 total = sum(f['fr'] for f in frames)
 
 bg()
@@ -224,7 +178,7 @@ c.setFont('MB', 8); c.setFillColor(ACC); c.drawString(ML, y, "THE DAY, IN NUMBER
 stats = [("Frames in the finished film", str(len(frames))),
          ("Frames that need you", str(len(live))),
          ("Frames with a line to camera", str(len([f for f in live if f['mode'] == 'CAM']))),
-         ("Camera setups", "4"),
+         ("Setups on the day", str(len([d for d in _S if d["frames"]]))),
          ("Cast", "Manan only"),
          ("Finished running time", "1:57"),
          ]
@@ -268,20 +222,16 @@ y -= 12
 
 c.setFont('MB', 8); c.setFillColor(ACC); c.drawString(ML, y, "THE FOUR SETUPS"); y -= 8
 c.setStrokeColor(RULE); c.line(ML, y, W - MR, y); y -= 22
-for k in "ABCD":
-    name, blurb, notes = SETUPS[k]
-    ids = [f['id'] for f in live if CAM.get(f['id'], ("", ""))[0] == k]
-    c.setFont('DB', 13); c.setFillColor(LIVE); c.drawString(ML, y, "SETUP %s   %s" % (k, name)); y -= 15
-    c.setFont('M', 7.6); c.setFillColor(SOFT)
-    c.drawString(ML, y, "%d frames   \u00b7   %s" % (len(ids), "  ".join(ids))); y -= 14
-    y = para(ML, y, blurb, 'D', 10, 13.4, CW) - 6
-    for n in notes:
-        c.setFont('DB', 9); c.setFillColor(ACC); c.drawString(ML + 6, y, "\u00b7")
-        y = para(ML + 18, y, n, 'D', 9.4, 12.6, CW - 18) - 3
-    y -= 16
-    if y < 130:
-        newpage(); y = H - 70
-
+for d in _S:
+    k=d['key']; ids=d['frames']
+    wl,wd = WHERE[d['where']]
+    c.setFont('DB',13); c.setFillColor(LIVE); c.drawString(ML,y,"SETUP %s   %s"%(k,d['name'])); y-=15
+    c.setFont('MB',7.6); c.setFillColor(SOFT)
+    c.drawString(ML,y,"%s   ·   %d frames   ·   %s"%(wl,len(ids),"  ".join(ids) if ids else "optional")); y-=14
+    y=para(ML,y,wd+"  "+d['light'],'DB',9.6,13,CW)-4
+    y=para(ML,y,d['note'],'D',10,13.4,CW)-18
+    if y<150:
+        newpage(); y=H-70
 newpage()
 
 # ---- the shot list, one page per frame
@@ -306,13 +256,14 @@ y = para(ML, y,
 newpage()
 
 for i, f in enumerate(live):
-    setup, note = CAM.get(f['id'], ("C", "Plate. Clean and still."))
+    setup = OF.get(f['id'],'A')
+    note  = CAM.get(f['id'], 'Plate. Clean and still.')
     y = H - 66
     c.setFont('MB', 8); c.setFillColor(ACC)
     c.drawString(ML, y, "SHOT %d OF %d   \u00b7   FRAME %s   \u00b7   SETUP %s   \u00b7   %s"
-                 % (i + 1, len(live), f['id'], setup, SETUPS[setup][0]))
+                 % (i + 1, len(live), f['id'], setup, SETUPS[setup]['name']))
     c.setFont('M', 7.6); c.setFillColor(SOFT)
-    c.drawRightString(W - MR, y, "SCENE %d" % f['scene'])
+    c.drawRightString(W - MR, y, "%s   ·   SCENE %d" % (WHERE[SETUPS[setup]['where']][0], f['scene']))
     y -= 8
     c.setStrokeColor(RULE); c.setLineWidth(0.8); c.line(ML, y, W - MR, y); y -= 18
 
