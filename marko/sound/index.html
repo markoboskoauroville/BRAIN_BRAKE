@@ -2,9 +2,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="../../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <meta name="theme-color" content="#0d1117">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -228,4 +228,37 @@ a.dl:hover{background:#6ee2f2}
 .hub .note{margin-top:34px;color:var(--dim);font-size:14px;line-height:1.6}
 </style>
 
-<title>The Brain Brake</title></head><body><div class="hub"><h1>The Brain Brake</h1><p class="lede">Breakthrough Junior Challenge 2026. Every section has its own page, so each one can be opened, linked and read aloud on its own.</p><ol><li><a href="overview/">Overview</a><span>Where the film stands, in one page</span></li><li><a href="script/">The Film</a><span>The script, scene by scene</span></li><li><a href="board/">Storyboard</a><span>Every shot as a sheet</span></li><li><a href="chars/">Characters</a><span>Model sheets, the single source of truth</span></li><li><a href="neha/">Neha</a><span>Producer. Money, approvals, and the boy</span></li><li><a href="venkatesh/">Venkatesh</a><span>Camera, sound and lighting</span></li><li><a href="kristijan/">Kristijan</a><span>Animation and motion, in Croatian</span></li><li><a href="marko/">Marko</a><span>Direction, edit, sound design and score</span></li><li><a href="docs/">PDF</a><span>Every document, downloadable</span></li><li><a href="versions/">Versions</a><span>How the film grew</span></li></ol><ol class="sub"><li><a href="marko/director/">Marko, Director</a><span>Concept and cut</span></li><li><a href="marko/editor/">Marko, Editor</a><span>Picture</span></li><li><a href="marko/sound/">Marko, Sound</a><span>Design and mix</span></li><li><a href="marko/music/">Marko, Music</a><span>Original score</span></li></ol><p class="note">The single page version, with tabs, is still at <a href="all.html">all.html</a>.</p></div></body></html>
+<title>Marko, Sound - The Brain Brake</title></head>
+<body>
+<div id="app" style="display:block">
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../../index.html">All sections</a></li>
+<li><a href="../../overview/">Overview</a></li>
+<li><a href="../../script/">The Film</a></li>
+<li><a href="../../board/">Storyboard</a></li>
+<li><a href="../../chars/">Characters</a></li>
+<li><a href="../../neha/">Neha</a></li>
+<li><a href="../../venkatesh/">Venkatesh</a></li>
+<li><a href="../../kristijan/">Kristijan</a></li>
+<li><b>Marko</b></li>
+<li><a href="../../docs/">PDF</a></li>
+<li><a href="../../versions/">Versions</a></li>
+</ul></nav>
+<section class="sub on" id="s-sound"><h3 class="sub-t">Sound design</h3><p class="standfirst">In a film this dense, sound is what makes the cuts vanish and the science feel physical.</p><div class="sheet"><h3>The sound of each world</h3><table><tr><th>World</th><th>Character</th></tr><tr><td>Marathon</td><td>Crowd wash, breath, footfall on tarmac, distant commentary. Everything slightly compressed, like a broadcast.</td></tr><tr><td>Freeze</td><td>Everything drops away to a single low tone. The absence is the effect.</td></tr><tr><td>Classroom and factory</td><td>Chalk, dry room, then industrial. Trucks, hydraulics, an alarm klaxon, machinery slowing to a grind.</td></tr><tr><td>Mission control</td><td>Soft electronic beeps, a low room hum, the mechanical clunk of the lever. Calm and clinical.</td></tr><tr><td>The door</td><td>Everything drops away to a hand on metal, then a deep warm swell as it opens. Space and air.</td></tr><tr><td>The laboratory</td><td>Chain and flywheel, breathing, an electronic timer. One small conspiratorial click.</td></tr><tr><td>The release</td><td>Wind, impact, water, breath. Rhythmic rather than realistic. Loudest point of the film.</td></tr><tr><td>White void</td><td>Near silence. Only the voice and a faint high tone.</td></tr></table><h4>The transitions carry the film</h4><p>Six worlds in 120 seconds could feel like channel hopping. Sound is what stops that. Each transition is bridged, the sound of the next world arrives a few frames before the picture does, so the viewer is pulled forward rather than pushed between scenes.</p><h4>Voice</h4><ul><li>Manan's voice is the constant across every world. It stays dry, close and unprocessed throughout.</li><li>Coach Brain sits slightly behind, with a hint of room, as if genuinely in a control centre.</li><li>Clean up handling noise on the joins, but keep breath in the performance. Breath is the subject of this film.</li></ul><p class="hand">two moments carry the whole sound design. the freeze at 0:12, where everything stops. and the door at 0:34, where everything opens.</p></div></section>
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../../index.html">All sections</a></li>
+<li><a href="../../overview/">Overview</a></li>
+<li><a href="../../script/">The Film</a></li>
+<li><a href="../../board/">Storyboard</a></li>
+<li><a href="../../chars/">Characters</a></li>
+<li><a href="../../neha/">Neha</a></li>
+<li><a href="../../venkatesh/">Venkatesh</a></li>
+<li><a href="../../kristijan/">Kristijan</a></li>
+<li><b>Marko</b></li>
+<li><a href="../../docs/">PDF</a></li>
+<li><a href="../../versions/">Versions</a></li>
+</ul></nav>
+</div>
+<div id="lb"><img id="lbi" alt=""></div>
+<script>(function(){var lb=document.getElementById("lb"),li=document.getElementById("lbi");document.addEventListener("click",function(e){var x=e.target;if(x&&x.classList&&x.classList.contains("board")){li.src=x.getAttribute("data-full")||x.src;lb.classList.add("on");}else if(x===lb||x===li){lb.classList.remove("on");li.src="";}});document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("on");li.src="";}});})();</script>
+</body></html>

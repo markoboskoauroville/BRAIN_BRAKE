@@ -2,9 +2,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="../../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <meta name="theme-color" content="#0d1117">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -228,4 +228,42 @@ a.dl:hover{background:#6ee2f2}
 .hub .note{margin-top:34px;color:var(--dim);font-size:14px;line-height:1.6}
 </style>
 
-<title>The Brain Brake</title></head><body><div class="hub"><h1>The Brain Brake</h1><p class="lede">Breakthrough Junior Challenge 2026. Every section has its own page, so each one can be opened, linked and read aloud on its own.</p><ol><li><a href="overview/">Overview</a><span>Where the film stands, in one page</span></li><li><a href="script/">The Film</a><span>The script, scene by scene</span></li><li><a href="board/">Storyboard</a><span>Every shot as a sheet</span></li><li><a href="chars/">Characters</a><span>Model sheets, the single source of truth</span></li><li><a href="neha/">Neha</a><span>Producer. Money, approvals, and the boy</span></li><li><a href="venkatesh/">Venkatesh</a><span>Camera, sound and lighting</span></li><li><a href="kristijan/">Kristijan</a><span>Animation and motion, in Croatian</span></li><li><a href="marko/">Marko</a><span>Direction, edit, sound design and score</span></li><li><a href="docs/">PDF</a><span>Every document, downloadable</span></li><li><a href="versions/">Versions</a><span>How the film grew</span></li></ol><ol class="sub"><li><a href="marko/director/">Marko, Director</a><span>Concept and cut</span></li><li><a href="marko/editor/">Marko, Editor</a><span>Picture</span></li><li><a href="marko/sound/">Marko, Sound</a><span>Design and mix</span></li><li><a href="marko/music/">Marko, Music</a><span>Original score</span></li></ol><p class="note">The single page version, with tabs, is still at <a href="all.html">all.html</a>.</p></div></body></html>
+<title>Marko, Editor - The Brain Brake</title></head>
+<body>
+<div id="app" style="display:block">
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../../index.html">All sections</a></li>
+<li><a href="../../overview/">Overview</a></li>
+<li><a href="../../script/">The Film</a></li>
+<li><a href="../../board/">Storyboard</a></li>
+<li><a href="../../chars/">Characters</a></li>
+<li><a href="../../neha/">Neha</a></li>
+<li><a href="../../venkatesh/">Venkatesh</a></li>
+<li><a href="../../kristijan/">Kristijan</a></li>
+<li><b>Marko</b></li>
+<li><a href="../../docs/">PDF</a></li>
+<li><a href="../../versions/">Versions</a></li>
+</ul></nav>
+<section class="sub on" id="s-editor"><h3 class="sub-t">Editor</h3><p class="standfirst">The performance does not exist until it is assembled. That is literally true on this film.</p><div class="sheet"><h3>Method</h3><p>Manan is shot one sentence at a time. The edit stitches those fragments into a single continuous delivery, so the audience sees a boy speaking fluently for two minutes when in fact no take ran longer than a few seconds.</p><ul><li>Cut on the breath, not on the word. The join disappears in the intake.</li><li>Where a join will not hide, cut away to animation for eight frames and come back.</li><li>Keep the room tone continuous underneath so the audio never reveals the joins.</li></ul><h4>Pacing targets</h4><pre class="spec">SCENE 1  0:00 – 0:18   fast in, then one long held beat on the question
+SCENE 2  0:18 – 0:40   brisk, then slows right down for the door
+SCENE 3  0:40 – 1:05   the calmest section. let the audience settle.
+SCENE 4  1:05 – 1:25   playful and quick. cut it like a race.
+SCENE 5  1:25 – 1:50   accelerates and keeps accelerating. the peak.
+SCENE 6  1:50 – 2:00   stops dead. white. one breath.</pre><p>Total 2:00 exactly. The competition is strict about it, so the film is built to that number rather than trimmed to it afterwards.</p><h4>Order of work</h4><ol><li>Assemble Manan's performance first, with black where animation will go.</li><li>Lock that cut. Timings must be final before Kristijan starts, or he animates to a moving target.</li><li>Export a reference cut with burnt in timecode and shot labels for the animation brief.</li><li>Conform the returned animation layers, then grade.</li></ol><p class="hand">the rough cut going out on 20.8. is the most important delivery of the whole project.</p></div></section>
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../../index.html">All sections</a></li>
+<li><a href="../../overview/">Overview</a></li>
+<li><a href="../../script/">The Film</a></li>
+<li><a href="../../board/">Storyboard</a></li>
+<li><a href="../../chars/">Characters</a></li>
+<li><a href="../../neha/">Neha</a></li>
+<li><a href="../../venkatesh/">Venkatesh</a></li>
+<li><a href="../../kristijan/">Kristijan</a></li>
+<li><b>Marko</b></li>
+<li><a href="../../docs/">PDF</a></li>
+<li><a href="../../versions/">Versions</a></li>
+</ul></nav>
+</div>
+<div id="lb"><img id="lbi" alt=""></div>
+<script>(function(){var lb=document.getElementById("lb"),li=document.getElementById("lbi");document.addEventListener("click",function(e){var x=e.target;if(x&&x.classList&&x.classList.contains("board")){li.src=x.getAttribute("data-full")||x.src;lb.classList.add("on");}else if(x===lb||x===li){lb.classList.remove("on");li.src="";}});document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("on");li.src="";}});})();</script>
+</body></html>

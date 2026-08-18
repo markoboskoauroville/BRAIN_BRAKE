@@ -2,9 +2,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="../../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <meta name="theme-color" content="#0d1117">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -228,4 +228,47 @@ a.dl:hover{background:#6ee2f2}
 .hub .note{margin-top:34px;color:var(--dim);font-size:14px;line-height:1.6}
 </style>
 
-<title>The Brain Brake</title></head><body><div class="hub"><h1>The Brain Brake</h1><p class="lede">Breakthrough Junior Challenge 2026. Every section has its own page, so each one can be opened, linked and read aloud on its own.</p><ol><li><a href="overview/">Overview</a><span>Where the film stands, in one page</span></li><li><a href="script/">The Film</a><span>The script, scene by scene</span></li><li><a href="board/">Storyboard</a><span>Every shot as a sheet</span></li><li><a href="chars/">Characters</a><span>Model sheets, the single source of truth</span></li><li><a href="neha/">Neha</a><span>Producer. Money, approvals, and the boy</span></li><li><a href="venkatesh/">Venkatesh</a><span>Camera, sound and lighting</span></li><li><a href="kristijan/">Kristijan</a><span>Animation and motion, in Croatian</span></li><li><a href="marko/">Marko</a><span>Direction, edit, sound design and score</span></li><li><a href="docs/">PDF</a><span>Every document, downloadable</span></li><li><a href="versions/">Versions</a><span>How the film grew</span></li></ol><ol class="sub"><li><a href="marko/director/">Marko, Director</a><span>Concept and cut</span></li><li><a href="marko/editor/">Marko, Editor</a><span>Picture</span></li><li><a href="marko/sound/">Marko, Sound</a><span>Design and mix</span></li><li><a href="marko/music/">Marko, Music</a><span>Original score</span></li></ol><p class="note">The single page version, with tabs, is still at <a href="all.html">all.html</a>.</p></div></body></html>
+<title>Marko, Music - The Brain Brake</title></head>
+<body>
+<div id="app" style="display:block">
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../../index.html">All sections</a></li>
+<li><a href="../../overview/">Overview</a></li>
+<li><a href="../../script/">The Film</a></li>
+<li><a href="../../board/">Storyboard</a></li>
+<li><a href="../../chars/">Characters</a></li>
+<li><a href="../../neha/">Neha</a></li>
+<li><a href="../../venkatesh/">Venkatesh</a></li>
+<li><a href="../../kristijan/">Kristijan</a></li>
+<li><b>Marko</b></li>
+<li><a href="../../docs/">PDF</a></li>
+<li><a href="../../versions/">Versions</a></li>
+</ul></nav>
+<section class="sub on" id="s-music"><h3 class="sub-t">Music</h3><p class="standfirst">One instrument stands for the body, one for the brain. The whole score is the conversation between them.</p><div class="sheet"><h3>The idea</h3><p>The film is an argument between muscle and mind, so the score is written as two voices. A pulse, which is the body, and a sustained tone, which is the governor watching over it. They are never in conflict. The tone simply keeps easing the pulse back.</p><h4>Palette</h4><ul><li><b>The body</b> is percussion. Frame drum and hand percussion, played dry and close, tracking the runner's cadence.</li><li><b>The brain</b> is sustained. A low synth pad and a single held flute note, calm and unhurried, always slightly above the drums.</li><li><b>The discovery</b> is a small bright motif, three notes. First heard alone under the question at 0:12, opened upward when the door opens at 0:34, and finally resolved at 1:47.</li></ul><h4>Map</h4><pre class="spec">0:00  crowd and pulse, no score yet
+0:12  FREEZE. everything drops. the three note motif enters alone.
+0:18  factory. mechanical rhythm, percussion leads.
+0:34  THE DOOR OPENS. the motif returns, opening upward for the first time.
+0:40  mission control. pad enters. percussion pulls right back.
+0:55  one note added per system as the network connects. a chord builds.
+1:05  the lab. pulse, light and mischievous.
+1:25  THE RELEASE. the chord opens. everything rises from here.
+1:47  the motif resolves completely. ninety seconds of withholding, paid.
+1:50  white. one sustained note. a breath.
+2:00  the note decays fully into the black.</pre><p class="hand">the score withholds resolution for ninety seconds and then gives it all at once. that delay is the entire emotional design of the film.</p><h4>Practical</h4><ul><li>Written to the locked picture, not before. Composing to a moving cut wastes the work.</li><li>Delivered as stems so the mix can duck cleanly under Manan's voice.</li><li>Entirely original, so there is no licensing question in a competition submission.</li></ul></div></section>
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../../index.html">All sections</a></li>
+<li><a href="../../overview/">Overview</a></li>
+<li><a href="../../script/">The Film</a></li>
+<li><a href="../../board/">Storyboard</a></li>
+<li><a href="../../chars/">Characters</a></li>
+<li><a href="../../neha/">Neha</a></li>
+<li><a href="../../venkatesh/">Venkatesh</a></li>
+<li><a href="../../kristijan/">Kristijan</a></li>
+<li><b>Marko</b></li>
+<li><a href="../../docs/">PDF</a></li>
+<li><a href="../../versions/">Versions</a></li>
+</ul></nav>
+</div>
+<div id="lb"><img id="lbi" alt=""></div>
+<script>(function(){var lb=document.getElementById("lb"),li=document.getElementById("lbi");document.addEventListener("click",function(e){var x=e.target;if(x&&x.classList&&x.classList.contains("board")){li.src=x.getAttribute("data-full")||x.src;lb.classList.add("on");}else if(x===lb||x===li){lb.classList.remove("on");li.src="";}});document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("on");li.src="";}});})();</script>
+</body></html>

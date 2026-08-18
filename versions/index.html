@@ -2,9 +2,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta name="theme-color" content="#0d1117">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -228,4 +228,37 @@ a.dl:hover{background:#6ee2f2}
 .hub .note{margin-top:34px;color:var(--dim);font-size:14px;line-height:1.6}
 </style>
 
-<title>The Brain Brake</title></head><body><div class="hub"><h1>The Brain Brake</h1><p class="lede">Breakthrough Junior Challenge 2026. Every section has its own page, so each one can be opened, linked and read aloud on its own.</p><ol><li><a href="overview/">Overview</a><span>Where the film stands, in one page</span></li><li><a href="script/">The Film</a><span>The script, scene by scene</span></li><li><a href="board/">Storyboard</a><span>Every shot as a sheet</span></li><li><a href="chars/">Characters</a><span>Model sheets, the single source of truth</span></li><li><a href="neha/">Neha</a><span>Producer. Money, approvals, and the boy</span></li><li><a href="venkatesh/">Venkatesh</a><span>Camera, sound and lighting</span></li><li><a href="kristijan/">Kristijan</a><span>Animation and motion, in Croatian</span></li><li><a href="marko/">Marko</a><span>Direction, edit, sound design and score</span></li><li><a href="docs/">PDF</a><span>Every document, downloadable</span></li><li><a href="versions/">Versions</a><span>How the film grew</span></li></ol><ol class="sub"><li><a href="marko/director/">Marko, Director</a><span>Concept and cut</span></li><li><a href="marko/editor/">Marko, Editor</a><span>Picture</span></li><li><a href="marko/sound/">Marko, Sound</a><span>Design and mix</span></li><li><a href="marko/music/">Marko, Music</a><span>Original score</span></li></ol><p class="note">The single page version, with tabs, is still at <a href="all.html">all.html</a>.</p></div></body></html>
+<title>Versions - The Brain Brake</title></head>
+<body>
+<div id="app" style="display:block">
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../index.html">All sections</a></li>
+<li><a href="../overview/">Overview</a></li>
+<li><a href="../script/">The Film</a></li>
+<li><a href="../board/">Storyboard</a></li>
+<li><a href="../chars/">Characters</a></li>
+<li><a href="../neha/">Neha</a></li>
+<li><a href="../venkatesh/">Venkatesh</a></li>
+<li><a href="../kristijan/">Kristijan</a></li>
+<li><a href="../marko/">Marko</a></li>
+<li><a href="../docs/">PDF</a></li>
+<li><b>Versions</b></li>
+</ul></nav>
+<section class="pane on" id="p-versions"><p class="eyebrow">Archive</p><h2 class="pane-t">Versions</h2><p class="standfirst">Every cut, every test, every abandoned idea. Nothing gets overwritten, so the film's whole history stays readable.</p><div class="empty"><p class="big">No cuts uploaded yet</p><p class="small">The first delivery lands here around 20.8.<br>Rough cut with placeholder graphics, then the animated cut, then the final film.</p></div><div class="sheet"><h3>What lands here, and when</h3><table><tr><th>Version</th><th>What it is</th><th>Expected</th></tr><tr><td>v1</td><td>Assembly. Manan's performance only, black where animation will go.</td><td>after the shoot</td></tr><tr><td>v2</td><td>Rough cut with timecode and shot labels. The animation brief.</td><td>20.8.</td></tr><tr><td>v3</td><td>Animated cut. Kristijan's layers conformed.</td><td>27.8.</td></tr><tr><td>v4</td><td>Sound, score and grade. Delivery candidate.</td><td>31.8.</td></tr><tr><td>Final</td><td>Competition master, 2:00 exactly.</td><td>1.9.</td></tr></table><p>Older versions stay online after they are superseded. Half the value of an archive is being able to see what a film almost became.</p></div></section>
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../index.html">All sections</a></li>
+<li><a href="../overview/">Overview</a></li>
+<li><a href="../script/">The Film</a></li>
+<li><a href="../board/">Storyboard</a></li>
+<li><a href="../chars/">Characters</a></li>
+<li><a href="../neha/">Neha</a></li>
+<li><a href="../venkatesh/">Venkatesh</a></li>
+<li><a href="../kristijan/">Kristijan</a></li>
+<li><a href="../marko/">Marko</a></li>
+<li><a href="../docs/">PDF</a></li>
+<li><b>Versions</b></li>
+</ul></nav>
+</div>
+<div id="lb"><img id="lbi" alt=""></div>
+<script>(function(){var lb=document.getElementById("lb"),li=document.getElementById("lbi");document.addEventListener("click",function(e){var x=e.target;if(x&&x.classList&&x.classList.contains("board")){li.src=x.getAttribute("data-full")||x.src;lb.classList.add("on");}else if(x===lb||x===li){lb.classList.remove("on");li.src="";}});document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("on");li.src="";}});})();</script>
+</body></html>

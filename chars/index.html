@@ -2,9 +2,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta name="theme-color" content="#0d1117">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -228,4 +228,37 @@ a.dl:hover{background:#6ee2f2}
 .hub .note{margin-top:34px;color:var(--dim);font-size:14px;line-height:1.6}
 </style>
 
-<title>The Brain Brake</title></head><body><div class="hub"><h1>The Brain Brake</h1><p class="lede">Breakthrough Junior Challenge 2026. Every section has its own page, so each one can be opened, linked and read aloud on its own.</p><ol><li><a href="overview/">Overview</a><span>Where the film stands, in one page</span></li><li><a href="script/">The Film</a><span>The script, scene by scene</span></li><li><a href="board/">Storyboard</a><span>Every shot as a sheet</span></li><li><a href="chars/">Characters</a><span>Model sheets, the single source of truth</span></li><li><a href="neha/">Neha</a><span>Producer. Money, approvals, and the boy</span></li><li><a href="venkatesh/">Venkatesh</a><span>Camera, sound and lighting</span></li><li><a href="kristijan/">Kristijan</a><span>Animation and motion, in Croatian</span></li><li><a href="marko/">Marko</a><span>Direction, edit, sound design and score</span></li><li><a href="docs/">PDF</a><span>Every document, downloadable</span></li><li><a href="versions/">Versions</a><span>How the film grew</span></li></ol><ol class="sub"><li><a href="marko/director/">Marko, Director</a><span>Concept and cut</span></li><li><a href="marko/editor/">Marko, Editor</a><span>Picture</span></li><li><a href="marko/sound/">Marko, Sound</a><span>Design and mix</span></li><li><a href="marko/music/">Marko, Music</a><span>Original score</span></li></ol><p class="note">The single page version, with tabs, is still at <a href="all.html">all.html</a>.</p></div></body></html>
+<title>Characters - The Brain Brake</title></head>
+<body>
+<div id="app" style="display:block">
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../index.html">All sections</a></li>
+<li><a href="../overview/">Overview</a></li>
+<li><a href="../script/">The Film</a></li>
+<li><a href="../board/">Storyboard</a></li>
+<li><b>Characters</b></li>
+<li><a href="../neha/">Neha</a></li>
+<li><a href="../venkatesh/">Venkatesh</a></li>
+<li><a href="../kristijan/">Kristijan</a></li>
+<li><a href="../marko/">Marko</a></li>
+<li><a href="../docs/">PDF</a></li>
+<li><a href="../versions/">Versions</a></li>
+</ul></nav>
+<section class="pane on" id="p-chars"><p class="eyebrow">Design</p><h2 class="pane-t">Characters</h2><p class="standfirst">These sheets are the single source of truth. Every frame and every animated shot references them directly, so the cast never drifts.</p><div class="chars"><figure class="charcard"><img class="board" src="../assets/sb/char-manan.jpg" data-full="assets/sb/char-manan.jpg" alt="Manan, boy detective" loading="lazy"><figcaption><b>Manan, boy detective</b><span>Live action · tan coat, deerstalker, brass glass</span></figcaption></figure><figure class="charcard"><img class="board" src="../assets/sb/char-coach-brain.jpg" data-full="assets/sb/char-coach-brain.jpg" alt="Coach Brain" loading="lazy"><figcaption><b>Coach Brain</b><span>Animated · tracksuit, whistle, headset, mug</span></figcaption></figure><figure class="charcard"><img class="board" src="../assets/sb/char-runner.jpg" data-full="assets/sb/char-runner.jpg" alt="The marathon runner" loading="lazy"><figcaption><b>The marathon runner</b><span>Animated · bib 27, never changes</span></figcaption></figure><figure class="charcard"><img class="board" src="../assets/sb/char-muscle.jpg" data-full="assets/sb/char-muscle.jpg" alt="The Muscle" loading="lazy"><figcaption><b>The Muscle</b><span>Animated · scene 6 only</span></figcaption></figure><figure class="charcard"><img class="board" src="../assets/sb/char-workers.jpg" data-full="assets/sb/char-workers.jpg" alt="The factory workers" loading="lazy"><figcaption><b>The factory workers</b><span>Animated · scene 2 only</span></figcaption></figure></div><div class="sheet"><h3>House rules for the look</h3><ul><li>Graphite pencil on aged cream paper. Hand drawn line, visible strokes, no vector cleanliness.</li><li>The runner's bib is <b>27</b> in every single frame. Small fixed details are what make an audience read a character as the same person.</li><li>Manan's wardrobe never changes: tan coat, deerstalker, white collar, brass magnifying glass.</li><li>Coach Brain is never angry, never panicked. He is the calmest character on screen. That is the whole joke and the whole science.</li></ul></div></section>
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../index.html">All sections</a></li>
+<li><a href="../overview/">Overview</a></li>
+<li><a href="../script/">The Film</a></li>
+<li><a href="../board/">Storyboard</a></li>
+<li><b>Characters</b></li>
+<li><a href="../neha/">Neha</a></li>
+<li><a href="../venkatesh/">Venkatesh</a></li>
+<li><a href="../kristijan/">Kristijan</a></li>
+<li><a href="../marko/">Marko</a></li>
+<li><a href="../docs/">PDF</a></li>
+<li><a href="../versions/">Versions</a></li>
+</ul></nav>
+</div>
+<div id="lb"><img id="lbi" alt=""></div>
+<script>(function(){var lb=document.getElementById("lb"),li=document.getElementById("lbi");document.addEventListener("click",function(e){var x=e.target;if(x&&x.classList&&x.classList.contains("board")){li.src=x.getAttribute("data-full")||x.src;lb.classList.add("on");}else if(x===lb||x===li){lb.classList.remove("on");li.src="";}});document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("on");li.src="";}});})();</script>
+</body></html>

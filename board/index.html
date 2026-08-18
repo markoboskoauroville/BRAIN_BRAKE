@@ -1,0 +1,264 @@
+<!doctype html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#0d1117">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+ --void:#0d1117; --panel:#161b22; --rule:#26303c; --line:#1f2731;
+ --paper:#efe4cd; --paper2:#e5d9be; --ink:#2e2b26; --ink2:#5f5849;
+ --txt:#c9d4e1; --dim:#7c8b9d; --cy:#4dd6e8; --am:#e8a33d; --gr:#7ed957; --vi:#a99bd6;
+}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--void);color:var(--txt);font-family:Georgia,'Times New Roman',serif;
+ font-size:17px;line-height:1.7;overflow-x:hidden}
+.mono{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--cy)}
+
+/* ---- gate ---- */
+#gate{position:fixed;inset:0;z-index:99;background:var(--void);display:flex;
+ align-items:center;justify-content:center;padding:24px}
+.gcard{width:100%;max-width:380px;background:var(--panel);border:1px solid var(--rule);padding:36px 32px}
+.glass{width:34px;height:34px;color:var(--cy);display:block;margin-bottom:16px}
+.gt{font-family:Georgia,serif;font-size:34px;font-weight:700;line-height:1.05;color:#eef3f8;letter-spacing:-.01em}
+.gs{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);margin-top:8px;letter-spacing:.08em}
+label.fl{display:block;font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.2em;
+ text-transform:uppercase;color:var(--dim);margin:26px 0 8px}
+input[type=password]{width:100%;background:var(--void);border:1px solid var(--rule);color:var(--paper);
+ padding:13px 14px;font-family:ui-monospace,monospace;font-size:15px;letter-spacing:.12em}
+input[type=password]:focus{outline:2px solid var(--cy);outline-offset:1px}
+.rem{display:flex;align-items:center;gap:9px;margin-top:15px}
+.rem input{width:15px;height:15px;accent-color:var(--cy)}
+.rem label{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);cursor:pointer}
+button.enter{width:100%;margin-top:22px;padding:13px;background:var(--cy);border:0;color:var(--void);
+ cursor:pointer;font-family:ui-monospace,monospace;font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+button.enter:hover{background:#6ee2f2}
+#gerr{font-family:ui-monospace,monospace;font-size:11px;color:#ff8f6b;margin-top:13px;min-height:16px}
+
+/* ---- shell ---- */
+#app{display:none}
+.hdr{border-bottom:1px solid var(--rule);background:var(--panel)}
+.hdr-in{max-width:1180px;margin:0 auto;padding:16px 48px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hdr .glass{width:26px;height:26px;margin:0;color:var(--cy);flex:0 0 26px}
+.brand{font-family:Georgia,serif;font-size:22px;font-weight:700;color:#eef3f8;letter-spacing:-.01em}
+.brand span{color:var(--cy)}
+.meta{margin-left:auto;display:flex;gap:26px;flex-wrap:wrap;
+ font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.meta b{display:block;color:var(--paper);font-weight:400;font-size:13px;margin-top:3px;letter-spacing:.04em}
+.meta .hot b{color:var(--am)}
+
+nav.tabs{border-bottom:1px solid var(--rule);background:var(--void)}
+.tabs-in{max-width:1180px;margin:0 auto;padding:0 48px;display:flex;flex-wrap:wrap;gap:0}
+.tab{background:none;border:0;border-bottom:3px solid transparent;cursor:pointer;
+ padding:14px 16px;color:var(--dim);font-family:ui-monospace,monospace;font-size:12px;
+ letter-spacing:.1em;text-transform:uppercase;line-height:1.4;text-align:left}
+.tab:hover{color:var(--txt);background:var(--panel)}
+.tab:focus-visible{outline:2px solid var(--cy);outline-offset:-2px}
+.tab.on{color:var(--cy);border-bottom-color:var(--cy)}
+.tab small{display:block;font-size:9px;letter-spacing:.14em;opacity:.6;margin-top:2px}
+
+.bar{border-bottom:1px solid var(--rule)}
+.bar-in{max-width:1180px;margin:0 auto;padding:12px 48px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.blbl{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.blbl b{color:var(--am);font-size:16px;letter-spacing:0;margin-left:8px}
+.trk{flex:1;min-width:140px;max-width:300px;height:8px;background:var(--panel);border:1px solid var(--rule)}
+.fil{height:100%;background:var(--am);width:31%}
+.bnote{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim)}
+
+main{max-width:1180px;margin:0 auto;padding:46px 48px 110px}
+.pane{display:none}
+.pane.on{display:block}
+
+/* ---- typography ---- */
+.eyebrow{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.24em;
+ text-transform:uppercase;color:var(--cy)}
+.pane-t{font-family:Georgia,serif;font-size:clamp(30px,4.4vw,44px);font-weight:700;
+ line-height:1.1;color:#eef3f8;margin:10px 0 14px;letter-spacing:-.015em}
+.standfirst{font-size:18px;color:#93a3b6;font-style:italic;max-width:62ch;
+ border-left:2px solid var(--rule);padding-left:18px;margin-bottom:8px}
+h3.dept{font-family:Georgia,serif;font-size:28px;font-weight:700;color:#eef3f8;
+ margin:56px 0 12px;padding-top:26px;border-top:1px solid var(--rule)}
+
+/* ---- cards ---- */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:26px 0}
+.stat{background:var(--panel);border:1px solid var(--rule);padding:16px 18px}
+.stat .k{font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.stat .v{font-family:Georgia,serif;font-size:25px;font-weight:700;color:#eef3f8;line-height:1.2;margin-top:5px}
+.stat .v.go{color:var(--gr)} .stat .v.hold{color:var(--am)}
+.stat .n{font-family:ui-monospace,monospace;font-size:10.5px;color:var(--dim);margin-top:6px;line-height:1.6}
+
+.sheet{background:var(--paper);color:var(--ink);padding:34px 38px;margin:26px 0}
+.sheet h3{font-family:Georgia,serif;font-size:25px;font-weight:700;border-bottom:1.5px solid var(--ink);
+ padding-bottom:8px;margin-bottom:18px}
+.sheet h3 .tcs{float:right;font-family:ui-monospace,monospace;font-size:13px;color:var(--ink2);font-weight:400}
+.sheet h4{font-family:Georgia,serif;font-size:20px;font-weight:700;margin:28px 0 10px;color:#443f38}
+.sheet p{margin-bottom:14px;max-width:70ch}
+.sheet ul,.sheet ol{margin:0 0 16px 22px}
+.sheet li{margin-bottom:8px;max-width:68ch}
+.sheet b{font-weight:700;color:#1c1a17}
+.sheet.dimsheet{background:var(--paper2)}
+.hand{font-style:italic;color:#6a5c3f;border-left:3px solid rgba(106,92,63,.3);padding-left:16px;margin:18px 0}
+.spec{font-family:ui-monospace,monospace;font-size:12.5px;line-height:1.85;background:rgba(46,43,38,.07);
+ border:1px solid rgba(46,43,38,.15);padding:16px 18px;margin:14px 0 18px;white-space:pre-wrap;
+ overflow-x:auto;color:#3a352d}
+.sheet table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:15px}
+.sheet th{font-family:ui-monospace,monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+ text-align:left;padding:8px 12px 8px 0;border-bottom:1.5px solid var(--ink);color:#5f5849}
+.sheet td{padding:10px 12px 10px 0;border-bottom:1px solid rgba(46,43,38,.16);vertical-align:top}
+
+.subtabs{display:flex;flex-wrap:wrap;gap:0;margin:30px 0 8px;border-bottom:1px solid var(--rule)}
+.stab{background:none;border:0;border-bottom:3px solid transparent;cursor:pointer;padding:12px 18px 12px 0;
+ margin-right:26px;color:var(--dim);font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.1em;
+ text-transform:uppercase;line-height:1.4;text-align:left}
+.stab:hover{color:var(--txt)}
+.stab:focus-visible{outline:2px solid var(--cy);outline-offset:-2px}
+.stab.on{color:var(--am);border-bottom-color:var(--am)}
+.stab small{display:block;font-size:9px;letter-spacing:.14em;opacity:.6;margin-top:2px;text-transform:none}
+.sub{display:none;padding-top:22px}
+.sub.on{display:block}
+.sub-t{font-family:Georgia,serif;font-size:30px;font-weight:700;color:#eef3f8;margin-bottom:12px;letter-spacing:-.01em}
+
+.docs{display:grid;gap:16px;margin:20px 0 8px}
+.doc{background:var(--panel);border:1px solid var(--rule);padding:20px 22px;display:flex;gap:18px;align-items:flex-start}
+.doc.soon{opacity:.62}
+.doc-ic{font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.12em;color:var(--am);
+ border:1px solid rgba(232,163,61,.45);padding:9px 10px;flex:0 0 auto;margin-top:3px}
+.doc.soon .doc-ic{color:var(--dim);border-color:var(--rule)}
+.doc-b{flex:1;min-width:0}
+.doc-b h4{font-family:Georgia,serif;font-size:21px;font-weight:700;color:#eef3f8;line-height:1.25}
+.doc-by{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--cy);margin-top:5px}
+.doc-d{font-size:15.5px;color:#9fb0c4;margin-top:11px;max-width:66ch;line-height:1.65}
+.doc-m{font-family:ui-monospace,monospace;font-size:10.5px;color:var(--dim);margin-top:10px;letter-spacing:.06em}
+a.dl{display:inline-block;margin-top:13px;font-family:ui-monospace,monospace;font-size:11px;
+ letter-spacing:.14em;text-transform:uppercase;color:var(--void);background:var(--cy);
+ padding:9px 16px;text-decoration:none}
+a.dl:hover{background:#6ee2f2}
+.pending-tag{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--dim);margin-top:12px;border:1px dashed var(--rule);display:inline-block;padding:6px 11px}
+.doc.mini{padding:16px 18px}
+.doc.mini h4{font-size:18px}
+.doc.mini .doc-by{text-transform:none;letter-spacing:.04em;font-size:11px;color:var(--dim)}
+
+/* ---- storyboard ---- */
+.sc{margin-top:40px;padding-top:32px;border-top:1px solid var(--rule)}
+.sc-h{font-family:Georgia,serif;font-size:27px;font-weight:700;color:#eef3f8;line-height:1.2;
+ display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.sc-h .tc{margin-left:auto;font-family:ui-monospace,monospace;font-size:12px;color:var(--am);font-weight:400;letter-spacing:.1em}
+.sc-log{color:#93a3b6;font-style:italic;margin:8px 0 20px;max-width:64ch}
+.pend{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--dim);line-height:1.8;
+ border:1px dashed var(--rule);padding:14px 16px;margin-bottom:18px}
+.sheets{display:grid;gap:22px;margin:20px 0}
+.shot{background:var(--panel);border:1px solid var(--rule);padding:12px}
+.shot img{cursor:zoom-in;border:1px solid var(--rule)}
+.shot figcaption{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--dim);margin-top:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.shot figcaption b{color:var(--cy);font-weight:400}
+.fr{background:var(--panel);border:1px solid var(--rule);padding:18px 20px;margin-bottom:14px;
+ display:flex;gap:18px;align-items:flex-start}
+.fr-id{font-family:Georgia,serif;font-size:24px;font-weight:700;color:var(--cy);flex:0 0 42px;line-height:1.1}
+.fr-b{flex:1;min-width:0}
+.fr-t{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--dim);margin-bottom:8px}
+.fr-a{font-size:16px;color:var(--txt);margin-bottom:14px;max-width:66ch}
+.said{background:var(--paper);color:var(--ink);padding:14px 16px;margin-bottom:14px}
+.said .nm{font-family:ui-monospace,monospace;font-size:10px;font-weight:700;letter-spacing:.16em;color:#8a6b2e}
+.said .ln{font-family:ui-monospace,monospace;font-size:13px;white-space:pre-wrap;margin:2px 0 12px 18px;color:var(--ink)}
+.said .ln:last-child{margin-bottom:0}
+.silent{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);letter-spacing:.1em;
+ text-transform:uppercase;margin-bottom:14px}
+.nt{display:flex;gap:12px;align-items:flex-start;margin-bottom:9px;font-size:15px;color:#9fb0c4;line-height:1.6}
+.tag{font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+ padding:3px 8px;border:1px solid var(--rule);color:var(--dim);flex:0 0 auto;margin-top:3px}
+.tag.cam{color:var(--cy);border-color:rgba(77,214,232,.4)}
+.tag.anim{color:var(--am);border-color:rgba(232,163,61,.4)}
+.tag.snd{color:var(--vi);border-color:rgba(169,155,214,.4)}
+.tag.mus{color:var(--gr);border-color:rgba(126,217,87,.35)}
+.ntx{flex:1;min-width:0}
+
+.chars{display:grid;gap:22px;margin:26px 0}
+.charcard{background:var(--panel);border:1px solid var(--rule);padding:12px}
+.charcard img{cursor:zoom-in;border:1px solid var(--rule)}
+.charcard figcaption{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;
+ text-transform:uppercase;color:var(--dim);margin-top:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.charcard figcaption b{color:var(--cy);font-weight:400}
+.empty{border:1px dashed var(--rule);padding:46px 26px;text-align:center;margin:26px 0}
+.empty .big{font-family:Georgia,serif;font-size:23px;color:#7e8ea1}
+.empty .small{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--dim);margin-top:10px;line-height:1.8}
+
+#lb{position:fixed;inset:0;background:rgba(4,6,9,.96);z-index:200;display:none;
+ align-items:flex-start;justify-content:center;padding:20px;cursor:zoom-out;overflow:auto}
+#lb.on{display:flex}
+#lb img{max-width:min(100%,1100px)}
+
+@media(max-width:900px){
+ body{font-size:16px}
+ .hdr-in,.tabs-in,.bar-in{padding-left:22px;padding-right:22px}
+ main{padding:30px 22px 80px}
+ .sheet{padding:24px 22px}
+ .tab{padding:11px 12px;font-size:11px}
+ .tab small{display:none}
+ .fr{flex-direction:column;gap:6px}
+ .fr-id{flex:none}
+ .meta{width:100%;margin-left:0;gap:16px}
+}
+</style>
+
+<style>
+.splitnav{margin:26px 0;padding:16px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.splitnav ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px 18px}
+.splitnav li{font-size:14px}
+.splitnav a{color:var(--cy);text-decoration:none}
+.splitnav a:hover{text-decoration:underline}
+.splitnav b{color:var(--paper)}
+.hub{max-width:760px;margin:0 auto;padding:56px 22px}
+.hub h1{font-size:32px;margin:0 0 6px}
+.hub .lede{color:var(--dim);margin:0 0 34px}
+.hub ol{list-style:none;padding:0;margin:0}
+.hub li{border-top:1px solid var(--rule);padding:16px 0}
+.hub li a{font-size:19px;color:var(--paper);text-decoration:none;display:block}
+.hub li a:hover{color:var(--cy)}
+.hub li span{display:block;color:var(--dim);font-size:14px;margin-top:3px}
+.hub .sub li a{font-size:16px}
+.hub .note{margin-top:34px;color:var(--dim);font-size:14px;line-height:1.6}
+</style>
+
+<title>Storyboard - The Brain Brake</title></head>
+<body>
+<div id="app" style="display:block">
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../index.html">All sections</a></li>
+<li><a href="../overview/">Overview</a></li>
+<li><a href="../script/">The Film</a></li>
+<li><b>Storyboard</b></li>
+<li><a href="../chars/">Characters</a></li>
+<li><a href="../neha/">Neha</a></li>
+<li><a href="../venkatesh/">Venkatesh</a></li>
+<li><a href="../kristijan/">Kristijan</a></li>
+<li><a href="../marko/">Marko</a></li>
+<li><a href="../docs/">PDF</a></li>
+<li><a href="../versions/">Versions</a></li>
+</ul></nav>
+<section class="pane on" id="p-board"><p class="eyebrow">Boards</p><h2 class="pane-t">Storyboard</h2><p class="standfirst">Thirty five shots, two minutes exactly. Each shot is a sheet in its own right, carrying the frame, the words spoken over it, and a separate instruction for every department. Scene 1 is drawn. The rest follow the same pattern.</p><div class="grid"><div class="stat"><p class="k">Shots</p><p class="v ">33</p><p class="n">Scene 1 boarded, 28 to draw</p></div><div class="stat"><p class="k">Live action</p><p class="v ">13</p><p class="n">Four camera setups, one day</p></div><div class="stat"><p class="k">Pure animation</p><p class="v ">20</p><p class="n">No camera required</p></div></div><section class="sc"><h3 class="sc-h">Scene 1 — The Mystery<span class="tc">0:00 – 0:18</span></h3><p class="sc-log">A man with nothing left does something impossible. A boy in a coat goes looking for where it came from.</p><div class="sheets"><figure class="shot"><img class="board" src="../assets/shots/SH1_1_w.jpg" data-full="assets/shots/SH1_1.jpg" alt="Shot 1.1" loading="lazy"><figcaption><b>Shot 1.1</b><span>0:00 – 0:05 · Animation only</span></figcaption></figure><figure class="shot"><img class="board" src="../assets/shots/SH1_2_w.jpg" data-full="assets/shots/SH1_2.jpg" alt="Shot 1.2" loading="lazy"><figcaption><b>Shot 1.2</b><span>0:05 – 0:08 · Animation only</span></figcaption></figure><figure class="shot"><img class="board" src="../assets/shots/SH1_3_w.jpg" data-full="assets/shots/SH1_3.jpg" alt="Shot 1.3" loading="lazy"><figcaption><b>Shot 1.3</b><span>0:08 – 0:13 · Setup A · live action</span></figcaption></figure><figure class="shot"><img class="board" src="../assets/shots/SH1_4_w.jpg" data-full="assets/shots/SH1_4.jpg" alt="Shot 1.4" loading="lazy"><figcaption><b>Shot 1.4</b><span>0:13 – 0:15 · Setup A · insert</span></figcaption></figure><figure class="shot"><img class="board" src="../assets/shots/SH1_5_w.jpg" data-full="assets/shots/SH1_5.jpg" alt="Shot 1.5" loading="lazy"><figcaption><b>Shot 1.5</b><span>0:15 – 0:18 · Setup A · to camera</span></figcaption></figure></div></section><section class="sc"><h3 class="sc-h">Scene 2 — The Full Tank<span class="tc">0:18 – 0:40</span></h3><p class="sc-log">He expects to find an empty tank. He finds a full one, and a door somebody closed on purpose.</p><p class="pend">Boards for this scene are being drawn shot by shot, the same way as Scene 1. The notes below are final and can be worked from now.</p><div class="fr"><div class="fr-id">2.1</div><div class="fr-b"><p class="fr-t">0:18 – 0:22 · wide · animation only</p><p class="fr-a">Inside the leg, a working factory. Enormous gears turning where the calf muscle would be, conveyor belts, pressure vessels, tiny workers hauling crates. Everything running smoothly. Order and rhythm.</p><div class="said"><p class="nm">MANAN (V.O.)</p><p class="ln">For a hundred years we blamed the muscles.</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Establishing wide. Deep perspective so the machinery towers over the workers.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Industrial, but healthy. Hydraulics, conveyor rhythm, a working hum.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Percussion enters, mechanical and on the beat, almost a work song.</span></p></div></div></div><div class="fr"><div class="fr-id">2.2</div><div class="fr-b"><p class="fr-t">0:22 – 0:27 · medium wide · live action inside animation</p><p class="fr-a">Manan walks through the middle of the factory, unhurried, magnifying glass at chest height, turning his head to take it in. The only calm figure in a room full of labour.</p><div class="said"><p class="nm">MANAN (V.O.)</p><p class="ln">Ran out of fuel. Ran out of air. Simple.</p></div><div class="notes"><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP A. Manan walks slowly through frame, looking left and right at nothing. Shoot thirty seconds of him simply observing. No lines to camera.</span></p><p class="nt"><span class="tag anim">anim</span><span class="ntx">Workers stay small and busy around him so he reads as the subject. They do not notice him.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">His footsteps sit clean on top of the machinery.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Percussion continues under.</span></p></div></div></div><div class="fr"><div class="fr-id">2.3</div><div class="fr-b"><p class="fr-t">0:27 – 0:31 · medium · animation only</p><p class="fr-a">The machines slow. Steam vents. A worker straightens up, wipes his brow and shrugs at nobody in particular. That is it. We are done.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">No panic and no alarm. This is a shift ending, not a catastrophe. Tone matters, they are resigned, not frightened.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Machinery winding down, a long mechanical sigh, then quiet.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Percussion thins to a single pulse.</span></p></div></div></div><div class="fr"><div class="fr-id">2.4</div><div class="fr-b"><p class="fr-t">0:31 – 0:34 · medium · live action inside animation</p><p class="fr-a">But Manan has stopped. At the back of the factory, behind the machinery, there is a door. It is shut. He puts his hand flat against it.</p><div class="said"><p class="nm">MANAN (V.O.)</p><p class="ln">Except when scientists tested runners the moment they gave up, the muscles could still do far more.</p></div><div class="notes"><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP A. Manan reaching forward, palm flat at chest height, head slightly tilted, listening. Nothing is really there, give him a mark.</span></p><p class="nt"><span class="tag anim">anim</span><span class="ntx">The door is old, industrial, riveted, clearly not opened in a long time. A thin line of light at its edge.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Everything else drops away. Only his hand on metal.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Pulse stops. Silence.</span></p></div></div></div><div class="fr"><div class="fr-id">2.5</div><div class="fr-b"><p class="fr-t">0:34 – 0:38 · wide · live action inside animation</p><p class="fr-a">The door swings open onto an enormous hall of storage tanks stretching away into the distance, and every single one of them is full. Light floods out over him.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">The reveal, and the first big lift of the film. Scale enormous, light warm and rising. This must feel like a discovery, not a warning.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP A. Manan in silhouette from behind, then turning into the light. Shoot his face lit from the front, eyes widening.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">A deep warm swell as the door opens. Space and air.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">The three note motif from 0:12 returns, opening upward for the first time.</span></p></div></div></div><div class="fr"><div class="fr-id">2.6</div><div class="fr-b"><p class="fr-t">0:38 – 0:40 · close up · live action</p><p class="fr-a">Tight on Manan's face in that light. Not shock. Delight.</p><div class="said"><p class="nm">MANAN</p><p class="ln">It was never empty.</p></div><div class="notes"><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP A. Close up, direct to lens. He should look like a boy who has just got away with something. Shoot it many times and use the most unguarded take.</span></p><p class="nt"><span class="tag anim">anim</span><span class="ntx">Light spill and lens flare drawn over the live plate.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Nothing under the line. Let it sit bare.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Motif holds, unresolved but bright.</span></p></div></div></div></section><section class="sc"><h3 class="sc-h">Scene 3 — The Gatekeeper<span class="tc">0:40 – 1:05</span></h3><p class="sc-log">Somebody closed that door. He is not a villain, and he is holding a key.</p><p class="pend">Boards for this scene are being drawn shot by shot, the same way as Scene 1. The notes below are final and can be worked from now.</p><div class="fr"><div class="fr-id">3.1</div><div class="fr-b"><p class="fr-t">0:40 – 0:45 · wide · animation only</p><p class="fr-a">A warm glowing room of monitors, brighter and friendlier than a control centre has any right to be. A large chair begins to turn.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Warm light, not cold blue. This room is welcoming. The reveal should feel like meeting somebody, not catching them.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Soft electronic beeps, a low comfortable hum.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Sustained pad enters. This is the brain's voice in the score.</span></p></div></div></div><div class="fr"><div class="fr-id">3.2</div><div class="fr-b"><p class="fr-t">0:45 – 0:50 · medium · animation only</p><p class="fr-a">Coach Brain, tracksuit, whistle, coffee mug, and a small brass key on a chain around his neck. He is not caught out. He is delighted to have been found.</p><div class="said"><p class="nm">COACH BRAIN</p><p class="ln">I keep the key.</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">The key is the most important object in the film. Establish it clearly here, catching the light.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">A small bright chime as the key catches the light.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Pad warms.</span></p></div></div></div><div class="fr"><div class="fr-id">3.3</div><div class="fr-b"><p class="fr-t">0:50 – 0:55 · two shot · live action inside animation</p><p class="fr-a">Manan and Coach Brain face each other. Manan is not accusing him. He is working it out.</p><div class="said"><p class="nm">MANAN</p><p class="ln">You closed that door.</p></div><div class="notes"><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP B. Tennis ball on a stand at seated height, camera left, for eyeline. Shoot the line, then ten seconds of listening and half smiling.</span></p><p class="nt"><span class="tag anim">anim</span><span class="ntx">Composite Manan into the room. Keep both figures the same height in frame so neither dominates.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Room tone, close and quiet.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Pad holds.</span></p></div></div></div><div class="fr"><div class="fr-id">3.4</div><div class="fr-b"><p class="fr-t">0:55 – 1:00 · wide · animation only</p><p class="fr-a">Coach Brain gestures and the room lights up. Glowing lines run out to a heart, lungs, a thermometer, a water drop, a distance counter, all feeding back to one dial marked from EASY to DANGER.</p><div class="said"><p class="nm">COACH BRAIN</p><p class="ln">Every heartbeat. Every breath. Every drop of sweat. I'm asking one question. Can we keep going safely?</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">The dial replaces the old power lever. It is a judgement instrument, not a throttle. Needle sits in the middle.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">A soft click on each item as the network connects. Five clicks, evenly spaced.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">One note added per click, building a chord.</span></p></div></div></div><div class="fr"><div class="fr-id">3.5</div><div class="fr-b"><p class="fr-t">1:00 – 1:03 · two shot · live action inside animation</p><p class="fr-a">Manan gets there.</p><div class="said"><p class="nm">MANAN</p><p class="ln">So the limit isn't my body. It's your guess.</p><p class="nm">COACH BRAIN</p><p class="ln">It's my best guess. And I'd rather you finish than break.</p></div><div class="notes"><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP B continued. Same eyeline. He should sound like he is discovering it as he says it, not stating it.</span></p><p class="nt"><span class="tag anim">anim</span><span class="ntx">Coach Brain grins, entirely unembarrassed. No defensiveness anywhere in the performance.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Nothing underneath.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Chord holds.</span></p></div></div></div><div class="fr"><div class="fr-id">3.6</div><div class="fr-b"><p class="fr-t">1:03 – 1:05 · insert · animation only</p><p class="fr-a">Two second subtitle over the dial.</p><div class="said"><p class="nm">SUBTITLE</p><p class="ln">One influential model, the Central Governor Theory, proposed by Prof. Tim Noakes, 1997. Scientists still debate exactly how brain and muscle share the work.</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Clean, small, low in frame. In and out in two seconds. This honesty is scored by the judges.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Nothing.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Chord thins to one note.</span></p></div></div></div></section><section class="sc"><h3 class="sc-h">Scene 4 — The Trick<span class="tc">1:05 – 1:25</span></h3><p class="sc-log">Scientists lied to a cyclist about his own best time. He beat it. Which means it was never his best.</p><p class="pend">Boards for this scene are being drawn shot by shot, the same way as Scene 1. The notes below are final and can be worked from now.</p><div class="fr"><div class="fr-id">4.1</div><div class="fr-b"><p class="fr-t">1:05 – 1:09 · medium · animation only</p><p class="fr-a">A sports laboratory. A cyclist on a stationary bike, screen in front of him showing a translucent ghost rider. He has been told the ghost is a recording of his own best ever ride.</p><div class="said"><p class="nm">MANAN (V.O.)</p><p class="ln">So scientists tried something cheeky. They let a cyclist race himself.</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Clean lab, not clinical. Cables, sensors, a big screen. Ghost rider drawn semi transparent.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Chain and flywheel, breathing, the electronic tick of a timer.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Pulse enters, light and playful.</span></p></div></div></div><div class="fr"><div class="fr-id">4.2</div><div class="fr-b"><p class="fr-t">1:09 – 1:12 · insert · animation only</p><p class="fr-a">Behind glass, a researcher quietly turns a small dial. On her monitor, one figure: plus two percent.</p><div class="said"><p class="nm">MANAN (V.O.)</p><p class="ln">Except they made the ghost slightly faster. And they didn't tell him.</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Only two characters permitted on screen anywhere in this shot: the numerals 2%. Everything else is drawing.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">One small mechanical click. Conspiratorial.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">A single mischievous note.</span></p></div></div></div><div class="fr"><div class="fr-id">4.3</div><div class="fr-b"><p class="fr-t">1:12 – 1:18 · wide · animation only</p><p class="fr-a">The cyclist chases. Strains. Draws level with his own ghost. Passes it. The ghost falls behind and dissolves.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">This is a race, cut it like one. Ghost and rider overlapping as he comes through is the money frame.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Everything opens up. Breathing hard, flywheel screaming.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Pulse builds fast.</span></p></div></div></div><div class="fr"><div class="fr-id">4.4</div><div class="fr-b"><p class="fr-t">1:18 – 1:22 · close · animation only</p><p class="fr-a">The cyclist, spent and astonished, looking at the screen. He has beaten a time he already believed was everything he had.</p><div class="said"><p class="nm">MANAN (V.O.)</p><p class="ln">He beat his own maximum. Which means it was never his maximum.</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">His expression is the shot. Confusion turning into a laugh.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Breathing, then a laugh. Keep the laugh.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Held, suspended.</span></p></div></div></div><div class="fr"><div class="fr-id">4.5</div><div class="fr-b"><p class="fr-t">1:22 – 1:25 · close up · live action inside animation</p><p class="fr-a">Manan turns to camera, thoroughly delighted.</p><div class="said"><p class="nm">MANAN</p><p class="ln">Change what the brain believes, and the door opens.</p></div><div class="notes"><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP B. Direct to lens, smiling. This is the most cheerful line in the film. Do not let him be earnest.</span></p><p class="nt"><span class="tag anim">anim</span><span class="ntx">The door from Scene 2 flashes back for four frames behind him.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Clean and dry under the line.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Everything drops out for the line, then the pulse returns hard.</span></p></div></div></div></section><section class="sc"><h3 class="sc-h">Scene 5 — The Release<span class="tc">1:25 – 1:50</span></h3><p class="sc-log">The peak. What it looks like when the limit moves.</p><p class="pend">Boards for this scene are being drawn shot by shot, the same way as Scene 1. The notes below are final and can be worked from now.</p><div class="fr"><div class="fr-id">5.1</div><div class="fr-b"><p class="fr-t">1:25 – 1:28 · close · animation only</p><p class="fr-a">Coach Brain looks at his dial, then off toward Manan. He smiles. And he eases it open.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">The single most important gesture in the film. He is not overpowered and not persuaded. He chooses.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">A deep mechanical release, like a lock opening.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">The chord opens upward.</span></p></div></div></div><div class="fr"><div class="fr-id">5.2</div><div class="fr-b"><p class="fr-t">1:28 – 1:33 · wide · animation only</p><p class="fr-a">Inside the runner's legs, drawn semi transparent, muscle fibres light one after another. First a few. Then many. Then more than seemed possible.</p><div class="said"><p class="nm">CAPTION</p><p class="ln">More muscle fibres recruited. Notice: still not maximum.</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Light them in sequence, never all at once. Recruitment must read as a process unfolding.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">A rising shimmer, each fibre its own small tone.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Building.</span></p></div></div></div><div class="fr"><div class="fr-id">5.3</div><div class="fr-b"><p class="fr-t">1:33 – 1:38 · wide · animation only</p><p class="fr-a">The runner flies. Stride fully open, speed lines streaming, the crowd erupting. Everything he had was always there.</p><div class="said"><p class="nm">MANAN (V.O.)</p><p class="ln">The brain didn't make new energy. It gave permission.</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Compare directly with shot 1.1. Same man, same road, transformed. The audience should feel the answer land.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Loudest point of the film. Crowd, footfall, breath, all wide open.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Full.</span></p></div></div></div><div class="fr"><div class="fr-id">5.4</div><div class="fr-b"><p class="fr-t">1:38 – 1:43 · wide · animation only</p><p class="fr-a">And the film breaks loose. A traceur launching rooftop to rooftop against open sky. A dancer turning in the air. A swimmer leaving the wall. Bodies doing what they could always do.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Rapid, joyful, rising. Each cut higher in frame than the last so the sequence physically lifts.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Wind, impact, water, breath. Rhythmic rather than realistic.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Peak. This is where the audience gets goosebumps.</span></p></div></div></div><div class="fr"><div class="fr-id">5.5</div><div class="fr-b"><p class="fr-t">1:43 – 1:47 · wide · live action inside animation</p><p class="fr-a">Manan himself, mid air, coat flying, laughing. Not explaining anything. Just in it.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP D, new. Manan jumping on the spot against grey, arms out, laughing. Shoot many takes at high frame rate if the camera allows. Let him be silly.</span></p><p class="nt"><span class="tag anim">anim</span><span class="ntx">Place him in open sky. He is the last body in the montage and the one the audience is rooting for.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">His laugh, clean and unprocessed.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Held at the top.</span></p></div></div></div><div class="fr"><div class="fr-id">5.6</div><div class="fr-b"><p class="fr-t">1:47 – 1:50 · wide · animation only</p><p class="fr-a">The runner crosses the line. Freeze. Everything stops, exactly as it did at 0:12, but bright this time instead of blue.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Rhyme the freeze from Scene 1 precisely. Same composition, opposite feeling.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Cut to almost nothing on the freeze.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">The motif resolves completely. This is the release the film has withheld for ninety seconds.</span></p></div></div></div></section><section class="sc"><h3 class="sc-h">Scene 6 — The Invitation<span class="tc">1:50 – 2:00</span></h3><p class="sc-log">Still, bright, and quietly handed over.</p><p class="pend">Boards for this scene are being drawn shot by shot, the same way as Scene 1. The notes below are final and can be worked from now.</p><div class="fr"><div class="fr-id">6.1</div><div class="fr-b"><p class="fr-t">1:50 – 1:54 · medium · live action inside animation</p><p class="fr-a">The motion drains away to white. Manan stands alone, eyes closed, breathing. Completely calm.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP C. Manan against grey, arms at his sides, eyes closed, simply breathing. Shoot a full unbroken minute and use the stillest twenty frames. No performance at all.</span></p><p class="nt"><span class="tag anim">anim</span><span class="ntx">Pure white, no floor, no horizon, no detail. Let him be the only thing in the frame.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">One breath in, one breath out, close and clear. Everything else gone.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">A single sustained note.</span></p></div></div></div><div class="fr"><div class="fr-id">6.2</div><div class="fr-b"><p class="fr-t">1:54 – 1:57 · medium · live action inside animation</p><p class="fr-a">The dial hangs in the air beside him. This time his own hand is on it.</p><div class="said"><p class="nm">MANAN</p><p class="ln">The wall is real. But somebody set it.</p><p class="nm">MANAN</p><p class="ln">And what your brain believes is safe can be trained.</p></div><div class="notes"><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP C. Two short lines to lens, one sentence per take. He should sound certain and unhurried, not triumphant.</span></p><p class="nt"><span class="tag anim">anim</span><span class="ntx">Same dial as Scene 3, unmistakably. His hand replaces Coach Brain's.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Nothing under the lines.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">The note holds.</span></p></div></div></div><div class="fr"><div class="fr-id">6.3</div><div class="fr-b"><p class="fr-t">1:57 – 1:59 · medium · live action inside animation</p><p class="fr-a">Coach Brain steps up beside him, lifts the key from around his own neck, and hands it over. A small, warm, unceremonious moment. Manan opens his eyes.</p><p class="silent">No words. Picture and sound only.</p><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">No fanfare. Two characters and a small object changing hands. Play it almost throwaway and it will land hard.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">SETUP C. Manan receiving something at chest height, then looking up. Give him a real object to take so the hand is right.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">The small chime of the key, once.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Note thinning.</span></p></div></div></div><div class="fr"><div class="fr-id">6.4</div><div class="fr-b"><p class="fr-t">1:59 – 2:00 · end card · animation only</p><p class="fr-a">Cut to black.</p><div class="said"><p class="nm">END CARD</p><p class="ln">THE LIMIT IS A SETTING, NOT A WALL.</p></div><div class="notes"><p class="nt"><span class="tag anim">anim</span><span class="ntx">Clean type on black. No decoration.</span></p><p class="nt"><span class="tag cam">cam</span><span class="ntx">Nothing required.</span></p><p class="nt"><span class="tag snd">snd</span><span class="ntx">Silence.</span></p><p class="nt"><span class="tag mus">mus</span><span class="ntx">Final note decays fully into the black.</span></p></div></div></div></section></section>
+<nav class="splitnav"><p class="eyebrow">The Brain Brake</p><ul>
+<li><a href="../index.html">All sections</a></li>
+<li><a href="../overview/">Overview</a></li>
+<li><a href="../script/">The Film</a></li>
+<li><b>Storyboard</b></li>
+<li><a href="../chars/">Characters</a></li>
+<li><a href="../neha/">Neha</a></li>
+<li><a href="../venkatesh/">Venkatesh</a></li>
+<li><a href="../kristijan/">Kristijan</a></li>
+<li><a href="../marko/">Marko</a></li>
+<li><a href="../docs/">PDF</a></li>
+<li><a href="../versions/">Versions</a></li>
+</ul></nav>
+</div>
+<div id="lb"><img id="lbi" alt=""></div>
+<script>(function(){var lb=document.getElementById("lb"),li=document.getElementById("lbi");document.addEventListener("click",function(e){var x=e.target;if(x&&x.classList&&x.classList.contains("board")){li.src=x.getAttribute("data-full")||x.src;lb.classList.add("on");}else if(x===lb||x===li){lb.classList.remove("on");li.src="";}});document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("on");li.src="";}});})();</script>
+</body></html>
