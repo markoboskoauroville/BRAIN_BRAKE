@@ -30,6 +30,7 @@ Do not skip and do not reorder. Each one exists because something went wrong wit
 | 6 | `ANIMATION.md` | the animator's site and layered packages | before touching animation |
 | 7 | `MANAN_TRAINING_DEVELOPMENT.md` | how the acting guide was built | if the guide comes up |
 | 8 | `storytelling.md`, `elements.md`, `worlds.md` | story and structure | if story or structure changes |
+| 9 | `MESSAGES.md` | the voice for anything sent to the crew | before writing any message |
 
 ---
 
@@ -59,6 +60,9 @@ python3 21-manan-training-book-v4.py # acting guide    -> HOW TO ACT NATURALLY v
 python3 26-camera-guide-venkatesh.py # camera guide    -> CAMERA GUIDE - Venkatesh.pdf
 python3 27-scene-packages.py         # animator        -> 8 zips + animation/index.html cards
 ```
+
+`index.html` at the repo root is **not** generated. It is the public making of page, written by
+hand, and it must never carry a crew name beyond Manan and Neha, or any figure. See section 8.
 
 Working layout the builders expect, because they use absolute paths:
 
@@ -120,7 +124,7 @@ NN-*.py                         the builders, numbered in the order they were wr
 
 ## 6. STATE, AND WHAT IS STILL OPEN
 
-Updated **17.8.2026**, film at **50 frames, 2945 frames, 1:57.80, margin 2.20 s**.
+Updated **18.8.2026**, film at **50 frames, 2945 frames, 1:57.80, margin 2.20 s**.
 Shoot day is **18.8.2026** in Bengaluru.
 
 **17.8. session.** Venkatesh found two written rules that disagreed with the artefacts and both were
@@ -160,11 +164,30 @@ Still open, in the order it will bite:
    thirty five shot version with different lines, an old budget table and old delivery dates. The
    passphrase is gone, so anyone with the link sees that. Rebuild it from `frames_v4.json` or take
    it down.
-7. **The prop sheets cannot be rebuilt.** `23-prop-sheets.py` reads plate images from a working
+7. **Sound design and music have their own software to build.** That is the next phase and it
+   starts in a fresh session. Nothing exists for it yet.
+8. **The prop sheets cannot be rebuilt.** `23-prop-sheets.py` reads plate images from a working
    directory that was never committed. The finished sheets in `assets/props/` are fine, but the
    generator cannot be re-run. Same class of problem as the ones this file exists to prevent.
 
 ---
+
+## 6b. THE PUBLIC SITE
+
+`https://markoboskoauroville.github.io/BRAIN_BRAKE/` is a single page called **How we made The
+Brain Brake**. It replaced the old crew facing production site, which had a passphrase, ten tabs,
+crew names and a money table, and which was accidentally left public for a few hours.
+
+Rules for it, and they are not negotiable:
+
+- **Only two people are named: Manan and Neha.** Everyone else is a role. The cinematographer, the
+  animator, the director. No exceptions and no initials.
+- **No figures.** No fees, no budgets, no day rates, no totals.
+- It is one page on purpose. Marko reads it aloud with Speechify, so it must not be split across
+  URLs and must not hide content behind tabs or JavaScript.
+- The PDFs under `assets/pdf/` and the animator's site at `/animation/` still carry names in
+  filenames and text. They were left alone because the crew are working from those links. Rename
+  them once the shoot is delivered.
 
 ## 7. HOW TO CLOSE A SESSION
 
