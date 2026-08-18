@@ -213,21 +213,6 @@ a.dl:hover{background:#6ee2f2}
 </head>
 <body>
 
-<div id="gate">
-  <div class="gcard">
-    <svg class="glass" viewBox="0 0 40 40" aria-hidden="true"><circle cx="17" cy="17" r="11.5" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="17" cy="17" r="8.5" fill="currentColor" opacity=".10"/><line x1="25.4" y1="25.4" x2="35" y2="35" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/></svg>
-    <p class="gt">The Brain Brake</p>
-    <p class="gs">Breakthrough Junior Challenge 2026</p>
-    <form id="gform">
-      <label class="fl" for="pw">Passphrase</label>
-      <input type="password" id="pw" autocomplete="current-password" autofocus>
-      <div class="rem"><input type="checkbox" id="rem"><label for="rem">Remember me on this device</label></div>
-      <button type="submit" class="enter">Enter</button>
-      <p id="gerr"></p>
-    </form>
-  </div>
-</div>
-
 <div id="app">
   <header class="hdr"><div class="hdr-in">
     <svg class="glass" viewBox="0 0 40 40" aria-hidden="true"><circle cx="17" cy="17" r="11.5" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="17" cy="17" r="8.5" fill="currentColor" opacity=".10"/><line x1="25.4" y1="25.4" x2="35" y2="35" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/></svg>
@@ -333,12 +318,11 @@ SCENE 6  1:50 – 2:00   stops dead. white. one breath.</pre><p>Total 2:00 exact
 
 <div id="lb"><img id="lbi" alt=""></div>
 <script>
-(function(){
- var PW='manan', CA='bb_auth', CT='bb_tab', CS='bb_scroll', CSUB='bb_sub', DEF='overview', DEFS='director';
+(function(){ var CA='bb_auth', CT='bb_tab', CS='bb_scroll', CSUB='bb_sub', DEF='overview', DEFS='director';
  function set(k,v){var d=new Date();d.setTime(d.getTime()+180*864e5);
   document.cookie=k+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';}
  function get(k){var m=document.cookie.match('(^|; )'+k+'=([^;]*)');return m?decodeURIComponent(m[2]):null;}
- var gate=document.getElementById('gate'), app=document.getElementById('app');
+ var app=document.getElementById('app');
  function days(){var l=new Date(2026,8,1);return Math.max(0,Math.ceil((l-new Date())/864e5));}
  function show(id,save){
   var i,ps=document.querySelectorAll('.pane');
@@ -362,7 +346,7 @@ SCENE 6  1:50 – 2:00   stops dead. white. one breath.</pre><p>Total 2:00 exact
   if(save) set(CSUB,sid);
  }
  function open_(){
-  gate.style.display='none'; app.style.display='block';
+  app.style.display='block';
   document.getElementById('m-days').textContent=days();
   show(get(CT)||DEF,false);
   showSub(get(CSUB)||DEFS,false);
@@ -382,22 +366,14 @@ SCENE 6  1:50 – 2:00   stops dead. white. one breath.</pre><p>Total 2:00 exact
   if(app.style.display!=='block')return;
   clearTimeout(t);t=setTimeout(function(){set(CS,String(window.scrollY||0));},250);
  });
- document.getElementById('gform').addEventListener('submit',function(e){
-  e.preventDefault();
-  var v=document.getElementById('pw');
-  if(v.value.trim().toLowerCase()===PW){
-   if(document.getElementById('rem').checked) set(CA,'1');
-   open_();
-  } else { document.getElementById('gerr').textContent='Not that one. Try again.'; v.value=''; v.focus(); }
- });
- var lb=document.getElementById('lb'), li=document.getElementById('lbi');
+  var lb=document.getElementById('lb'), li=document.getElementById('lbi');
  document.addEventListener('click',function(e){
   var x=e.target;
   if(x&&x.classList&&x.classList.contains('board')){li.src=x.getAttribute('data-full')||x.src;lb.classList.add('on');}
   else if(x===lb||x===li){lb.classList.remove('on');li.src='';}
  });
  document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('on');li.src='';}});
- if(get(CA)==='1') open_();
+ open_();
 })();
 </script>
 </body>

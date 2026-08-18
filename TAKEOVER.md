@@ -120,9 +120,23 @@ NN-*.py                         the builders, numbered in the order they were wr
 
 ## 6. STATE, AND WHAT IS STILL OPEN
 
-Updated **16.8.2026**, film at **50 frames, 2945 frames, 1:57.80, margin 2.20 s**.
+Updated **17.8.2026**, film at **50 frames, 2945 frames, 1:57.80, margin 2.20 s**.
+Shoot day is **18.8.2026** in Bengaluru.
 
-Done in the last session: Neha's three restored lines are in the film. Manan asks whether the brain
+**17.8. session.** Venkatesh found two written rules that disagreed with the artefacts and both were
+corrected: the key light is CAMERA RIGHT, not left, and 1.5 enters from camera left. Worse, the
+camera guide had invented its own four setup scheme while the film document already had A to H plus
+the exterior, so six frames were listed as grey that are shot in his room. Both documents now read
+one shared file, `assets/train/setups.json`. Published: camera guide v3, film V4g, acting guide v5
+with the label above each line removed. A bike reference image is at `assets/reference/`. The
+production site at the repo root had its passphrase gate removed and is now open.
+
+**Kristijan is engaged at 1000 EUR** for animation, compositing and finishing only. Marko does all
+preparation, including keying Manan off the grey and delivering him cut out with an alpha channel.
+Kristijan never touches the grey footage and does not need a camera test. They will work in the same
+room in Zagreb once the material is prepared.
+
+Done in the session before: Neha's three restored lines are in the film. Manan asks whether the brain
 is secretly pacing him at 4.4b. The ending is her original triplet at 8.6, 8.7 and 8.8. The Central
 Governor Theory is defined out loud at 4.8. To pay for them, 7.6, 8.5 and 6.3 came out. Scene 7 is
 now wordless and survives as three silent panels, so the film is still eight scenes and nothing was
@@ -142,7 +156,11 @@ Still open, in the order it will bite:
 4. **Music and sound design have not started.** Marko is composing. This is half the film.
 5. **Kristijan has not quoted** for the reduced comic strip scope. Neha is handling it and Marko
    deliberately stays out of that conversation so it does not read as pressure on price.
-6. **The prop sheets cannot be rebuilt.** `23-prop-sheets.py` reads plate images from a working
+6. **The production site at the repo root is stale and now public.** It describes the old six scene,
+   thirty five shot version with different lines, an old budget table and old delivery dates. The
+   passphrase is gone, so anyone with the link sees that. Rebuild it from `frames_v4.json` or take
+   it down.
+7. **The prop sheets cannot be rebuilt.** `23-prop-sheets.py` reads plate images from a working
    directory that was never committed. The finished sheets in `assets/props/` are fine, but the
    generator cannot be re-run. Same class of problem as the ones this file exists to prevent.
 
