@@ -1,231 +1,388 @@
-<!doctype html><html lang="en"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="theme-color" content="#0d1117">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How we made The Brain Brake</title>
+<meta name="description" content="The making of a two minute science film, from a fourteen year old's question to a comic strip that has to fit inside 120 seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,600&family=JetBrains+Mono:wght@400&family=Caveat:wght@500&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
 :root{
- --void:#0d1117; --panel:#161b22; --rule:#26303c; --line:#1f2731;
- --paper:#efe4cd; --paper2:#e5d9be; --ink:#2e2b26; --ink2:#5f5849;
- --txt:#c9d4e1; --dim:#7c8b9d; --cy:#4dd6e8; --am:#e8a33d; --gr:#7ed957; --vi:#a99bd6;
+  --paper:#EDE4D0;
+  --ink:#1E1B16;
+  --dim:#6E6555;
+  --rule:#CDBF9F;
+  --slate:#20241F;
+  --chalk:#E6E9E0;
+  --brass:#9C7A31;
+  --disp:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Newsreader',Georgia,serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --hand:'Caveat',cursive;
+  --w:44rem;
 }
-html{-webkit-text-size-adjust:100%}
-body{background:var(--void);color:var(--txt);font-family:Georgia,'Times New Roman',serif;
- font-size:17px;line-height:1.7;overflow-x:hidden}
-.mono{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
-img{max-width:100%;height:auto;display:block}
-a{color:var(--cy)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:1.19rem;line-height:1.68;font-weight:300;
+  -webkit-font-smoothing:antialiased}
 
-/* ---- gate ---- */
-#gate{position:fixed;inset:0;z-index:99;background:var(--void);display:flex;
- align-items:center;justify-content:center;padding:24px}
-.gcard{width:100%;max-width:380px;background:var(--panel);border:1px solid var(--rule);padding:36px 32px}
-.glass{width:34px;height:34px;color:var(--cy);display:block;margin-bottom:16px}
-.gt{font-family:Georgia,serif;font-size:34px;font-weight:700;line-height:1.05;color:#eef3f8;letter-spacing:-.01em}
-.gs{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);margin-top:8px;letter-spacing:.08em}
-label.fl{display:block;font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.2em;
- text-transform:uppercase;color:var(--dim);margin:26px 0 8px}
-input[type=password]{width:100%;background:var(--void);border:1px solid var(--rule);color:var(--paper);
- padding:13px 14px;font-family:ui-monospace,monospace;font-size:15px;letter-spacing:.12em}
-input[type=password]:focus{outline:2px solid var(--cy);outline-offset:1px}
-.rem{display:flex;align-items:center;gap:9px;margin-top:15px}
-.rem input{width:15px;height:15px;accent-color:var(--cy)}
-.rem label{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);cursor:pointer}
-button.enter{width:100%;margin-top:22px;padding:13px;background:var(--cy);border:0;color:var(--void);
- cursor:pointer;font-family:ui-monospace,monospace;font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
-button.enter:hover{background:#6ee2f2}
-#gerr{font-family:ui-monospace,monospace;font-size:11px;color:#ff8f6b;margin-top:13px;min-height:16px}
+/* the signature: the two minute clock */
+.clock{position:fixed;top:0;left:0;right:0;z-index:60;background:var(--slate);
+  border-bottom:1px solid #000;padding:7px 0 6px}
+.clock-in{max-width:var(--w);margin:0 auto;padding:0 1.4rem;display:flex;align-items:center;gap:.85rem}
+.clock-lab{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;
+  color:#8E9488;text-transform:uppercase;white-space:nowrap}
+.clock-rail{position:relative;flex:1;height:3px;background:#3A3F38}
+.clock-fill{position:absolute;top:0;bottom:0;left:0;width:0;background:var(--brass)}
+.clock-cap{position:absolute;top:-3px;bottom:-3px;left:97.8%;width:2px;background:#C7462F}
+.clock-now{font-family:var(--mono);font-size:9.5px;color:var(--chalk);white-space:nowrap}
 
-/* ---- shell ---- */
-#app{display:none}
-.hdr{border-bottom:1px solid var(--rule);background:var(--panel)}
-.hdr-in{max-width:1180px;margin:0 auto;padding:16px 48px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.hdr .glass{width:26px;height:26px;margin:0;color:var(--cy);flex:0 0 26px}
-.brand{font-family:Georgia,serif;font-size:22px;font-weight:700;color:#eef3f8;letter-spacing:-.01em}
-.brand span{color:var(--cy)}
-.meta{margin-left:auto;display:flex;gap:26px;flex-wrap:wrap;
- font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
-.meta b{display:block;color:var(--paper);font-weight:400;font-size:13px;margin-top:3px;letter-spacing:.04em}
-.meta .hot b{color:var(--am)}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 1.4rem}
 
-nav.tabs{border-bottom:1px solid var(--rule);background:var(--void)}
-.tabs-in{max-width:1180px;margin:0 auto;padding:0 48px;display:flex;flex-wrap:wrap;gap:0}
-.tab{background:none;border:0;border-bottom:3px solid transparent;cursor:pointer;
- padding:14px 16px;color:var(--dim);font-family:ui-monospace,monospace;font-size:12px;
- letter-spacing:.1em;text-transform:uppercase;line-height:1.4;text-align:left}
-.tab:hover{color:var(--txt);background:var(--panel)}
-.tab:focus-visible{outline:2px solid var(--cy);outline-offset:-2px}
-.tab.on{color:var(--cy);border-bottom-color:var(--cy)}
-.tab small{display:block;font-size:9px;letter-spacing:.14em;opacity:.6;margin-top:2px}
+/* hero */
+.hero{padding:7.5rem 0 3rem}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--brass);margin:0 0 1.6rem}
+h1{font-family:var(--disp);font-weight:800;font-size:clamp(2.7rem,9vw,5.1rem);
+  line-height:.94;letter-spacing:-.03em;margin:0 0 1.4rem}
+h1 em{font-style:normal;display:block;color:var(--dim);font-weight:500;
+  font-size:clamp(1.3rem,3.6vw,2rem);letter-spacing:-.01em;margin-top:.55rem}
+.standfirst{font-size:1.32rem;line-height:1.56;max-width:34rem;margin:0 0 2.2rem}
+figure{margin:2.2rem 0}
+.duo,.trio{margin-bottom:.6rem}
+figure img{width:100%;display:block;border:1px solid var(--rule);background:#fff}
+figcaption{font-family:var(--mono);font-size:11px;line-height:1.6;color:var(--dim);
+  margin-top:.6rem;letter-spacing:.02em}
 
-.bar{border-bottom:1px solid var(--rule)}
-.bar-in{max-width:1180px;margin:0 auto;padding:12px 48px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.blbl{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
-.blbl b{color:var(--am);font-size:16px;letter-spacing:0;margin-left:8px}
-.trk{flex:1;min-width:140px;max-width:300px;height:8px;background:var(--panel);border:1px solid var(--rule)}
-.fil{height:100%;background:var(--am);width:31%}
-.bnote{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim)}
+/* contents */
+.toc{margin:4.5rem 0 1rem;border-top:2px solid var(--ink);padding-top:1.3rem}
+.toc h2{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:400;color:var(--dim);margin:0 0 1rem}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:c}
+.toc li{counter-increment:c;border-bottom:1px solid var(--rule)}
+.toc a{display:grid;grid-template-columns:2.9rem 1fr;gap:.4rem;
+  padding:.62rem 0;text-decoration:none;color:var(--ink);align-items:baseline}
+.toc a::before{content:counter(c,decimal-leading-zero);font-family:var(--mono);
+  font-size:11px;color:var(--brass)}
+.toc a span{font-family:var(--disp);font-weight:500;font-size:1.06rem;line-height:1.3}
+.toc a:hover span{color:var(--brass)}
 
-main{max-width:1180px;margin:0 auto;padding:46px 48px 110px}
-.pane{display:none}
-.pane.on{display:block}
+/* chapters */
+section.ch{padding:4.2rem 0 0}
+.ch-n{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--brass);
+  text-transform:uppercase;margin:0 0 .7rem}
+h2.ch-t{font-family:var(--disp);font-weight:700;font-size:clamp(1.7rem,4.6vw,2.5rem);
+  line-height:1.06;letter-spacing:-.022em;margin:0 0 1.3rem}
+p{margin:0 0 1.15rem}
+.lead{font-size:1.3rem;line-height:1.5}
+strong{font-weight:600}
+.pull{font-family:var(--disp);font-weight:500;font-size:clamp(1.35rem,3.6vw,1.75rem);
+  line-height:1.25;letter-spacing:-.018em;margin:2rem 0;padding-left:1.1rem;
+  border-left:3px solid var(--brass)}
+.hand{font-family:var(--hand);font-size:1.5rem;line-height:1.35;color:var(--dim);
+  margin:1.6rem 0;transform:rotate(-.5deg)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem}
+.duo img,.trio img{width:100%;display:block;border:1px solid var(--rule)}
 
-/* ---- typography ---- */
-.eyebrow{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.24em;
- text-transform:uppercase;color:var(--cy)}
-.pane-t{font-family:Georgia,serif;font-size:clamp(30px,4.4vw,44px);font-weight:700;
- line-height:1.1;color:#eef3f8;margin:10px 0 14px;letter-spacing:-.015em}
-.standfirst{font-size:18px;color:#93a3b6;font-style:italic;max-width:62ch;
- border-left:2px solid var(--rule);padding-left:18px;margin-bottom:8px}
-h3.dept{font-family:Georgia,serif;font-size:28px;font-weight:700;color:#eef3f8;
- margin:56px 0 12px;padding-top:26px;border-top:1px solid var(--rule)}
+/* the slate */
+.slate{background:var(--slate);color:var(--chalk);margin:3.2rem 0;padding:2.4rem 0 2.6rem;
+  box-shadow:inset 0 0 90px rgba(0,0,0,.45)}
+.slate .lab{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  color:#8E9488;margin:0 0 .8rem}
+.slate h3{font-family:var(--hand);font-weight:500;font-size:2.4rem;line-height:1.1;
+  margin:0 0 1rem;color:#fff}
+.slate p{color:#C9CEC3;font-size:1.09rem;line-height:1.62}
+.slate p:last-child{margin-bottom:0}
+.slate strong{color:#fff;font-weight:400;box-shadow:inset 0 -.5em 0 rgba(156,122,49,.3)}
+.slate hr{border:0;border-top:1px solid #3A3F38;margin:1.5rem 0}
 
-/* ---- cards ---- */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:26px 0}
-.stat{background:var(--panel);border:1px solid var(--rule);padding:16px 18px}
-.stat .k{font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
-.stat .v{font-family:Georgia,serif;font-size:25px;font-weight:700;color:#eef3f8;line-height:1.2;margin-top:5px}
-.stat .v.go{color:var(--gr)} .stat .v.hold{color:var(--am)}
-.stat .n{font-family:ui-monospace,monospace;font-size:10.5px;color:var(--dim);margin-top:6px;line-height:1.6}
+/* data */
+.facts{border-top:1px solid var(--rule);margin:2.2rem 0}
+.facts div{display:grid;grid-template-columns:1fr auto;gap:1rem;
+  border-bottom:1px solid var(--rule);padding:.55rem 0;align-items:baseline}
+.facts dt{font-size:1.02rem;color:var(--dim);margin:0}
+.facts dd{font-family:var(--mono);font-size:.94rem;margin:0;text-align:right}
 
-.sheet{background:var(--paper);color:var(--ink);padding:34px 38px;margin:26px 0}
-.sheet h3{font-family:Georgia,serif;font-size:25px;font-weight:700;border-bottom:1.5px solid var(--ink);
- padding-bottom:8px;margin-bottom:18px}
-.sheet h3 .tcs{float:right;font-family:ui-monospace,monospace;font-size:13px;color:var(--ink2);font-weight:400}
-.sheet h4{font-family:Georgia,serif;font-size:20px;font-weight:700;margin:28px 0 10px;color:#443f38}
-.sheet p{margin-bottom:14px;max-width:70ch}
-.sheet ul,.sheet ol{margin:0 0 16px 22px}
-.sheet li{margin-bottom:8px;max-width:68ch}
-.sheet b{font-weight:700;color:#1c1a17}
-.sheet.dimsheet{background:var(--paper2)}
-.hand{font-style:italic;color:#6a5c3f;border-left:3px solid rgba(106,92,63,.3);padding-left:16px;margin:18px 0}
-.spec{font-family:ui-monospace,monospace;font-size:12.5px;line-height:1.85;background:rgba(46,43,38,.07);
- border:1px solid rgba(46,43,38,.15);padding:16px 18px;margin:14px 0 18px;white-space:pre-wrap;
- overflow-x:auto;color:#3a352d}
-.sheet table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:15px}
-.sheet th{font-family:ui-monospace,monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
- text-align:left;padding:8px 12px 8px 0;border-bottom:1.5px solid var(--ink);color:#5f5849}
-.sheet td{padding:10px 12px 10px 0;border-bottom:1px solid rgba(46,43,38,.16);vertical-align:top}
+/* stages */
+.stage{display:grid;grid-template-columns:5.4rem 1fr;gap:1rem;
+  border-top:1px solid var(--rule);padding:.95rem 0;align-items:start}
+.stage b{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  padding-top:.35rem}
+.stage.done b{color:var(--brass)}
+.stage.now b{color:#C7462F}
+.stage.next b{color:var(--dim)}
+.stage p{margin:0;font-size:1.05rem;line-height:1.5}
+.stage p em{font-style:normal;font-family:var(--disp);font-weight:600;display:block}
 
-.subtabs{display:flex;flex-wrap:wrap;gap:0;margin:30px 0 8px;border-bottom:1px solid var(--rule)}
-.stab{background:none;border:0;border-bottom:3px solid transparent;cursor:pointer;padding:12px 18px 12px 0;
- margin-right:26px;color:var(--dim);font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.1em;
- text-transform:uppercase;line-height:1.4;text-align:left}
-.stab:hover{color:var(--txt)}
-.stab:focus-visible{outline:2px solid var(--cy);outline-offset:-2px}
-.stab.on{color:var(--am);border-bottom-color:var(--am)}
-.stab small{display:block;font-size:9px;letter-spacing:.14em;opacity:.6;margin-top:2px;text-transform:none}
-.sub{display:none;padding-top:22px}
-.sub.on{display:block}
-.sub-t{font-family:Georgia,serif;font-size:30px;font-weight:700;color:#eef3f8;margin-bottom:12px;letter-spacing:-.01em}
-
-.docs{display:grid;gap:16px;margin:20px 0 8px}
-.doc{background:var(--panel);border:1px solid var(--rule);padding:20px 22px;display:flex;gap:18px;align-items:flex-start}
-.doc.soon{opacity:.62}
-.doc-ic{font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.12em;color:var(--am);
- border:1px solid rgba(232,163,61,.45);padding:9px 10px;flex:0 0 auto;margin-top:3px}
-.doc.soon .doc-ic{color:var(--dim);border-color:var(--rule)}
-.doc-b{flex:1;min-width:0}
-.doc-b h4{font-family:Georgia,serif;font-size:21px;font-weight:700;color:#eef3f8;line-height:1.25}
-.doc-by{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
- color:var(--cy);margin-top:5px}
-.doc-d{font-size:15.5px;color:#9fb0c4;margin-top:11px;max-width:66ch;line-height:1.65}
-.doc-m{font-family:ui-monospace,monospace;font-size:10.5px;color:var(--dim);margin-top:10px;letter-spacing:.06em}
-a.dl{display:inline-block;margin-top:13px;font-family:ui-monospace,monospace;font-size:11px;
- letter-spacing:.14em;text-transform:uppercase;color:var(--void);background:var(--cy);
- padding:9px 16px;text-decoration:none}
-a.dl:hover{background:#6ee2f2}
-.pending-tag{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
- color:var(--dim);margin-top:12px;border:1px dashed var(--rule);display:inline-block;padding:6px 11px}
-.doc.mini{padding:16px 18px}
-.doc.mini h4{font-size:18px}
-.doc.mini .doc-by{text-transform:none;letter-spacing:.04em;font-size:11px;color:var(--dim)}
-
-/* ---- storyboard ---- */
-.sc{margin-top:40px;padding-top:32px;border-top:1px solid var(--rule)}
-.sc-h{font-family:Georgia,serif;font-size:27px;font-weight:700;color:#eef3f8;line-height:1.2;
- display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-.sc-h .tc{margin-left:auto;font-family:ui-monospace,monospace;font-size:12px;color:var(--am);font-weight:400;letter-spacing:.1em}
-.sc-log{color:#93a3b6;font-style:italic;margin:8px 0 20px;max-width:64ch}
-.pend{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--dim);line-height:1.8;
- border:1px dashed var(--rule);padding:14px 16px;margin-bottom:18px}
-.sheets{display:grid;gap:22px;margin:20px 0}
-.shot{background:var(--panel);border:1px solid var(--rule);padding:12px}
-.shot img{cursor:zoom-in;border:1px solid var(--rule)}
-.shot figcaption{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
- color:var(--dim);margin-top:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.shot figcaption b{color:var(--cy);font-weight:400}
-.fr{background:var(--panel);border:1px solid var(--rule);padding:18px 20px;margin-bottom:14px;
- display:flex;gap:18px;align-items:flex-start}
-.fr-id{font-family:Georgia,serif;font-size:24px;font-weight:700;color:var(--cy);flex:0 0 42px;line-height:1.1}
-.fr-b{flex:1;min-width:0}
-.fr-t{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
- color:var(--dim);margin-bottom:8px}
-.fr-a{font-size:16px;color:var(--txt);margin-bottom:14px;max-width:66ch}
-.said{background:var(--paper);color:var(--ink);padding:14px 16px;margin-bottom:14px}
-.said .nm{font-family:ui-monospace,monospace;font-size:10px;font-weight:700;letter-spacing:.16em;color:#8a6b2e}
-.said .ln{font-family:ui-monospace,monospace;font-size:13px;white-space:pre-wrap;margin:2px 0 12px 18px;color:var(--ink)}
-.said .ln:last-child{margin-bottom:0}
-.silent{font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);letter-spacing:.1em;
- text-transform:uppercase;margin-bottom:14px}
-.nt{display:flex;gap:12px;align-items:flex-start;margin-bottom:9px;font-size:15px;color:#9fb0c4;line-height:1.6}
-.tag{font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;
- padding:3px 8px;border:1px solid var(--rule);color:var(--dim);flex:0 0 auto;margin-top:3px}
-.tag.cam{color:var(--cy);border-color:rgba(77,214,232,.4)}
-.tag.anim{color:var(--am);border-color:rgba(232,163,61,.4)}
-.tag.snd{color:var(--vi);border-color:rgba(169,155,214,.4)}
-.tag.mus{color:var(--gr);border-color:rgba(126,217,87,.35)}
-.ntx{flex:1;min-width:0}
-
-.chars{display:grid;gap:22px;margin:26px 0}
-.charcard{background:var(--panel);border:1px solid var(--rule);padding:12px}
-.charcard img{cursor:zoom-in;border:1px solid var(--rule)}
-.charcard figcaption{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;
- text-transform:uppercase;color:var(--dim);margin-top:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.charcard figcaption b{color:var(--cy);font-weight:400}
-.empty{border:1px dashed var(--rule);padding:46px 26px;text-align:center;margin:26px 0}
-.empty .big{font-family:Georgia,serif;font-size:23px;color:#7e8ea1}
-.empty .small{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--dim);margin-top:10px;line-height:1.8}
-
-#lb{position:fixed;inset:0;background:rgba(4,6,9,.96);z-index:200;display:none;
- align-items:flex-start;justify-content:center;padding:20px;cursor:zoom-out;overflow:auto}
-#lb.on{display:flex}
-#lb img{max-width:min(100%,1100px)}
-
-@media(max-width:900px){
- body{font-size:16px}
- .hdr-in,.tabs-in,.bar-in{padding-left:22px;padding-right:22px}
- main{padding:30px 22px 80px}
- .sheet{padding:24px 22px}
- .tab{padding:11px 12px;font-size:11px}
- .tab small{display:none}
- .fr{flex-direction:column;gap:6px}
- .fr-id{flex:none}
- .meta{width:100%;margin-left:0;gap:16px}
+footer{margin-top:5rem;border-top:2px solid var(--ink);padding:1.8rem 0 4rem}
+footer p{font-family:var(--mono);font-size:11px;line-height:1.9;color:var(--dim);margin:0}
+a{color:var(--brass)}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+@media(max-width:640px){
+  body{font-size:1.09rem}
+  .duo,.trio{grid-template-columns:1fr}
+  .hero{padding-top:6rem}
+  .stage{grid-template-columns:1fr;gap:.2rem}
 }
 </style>
+</head>
+<body>
 
-<style>
-.splitnav{margin:26px 0;padding:16px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.splitnav ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px 18px}
-.splitnav li{font-size:14px}
-.splitnav a{color:var(--cy);text-decoration:none}
-.splitnav a:hover{text-decoration:underline}
-.splitnav b{color:var(--paper)}
-.hub{max-width:760px;margin:0 auto;padding:56px 22px}
-.hub h1{font-size:32px;margin:0 0 6px}
-.hub .lede{color:var(--dim);margin:0 0 34px}
-.hub ol{list-style:none;padding:0;margin:0}
-.hub li{border-top:1px solid var(--rule);padding:16px 0}
-.hub li a{font-size:19px;color:var(--paper);text-decoration:none;display:block}
-.hub li a:hover{color:var(--cy)}
-.hub li span{display:block;color:var(--dim);font-size:14px;margin-top:3px}
-.hub .sub li a{font-size:16px}
-.hub .note{margin-top:34px;color:var(--dim);font-size:14px;line-height:1.6}
-</style>
+<div class="clock" role="presentation">
+  <div class="clock-in">
+    <span class="clock-lab">Running time</span>
+    <span class="clock-rail"><span class="clock-fill" id="fill"></span><span class="clock-cap" title="2:00, the hard limit"></span></span>
+    <span class="clock-now">1:57.80 / 2:00</span>
+  </div>
+</div>
 
-<title>The Brain Brake</title></head><body><div class="hub"><h1>The Brain Brake</h1><p class="lede">Breakthrough Junior Challenge 2026. Every section has its own page, so each one can be opened, linked and read aloud on its own.</p><ol><li><a href="overview/">Overview</a><span>Where the film stands, in one page</span></li><li><a href="script/">The Film</a><span>The script, scene by scene</span></li><li><a href="board/">Storyboard</a><span>Every shot as a sheet</span></li><li><a href="chars/">Characters</a><span>Model sheets, the single source of truth</span></li><li><a href="neha/">Neha</a><span>Producer. Money, approvals, and the boy</span></li><li><a href="venkatesh/">Venkatesh</a><span>Camera, sound and lighting</span></li><li><a href="kristijan/">Kristijan</a><span>Animation and motion, in Croatian</span></li><li><a href="marko/">Marko</a><span>Direction, edit, sound design and score</span></li><li><a href="docs/">PDF</a><span>Every document, downloadable</span></li><li><a href="versions/">Versions</a><span>How the film grew</span></li></ol><ol class="sub"><li><a href="marko/director/">Marko, Director</a><span>Concept and cut</span></li><li><a href="marko/editor/">Marko, Editor</a><span>Picture</span></li><li><a href="marko/sound/">Marko, Sound</a><span>Design and mix</span></li><li><a href="marko/music/">Marko, Music</a><span>Original score</span></li></ol><p class="note">The single page version, with tabs, is still at <a href="all.html">all.html</a>.</p></div></body></html>
+<div class="wrap">
+<header class="hero">
+  <p class="kicker">Breakthrough Junior Challenge 2026</p>
+  <h1>How we made<br>The Brain Brake<em>A two minute film about the thing that stops you</em></h1>
+  <p class="standfirst">A fourteen year old asked why a runner with nothing left can still find one more sprint. Answering him took fifty drawn panels, one grey wall, six recorded voices, and a clock that will not move.</p>
+  <figure>
+    <img src="assets/V7/V7_1_5_walks_in.jpg" alt="A photographed boy walks into a drawn pencil world beside a sketched marathon runner">
+    <figcaption>The whole film in one panel. The boy is a photograph. The runner is a drawing. They share a floor and a light.</figcaption>
+  </figure>
+</header>
+
+<nav class="toc" aria-label="Contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#q"><span>The question a fourteen year old asked</span></a></li>
+    <li><a href="#script"><span>The first script was too good to keep</span></a></li>
+    <li><a href="#clock"><span>Two minutes is not a target, it is a door</span></a></li>
+    <li><a href="#form"><span>Three shapes before the right one</span></a></li>
+    <li><a href="#rule"><span>Photograph what is true, draw what is thought</span></a></li>
+    <li><a href="#draw"><span>Drawing fifty panels with a machine</span></a></li>
+    <li><a href="#voice"><span>Casting a voice for a thought</span></a></li>
+    <li><a href="#truth"><span>One file that is the film</span></a></li>
+    <li><a href="#stale"><span>The day the pictures lied</span></a></li>
+    <li><a href="#catch"><span>The documents started answering back</span></a></li>
+    <li><a href="#producer"><span>The producer read it properly</span></a></li>
+    <li><a href="#shoot"><span>Nine setups, one boy, one grey wall</span></a></li>
+    <li><a href="#now"><span>Where the film is today</span></a></li>
+    <li><a href="#next"><span>What is left</span></a></li>
+  </ol>
+</nav>
+</div>
+
+<section class="ch" id="q"><div class="wrap">
+  <p class="ch-n">One</p>
+  <h2 class="ch-t">The question a fourteen year old asked</h2>
+  <p class="lead">Manan wanted to know where the last sprint comes from. A marathon runner has been empty for an hour. Then, in sight of the line, something arrives that was not supposed to exist.</p>
+  <p>For a century the answer was the muscles. They run out of fuel, they run out of air, they stop. It is a tidy explanation and it is taught everywhere. It is also, at minimum, incomplete, because when scientists tested runners at the exact moment they gave up, the muscles could still do far more.</p>
+  <p>So the interesting question is not why we stop. It is who decides.</p>
+  <p>The film he proposed answers that with one influential model, the Central Governor Theory, which holds that the brain sets the limit in advance and always keeps something in reserve. Fatigue, on this account, is not a report that the body has failed. It is an instruction to slow down before real danger begins.</p>
+  <p>He chose the subject, the science and the theory. That has not changed through any version of the film, and it should not.</p>
+  <figure>
+    <img src="assets/V7/V7_1_1_runner.jpg" alt="A pencil drawing of a marathon runner at full stride">
+    <figcaption>Frame 1.1. The man with nothing left, five seconds before he does something impossible.</figcaption>
+  </figure>
+</div></section>
+
+<section class="ch" id="script"><div class="wrap">
+  <p class="ch-n">Two</p>
+  <h2 class="ch-t">The first script was too good to keep</h2>
+  <p>His original script runs twenty four pages. It has a muscle factory with tiny workers, a mission control room, a coach, a lever, a case that gets stamped CLOSED, and a genuinely lovely closing voice over.</p>
+  <p>Read aloud at a natural pace it is about five minutes long.</p>
+  <p>Every good line in it was a real line. The problem was never quality. The problem is that a two minute film holds roughly two hundred and forty spoken words, and the script had far more than that, all of them doing work.</p>
+  <p class="pull">Cutting somebody else's good writing is the least glamorous and most useful job on a short film.</p>
+  <p>What survived was the shape rather than the sentences. The factory became a blackboard. Five lines of the old theory became one chalk column. A speech about scientific method became a look on a boy's face.</p>
+</div></section>
+
+<section class="ch" id="clock"><div class="wrap">
+  <p class="ch-n">Three</p>
+  <h2 class="ch-t">Two minutes is not a target, it is a door</h2>
+  <p class="lead">The competition measures running time on the video platform's own clock. A film that runs over is not marked down. It is not judged at all.</p>
+  <p>That single fact governs every other decision in this production. It is why the film is timed in frames rather than minutes, why no line can be added without another coming out, and why the first honest assembly was a crisis rather than a draft.</p>
+</div></section>
+
+<div class="slate"><div class="wrap">
+  <p class="lab">The number that changed everything</p>
+  <h3>2:47</h3>
+  <p>The first honest timing came to two minutes and forty seven seconds. <strong>Forty seven seconds over a limit that disqualifies rather than penalises.</strong></p>
+  <p>Everything since has been subtraction. The film now runs 1:57.80: fifty panels of picture and two and a fifth seconds of margin. The bar at the top of this page is that margin, drawn to scale.</p>
+</div></div>
+
+<section class="ch" id="form"><div class="wrap">
+  <p class="ch-n">Four</p>
+  <h2 class="ch-t">Three shapes before the right one</h2>
+  <p>Version two was a conventional short. A live action boy composited into fully animated worlds, thirty five shots, a great deal of motion.</p>
+  <p>Version three kept the ambition and moved the science earlier.</p>
+  <p>Version four threw out the motion.</p>
+  <p>The film became a <strong>comic strip</strong>. Fifty still panels, some held for as little as ten frames, cut in rhythm rather than animated in sequence. The camera does not move because in most of the film there is no camera. What moves is your eye, panel to panel, the way it moves down a page.</p>
+  <p>The reason was arithmetic before it was art. A held panel costs a fraction of an animated shot, which lets a two minute film carry fifty images instead of fifteen. But the form turned out to suit the subject, because a comic strip is how a fourteen year old thinks about a mystery, and this is a detective story.</p>
+  <figure>
+    <img src="assets/V3A/V3A_S4_strip.jpg" alt="Three stacked comic panels showing a boy and a cartoon brain talking in a control room">
+    <figcaption>An early strip test. Three panels, one conversation, hand lettered bubbles, no motion at all.</figcaption>
+  </figure>
+</div></section>
+
+<section class="ch" id="rule"><div class="wrap">
+  <p class="ch-n">Five</p>
+  <h2 class="ch-t">Photograph what is true, draw what is thought</h2>
+  <p class="lead">Every frame obeys one rule, and the rule is the argument.</p>
+  <p>Anything real is a photograph. The boy is a photograph. The blackboard he writes on is a real blackboard and the chalk in his hand is real chalk. The evidence is photographed.</p>
+  <p>Anything that is an idea is a drawing. The muscle factory is a drawing. The runner is a drawing. The coach inside your head is a drawing. Theories are drawn in graphite on cream paper, because a theory is something somebody sketched.</p>
+  <p>The two layers are not kept apart. The photograph sits on the paper and casts a real shadow onto it, so the boy is physically inside the drawing rather than pasted over it. Where the worlds touch, the shadow does the work.</p>
+  <figure><div class="duo">
+    <img src="assets/V7/V7_3_4_tanks.jpg" alt="A photographed boy small inside a vast drawn hall of storage tanks">
+    <img src="assets/V7/V7_8_5_key.jpg" alt="A drawn hand passing a small brass key into a photographed human hand">
+  </div>
+  <figcaption>Left, a real boy in an imagined room. Right, a drawn hand and a photographed hand meeting over a key. Two worlds, one light.</figcaption></figure>
+  <p class="hand">the magnifying glass is how we cross between them. twice in the film, the picture travels through the lens.</p>
+</div></section>
+
+<section class="ch" id="draw"><div class="wrap">
+  <p class="ch-n">Six</p>
+  <h2 class="ch-t">Drawing fifty panels with a machine</h2>
+  <p>All of the drawn material was generated, then corrected, then corrected again. That produced a set of rules that read like superstition and are simply true.</p>
+  <p><strong>Saying no summons the thing.</strong> Asking for a frame with no crowd in it reliably produces a crowd. You describe what is in the picture, never what is absent.</p>
+  <p><strong>A frame holds about two subjects.</strong> Ask for three and one is silently dropped, usually the one that mattered.</p>
+  <p><strong>Never show it a labelled picture.</strong> A frame carrying a review note was once used as a reference, and the note was faithfully redrawn into the artwork. That happened twice before the rule got written down.</p>
+  <p><strong>Lead with the photograph.</strong> In a frame where a real boy stands in a drawn world, if the drawing is shown first the boy comes back drawn, which destroys the one thing that frame exists to prove.</p>
+  <p>None of this was theory. Each line is the scar from a specific afternoon.</p>
+  <figure>
+    <img src="assets/BRAND/COACH_BRAIN_ON_SET_1024.jpg" alt="A cheerful cartoon brain in a tracksuit with a whistle and a small brass key">
+    <figcaption>The coach inside your head. Never angry, never panicked, and holding the key. He is the calmest character in the film, which is the whole science.</figcaption>
+  </figure>
+</div></section>
+
+<section class="ch" id="voice"><div class="wrap">
+  <p class="ch-n">Seven</p>
+  <h2 class="ch-t">Casting a voice for a thought</h2>
+  <p>Two characters in this film are not people. One is the coach in the brain. One is a worker in a factory that does not exist, standing in for a theory that has run out.</p>
+  <p>They are synthesised, and cast the way you would cast actors. The coach is a warm British teacher, amused and entirely unembarrassed. The factory worker is a tired American at the end of a long shift, flat and finished. The contrast is deliberate: the explanation sounds like a teacher, and the old theory sounds like a closing plant.</p>
+  <p>The performances are directed rather than typed. Each line carries an instruction written the way you would say it to an actor, and the same sentence with and without direction gives two completely different readings.</p>
+  <p><strong>Manan is never synthesised.</strong> Every word he speaks is his own voice, recorded on the day, including all the narration. The competition is judging a boy explaining something, so a boy explaining something is what has to be on the soundtrack.</p>
+  <figure>
+    <img src="assets/V7/V7_BOOTH.jpg" alt="A dark recording booth with a music stand, a microphone and a single warm light">
+    <figcaption>The booth. Script pages on a stand, one light behind him, the page the only lit thing in the room.</figcaption>
+  </figure>
+</div></section>
+
+<section class="ch" id="truth"><div class="wrap">
+  <p class="ch-n">Eight</p>
+  <h2 class="ch-t">One file that is the film</h2>
+  <p class="lead">A single file describes all fifty panels: what is in each one, who speaks, what they say, how many frames it holds, and whether that duration is measured from a real recording or estimated from a word count.</p>
+  <p>Everything else is generated from it. The film document, the presenter's acting book, the camera guide, the animator's packages. Nothing is typed twice.</p>
+  <p>That sounds like housekeeping. It is actually what keeps the film honest, because the acting book is built from the same source as the film. The boy cannot rehearse a line that is not in the picture, and the picture cannot quietly drift from what he rehearsed.</p>
+  <dl class="facts">
+    <div><dt>Panels</dt><dd>50</dd></div>
+    <div><dt>Running time</dt><dd>1:57.80</dd></div>
+    <div><dt>Frames, at 25 per second</dt><dd>2945</dd></div>
+    <div><dt>Margin against the limit</dt><dd>2.20 s</dd></div>
+    <div><dt>Shortest panel</dt><dd>0.4 s</dd></div>
+    <div><dt>Durations measured from real audio</dt><dd>6 of 50</dd></div>
+  </dl>
+  <p>The last row is the one that matters today. Forty four of the fifty panels are still timed from estimates, and estimates have already been wrong by more than two seconds on a single line.</p>
+</div></section>
+
+<div class="slate" id="stale"><div class="wrap">
+  <p class="lab">Nine &middot; the day the pictures lied</p>
+  <h3>&ldquo;It hasn't changed.&rdquo;</h3>
+  <p>Frames get replaced in place, keeping the same filename. Somewhere in the chain, something remembered pictures by their name instead of their contents. So a corrected frame was regenerated, saved, published, and the old one kept being served.</p>
+  <hr>
+  <p>The director said three times that the picture had not changed. Three times he was told it must be his download, then a cache somewhere, then his viewer. <strong>All three answers were wrong and the file was wrong.</strong> Hours went into explaining away a measurement that was correct.</p>
+  <hr>
+  <p>Two rules came out of it and they now sit at the top of the production notes. <strong>Cache on the contents of a file, never on its name.</strong> And when somebody says a file has not changed, treat it as a measurement: download the published file and compare it before offering any other explanation.</p>
+</div></div>
+
+<section class="ch" id="catch"><div class="wrap">
+  <p class="ch-n">Ten</p>
+  <h2 class="ch-t">The documents started answering back</h2>
+  <p>Two days before the shoot the cinematographer read the camera guide properly, which is more than most people do with a document handed to them, and found two things wrong with it.</p>
+  <p>The written instruction said the key light comes from camera left. Every reference frame in the film shows the light coming from camera right. He asked which one to follow.</p>
+  <p>He was right, and the written rule had been wrong for months. Worse, it cited another document as its authority, and that document names no side at all. It only says the light must be hard enough to cast a real shadow and must never change sides. Somebody had invented a side and then attributed it upward, and nobody had checked the sentence against a picture.</p>
+  <p>Then a second, larger one. The camera guide had grown its own list of camera setups while the film document already had one, and the two disagreed about where six panels were shot. One said a grey backdrop. The other said the boy's own room. He caught that the day before the camera rolled.</p>
+  <p class="pull">A rule that is written down and never measured against the artefact will outlive the artefact, and be handed to everyone who reads it.</p>
+  <p>Both documents now read one shared file, so they cannot disagree again. The answer to his question is printed inside the guide as well: follow the picture for anything you can see, follow the words for anything you cannot, and say which one was wrong.</p>
+  <figure>
+    <img src="assets/reference/BIKE_REFERENCE.jpg" alt="A split image comparing an outdoor road bicycle with an indoor stationary spin bike">
+    <figcaption>Another one settled by picture rather than paragraph. A sentence describing a stationary bike had been read three different ways, so the sentence was replaced with this.</figcaption>
+  </figure>
+</div></section>
+
+<section class="ch" id="producer"><div class="wrap">
+  <p class="ch-n">Eleven</p>
+  <h2 class="ch-t">The producer read it properly</h2>
+  <p>Neha went back through the original script line by line, marked everything she could not find in the current film, and asked why.</p>
+  <p>Almost all of it was there, in a different shape. The old theory had become chalk on a board. A speech had become a factory worker saying that's it, we're done, and a giant stamp coming down. Lines had moved from the boy to the coach so that he could react instead of explain.</p>
+  <p>But three things were genuinely gone, and one of her notes was the sharpest in the production. <strong>The theory is named in the film and never actually explained out loud.</strong> For a science competition the audience should hear the definition once, in the presenter's own voice.</p>
+  <p>She was right. Restoring what she asked for cost about thirteen seconds against a margin of two, so three moments came out to pay for it, including a beat about how new ideas get accepted that everybody liked. The ending was rebuilt as the three line sequence from the original draft.</p>
+  <figure><div class="duo">
+    <img src="assets/V7/V7_8_7_closing.jpg" alt="The presenter photographed against white, speaking directly to camera">
+    <img src="assets/V7/V7_ENDCARD.jpg" alt="A handwritten end card on cream paper">
+  </div>
+  <figcaption>The last thing he says to camera, and the card that follows it.</figcaption></figure>
+</div></section>
+
+<section class="ch" id="shoot"><div class="wrap">
+  <p class="ch-n">Twelve</p>
+  <h2 class="ch-t">Nine setups, one boy, one grey wall</h2>
+  <p class="lead">There is one shooting day. No runner, no crowd, no factory, no coach. One fourteen year old, and everything else arrives later.</p>
+  <p>Twenty seven panels need a lens. They break into nine setups: a grey backdrop for anything that gets cut out and placed inside a drawing, a white void for the end of the film, his own room at his desk, at a real blackboard and on a stationary bike, a recording booth, and one exterior on a quiet road at dawn.</p>
+  <p>The presenter has ADHD and the whole method is built around that. One sentence per take. The camera keeps rolling through the resets, because the unguarded moment between takes is often the one that gets used. No counting down. Breaks every twenty minutes. Take six is usually the one.</p>
+  <p>He rehearses from a book that gives him one line per page, with the moment before it, the thing he is not saying, where to look, how to breathe and where the silence goes. That book is generated from the same file as the film, so nothing he learns can quietly change underneath him.</p>
+  <figure><div class="trio">
+    <img src="assets/props/01_magnifying_glass.jpg" alt="A brass magnifying glass on a plain background">
+    <img src="assets/props/07_blackboard.jpg" alt="A blackboard with a single vertical chalk line down the middle">
+    <img src="assets/props/08_key.jpg" alt="A small brass key on a chain">
+  </div>
+  <figcaption>Three of the props. The board is photographed completely empty except for one chalk line. Everything written on it is added afterwards, so what has to be real is his arm moving in front of it.</figcaption></figure>
+</div></section>
+
+<section class="ch" id="now"><div class="wrap">
+  <p class="ch-n">Thirteen</p>
+  <h2 class="ch-t">Where the film is today</h2>
+  <p>The shoot is happening. Everything before it was finished and locked on paper, deliberately, so that nobody is rehearsing one version while somebody else edits another.</p>
+  <div class="stage done"><b>Done</b><p><em>Script, timing, artwork, documents</em>Fifty panels, all drawn, all wired to one source. Six synthetic lines recorded and cut to the frame.</p></div>
+  <div class="stage now"><b>Now</b><p><em>The shooting day</em>Twenty seven panels in front of a lens, and the presenter's entire narration recorded in his own voice for the first time.</p></div>
+  <div class="stage next"><b>Then</b><p><em>Retiming from real audio</em>Forty four estimated durations get replaced with measured ones. The film changes length. It has to come back under two minutes before anything else proceeds.</p></div>
+</div></section>
+
+<section class="ch" id="next"><div class="wrap">
+  <p class="ch-n">Fourteen</p>
+  <h2 class="ch-t">What is left</h2>
+  <p>Three phases, in order, each blocked by the one before it.</p>
+  <div class="stage next"><b>Edit</b><p><em>Assembling the strip</em>The footage is cut against the panels and the film finds its real length. Everything downstream waits here, because one line moving changes every timecode after it.</p></div>
+  <div class="stage next"><b>Animation</b><p><em>The layers come alive</em>The animator receives the boy already cut out with an alpha channel, the layered artwork, the audio and a locked edit, and spends his days on animation, compositing and finishing rather than preparation. The preparation is the director's job, and doing it properly is what lets the animator spend every hour on the part only he can do.</p></div>
+  <div class="stage next"><b>Sound</b><p><em>Music and sound design</em>Not started, and roughly half the film. Percussion for the factory, a single sustained tone for the coach, and a three note motif introduced in the first twenty seconds that does not resolve until the runner crosses the line.</p></div>
+  <p style="margin-top:2rem">Then it is a two minute film about the thing that stops you, and whether it was ever really a wall.</p>
+  <figure>
+    <img src="assets/V7/V7_BLANK_PAPER.jpg" alt="A sheet of blank cream paper">
+    <figcaption>The last frame of the film is the paper it was drawn on.</figcaption>
+  </figure>
+</div></section>
+
+<footer><div class="wrap">
+  <p>THE BRAIN BRAKE &middot; Breakthrough Junior Challenge 2026<br>
+  Presented by Manan Periwal &middot; Produced by Neha Sonthalia Periwal<br>
+  Direction, art, edit, sound and score by the director. Cinematography and animation by the crew.<br>
+  A production in progress. Full credits follow the finished film.</p>
+</div></footer>
+
+<script>
+(function(){
+  var fill=document.getElementById('fill');
+  if(!fill) return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function tick(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var p=h>0?Math.min(1,Math.max(0,window.scrollY/h)):0;
+    fill.style.width=(p*97.8).toFixed(2)+'%';
+  }
+  tick();
+  window.addEventListener('scroll',function(){reduce?tick():window.requestAnimationFrame(tick);},{passive:true});
+  window.addEventListener('resize',tick);
+})();
+</script>
+</body>
+</html>
