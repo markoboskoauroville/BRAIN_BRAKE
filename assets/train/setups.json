@@ -8,67 +8,112 @@
   "Light: corrected 17.8.2026 from camera left to camera RIGHT, measured against the frames."
  ],
  "setups": [
-  {"key": "A",
+  {
+   "key": "A",
    "name": "Grey backdrop, walking and reacting",
    "where": "grey",
    "light": "Soft key from camera RIGHT at forty five degrees. Fill from the left at half strength.",
    "note": "Eye level on sticks, locked off. This is the setup the film lives in. He is cut out of this grey and placed inside drawn worlds, so keep clear space around him on all four sides and never relight between frames.",
-   "frames": ["1.5", "1.6", "2.6", "3.2", "3.3", "3.4", "3.6"]},
-
-  {"key": "B",
+   "frames": [
+    "1.4",
+    "1.5",
+    "2.5",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5"
+   ]
+  },
+  {
+   "key": "B",
    "name": "Standing eyeline, reacting to Coach Brain",
    "where": "grey",
    "light": "Same lighting as A, unchanged. Key from camera RIGHT.",
    "note": "CORRECTED 19.8.2026 from seated to STANDING, against the footage. In version four, the comic strip, Manan stands throughout the film and it is Coach Brain who sits. The earlier wording said seated eyeline and was wrong. Ball on a stand at his standing eye height, camera left, for the mark. Do not relight, only move the mark. Coach Brain is drawn in later.",
-   "frames": ["4.2", "4.4b", "4.7", "4.8"]},
-
-  {"key": "C",
+   "frames": [
+    "4.2",
+    "4.5",
+    "4.8",
+    "4.9"
+   ]
+  },
+  {
+   "key": "C",
    "name": "White void, still, to lens",
    "where": "white",
    "light": "Flat even light both sides, no modelling, no shadow on the backdrop.",
    "note": "The end of the film. He is still, dead to lens, and the world has fallen away behind him.",
-   "frames": ["7.3", "8.1", "8.3", "8.6", "8.7", "8.8"]},
-
-  {"key": "D",
+   "frames": [
+    "7.2",
+    "8.1",
+    "8.2",
+    "8.3",
+    "8.4",
+    "8.5"
+   ]
+  },
+  {
+   "key": "D",
    "name": "Jump, high frame rate. Optional, five minutes.",
    "where": "white",
    "light": "Same as C.",
    "note": "Wider, room above his head. Only if the day allows it. Nothing depends on it.",
-   "frames": []},
-
-  {"key": "E",
+   "frames": []
+  },
+  {
+   "key": "E",
    "name": "His room, at his desk",
    "where": "room",
    "light": "Warm window light, no lamps fighting it.",
    "note": "A real room, shot as it is. These frames are NOT on grey and are not cut out.",
-   "frames": ["2.3", "4.5", "5.4"]},
-
-  {"key": "F",
+   "frames": [
+    "2.3",
+    "4.6",
+    "5.3"
+   ]
+  },
+  {
+   "key": "F",
    "name": "His room, at the blackboard",
    "where": "room",
    "light": "Same warm window light, standing.",
    "note": "A real blackboard, shot completely clean except for one vertical chalk line down the middle. He writes with real chalk. Everything that appears written is added later, so it does not matter what he writes, only that his arm genuinely moves in front of it. Give a clean locked off pass of the empty board with no Manan, five seconds.",
-   "frames": ["2.1"]},
-
-  {"key": "G",
+   "frames": [
+    "2.1"
+   ]
+  },
+  {
+   "key": "G",
    "name": "His room, on the stationary bike",
    "where": "room",
    "light": "Same warm window light.",
    "note": "Wide, closer, close. NOT on grey. A stationary bike that stays in one place, ideally with a solid wheel and handlebars that do not move, because the line this scene turns on is that nothing about his legs changed.",
-   "frames": ["5.6", "5.7", "5.8", "5.9"]},
-
-  {"key": "H",
+   "frames": [
+    "5.5",
+    "5.6",
+    "5.7",
+    "5.8"
+   ]
+  },
+  {
+   "key": "H",
    "name": "The booth",
    "where": "booth",
    "light": "One warm light low and behind him, everything else falling away.",
    "note": "A small room made dark. Music stand with the script pages, microphone on a stand, headphones. He reads as a silhouette and the page is the only lit thing. His face does not need to read. Three or four shots. Voice only.",
-   "frames": ["8.9"]},
-
-  {"key": "EXT",
+   "frames": [
+    "8.6"
+   ]
+  },
+  {
+   "key": "EXT",
    "name": "One quiet road, early morning",
    "where": "exterior",
    "light": "Whatever the morning gives. Early, before the traffic.",
    "note": "Riding hard, side on, a real road. Thirty minutes. The only exterior in the film.",
-   "frames": ["5.5"]}
+   "frames": [
+    "5.4"
+   ]
+  }
  ]
 }

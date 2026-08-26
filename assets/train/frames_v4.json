@@ -11,7 +11,8 @@
   "in": 0,
   "out": 91,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "1.1"
  },
  {
   "scene": 1,
@@ -25,7 +26,8 @@
   "in": 91,
   "out": 101,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "1.2"
  },
  {
   "scene": 1,
@@ -39,11 +41,12 @@
   "in": 101,
   "out": 111,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "1.3"
  },
  {
   "scene": 1,
-  "id": "1.5",
+  "id": "1.4",
   "layer": "LIVE",
   "img": "V7_1_5_walks_in.jpg",
   "mode": "",
@@ -53,11 +56,12 @@
   "in": 111,
   "out": 121,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "1.5"
  },
  {
   "scene": 1,
-  "id": "1.6",
+  "id": "1.5",
   "layer": "LIVE",
   "img": "V7_1_6_turns_to_us.jpg",
   "mode": "CAM",
@@ -67,7 +71,8 @@
   "in": 121,
   "out": 255,
   "trans": "THROUGH THE GLASS. Push in on the lens until the circle fills the frame. The next scene, the lecture room of 1923, appears inside the glass, bending at the edges as if seen through it, then straightens as we come out the other side into 2.1.",
-  "measured": false
+  "measured": false,
+  "old_id": "1.6"
  },
  {
   "scene": 2,
@@ -81,7 +86,8 @@
   "in": 255,
   "out": 325,
   "trans": "THE BOARD IS SHOT COMPLETELY EMPTY except for one vertical chalk line down the middle. Everything else is composited afterwards. Manan must actually write on it on the day, so the chalk in his hand moves and his arm passes in front of the writing. The left half carries a quick chalk sketch of A. V. Hill and his year. The right half carries 1997, T. Noakes, and the new chain.",
-  "measured": false
+  "measured": false,
+  "old_id": "2.1"
  },
  {
   "scene": 2,
@@ -95,7 +101,8 @@
   "in": 325,
   "out": 335,
   "trans": "Push in on the left half of the board from 2.1. Same board, same chalk, same handwriting, so it must read as the same hand that just wrote it. Nothing new appears, we simply move closer.",
-  "measured": false
+  "measured": false,
+  "old_id": "2.2"
  },
  {
   "scene": 2,
@@ -109,7 +116,8 @@
   "in": 335,
   "out": 345,
   "trans": "THROUGH THE GLASS. Same move. The factory inside the lens grows until the circle fills the frame and we are inside the factory for 2.4.",
-  "measured": false
+  "measured": false,
+  "old_id": "2.3"
  },
  {
   "scene": 2,
@@ -123,11 +131,12 @@
   "in": 345,
   "out": 392,
   "trans": "",
-  "measured": true
+  "measured": true,
+  "old_id": "2.4"
  },
  {
   "scene": 2,
-  "id": "2.6",
+  "id": "2.5",
   "layer": "LIVE",
   "img": "V7_2_6_case_closed.jpg",
   "mode": "VO",
@@ -137,7 +146,8 @@
   "in": 392,
   "out": 451,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "2.6"
  },
  {
   "scene": 3,
@@ -151,7 +161,8 @@
   "in": 451,
   "out": 461,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "3.1"
  },
  {
   "scene": 3,
@@ -165,7 +176,8 @@
   "in": 461,
   "out": 542,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "3.2"
  },
  {
   "scene": 3,
@@ -179,7 +191,8 @@
   "in": 542,
   "out": 552,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "3.3"
  },
  {
   "scene": 3,
@@ -193,11 +206,12 @@
   "in": 552,
   "out": 697,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "3.4"
  },
  {
   "scene": 3,
-  "id": "3.6",
+  "id": "3.5",
   "layer": "LIVE",
   "img": "V7_3_6_turns.jpg",
   "mode": "CAM",
@@ -207,7 +221,8 @@
   "in": 697,
   "out": 788,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "3.6"
  },
  {
   "scene": 4,
@@ -221,7 +236,8 @@
   "in": 788,
   "out": 864,
   "trans": "",
-  "measured": true
+  "measured": true,
+  "old_id": "4.1"
  },
  {
   "scene": 4,
@@ -235,7 +251,8 @@
   "in": 864,
   "out": 912,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "4.2"
  },
  {
   "scene": 4,
@@ -249,7 +266,8 @@
   "in": 912,
   "out": 1035,
   "trans": "",
-  "measured": true
+  "measured": true,
+  "old_id": "4.3"
  },
  {
   "scene": 4,
@@ -263,11 +281,12 @@
   "in": 1035,
   "out": 1162,
   "trans": "",
-  "measured": true
+  "measured": true,
+  "old_id": "4.4"
  },
  {
   "scene": 4,
-  "id": "4.4b",
+  "id": "4.5",
   "layer": "LIVE",
   "img": "V7_4_4b_pacing.jpg",
   "mode": "CAM",
@@ -277,11 +296,12 @@
   "in": 1162,
   "out": 1229,
   "trans": "TO SHOOT 18 AUG. Manan to camera, same setup and same eyeline as 4.2, one step closer. He is not accusing now, he is working it out. The question lands and he holds it.",
-  "measured": false
+  "measured": false,
+  "old_id": "4.4b"
  },
  {
   "scene": 4,
-  "id": "4.5",
+  "id": "4.6",
   "layer": "LIVE",
   "img": "V7_4_4_phone.jpg",
   "mode": "VO",
@@ -291,11 +311,12 @@
   "in": 1229,
   "out": 1342,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "4.5"
  },
  {
   "scene": 4,
-  "id": "4.6",
+  "id": "4.7",
   "layer": "STRIP",
   "img": "V7_4_6b_not_sorry.jpg",
   "mode": "BUB",
@@ -305,11 +326,12 @@
   "in": 1342,
   "out": 1491,
   "trans": "",
-  "measured": true
+  "measured": true,
+  "old_id": "4.6"
  },
  {
   "scene": 4,
-  "id": "4.7",
+  "id": "4.8",
   "layer": "LIVE",
   "img": "V7_4_6_arrives.jpg",
   "mode": "CAM",
@@ -319,11 +341,12 @@
   "in": 1491,
   "out": 1669,
   "trans": "ON SCREEN SUBTITLE, small, low in frame, held two seconds, nobody speaks it:\n\"Central Governor Theory, proposed by Prof. Tim Noakes, 1997. An influential model. Scientists are still investigating how the brain and muscles produce fatigue.\"\nIt costs no running time because it is not spoken, and it is what protects the film on scientific accuracy.",
-  "measured": false
+  "measured": false,
+  "old_id": "4.7"
  },
  {
   "scene": 4,
-  "id": "4.8",
+  "id": "4.9",
   "layer": "LIVE",
   "img": "V7_4_8_definition.jpg",
   "mode": "CAM",
@@ -333,7 +356,8 @@
   "in": 1669,
   "out": 1809,
   "trans": "TO SHOOT 18 AUG. Direct continuation of 4.7, identical setup, identical light, cut on the same breath so the two panels read as one take. This is the only sentence in the film that states the science plainly, so he says it slowly and to camera. Noakes and 1997 stay on the lower third underneath.",
-  "measured": false
+  "measured": false,
+  "old_id": "4.8"
  },
  {
   "scene": 5,
@@ -347,11 +371,12 @@
   "in": 1809,
   "out": 1900,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "5.1"
  },
  {
   "scene": 5,
-  "id": "5.3",
+  "id": "5.2",
   "layer": "DRAWN",
   "img": "V7_5_3_beat_it.jpg",
   "mode": "VO",
@@ -361,11 +386,12 @@
   "in": 1900,
   "out": 2002,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "5.3"
  },
  {
   "scene": 5,
-  "id": "5.4",
+  "id": "5.3",
   "layer": "LIVE",
   "img": "V7_5_4_idea_lands.jpg",
   "mode": "",
@@ -375,11 +401,12 @@
   "in": 2002,
   "out": 2012,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "5.4"
  },
  {
   "scene": 5,
-  "id": "5.5",
+  "id": "5.4",
   "layer": "LIVE",
   "img": "V7_5_5_road.jpg",
   "mode": "VO",
@@ -389,11 +416,12 @@
   "in": 2012,
   "out": 2060,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "5.5"
  },
  {
   "scene": 5,
-  "id": "5.6",
+  "id": "5.5",
   "layer": "LIVE",
   "img": "V7_5_6_racing.jpg",
   "mode": "",
@@ -403,11 +431,12 @@
   "in": 2060,
   "out": 2070,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "5.6"
  },
  {
   "scene": 5,
-  "id": "5.7",
+  "id": "5.6",
   "layer": "LIVE",
   "img": "V7_5_7_the_wall.jpg",
   "mode": "",
@@ -417,11 +446,12 @@
   "in": 2070,
   "out": 2080,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "5.7"
  },
  {
   "scene": 5,
-  "id": "5.8",
+  "id": "5.7",
   "layer": "LIVE",
   "img": "V7_5_8_eyes_closed.jpg",
   "mode": "VO",
@@ -431,11 +461,12 @@
   "in": 2080,
   "out": 2139,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "5.8"
  },
  {
   "scene": 5,
-  "id": "5.9",
+  "id": "5.8",
   "layer": "LIVE",
   "img": "V7_5_9_eyes_open.jpg",
   "mode": "CAM",
@@ -445,7 +476,8 @@
   "in": 2139,
   "out": 2220,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "5.9"
  },
  {
   "scene": 6,
@@ -459,7 +491,8 @@
   "fr": 112,
   "in": 2220,
   "out": 2332,
-  "measured": true
+  "measured": true,
+  "old_id": "6.1"
  },
  {
   "scene": 6,
@@ -473,11 +506,12 @@
   "fr": 10,
   "in": 2332,
   "out": 2342,
-  "measured": false
+  "measured": false,
+  "old_id": "6.2"
  },
  {
   "scene": 6,
-  "id": "6.4",
+  "id": "6.3",
   "layer": "DRAWN",
   "img": "V7_6_4_one_fibre.jpg",
   "mode": "",
@@ -487,11 +521,12 @@
   "fr": 10,
   "in": 2342,
   "out": 2352,
-  "measured": false
+  "measured": false,
+  "old_id": "6.4"
  },
  {
   "scene": 6,
-  "id": "6.5",
+  "id": "6.4",
   "layer": "DRAWN",
   "img": "V7_6_5_cluster.jpg",
   "mode": "",
@@ -501,11 +536,12 @@
   "fr": 10,
   "in": 2352,
   "out": 2362,
-  "measured": false
+  "measured": false,
+  "old_id": "6.5"
  },
  {
   "scene": 6,
-  "id": "6.6",
+  "id": "6.5",
   "layer": "DRAWN",
   "img": "V7_6_6_whole_leg.jpg",
   "mode": "",
@@ -515,11 +551,12 @@
   "fr": 10,
   "in": 2362,
   "out": 2372,
-  "measured": false
+  "measured": false,
+  "old_id": "6.6"
  },
  {
   "scene": 6,
-  "id": "6.7",
+  "id": "6.6",
   "layer": "DRAWN",
   "img": "V7_6_7_whole_body.jpg",
   "mode": "",
@@ -529,11 +566,12 @@
   "fr": 10,
   "in": 2372,
   "out": 2382,
-  "measured": false
+  "measured": false,
+  "old_id": "6.7"
  },
  {
   "scene": 6,
-  "id": "6.8",
+  "id": "6.7",
   "layer": "DRAWN",
   "img": "V7_6_8_pushing_off.jpg",
   "mode": "",
@@ -543,11 +581,12 @@
   "fr": 10,
   "in": 2382,
   "out": 2392,
-  "measured": false
+  "measured": false,
+  "old_id": "6.8"
  },
  {
   "scene": 6,
-  "id": "6.9",
+  "id": "6.8",
   "layer": "DRAWN",
   "img": "V7_6_9_the_leap.jpg",
   "mode": "VO",
@@ -557,7 +596,8 @@
   "fr": 91,
   "in": 2392,
   "out": 2483,
-  "measured": false
+  "measured": false,
+  "old_id": "6.9"
  },
  {
   "scene": 7,
@@ -571,11 +611,12 @@
   "in": 2483,
   "out": 2493,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "7.1"
  },
  {
   "scene": 7,
-  "id": "7.3",
+  "id": "7.2",
   "layer": "LIVE",
   "img": "V7_7_3_white.jpg",
   "mode": "",
@@ -585,11 +626,12 @@
   "in": 2493,
   "out": 2503,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "7.3"
  },
  {
   "scene": 7,
-  "id": "7.5",
+  "id": "7.3",
   "layer": "DRAWN",
   "img": "V7_7_5_two_cards.jpg",
   "mode": "",
@@ -599,7 +641,8 @@
   "in": 2503,
   "out": 2513,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "7.5"
  },
  {
   "scene": 8,
@@ -613,11 +656,12 @@
   "in": 2513,
   "out": 2523,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "8.1"
  },
  {
   "scene": 8,
-  "id": "8.3",
+  "id": "8.2",
   "layer": "LIVE",
   "img": "V7_8_3_hand_lever.jpg",
   "mode": "",
@@ -627,11 +671,12 @@
   "in": 2523,
   "out": 2533,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "8.3"
  },
  {
   "scene": 8,
-  "id": "8.6",
+  "id": "8.3",
   "layer": "LIVE",
   "img": "V7_8_5_key.jpg",
   "mode": "CAM",
@@ -641,11 +686,12 @@
   "in": 2533,
   "out": 2649,
   "trans": "Image inherited from the retired 8.5. The key in his hand, held up, the setup line of the closing triplet. He is already looking at us before he speaks.",
-  "measured": false
+  "measured": false,
+  "old_id": "8.6"
  },
  {
   "scene": 8,
-  "id": "8.7",
+  "id": "8.4",
   "layer": "LIVE",
   "img": "V7_8_7_closing.jpg",
   "mode": "CAM",
@@ -655,11 +701,12 @@
   "in": 2649,
   "out": 2753,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "8.7"
  },
  {
   "scene": 8,
-  "id": "8.8",
+  "id": "8.5",
   "layer": "LIVE",
   "img": "V7_8_6_eyes_open.jpg",
   "mode": "CAM",
@@ -669,11 +716,12 @@
   "in": 2753,
   "out": 2844,
   "trans": "The payoff of the triplet. Eyes open, dead to camera, no movement. The last thing he says before the paper writes itself.",
-  "measured": false
+  "measured": false,
+  "old_id": "8.8"
  },
  {
   "scene": 8,
-  "id": "8.9",
+  "id": "8.6",
   "layer": "BOOTH",
   "img": "V7_ENDCARD.jpg",
   "mode": "VO",
@@ -683,11 +731,12 @@
   "in": 2844,
   "out": 2935,
   "trans": "THE WORDS ARRIVE AS HE SPEAKS THEM. Nothing is on the paper when the frame opens. Each word is written on, in his own hand, in time with his voice, as though somebody is writing while he reads. Finish the last word, hold, then the sheet goes blank.",
-  "measured": false
+  "measured": false,
+  "old_id": "8.9"
  },
  {
   "scene": 8,
-  "id": "8.10",
+  "id": "8.7",
   "layer": "DRAWN",
   "img": "V7_BLANK_PAPER.jpg",
   "mode": "",
@@ -697,6 +746,7 @@
   "in": 2935,
   "out": 2945,
   "trans": "",
-  "measured": false
+  "measured": false,
+  "old_id": "8.10"
  }
 ]

@@ -7,7 +7,7 @@
  },
  {
   "scene": 1,
-  "id": "1.6",
+  "id": "1.5",
   "mode": "CAM",
   "text": "Hold on. He had nothing left. So where did THAT come from?"
  },
@@ -19,7 +19,7 @@
  },
  {
   "scene": 2,
-  "id": "2.6",
+  "id": "2.5",
   "mode": "VO",
   "text": "Except it doesn't explain this."
  },
@@ -37,7 +37,7 @@
  },
  {
   "scene": 3,
-  "id": "3.6",
+  "id": "3.5",
   "mode": "CAM",
   "text": "It was never empty. Somebody closed that door."
  },
@@ -49,25 +49,25 @@
  },
  {
   "scene": 4,
-  "id": "4.4b",
+  "id": "4.5",
   "mode": "CAM",
   "text": "So you're secretly pacing me?"
  },
  {
   "scene": 4,
-  "id": "4.5",
+  "id": "4.6",
   "mode": "VO",
   "text": "Like a phone at twenty percent. Not broken. Protecting itself."
  },
  {
   "scene": 4,
-  "id": "4.7",
+  "id": "4.8",
   "mode": "CAM",
   "text": "So the limit isn't my body. It's your judgement. They call it the Central Governor Theory."
  },
  {
   "scene": 4,
-  "id": "4.8",
+  "id": "4.9",
   "mode": "CAM",
   "text": "It sets your limit in advance, and keeps something in reserve."
  },
@@ -79,55 +79,55 @@
  },
  {
   "scene": 5,
-  "id": "5.3",
+  "id": "5.2",
   "mode": "VO",
   "text": "He beat it. So it was never his maximum."
  },
  {
   "scene": 5,
-  "id": "5.5",
+  "id": "5.4",
   "mode": "VO",
   "text": "So I tried it."
  },
  {
   "scene": 5,
-  "id": "5.8",
+  "id": "5.7",
   "mode": "VO",
   "text": "Nothing about my legs changed."
  },
  {
   "scene": 5,
-  "id": "5.9",
+  "id": "5.8",
   "mode": "CAM",
   "text": "Only what I believed they had left."
  },
  {
   "scene": 6,
-  "id": "6.9",
+  "id": "6.8",
   "mode": "VO",
   "text": "It didn't make new energy. It gave permission."
  },
  {
   "scene": 8,
-  "id": "8.6",
+  "id": "8.3",
   "mode": "CAM",
   "text": "Next time somebody finds one last burst of speed,"
  },
  {
   "scene": 8,
-  "id": "8.7",
+  "id": "8.4",
   "mode": "CAM",
   "text": "don't just wonder how strong their muscles are."
  },
  {
   "scene": 8,
-  "id": "8.8",
+  "id": "8.5",
   "mode": "CAM",
   "text": "Wonder what their brain believed was safe."
  },
  {
   "scene": 8,
-  "id": "8.9",
+  "id": "8.6",
   "mode": "VO",
   "text": "The limit is a setting, not a wall."
  }
