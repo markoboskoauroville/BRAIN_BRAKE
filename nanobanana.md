@@ -1064,7 +1064,11 @@ Not a vague "does it look good". These are the things that actually went wrong:
    in frames long after the sheets were replaced.
 7. **Is the aspect exactly 16:9?** Nano Banana returns 2752x1536, which is 1.7917. Crop to
    2731x1536 before shipping. Always.
-8. **Does the light match the neighbouring frames?** Key from camera RIGHT, always. Corrected 17.8.2026, see the light direction entry above.
+8. **Does the light match the neighbouring frames?** Key from camera RIGHT, always.
+9. **Is it the right character, in the right clothes?** Check against `CHARACTERS.md`. A character is
+   only ever generated from its locked single figure reference named there, never from the frame it
+   appears in and never from a multi panel sheet. Coach Brain came back once as a doctor in a lab
+   coat because the sheet existed and nothing said it had to be used. Wrong costume is a reject. Corrected 17.8.2026, see the light direction entry above.
 
 ### MEASURE, DO NOT SQUINT
 
