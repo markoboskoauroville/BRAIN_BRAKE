@@ -148,7 +148,7 @@ renumbered except old 8.8 and 8.9 becoming 8.9 and 8.10.
 
 Still open, in the order it will bite:
 
-1. **Manan's narration is not recorded.** Forty-three of fifty frames are estimated. When his audio
+1. **Manan's narration is not recorded.** Forty-four of fifty frames are estimated. When his audio
    arrives, retime from the measured WAVs, set `measured: true`, run the whole rebuild chain, and
    check the total against 2:00 before anything is sent to anyone.
 2. **4.4b and 4.8 have no plates.** They are live camera frames and only exist after the shoot.

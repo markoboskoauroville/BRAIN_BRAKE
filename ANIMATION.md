@@ -82,7 +82,7 @@ A single added frame shifts every timecode after it. When Neha's three lines wen
 and the 8.6 to 8.8 triplet, scenes 5, 6, 7 and 8 all moved even though nothing in them changed.
 So the packages are rebuilt as a set, always, never one scene at a time.
 
-The big one is still ahead. **Forty-three of fifty frames are estimated.** When Manan's narration is
+The big one is still ahead. **Forty-four of fifty frames are estimated.** When Manan's narration is
 recorded, most of the film retimes at once and every package changes. Kristijan should be told
 plainly that current timings are provisional, which is why the `estimated` flag is in the CSV
 rather than buried in a note.
