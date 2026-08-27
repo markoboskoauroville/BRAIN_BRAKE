@@ -103,7 +103,25 @@ def cell(f, col, row):
     block = (24 + len(body) * size * 1.3 + 10) if text else 0
     avail = CH - 20 - (block + 10 if text else 0)
 
-    p = os.path.join(IMG, f['img'])
+    # a live frame gets the real footage. where a drawn picture exists too, both.
+    live = os.path.join(REPO, 'assets/live', f['id'].replace('.', '_') + '_LIVE.jpg')
+    drawn = os.path.join(IMG, f['img'])
+    pair = os.path.exists(live) and os.path.exists(drawn) and f['layer'] in ('LIVE', 'BOOTH')
+    if pair:
+        a = Image.open(drawn).convert('RGB'); b = Image.open(live).convert('RGB')
+        h0 = 900
+        a = a.resize((int(h0 * a.width / a.height), h0), Image.LANCZOS)
+        b = b.resize((int(h0 * b.width / b.height), h0), Image.LANCZOS)
+        gap = 16
+        sheet = Image.new('RGB', (a.width + gap + b.width, h0), (242, 235, 218))
+        sheet.paste(a, (0, 0)); sheet.paste(b, (a.width + gap, 0))
+        tmp = '/tmp/pair_%s.jpg' % f['id'].replace('.', '_')
+        sheet.save(tmp, quality=92)
+        p = tmp
+    elif os.path.exists(live) and f['layer'] in ('LIVE', 'BOOTH'):
+        p = live
+    else:
+        p = drawn
     if os.path.exists(p):
         im = Image.open(p); iw, ih = im.size
         w = CW; h = w * ih / iw
@@ -113,6 +131,10 @@ def cell(f, col, row):
         c.drawImage(ImageReader(p), ix, y - h, w, h, mask='auto')
         c.setStrokeColor(RULE); c.setLineWidth(0.6)
         c.rect(ix, y - h, w, h, fill=0, stroke=1)
+        if pair:
+            c.setFont('MB', 6.5); c.setFillColor(SOFT)
+            c.drawString(ix + 4, y - h + 4, "DRAWN")
+            c.drawRightString(ix + w - 4, y - h + 4, "FOOTAGE")
         y -= h + 10
     else:
         h = min(avail, CW * 9 / 16)
