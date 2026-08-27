@@ -48,39 +48,38 @@ for f in os.listdir(OUT):
 
 frames = json.load(open(SRC))
 for fr in frames:
-    im = Image.new('RGB', (W, H), PAPER); d = ImageDraw.Draw(im)
-    text = (fr.get('text') or '').strip(); who = (fr.get('who') or '').strip()
-    M = 52; CWD = W - 2 * M
-    size = 44 if len(text) < 70 else (36 if len(text) < 120 else 30)
-    ft = F(DB, size)
-    body = wrap(d, '\u201c' + text + '\u201d', ft, CWD - 44) if text else []
-    block = (64 + len(body) * int(size * 1.34) + 30) if text else 0
-    top = 76; avail = H - top - 44 - (block + 26 if text else 0)
-    d.text((M, 28), '[ %s ]' % fr['id'], font=F(MB, 26), fill=ACC)
+    text = (fr.get('text') or '').strip()
+    who = (fr.get('who') or '').strip()
+
+    # the panel fills the frame, and the line is a subtitle over the bottom of it
     p = os.path.join(IMG, fr['img'])
     if os.path.exists(p):
-        src = Image.open(p).convert('RGB'); iw, ih = src.size
-        w = CWD; h = int(w * ih / iw)
-        if h > avail:
-            h = avail; w = int(h * iw / ih)
-        src = src.resize((w, h), Image.LANCZOS)
-        x = M + (CWD - w) // 2
-        im.paste(src, (x, top))
-        d.rectangle([x, top, x + w - 1, top + h - 1], outline=RULE, width=1)
-        y = top + h + 26
+        src = Image.open(p).convert('RGB')
+        im = src.resize((W, H), Image.LANCZOS)
     else:
-        h = min(avail, int(CWD * 9 / 16))
-        d.rectangle([M, top, M + CWD, top + h], fill=BOX, outline=RULE)
-        t = 'live footage'; ff = F(DB, 26)
-        d.text((W // 2 - d.textlength(t, font=ff) // 2, top + h // 2 - 14), t, font=ff, fill=SOFT)
-        y = top + h + 26
+        im = Image.new('RGB', (W, H), BOX)
+        d0 = ImageDraw.Draw(im)
+        t = 'live footage'; ff = F(DB, 46)
+        d0.text((W // 2 - d0.textlength(t, font=ff) // 2, H // 2 - 24), t, font=ff, fill=SOFT)
+
+    d = ImageDraw.Draw(im, 'RGBA')
+    d.text((44, 34), '[ %s ]' % fr['id'], font=F(MB, 26), fill=(138, 107, 46, 220))
+
     if text:
-        d.rectangle([M, y, M + CWD, y + block], fill=BOX)
-        d.rectangle([M, y, M + 5, y + block], fill=ACC)
-        d.text((M + 26, y + 18), who.upper(), font=F(MB, 17), fill=ACC)
-        yy = y + 62
+        size = 46 if len(text) < 70 else (38 if len(text) < 120 else 32)
+        ft = F(DB, size)
+        body = wrap(d, '\u201c' + text + '\u201d', ft, int(W * 0.84))
+        lh = int(size * 1.34)
+        block = len(body) * lh + 46
+        d.rectangle([0, H - block, W, H], fill=(20, 18, 15, 205))
+        d.text((W // 2 - d.textlength(who.upper(), font=F(MB, 17)) // 2, H - block + 14),
+               who.upper(), font=F(MB, 17), fill=(198, 162, 92, 255))
+        yy = H - block + 44
         for ln in body:
-            d.text((M + 26, yy), ln, font=ft, fill=INK); yy += int(size * 1.34)
+            d.text((W // 2 - d.textlength(ln, font=ft) // 2, yy), ln, font=ft,
+                   fill=(246, 242, 232, 255))
+            yy += lh
+
     im.save('%s/%s.jpg' % (OUT, fr['id'].replace('.', '_')), quality=92)
 
 print('rebuilt %d slides from %s' % (len(frames), os.path.basename(SRC)))
