@@ -28,7 +28,9 @@ SRC = os.path.join(REPO, 'assets/train/frames_v5.json')
 if not os.path.exists(SRC):
     SRC = os.path.join(REPO, 'assets/train/frames_v4.json')
 IMG = os.path.join(REPO, 'assets/V7')
-OUT = "/home/claude/out/THE BRAIN BRAKE - READ THROUGH 4UP.pdf"
+# version at both ends, underscores, no spaces. see modules/design-language.md
+VERSION = 2
+OUT = "/home/claude/out/%d-BRAIN_BRAKE_READ_THROUGH_v%d.pdf" % (VERSION, VERSION)
 os.makedirs("/home/claude/out", exist_ok=True)
 
 W, H = landscape(A4)
@@ -167,7 +169,7 @@ c.drawCentredString(W / 2, H / 2 + 6, "the film, read through")
 c.setStrokeColor(RULE); c.setLineWidth(0.8)
 c.line(W / 2 - 80, H / 2 - 12, W / 2 + 80, H / 2 - 12)
 c.setFont('M', 9); c.setFillColor(SOFT)
-c.drawCentredString(W / 2, H / 2 - 34, "%d panels" % len(frames))
+c.drawCentredString(W / 2, H / 2 - 34, "%d panels   \u00b7   version %d" % (len(frames), VERSION))
 c.showPage()
 
 bg()
