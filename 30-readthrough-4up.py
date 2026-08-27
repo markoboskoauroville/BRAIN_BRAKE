@@ -16,7 +16,13 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.utils import ImageReader
 from PIL import Image
-import json, os
+import json, os, csv
+
+SOURCES = {}
+_sp = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets/live/SOURCES.csv')
+if os.path.exists(_sp):
+    for r in csv.DictReader(open(_sp)):
+        SOURCES[r['frame_id'].strip()] = (r['timecode'].strip(), r['clip'].strip())
 
 for n, f in [('D','DejaVuSans.ttf'),('DB','DejaVuSans-Bold.ttf'),
              ('M','DejaVuSansMono.ttf'),('MB','DejaVuSansMono-Bold.ttf')]:
@@ -29,7 +35,7 @@ if not os.path.exists(SRC):
     SRC = os.path.join(REPO, 'assets/train/frames_v4.json')
 IMG = os.path.join(REPO, 'assets/V7')
 # version at both ends, underscores, no spaces. see modules/design-language.md
-VERSION = 2
+VERSION = 3
 OUT = "/home/claude/out/%d-BRAIN_BRAKE_READ_THROUGH_v%d.pdf" % (VERSION, VERSION)
 os.makedirs("/home/claude/out", exist_ok=True)
 
@@ -133,10 +139,15 @@ def cell(f, col, row):
         c.drawImage(ImageReader(p), ix, y - h, w, h, mask='auto')
         c.setStrokeColor(RULE); c.setLineWidth(0.6)
         c.rect(ix, y - h, w, h, fill=0, stroke=1)
-        if pair:
-            c.setFont('MB', 6.5); c.setFillColor(SOFT)
-            c.drawString(ix + 4, y - h + 4, "DRAWN")
-            c.drawRightString(ix + w - 4, y - h + 4, "FOOTAGE")
+        src = SOURCES.get(f['id'])
+        if src and f['layer'] in ('LIVE', 'BOOTH'):
+            lab = "[%s][%s]" % src
+            fs = 6.2
+            lw = pdfmetrics.stringWidth(lab, 'MB', fs)
+            c.setFillColor(HexColor("#161410"))
+            c.rect(ix + w - lw - 8, y - h + 1, lw + 7, fs + 4.5, fill=1, stroke=0)
+            c.setFont('MB', fs); c.setFillColor(HexColor("#e0d6c0"))
+            c.drawRightString(ix + w - 4, y - h + 4, lab)
         y -= h + 10
     else:
         h = min(avail, CW * 9 / 16)
