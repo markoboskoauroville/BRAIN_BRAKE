@@ -144,10 +144,11 @@ def cell(f, col, row):
             lab = "[%s][%s]" % src
             fs = 6.2
             lw = pdfmetrics.stringWidth(lab, 'MB', fs)
+            lx = ix + (w / 2 if pair else 0)          # left edge of the footage half
             c.setFillColor(HexColor("#161410"))
-            c.rect(ix + w - lw - 8, y - h + 1, lw + 7, fs + 4.5, fill=1, stroke=0)
+            c.rect(lx + 1, y - h + 1, lw + 7, fs + 4.5, fill=1, stroke=0)
             c.setFont('MB', fs); c.setFillColor(HexColor("#e0d6c0"))
-            c.drawRightString(ix + w - 4, y - h + 4, lab)
+            c.drawString(lx + 4, y - h + 4, lab)
         y -= h + 10
     else:
         h = min(avail, CW * 9 / 16)
@@ -190,14 +191,12 @@ for i, f in enumerate(frames):
     cell(f, col, row)
     nxt = frames[i + 1] if i + 1 < len(frames) else None
     if nxt and nxt['scene'] != f['scene']:
-        r = 34
-        if col == 0:                       # side by side, glass sits in the gutter
+        # the glass lives in the gutter between the columns, clear of both pictures
+        if col == 0:
+            r = 15
             gx = M + CW + GX / 2
-            gy = H - M - row * (CH + GY) - CH * 0.42
-        else:                              # row or page break, glass hangs off the corner
-            gx = M + CW + GX + CW
-            gy = H - M - row * (CH + GY) - CH * 0.42
-        glass(gx, gy, r, nxt)
+            gy = H - M - row * (CH + GY) - CH * 0.34
+            glass(gx, gy, r, nxt)
     if slot == 3 or i == len(frames) - 1:
         pg[0] += 1
         c.setFont('M', 7); c.setFillColor(SOFT)
