@@ -1065,7 +1065,12 @@ Not a vague "does it look good". These are the things that actually went wrong:
 7. **Is the aspect exactly 16:9?** Nano Banana returns 2752x1536, which is 1.7917. Crop to
    2731x1536 before shipping. Always.
 8. **Does the light match the neighbouring frames?** Key from camera RIGHT, always.
-9. **Is it the right character, in the right clothes?** Check against `CHARACTERS.md`. A character is
+9. **NEVER CROP AN OVERLAY.** A picture placed over another picture is scaled and moved, never cut.
+   Cutting leaves a straight edge in a drawing that has none, and a pasted rectangle shows as a faint
+   box the moment the tone is off by a level. The only thing that crops is the frame itself: the
+   artwork runs off the edge and that is correct. This cost an hour on frame 1.5 before it was
+   written down.
+10. **Is it the right character, in the right clothes?** Check against `CHARACTERS.md`. A character is
    only ever generated from its locked single figure reference named there, never from the frame it
    appears in and never from a multi panel sheet. Coach Brain came back once as a doctor in a lab
    coat because the sheet existed and nothing said it had to be used. Wrong costume is a reject. Corrected 17.8.2026, see the light direction entry above.
