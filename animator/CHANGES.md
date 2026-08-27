@@ -19,3 +19,9 @@ Format:
 
 Marko met Kristijan. Scene 1 first: variations of existing frames, and extra frames where a cut needs
 a step in between once it moves. Nothing made yet.
+
+## 27.08.2026  inbox
+
+- `1-3_v2_watchtest.jpg` — no frame number in the name, so it went to inbox, 2752x1536 cropped to 2731x1536. **proposal**
+- `2-5_watchtest_FG.png` — no frame number in the name, so it went to inbox, transparent, left alone. **proposal**
+- `WATCHTEST_notes.txt` — no frame number in the name, so it went to inbox. **proposal**
