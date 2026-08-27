@@ -62,22 +62,45 @@ def wrap(t, f, s, mw):
     return out
 
 
+def glass(cx, cy, r, nxt):
+    """The film's own transition. A brass magnifying glass sitting in the gutter,
+    with the first frame of the next scene inside the lens."""
+    p = os.path.join(IMG, nxt['img'])
+    c.saveState()
+    c.setFillColor(PAPER)
+    c.circle(cx, cy, r + 7, fill=1, stroke=0)          # clear the panels behind it
+    if os.path.exists(p):
+        path = c.beginPath(); path.circle(cx, cy, r)
+        c.clipPath(path, stroke=0)
+        im = Image.open(p); iw, ih = im.size
+        h = r * 2.3; w = h * iw / ih
+        c.drawImage(ImageReader(p), cx - w / 2, cy - h / 2, w, h, mask='auto')
+    c.restoreState()
+    c.setStrokeColor(HexColor("#9C7A31")); c.setLineWidth(3.2)
+    c.circle(cx, cy, r, fill=0, stroke=1)
+    c.setStrokeColor(HexColor("#c9a35a")); c.setLineWidth(1.0)
+    c.circle(cx, cy, r - 2.4, fill=0, stroke=1)
+    c.saveState()                                       # the handle, down and right
+    c.translate(cx, cy); c.rotate(-135)
+    c.setStrokeColor(HexColor("#9C7A31")); c.setLineWidth(6)
+    c.setLineCap(1)
+    c.line(0, r + 1, 0, r + 20)
+    c.restoreState()
+
+
 def cell(f, col, row):
     x = M + col * (CW + GX)
     top = H - M - row * (CH + GY)
 
     # frame number, top left of the cell
     c.setFont('MB', 10); c.setFillColor(ACC)
-    c.drawString(x, top - 11, f['id'])
-    if f.get('who'):
-        c.setFont('MB', 7.5); c.setFillColor(SOFT)
-        c.drawRightString(x + CW, top - 11, f['who'].upper())
+    c.drawString(x, top - 11, "[ %s ]" % f['id'])
     y = top - 20
 
     text = (f.get('text') or "").strip()
     size = 11.5 if len(text) < 60 else (10 if len(text) < 110 else 8.8)
     body = wrap("\u201c" + text + "\u201d", 'DB', size, CW - 22) if text else []
-    block = (12 + len(body) * size * 1.3 + 10) if text else 0
+    block = (24 + len(body) * size * 1.3 + 10) if text else 0
     avail = CH - 20 - (block + 10 if text else 0)
 
     p = os.path.join(IMG, f['img'])
@@ -104,8 +127,10 @@ def cell(f, col, row):
         c.setFillColor(BOX); c.rect(x, y - block, CW, block, fill=1, stroke=0)
         c.setStrokeColor(ACC); c.setLineWidth(1.8)
         c.line(x, y - block, x, y)
+        c.setFont('MB', 7); c.setFillColor(ACC)
+        c.drawString(x + 12, y - 12, (f.get('who') or '').upper())
         c.setFont('DB', size); c.setFillColor(INK)
-        yy = y - 12 - size * 0.85
+        yy = y - 24 - size * 0.85
         for ln in body:
             c.drawString(x + 12, yy, ln); yy -= size * 1.3
 
@@ -126,7 +151,18 @@ c.showPage()
 bg()
 for i, f in enumerate(frames):
     slot = i % 4
-    cell(f, slot % 2, slot // 2)
+    col, row = slot % 2, slot // 2
+    cell(f, col, row)
+    nxt = frames[i + 1] if i + 1 < len(frames) else None
+    if nxt and nxt['scene'] != f['scene']:
+        r = 34
+        if col == 0:                       # side by side, glass sits in the gutter
+            gx = M + CW + GX / 2
+            gy = H - M - row * (CH + GY) - CH * 0.42
+        else:                              # row or page break, glass hangs off the corner
+            gx = M + CW + GX + CW
+            gy = H - M - row * (CH + GY) - CH * 0.42
+        glass(gx, gy, r, nxt)
     if slot == 3 or i == len(frames) - 1:
         pg[0] += 1
         c.setFont('M', 7); c.setFillColor(SOFT)
