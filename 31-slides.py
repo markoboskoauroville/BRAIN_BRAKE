@@ -24,7 +24,7 @@ os.makedirs(OUT, exist_ok=True)
 DB = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 MB = '/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf'
 F = lambda p, s: ImageFont.truetype(p, s)
-W, H = 1920, 1080
+W, H = 3840, 2160   # match the project, so nothing scales at playback
 PAPER = (242, 235, 218); INK = (34, 31, 25); BOX = (230, 220, 196)
 RULE = (205, 191, 164); SOFT = (138, 129, 112); ACC = (138, 107, 46)
 
@@ -57,18 +57,18 @@ for fr in frames:
     else:
         im = Image.new('RGB', (W, H), BOX)
         d0 = ImageDraw.Draw(im)
-        t = 'live footage'; ff = F(DB, 46)
-        d0.text((W // 2 - d0.textlength(t, font=ff) // 2, H // 2 - 24), t, font=ff, fill=SOFT)
+        t = 'live footage'; ff = F(DB, 92)
+        d0.text((W // 2 - d0.textlength(t, font=ff) // 2, H // 2 - 48), t, font=ff, fill=SOFT)
 
     d = ImageDraw.Draw(im, 'RGBA')
     tag = '[ %s ]' % fr['id']
-    ft = F(MB, 34)
+    ft = F(MB, 68)
     tw_ = d.textlength(tag, font=ft)
-    pad = 16
+    pad = 32
     bx0 = W / 2 - tw_ / 2 - pad; bx1 = W / 2 + tw_ / 2 + pad
-    by1 = H - 26; by0 = by1 - 48
+    by1 = H - 52; by0 = by1 - 96
     d.rectangle([bx0, by0, bx1, by1], fill=(20, 18, 15, 190))
-    d.text((W / 2 - tw_ / 2, by0 + 8), tag, font=ft, fill=(226, 196, 132, 255))
+    d.text((W / 2 - tw_ / 2, by0 + 16), tag, font=ft, fill=(226, 196, 132, 255))
 
     im.save('%s/%s.jpg' % (OUT, fr['id'].replace('.', '_')), quality=92)
 
