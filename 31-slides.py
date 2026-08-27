@@ -48,14 +48,12 @@ for f in os.listdir(OUT):
 
 frames = json.load(open(SRC))
 for fr in frames:
-    text = (fr.get('text') or '').strip()
-    who = (fr.get('who') or '').strip()
-
-    # the panel fills the frame, and the line is a subtitle over the bottom of it
+    # the panel fills the frame. the ONLY thing added is the frame number,
+    # bottom centre, so the number is visible on the timeline as well as in
+    # the filename. no dialogue, no speaker, nothing else.
     p = os.path.join(IMG, fr['img'])
     if os.path.exists(p):
-        src = Image.open(p).convert('RGB')
-        im = src.resize((W, H), Image.LANCZOS)
+        im = Image.open(p).convert('RGB').resize((W, H), Image.LANCZOS)
     else:
         im = Image.new('RGB', (W, H), BOX)
         d0 = ImageDraw.Draw(im)
@@ -63,22 +61,14 @@ for fr in frames:
         d0.text((W // 2 - d0.textlength(t, font=ff) // 2, H // 2 - 24), t, font=ff, fill=SOFT)
 
     d = ImageDraw.Draw(im, 'RGBA')
-    d.text((44, 34), '[ %s ]' % fr['id'], font=F(MB, 26), fill=(138, 107, 46, 220))
-
-    if text:
-        size = 46 if len(text) < 70 else (38 if len(text) < 120 else 32)
-        ft = F(DB, size)
-        body = wrap(d, '\u201c' + text + '\u201d', ft, int(W * 0.84))
-        lh = int(size * 1.34)
-        block = len(body) * lh + 46
-        d.rectangle([0, H - block, W, H], fill=(20, 18, 15, 205))
-        d.text((W // 2 - d.textlength(who.upper(), font=F(MB, 17)) // 2, H - block + 14),
-               who.upper(), font=F(MB, 17), fill=(198, 162, 92, 255))
-        yy = H - block + 44
-        for ln in body:
-            d.text((W // 2 - d.textlength(ln, font=ft) // 2, yy), ln, font=ft,
-                   fill=(246, 242, 232, 255))
-            yy += lh
+    tag = '[ %s ]' % fr['id']
+    ft = F(MB, 34)
+    tw_ = d.textlength(tag, font=ft)
+    pad = 16
+    bx0 = W / 2 - tw_ / 2 - pad; bx1 = W / 2 + tw_ / 2 + pad
+    by1 = H - 26; by0 = by1 - 48
+    d.rectangle([bx0, by0, bx1, by1], fill=(20, 18, 15, 190))
+    d.text((W / 2 - tw_ / 2, by0 + 8), tag, font=ft, fill=(226, 196, 132, 255))
 
     im.save('%s/%s.jpg' % (OUT, fr['id'].replace('.', '_')), quality=92)
 
