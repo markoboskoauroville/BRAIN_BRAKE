@@ -34,11 +34,26 @@ SRC = os.path.join(REPO, 'assets/train/frames_v5.json')
 if not os.path.exists(SRC):
     SRC = os.path.join(REPO, 'assets/train/frames_v4.json')
 IMG = os.path.join(REPO, 'assets/V7')
+
+# V8 artwork lives in the animator repo, not here, so that a 5 MB plate is stored
+# once instead of twice. Look there first, fall back to V7. See MEMORY.md section 5.
+IMG_DIRS = [os.path.join(os.path.dirname(REPO), 'ANIMATOR_COLLABORATION', 'BB_C_1'),
+            os.path.join(REPO, 'assets/V8'),
+            IMG]
+
+
+def art(name):
+    """Where does this frame's picture actually live."""
+    for d in IMG_DIRS:
+        p = os.path.join(d, name)
+        if os.path.exists(p):
+            return p
+    return os.path.join(IMG, name)
 # version at both ends, underscores, no spaces. see modules/design-language.md
 # 28.8.2026: jumped 4 -> 8, skipping 5, 6 and 7, so the document number matches the
 # artwork generation. From here the read-through and the artwork carry the same number.
 # See MEMORY.md section 5 on the version tracks. v4 is not deleted, it stays in assets/pdf.
-VERSION = 8
+VERSION = 9
 # WHERE IT IS FILED. 28.8.2026: the read through has ONE home and it is the animator
 # repository, ANIMATOR_COLLABORATION/DOCS/. It is no longer copied into this repository
 # as well. Two copies of a 75 MB file meant every version cost 150 MB across the two
@@ -81,7 +96,7 @@ def wrap(t, f, s, mw):
 def glass(cx, cy, r, nxt):
     """The film's own transition. A brass magnifying glass sitting in the gutter,
     with the first frame of the next scene inside the lens."""
-    p = os.path.join(IMG, nxt['img'])
+    p = art(nxt['img'])
     c.saveState()
     c.setFillColor(PAPER)
     c.circle(cx, cy, r + 7, fill=1, stroke=0)          # clear the panels behind it
@@ -121,7 +136,7 @@ def cell(f, col, row):
 
     # a live frame gets the real footage. where a drawn picture exists too, both.
     live = os.path.join(REPO, 'assets/live', f['id'].replace('.', '_') + '_LIVE.jpg')
-    drawn = os.path.join(IMG, f['img'])
+    drawn = art(f['img'])
     pair = os.path.exists(live) and os.path.exists(drawn) and f['layer'] in ('LIVE', 'BOOTH')
     if pair:
         a = Image.open(drawn).convert('RGB'); b = Image.open(live).convert('RGB')
