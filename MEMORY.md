@@ -316,7 +316,44 @@ inside a shot.
 
 ---
 
-## 8. OPEN QUESTIONS
+## 8. ANYTHING THAT MOVES ON ITS OWN IS A LAYER, NOT PART OF THE DRAWING
+
+*Baba, 28.8.2026. Starts with the sweat on shot 1.1 and applies to everything after it.*
+
+**The sweat droplets are going to be animated, so they cannot be drawn into the frame.** Every key
+frame ships with **dry skin**, and the droplets arrive as their own transparent layer that Kristijan
+can isolate, move and time.
+
+**This is the same law as the panel border and it generalises.** The border came out of the artwork
+and became `FRAME_BORDER-v2.png` because it has to be able to move. Sweat has to be able to run. Any
+element that animates independently of the drawing underneath it is a layer:
+
+    the panel border      done, FRAME_BORDER-v2.png
+    sweat droplets        starting now, shot 1.1
+    anything that drips, blinks, flickers, breathes or travels
+
+**So the question to ask of every new frame is: what in this picture moves on its own?** Whatever
+the answer is comes out before the frame is delivered, not after.
+
+### How to get a layer out, cheapest first
+
+1. **Cut it, free.** Works when the thing is separable by position or tone, as the border was: it sat
+   on a known rectangle and nothing else was there. **It does not work for sweat.** Droplets are the
+   same graphite as the skin they sit on, in the same tonal range, scattered over the exact surface
+   they must be separated from. There is no threshold that finds them.
+2. **Generate the plate without it, then difference, free.** Get the dry version, register it against
+   the wet one, and what changed is the layer. Costs one run instead of two and the registration is
+   perfect by construction. Only works if the two pictures are otherwise near identical, which is
+   exactly what a short edit prompt is for and exactly what a long one destroys.
+3. **Generate the layer on its own, one credit.** The fallback when 2 comes back too noisy: ask for
+   the droplets alone on empty cream paper. Cream, not black, because every reference the model has
+   of this film is graphite on cream and asking for black changes the medium as well as the content.
+
+**Try 2 before spending on 3.** It costs nothing to look.
+
+---
+
+## 9. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
