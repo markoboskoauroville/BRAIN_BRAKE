@@ -218,6 +218,14 @@ every frame that follows.
 | v5 | the road added, converging to a flat horizon | **the panel border came back** |
 | v6 | v5 with no border | **asked for, not yet made** |
 
+**The filename convention, so Baba never has to think.** Chat Claude gives the name every time, twice:
+above the prompt as `Save as: 1-1-v6.png`, and as the first line **inside** the prompt block, `FILE:
+1-1-v6.png`, so it travels with the paste into the image editor. The editor ignores that line.
+
+Frame number with hyphens, then the next whole version, **always the next one, even for a tiny
+change**. A shot that does not exist in the film yet gets a letter on the frame number, so something
+between 1.3 and 1.4 is `1-3a-v1`. Versions never restart.
+
 **The loop.** Chat Claude writes a prompt and gives it a filename. Baba runs it in an image to image
 editor and drops the result in `_WATCH_FOLDER`. The daemon pushes it to `ANIMATOR_COLLABORATION`,
 files it by its leading number, and rebuilds the site. Chat Claude looks at it, writes its note into
