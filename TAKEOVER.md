@@ -116,9 +116,33 @@ assets/V7/                      the frame images
 assets/pdf/                     everything published to the crew
 assets/props/                   the prop sheets
 animation/                      the animator's site, see ANIMATION.md
+animator/                       GONE. moved 28.8.2026, see below
 tools/                          nanobanana_helper.py, hume_helper.py, timecode.py, mabanana, mavoice
 NN-*.py                         the builders, numbered in the order they were written
 ```
+
+---
+
+## 5b. THE ANIMATOR MATERIAL HAS MOVED OUT OF THIS REPOSITORY
+
+*28.8.2026.*
+
+**`animator/` is gone from `BRAIN_BRAKE`. It now lives in its own private repository,
+`markoboskoauroville/ANIMATOR_COLLABORATION`.** Everything that was in it moved across unchanged:
+the images, `README.md` and `CHANGES.md`, and the `inbox/`.
+
+**Why.** This repository had reached about 1.4 GB and pushes were failing on size. The animation
+material is what grows fastest from here, so it was the right thing to take out.
+
+**The scene folders are named differently there**, `BB_C_1` to `BB_C_8` rather than `scene_01` to
+`scene_08`, so a folder name can never be read as a frame id.
+
+**Removing the folder did not make this repository smaller** and it was never going to. The objects
+are still in the history. History was deliberately **not** rewritten: no force push, no `filter-repo`,
+no BFG. The point was to stop the growth, not to reclaim what is already spent.
+
+`tools/watch.py` and the watch folder now push to the new repository. `CHANGES.md` continues there
+without a break.
 
 ---
 
