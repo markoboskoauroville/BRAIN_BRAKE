@@ -16,7 +16,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.utils import ImageReader
 from PIL import Image
-import json, os, csv
+import hashlib, json, os, csv, tempfile
 
 SOURCES = {}
 _sp = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets/live/SOURCES.csv')
@@ -49,6 +49,39 @@ def art(name):
         if os.path.exists(p):
             return p
     return os.path.join(IMG, name)
+
+
+# --------------------------------------------------------------- page weight
+_SMALL = os.path.join(tempfile.gettempdir(), 'readthrough_small')
+os.makedirs(_SMALL, exist_ok=True)
+
+
+def small(path, maxdim=1500, q=80):
+    """Downscale before embedding, and cache it.
+
+    A panel is printed about 90mm wide. Embedding a 2752px plate at that size puts
+    roughly 780 dpi on the page: invisible, and it made v9 come out at 137 MB, over
+    GitHub's hard 100 MB limit, so the push was rejected outright. 1500px is about
+    420 dpi at panel size, still far past what any printer resolves.
+
+    Cached on path, size and mtime, so replacing a file at the same name busts it.
+    """
+    try:
+        st = os.stat(path)
+    except OSError:
+        return path
+    key = hashlib.md5(('%s|%d|%d|%d' % (path, st.st_size, int(st.st_mtime), maxdim)
+                       ).encode()).hexdigest()[:16]
+    out = os.path.join(_SMALL, key + '.jpg')
+    if not os.path.exists(out):
+        try:
+            im = Image.open(path).convert('RGB')
+            if max(im.size) > maxdim:
+                im.thumbnail((maxdim, maxdim), Image.LANCZOS)
+            im.save(out, quality=q, optimize=True)
+        except Exception:
+            return path
+    return out
 # version at both ends, underscores, no spaces. see modules/design-language.md
 # 28.8.2026: jumped 4 -> 8, skipping 5, 6 and 7, so the document number matches the
 # artwork generation. From here the read-through and the artwork carry the same number.
@@ -105,7 +138,7 @@ def glass(cx, cy, r, nxt):
         c.clipPath(path, stroke=0)
         im = Image.open(p); iw, ih = im.size
         h = r * 2.3; w = h * iw / ih
-        c.drawImage(ImageReader(p), cx - w / 2, cy - h / 2, w, h, mask='auto')
+        c.drawImage(ImageReader(small(p)), cx - w / 2, cy - h / 2, w, h, mask='auto')
     c.restoreState()
     c.setStrokeColor(HexColor("#9C7A31")); c.setLineWidth(3.2)
     c.circle(cx, cy, r, fill=0, stroke=1)
@@ -159,7 +192,7 @@ def cell(f, col, row):
         if h > avail:
             h = avail; w = h * iw / ih
         ix = x + (CW - w) / 2
-        c.drawImage(ImageReader(p), ix, y - h, w, h, mask='auto')
+        c.drawImage(ImageReader(small(p)), ix, y - h, w, h, mask='auto')
         c.setStrokeColor(RULE); c.setLineWidth(0.6)
         c.rect(ix, y - h, w, h, fill=0, stroke=1)
         src = SOURCES.get(f['id'])
@@ -252,7 +285,7 @@ if _live:
         if h > avail:
             h = avail; w = h * iw / ih
         ix = x + (CW - w) / 2
-        c.drawImage(ImageReader(pth), ix, top - 18 - h, w, h, mask='auto')
+        c.drawImage(ImageReader(small(pth)), ix, top - 18 - h, w, h, mask='auto')
         if slot == 3 or i == len(_live) - 1:
             pg[0] += 1
             c.setFont('M', 7); c.setFillColor(SOFT)
