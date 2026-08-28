@@ -26,6 +26,7 @@ Do not skip and do not reorder. Each one exists because something went wrong wit
 | 2 | `HANDOVER_V7.md` | the state of the whole production | always |
 | 3 | `STALE_CACHE.md` | a failure that cost hours and must never repeat | always |
 | 4 | `nanobanana.md` | everything learned about image generation | before generating any image |
+| 4b | `MANTRA_MANIFEST/modules/imgtoimg.md` | the platform Baba actually uses, and the coin ledger | before writing any prompt for imgtoimg.ai |
 | 5 | `VOICES.md` | Hume, the cast, which takes are real | before recording or retiming |
 | 6 | `ANIMATION.md` | the animator's site and layered packages | before touching animation |
 | 7 | `MANAN_TRAINING_DEVELOPMENT.md` | how the acting guide was built | if the guide comes up |

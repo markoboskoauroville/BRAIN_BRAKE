@@ -23,7 +23,7 @@ Helpers in this repo:
     tools/nanobanana_helper.py    gen(prompt, refs=(), aspect="16:9", size="2K", name=None)
     tools/mabanana                the same thing as a CLI
 
-**Do not use ImgToImg.ai or any other wrapper.** This file used to open by describing that platform
+**Do not use ImgToImg.ai or any other wrapper.** **SUPERSEDED 28.8.2026. THE PLATFORM IS IN USE AGAIN AND IS GOVERNED BY `MANTRA_MANIFEST/modules/imgtoimg.md`. READ THAT BEFORE WRITING A PROMPT FOR IT.** Baba works on a phone and the website is the tool he has in his hands; frames 1-1-v2 to 1-1-v6 were all made on it. The paragraph that follows is still true about what happened in August and is kept for that reason. This file used to open by describing that platform
 and its three modes. That is dead. A wrapper stalled at 95% on a prompt and it looked exactly like a
 Google safety block; the same prompt sent direct to Google returned `finishReason: STOP` and a clean
 image in 113 seconds. It was the wrapper's own quota and moderation layer, not the model. Everything
@@ -136,7 +136,9 @@ Write in this order, always. Plain sentences, no bullet points, no headings insi
 [5] THE FEELING. One sentence. "This is a discovery, not a warning."
 
 [6] THE MEDIUM. Graphite pencil on warm cream paper, loose hand drawn
-    lines, soft shading, sixteen by nine, thin dark border.
+    lines, soft shading, sixteen by nine. NO BORDER: the artwork runs
+    edge to edge. Corrected 28.8.2026, this line used to say "thin dark
+    border" and is the suspected cause of the border returning on 1-1-v5.
 
 [7] THE FRAMING. Wide shot, low camera, the boy small in the lower third.
 
@@ -173,7 +175,9 @@ The order of work matters more than the wording.
 Non-negotiable, and every prompt must satisfy it:
 
 - Graphite pencil on warm cream paper, loose hand drawn lines, soft shading.
-- 16:9, thin dark border.
+- 16:9, **no panel border**. The artwork runs to all four edges and Kristijan adds the frame
+  himself as its own layer. Corrected 28.8.2026, this line used to say "thin dark border",
+  which contradicted the rule added on 27.8 and outlived it by a day.
 - Humans are **realistic**, drawn as adults with adult proportions.
 - Cartoon is permitted **only** for Coach Brain and the Muscle.
 - **Manan is always photographic**, never drawn.
