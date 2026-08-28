@@ -444,7 +444,31 @@ frame holds where the camera is.
 
 ---
 
-## 11. OPEN QUESTIONS
+## 11. THE HOMAGE TO INDIA
+
+*Baba, 28.8.2026.*
+
+**The film is made in India.** Manan is in Bengaluru, Neha produces there, Venkatesh shot it there.
+Baba directs from Croatia and Kristijan animates in Zagreb, but the film is India's.
+
+**So one small homage, placed where it belongs and never pointed at.** In Coach Brain's control room,
+**on top of the console** — the mixer of all human energies he sits at — there is a small **Ganesha**
+in the middle, with **a few oil lamps** beside him. Tamil Nadu in feeling: brass or dark stone, the
+small standing lamps with the flame lip, marigold if anything at all.
+
+**Small. It is a desk shrine, not a set piece.** It sits in frame and is never mentioned, never
+lit specially, never cut to. Anyone who knows will see it. Ganesha is the remover of obstacles, and
+the whole film is about an obstacle that turns out to be a setting rather than a wall, so it belongs
+there twice over: as a thank you, and as the idea.
+
+**Where it goes.** Every control room frame in scene 4 and scene 6 that shows the top of the console:
+`V7_4_1_found_me`, `V7_4_2_level`, `V7_4_3_sensors`, `V7_4_4_one_question`, `V7_4_6b_not_sorry`,
+`V7_6_1_check_green`. It must be in the same place at the same size in all of them or it will flicker
+between cuts.
+
+---
+
+## 12. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
