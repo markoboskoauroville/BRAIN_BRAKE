@@ -35,7 +35,10 @@ if not os.path.exists(SRC):
     SRC = os.path.join(REPO, 'assets/train/frames_v4.json')
 IMG = os.path.join(REPO, 'assets/V7')
 # version at both ends, underscores, no spaces. see modules/design-language.md
-VERSION = 4
+# 28.8.2026: jumped 4 -> 8, skipping 5, 6 and 7, so the document number matches the
+# artwork generation. From here the read-through and the artwork carry the same number.
+# See MEMORY.md section 5 on the version tracks. v4 is not deleted, it stays in assets/pdf.
+VERSION = 8
 OUT = "/home/claude/out/%d-BRAIN_BRAKE_READ_THROUGH_v%d.pdf" % (VERSION, VERSION)
 os.makedirs("/home/claude/out", exist_ok=True)
 

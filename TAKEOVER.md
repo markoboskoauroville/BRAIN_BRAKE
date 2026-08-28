@@ -62,6 +62,8 @@ python3 22-brain-brake-v4.py         # the film        -> THE BRAIN BRAKE V4x.pd
 python3 21-manan-training-book-v4.py # acting guide    -> HOW TO ACT NATURALLY v4 - Manan.pdf
 python3 26-camera-guide-venkatesh.py # camera guide    -> CAMERA GUIDE - Venkatesh.pdf
 python3 27-scene-packages.py         # animator        -> 8 zips + animation/index.html cards
+python3 30-readthrough-4up.py        # read through    -> 8-BRAIN_BRAKE_READ_THROUGH_v8.pdf
+python3 tools/artwork_index.py       # the library     -> ARTWORK_INDEX.md
 ```
 
 `index.html` at the repo root is **not** generated. It is the public making of page, written by
@@ -79,7 +81,9 @@ Working layout the builders expect, because they use absolute paths:
 /home/claude/out/          <- where the PDFs land before being copied into assets/pdf/
 ```
 
-Version letters go up every rebuild. The film is on `V4f`. Never overwrite a published letter.
+Version letters go up every rebuild. The film document is on `V4i` on disk, although this line said `V4f` until 28.8.2026 and the artefact was three letters ahead of the doctrine. Never overwrite a published letter.
+
+**The read through is synced to the artwork.** On 28.8.2026 it jumped from `v4` straight to `v8`, skipping 5, 6 and 7, so that the read through and the artwork generation carry the same number. `8-BRAIN_BRAKE_READ_THROUGH_v8.pdf`. From here they move together. The film document letters are still their own track.
 
 **Artwork is a separate track and it is on `V8` from 28.8.2026**, opened by the scene 1 rebuild. New frames land in `assets/V8/`. `assets/V7/` stays exactly as it is and its frames still ship wherever V8 has not reached. Do not merge the two numbers: `V4f` is the document, `V8` is the pictures. See `MEMORY.md` section 5.
 

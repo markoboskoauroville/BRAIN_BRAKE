@@ -185,6 +185,16 @@ looking at. That line used to say V7 was superseded. It was wrong and it has bee
 `V4f`, which goes up on every rebuild of the PDF and has nothing to do with the artwork number. A
 conversation that says only "v8" is talking about the pictures.
 
+**The read through is now synced to it.** On 28.8.2026 the read through jumped from `v4` straight
+to `v8`, skipping three numbers, so the document and the artwork carry the same number and nobody
+has to translate between them. `VERSION` in `30-readthrough-4up.py` is the single place it is set.
+`4-BRAIN_BRAKE_READ_THROUGH_v4.pdf` is not deleted, it stays in `assets/pdf/` and on the animator
+site marked superseded, and its link still works.
+
+**And a doctrine fault found while doing it.** `TAKEOVER.md` said the film document was on `V4f`.
+The disk has `V4g`, `V4h` and `V4i`. The written rule was three letters behind the artefact, which
+is the same failure as the border line and the camera-left line before it. Corrected.
+
 **Still to do:** `HANDOVER_V7.md` becomes `HANDOVER_V8.md` when the state of the production is next
 written up, and `TAKEOVER.md` points at it. Not done yet, and it should not be done until scene 1 has
 actual V8 frames in it, or the handover will describe a generation that is empty.
