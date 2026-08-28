@@ -229,9 +229,14 @@ every frame that follows.
 | v5 | the road added, converging to a flat horizon | **the panel border came back** |
 | v6 | v5 with no border | **asked for, not yet made** |
 
-**The filename convention, so Baba never has to think.** Chat Claude gives the name every time, twice:
-above the prompt as `Save as: 1-1-v6.png`, and as the first line **inside** the prompt block, `FILE:
-1-1-v6.png`, so it travels with the paste into the image editor. The editor ignores that line.
+**The filename convention, so Baba never has to think.** Chat Claude gives the name every time,
+**once**, in a chip above the prompt: `Save as: 1-1-v6`. No extension, the save dialog adds it.
+
+**CORRECTED 28.8.2026. It used to be given twice**, the second time as a `FILE:` line inside the
+prompt block. That backfired: the prompt block is what gets tapped to copy, so the `FILE:` line was
+copied as the filename, macOS turned the colon into a hyphen, and `1-1-v9` arrived as
+`FILE- 1-1-v9.png` and was filed into `DOCS/` because the name no longer began with a digit.
+**Nothing goes inside a prompt block except the prompt.**
 
 Frame number with hyphens, then the next whole version, **always the next one, even for a tiny
 change**. A shot that does not exist in the film yet gets a letter on the frame number, so something
