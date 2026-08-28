@@ -80,6 +80,24 @@ Version letters go up every rebuild. The film is on `V4f`. Never overwrite a pub
 
 ---
 
+## 3b. RULES ADDED 27 AND 28 AUGUST
+
+- **Artwork is edge to edge. No panel border.** Kristijan adds the frame himself as its own layer.
+  Anything the old border was clipping gets restored.
+- **Never crop an overlay.** A picture placed over another is scaled and moved, never cut. Only the
+  frame crops. `nanobanana.md` item 9.
+- **Every change is a new version number, however small**, and **never overwrite a file that has left
+  the machine**. `1-1-v3.png` is v3 for ever. Whole numbers.
+- **No exports.** Timelines only, unless Baba asks in that message.
+- **One audio track.** Nobody speaks over anybody.
+- **Three second minimum shot length.** No shot shorter, whatever it holds.
+- **Colour management goes on the timelines, not the project**, all selected at once. V-Log is never
+  auto detected. `modules/resolve-color.md`.
+- **Never replace a span of a file by index.** Match the exact text and assert it was found. This
+  silently deleted a function and three constants on 28.8 and shipped broken.
+
+---
+
 ## 4. THE RULES THAT COST US SOMETHING
 
 - **Never hand over a chat artifact.** Commit, push, verify 200, then give the raw link.
@@ -107,21 +125,27 @@ Version letters go up every rebuild. The film is on `V4f`. Never overwrite a pub
 
 ## 5. WHERE EVERYTHING LIVES
 
+| repo | what it is | public? |
+|---|---|---|
+| `BRAIN_BRAKE` | **this one.** the film. script, artwork, footage stills, documents, builders | public |
+| `MANTRA_MANIFEST` | the studio. how things are done, and `EXCHANGE.md`, the handover to Claude Code | private |
+| `ANIMATOR_COLLABORATION` | Kristijan's site and his material, `BB_C_1` to `BB_C_8` | public, passphrase `kristijan` |
+| `WATCH_FOLDER_DAEMON` | the folder that pushes what Baba drops in it, and the `watch` menu | private |
+
+**On the Mac**
+
 ```
-assets/train/frames_v4.json     the film, the source of truth
-assets/train/lines_manan.json   derived, Manan's lines only
-assets/voice/final/             the six takes that are IN the film. Time against these only.
-assets/voice/auditions/         eighteen candidates and superseded takes. Never time against these.
-assets/V7/                      the frame images
-assets/pdf/                     everything published to the crew
-assets/props/                   the prop sheets
-animation/                      the animator's site, see ANIMATION.md
-animator/                       GONE. moved 28.8.2026, see below
-tools/                          nanobanana_helper.py, hume_helper.py, timecode.py, mabanana, mavoice
-NN-*.py                         the builders, numbered in the order they were written
+~/Developer/brain_break/            the working folder
+  Brain Break - Aurovenkatesh Footages/   77 GB, read only, never edited
+  _WATCH_FOLDER/                    drop a file here and it goes to the animator repo
+  MANAN_CLONED_VOICE/               the cleaned recording for cloning
+  animator_repo/                    a clone of ANIMATOR_COLLABORATION
+~/.watchfolder/                     the daemon: config, log, worker, and its own source clone
 ```
 
----
+**DaVinci Resolve.** `1-brainbreak_v1` holds everything built up to 27.8. `2-brainbreak_v2` is the
+current one, 25 fps 4K, colour managed, with `ANIMATIC` and the eight `S1_TAKES` to `S8_TAKES` reels.
+**Nothing outside the `ANIMATICS` bin and those reels is ever touched.**
 
 ## 5b. THE ANIMATOR MATERIAL HAS MOVED OUT OF THIS REPOSITORY
 
@@ -148,53 +172,38 @@ without a break.
 
 ## 6. STATE, AND WHAT IS STILL OPEN
 
-Updated **18.8.2026**, film at **50 frames, 2945 frames, 1:57.80, margin 2.20 s**.
-Shoot day is **18.8.2026** in Bengaluru.
+*28.8.2026.*
 
-**17.8. session.** Venkatesh found two written rules that disagreed with the artefacts and both were
-corrected: the key light is CAMERA RIGHT, not left, and 1.5 enters from camera left. Worse, the
-camera guide had invented its own four setup scheme while the film document already had A to H plus
-the exterior, so six frames were listed as grey that are shot in his room. Both documents now read
-one shared file, `assets/train/setups.json`. Published: camera guide v3, film V4g, acting guide v5
-with the label above each line removed. A bike reference image is at `assets/reference/`. The
-production site at the repo root had its passphrase gate removed and is now open.
+**The film.** Fifty frames, eight scenes, gap free numbering. `ANIMATIC` in `2-brainbreak_v2` runs
+**4354 frames, 00:02:54:04**, three second floor on every shot, one audio track. The two minute limit
+still governs the finished entry but does **not** govern this edit: Baba shortens it later with the
+whole film in front of him.
 
-**Kristijan is engaged at 1000 EUR** for animation, compositing and finishing only. Marko does all
-preparation, including keying Manan off the grey and delivering him cut out with an alpha channel.
-Kristijan never touches the grey footage and does not need a camera test. They will work in the same
-room in Zagreb once the material is prepared.
+**Sound.** Manan's session recording is cleaned and cut, `MANAN VOICE SAMPLE FOR CLONING.wav` and
+`MANAN VOICE SAMPLE EDITED.wav`, by cutting only, no gain and no filters. The six Coach Brain and
+worker takes in `assets/voice/final/` are already in the film.
 
-Done in the session before: Neha's three restored lines are in the film. Manan asks whether the brain
-is secretly pacing him at 4.4b. The ending is her original triplet at 8.6, 8.7 and 8.8. The Central
-Governor Theory is defined out loud at 4.8. To pay for them, 7.6, 8.5 and 6.3 came out. Scene 7 is
-now wordless and survives as three silent panels, so the film is still eight scenes and nothing was
-renumbered except old 8.8 and 8.9 becoming 8.9 and 8.10.
+**Pictures.** All twenty seven live stills are re-pulled through Resolve and are Rec.709, not log.
+`assets/live/SOURCES.csv` holds the clip and in-clip timecode for every one.
 
-Still open, in the order it will bite:
+**The read through** is `4-BRAIN_BRAKE_READ_THROUGH_v4.pdf`: four panels a page, drawn beside footage
+where both exist with the clip and timecode stamped, and an appendix of one clean frame per shot.
 
-1. **Manan's narration is not recorded.** Forty-four of fifty frames are estimated. When his audio
-   arrives, retime from the measured WAVs, set `measured: true`, run the whole rebuild chain, and
-   check the total against 2:00 before anything is sent to anyone.
-2. **4.4b and 4.8 have no plates.** They are live camera frames and only exist after the shoot.
-   They are in the packages and the camera guide, marked as shot on the day.
-3. **Manan's eyeline on some frames is unresolved.** 4.2 is marked `CAM`, meaning he speaks to
-   camera, but its reference shows him in profile looking at Coach Brain. The mode field and the
-   picture disagree and only Marko can say which is right. Check the rest of the `CAM` frames
-   against their references before the shoot.
-4. **Music and sound design have not started.** Marko is composing. This is half the film.
-5. **Kristijan has not quoted** for the reduced comic strip scope. Neha is handling it and Marko
-   deliberately stays out of that conversation so it does not read as pressure on price.
-6. **The production site at the repo root is stale and now public.** It describes the old six scene,
-   thirty five shot version with different lines, an old budget table and old delivery dates. The
-   passphrase is gone, so anyone with the link sees that. Rebuild it from `frames_v4.json` or take
-   it down.
-7. **Sound design and music have their own software to build.** That is the next phase and it
-   starts in a fresh session. Nothing exists for it yet.
-8. **The prop sheets cannot be rebuilt.** `23-prop-sheets.py` reads plate images from a working
-   directory that was never committed. The finished sheets in `assets/props/` are fine, but the
-   generator cannot be re-run. Same class of problem as the ones this file exists to prevent.
+### Open
 
----
+- **Manan's delivery.** He speaks inward, nasally, aimed at nobody. Plan is in
+  `MANAN_RECORDING_GUIDE.md`: generate his lines with Hume, let him copy the placement, take the
+  reference away before the take. Recording around the 5th or 6th of next month, after picture lock.
+  **Neha has been told and is waiting.** The reference recordings were promised to arrive *with* the
+  lines, so they must exist by then.
+- **Frame 1.1 is being reworked with Kristijan.** v2 removed the border, v3 fixed the eyes, v4 is
+  wanted with the forward lean restored. Nothing else has started.
+- **Scene 1 layers** exist for 1.1 to 1.5. No other scene has layers, and **breakdowns are now made
+  on request only**, through the tick boxes on the site.
+- **The ten 2400x1792 frames** are still 4:3 and were left alone deliberately, since they are
+  placeholders that real footage replaces.
+- **`CHOSEN.csv` and `MATCHES.csv`** were built before the renumbering. Every frame carries `old_id`
+  so they translate rather than being redone.
 
 ## 6b. THE PUBLIC SITE
 
