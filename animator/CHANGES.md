@@ -37,3 +37,7 @@ a step in between once it moves. Nothing made yet.
 ## 27.08.2026  scene 2
 
 - `2-5_watchtest_FG.png` — frame 2-5, transparent, left alone. **proposal**
+
+## 28.08.2026  scene 1
+
+- `1-1-v2.png` — frame 1-1, 2752x1536 cropped to 2731x1536. **proposal**
