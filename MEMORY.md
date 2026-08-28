@@ -267,7 +267,56 @@ published file is never edited in place.
 
 ---
 
-## 7. OPEN QUESTIONS
+## 7. THE THREE LEVELS: SCENE, SHOT, KEY FRAME
+
+*Baba, 28.8.2026. This changes the working vocabulary of the whole production, so it goes near the
+top of anyone's reading.*
+
+    SCENE       the largest division. Eight of them. "Scene 1, The Mystery."
+    SHOT        smaller. A shot lives inside a scene. 1.1 is a shot.
+    KEY FRAME   smaller again. A key frame lives inside a shot.
+
+**And the workflow changes with it. We now generate per shot, not per scene, and what we generate
+are key frames.** A shot is not one picture any more. It is a set of key frames, and the animation
+happens between them.
+
+**Why this follows from the strobe law.** The film is stepped, and stepping is drawn between poses.
+A shot that is one picture has nothing to step between. Naming the key frame as its own level is
+what makes the animation plannable at all, and it is what Kristijan actually needs handed to him:
+not "here is shot 1.1" but "here is where 1.1 starts and here is where it ends."
+
+**What Baba sent on 28.8.2026** was the panel marked `[ 1.1 ]` out of the read through: the spent
+runner, framed. He called it **the main key frame reference** for that shot. So a shot has one main
+key frame that establishes it, and others that come off it.
+
+### Naming, PROPOSED, NOT YET AGREED
+
+Written down so it is decided once rather than drifted into. **Nothing is generated under this until
+Baba confirms it.**
+
+    1-1-v7.png        the MAIN key frame of shot 1.1. The existing chain continues
+                      unbroken, versions never restart
+    1-1-K2-v1.png     a second key frame in shot 1.1
+    1-1-K3-v1.png     a third
+    1-2a-v1.png       a NEW SHOT between 1.2 and 1.3. Lowercase letter on the shot
+                      number, which is the existing rule and does not change
+
+The point of the capital K is that the existing lowercase-letter rule already means *a new shot*, so
+key frames need a mark that cannot be confused with it. `1-3a` is a shot. `1-1-K2` is a key frame
+inside a shot.
+
+### What this changes that has not been done yet
+
+- **The animator site says "Frames".** Under this vocabulary a scene page holds shots, and a shot
+  holds key frames. The page should say so. Not changed yet, because changing it before the naming
+  is agreed would mean changing it twice.
+- **`frames_v4.json` calls everything a frame** and its ids are shot ids. The word is now wrong even
+  though the data is right. Renaming the field would break every builder, so this is a documentation
+  fix and not a data one, unless Baba wants otherwise.
+
+---
+
+## 8. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
