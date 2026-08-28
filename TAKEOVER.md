@@ -205,6 +205,27 @@ where both exist with the clip and timecode stamped, and an appendix of one clea
 - **`CHOSEN.csv` and `MATCHES.csv`** were built before the renumbering. Every frame carries `old_id`
   so they translate rather than being redone.
 
+## 6c. WHERE FRAME 1.1 IS, AS OF 28.8.2026
+
+The first frame is being reworked with Kristijan, one version at a time, and this is the pattern for
+every frame that follows.
+
+| version | what it did | status |
+|---|---|---|
+| v2 | border removed, artwork to all four edges, head no longer clipped | superseded |
+| v3 | eyes fixed, level into the distance | superseded, went fully upright |
+| v4 | the forward lean restored | superseded, empty paper behind him |
+| v5 | the road added, converging to a flat horizon | **the panel border came back** |
+| v6 | v5 with no border | **asked for, not yet made** |
+
+**The loop.** Chat Claude writes a prompt and gives it a filename. Baba runs it in an image to image
+editor and drops the result in `_WATCH_FOLDER`. The daemon pushes it to `ANIMATOR_COLLABORATION`,
+files it by its leading number, and rebuilds the site. Chat Claude looks at it, writes its note into
+`catalog.json`, marks the previous one superseded, rebuilds and pushes. Baba never has to think about
+a filename or a version.
+
+---
+
 ## 6b. THE PUBLIC SITE
 
 `https://markoboskoauroville.github.io/BRAIN_BRAKE/` is a single page called **How we made The
@@ -221,6 +242,25 @@ Rules for it, and they are not negotiable:
 - The PDFs under `assets/pdf/` and the animator's site at `/animation/` still carry names in
   filenames and text. They were left alone because the crew are working from those links. Rename
   them once the shoot is delivered.
+
+## 6d. THE THREE THINGS THAT RUN ON THE MAC
+
+| what | how | notes |
+|---|---|---|
+| **watch folder daemon** | `watch` for the menu, `watch-update` to update | its own repo, `WATCH_FOLDER_DAEMON`. **Claude Code does not touch it**, see EXCHANGE step 61 |
+| **accessibility finger** | `1` sends the message in Claude, in Chrome | still Claude Code's, `com.mantra.brainbreak.finger` |
+| **Claude Code** | in `~/Developer/brain_break` | talks to chat Claude through `EXCHANGE.md` in the manifest |
+
+**The exchange protocol.** Chat Claude appends a numbered STEP to `MANTRA_MANIFEST/EXCHANGE.md` and
+pushes. Baba pastes *pull the manifest and do step N*. Claude Code does it, appends its `### REPORT`
+and pushes. Nothing is deleted from that file, so the whole history of instructions survives. The
+standing rules live at the **top** of it and override every step below.
+
+**Claude Code has been slow and dropping connections.** When it stalls, chat Claude does the work
+directly and pushes, which is faster. Claude Code is for the things chat Claude cannot reach: the
+77 GB of footage, DaVinci Resolve, and anything on the Mac.
+
+---
 
 ## 7. HOW TO CLOSE A SESSION
 
