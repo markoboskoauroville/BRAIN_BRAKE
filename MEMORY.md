@@ -486,7 +486,41 @@ between cuts.
 
 ---
 
-## 12. OPEN QUESTIONS
+## 12. THE BLACKBOARD, REDESIGNED
+
+*Baba, 28.8.2026. Applies to the blackboard's first appearance, scene 2.*
+
+**The blackboard now carries both theories side by side, not one.** Split it down the middle with a
+vertical chalk line.
+
+    LEFT        chalk drawing of a MUSCLE, and three facts under it
+    RIGHT       chalk drawing of a BRAIN, and three facts under it
+
+**Three facts a side, no more.** Each one is a short chalk line with the fact written under it in a
+big chalk hand. Not bullets, not dots: **a ruled line, then the words**. Big enough to read in a two
+minute film on a phone.
+
+**Why this replaces what was there.** The old blackboard carried only A. V. HILL 1923 and one line
+about fatigue starting in the muscle. That states the old theory and hides the new one, so the frame
+has nothing to argue with. Putting them side by side makes the blackboard the film's whole question
+in a single image, and it sets up the two cards in scene 7, which are the same pair of ideas
+returning as a verdict. See the glossary of symbols.
+
+**The content of the two sides** comes from what the film already says: the muscle theory is the 1923
+answer, that fatigue is a failure in the working tissue and the body stops because it has run out.
+The brain theory is the 1997 answer, that a governor in the brain ends the effort early while a
+reserve is still there. Exact wording to be settled with Baba before it is drawn, because chalk
+lettering is the least reliable thing this tool does and it should only be asked for once.
+
+**Craft note that decides how it gets made.** Six short phrases plus two headings is a lot of
+lettering in one frame, and long annotations scattered over a drawing come back as invented gibberish.
+So it is generated as **the board and the two drawings first, with the lettering positioned but
+minimal**, and any text that fails gets set as a separate layer rather than re-rolled. `nanobanana.md`
+on lettering, and `MEMORY.md` section 8: anything that has to be exact is its own layer.
+
+---
+
+## 13. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
