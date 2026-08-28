@@ -353,7 +353,56 @@ the answer is comes out before the frame is delivered, not after.
 
 ---
 
-## 9. OPEN QUESTIONS
+## 9. THE WHY LAW, AND HOW SCENE 1 IS CUT
+
+*Baba, 28.8.2026. This is the editing law of the whole film, not a note about one scene.*
+
+**The audience asks why, and then we answer.** Every cut in the film works this way. Show the effect
+first and let them want the cause. Never explain before they have asked. That is what moves the film
+forward and it is what decides shot order everywhere.
+
+### The hole this fixes
+
+He is finished, and then he runs. Nothing tells us why. The sprint has no motivation and the cut
+reads as arbitrary.
+
+### Why he is so tired, which was never stated anywhere
+
+**He does not know he is near the end.** He believes he still has ten kilometres to run. That belief
+is the reason the exhaustion is total: he is not spent at the finish, he is spent in the middle of
+what he thinks is still to come. The finish line is hidden behind trees, so he cannot see it.
+
+### The three shots, in order
+
+**One. The close up, and the emotion changes inside the shot.**
+He is almost dying. Head down, eyes on the ground. Then he slowly rises. He glimpses something behind
+the trees. His face changes. **All of this happens in one shot without a cut**, which is the whole
+point: the audience sees a man change and has no idea why.
+
+Because the change happens inside the shot, **this shot needs several key frames**, not one. At
+minimum: down and dying, rising, and the face after it changes. That is the first real use of the
+scene / shot / key frame structure in section 7.
+
+**Two. What he sees. His subjective view.**
+The finish banner, caught between the trees, the word FINISH on it. This is a point of view shot and
+it is the answer to the question the previous shot planted. It also explains the trees: he could not
+have seen it before, so his exhaustion was honest and not stupidity.
+
+**Three. He runs like a fresh man.**
+Not a tired man finding something left. A man who has just started the race. This is where the strobe
+drops and the animation goes to full frame rate, section 1a.
+
+### What this changes
+
+- Scene 1 has more shots than the five in `frames_v4.json`, and more will appear as the scene is
+  built. Numbering is decided when the shots are, not before.
+- The subjective shot is the film's first point of view frame. Whether it is drawn or photographed is
+  still open, section 10, and it matters more now: it is the only thing the audience is given as an
+  answer, so it has to read instantly.
+
+---
+
+## 10. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
