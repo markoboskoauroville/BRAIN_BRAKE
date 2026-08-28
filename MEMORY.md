@@ -402,7 +402,27 @@ drops and the animation goes to full frame rate, section 1a.
 
 ---
 
-## 10. OPEN QUESTIONS
+## 10. THESE FRAMES ARE THE FINISHED ARTWORK, NOT REFERENCE
+
+*Baba, 28.8.2026.*
+
+**Kristijan animates the delivered file itself.** He is not redrawing from it. So a key frame is not a
+guide that is close enough, it is the picture that ends up on screen, and it gets polished until it
+is right before it is handed over.
+
+**What that changes in practice.** Anything that would have been "fine as a guide" is now a reject:
+framing that drifts between key frames of the same shot, an element present in one key frame and
+absent in the next, artwork touching an edge it should not, a face that has moved. Across a shot
+where the emotion changes without a cut, **the framing must not move at all**, or the audience reads
+it as a camera move instead of the man rising.
+
+**And the cheapest way to hold framing is to feed the approved key frame back in as the reference for
+the next one in the same shot.** Not the character sheet. The sheet holds who he is; the previous key
+frame holds where the camera is.
+
+---
+
+## 11. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
