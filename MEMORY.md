@@ -195,6 +195,25 @@ site marked superseded, and its link still works.
 The disk has `V4g`, `V4h` and `V4i`. The written rule was three letters behind the artefact, which
 is the same failure as the border line and the camera-left line before it. Corrected.
 
+**V8 lives in the animator repository, not here.** From 28.8.2026 the read through has one home,
+`ANIMATOR_COLLABORATION/DOCS/`, and is no longer copied into `BRAIN_BRAKE` as well. New V8 artwork
+already lands in the animator repo, because the watch folder pushes there. So `assets/V8/` in this
+repository stays as a marker and the pictures live where the animator can reach them.
+
+**And the honest part, which matters more than the move.** Deleting the file from this repository
+does **not** make it smaller and never will. The 75 MB blob is already in the history and it stays
+there for ever. This is exactly what `TAKEOVER.md` section 5b already recorded when `animator/` was
+taken out and the repository did not shrink. What the move actually buys is that **v9, v10 and every
+one after cost 75 MB once instead of 150 MB twice.** It stops the bleeding, it does not heal it.
+`assets/pdf/` still holds read throughs v1 to v4 and the whole `THE BRAIN BRAKE V*.pdf` series, and
+the pack is 1.73 GB.
+
+**The only thing that would actually reclaim it is rewriting history**, with `filter-repo` or BFG and
+a force push. That was deliberately not done on 28.8.2026 when the animator folder moved out, and the
+reasoning then was to stop the growth rather than reclaim what is already spent. Nothing has changed
+that reasoning. It should not be done casually, and never without Baba saying so, because it rewrites
+every commit id and breaks every existing clone and every link that points at a commit.
+
 **Still to do:** `HANDOVER_V7.md` becomes `HANDOVER_V8.md` when the state of the production is next
 written up, and `TAKEOVER.md` points at it. Not done yet, and it should not be done until scene 1 has
 actual V8 frames in it, or the handover will describe a generation that is empty.

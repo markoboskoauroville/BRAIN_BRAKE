@@ -39,6 +39,11 @@ IMG = os.path.join(REPO, 'assets/V7')
 # artwork generation. From here the read-through and the artwork carry the same number.
 # See MEMORY.md section 5 on the version tracks. v4 is not deleted, it stays in assets/pdf.
 VERSION = 8
+# WHERE IT IS FILED. 28.8.2026: the read through has ONE home and it is the animator
+# repository, ANIMATOR_COLLABORATION/DOCS/. It is no longer copied into this repository
+# as well. Two copies of a 75 MB file meant every version cost 150 MB across the two
+# repos, permanently, because git keeps every blob for ever.
+HOME = "ANIMATOR_COLLABORATION/DOCS"
 OUT = "/home/claude/out/%d-BRAIN_BRAKE_READ_THROUGH_v%d.pdf" % (VERSION, VERSION)
 os.makedirs("/home/claude/out", exist_ok=True)
 

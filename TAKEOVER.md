@@ -63,6 +63,7 @@ python3 21-manan-training-book-v4.py # acting guide    -> HOW TO ACT NATURALLY v
 python3 26-camera-guide-venkatesh.py # camera guide    -> CAMERA GUIDE - Venkatesh.pdf
 python3 27-scene-packages.py         # animator        -> 8 zips + animation/index.html cards
 python3 30-readthrough-4up.py        # read through    -> 8-BRAIN_BRAKE_READ_THROUGH_v8.pdf
+                                     #   filed ONLY into ANIMATOR_COLLABORATION/DOCS/
 python3 tools/artwork_index.py       # the library     -> ARTWORK_INDEX.md
 ```
 
@@ -195,7 +196,8 @@ worker takes in `assets/voice/final/` are already in the film.
 **Pictures.** All twenty seven live stills are re-pulled through Resolve and are Rec.709, not log.
 `assets/live/SOURCES.csv` holds the clip and in-clip timecode for every one.
 
-**The read through** is `4-BRAIN_BRAKE_READ_THROUGH_v4.pdf`: four panels a page, drawn beside footage
+**The read through** is `8-BRAIN_BRAKE_READ_THROUGH_v8.pdf`, and **it lives in `ANIMATOR_COLLABORATION/DOCS/`,
+not in this repository**, from 28.8.2026. Four panels a page, drawn beside footage
 where both exist with the clip and timecode stamped, and an appendix of one clean frame per shot.
 
 ### Open
