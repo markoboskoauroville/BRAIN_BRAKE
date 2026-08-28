@@ -80,6 +80,8 @@ Working layout the builders expect, because they use absolute paths:
 
 Version letters go up every rebuild. The film is on `V4f`. Never overwrite a published letter.
 
+**Artwork is a separate track and it is on `V8` from 28.8.2026**, opened by the scene 1 rebuild. New frames land in `assets/V8/`. `assets/V7/` stays exactly as it is and its frames still ship wherever V8 has not reached. Do not merge the two numbers: `V4f` is the document, `V8` is the pictures. See `MEMORY.md` section 5.
+
 ---
 
 ## 3b. RULES ADDED 27 AND 28 AUGUST

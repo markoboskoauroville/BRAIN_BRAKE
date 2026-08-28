@@ -167,7 +167,30 @@ that.
 
 ---
 
-## 5. OPEN QUESTIONS
+## 5. THE FILM IS ON V8 FROM 28.8.2026
+
+*Confirmed by Baba, 28.8.2026.*
+
+**V8 is the eighth generation of artwork.** The generations on disk run `V3A, V4, V5, V6, V7`, and
+V7 was current until today. The scene 1 rebuild is what opens V8, so everything made from here lands
+in `assets/V8/`.
+
+**V7 is not deleted and not edited.** It stays as it is, because a published letter is never
+overwritten, and frames V8 has not reached yet are still V7 frames and still ship. The animator site
+carries **V8 DRAFT** in the bar on every page and a line at the top of the landing page saying so, so
+Kristijan is never looking at a page without knowing what generation it belongs to.
+
+**Two tracks, and they must not be merged.** V8 is artwork. The film document is on its own letter,
+`V4f`, which goes up on every rebuild of the PDF and has nothing to do with the artwork number. A
+conversation that says only "v8" is talking about the pictures.
+
+**Still to do:** `HANDOVER_V7.md` becomes `HANDOVER_V8.md` when the state of the production is next
+written up, and `TAKEOVER.md` points at it. Not done yet, and it should not be done until scene 1 has
+actual V8 frames in it, or the handover will describe a generation that is empty.
+
+---
+
+## 6. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
