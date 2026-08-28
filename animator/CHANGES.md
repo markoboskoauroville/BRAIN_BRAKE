@@ -41,3 +41,7 @@ a step in between once it moves. Nothing made yet.
 ## 28.08.2026  scene 1
 
 - `1-1-v2.png` — frame 1-1, 2752x1536 cropped to 2731x1536. **proposal**
+
+## 28.08.2026  inbox
+
+- `4-BRAIN_BRAKE_READ_THROUGH_v4.pdf` — no frame number in the name, so it went to inbox. **proposal**
