@@ -25,6 +25,7 @@ Do not skip and do not reorder. Each one exists because something went wrong wit
 | 1 | `TAKEOVER.md` | this file, the map | always |
 | 2 | `HANDOVER_V7.md` | the state of the whole production | always |
 | 3 | `STALE_CACHE.md` | a failure that cost hours and must never repeat | always |
+| 3b | `MEMORY.md` | the film's own memory: the strobe law, why scene 1 is being rebuilt | always |
 | 4 | `nanobanana.md` | everything learned about image generation | before generating any image |
 | 4b | `MANTRA_MANIFEST/modules/imgtoimg.md` | the platform Baba actually uses, and the coin ledger | before writing any prompt for imgtoimg.ai |
 | 5 | `VOICES.md` | Hume, the cast, which takes are real | before recording or retiming |
