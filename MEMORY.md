@@ -35,13 +35,30 @@ to full frame rate. No strobe. Smooth.**
 That is the payoff, and it only works because everything around it is stepped. The eye does not need
 to understand it to feel it: the film loosens exactly when the body is released.
 
-**It happens twice, and only twice.**
+**CORRECTED 28.8.2026. It happens three times, and it is the same sequence every time.**
 
-    1   the runner, when he sees the finish line and sprints
+    1   the runner, the moment he sees the finish line, before he sprints
     2   Manan, when he tries the bicycle
+    3   Coach Brain, at the line about the limit being a setting
 
-Two is the number. If it happens a third time it stops meaning anything. Anywhere else in the film,
-however good the moment, the animation stays strobed.
+**This section first said twice, and that a third time would kill it. Baba's call is three, and it is
+a stronger idea than the one it replaces**, because the three are not three similar moments. They are
+**the same sequence, copy pasted**. Identical frames, identical timing, three times. That is what
+turns it from an effect into a motif: the audience learns it on the runner, recognises it on the
+bicycle, and understands it when Coach Brain names it.
+
+**So it is built once and used three times.** One set of key frames, one folder, referenced from all
+three insert points. Never three versions of the same thing, or they drift and the recognition dies.
+
+**Rates.** Everything in the film is stepped at roughly **five to seven frames a second**. The muscle
+activation runs at **twenty five**. Anywhere else, however good the moment, the animation stays
+stepped.
+
+**The parkour material is absorbed into this sequence** and is no longer its own scene. The existing
+scene 6 artwork is the sequence in draft: `V7_6_4_one_fibre`, `V7_6_5_cluster`, `V7_6_6_leg_alight`,
+`V7_6_6_whole_leg`, `V7_6_7_whole_body`, `V7_6_8_pushing_off`, `V7_6_8_traceur`, `V7_6_9_the_leap`.
+Two of those, `traceur` and `the_leap`, are among the sixteen V7 frames made and never used. See
+`ARTWORK_INDEX.md`.
 
 **Kristijan has to be told this before he animates anything**, because it is not a note about one
 shot, it is the frame rate policy of the entire film and it changes how every scene is built. It is
@@ -88,6 +105,11 @@ missing *direction of attention*, and that is why the cut feels arbitrary rather
 
 **He sees the finish line between the trees.** That is the motivation. He sees it, he gets it back,
 the brake comes off, and he runs like a fresh man.
+
+**Between the seeing and the running, the muscle activation goes in.** Scene 1 runs: down and dying,
+he lifts, he sees, **cut to what he sees**, **cut to the muscle activation at full frame rate**, cut
+to him running fresh. The motif is the bridge from the internal state to the external one: the
+muscles come alive inside him, and only then does the outside of him change.
 
 Two new frames, between 1.2 and 1.3:
 
