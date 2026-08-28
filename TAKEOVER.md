@@ -232,11 +232,13 @@ every frame that follows.
 **The filename convention, so Baba never has to think.** Chat Claude gives the name every time,
 **once**, in a chip above the prompt: `Save as: 1-1-v6`. No extension, the save dialog adds it.
 
-**CORRECTED 28.8.2026. It used to be given twice**, the second time as a `FILE:` line inside the
-prompt block. That backfired: the prompt block is what gets tapped to copy, so the `FILE:` line was
-copied as the filename, macOS turned the colon into a hyphen, and `1-1-v9` arrived as
-`FILE- 1-1-v9.png` and was filed into `DOCS/` because the name no longer began with a digit.
-**Nothing goes inside a prompt block except the prompt.**
+**It is also the first line of the prompt block**, bare, followed by a blank line and then the
+prompt, so it travels with the paste.
+
+**CORRECTED 28.8.2026. It used to carry a `FILE:` prefix on that line.** That backfired: the prompt
+block is what gets tapped to copy, so the whole line was copied as the filename, macOS turned the
+colon into a hyphen, and `1-1-v9` arrived as `FILE- 1-1-v9.png` and was filed into `DOCS/` because
+the name no longer began with a digit. **The name goes in bare. No label in front of it.**
 
 Frame number with hyphens, then the next whole version, **always the next one, even for a tiny
 change**. A shot that does not exist in the film yet gets a letter on the frame number, so something
