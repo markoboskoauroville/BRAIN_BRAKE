@@ -50,9 +50,27 @@ bicycle, and understands it when Coach Brain names it.
 **So it is built once and used three times.** One set of key frames, one folder, referenced from all
 three insert points. Never three versions of the same thing, or they drift and the recognition dies.
 
-**Rates.** Everything in the film is stepped at roughly **five to seven frames a second**. The muscle
-activation runs at **twenty five**. Anywhere else, however good the moment, the animation stays
-stepped.
+### RATES ARE A LANGUAGE, NOT A SETTING
+
+*Extended 28.8.2026. The frame rate is not one stepped look with one exception. It is a scale, and
+where a shot sits on the scale is what it says.*
+
+    2 to 3 fps    STUCK.      The dying man. Barely moving, visibly stuttering,
+                              heavy posterisation. The brake fully on.
+    5 to 7 fps    THE DEFAULT. Everything else in the film. Something is not
+                              turning over cleanly.
+    8 to 10 fps   RELEASED.   He runs. Still stepped, but roughly three times the
+                              stuck rate, so the eye feels him come loose without
+                              being told.
+    25 fps        ALIVE.      The muscle activation only. Three times in the film,
+                              identical each time.
+
+**The rate rises as the brake comes off, and the audience reads it in the body without knowing why.**
+The opening is the clearest example: he is at two or three, stuttering, and by the sprint he is at
+eight to ten. Same technique, three times the rate, and the change alone carries the release.
+
+**Never smooth between tiers inside a shot.** The tiers are steps and the cut is where they change,
+except at the muscle activation, which is the one place the film goes fully smooth.
 
 **The parkour material is absorbed into this sequence** and is no longer its own scene. The existing
 scene 6 artwork is the sequence in draft: `V7_6_4_one_fibre`, `V7_6_5_cluster`, `V7_6_6_leg_alight`,
