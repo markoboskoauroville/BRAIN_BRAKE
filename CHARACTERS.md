@@ -55,10 +55,34 @@ drawn world, the plate carries a placeholder and his keyed footage goes in later
 
 ## THE RUNNER
 
-The marathon man of 1923. Drawn in graphite, gaunt, forty five, long face, heavy brow, deep set eyes,
-hair swept back, singlet with the number 27.
+The marathon man of 1923. Drawn in graphite, singlet with the number 27.
 
-**Human sheet:** `assets/sb/char-runner.jpg`.
+### THE FACE, LOCKED 28.8.2026
+
+**Why this exists.** Until today the only description of this man's face in the whole production was
+nine words — *long face, heavy brow, deep set eyes, hair swept back* — repeated verbatim in five
+documents. That is a category, not a face. The model filled the gap with the most familiar face that
+fits the category, which is how the frames ended up looking like a well known actor and why he
+changed between every version. **A face that is not specified will be invented, differently, every
+time.**
+
+Read this as one block into any prompt that draws him. Do not paraphrase it and do not shorten it.
+
+> A gaunt man of forty five with a long narrow skull and a high flat forehead. The eyes are set wide
+> apart and deep under a heavy straight brow ridge, with two vertical creases cut between the brows.
+> The nose is long and straight with a flattening at the bridge, as though it was broken years ago
+> and set badly. The cheekbones are high and wide and there are deep hollows beneath them. The jaw is
+> narrow and the chin is small and square. The mouth is wide and thin with the corners turned down.
+> The hair is dark and fine, cut short at the sides and swept straight back off the forehead, receding
+> at the temples. The skin is weathered, a man who has spent his life outdoors.
+
+**The three that carry the identity** and must never be dropped from a prompt: **the flattened bridge
+of the nose**, **the wide-set deep eyes under a straight brow**, and **the narrow jaw under wide
+cheekbones**. Those three are what stop him becoming a generic gaunt man again.
+
+**Sheets:** face sheet and body sheet, being made 28.8.2026. `assets/sb/char-runner.jpg` is the old
+human sheet and `assets/REFERENCES/RUNNER.jpg` is the four view body sheet, neither of which contains
+a face at a size that can hold an identity.
 
 ---
 
