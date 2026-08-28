@@ -147,10 +147,23 @@ views: front, three quarter, profile, rear. Lean man of about forty five, single
 man running, and `RUNNER_END_REF.jpg`.
 
 **What it does not have is a face.** Every view on the sheet is full body, so the head is small and
-carries no detail. **That is why the face has drifted through every version of frame 1.1.** v3 fixed
-the eyes, v4 restored the lean, v5 held, and v6 came back as a visibly different man with a longer
-face and a startled stare. Nothing anywhere holds his identity at portrait scale, so each run invents
-it again.
+carries no detail. Nothing anywhere holds his identity at portrait scale, so every run has to invent
+the head again.
+
+**CORRECTED 28.8.2026, and the correction is mine.** This section first said v6 came back as a
+visibly different man with a startled stare, and that the spent heavy lidded performance won in v3
+and v4 had been thrown away. That was overstated. Put the original `V7_1_1_face.jpg` beside v5 and
+v6 at head size and **the original is already wide eyed and staring**, with the same round eye and
+the same white showing that I criticised in v6. v6 did not invent a new man. It drifted back toward
+the original one. v5 is the outlier of the three, not v6.
+
+**What is still true about v6** is the part that has nothing to do with the face: the head turned,
+the framing pushed in and the road was rebuilt to a single vanishing point, none of which was asked
+for. The lesson about edit prompts stands. The verdict on the man was wrong.
+
+**And which eye the film wants is Baba's call, not mine.** The spent look and the staring look are
+both defensible and they are different films. It should be decided once, on the face sheet, and then
+every frame inherits it.
 
 **So before scene 1 is rebuilt, the runner needs a face sheet.** One head, several angles, at a size
 where the features are actually drawn. Generated once from the strongest existing face and then never
