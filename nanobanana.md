@@ -108,7 +108,7 @@ Read this table before blaming the prompt.
 | Characters at the wrong scale, two heads tall | The model sheet was cartoon-proportioned | Redraw the sheet from the hero frame that is right, not the reverse |
 | Location drifts between shots of the same room | No empty location sheet exists, only heroes with characters in them | Make an **empty location sheet** before breaking a scene into shots |
 | An object different in every frame | It has no sheet. The dial appeared in eight shots with a different face each time | One sheet per recurring object, with its states drawn on it |
-| Text on a board unreadable or invented | Long chalked sentences | Keep board text to **four short words maximum**, in a whitelist |
+| Text on a board unreadable or invented | Text was left unspecified, so the model filled the gap | **Specify every word that appears.** See the 28.8.2026 finding: text that is dictated comes back correct, text that is left to the model comes back as gibberish |
 | An instrument aimed at nothing, raised for the camera | A hand was holding it. Arm pose is a property of the figure, aim is a relationship between two objects, and the property wins | **Remove the hand.** Let the instrument lie on the thing it is examining and let a fragment of the character enter at the frame edge |
 | A lens, glass or window comes back empty | Its contents were named after the object instead of as the subject | Give the interior as many words as the surface around it |
 | The exact thing you forbade appears in the picture | You named it. The model renders nouns and ignores the word in front of them | **Never write a negation.** Describe the crop positively until there is no room for the unwanted thing |
@@ -722,6 +722,28 @@ eight exact short phrases as the only words allowed on the sheet and the model d
 **CORRECTED THE SAME DAY, AND THIS IS THE USEFUL VERSION.** The six script zero boards came back with
 lettering that is clean, correctly spelled and well placed, including full sentence captions under every
 panel. So the tool **can** letter, and letters well. What decides it is the job:
+
+**28.8.2026 — SETTLED, AND IT IS BETTER NEWS THAN THE ABOVE. Nano Banana Pro letters well. Give it
+the exact words and it writes them.** Three results the same day, unprompted by any special
+technique:
+
+- the runner's face sheet came back captioned `1. FRONT VIEW`, `2. THREE-QUARTER VIEW (L)`,
+  `3. PROFILE VIEW (L)` — correct, well placed, correctly spelled, and it had only been given three
+  bare words
+- frame `1-2b-v1` put a legible `FINISH` on a banner the size of a fingernail at the end of an avenue
+- the same face sheet invented a title and a line of gibberish small print **in the places where no
+  text had been specified**
+
+**That third one is the whole rule.** The gibberish was not a failure of lettering, it was the gap
+filling law from section 2 applied to words: **an unspecified caption is filled with the most
+plausible looking thing, which is noise.** So the fix is not less text, it is more specification.
+
+**Dictate every word that will appear, and say where each one goes.** If a board wants six phrases,
+give all six verbatim and give their positions. Do not ration words out of fear. Ration only the
+places where words are left to chance.
+
+*This supersedes the caution above about keeping board text to four short words. That was written
+before we had measured it.*
 
     short label in a fixed place        reliable. FRONT VIEW, ABSORBED, EPIPHANY,
                                         SCENE 4 OF 9, a caption under a panel.

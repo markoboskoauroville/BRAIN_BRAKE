@@ -512,11 +512,14 @@ The brain theory is the 1997 answer, that a governor in the brain ends the effor
 reserve is still there. Exact wording to be settled with Baba before it is drawn, because chalk
 lettering is the least reliable thing this tool does and it should only be asked for once.
 
-**Craft note that decides how it gets made.** Six short phrases plus two headings is a lot of
-lettering in one frame, and long annotations scattered over a drawing come back as invented gibberish.
-So it is generated as **the board and the two drawings first, with the lettering positioned but
-minimal**, and any text that fails gets set as a separate layer rather than re-rolled. `nanobanana.md`
-on lettering, and `MEMORY.md` section 8: anything that has to be exact is its own layer.
+**Craft note. Give it all eight pieces of text, verbatim, with positions.** Baba's call on 28.8.2026
+and the measurements back him: the tool letters well when it is told exactly what to write, and only
+invents gibberish where text was left unspecified. So the board is generated in one go with every
+word dictated, not built up in passes with the lettering rationed. See the 28.8.2026 finding in
+`nanobanana.md`.
+
+**What that means for us: the six phrases have to be written before the prompt is.** They are the
+prompt. Exact wording from Baba.
 
 ---
 
