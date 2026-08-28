@@ -35,7 +35,7 @@ if not os.path.exists(SRC):
     SRC = os.path.join(REPO, 'assets/train/frames_v4.json')
 IMG = os.path.join(REPO, 'assets/V7')
 # version at both ends, underscores, no spaces. see modules/design-language.md
-VERSION = 3
+VERSION = 4
 OUT = "/home/claude/out/%d-BRAIN_BRAKE_READ_THROUGH_v%d.pdf" % (VERSION, VERSION)
 os.makedirs("/home/claude/out", exist_ok=True)
 
@@ -202,6 +202,39 @@ for i, f in enumerate(frames):
         c.setFont('M', 7); c.setFillColor(SOFT)
         c.drawRightString(W - M, 14, str(pg[0]))
         c.showPage(); bg()
+
+# ---- appendix: one clean frame per live shot, four to a page, for Kristijan
+_live = [f for f in frames if f['layer'] in ('LIVE', 'BOOTH')
+         and os.path.exists(os.path.join(REPO, 'assets/live',
+                                         f['id'].replace('.', '_') + '_LIVE.jpg'))]
+if _live:
+    c.setFont('DB', 26); c.setFillColor(INK)
+    c.drawCentredString(W / 2, H / 2 + 16, "THE FOOTAGE")
+    c.setFont('D', 11.5); c.setFillColor(SOFT)
+    c.drawCentredString(W / 2, H / 2 - 8, "one frame per shot, clean, for pulling into tests")
+    c.setFont('M', 8.5)
+    c.drawCentredString(W / 2, H / 2 - 34, "%d shots" % len(_live))
+    c.showPage(); bg()
+    for i, f in enumerate(_live):
+        slot = i % 4
+        col, row = slot % 2, slot // 2
+        x = M + col * (CW + GX)
+        top = H - M - row * (CH + GY)
+        c.setFont('MB', 9); c.setFillColor(ACC)
+        c.drawString(x, top - 10, f['id'])
+        pth = os.path.join(REPO, 'assets/live', f['id'].replace('.', '_') + '_LIVE.jpg')
+        im = Image.open(pth); iw, ih = im.size
+        w = CW; h = w * ih / iw
+        avail = CH - 18
+        if h > avail:
+            h = avail; w = h * iw / ih
+        ix = x + (CW - w) / 2
+        c.drawImage(ImageReader(pth), ix, top - 18 - h, w, h, mask='auto')
+        if slot == 3 or i == len(_live) - 1:
+            pg[0] += 1
+            c.setFont('M', 7); c.setFillColor(SOFT)
+            c.drawRightString(W - M, 14, str(pg[0]))
+            c.showPage(); bg()
 
 c.setFont('H', 26); c.setFillColor(INK)
 c.drawCentredString(W / 2, H / 2, "The limit is a setting, not a wall.")
