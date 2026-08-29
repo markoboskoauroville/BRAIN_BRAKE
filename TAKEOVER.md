@@ -298,3 +298,36 @@ Do all four. This is the part that was missing before.
    open.
 4. Update the file that owns whatever you touched. Images changed, `nanobanana.md`. Voice changed,
    `VOICES.md`. Animation changed, `ANIMATION.md`. Film state changed, `HANDOVER_V9.md`.
+
+---
+
+## 9  WRITE IT DOWN AS YOU GO, NOT AT THE END
+
+**Rule added 28.8.2026, and it was paid for.** `HANDOVER_V7.md` sat second in the reading order for
+twelve days describing a 49 frame film with a factory in it, a shoot that had not happened and eight
+scenes. Every fresh session read it and started from a film that no longer existed. It was stale
+because updating it was a close-out job, and a close-out job is the one that gets skipped when a
+session runs long or drops.
+
+**So the handover is updated after every step, not at the end of the session.**
+
+**After each step, before moving to the next, ask one question: is anything in `HANDOVER_V9.md` or
+`TAKEOVER.md` now wrong?** If yes, correct it in place, in a sentence or two, and push with the work.
+Not a rewrite. One line moved from open to done, one number changed, one new law recorded.
+
+    a frame was accepted        the phase list and what is built
+    a law was decided           the laws section
+    something was deleted       what was deleted
+    a tool was written          what exists now
+    an open item was closed     the open list, and say what closed it
+    a document was superseded   the reading order, immediately
+
+**Two lines updated in the moment beat a perfect rewrite that never happens.** The failure mode is
+never a badly written handover, it is a handover nobody updated because the session ended badly.
+
+**A correction is written in place with a note saying what changed**, never silently. And if a
+document is superseded, mark the old one at the top the same hour, because a superseded document that
+does not say so is worse than no document.
+
+**This applies to Claude Code as much as to chat Claude.** See the standing rules at the top of
+`EXCHANGE.md`.
