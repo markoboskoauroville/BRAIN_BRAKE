@@ -35,7 +35,7 @@ reference recordings were promised to arrive with his lines.
     11  THE NEW THEORY        Whiteboard, black marker. The inversion. Then the key.
     12  IT IS A SETTING       Fresh again, then the fourth wall.
 
-**Phase 1 is built and locked. Phase 6 has three frames**, 28.8.2026: the corridor of named doors, the pump hall and the bellows, all on the site as scene 6. Everything else is still a placeholder pulled from the old library.
+**Phase 1 is built and locked. Phase 6 has five frames**, 28.8.2026: the corridor of named doors, the pump hall, the bellows, the control room, and Coach Brain at the desk. Three object sheets go with it, the desk, the chair and the clay wall, so the room can be redrawn from any angle. Everything else is still a placeholder pulled from the old library.
 
 ### What was deleted
 
