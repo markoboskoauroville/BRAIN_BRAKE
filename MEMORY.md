@@ -578,7 +578,54 @@ from the existing library and say so under the picture.
 
 ---
 
-## 14. OPEN QUESTIONS
+## 14. THE HOUSE OF THE BODY
+
+*Baba, 28.8.2026. Phase 6 of V9, and it replaces the factory.*
+
+**He goes through a door of light and walks inward through the body, room by room, until he reaches
+the brain.** Each room is one thing the brain is monitoring. The corridor is the journey from the
+edge of the body to the thing in charge of it.
+
+### THE ROOMS ARE COACH BRAIN'S OWN LINE
+
+Coach Brain already says, in scene 4: **"Heart rate. Breath. Temperature. Water. Distance."** That is
+the list, and it was written before this idea existed. **Build the rooms out of it.** Then when he
+says the line, the audience has already been in those rooms and it lands as a recognition rather than
+a list. The film's why law, run backwards: they are given the answer first and the question later.
+
+    THE FURNACE      temperature. A boiler with one big brass thermostat dial.
+    THE CISTERNS     water. Standing tanks, condensation, one slow drip.
+    THE TANKS        fuel, glucose. ALREADY DRAWN, V7_3_4_tanks. The stores standing
+                     full while the man says he is empty.
+    THE PUMP HALL    heart rate. One great piston turning over, slow and enormous,
+                     pressure gauges along the wall.
+    THE BELLOWS      breath. A vast bellows rising and falling, filling the room.
+    THE COUNTERS     distance. A wall of odometer wheels ticking over, always
+                     counting, never stopping.
+    THE CONTROL ROOM the brain. Coach Brain at the console. The end of the corridor.
+
+**Two more that are not on his list but are the road there:** the muscle, which we already have as
+the fibre corridors from the activation sequence, walls of cable running away in both directions; and
+the tendons, a room of steel ropes over pulley wheels, taut and shining.
+
+### HOW IT IS SHOT, BECAUSE THIS IS A TWO MINUTE FILM
+
+**He does not enter every room.** He walks a corridor and most doors flash past, each with a name
+painted on it. He goes *into* three or four at most. That gives a whole body for the price of a few
+frames, and the doors he does not open still say the body is bigger than what we see.
+
+**Nano Banana letters reliably when the words are dictated**, settled 28.8.2026, so painted door signs
+are cheap and safe. Give every word.
+
+### WHY THE FACTORY BECAME THIS
+
+The factory was a building he walked into. This is his own body seen from inside, which is the same
+idea told properly: the door nobody opens is not at the back of a warehouse, it is behind his own
+eyes. The tanks survive because they were always the best thing in the factory. Everything else goes.
+
+---
+
+## 15. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
