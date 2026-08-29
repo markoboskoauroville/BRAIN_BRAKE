@@ -523,7 +523,62 @@ prompt. Exact wording from Baba.
 
 ---
 
-## 13. OPEN QUESTIONS
+## 13. V9. THE WHOLE FILM RESTRUCTURED
+
+*Baba, 28.8.2026. This replaces the eight scene structure. Scene 1 is untouched and locked.*
+
+**Twelve phases, in order:**
+
+    1   THE RUNNER            scene 1, LOCKED. A man at the end of himself sees a finish
+                              line and runs like he just started. A real thing, before any theory.
+    2   HE TRIES IT HIMSELF   Manan on a real bicycle on a real road. Curious, not convinced.
+    3   RACING HIMSELF        Home, on the trainer, his own best ride playing on the laptop.
+                              He is competing with a recording of himself.
+    4   HE IS DONE            Nothing left. He cannot go on.
+    5   HE CLOSES HIS EYES    He stops, breathes, relaxes. This is the way in.
+    6   A DOOR OF LIGHT       Inside his head. Gold light pouring through the gap.
+    7   HE WALKS INTO IT      White. Nothing else. He is inside the light.
+    8   GANESHA               Rises out of the white, grows, and is gone.
+    9   COACH BRAIN           The light fades and he is in the room.
+                              "What happened?"  "I pulled the brakes on you."
+    10  THE OLD THEORY        Manan explains what he read. Blackboard, white chalk.
+    11  THE NEW THEORY        Coach Brain answers. Whiteboard, black marker. Then the key.
+    12  IT IS A SETTING       Back on the bike, fresh. Fourth wall. "Not a wall. A setting."
+
+### THE FACTORY IS DELETED
+
+**The whole factory scene goes.** The door survives and becomes the door of light inside his head,
+which is a better version of the same idea: the thing nobody opens is not at the back of a building,
+it is behind his own eyes. `V7_3_1_factory_empty`, `V7_3_4_tanks` and the rest of scene 3 come out.
+The tanks stay in the glossary as a symbol because they are still a good image, but they are not in
+the film.
+
+### THE INVERSION, AND IT IS THE BEST IDEA IN V9
+
+**Old theory: blackboard, white chalk. New theory: whiteboard, black marker.** Same information,
+inverted surface and inverted mark. The audience feels the reversal before they follow the argument,
+which is the same trick as the frame rate: the form carries the meaning and nobody has to be told.
+
+**And the chalk draws itself while he speaks.** Manan explains and the board fills in at the same
+time, in step with the words. Not a cut to a finished board. The whiteboard answers the same way.
+
+### GANESHA IS NOW IN THE FILM, NOT ONLY ON A DESK
+
+Section 11 had him as a small murti on Coach Brain's console. He is now a moment: he rises out of the
+white, grows, and is gone. Never explained, never mentioned, never cut back to. The reference is the
+watercolour Baba chose, in the glossary. Both placements can stand together, the murti on the console
+and the appearance in the light, but the appearance is the one that matters.
+
+### WHAT THE SITE DOES NOW
+
+The homepage is the **flow**: twelve hero pictures in order, a line each, so Kristijan understands the
+film in five seconds. Everything that used to be on the homepage moved to **breakdown**. Only phase 1
+links into a scene, because only scene 1 is built. The other eleven carry a placeholder plate pulled
+from the existing library and say so under the picture.
+
+---
+
+## 14. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
