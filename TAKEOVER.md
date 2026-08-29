@@ -23,7 +23,7 @@ Do not skip and do not reorder. Each one exists because something went wrong wit
 | # | File | What it is | Read it when |
 |---|------|-----------|--------------|
 | 1 | `TAKEOVER.md` | this file, the map | always |
-| 2 | `HANDOVER_V7.md` | the state of the whole production | always |
+| 2 | `HANDOVER_V9.md` | the state of the whole production | always |
 | 3 | `STALE_CACHE.md` | a failure that cost hours and must never repeat | always |
 | 3b | `MEMORY.md` | the film's own memory: scene/shot/key frame, the strobe law, the scene 1 rebuild | always |
 | 3c | `ARTWORK_INDEX.md` | every generation of artwork, what is in the cut, what is spare | before generating any image |
@@ -297,4 +297,4 @@ Do all four. This is the part that was missing before.
 3. Update section 6 above: the frame count, the running time, the margin, what was done, what is
    open.
 4. Update the file that owns whatever you touched. Images changed, `nanobanana.md`. Voice changed,
-   `VOICES.md`. Animation changed, `ANIMATION.md`. Film state changed, `HANDOVER_V7.md`.
+   `VOICES.md`. Animation changed, `ANIMATION.md`. Film state changed, `HANDOVER_V9.md`.

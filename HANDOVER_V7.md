@@ -1,5 +1,10 @@
 # HANDOVER_V7.md
 
+> **SUPERSEDED 28.8.2026 BY `HANDOVER_V9.md`. DO NOT PLAN FROM THIS FILE.**
+> It describes a 49 frame film with a factory in it, a shoot that had not happened, and eight
+> scenes. All three are now wrong. It is kept because nothing is deleted and because it is an
+> accurate record of where the film stood on 16.8.2026.
+
 > **READ `TAKEOVER.md` FIRST.** It is the front door: the reading order, the one source of truth,
 > the rebuild chain, the rules that cost us something, and the current state. This file is step 2
 > of that order. If anything here disagrees with `TAKEOVER.md`, the takeover is newer and wins.
