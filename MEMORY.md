@@ -617,6 +617,42 @@ frames, and the doors he does not open still say the body is bigger than what we
 **Nano Banana letters reliably when the words are dictated**, settled 28.8.2026, so painted door signs
 are cheap and safe. Give every word.
 
+### THE WALLS ARE MADE OF THE ORGAN
+
+*Baba, 28.8.2026. This is the rule that makes the rooms work and it applies to every one of them.*
+
+**A room does not just contain the organ. Its walls are built of the organ's own surface.** Not
+labelled, not explained, not lit specially. You walk into a room and the walls tell you where you are
+before anything else in the frame does.
+
+    THE CONTROL ROOM   walls of walnut folds. The convoluted surface of a brain, in
+                       relief, running behind the consoles and the dials.
+    THE PUMP HALL      walls of smooth muscular chambers, thick and slightly domed,
+                       with great cords crossing them like the tendons inside a heart.
+    THE BELLOWS        walls that branch. Passages dividing into smaller passages and
+                       smaller again, the bronchial tree as architecture, ending in
+                       clustered alveolar hollows.
+    THE CISTERNS       walls of fine tubing and channels, everything wet, condensation
+                       running, the surface of something that carries fluid.
+    THE FUEL TANKS     already drawn. Keep the standing tanks, but the walls behind
+                       them get the packed granular texture of stored glycogen.
+    THE COUNTERS       walls of long parallel bundles, the striations of muscle fibre
+                       running the length of the room, because distance is measured in
+                       strides and strides are muscle.
+    THE TENDONS        walls of dense parallel cable, silvered and taut, the collagen
+                       bundle at architectural scale.
+    THE FURNACE        walls of capillary networks, fine branching vessels flushed and
+                       carrying heat, the surface of skin from the inside.
+
+**Why it matters more than decoration.** The film's whole argument is that the body is a system being
+managed, and a corridor of identical iron rooms says nothing. Rooms built of their own tissue say the
+building IS him, which is the idea the phase exists to carry. It also means every room reads
+instantly, in a film that gives each one about two seconds.
+
+**Keep it architectural, not medical.** Relief in the plaster, texture in the brickwork, moulding in
+the shape of the tissue. It should look like a building an engineer designed, not an anatomy plate on
+a wall. The graphite hand does the rest.
+
 ### WHY THE FACTORY BECAME THIS
 
 The factory was a building he walked into. This is his own body seen from inside, which is the same
