@@ -553,6 +553,35 @@ it is behind his own eyes. `V7_3_1_factory_empty`, `V7_3_4_tanks` and the rest o
 The tanks stay in the glossary as a symbol because they are still a good image, but they are not in
 the film.
 
+### THE STYLE OF BOTH BOARD SEQUENCES IS RSA ANIMATE
+
+*Baba, 28.8.2026. Phases 10 and 11, and it is a reference, not an inspiration: copy it.*
+
+**RSA Animate**, made by **Cognitive Media**, drawn by **Andrew Park**. A speaker talks and a hand
+draws the whole argument on a board in fast motion, in marker, building one continuous mural. The
+series ran on the Royal Society of Arts channel from 2010 and passed 100 million views by 2025.
+
+**Why it is exactly right for us.** The film's problem in phases 10 and 11 is two theories explained
+in about twenty seconds each. RSA Animate solved that problem: the drawing IS the explanation, so the
+audience is never waiting for a talking head to finish. It also matches what is already decided here
+— the chalk draws itself while Manan speaks, and the marker answers on the whiteboard.
+
+**What to copy, precisely:**
+
+- **the hand is in shot**, drawing. Not a finished board revealed by a cut
+- **one continuous surface**, filled left to right, never cleared. The whole argument
+  ends up visible at once, as a single mural
+- **pictures carry the argument, words only label it.** Short words, big, in the
+  drawing's own hand, never sentences
+- **little cartoons and symbols**, not diagrams. A running man, an arm, a brain,
+  a lever. Ours already has all of them in the glossary
+- **fast motion**, the drawing racing slightly ahead of the voice
+- **objects connect**: arrows, brackets, one drawing growing out of another
+
+**And our inversion still holds on top of it.** Manan's old theory is white chalk on a blackboard.
+Coach Brain's new theory is black marker on a whiteboard, which is the RSA Animate surface exactly.
+Same technique, inverted, so the newer answer literally arrives on the newer board.
+
 ### THE INVERSION, AND IT IS THE BEST IDEA IN V9
 
 **Old theory: blackboard, white chalk. New theory: whiteboard, black marker.** Same information,
