@@ -846,7 +846,34 @@ on.
 
 ---
 
-## 18. OPEN QUESTIONS
+## 18. THE KEY IS THE ONLY COLOUR IN THE FILM
+
+*Baba, 30.8.2026.*
+
+**Everything drawn is grey graphite on warm cream paper. One object is gold: the key.** Nothing else
+in the film has any colour at all, and the photographed material is the only other place colour
+exists.
+
+**Why it works.** The film has spent its whole length teaching the eye that drawn means thought and
+unmarked paper means light. Introducing exactly one coloured object into that system makes it the
+loudest thing on screen without raising its size, its lighting or its screen time. It is the same
+economy as the frame rate: change one property, say something.
+
+**And it is the right object.** The key is permission. Coach Brain wears it round his neck from his
+first appearance, so by the time he offers it, the audience has seen it a dozen times without being
+told what it is. That is the film's why law again: the answer sits in plain sight, then the question
+arrives.
+
+**Where it appears:** on the chain in the Coach Brain character sheet, in `V7_8_5_key`, and in the
+hand-to-hand plate `11-1-A-v3`. **The chain is never gold, only the key**, and the moment the chain
+takes the colour it stops being an object and becomes decoration.
+
+**Nothing else is ever given colour.** Not the light, not the fire in the muscle, not the gauge
+needle. If something needs emphasis, it gets frame rate, scale or emptiness.
+
+---
+
+## 19. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
