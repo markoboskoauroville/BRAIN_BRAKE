@@ -711,7 +711,61 @@ eyes. The tanks survive because they were always the best thing in the factory. 
 
 ---
 
-## 15. OPEN QUESTIONS
+## 15. THE SACRED SIGNS ALREADY IN THIS FILM
+
+*28.8.2026, after Baba brought Romano Guardini's Sveti znakovi. Full argument is a new chapter in
+the WINNING_FILM book, Universal symbols drawn from Christianity.*
+
+**Guardini's distinction: an EMBLEM is a badge whose meaning is assigned and which works by
+membership; a SIGN is read by the body directly and cannot exclude anybody.** A cross is an emblem. A
+door is a sign. Take the signs, leave the emblems.
+
+**This film is already full of them, and it got there without knowing.** That is worth saying plainly,
+because it means the instinct is right and the job now is to sharpen what is there rather than add
+anything.
+
+    THE DOOR          the door nobody opens, then the door of light. Guardini's
+                      first and strongest sign, and it is already the hinge of
+                      the whole middle of the film.
+    THE THRESHOLD     he walks INTO the light in phase 7. That is a crossing,
+                      not a door, and it is the sign we are using least well.
+    LIGHT AND GLOW    Guardini separates them and so does the film without
+                      meaning to: the flood from the doorway is light, the
+                      single igniting fibre is glow. Keep them separate.
+    FLAME             one fibre alight in a dark field. Small, alive, able to
+                      go out. It is the most Guardini image in the film.
+    THE HAND          the hand on the lever, and the key passed from one palm
+                      to another. A hand giving an object to a hand is the most
+                      complete wordless sentence available and we already have it.
+    KNEELING, STANDING, WALKING
+                      the whole of scene 1. Collapsed, rising, running. Three
+                      states of a body and three states of a will.
+    CONSECRATED TIME  the frame rate law. Time treated as meaningful rather than
+                      uniform is exactly Guardini's point about sacred time, and
+                      it is the film's most original idea.
+    SACRED SPACE      the control room. A room treated as different becomes
+                      different.
+    THE LAMPS         the oil lamps beside Ganesha. Candles, unchanged.
+
+### WHAT TO DO WITH THIS
+
+**Nothing loud, and nothing new added.** Three specific sharpenings, all in the second layer:
+
+1. **Make the threshold a beat.** Phase 7 currently goes from door to white. One frame that is the
+   crossing itself, foot over the line, would earn far more than it costs.
+2. **Hold the flame small.** The temptation with the igniting fibre is to make it grand. Guardini's
+   point is that a small flame in a large darkness is more affecting than a lit room, because it can
+   go out. The current plate is already right; protect it.
+3. **The key is a hand-to-hand.** `V7_8_5_key` already stages it as one palm giving to another open
+   palm. That is the sign, not the key. Frame the hands, not the object.
+
+**And the rule that keeps it honest: never name it.** The moment a character looks at the door
+meaningfully, the sign becomes an emblem and starts excluding people. None of this is ever mentioned,
+lit specially or cut to. Same rule as Ganesha.
+
+---
+
+## 16. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
