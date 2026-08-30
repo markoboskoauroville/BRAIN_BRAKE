@@ -809,7 +809,44 @@ them that changes what their body will do. Frame them the same way and the rhyme
 
 ---
 
-## 17. OPEN QUESTIONS
+## 17. THE GENERATED BOY IS A PLACEHOLDER, THE REAL FOOTAGE IS THE WORK
+
+*Baba, 30.8.2026.*
+
+**Where a shot exists in two versions, one generated and one built from the real footage, they go in
+different places.**
+
+    FRONT PAGE STORYBOARD    the generated version. It reads finished at a glance,
+                             which is what a storyboard is for: seeing the shape of
+                             the film in one scroll without stopping to interpret.
+    SCENE AND BREAKDOWN      the real footage composite. That is the working
+                             material, and it is what actually gets animated.
+
+This applies now to shots 1.5 and 1.6, where `1-5-v1` and `1-6-v1` are wholly generated and
+`1-4-C-v2` and `1-4-D-v3` carry the real keyed Manan. On the site the split is a `storyboard: hide`
+field in the catalogue, so nothing needs remembering.
+
+**And it says something true about the two kinds of picture.** A generated frame is a proposal about
+what a shot could look like. A composite is a decision about what it will be. Mixing them on one page
+makes the film look more finished than it is, which is exactly the thing a production must never do
+to itself.
+
+### THE KEY FRAME IS WHERE THE TWO WORLDS TOUCH
+
+**Coach Brain's hand is drawn. Manan's hand is a photograph.** Baba caught this on 30.8.2026 after
+`11-1-A-v2` came back with both hands drawn.
+
+That frame is the only place in the film where the drawn world and the real one are in physical
+contact, which makes it the strongest use of the film's founding law anywhere in it. So it ships as
+a **plate with a hole**: the giving hand drawn, the receiving side left as bare paper, and Manan's
+real hand keyed in from the footage.
+
+**Never generate Manan's hand.** Drawing him, even a part of him, breaks the law the whole film rests
+on.
+
+---
+
+## 18. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
