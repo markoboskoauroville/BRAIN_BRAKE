@@ -591,6 +591,27 @@ which is the same trick as the frame rate: the form carries the meaning and nobo
 **And the chalk draws itself while he speaks.** Manan explains and the board fills in at the same
 time, in step with the words. Not a cut to a finished board. The whiteboard answers the same way.
 
+### THE STYLE IS RSA ANIMATE
+
+*Baba, 28.8.2026.* **Both theory sections are drawn in the style of RSA Animate**, the series by
+Andrew Park at Cognitive Media for the Royal Society of Arts. Four of them are embedded on the
+homepage under phases 10 and 11 as the reference.
+
+**What we are copying, precisely.** A hand draws the argument on the board while the voice explains
+it, in real time. The hand stays in frame. Pictures and words share one surface, so a diagram and its
+label are the same drawing. The camera drifts across the board rather than cutting, so the whole
+argument stays visible as one growing map. Nothing is ever revealed finished.
+
+**Why it fits this film and not just any film.** The board is a thought, and this film already draws
+thoughts and photographs reality. A drawing that appears as it is spoken is a thought forming, which
+is exactly what both theory sections are: two people thinking out loud at a surface.
+
+**Which four, and why those.** The Divided Brain, Drive, Smile or Die, The Secret Powers of Time. The
+most viewed RSA Animates are about economics and education; these were chosen for subject as well as
+style, so they carry the brain, motivation, belief changing physical outcome, and perception. **There
+is no RSA Animate about endurance, energy or anatomy.** The series is only fourteen videos and Andrew
+Park never drew a physiology one.
+
 ### GANESHA IS NOW IN THE FILM, NOT ONLY ON A DESK
 
 Section 11 had him as a small murti on Coach Brain's console. He is now a moment: he rises out of the
