@@ -490,8 +490,15 @@ between cuts.
 
 *Baba, 28.8.2026. Applies to the blackboard's first appearance, scene 2.*
 
-**The blackboard now carries both theories side by side, not one.** Split it down the middle with a
-vertical chalk line.
+**CORRECTED 28.8.2026, LATER THE SAME DAY. THIS SECTION IS SUPERSEDED BY SECTION 13.** The design
+below, both theories split down one blackboard, was replaced within hours by the inversion: **Manan's
+old theory on a blackboard in white chalk, Coach Brain's new theory on a whiteboard in black marker,
+two surfaces, not one.** See section 13, THE INVERSION. The text below is kept because it records
+what was tried, and because the three-facts-a-side structure still applies to each board separately.
+**Do not build a prompt from this section.**
+
+**The superseded design was:** the blackboard carries both theories side by side. Split it down the
+middle with a vertical chalk line.
 
     LEFT        chalk drawing of a MUSCLE, and three facts under it
     RIGHT       chalk drawing of a BRAIN, and three facts under it
