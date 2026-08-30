@@ -772,7 +772,44 @@ lit specially or cut to. Same rule as Ganesha.
 
 ---
 
-## 16. OPEN QUESTIONS
+## 16. PHASE 3, THE SCREEN INSIDE THE SHOT
+
+*Baba, 30.8.2026.*
+
+**Manan on the trainer at home is racing a recording of himself.** His own best ride is playing back
+on the laptop in front of him, and he is trying to beat it. That is the whole idea of the phase and no
+drawing or still we have says it: the footage shows him on the bike, and the screen in the frame is
+either off, angled away, or too small to read.
+
+**So the phase needs a frame that shows BOTH him and what is on the screen.** Without it the audience
+sees a boy exercising, not a boy competing with himself, and phase 4 has nothing to be the end of.
+
+### What that frame is for
+
+**It is a composite instruction, not a finished picture.** Kristijan puts the real footage into the
+screen. What we hand him is the plate that tells him where it goes, how big it is, and how bright.
+
+So it can be drawn with the screen left as a blank rectangle, or with a rough placeholder in it, and
+it does not matter which. **What matters is that the screen is unmistakably the subject** — large
+enough in frame to read, angled so we see it and him at once, and lit so it is the brightest thing in
+the picture, because a screen in a room is always the brightest thing in the room.
+
+**The note on the delivered frame must say it plainly**: this is a plate, the screen is a hole, put
+the ride footage in it. Otherwise it gets animated as drawn and the idea is lost.
+
+### The shot itself
+
+Him from the side or three quarters, on the trainer, leaning in. The laptop on a low table ahead of
+him, screen toward us and toward him, showing the earlier ride. **Both his face and the screen legible
+in the same frame.** He is looking at it, not at us. The rest of the room falls away.
+
+**And it rhymes with something the film already has.** The runner sees a finish line he could not see
+before; Manan sees a version of himself he is trying to catch. Both are looking at a thing in front of
+them that changes what their body will do. Frame them the same way and the rhyme does the work.
+
+---
+
+## 17. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
