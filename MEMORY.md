@@ -1249,7 +1249,60 @@ frame.
 
 ---
 
-## 26. OPEN QUESTIONS
+## 26. THE FIRST HALF MANIFESTS. THE RUBBING.
+
+*Baba, 31.8.2026, and it is the companion to the flight.*
+
+**A coin under paper, and a pencil rubbed across it until the shape comes through.** That is the
+effect. The drawing is not drawn on screen and it is not faded in: it surfaces, part by part, as
+though something already there is being brought out of the paper.
+
+### HOW IT RUNS
+
+**Parts arrive in order, not all at once.** Shoes. Then legs. Then the road under them. Then the trees
+either side. Then, last, the man. Each part comes up out of blank paper in a few frames of rubbing
+and then simply is.
+
+**The order is chosen, not random.** Ground before figure, small before large, the thing he stands on
+before the thing that stands. It is the order a world would be built in.
+
+### WHERE IT IS USED, AND WHERE IT IS NOT
+
+**Only to open a scene.** It is how the drawn world comes into existence, so it happens once at the
+start of a sequence and then stops. `1-0-C-v2` opens the film this way. From the next frame onward
+the animation is ordinary: figures move, the camera moves, nothing surfaces out of the paper any more.
+
+**It returns exactly once**, at the first frame of the muscle sequence, because that is a second world
+being entered and it deserves the same arrival.
+
+**Anywhere else it would be decoration.** The moment it becomes a general transition it stops meaning
+anything.
+
+### WHY IT IS THE RIGHT EFFECT
+
+**It solves a practical problem and says something at the same time.** There is no time or money to
+animate a drawn world properly, and this needs almost nothing: a few frames of an image resolving,
+which is a filter and a mask rather than drawn inbetweens.
+
+**And it is the film's own idea.** Something already present is brought into form. The fuel was always
+there; the permission was always there; the finish line was there before he could see it. A world
+rubbed out of blank paper says the same thing before a word is spoken.
+
+### THE TWO GRAMMARS
+
+**The film has one grammar per half and they are opposites in the right way.**
+
+    FIRST HALF     THE RUBBING. Things arrive. The world is manifested, part by
+                   part, out of paper.
+    SECOND HALF    THE FLIGHT. Nothing arrives; we move. Every transition is a
+                   passage through a surface.
+
+**One is the world coming to him. The other is him going through the world.** The turn between them is
+the moment he closes his eyes.
+
+---
+
+## 27. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
