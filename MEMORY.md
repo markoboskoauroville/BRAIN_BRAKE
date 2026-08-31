@@ -1002,7 +1002,45 @@ journey and the thing that has been holding the obstacle in place.
 
 ---
 
-## 21. OPEN QUESTIONS
+## 21. THE LAST SHOT. THE HAND THAT OPENS
+
+*Baba, 31.8.2026, after the reading on sacred signs.*
+
+**The upper hand is not Coach Brain's. It is a God hand**, in the old sense: a hand entering from
+above with no body attached to it, which is how giving has been drawn for centuries without anyone
+having to be told whose hand it is.
+
+### THE PHASES
+
+    1   The fist is already closed when we arrive. Below it, Manan's open palm.
+    2   The fist begins to open.
+    3   It is open. The key falls, by gravity, in the gap between the two hands.
+    4   The upper hand is open and empty. The key has landed.
+    5   Manan's hand closes on it. THE END.
+
+**Nothing is handed over.** The hand does not reach down, does not place the key, does not pass it.
+**It stops holding, and gravity does the rest.** That is the whole idea: permission is not given, it
+is released. What was being withheld simply stops being withheld.
+
+**And the two closings mirror each other.** The upper hand opens, the lower hand closes, in one
+continuous movement. One lets go and the other takes hold, and between them there is a moment where
+nobody is holding anything.
+
+### WHICH PARTS ARE DRAWN
+
+**Only the upper hand.** Manan's hand is a photograph, keyed in from the footage, and that includes
+the final closing. Drawing his hand would break the film's founding law in its last shot, which is
+the worst possible place to break it.
+
+So Kristijan gets **four drawn phases of the upper hand alone**, on bare paper with the lower half of
+the frame empty, and composites Manan's real hand into the space.
+
+**The key is the only colour in the film**, so it stays gold through every phase and the chain, if it
+appears at all, does not.
+
+---
+
+## 22. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
