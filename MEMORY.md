@@ -917,8 +917,32 @@ picture. The second line is a subtitle and sits smaller under the first.
 each contribution sit on its own. Baba animates them in After Effects, so what he needs is the cards
 themselves, drawn in the same hand.
 
-**The list of names and roles has not been given yet and must not be invented.** Ask before drawing
-them.
+### THE CREDIT LIST, AS CONFIRMED
+
+**Confirmed by the person themselves, 31.8.2026:**
+
+    Aurovenkatesh          Cinematographer
+    Jagan                  crew
+    Pushparaj              crew
+
+Venkatesh confirmed both the spelling of his name and that Cinematographer is the credit he wants,
+asked directly. **Aurovenkatesh is one word and it is the whole name as he gave it.**
+
+**Still to confirm, and none of it may be invented:**
+
+    Neha                   full name and how her credit should read. Asked 31.8.2026.
+    Manan Periwal          how the family want the name spelled, and whether he
+                           takes a writing credit as well as presenting.
+    Jagan and Pushparaj    surnames if they have them, and whether crew is the
+                           credit they want or something more specific.
+    Kristijan Kaurić        confirm the studio name and how it should appear.
+                           Currently held as Studio Brojke, Croatia.
+    Marko Bosko            his own, so it is his call: currently director, editor
+                           and sound design.
+
+**The rule that produced the good answer here: ask the person, propose a credit, and let them correct
+it.** Venkatesh was offered Cinematographer and confirmed it in eighteen minutes. Guessing a credit
+and putting it on screen is how people are quietly insulted.
 
 ---
 
