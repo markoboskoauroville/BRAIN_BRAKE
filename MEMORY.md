@@ -1132,7 +1132,35 @@ out of the composite, not by being animated.
 
 ---
 
-## 24. OPEN QUESTIONS
+## 24. THE MEETING, AND IT IS SHORT
+
+*Baba, 31.8.2026. Between him going through the skull door and either board being drawn on.*
+
+**Three beats, and two of them are already in the can.**
+
+    the skull door        he opens it. Nothing spoken.
+    COACH BRAIN           "You found me. Took you long enough."
+                          TO RECORD. Manan voices this, see the acting page in the
+                          Coach Brain script.
+    MANAN                 "You closed that door."
+                          RECORDED, PANA6308.
+
+**That is the whole meeting.** He gets one line of surprise from the character and answers with an
+accusation, and the boards start. The recorded material has more of this exchange in it, the sensor
+list and the phone at twenty percent, but those now live inside the theories where they belong, so
+they are not repeated here.
+
+**Why it stays this short.** The audience has been walking through his body for a minute; they do not
+need the meeting explained, they need it acknowledged. Coach Brain's line does the acknowledging and
+Manan's line supplies the grievance the whole film has been building. Everything else is theory and
+has its own phase.
+
+**On the site the dialogue sits under the frames**, with the speaker and whether the line is recorded
+or still to do, so what is missing is visible without opening anything.
+
+---
+
+## 25. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
