@@ -1192,7 +1192,64 @@ instead of a person.
 
 ---
 
-## 25. OPEN QUESTIONS
+## 25. THE SECOND HALF IS ONE FLIGHT. WE FLY THROUGH CLOUDS.
+
+*Baba, 31.8.2026, late. This is the unifying idea of everything after he closes his eyes.*
+
+**From the moment his eyes close, the film stops cutting and starts flying.** Think of an aeroplane
+going through cloud: you do not arrive anywhere by cutting, you arrive by passing through something.
+Every transition in the second half is a passage, not an edit.
+
+### THE FLIGHT, IN ORDER
+
+    5   He closes his eyes in the room. WE FLY TOWARD HIM, in toward his head.
+        He is standing still and moving at the same time.
+    6   We pass into white. He is in it, travelling. GANESHA IS MET IN FLIGHT,
+        not on the ground: he rises, is there, is gone, and we are still moving.
+    7   The white fades and he is at the door of the house. He raises his hand
+        and IS DRAWN IN, sucked through the doorway rather than walking in.
+        Then WE FLY BACKWARDS, away from the door, and the building assembles
+        around what we have just entered.
+    8   We fly on, through the corridor and the rooms, and LAND at the skull
+        door. The landing is the only stop in the sequence, because the
+        conversation needs stillness.
+    12  We fly at the banner and pass through it.
+    13  White again, and the key is given in it.
+    16  THE CREDITS FLY TOO, from card to card, through cloud.
+
+**He is a real boy in a drawn world and he has a background now.** That is not a contradiction to
+solve; it is the state of the second half. He is a photograph moving through a place that is thought.
+
+### WHY IT MATTERS MORE THAN IT SOUNDS
+
+**A cut says "and then". A passage says "and so".** The old structure was a series of places he
+visited. This is one continuous movement with a shape: inward through his own head, down into the
+body, in to the room where the decision is made, out through the sentence, and up into white.
+
+**And the key is received in the sky.** He does not earn it in a room. He is given it after passing
+through everything, in the white, which is why the fly-through of the banner has to happen before the
+hand opens. The order carries the meaning.
+
+### THE CLOUDS
+
+**The credits are flown through, card to card, with cloud between them.** Not a crawl and not a fade:
+the camera keeps moving and the names arrive out of the cloud and are passed.
+
+**AND THE CLOUD SHAPES RHYME WITH COACH BRAIN'S HEAD.** Rounded, lobed, softly folded, the same
+family of curves. This is never pointed at and never explained. Somebody watching a second time may
+notice that the sky he ends up in is shaped like the thing that was running him all along, and that
+is their discovery to make. **Do not draw attention to it and do not let anybody caption it.**
+
+### WHAT TO TELL KRISTIJAN
+
+**Every transition after phase 5 is a move through something.** If a beat seems to need a cut, look
+again: there is nearly always a surface to pass through. Doors, cloth, light, cloud. The one
+deliberate exception is the cut to Manan catching the key, because the two hands must never share a
+frame.
+
+---
+
+## 26. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
