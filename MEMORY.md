@@ -873,7 +873,56 @@ needle. If something needs emphasis, it gets frame rate, scale or emptiness.
 
 ---
 
-## 19. OPEN QUESTIONS
+## 19. THE NEW ENDING, AND THE TITLE
+
+*Baba, 31.8.2026. This changes the order of everything after the two boards.*
+
+**The order now runs:**
+
+    10   Manan explains the old theory on the blackboard
+    11   Coach Brain answers on the whiteboard
+    12   THE FLY THROUGH. We fly at the banner that reads THE LIMIT IS A SETTING
+         and pass through it. Manan says that sentence while we are flying.
+         The move is the same as Ganesha: it comes at us, fills the frame, and
+         we go through into white.
+    13   From the white, a new scene: the two hands, Coach Brain giving the key
+         to Manan. He takes it.
+    14   Back to white. Fade to black.
+    15   CREDITS
+
+**The endcard is no longer the end.** `12-0-A-v1`, the banner with the sentence on it, used to close
+the film. It is now flown through in the middle of the ending, and the key comes after it. That is a
+better shape: the sentence is stated, then permission is handed over, then nothing.
+
+**And the film ends on white going to black, not on an image.** No closing frame, no logo held. The
+last thing is the key being taken, then the paper, then dark.
+
+### TWO VERSIONS OF THE FILM
+
+**With credits and without.** The competition has a two minute limit and credits push it over, so the
+version submitted has none and the version shown elsewhere has them. Everything before the credits is
+identical.
+
+### THE TITLE, AT THE FRONT, IN BOTH VERSIONS
+
+    THE BRAIN BRAKE
+    THE CENTRAL GOVERNOR THEORY
+
+Drawn in the film's own hand, pencil on cream, like everything else. Not a typeface laid over the
+picture. The second line is a subtitle and sits smaller under the first.
+
+### CREDITS
+
+**Classical credit cards, several of them**, rather than one long crawl. Easier to read, and it lets
+each contribution sit on its own. Baba animates them in After Effects, so what he needs is the cards
+themselves, drawn in the same hand.
+
+**The list of names and roles has not been given yet and must not be invented.** Ask before drawing
+them.
+
+---
+
+## 20. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
