@@ -1006,9 +1006,14 @@ journey and the thing that has been holding the obstacle in place.
 
 *Baba, 31.8.2026, after the reading on sacred signs.*
 
-**The upper hand is not Coach Brain's. It is a God hand**, in the old sense: a hand entering from
-above with no body attached to it, which is how giving has been drawn for centuries without anyone
-having to be told whose hand it is.
+**CORRECTED 31.8.2026. The upper hand IS Coach Brain's**, and his tracksuit cuff shows at the wrist
+so the audience knows whose it is. The framing keeps the old giving gesture, a hand entering from
+above with the body out of frame, but it is his hand and not an anonymous one.
+
+**One inconsistency to hold in mind.** His hands on the character sheet are small and rounded like
+mittens; the hand in these frames is detailed, with knuckles and tendons. Baba's call is to keep the
+detailed hand, because the sleeve does the identifying and this insert is closer on him than the film
+ever gets elsewhere. Do not redraw the character sheet to match.
 
 ### THE PHASES
 
