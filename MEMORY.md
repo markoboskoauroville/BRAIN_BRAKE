@@ -1093,7 +1093,46 @@ door that happens to be part of a body, which is the right way round.
 
 ---
 
-## 23. OPEN QUESTIONS
+## 23. THE ARRIVAL AT THE HOUSE IS ONE CONTINUOUS PULL BACK
+
+*Baba, 31.8.2026.*
+
+**The white is not a transition, it is a place.** He closes his eyes and travels through it, meets
+Ganesha inside it, and the white closes around the meeting exactly as it opened. It is a supernatural
+register, and the film does not explain that any more than it explains Ganesha.
+
+**Then the light fades down and he is standing in front of the door.** The door is giving off light
+too, so the world he has arrived in is still made of the thing he travelled through.
+
+### THE MOVE
+
+**One shot, one pull back.** We start close on the lit doorway with him in front of it. The camera
+draws back. As it draws back **he goes inside**, and by the time we are wide enough to see the whole
+building **the door is shut.** He is gone and the house is closed and we have never cut.
+
+**That is why the building is revealed last.** The audience does not get to study the house before he
+enters it; they get it as the answer to where he went.
+
+### WHAT THIS NEEDS, TECHNICALLY
+
+**A pull back only registers if it is one drawing being scaled.** Two separate drawings will not line
+up, and the join will read as a cut with a size change rather than a camera move.
+
+    16-0-A-v1     the whole house, DOOR SHUT. The end of the move already exists.
+    17-0-A-v2     the doorway close, door open, light spilling. The start already
+                  exists, but as a different drawing.
+
+**So the move is built on a third frame: the whole house with the door OPEN and light spilling out.**
+Scale into its doorway to begin, pull back to full frame, and cross dissolve to `16-0-A-v1` at the
+end. He is keyed into the doorway and removed part way through the pull. The door shuts on the
+dissolve.
+
+**Manan is never drawn.** He is a photograph keyed into the doorway, and he disappears by being taken
+out of the composite, not by being animated.
+
+---
+
+## 24. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
