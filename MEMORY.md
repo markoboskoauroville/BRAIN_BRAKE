@@ -1040,7 +1040,29 @@ appears at all, does not.
 
 ---
 
-## 22. OPEN QUESTIONS
+## 22. ORGANIC OUTSIDE, ADVANCED INSIDE
+
+*Baba, 31.8.2026.*
+
+**The body is high end.** The house is grown rather than built and every surface curves, but what
+lives inside it is not primitive. It is modern, close to future, and very well made.
+
+**So the two things never fight.** The shell is organic; the fittings are advanced. Coach Brain's desk
+is the model for it: one smooth grown form with its dials and readouts sunk into shallow hollows, no
+rivets, no bolts, nothing assembled. It looks like it was made in one piece by something that knew
+exactly what it was doing.
+
+**And doors work like doors.** A push plate sits where a hand falls, at about hip height. A name plate
+sits at eye height, where a person standing at the door would read it without lowering their head.
+The building is strange, not inconvenient.
+
+**This corrects a drift.** The skull door first came back with two hollows high on the leaf, which
+read as eye sockets and made the door a face. One hollow, low, where a hand would push, reads as a
+door that happens to be part of a body, which is the right way round.
+
+---
+
+## 23. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
