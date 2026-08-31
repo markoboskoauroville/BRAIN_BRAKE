@@ -1037,7 +1037,20 @@ that was let go.
 falls into empty paper and is caught.
 
 **Manan's hand never leaves the frame.** It comes in, closes, and stays. Coach Brain's hand is the one
-that goes. The last thing on screen is a boy's fist holding something, alone. That is the whole idea: permission is not given, it
+that goes. The last thing on screen is a boy's fist holding something, alone.
+
+### THE TWO HANDS ARE NEVER IN THE SAME FRAME
+
+**Corrected 31.8.2026, and it simplifies everything.** Coach Brain's drawn hand turns over and lets
+go. The key falls through a frame with nothing else in it. **Then we cut**, and Manan is catching it
+in live footage.
+
+**So there is nothing to composite.** No keyed hand over a drawn plate, no matching of edges. And the
+lighting difference does not matter either: his footage is lit from the front left and the drawn hand
+from high right, but they are never on screen together, so nobody can compare them.
+
+**It was shot properly and the key is real.** Grey backdrop, the actual gold key, his hand isolated.
+Nothing in the ending needs inventing. That is the whole idea: permission is not given, it
 is released. What was being withheld simply stops being withheld.
 
 **And the two closings mirror each other.** The upper hand opens, the lower hand closes, in one
