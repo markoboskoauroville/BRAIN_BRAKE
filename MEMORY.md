@@ -1017,14 +1017,27 @@ ever gets elsewhere. Do not redraw the character sheet to match.
 
 ### THE PHASES
 
-    1   The fist is already closed when we arrive. Below it, Manan's open palm.
-    2   The fist begins to open.
-    3   It is open. The key falls, by gravity, in the gap between the two hands.
-    4   The upper hand is open and empty. The key has landed.
-    5   Manan's hand closes on it. THE END.
+    1   The fist is already closed when we arrive. Nothing else in frame.
+    2   The fist begins to open. The cuff shows whose hand it is.
+    3   The hand TURNS OVER, palm rolling downward, and the key falls out of it
+        in free fall. Manan's hand is NOT in frame yet.
+    4   The hand is turned and empty and starts to leave frame.
+        While it is still turning, MANAN'S REAL HAND ENTERS from below and
+        closes on the falling key in a fist.
+    5   Coach Brain's hand is gone. Manan's fist stays where it is, holding.
+        Fade out on that.
+
+**Corrected 31.8.2026.** The earlier version had Manan's open palm waiting below from the start. It
+does not wait. The key falls into empty air and his hand comes in and catches it, which is a
+different thing entirely: he is not receiving something placed in his hand, he is taking something
+that was let go.
 
 **Nothing is handed over.** The hand does not reach down, does not place the key, does not pass it.
-**It stops holding, and gravity does the rest.** That is the whole idea: permission is not given, it
+**It turns over, stops holding, and gravity does the rest.** And nobody is waiting underneath: the key
+falls into empty paper and is caught.
+
+**Manan's hand never leaves the frame.** It comes in, closes, and stays. Coach Brain's hand is the one
+that goes. The last thing on screen is a boy's fist holding something, alone. That is the whole idea: permission is not given, it
 is released. What was being withheld simply stops being withheld.
 
 **And the two closings mirror each other.** The upper hand opens, the lower hand closes, in one
