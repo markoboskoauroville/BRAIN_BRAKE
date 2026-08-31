@@ -1259,12 +1259,17 @@ though something already there is being brought out of the paper.
 
 ### HOW IT RUNS
 
-**Parts arrive in order, not all at once.** Shoes. Then legs. Then the road under them. Then the trees
-either side. Then, last, the man. Each part comes up out of blank paper in a few frames of rubbing
-and then simply is.
+**Parts arrive in order, not all at once.** The road. Then the shoes standing on it. Then the legs.
+Then the trees either side. Then, last, the man. Each part comes up out of blank paper in a few frames
+of rubbing and then simply is.
 
-**The order is chosen, not random.** Ground before figure, small before large, the thing he stands on
-before the thing that stands. It is the order a world would be built in.
+**THE ORDER IS A LAW AND IT IS NOT ARBITRARY: WHAT SUPPORTS COMES FIRST.** A shoe cannot appear before
+the road it stands on. The ground, then the thing on the ground, then the thing on that. Corrected
+31.8.2026 after a note went out with shoes before the road, which is nonsense and would have been
+built.
+
+**It is the order of the elements, and section 27 explains why that matters.** Earth, then water, then
+fire, then air. Nothing can rest on what is not yet there.
 
 ### WHERE IT IS USED, AND WHERE IT IS NOT
 
@@ -1302,7 +1307,61 @@ the moment he closes his eyes.
 
 ---
 
-## 27. OPEN QUESTIONS
+## 27. THE FIVE ELEMENTS, AND WHY EVERY LAYER HAS AN ORDER
+
+*Baba, 31.8.2026. This is the principle under the rubbing, under the structure, under all of it.*
+
+**Nothing can rest on what is not yet there.** That is the whole rule, and everything below is one
+example of it.
+
+### THE ORDER, AND WHY IT CANNOT BE CHANGED
+
+    EARTH    You are standing on something. Without ground there is no place.
+    WATER    Ocean sits on the earth. Without earth there is nowhere for it to be.
+    FIRE     Fire is possible above earth and water. It needs something to burn on
+             and something to burn against.
+    AIR      Fire and water neutralise each other, and in that duality life becomes
+             possible. Life needs air, and air is what makes everything move.
+    SPACE    Everything converges. One point. White.
+
+**Reverse any two and it stops working.** If air comes first, nothing happens, because there is
+nothing to move. If fire comes first it does not burn, because there is nothing to rest on. Water
+cannot float in air.
+
+### HOW THE FILM IS LAYERED ON IT
+
+    EARTH    THE GROUND. Where are we. The road, the avenue, the room. Establish
+             the place before anything happens in it.
+    WATER    THE EMOTION. He is finished. You feel his exhaustion and you feel it
+             in your own legs. Nobody has explained anything yet.
+    FIRE     THE PROBLEM MEETS ITS ANSWER. The muscle ignites. Something acts.
+    AIR      THE SOLUTION, AND MOVEMENT. Ganesha. Coach Brain. The flight. This is
+             where the second half lives, and it is why the second half moves
+             instead of arriving.
+    SPACE    THE WHITE. The key. Bliss, and nothing else in the frame.
+
+**So the film's shape is not a story structure borrowed from screenwriting.** It is the order in which
+a world can exist at all, and that is why it feels inevitable rather than clever.
+
+### AND THE SAME PATTERN IS INSIDE THE FILM TOO
+
+**Gaudi copied nature and built buildings out of what he saw in it.** The film puts him inside itself:
+a house built out of a body, walls made of the organ they stand for, a facade that reads as a face
+without being drawn as one.
+
+**The architect copies nature, the film copies the architect, and the body copies both.** The same
+pattern of energies at three scales, which is what the yogic reading of the elements says is true of
+everything. Nothing here is decoration.
+
+**Everything converges on one point, and the point is white.** The house, the rooms, the boards, the
+banner, the key. All of it is passed through and ends in unmarked paper.
+
+**NEVER SAY ANY OF THIS IN THE FILM.** Same law as Ganesha, same law as the clouds. It is the
+structure, not the subject.
+
+---
+
+## 28. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
