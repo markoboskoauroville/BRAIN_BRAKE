@@ -1158,6 +1158,38 @@ has its own phase.
 **On the site the dialogue sits under the frames**, with the speaker and whether the line is recorded
 or still to do, so what is missing is visible without opening anything.
 
+### THREE CAMERAS, AND WHOEVER IS SPEAKING IS IN SHOT
+
+*Baba, 31.8.2026. The plan for every exchange between Manan and Coach Brain. Nothing to draw yet.*
+
+**Pretend there were three cameras in that room and cut between them.**
+
+    WIDE        both of them, with the control desk behind. The room, and the fact
+                that they are in it together.
+    ON COACH    favouring him at the desk.
+    ON MANAN    favouring him, standing.
+
+**Whoever is speaking is in shot.** That is the whole rule and it is the oldest one in dialogue
+cutting. Start wide so the geometry is established, then live in the singles, and go back to the wide
+when something changes between them.
+
+**All three are plates.** Manan is a photograph, so every setup that contains him is a drawn room with
+a hole in it. In the wide and in his single, Coach Brain and the room are drawn and Manan is keyed in.
+Coach Brain's single is the only one that needs nothing keyed.
+
+**Which means three frames per exchange, not one**, and the two singles have to agree with the wide
+about where each of them stands. Draw the wide first and derive the singles from it, the way the
+object sheets were derived from the room.
+
+**Screen direction, and it decides everything else.** Fix it once in the wide: Coach Brain on one
+side, Manan on the other. Then in his single Coach Brain looks toward Manan's side, and in Manan's
+single he looks back the other way. Get that wrong and the two of them appear to be looking away from
+each other however well the frames are drawn.
+
+**No speech bubbles anywhere.** Considered and rejected 31.8.2026. The film has no lettering except
+the boards, the door plate and the endcard, and a bubble would make this the one place a drawing talks
+instead of a person.
+
 ---
 
 ## 25. OPEN QUESTIONS
