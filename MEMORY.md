@@ -946,7 +946,63 @@ and putting it on screen is how people are quietly insulted.
 
 ---
 
-## 20. OPEN QUESTIONS
+## 20. THE HOUSE OF THE BODY, SEEN FROM OUTSIDE. STRUCTURE AS OF 31.8.2026
+
+*Baba. This supersedes the ordering in section 19 and settles where Ganesha sits.*
+
+**The whole film, in order:**
+
+    0   TITLE
+    1   THE RUNNER
+    2   HE TRIES IT HIMSELF          bicycle on a real road
+    3   RACING HIMSELF               the trainer, racing a recording of himself
+    4   HE IS DONE
+    5   HE CLOSES HIS EYES           the trance. Out to white.
+    6   THE HOUSE                    he is standing in front of a building, and the
+                                     building is his body. NEW.
+    7   HE OPENS THE DOOR            light floods out.
+    8   THROUGH THE ROOMS            the corridor and the rooms, flown through.
+    9   GANESHA                      LAST, after the rooms, not before them.
+    10  THE SKULL DOOR               another door. Bone. A name plate reading
+                                     COACH BRAIN. NEW.
+    11  COACH BRAIN                  he opens it, enters, they exchange words.
+    12  THE OLD THEORY               blackboard, white chalk.
+    13  THE NEW THEORY               whiteboard, black marker.
+    14  THE FLY THROUGH              through the banner, Manan says the line.
+    15  THE KEY                      drawn hand to real hand. THE END.
+    16  END CREDITS                  longer version only.
+
+### THE HOUSE IS NOT A FACTORY AND ITS ARCHITECTURE IS GAUDI
+
+**The building he stands in front of is organic.** No brick, no chimneys, no industrial front. The
+reference is **Antoni Gaudi**: Casa Batllo and the Sagrada Familia. Facades built like bone and
+cartilage, openings shaped like mouths and eye sockets, surfaces that swell and settle as though
+grown rather than built, nothing perfectly straight or level.
+
+**That is the same law the interior already follows** and it now reaches the outside of the film's
+body: the walls of each room are made of the organ, and the house they belong to is made of tissue
+too. A factory front would have said industry. A Gaudi front says living thing.
+
+### TWO DOORS, AND THE SECOND ONE IS THE POINT
+
+**He opens a door twice.** The front door of the house, which lets him into the body, and later a
+second door which lets him into the brain. **Both are opened the same way**, so the second one reads
+as a rhyme rather than a repeat.
+
+**The second door is bone.** A skull, or a door built into one, with a small name plate on it reading
+COACH BRAIN. The name plate is the only place in the film where the character is named in writing,
+and it arrives before he does, which is the film's why law again: the answer is on the door before
+the question is asked inside.
+
+### GANESHA MOVED
+
+He now appears **after** the rooms and before the skull door. He is the last thing seen in the body
+before the brain, which is better than the old placement: the remover of obstacles stands between the
+journey and the thing that has been holding the obstacle in place.
+
+---
+
+## 21. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
