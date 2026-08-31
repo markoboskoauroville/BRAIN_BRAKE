@@ -1181,8 +1181,8 @@ Coach Brain's single is the only one that needs nothing keyed.
 about where each of them stands. Draw the wide first and derive the singles from it, the way the
 object sheets were derived from the room.
 
-**Screen direction, and it decides everything else.** Fix it once in the wide: Coach Brain on one
-side, Manan on the other. Then in his single Coach Brain looks toward Manan's side, and in Manan's
+**Screen direction is now fixed, 31.8.2026, by the wide `19-2-A-v1`: COACH BRAIN ON THE LEFT LOOKING
+RIGHT, MANAN ON THE RIGHT LOOKING LEFT.** Both singles must obey it. Then in his single Coach Brain looks toward Manan's side, and in Manan's
 single he looks back the other way. Get that wrong and the two of them appear to be looking away from
 each other however well the frames are drawn.
 
