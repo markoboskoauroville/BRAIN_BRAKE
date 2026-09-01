@@ -1256,6 +1256,24 @@ Brain's hand leaves the top of the fall and Manan's arrives at the bottom of it,
 journey. That is a better solution than a cut, because a cut is a decision the audience can feel and a
 fall is one they take with the object.
 
+**AND THE CORRECTION DID NOT REACH EVERY COPY OF IT. Recorded 1.9.2026, Baba's own note.**
+
+This section was corrected the same day the fall replaced the cut. The site was not. The lede over
+the key sequence on the front page still opened with *it falls through an empty frame, and we cut*,
+four lines above its own sentence saying there is no cut anywhere in this, and it stayed there until
+site v26. Kristijan reads that page.
+
+**It was not a drafting slip. That clause was written before the fall existed, so it was a real
+earlier decision that got superseded and then survived in a second place.** The rule in
+`MANTRA_MANIFEST/modules/handoff.md` says a document must never hold two versions of one decision,
+and the reason it was missed is that the second copy was not thought of as a document. It is prose
+inside `tools/build_site.py`, it is published, and Kristijan reads it before he reads anything here.
+
+**So when a decision in this file changes, sweep the site copy in the same edit.** The film's prose
+lives in three places: this file, `catalog.json` in the notes and the flight and rubbing notes, and
+the hard coded ledes in `build_site.py`. Grep all three for the old wording before calling a
+correction done.
+
 ---
 
 ## 26. THE FIRST HALF MANIFESTS. THE RUBBING.
