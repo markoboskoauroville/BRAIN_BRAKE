@@ -1392,12 +1392,29 @@ makes it able to be handed between them.
     5   bare paper. Almost entirely real, nearly landed.
     6   in his open hand. A photograph. THE REAL KEY.
 
-**IT FALLS THROUGH NOTHING.** Corrected 1.9.2026. An earlier version had it passing the house and
-then the avenue, which was wrong: the eye leaves the key to look at the scenery, and the scenery is
-the thing the film has just left. **The fall is the key alone on empty paper**, which is the film's
-own language for the space between one state and another, and it is where Ganesha was met and where
-the banner opened into. Only the first two frames carry any cloud at all, and that is to establish
-height before the world drops away.
+**AND THE FILM RUNS BACKWARDS BEHIND IT.** Baba, 1.9.2026, and this is the version to build.
+
+**As the key falls, the whole film replays behind it in reverse, drawn so faintly it is almost not
+there.** The banner, the boards, the control room, the rooms, the corridor, the house, the trance,
+the trainer, the road, the avenue. Last thing first, and the opening avenue arriving as the key
+lands.
+
+**It is the thing people describe when they nearly die: your life going past you.** In a film about a
+brain deciding when you stop, that image is not decoration. It is the film's own subject arriving one
+last time without a word.
+
+### HOW FAINT IS FAINT
+
+**Almost invisible. The key is the subject and nothing competes with it.** These are ghosts of
+drawings, a few lines each, at a fraction of the weight of anything else in the film. If a viewer can
+describe what they saw, it is too strong.
+
+**Most people will never consciously see it.** That is correct. It should be felt as texture and
+noticed only on a second or third viewing, the way the cloud shapes rhyme with Coach Brain's head.
+
+**An earlier version had the key passing the house and then the avenue, drawn normally.** That was
+wrong for the opposite reason: the eye left the key to look at the scenery. Faint enough and reversed,
+the scenery does not pull, it accumulates.
 
 **It turns slowly the whole way**, so it is never twice at the same angle and the eye keeps reading it
 as an object in space rather than a symbol on paper.
