@@ -1421,6 +1421,19 @@ describe what they saw, it is too strong.
 **Most people will never consciously see it.** That is correct. It should be felt as texture and
 noticed only on a second or third viewing, the way the cloud shapes rhyme with Coach Brain's head.
 
+### AND IT IS MOTION BLURRED, BECAUSE IT IS PASSING
+
+**Baba, 1.9.2026.** The memories are not a static backdrop the key falls in front of. They are moving
+past, so they carry motion blur, streaked vertically in the direction of the fall.
+
+**Not so much that they become mush.** You must still be able to make out what each one is if you look
+for it: the boards, the room, the house. Enough blur that they read as passing at speed, not enough to
+destroy them.
+
+**The key stays sharp.** It is the thing the camera is travelling with, so it holds still relative to
+us while everything behind it streaks. That difference is what makes the fall read as fast rather than
+as a slow drift, and it is worth more than any amount of speed lines.
+
 **An earlier version had the key passing the house and then the avenue, drawn normally.** That was
 wrong for the opposite reason: the eye left the key to look at the scenery. Faint enough and reversed,
 the scenery does not pull, it accumulates.
