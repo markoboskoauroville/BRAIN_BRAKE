@@ -1395,6 +1395,29 @@ makes it able to be handed between them.
 **It turns slowly the whole way**, so it is never twice at the same angle and the eye keeps reading it
 as an object in space rather than a symbol on paper.
 
+### AND IT GROWS AS IT FALLS
+
+**Coach Brain is small, about desk height, so the key on his chain is small: the size of one of his
+eyes.** Manan is life size. So the key that arrives in Manan's hand has to be a real key that fills a
+real palm.
+
+**It is the same object the whole way down. It simply gets nearer.** The growth is the perspective of
+something falling toward the camera, and it happens across the whole fall rather than at any one cut.
+
+    1   released, high      about a twelfth of the frame width
+    2   past the cloud      a tenth
+    3   past the house      an eighth
+    4   past the avenue     a sixth
+    5   nearly landed       a third
+    6   in his hand         filling his palm, a real brass key
+
+**Three things change together across the fall and none of them changes alone:** it turns, it grows,
+and it crosses from pencil to photograph. Any one of them on its own would be an effect. All three at
+once is an object travelling between two worlds.
+
+**Do not let it grow in jumps.** If a frame is noticeably larger than the interpolation between its
+neighbours would give, the eye reads a cut rather than a fall.
+
 **The places it passes are the film's own.** It does not fall through generic sky. It falls past the
 house, past the avenue, past the things the audience has already been inside, which is how a two
 minute film gets to feel like it covered ground.
