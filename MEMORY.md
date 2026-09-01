@@ -1361,7 +1361,57 @@ structure, not the subject.
 
 ---
 
-## 28. OPEN QUESTIONS
+## 28. THE KEY FALLS FROM THE SKY, AND BECOMES REAL AS IT FALLS
+
+*Baba, 1.9.2026. This replaces the short drop in section 21 and is much better.*
+
+**Coach Brain opens his hand and the key does not fall a few inches into another hand. It falls out of
+the sky.** It turns slowly as it goes, passing through the world of the film, and it lands in Manan's
+real hand at the bottom.
+
+### AND IT CHANGES MEDIUM ON THE WAY DOWN
+
+**At the top it is a pencil drawing. At the bottom it is a photograph of the real brass key.** The
+change happens gradually across the fall, so no single frame is the moment it becomes real. It is
+drawn, then drawn with more weight, then almost photographic, then a photograph.
+
+**That is the film's whole argument made physical.** Everything drawn has been thought; everything
+photographed has been real. The key crosses from one to the other while nobody is looking at the
+join, and it arrives in a real hand as a real object.
+
+**And it is the only object in the film that ever crosses.** Manan never becomes a drawing and Coach
+Brain never becomes a photograph. The key is the one thing that belongs to both worlds, which is what
+makes it able to be handed between them.
+
+### THE FALL, IN FIVE OR SIX FRAMES
+
+    1   released, high, small against cloud. Pencil.
+    2   falling past the cloud bank, turning. Pencil.
+    3   falling past the house of the body, seen small and far below.
+    4   falling past the avenue of trees, the place the film opened.
+    5   close, nearly landed, almost photographic.
+    6   in his open hand. A photograph. THE REAL KEY.
+
+**It turns slowly the whole way**, so it is never twice at the same angle and the eye keeps reading it
+as an object in space rather than a symbol on paper.
+
+**The places it passes are the film's own.** It does not fall through generic sky. It falls past the
+house, past the avenue, past the things the audience has already been inside, which is how a two
+minute film gets to feel like it covered ground.
+
+### WHAT THIS REPLACES
+
+The old short drop, `15-3` and `15-4`, becomes this. `15-1` and `15-2`, the fist and the opening, stay
+as they are and lead into it.
+
+**Every drawn key in the film is the real object**, the one photographed on the live set: round head,
+three lobed clover hole, number 5, three ring collar, toothed bit. See
+`reference/OBJECT_SHEET_KEY-v2.png`. The point of matching it exactly is this sequence: the drawing
+and the photograph have to be the same object or the crossing lands on something merely similar.
+
+---
+
+## 29. OPEN QUESTIONS
 
 Written down rather than guessed at.
 
