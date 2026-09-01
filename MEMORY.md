@@ -1243,9 +1243,18 @@ is their discovery to make. **Do not draw attention to it and do not let anybody
 ### WHAT TO TELL KRISTIJAN
 
 **Every transition after phase 5 is a move through something.** If a beat seems to need a cut, look
-again: there is nearly always a surface to pass through. Doors, cloth, light, cloud. The one
-deliberate exception is the cut to Manan catching the key, because the two hands must never share a
-frame.
+again: there is nearly always a surface to pass through. Doors, cloth, light, cloud.
+
+**AND THERE IS NO EXCEPTION. Corrected 1.9.2026.** An earlier version of this rule allowed one cut,
+between Coach Brain letting go and Manan catching. **The fall removed the need for it.** The two hands
+are no longer a cut apart; they are separated by the whole descent, the turning, the growing, the film
+replaying behind it and the crossing from pencil to photograph. The camera never stops following the
+key.
+
+**They still never share a frame, and now nothing has to be arranged for that to be true.** Coach
+Brain's hand leaves the top of the fall and Manan's arrives at the bottom of it, and between them is a
+journey. That is a better solution than a cut, because a cut is a decision the audience can feel and a
+fall is one they take with the object.
 
 ---
 
