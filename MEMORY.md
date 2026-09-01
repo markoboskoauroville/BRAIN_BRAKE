@@ -1385,12 +1385,19 @@ makes it able to be handed between them.
 
 ### THE FALL, IN FIVE OR SIX FRAMES
 
-    1   released, high, small against cloud. Pencil.
-    2   falling past the cloud bank, turning. Pencil.
-    3   falling past the house of the body, seen small and far below.
-    4   falling past the avenue of trees, the place the film opened.
-    5   close, nearly landed, almost photographic.
+    1   released, high, a little cloud along the top. Pencil.
+    2   the cloud thinning, the key turning and larger. Pencil.
+    3   bare paper. Nothing but the key, turning, larger again.
+    4   bare paper. The drawing gaining weight, closer to a photograph.
+    5   bare paper. Almost entirely real, nearly landed.
     6   in his open hand. A photograph. THE REAL KEY.
+
+**IT FALLS THROUGH NOTHING.** Corrected 1.9.2026. An earlier version had it passing the house and
+then the avenue, which was wrong: the eye leaves the key to look at the scenery, and the scenery is
+the thing the film has just left. **The fall is the key alone on empty paper**, which is the film's
+own language for the space between one state and another, and it is where Ganesha was met and where
+the banner opened into. Only the first two frames carry any cloud at all, and that is to establish
+height before the world drops away.
 
 **It turns slowly the whole way**, so it is never twice at the same angle and the eye keeps reading it
 as an object in space rather than a symbol on paper.
