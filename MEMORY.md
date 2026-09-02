@@ -1498,6 +1498,65 @@ and the photograph have to be the same object or the crossing lands on something
 
 ---
 
+## 28b. GOLD MEANS FOUND. THAT IS WHY THE PASSAGE IS PENCIL.
+
+**Baba, 2.9.2026. This is the rule that decides where colour is allowed, and it is worth more than
+any single frame it governs.**
+
+**Ganesha is out of the film.** He was a placeholder that bought thinking time, and he was also an
+emblem: a badge you either recognise and belong to, or recognise and do not. `WINNING_FILM`, the
+chapter on Guardini and *Sacred Signs*, says keep the emblems off the rim of the well and take the
+signs. A key is a sign. It is read by anybody with a body and a door.
+
+**In his place, the passage between the trance and the house of the body is a vortex built out of
+keys**, and Manan is drawn in through it.
+
+**AND EVERY KEY IN THAT VORTEX IS PENCIL.** Not gold. Not one of them.
+
+**The reason is the whole architecture of the film's only colour.** Gold does not mean *key*. Gold
+means **found**. Manan has not found it yet when he goes through the passage, so there is nothing
+gold to see: he is surrounded by thousands of the thing he is looking for and cannot tell, which is
+truer to the film's argument than a gold tunnel would be, and it costs nothing to draw.
+
+**So the gold in this film happens exactly twice.** The key at Coach Brain's neck, which is the
+moment it is found. The key falling out of the sky at the end, which is the moment it is given
+away. A tunnel of gold at the passage would spend the ending before the ending arrives.
+
+**The corollary, which is the useful part.** Any future frame containing a key needs one question
+asked of it before it is prompted: *has it been found yet in this shot?* If no, pencil. If yes,
+gold, with the three tones and the separate material paragraph from `imgtoimg.md`. There is no
+third answer, and the 0.2 per cent coloured pixel measurement applies only to the second.
+
+**Built as a Blender scene the same day**, site v149, on the assets page. Schauberger's implosion
+vortex: rectangular hyperbola in section rather than a cone, Kepler harmonic spiral in plan so the
+turns tighten to 1, 1/2, 1/3, 1/4 of the mouth radius and the eye is pulled inward. 432 keys as
+linked instances, camera animated. The script assigns a third material, `KEY_PENCIL`, and
+deliberately uses neither the brass slot nor the drawn cream one, so the rule is enforced by the
+file rather than remembered.
+
+---
+
+## 28c. THE DOORS CARRY SHAPES IN CLAY, NOT WRITTEN NAMES
+
+**Baba, 2.9.2026.** The corridor in `8-0-A-v4` has plaques reading TENDONS, CISTERNS, PUMP HALL,
+BELLOWS, FUEL, COUNTERS. Those come out.
+
+**A written word is an emblem and it fails both of the book's tests.** It excludes anybody who does
+not read English, and it does not survive translation. **A shape raised in the clay of the door is a
+sign**: a bump in a clay wall in the shape of a thing is read directly, the way any clay house with a
+tree moulded into its wall is read.
+
+**So each door carries its organ as a relief in the same white clay as the door.** Manan goes room to
+room looking for the key and does not find it. The doors teach the audience one thing without ever
+saying it: **the bump tells you what is inside.**
+
+**Which is what makes the last door work.** No name on it, no COACH BRAIN plaque, just a key in clay
+running the full height of the door. By then the audience has learnt to read the bumps, so nobody has
+to be told what is behind it, and the key at the brain's neck is a confirmation rather than a
+surprise. **Never point at it and never name it.**
+
+---
+
 ## 29. OPEN QUESTIONS
 
 Written down rather than guessed at.
