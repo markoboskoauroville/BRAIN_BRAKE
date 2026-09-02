@@ -163,3 +163,39 @@ guilty, which was somehow worse, because it meant he had been doing his job.
 
 And on a cord around his neck, catching a light that came from nowhere in that room,
 hung the only gold thing in the world.
+
+---
+
+## THE LAST PAGE
+
+There is one more thing, and it belongs at the end because it was at the end.
+
+Long before the running, before the bicycle and the hill and the long road past
+the water tank, before anyone had thought of a house made of clay or a key with
+three teeth, there was a habit older than any of it. A plate of food is not eaten
+first and offered afterwards. It is offered, and then it is eaten. The giving comes
+before the having. Nobody who does this can quite explain what it is for, and
+everybody who does it knows.
+
+So this film was made and then given away.
+
+It is dedicated to Ganesha, who removes obstacles, and it is worth saying why that
+is the right hands to put it in and not merely a pleasant one. The whole of what
+happens here is a boy discovering that the thing standing across his road was never
+a wall. It was a setting. Someone had put it there, carefully, in good faith, to
+keep him safe, and it could be moved. A film about an obstacle that turns out to be
+removable has only one place to go when it is finished.
+
+None of this is mentioned earlier. Not once. There is no hint in the first frame
+and no echo in the last shot, and if you watch the whole thing twice you will find
+nothing that was pointing at it.
+
+That is deliberate, and it is the difference between a theme and a gift. A theme is
+prepared for. A gift arrives.
+
+So it comes at the very end, after every name, when the film has stopped being
+something to look at: a single card, an elephant headed figure forming out of the
+paper the way everything in this story forms out of paper, and a line under him
+saying who this was for.
+
+Then the music, and then nothing.
