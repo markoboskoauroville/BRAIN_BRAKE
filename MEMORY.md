@@ -1632,6 +1632,47 @@ something from a film, ask where else it belongs.**
 
 ---
 
+## 28f. THE VORTEX IS CLOUD, NOT KEYS. AND IT HAPPENS TWICE.
+
+**Baba, late on 2.9.2026, after seeing the frames. Regenerate tomorrow.**
+
+**No keys in the vortex. None.** Not a wall of them, not chains, not a scattering, not the water
+itself. Every version tried today put keys in it and every one was wrong, and the reason is not
+density: **it discovers too much.**
+
+A tunnel made of keys tells the audience what he is looking for before he knows it himself. It
+answers the question in the corridor, so by the time he reaches the key door the film has already
+said the word. **The passage is not a clue and must not be one.**
+
+**What it is instead: a soft, gentle vortex made of cloud.** Nothing sharp, nothing itemised, nothing
+to read. It simply takes him. A vortex is a vortex.
+
+**AND IT HAPPENS TWICE, ONCE EACH WAY.**
+
+    UP    after his eyes close. It sucks him up out of the world and into the
+          house of the body
+    DOWN  after Coach Brain has explained the theory and let the key go. The
+          same cloud, the same throat, and he goes back down
+
+**The symmetry is the shape of the whole second half.** He rises into it and falls out of it, and
+the only thing that tells the audience which way he is travelling is his clothes and hair: they pull
+DOWN when he is rising and UP when he is falling. Get that wrong and the passage reads backwards.
+
+**The phase is called THE VORTEX now, not Ganesha.** Ganesha is not gone from the film. He is the
+dedication card at the very end, unannounced, which is a different thing entirely. See 28e.
+
+**What this supersedes.** `9-1-VORTEX-v2` and the three `9-2-MANAN` frames are all built on keys and
+all go. So does the reasoning in 28b about the water being made of keys: **28b's rule still stands
+where it matters, that gold means found, but the passage does not carry keys at all now, grey or
+otherwise.** The Blender scene in `assets3d/` builds a funnel out of key instances and will need the
+same change.
+
+**And a note on how this was arrived at, because it is the useful part.** Four generations were spent
+making the keys smaller, fainter, sparser and better arranged. Every one of them was an answer to the
+wrong question. The problem was never how the keys looked, it was that they were there.
+
+---
+
 ## 29. OPEN QUESTIONS
 
 Written down rather than guessed at.
