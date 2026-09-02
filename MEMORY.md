@@ -1591,6 +1591,47 @@ Requested from the Claude Code session as EXCHANGE STEP 90.
 
 ---
 
+## 28e. THE FILM IS AN OFFERING. GANESHA IS THE LAST CARD.
+
+**Baba, 2.9.2026. Ganesha is not gone. He has moved to where he belongs.**
+
+He was cut from the story on 2.9 because a deity standing in the middle of a passage is an emblem, a
+badge you either recognise and belong to or recognise and do not, and `WINNING_FILM` says keep the
+emblems off the rim of the well. That reasoning was right and it still holds.
+
+**But it only applies inside the film.** The dedication is not inside the film. It is what is done
+with the film once it is finished, and that is a different act entirely.
+
+**The last card of the credits shows Ganesha, and says the film is dedicated to him, remover of
+obstacles.** Nothing before it hints at this. It is not foreshadowed, it is not seeded, and no earlier
+frame carries a trace of it, because a dedication that is prepared for is a theme, and a dedication
+that arrives at the end is a gift.
+
+**The form is the oldest one there is.** Food is offered before it is eaten. The work is given away
+before it is enjoyed. **So the film is offered to Ganesha and only then does it belong to anyone**,
+and the audience learns this at the moment the film stops being theirs to watch.
+
+**And it is the right deity, which is not a small point.** Ganesha removes obstacles. The whole film
+is about a limit that is not a wall. **The dedication says in one card what the film spends two
+minutes not saying**, and it can say it plainly because it is outside the story and excludes nobody:
+you may accept a dedication without sharing it.
+
+**Under it, a Ganesha song.** Recorded rather than licensed, because Baba is Mantreshwar and records
+mantra himself, and an original recording removes the only rights question a competition entry can
+have.
+
+**Nothing new needs drawing.** `9-1-GANESHA-v1` already exists and is exactly this: full presence,
+ink 2.02 percent, 46 percent of frame height, four arms with axe and noose, correct iconography,
+forming out of the paper with nothing competing. It was drawn for a scene that no longer exists and
+it turns out to have been drawn for this. **The two Ganesha frames are not superseded. They are
+reassigned to phase 12**, and the last card is that image with the dedication lettered under it.
+
+**Also note the shape of what happened here**, because it will happen again. A thing was cut for a
+good reason, and the good reason was about ONE PLACE and not about the thing. **Before removing
+something from a film, ask where else it belongs.**
+
+---
+
 ## 29. OPEN QUESTIONS
 
 Written down rather than guessed at.
