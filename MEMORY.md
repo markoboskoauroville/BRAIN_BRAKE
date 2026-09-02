@@ -1557,6 +1557,40 @@ surprise. **Never point at it and never name it.**
 
 ---
 
+## 28d. WE SEE HIM FALL. MANAN IS IN THE PASSAGE.
+
+**Baba, 2.9.2026. This changes the passage from a place into an event.**
+
+The vortex was going to be an empty throat that the camera flew down, and an empty tunnel is a
+location. **With him in it, it is a fall**, and a fall is something the audience takes with him
+rather than watches.
+
+**So the passage is drawn in phases of a falling boy**, a few of them, not one. He goes in, he turns,
+he comes toward us. The keys stream past him and get denser as he goes, and none of them is gold,
+because he still has not found it. See 28b, which does not change: **gold means found**, and being
+carried through a river of the thing he is looking for while it stays grey is the whole idea.
+
+**He must be the real boy, not an invented one.** The references come from the live footage, so the
+drawn Manan matches the photographed Manan who appears at the door in phase 7 and whose hand catches
+the key at the end. **A face invented here would quietly become a second character**, and the
+audience would feel the mismatch without being able to name it. This is the same discipline as the
+key: the drawing and the photograph have to be the same object, or the crossing lands on something
+merely similar.
+
+**He is drawn, not composited.** The photographic Manan appears only twice in the whole film, at the
+door and at the catch, and both are shot against black with alpha. Inside the drawn world he is
+pencil like everything else. **The footage is the reference, never the layer.**
+
+**The empty tunnel is still wanted, as a plate.** `9-1-VORTEX-v1` remains: the throat with no figure
+in it, so Kristijan has the world without the boy and can hold, push or let him leave frame without
+being locked to one composition.
+
+**Order of work, and it cannot be reversed.** The footage stills come first, because they are the
+references, and a prompt written before them would be inventing the face it claims to be matching.
+Requested from the Claude Code session as EXCHANGE STEP 90.
+
+---
+
 ## 29. OPEN QUESTIONS
 
 Written down rather than guessed at.
