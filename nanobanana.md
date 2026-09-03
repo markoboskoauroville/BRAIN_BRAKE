@@ -1241,3 +1241,35 @@ measured or cut instead.
 The same instinct made `1-2b-CLOSE-v1`: the close up of the finish banner did not exist, so the
 banner was cropped out of `1-5-FINISH-v1` and redrawn sharp at full size. A close up that is a crop
 redrawn cannot disagree with the wide it came from.
+
+### 3.9.2026. THE SECOND MAN. THE LENS RULE BREAKS EVEN FROM A CORRECT COMPOSITE
+
+Three inspection frames, the glass on the runner's face. The composite handed to the model was
+right: one drawing, one glass, the magnified part built from the same drawing. It still took four
+runs, and every failure was one of the two named in `magnifying-glass.md`:
+
+    run 1   the head turned front on, out of profile, in all three
+    run 1   a SECOND small man appeared on the paper outside the rim
+    run 2   the glass vanished completely from one of the three
+    run 3   TWO men inside the lens, side by side
+
+**A long descriptive prompt makes the model rebuild the picture rather than sharpen it.** Run 1 named
+the medium, the optics, the brass, the expression and the layout, and the model treated all of it as
+a brief and started again. Run 2 opened instead with *the reference picture, drawn properly at full
+size, every element stays exactly where it is*, then listed only what must not move, and two of the
+three came back correct.
+
+So when the composite is already right, the prompt's job is fidelity, not description:
+
+    open by saying it is the reference drawn properly at full size
+    name the things that must not move: how many men, which way the head faces,
+    where the glass is, where the handle leaves the frame
+    say what is OUTSIDE the rim as well as inside, or the model fills the empty
+    paper with a second copy of the subject
+    keep the expression note to one short line at the end
+
+**And a frame can lose the glass entirely.** Same prompt, three frames, and one came back as a plain
+drawing with no lens at all. There is no way to tell in advance. Look at every frame in a batch, not
+a sample.
+
+**Four runs for one frame is normal here and not a sign of a bad prompt.** The leg took eight.
