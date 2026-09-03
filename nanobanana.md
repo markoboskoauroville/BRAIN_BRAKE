@@ -1180,3 +1180,64 @@ described twice will eventually be drawn twice differently.
 Wire it into `assets/train/frames_v4.json`, rebuild the documents, rebuild all eight scene packages,
 then **download the published file back and diff it** before handing over a link. See
 `STALE_CACHE.md`. An image can be correct on disk and still be stale everywhere the crew can reach.
+
+---
+
+### 3.9.2026. A COMPOSITE HANDED TO THE MODEL IS COPIED, FLAWS AND ALL
+
+The staged method now runs one step further than it did. Crop from the approved frame, composite the
+pieces in the container, then hand **that composite** to the model as the single reference and let it
+render at 2K. Neither the drawing nor the photograph is ever described in words, so neither can be
+invented. `1-5-v3` and `1-6-v3` were built this way from `1-6-COLLAPSE-v1` and came out right.
+
+**But the model reproduces the composite faithfully, including its accidents.** Twice in one session:
+
+- A cut out figure pasted on top of a plate arrived carrying a faint rectangle of **its own paper**,
+  slightly different in tone from the plate. The render drew that rectangle in, as though it were a
+  panel in the picture.
+- A hard edged erase box on flat paper came back as a **drawn line** across the frame.
+
+So a composite used as a reference has to be finished, not indicative:
+
+    divide the cut out by its own local background, then push it to pure white,
+    so only the pencil survives and no rectangle comes with it
+    feather every erase edge, seven or eight pixels of blur on the mask
+    protect what must survive with a shape in the mask, not by stopping the box short
+
+A mockup made to answer "does this read" is a different object from a mockup made to be rendered
+from. The second one has to be clean.
+
+### THE ONE REFERENCE MUST BE THE ONE CARRYING THE THING YOU NEED
+
+Already known: one reference, never two. What was learned on 3.9 is the other half of it. Asked for
+the runner half changed back into a man, the first run was given `1-2c-4-v1`, the flayed figure.
+That figure **has no face**, so the model invented one: a young man, the wrong person entirely. Run
+again against `1-3-B-v5`, which carries the marathon runner's own face in the same pose, and the
+right man came back.
+
+**Choose the reference by what it uniquely carries, not by what the frame is about.** The frame was
+about muscle; the reference had to be the one with the face.
+
+And when the face has to survive, say so in the prompt as a fact about the picture: *his face is
+exactly the face in the reference, the same boy, unchanged*. That held across two renders.
+
+### THE WARM VIGNETTE, AND THE CURE
+
+Frames came back with darkened, more sepia edges than the approved set, which is flat cream corner
+to corner. Naming the ground positively fixed it on the next run:
+
+    an even cream paper ground, the same tone from corner to corner, with visible paper tooth
+
+Do not write "no vignette". Section 2 rule 2 applies to grounds as much as to lettering.
+
+### NOT EVERYTHING IS A GENERATION
+
+`1-2c-7-v1`, the empty frame that ends scene one, was not generated. The paper tone and the grain
+standard deviation were **measured off a clean corner** of `1-2c-4-v1` and rebuilt in the container.
+That is the film's own paper rather than an invented white, it cost nothing, and there is no risk of
+the model putting something in an empty frame. Before prompting, ask whether the frame can be
+measured or cut instead.
+
+The same instinct made `1-2b-CLOSE-v1`: the close up of the finish banner did not exist, so the
+banner was cropped out of `1-5-FINISH-v1` and redrawn sharp at full size. A close up that is a crop
+redrawn cannot disagree with the wide it came from.
