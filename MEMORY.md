@@ -1673,6 +1673,46 @@ wrong question. The problem was never how the keys looked, it was that they were
 
 ---
 
+## 28g. THE HOUSE OF THE BODY IS SEEN THROUGH HIS EYES. ONE UNBROKEN DOLLY.
+
+**Baba, 3.9.2026. This is a decision about the camera and it removes work rather than adding it.**
+
+**We never see Manan inside the house.** We are looking out of him. He arrives, and from that moment
+the camera IS his eyes: it travels forward through the halls, comes up to a door, holds while he
+reads the shape raised in the clay, and passes THROUGH the door into the next room. It does that
+again and again until it reaches the key door, which is the end of the sequence, and then a new scene
+begins.
+
+**One continuous dolly, no cuts, the whole way.** This is not a new rule, it is section 25 arriving
+at its natural form: after his eyes close nothing arrives and we move instead, and every transition
+is a passage through a surface. **A subjective camera moving through doors is the purest version of
+that grammar there is.** There is no shot to cut to because there is only one shot.
+
+**Why it makes the film better, not just cheaper.** A boy walking through rooms is somebody you watch.
+A camera that is his eyes is somebody you are. The audience reads the door signs at the moment he
+reads them, finds nothing in each room at the moment he finds nothing, and arrives at the key door
+knowing what it means without having been told. **The discovery becomes theirs.**
+
+**And it is a large saving.** Manan does not have to be drawn, composited, lit or matched anywhere in
+the house. Every frame already made for the house is a forward facing view at eye height, so **the
+existing eleven frames are already correct as point of view plates** and none of them needs redoing.
+
+**What this changes about what still has to be made.** Nothing needs a figure in it. What the halls
+need instead is **travel**: a near and a far version of each room so the camera has somewhere to move
+between, and each door approached until it fills the frame and the next room is already visible
+through it.
+
+**Where the point of view ends.** At the key door. Behind it is Coach Brain's room, and that is a new
+scene where we see the two of them together, because the film needs Manan and Coach Brain in the same
+frame for the introduction, the theories and the goodbye. **The subjective camera is the house, and
+the house only.**
+
+**One frame to check against this.** `16-1-MOCKUP-v1` is a live composite of the photographed Manan
+at the drawn door. It belongs to the ARRIVAL, outside the house, which is still objective. Confirm
+that it sits before the point of view begins rather than inside it.
+
+---
+
 ## 29. OPEN QUESTIONS
 
 Written down rather than guessed at.
