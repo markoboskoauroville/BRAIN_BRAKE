@@ -72,7 +72,12 @@ Sparingly, and in this order of frequency:
 - **Optical fibre.** Fine bright lines leaving each room and running the ceiling.
   One or two out of a small room, a bundle by the end. This is the spine of the
   whole sequence and the only element that appears in every frame.
-- **A status panel beside each door.** Small, flush, one or two lines of readout
+- **THE BRAIN'S DOOR CARRIES NO DISPLAY.** Baba, 4.9.2026. Every other door in
+  the house has a panel beside it. This one has nothing, and it sits dead centre
+  of frame with the wall symmetrical either side. It is the thing that READS the
+  house, not a thing the house reads, and taking the panel off it is what says
+  so. It is also the only door that gets the middle of the picture.
+- **A status panel beside every OTHER door.** Small, flush, one or two lines of readout
   and a steady indicator. Never a screen full of numbers: a glance, not a
   dashboard.
 - **A probe in each room.** One instrument, obviously placed there afterwards,
