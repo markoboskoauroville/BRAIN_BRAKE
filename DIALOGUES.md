@@ -54,7 +54,7 @@ expecting him.
 
     VIVEKA   Ah. There you are. I was expecting you.
 
-    VIVEKA   Before we begin. Raise my right arm.
+    VIVEKA   Before we begin. Raise your right arm.
     MANAN    I am trying.
     VIVEKA   I know.
     MANAN    I can't. Why can't I move it?
