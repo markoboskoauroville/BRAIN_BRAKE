@@ -144,6 +144,42 @@ Read the left down and then the right and you have the whole film in six lines.
 
 ---
 
+## 4b. THE KEY, AND WHERE IT LANDS
+
+    VIVEKA   That is the key.
+    MANAN    The permission.
+    VIVEKA   You will not always have me to ask.
+
+On the first of those he lifts the real key off his neck. The word has circled
+the whole encounter, four times, and here it lands on an object: the permission
+and the key are the same thing, and the only gold in the film is about to fall.
+
+He has been WEARING it since Manan walked in, on a fine cord at his chest, so
+the audience has seen it long before it means anything. He never touches it
+until this line.
+
+---
+
+## 4c. EVERY LINE AS AUDIO
+
+`BRAINBREAK_AUDIO/downloads/BRAIN_BRAKE_DIALOGUE_WAV.zip`
+
+Twenty three lines, 48 kHz 16 bit mono PCM, **four voices per character** so the
+edit room chooses rather than is told.
+
+    MANAN   edmund, archie, rohan, chase
+    VIVEKA  hugh, dominic, alec, joe
+
+Ninety two files, numbered in FILM ORDER so a folder reads as the scene. **Pick
+a voice by listening to the same line in all four folders and then take that
+folder whole.** Do not mix voices line by line: a character who changes voice
+between sentences is two characters.
+
+M1 to M5 are already shot in Manan's own voice, so those two wavs are a
+comparison and not a replacement.
+
+---
+
 ## 5. RETIRED LINES
 
 Written, recorded in some cases, and no longer in the film. Kept because a line
