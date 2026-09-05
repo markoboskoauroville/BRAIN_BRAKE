@@ -60,7 +60,8 @@ expecting him.
     MANAN    I can't. Why can't I move it?
     VIVEKA   Try now.
     MANAN    That was you. It was never my arm at all.
-    VIVEKA   The arm is always yours. The permission is mine.
+    VIVEKA   The arm is always yours. The permission is mine. And the
+             permission is the key.
 
 **The whole idea of the film, done as a party trick instead of a lecture.** The
 arm must genuinely not move: animate the effort, not the failure.
@@ -85,6 +86,9 @@ Viveka can read him. Then Viveka answers by visualising his own.
 
     VIVEKA   And I ask one question with it. Can we carry on safely?
 
+    VIVEKA   The key is not how much is left in you. The key is how fast it is
+             going.
+
     VIVEKA   When the answer starts to look like no, I slow you down. Not
              because anything has run out. Because of where it is heading.
 
@@ -108,6 +112,16 @@ Viveka can read him. Then Viveka answers by visualising his own.
 
     MANAN    Then it can be a different number.
 
+    VIVEKA   That is the key.
+
+    MANAN    The permission.
+
+    VIVEKA   You will not always have me to ask.
+
+**And on that line he lifts the real key off his neck.** The word has circled the
+whole scene and now it lands on an object: the permission and the key are the
+same thing, and the only gold in the film is about to fall.
+
 ### What the boards say, and when
 
 Three lines on each display, and **they do not arrive together**. Each appears
@@ -120,6 +134,11 @@ word.
 | FATIGUE IS IN THE MUSCLE | FATIGUE IS IN THE BRAIN |
 | THE FUEL IS SPENT | THE FUEL IS STILL THERE |
 | THE TANK IS EMPTY | THE WALL IS A NUMBER |
+| | **THE KEY IS PERMISSION** |
+
+The fourth line on the right arrives alone, after *then it can be a different
+number*, and it is the only line the display says that nobody speaks first. NOT
+DRAWN YET.
 
 Read the left down and then the right and you have the whole film in six lines.
 
@@ -151,11 +170,11 @@ cut because the film should not tell the audience it has finished explaining.
 
 ## 6. STILL TO BE WRITTEN
 
-**THE KEY IS A CHARACTER AND NOBODY SAYS THE WORD.** It hangs round Viveka's
-neck, it is the door he came through, and it is the only gold in the film, and
-the word does not appear once in the dialogue above. Baba, 4.9.2026: the word
-should recur through the encounter, *the key is this, the key is that*, and the
-hologram should carry it once as a line of its own. Not written yet.
+~~**THE KEY IS A CHARACTER AND NOBODY SAYS THE WORD.**~~ WRITTEN 4.9.2026. The
+word now runs through the encounter four times and lands on the object: *the
+permission is the key*, *the key is not how much is left, the key is how fast it
+is going*, *that is the key*, and Manan answering *the permission*. The fourth
+board line, THE KEY IS PERMISSION, is written and not drawn.
 
 **Manan's goodbye.** He leaves and says nothing. If he says anything it has to be
 written before the next recording session.
